@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Dormaus Valley</title>
+		<script src="./js/amazon-cognito-identity.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/aws-sdk-2.240.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+	</head>
+	<body>
+		<div id="main">
+			<div id="left">
+				<div id="stayout"></div>
+				<div id="warningtext">
+					<h2>18+ ONLY</h2>
+					<p>Dormaus Valley is an adults-only furry game. By continuing, you agree you are over the legal age for your residence to view adult content.</p>
+				</div>
+			</div>
+			<div id="right">
+				<h3>Login</h3>
+				<label>Username</label>
+				<input id="loginuser" type="text" placeholder="username" name="username" value="">
+				<label>Password</label>
+				<input id="loginpass" type="password" placeholder="password" name="password" value="">
+				<button id="login" type="submit" class="ui teal fluid button" role="button">Login</button>
+				<hr>
+				<h3>Register</h3>
+				<label>Email</label>
+				<input id="regemail" type="text" placeholder="email" name="email" value="">
+				<label>Username</label>
+				<input id="reguser" type="text" placeholder="username" name="username" value="">
+				<label>Password</label>
+				<input id="regpass" type="password" placeholder="password" name="password" value="">
+				<button id="register" type="submit" class="ui dark fluid button" role="button">Register</button>
+			</div>
+		</div>
+		<script src='./js/index.js'></script>
+	</body>
+</html>
