@@ -84,6 +84,8 @@ var dv_data = {};
                     callback(new Error("Invalid data returned from database fetch!"));
                     return;
                 }
+                console.log("Save data set from server.");
+                console.log(remote_db);
                 local_db["save"] = remote_db;
                 localStorage.setItem("dv_data",JSON.stringify(local_db));
                 in_sync = true;

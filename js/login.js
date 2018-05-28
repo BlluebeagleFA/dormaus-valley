@@ -26,7 +26,9 @@ $(document).ready(function() {
                 }
 
 	            var accessToken = result.access_token;
-                console.log('access token + ' + accessToken);
+				console.log('access token + ' + accessToken);
+				
+				localStorage.clear();
                 
                 dv_data.set("username",result.username);
                 dv_data.set("token",accessToken);
@@ -52,22 +54,11 @@ $(document).ready(function() {
     	}
     	
     	if (username && password && email) {
-    		var dataEmail = {
-	            Name : 'email',
-	            Value : email
-	        };
-	        
-	        var attributeEmail = new AmazonCognitoIdentity.CognitoUserAttribute(dataEmail);
-	        
-	        attributeList.push(attributeEmail);
-	        
-	        userPool.signUp(username, password, attributeList, null, function(err, result){
+    		dv_backend.register(username,password,email,function(err,result){
 	            if (err) {
-	                alert(JSON.stringify(err));
+	                console.log(err);
 	                return;
 	            }
-	            cognitoUser = result.user;
-	            console.log('user name is ' + cognitoUser.getUsername());
 	            $("#right").append("<p>Registration email sent. Please don't forget to check your spam folder</p>");
 	        });
     	}

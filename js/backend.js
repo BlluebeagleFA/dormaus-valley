@@ -293,6 +293,11 @@ var dv_backend = {};
                         console.log(userdata);
                         callback(userdata);
                         return;
+                    } else {
+                        // this indicates an empty save or an invalid save
+                        console.warn("Invalid save state on the database, this is fine with new users, bad with old ones!");
+                        callback({});
+                        return;
                     }
                 }
             });

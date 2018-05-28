@@ -4,14 +4,19 @@ $(document).ready(function() {
     var logintoken;
     
     if (!dv_data.valid()) {
+        console.error("Invalid user state redirecting to login");
         window.location.replace("./index.html");
         username = "null";
     } else {
         username = dv_data.get("username");
         logintoken = dv_data.get("token");
+
+        // Check if they have any save data loaded
         if(typeof dv_data.get("save") == 'undefined' || !dv_data.get("save")){
+            // If they do not, resync it from the database
             dv_data.refresh(main);
         }else{
+            // Otherwise just start the game
             main();
         }
     }
@@ -20,9 +25,17 @@ $(document).ready(function() {
         global: []
     }
     
-    function main() {
+    function main(err) {
+
+        // Check for errors syncing with the database at that start
+        if(err){
+            console.error(err);
+            window.location.replace("./index.html");
+            return;
+        }
 
         userdata = dv_data.get("save");
+        console.log(userdata);
         
         $(".subtitle h2").text("Welcome back, " + username);
         $(".welcomemessage").text("Welcome " + username);
@@ -79,7 +92,7 @@ $(document).ready(function() {
         console.log(player);
         
         $("#logout").on("click", function() {
-            localStorage.removeItem("dv_data");
+            localStorage.clear();
             window.location.replace("./index.html");
         });
         
@@ -202,6 +215,7 @@ $(document).ready(function() {
             var value = player.stats[stat]+1;
             var requirement = calculateNext(value);
             player.statprogress[stat] += points;
+            dv_data.set("save",player);
             var currentPoints = player.statprogress[stat];
             var percentage = currentPoints/requirement;
             if (percentage > 1) {
@@ -280,6 +294,7 @@ $(document).ready(function() {
         $("#box3").on("click", "div.areabutton", function() {
             var data = $(this).data();
             player.area = data.area;
+            dv_data.set("save",player);
             displayArea(data.area);
             switchTabs("tab1");
             $("#chatbox").empty();
@@ -311,6 +326,7 @@ $(document).ready(function() {
                 if (player.dust >= price) {
                     player.dust -= price;
                     player.items[itemtype] = quantity;
+                    dv_data.set("save",player);
                     updateStats();
                     $(".shopicon." + itemtype).text(player.items[itemtype]);
                 }
@@ -328,6 +344,7 @@ $(document).ready(function() {
                 if (player.items[itemtype] >= quantity) {
                     player.dust += price;
                     player.items[itemtype] -= quantity;
+                    dv_data.set("save",player);
                     updateStats();
                     $(".shopicon." + itemtype).text(player.items[itemtype]);
                 }
@@ -384,12 +401,14 @@ $(document).ready(function() {
         
         function equipItem(slot, id) {
             player.equipment[slot] = id;
+            dv_data.set("save",player);
             displayInventory();
             updateStats();
         }
         
         function removeItem(slot) {
             player.equipment[slot] = null;
+            dv_data.set("save",player);
             displayInventory();
             updateStats();
         }
@@ -594,13 +613,16 @@ $(document).ready(function() {
                 if (outcome.trapped && outcome.trapped_desc) {
                     player.trapped = outcome.trapped;
                     player.trapped_desc = outcome.trapped_desc;
+                    dv_data.set("save",player);
                 } else if (outcome.freeTrap) {
                     player.trapped = null;
                     player.trapped_desc = null;
+                    dv_data.set("save",player);
                 }
                 
                 if (outcome.descriptionchange) {
                     player.description = outcome.descriptionchange;
+                    dv_data.set("save",player);
                 }
                 
                 $("#box1").empty();
@@ -758,12 +780,14 @@ $(document).ready(function() {
                 if (type == "add") {
                     if (!max || value < max) {
                         player.suffering[parameter].progress += quantity;
+                        dv_data.set("save",player);
                     }
                     var progress = player.suffering[parameter].progress;
                     var next = calculateNext(value+1);
                     if (next <= progress) {
                         player.suffering[parameter].progress = 0;
                         player.suffering[parameter].value++;
+                        dv_data.set("save",player);
                         return [1, 0, player.suffering[parameter].value];
                     } else {
                         return [(progress-quantity)/next, progress/next, player.suffering[parameter].value];
@@ -771,14 +795,17 @@ $(document).ready(function() {
                 } else if (type == "set") {
                     player.suffering[parameter].progress = 0;
                     player.suffering[parameter].value = quantity;
+                    dv_data.set("save",player);
                     return [1,0, player.suffering[parameter].value];
                 } else if (type == "sub") {
                     player.suffering[parameter].progress -= quantity;
+                    dv_data.set("save",player);
                     var progress = player.suffering[parameter].progress;
                     var next = calculateNext(value+1);
                     if (progress < 0) {
                         player.suffering[parameter].progress = 0;
                         player.suffering[parameter].value = player.suffering[parameter].value-1;
+                        dv_data.set("save",player);
                         return [1, 0, player.suffering[parameter].value];
                     } else {
                         return [(progress+quantity)/next, progress/next, player.suffering[parameter].value];
@@ -790,17 +817,20 @@ $(document).ready(function() {
                         value: 0,
                         progress: 0
                     }
+                    dv_data.set("save",player);
                 }
                 var value = player.attributes[parameter].value;
                 if (type == "add") {
                     if (!max || value < max) {
                         player.attributes[parameter].progress += quantity;
+                        dv_data.set("save",player);
                     }
                     var progress = player.attributes[parameter].progress;
                     var next = calculateNext(value+1);
                     if (next <= progress) {
                         player.attributes[parameter].progress = 0;
                         player.attributes[parameter].value++;
+                        dv_data.set("save",player);
                         return [1, 0, player.attributes[parameter].value];
                     } else {
                         return [(progress-quantity)/next, progress/next, player.attributes[parameter].value];
@@ -808,14 +838,17 @@ $(document).ready(function() {
                 } else if (type == "set") {
                     player.attributes[parameter].progress = 0;
                     player.attributes[parameter].value = quantity;
+                    dv_data.set("save",player);
                     return [1,0, player.attributes[parameter].value];
                 } else if (type == "sub") {
                     player.attributes[parameter].progress -= quantity;
+                    dv_data.set("save",player);
                     var progress = player.attributes[parameter].progress;
                     var next = calculateNext(value+1);
                     if (progress < 0) {
                         player.attributes[parameter].progress = 0;
                         player.attributes[parameter].value = player.attributes[parameter].value-1;
+                        dv_data.set("save",player);
                         return [1, 0, player.attributes[parameter].value];
                     } else {
                         return [(progress+quantity)/next, progress/next, player.attributes[parameter].value];
@@ -824,28 +857,35 @@ $(document).ready(function() {
             } else if (oAtt.type == "item") {
                 if (!player.items[parameter]) {
                     player.items[parameter] = 0;
+                    dv_data.set("save",player);
                 }
                 if (type == "add") {
                     player.items[parameter] += quantity;
+                    dv_data.set("save",player);
                 } else if (type == "set") {
                     player.items[parameter] = quantity;
+                    dv_data.set("save",player);
                 } else if (type == "sub") {
                     player.items[parameter] -= quantity;
+                    dv_data.set("save",player);
                 }
                 if (player.items[parameter] <= 0) {
                     delete player.items[parameter];
+                    dv_data.set("save",player);
                 }
             } else if (oAtt.type == "stat") {
                 var value = player.stats[parameter];
                 if (type == "add") {
                     if (!max || value < max) {
                         player.statprogress[parameter] += quantity;
+                        dv_data.set("save",player);
                     }
                     var progress = player.statprogress[parameter];
                     var next = calculateNext(value+1);
                     if (next <= progress) {
                         player.statprogress[parameter] = 0;
                         player.stats[parameter]++;
+                        dv_data.set("save",player);
                         updateStat(parameter);
                         return [1, 0, player.stats[parameter]];
                     } else {
@@ -855,15 +895,18 @@ $(document).ready(function() {
                 } else if (type == "set") {
                     player.statprogress[parameter] = 0;
                     player.stats[parameter] = quantity;
+                    dv_data.set("save",player);
                     updateStat(parameter);
                     return [1,0, player.stats[parameter]];
                 } else if (type == "sub") {
                     player.statprogress[parameter] -= quantity;
+                    dv_data.set("save",player);
                     var progress = player.statprogress[parameter];
                     var next = calculateNext(value+1);
                     if (progress < 0) {
                         player.statprogress[parameter] = 0;
                         player.stats[parameter] = player.stats[parameter]-1;
+                        dv_data.set("save",player);
                         updateStat(parameter);
                         return [1, 0, player.stats[parameter]];
                     } else {
