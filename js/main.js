@@ -463,9 +463,6 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
     $("#box4").on("mouseleave", ".shopicon", mouseOutIcon);
     
     function displayMap() {
-    	var width = $("#box3").width();
-    	$(".map").width(width);
-    	$(".map").height(width);
     	updateMap();
     };
     
@@ -593,20 +590,30 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
     };
     
     function updateMap() {
-	    $(".map").empty();
-	    var areaIds = Object.keys(datafile.areas);
-	    var width = $(".map").width();
-	    for (var i = 0; i < areaIds.length; i++) {
-	        var areaId = areaIds[i];
-	        var area = datafile.areas[areaId];
-	        var x = area.position[0]*width;
-	        var y = area.position[1]*width;
-	        if (areaId == player.area) {
-	        	$(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
-	        } else {
-	        	$(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
-	        }
-//	        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
+    	if (player.trapped) {
+    		$("#box3").empty();
+    		$("#box3").append('<p>' + player.trapped + '</p>');
+	    } else {
+	    	$("#box3").empty();
+	    	$("#box3").append('<div class="map"></div>');
+	    	var width = $("#box3").width();
+	    	$(".map").width(width);
+	    	$(".map").height(width);
+	    	$(".map").empty();
+		    var areaIds = Object.keys(datafile.areas);
+		    var width = $(".map").width();
+		    for (var i = 0; i < areaIds.length; i++) {
+		        var areaId = areaIds[i];
+		        var area = datafile.areas[areaId];
+		        var x = area.position[0]*width;
+		        var y = area.position[1]*width;
+		        if (areaId == player.area) {
+		        	$(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
+		        } else {
+		        	$(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
+		        }
+//		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
+		    }
 	    }
 	}
     
@@ -619,14 +626,14 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
 	        var exp = 1;
 	        if (Math.random() < successChance) {
 	            exp = getExperience(true, successChance);
-	            if (event.results.rareSuccess && Math.random < 0.1) {
+	            if (event.results.rareSuccess && Math.random() < 0.2) {
 	                result = JSON.parse(JSON.stringify(event.results.rareSuccess));
 	            } else {
 	            	result = JSON.parse(JSON.stringify(event.results.success));
 	            }
 	        } else {
 	            exp = getExperience(false, successChance);
-	            if (event.results.rareFail && Math.random < 0.1) {
+	            if (event.results.rareFail && Math.random() < 0.2) {
 	            	result = JSON.parse(JSON.stringify(event.results.rareFail));
                 } else {
                 	result = JSON.parse(JSON.stringify(event.results.fail));
@@ -702,6 +709,14 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
         }
         if (event) {
             var outcome = getEventResolution(event);
+            
+            if (outcome.trapped && outcome.trapped_desc) {
+            	player.trapped = outcome.trapped;
+            	player.trapped_desc = outcome.trapped_desc;
+            } else if (outcome.freeTrap) {
+            	player.trapped = null;
+            	player.trapped_desc = null;
+            }
             
             if (outcome.descriptionchange) {
             	player.description = outcome.descriptionchange;
@@ -813,6 +828,9 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
 	window.setInterval(saveGame, 300000);
 	
 	function isEventValid(event) {
+		if ((player.trapped && !event.trapped) || (!player.trapped && event.trapped)) {
+			return false;
+		}
 		var valid = true;
 		for (var i = 0; i < event.requirements.length; i++) {
 			var req = event.requirements[i];
@@ -1077,10 +1095,14 @@ lambda.invoke(pullRestoreParams, function(restError, restData) {
 	
 	function displayInventory() {
 		$("#box2").empty();
+		var descToUse = player.description;
+		if (player.trapped_desc) {
+			descToUse = player.trapped_desc;
+		}
 		var invData = '<div class="profile">' +
 	    	'<div class="profileicon playericon"></div>' +
 	    	'<div class="furtherinfo">' +
-	    	'<p>' + player.description + '</p>' +
+	    	'<p>' + descToUse + '</p>' +
 	    	'</div>' +
 	    '</div>' +
 	    '<div class="inventory">';

@@ -66,7 +66,7 @@ var area_dormaus_entrance = {
                         "comparison": "greater" //default greater
                     }
                 ],
-                "icon": "pain",
+                "icon": "guilt",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": 'Lin crosses her arms and looks at you like a disapproving teacher. "Have you been up to no good? I\'ll help you, but you really should stay on your best behaviour from now on!", she says. Lin takes you to the mayor\'s office, and tells you to be quiet. After she walks up to the locked file office, she reaches her hand into the wall, and it passes through like it is just fog. She pulls out the investigation documents on your behaviour, and stashes them in her hat.',
@@ -91,7 +91,7 @@ var area_dormaus_entrance = {
                         "comparison": "greater" //default greater
                     }
                 ],
-                "icon": "pain",
+                "icon": "curse",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": 'Lin places her hand on your forehead and frowns. "Goodness! You have terrible magic poisoning. I know visitors are vulnerable to magic, but this is much worse than I expected", she says. She places her thumbs carefully on your forehead and begins to hum something. The sound makes you feel dizzy and sleepy, and everything around you, for a moment, looks fuzzy. The lingering feeling of dread from your curse recedes slightly.',
@@ -116,7 +116,7 @@ var area_dormaus_entrance = {
                         "comparison": "greater" //default greater
                     }
                 ],
-                "icon": "pain",
+                "icon": "outcast",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": '"Oh dear, are you feeling embarrassed? I can help you out with your reputation, sure!", Lin says. She walks around town with you, and listens in to what the townsfolk are talking about. Somehow, none of them can see her. She then instructs you on how to do little acts of kindness to slowly improve your reputation.',

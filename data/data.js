@@ -5,6 +5,8 @@ var datafile = {
     	"dormaus_streets": area_dormaus_streets,
     	"dormaus_entrance": area_dormaus_entrance,
     	"shop": area_shop,
-    	"fountain": area_fountain
+    	"shop_rooms": area_shop_rooms,
+    	"fountain": area_fountain,
+    	"mayor": area_mayors
     }
 }

@@ -131,6 +131,17 @@ var itemdata = {
 		},
 		description: ["Ace's scuffed and dirty old cowboy boots. They make you feel tough, but the stink is going to make it hard to be stealthy."]
 	},
+	mikhail_socks: {
+		type: "item",
+		icon: "socks_1",
+		title: "Mikhail's Socks",
+		value: 20,
+		slot: "feet",
+		attributes: {
+			charm: 1
+		},
+		description: ["These warm socks smell strongly of Mikhail the dog's warm, masculine scent. They wiggle and move very slightly, suggesting they may have once been adventurers. The scent is strangely appealing."]
+	},
 	slutty_shirt: {
 		type: "item",
 		icon: "shirt_1",

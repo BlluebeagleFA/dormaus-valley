@@ -1,6 +1,6 @@
 var area_mayors = {
         "title": "mayors",
-        "position": [0.10,0.77],
+        "position": [0.15,0.71],
         "header": "Town Hall",
         "subheader": 'The town hall is a small wooden building. On one wall, a notice board is holding a variety of messages and papers, advertising fairs or making requests. A ticking clock on the opposite wall stands above the clerk\'s desk and gives the room a businesslike ambience. The mayor\'s desk is behind a glass panel, in a slightly more cozy-looking room.',
         "events": [
@@ -21,7 +21,7 @@ var area_mayors = {
                 "icon": "muscat_1",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
-                        "text": 'Mikhail leaves you in charge of the store for a day. His instructions are to listen to what customers need, and make sure they buy the most appropriate charm or item for their problems.</p>You wait and dust the counters for a little while, and soon an adventurer comes in. He\'s scrawny and thin, and barely fits in his armor. He asks for something to make himself big and tough, and you recommend an enchanted loincloth. It takes some convincing, but he eventually buys it and leaves. Next comes a guy who wants to blend in. Your recommendation of a colourful chameleon coat comes with some resistance, but he eventually takes it.</p>The next day, a massive burly minotaur bursts into the shop with a huge grin on his face, stinking of sweat and musk. "Me big! Me strong now!", he bellows, before shaking your hand. A few moments later, something taps you on the shoulder. You turn and look up to see a huge chameleon appear, his skin changing to green from its invisible hue. He grins and taps you with his tail again, while he dangles from the ceiling. "Excellent choice! Loving this new body, my friend", he says, before disappearing again. Seems like you\'re good at this!',
+                        "text": 'The mayor isn\'t at the office when you start working. Instead, you are assigned to deal with complainants and write up their paperwork. One by one people file into the office, with their problems needing to be addressed.</p>Your first client is a large, fat fox, who\'s torso is almost round. He pulls off his shirt to reveal that his belly is in fact quite round, as well as orange and firm like a vegetable. You file his complaint and direct him to go wait in the pumpkin patch, where someone will be along to assist him shortly. After that, a large grey-skinned creature slowly shuffles into the office. With a creaky, slow voice, he says that he fell asleep in the fountain plaza and woke up all craggy and stony. It takes quite a lot of convincing and arguing for you to get the guy to accept that it\'s perfectly normal and he\'s always been a statue, but by the end of it, you\'ve tricked him into thinking he came here to be reassigned to a different garden. You file a report and assign him to sit over the church as a gargoyle, and he leaves very happy. You do feel slightly guilty, but the pay helps assuage that guilt.',
                         "outcomes": [
                             {
                                 "parameter": "muscat_1",
@@ -40,69 +40,70 @@ var area_mayors = {
                     }
                 }
             },{
-                "id": "shop_payday",
-                "title": "Payday",
-                "subtitle": "It's time for payment for working at the shop.",
+                "id": "become_footstool",
+                "title": "The Mayor wants to demote you.",
+                "subtitle": 'The mayor is resting in his chair when you enter today, with his large feet crossed atop his desk. The soles are fluffy and white, and look incredibly soft and appealing. You blink and try to shake off the weird urge you feel, seeing the older cat\'s paws. You have the oddest desire to just sit beneath them so they can rest. The mayor is toying with a gold chain around his neck, and purrs as you get closer. </p>"The new arrival! Glad you have come to give me a visit. Always a delight. I would normally be out on my rounds, but my poor feet are just so tired. Warm and tired, and aching to be rested. Could you possibly help an old cat out?" he says. His voice is rumbling and purring, flowing through your mind and making it hard to think. Yet you know from his glowing eyes, and evil expression, that if you do not escape then you will surely be trapped here under the cat\'s will forever. Do you submit to his will?',
                 "type": "random",
                 "requirements": [
                 	{
-                        "parameter": "mikhail_interest",
-                        "value": 4,
+                        "parameter": "outcast",
+                        "value": 1,
                         "comparison": "greater" //default greater
                     }
                 ],
-                "icon": "mikhailicong",
+                "icon": "maineicon",
                 "results": {
                     "grizzpay": {
-                        "text": 'Mikhail slaps you firmly on the back while you\'re organising some products, and you bump into them and spill them everywhere. He picks you up, and sits you on his lap. "Hey there kid, you\'ve done a real good job lately. Got you some pocket money", he says in his deep gruff voice. He drops a heavy bag of coins into your hand, and then ruffles your hair affectionately. "Keep up the good work!"',
-                        "outcomes": [
-                            {
-                                "parameter": "muscat_1",
-                                "quantity": 75,
-                                "change": "add"
-                            },
-                            {
-                                "parameter": "mikhail_interest",
-                                "quantity": 0,
-                                "change": "set"
-                            },
-                            {
-                                "parameter": "mikhail_connection",
-                                "quantity": 1,
-                                "change": "add"
-                            }
-                        ]
+                        "text": 'The moment you consider serving the cat, you are lost. Your face spreads into an eager, blushing grin, and the mayor\'s eyes narrow into glowing slits. "Such a helpful and dutiful citizen. You are a role model for all the beings here. One day they will all know their place beneath me, as you do." he says. You can barely tell what he is saying, though. Your entire focus is on his perfect, beautiful feet. Before you know it, your fingers are wrapped around his soles, and you are massaging your thumbs through his thick, soft fur. His paws are warm and comfortable to hold, and you feel like you could press them against your flesh forever. You rub and squeeze his toes, and press your face to his sole, feeling the warmth on your cheeks. </p>The mayor pulls them away from you, and you whimper for a moment, before he points down below his desk. Immediately, you obey, crawling under his desk and sitting on your hands and knees with your face gazing up into his wonderful paws. They slowly lower down onto your face, and your mind blanks out. The darkness of his warm paws smothering your vision is all you care about. </p>You don\'t care when your body starts to compress down, and your limbs begin to melt together into your body. You don\'t care when your insides soften and turn to padding and fluff, or when you begin to squish and reshape into a cube. You don\'t even care when your skin becomes shiny, and smooth, and turns into soft red leather. All you care about is the feet, resting on where your face used to be, as you become a boxy leather footstool under the mayor\'s desk. No thoughts. Only feet.',
+                        "trapped_desc": "This is just a large red footstool sitting under Mayor Maine's desk.",
+                        "trapped": 'You are nothing but Mayor Maine\'s leather footstool. Your master\'s perfect paws will rest on your former face, and you will never escape the joy of serving his feet.',
+                        "outcomes": []
                     }
                 }
             },{
-                "id": "daddy_mikhail",
-                "title": "Daddy Mikhail",
-                "subtitle": 'As you browse the little shop, you start to notice little photographs tucked in between the goods and trinkets. They all contain the tall and distinguished dog shopkeeper, Mikhail, but he\'s with a different younger dog in each image. His stern grey-streaked moustache and silver-dusted fur is contrasted by the youthful energy of the other dogs, all the same breed as him, and all roughly in their twenties, with similar fur patterns and markings. </p>You get curious, and ask Mikhail what the photos are of. He looks up from a drawer he is organising, and smiles. </p>“Those are my sons, of course. I have many eager and loyal sons, and they\'d do anything for their daddy.” That last word makes you blush a little, and he raises one bushy eyebrow. </p>“Is something the matter, son?” he says, putting emphasis on the last word. His eyes stare between your legs, and a bit of a smirk makes his fluffy muzzle twitch. “If I didn\'t know better, I\'d think you wanted a daddy of your own, boy. Is that what you want? To come sit on daddy\'s lap?” </p>Do you admit your arousal to the handsome german shepherd?',
+                "id": "footstool_random",
+                "title": "Accept Your Fate",
+                "subtitle": "You are nothing but a footstool. Why try to be anything else?",
+                "trapped": true,
                 "type": "random",
                 "requirements": [
-                	{
-                        "parameter": "mikhail_connection",
-                        "value": 0,
-                        "comparison": "greater" //default greater
-                    },
-                    {
-                        "parameter": "species",
-                        "value": 4,
-                        "comparison": "nequal" //default greater
-                    }
                 ],
-                "icon": "mikhailicong",
+                "icon": "default",
                 "results": {
-                    "mikhailsex": {
-                        "text": 'Mikhail sits down on a large leather armchair, spreads his legs, and pats his thigh. “Come on now, boy. Show your daddy some love.” You walk over nervously, and sit down carefully on the dog\'s lap, feeling the bulge of his cock pressing out from his pants. </p>He wraps his powerful arms around you, and presses you against his chest. You didn\'t realise how tall he was. He looks down at you through his glasses, and leans forward. His moustache tickles your face as his long red tongue slides into your mouth. As he kisses you, his furry arm strokes along your chest, up and down, teasing and stroking you. Then it slides down to his pants, and reaches inside, to slowly pull out his cock. It stands proud and erect in the air, long and firm. </p>“Tell me you want it, son. Say you want daddy\'s cock.” You gulp and pant, then find yourself saying it out loud. “I want daddy\'s cock”, you stammer, and he growls with lust as he lifts you up, then pulls you down as he plunges his cock into your ass. </p>Your rear stretches around the older dog\'s shaft, and he growls a little as he thrusts in and out, his cock throbbing within you. Your heart pounds and your face is flushed with the pleasure of his shaft ramming your ass. You can feel your tailbone start to twitch, wiggling as it grows. It lengthens out behind you, and starts to wag from side to side, before growing fluffy fur. That same fur spreads up your back, where Mikhail strokes his clawed hands through it, admiring the same patterns and colours as his own furry body. Your face grows, pushing into his kiss as you grow a muzzle of your own. Your ears grow longer, develop fur, then flop over like a dog\'s. Your hands and feet throb for a moment, forming rough pawpads, and your nails become hard and sharp as they transform into claws. </p>Your whole body is changing, taking on aspects of your daddy\'s form, as you become a dog, the spitting image of Mikhail as a younger man. </p>He chuckles, and grips your shaft, stroking and pumping it as it turns red and pointed. The base swells out and inflates, forming a doggy knot, which he squeezes firmly in his hand. You whimper and bark with lust, and he growls at you. </p>“Cum for your daddy, pup.” You cannot disobey. You howl and bark, your cock pulsing and spraying out a thick load of cum into the air, that splatters over his shirt and over your furry chest. Then he holds you firmly and growls, and you feel his own cock release its musky load as a rush of heat deep in your rear. </p>You are left panting and dizzy, until he carefully pulls his cock free from your rear and allows you to stand. </p>“Good boy, son. You make your daddy proud.” he says. Your tail wags happily to hear your dad\'s praise.',
-                        "descriptionchange": "This adventurer is a furry, eager dog.",
+                    "footstool_1": {
+                        "text": 'As you sit quietly under the mayor\'s desk, you hear him starting to sigh with boredom. There is a shuffling of papers above you, and then he lifts his wide, fluffy paws and rests them on what used to be your face. You would shiver with delight if you could. His sole rubs slowly back and forth, the thicker pads of his foot pressing into your flat surface. His toes wriggle and stroke across your upholstery. He lifts his feet away, then presses them to your sides. His claws emerge, and tease gently down your sides, the sharp tips leaving a tingly feeling in your footstool body. </p>Then he flexes his paws, presses them both back down on your face, and leaves them there while he works. You lose yourself in the warmth and scent of your owner\'s feet.',
+                        "outcomes": []
+                    },
+                    "footstool_2": {
+                        "text": 'When the mayor leaves for the night, and locks up, you are left alone in the dark office. His scent slowly fades from your body, and the haze of lust and obedience that constantly fills you begins to clear up. You start to remember that you aren\'t just a footstool. You used to be an adventurer! You should fight, should resist. But...you are really missing his feet. </p>You miss having him press his soles onto you. You want him to relax and rest on you. You need your master so badly. By the time the morning rolls around, and your master returns and props his paws back on you, you are utterly weak with withdrawal. His warmth and presence fills you with relief, and crushes a little more of your will. Every day is like this, and every day you lose a bit more of your mind to the simple mind of an obedient footstool.',
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "resist_footstool",
+                "trapped": true,
+                "title": "Resist Your Transformation",
+                "subtitle": "You are not an object! You can fight this!",
+                "type": "statcheck", //or random
+                "stat": "magic",
+                "difficulty": 5,
+                "requirements": [
+                ],
+                "icon": "default",
+                "results": {
+                	"rareSuccess": {
+                		"text": 'You are not a footstool! You have to focus and remember who you used to be. You may just be a leather-clad cube right now, but once you had legs, and arms, and a face. You don\'t belong under some evil cat\'s feet. You are an adventurer, you should be out there, exploring, seeing new sights, meeting new people. Every time your thoughts drift back to your owner\'s big, furry, soft feet, you force yourself to think of the sky, to think of walking and moving and being alive. Bit by bit, you struggle to assert your mind, to remind yourself that you are not just an object. It\'s incredibly straining and difficult, and you feel like you have made barely any progress.</p>Fortunately, the Mayor is out late tonight, and can\'t return to the office. All through the day and night you fight with the unnatural paw-obsessed urges in your head. Slowly, your body stretches out, as arms and legs reform. Your head pushes out from the red leather as it turns slowly back into flesh. You weakly crawl out from under your owner\'s...no, from the Mayor\'s desk. You manage to leave the town hall and pant, exhausted, but alive, outside the door. As you sit there, the mayor walks past you, and your eyes are locked onto his large bare paws. He pauses for a moment, and looks down at you with a gleaming grin. "Next time, I won\'t leave anything left to fight back, footstool", he says, before walking through the door and leaving you be.',
+                		"freeTrap": true,
+                		"outcomes": []
+                	},
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You are not a footstool! You have to focus and remember who you used to be. You may just be a leather-clad cube right now, but once you had legs, and arms, and a face. You don\'t belong under some evil cat\'s feet. You are an adventurer, you should be out there, exploring, seeing new sights, meeting new people. Every time your thoughts drift back to your owner\'s big, furry, soft feet, you force yourself to think of the sky, to think of walking and moving and being alive. Bit by bit, you struggle to assert your mind, to remind yourself that you are not just an object. It\'s incredibly straining and difficult, and you feel like you have made barely any progress, when the mayor returns, sits down, and crosses his feet atop you.</p>Immediately, his scent and the warmth of his paws presses down into your mind, and your willpower fades and melts away. You are a good object. But a tiny bit of resistance remains. You can escape this, if you keep struggling.',
                         "outcomes": [
-                            {
-                                "parameter": "species",
-                                "quantity": 4,
-                                "change": "set"
-                            }
                         ]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": 'You are not a footstool! You have to focus and remember who you used to be. You may just be a leather-clad cube right now, but once you had legs, and...arms? Something like that, some sort of strange, uncomfortable bits sticking out, instead of the nice easy smoothness of a good footstool. You don\'t belong under some evil cat\'s feet, serving him, obeying him, right? Feeling his toes splay across your top, his musky paws stroking at your sides. Flushed with pleasure and sensation as he toys and teases with you, resting his tired feet on top of you. Using you to help him relax his big, gorgeous paws every day. Showing you what a good, obedient, loyal object you are. You belong here, after all. What were you thinking? Probably nothing. You don\'t need to think. Just be a happy, mindless object. This is where you belong.',
+                        "outcomes": []
                     }
                 }
             },{
@@ -125,7 +126,7 @@ var area_mayors = {
                         ]
                     },
                     "complaint": {
-                        "text": 'There is a commotion going on in the mayor\'s office today. You stand at the corner and peek in to look closer and see what\'s happening. A tall and burly adventurer is pounding his fists on Mayor Maine\'s desk, and shouting furiously at the cat. The mayor is just smiling under his fluffy moustache, looking completely unpeturbed. "My wizard is a pumpkin, my thief is some dog\'s sock, and now you\'re telling me that there\'s nothing you can do about it?! I\'m not letting you walk all over me, you fat fuck!" the adventurer roars. </p>The mayor strokes the tip of his moustache and smiles widely. "Oh I don\'t need you to let me, dear boy." he says, with a sinister purr. The mayor stands up, and presses one hand on the adventurer\'s chest, before shoving him firmly onto his back. The powerful human protests and struggles, but somehow the chubby cat is controlling him easily. He just lies on the floor helplessly as the mayor lifts his large furry paw and presses it down on the human\'s chest. "I\'ll be walking over you every day", the mayor says. The human pants and shivers as he starts to sink into the deep, plush and soft carpet. </p>His skin turns the same red and brown as the carpet pattern, as he looks almost hairier – except the hairs are growing, thickening carpet fibres. He struggles, but cannot escape. Each time the mayor steps on his body, walks over his chest and face, he is absorbed more and more. His limbs fall apart into plush carpet fabric. His features fade into the pattern, and his equipment disappears. Finally, the mayor is left walking through a thick and fluffy patch of carpet, which wiggles and moves as if it were alive.',
+                        "text": 'There is a commotion going on in the mayor\'s office today. You stand at the corner and peek in to look closer and see what\'s happening. A tall and burly adventurer is pounding his fists on Mayor Maine\'s desk, and shouting furiously at the cat. The mayor is just smiling under his fluffy moustache, looking completely unpeturbed. "My wizard is a pumpkin, my thief is some dog\'s sock, and now you\'re telling me that there\'s nothing you can do about it?! I\'m not letting you walk all over me, you fat fuck!" the adventurer roars. </p>The mayor strokes the tip of his moustache and smiles widely. "Oh I don\'t need you to let me, dear boy." he says, with a sinister purr. The mayor stands up, and presses one hand on the adventurer\'s chest, before shoving him firmly onto his back. The powerful human protests and struggles, but somehow the chubby cat is controlling him easily. He just lies on the floor helplessly as the mayor lifts his large furry paw and presses it down on the human\'s chest. "I\'ll be walking over you every day", the mayor says. The human pants and shivers as he starts to sink into the deep, plush and soft carpet. </p>His skin turns the same red and brown as the carpet pattern, as he looks almost hairier - except the hairs are growing, thickening carpet fibres. He struggles, but cannot escape. Each time the mayor steps on his body, walks over his chest and face, he is absorbed more and more. His limbs fall apart into plush carpet fabric. His features fade into the pattern, and his equipment disappears. Finally, the mayor is left walking through a thick and fluffy patch of carpet, which wiggles and moves as if it were alive.',
                         "outcomes": [
                             {
                                 "parameter": "muscat_1",
