@@ -1,173 +1,187 @@
-<html>
-	<head>
-		<title>Dormaus Valley</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
-		<script src="./js/mqtt-client.min.js"></script>
-		<script src="./js/amazon-cognito-identity.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="./js/aws-sdk-2.240.1.min.js"></script>
-		<script type="text/javascript" src="./data/bar.js"></script>
-		<script type="text/javascript" src="./data/bar_rooms.js"></script>
-		<script type="text/javascript" src="./data/dormaus_streets.js"></script>
-		<script type="text/javascript" src="./data/dormaus_entrance.js"></script>
-		<script type="text/javascript" src="./data/shop.js"></script>
-		<script type="text/javascript" src="./data/shop_rooms.js"></script>
-		<script type="text/javascript" src="./data/fountain.js"></script>
-		<script type="text/javascript" src="./data/mayors.js"></script>
-		<script type="text/javascript" src="./data/data.js"></script>
-		<script type="text/javascript" src="./data/attributes.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
-	</head>
-	<body>
-		<header>
-			<div class="title">
-				<h1>Dormaus Valley</h1>
-			</div>
-		<div class="subtitle">
-				<h2>You are not logged in</h2>
-				<a id="logout" href="#">Logout</a>
-		</div>
-		</header>
-		<div id = "main">
-			<div id = "iconoverlay" class="hide">
-				<div class = "overlaytitle">Test Title</div>
-				<div class = "overlaytext">Test Text</div>
-			</div>
-			<div id = "left">
-				<div class="centerbox">
-					<div class="dustbox statbox">
-						<p>DUST:</p>
-						<p class="dustcount">0</p>
-					</div>
-					<div class="statbox might">
-						<div class="iconbox might"></div>
-						<div class="param">MIGHT</div>
-						<div class="paramnum">
-							<p class="param">0</p>
-							<p class="numbonus">+0</p>
-						</div>
-						<div class="progressbox">
-							<div class="progress"></div>					
-						</div>
-					</div>
-					<div class="statbox magic">
-						<div class="iconbox magic"></div>
-						<div class="param">MAGIC</div>
-						<div class="paramnum">
-							<p class="param">0</p>
-							<p class="numbonus">+0</p>
-						</div>
-						<div class="progressbox">
-							<div class="progress"></div>					
-						</div>
-					</div>
-					<div class="statbox charm">
-						<div class="iconbox charm"></div>
-						<div class="param">CHARM</div>
-						<div class="paramnum">
-							<p class="param">0</p>
-							<p class="numbonus">+0</p>
-						</div>
-						<div class="progressbox">
-							<div class="progress"></div>					
-						</div>
-					</div>
-					<div class="statbox stealth">
-						<div class="iconbox stealth"></div>
-						<div class="param">STEALTH</div>
-						<div class="paramnum">
-							<p class="param">0</p>
-							<p class="numbonus">+0</p>
-						</div>
-						<div class="progressbox">
-							<div class="progress"></div>					
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id = "center">
-				<div class="centerbox">
-					<div id = "tabbox">
-						<div id="tab1" class="tab active">Explore</div>
-						<div id="tab2" class="tab">Inventory</div>
-						<div id="tab3" class="tab">Map</div>
-						<div id="tab4" class="tab">Conversation</div>
-					</div>
-					<div id = "mainbox">
-						<div id="box1" class="hidebox">
-						</div>
-						<div id="box2" class="hidebox hidden">
-							<div class="profile">
-								<div class="profileicon"></div>
-								<div class="furtherinfo">
-									<p>This is some information</p>
-								</div>
-							</div>
-							<div class="inventory">
-								<div class="inventoryequip">
-									<div class="equipslot">
-										<div class="equipicon"></div>
-										<p class="equipdesc">Data</p>
-									</div>
-									<div class="inventorybag">
-										<div class="inventoryslot"></div>
-										<div class="inventoryslot"></div>
-										<div class="inventoryslot"></div>
-									</div>
-								</div>
-								<div class="inventoryequip">
-									<div class="equipslot">
-										<div class="equipicon"></div>
-										<p class="equipdesc">Data</p>
-									</div>
-									<div class="inventorybag">
-										<div class="inventoryslot"></div>
-										<div class="inventoryslot"></div>
-										<div class="inventoryslot"></div>
-									</div>
-								</div>
-								<div class="inventorybag">
-									<div class="inventoryslot"></div>
-									<div class="inventoryslot"></div>
-									<div class="inventoryslot"></div>
-								</div>
-							</div>
-						</div>
-						<div id="box3" class="hidebox hidden">
-							<div class = "map"></div>
-						</div>
-						<div id="box4" class="hidebox hidden">
-							<div class = "dialoguemenu">
-								<div class = "shop hidden"></div>
-								<div class = "dialogueoptions">
-									<div class = "dialogueoption">
-										<p>There is no one here.</p>
-									</div>
-								</div>
-								<div class = "dialogueresponse hidden">
-									<div class = "dialoguetext">
-										<p>This is some information</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id = "right">
-				<div class="centerbox">
-					<div class="infobox">
-						<p class="welcomemessage">Welcome Anonymous User</p>
-						<p>Use the button below to connect to chat</p>
-						<input id="openchat" type="submit" value="Connect"></input>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class = "footer">
-			<p>Enjoy the game? Support this and other furry games at my patreon https://www.patreon.com/blueballsgames</p>		
-		</div>	
+<!doctype html>
 
-		<script src='./js/main.js'></script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Dormaus Valley</title>
+    <meta name="description" content="Text based furry game">
+    <meta name="author" content="blueballs">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script type="text/javascript" src="./js/lib/aws-sdk-2.240.1.min.js"></script>
+    <script type="text/javascript" src="./js/lib/amazon-cognito-identity.min.js"></script>
+    <script type="text/javascript" src="./js/lib/mqtt-client.min.js"></script>
+
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+
+    <script type="text/javascript" src="./data/bar.js"></script>
+    <script type="text/javascript" src="./data/bar_rooms.js"></script>
+    <script type="text/javascript" src="./data/dormaus_streets.js"></script>
+    <script type="text/javascript" src="./data/dormaus_entrance.js"></script>
+    <script type="text/javascript" src="./data/shop.js"></script>
+    <script type="text/javascript" src="./data/shop_rooms.js"></script>
+    <script type="text/javascript" src="./data/fountain.js"></script>
+    <script type="text/javascript" src="./data/mayors.js"></script>
+    <script type="text/javascript" src="./data/data.js"></script>
+    <script type="text/javascript" src="./data/attributes.js"></script>
+    
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css" media="screen">
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <h1>Dormaus Valley</h1>
+        </div>
+    <div class="subtitle">
+            <h2>You are not logged in</h2>
+            <a id="logout" href="#">Logout</a>
+    </div>
+    </header>
+    <div id = "main">
+        <div id = "iconoverlay" class="hide">
+            <div class = "overlaytitle">Test Title</div>
+            <div class = "overlaytext">Test Text</div>
+        </div>
+        <div id = "left">
+            <div class="centerbox">
+                <div class="dustbox statbox">
+                    <p>DUST:</p>
+                    <p class="dustcount">0</p>
+                </div>
+                <div class="statbox might">
+                    <div class="iconbox might"></div>
+                    <div class="param">MIGHT</div>
+                    <div class="paramnum">
+                        <p class="param">0</p>
+                        <p class="numbonus">+0</p>
+                    </div>
+                    <div class="progressbox">
+                        <div class="progress"></div>					
+                    </div>
+                </div>
+                <div class="statbox magic">
+                    <div class="iconbox magic"></div>
+                    <div class="param">MAGIC</div>
+                    <div class="paramnum">
+                        <p class="param">0</p>
+                        <p class="numbonus">+0</p>
+                    </div>
+                    <div class="progressbox">
+                        <div class="progress"></div>					
+                    </div>
+                </div>
+                <div class="statbox charm">
+                    <div class="iconbox charm"></div>
+                    <div class="param">CHARM</div>
+                    <div class="paramnum">
+                        <p class="param">0</p>
+                        <p class="numbonus">+0</p>
+                    </div>
+                    <div class="progressbox">
+                        <div class="progress"></div>					
+                    </div>
+                </div>
+                <div class="statbox stealth">
+                    <div class="iconbox stealth"></div>
+                    <div class="param">STEALTH</div>
+                    <div class="paramnum">
+                        <p class="param">0</p>
+                        <p class="numbonus">+0</p>
+                    </div>
+                    <div class="progressbox">
+                        <div class="progress"></div>					
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "center">
+            <div class="centerbox">
+                <div id = "tabbox">
+                    <div id="tab1" class="tab active">Explore</div>
+                    <div id="tab2" class="tab">Inventory</div>
+                    <div id="tab3" class="tab">Map</div>
+                    <div id="tab4" class="tab">Conversation</div>
+                </div>
+                <div id = "mainbox">
+                    <div id="box1" class="hidebox">
+                    </div>
+                    <div id="box2" class="hidebox hidden">
+                        <div class="profile">
+                            <div class="profileicon"></div>
+                            <div class="furtherinfo">
+                                <p>This is some information</p>
+                            </div>
+                        </div>
+                        <div class="inventory">
+                            <div class="inventoryequip">
+                                <div class="equipslot">
+                                    <div class="equipicon"></div>
+                                    <p class="equipdesc">Data</p>
+                                </div>
+                                <div class="inventorybag">
+                                    <div class="inventoryslot"></div>
+                                    <div class="inventoryslot"></div>
+                                    <div class="inventoryslot"></div>
+                                </div>
+                            </div>
+                            <div class="inventoryequip">
+                                <div class="equipslot">
+                                    <div class="equipicon"></div>
+                                    <p class="equipdesc">Data</p>
+                                </div>
+                                <div class="inventorybag">
+                                    <div class="inventoryslot"></div>
+                                    <div class="inventoryslot"></div>
+                                    <div class="inventoryslot"></div>
+                                </div>
+                            </div>
+                            <div class="inventorybag">
+                                <div class="inventoryslot"></div>
+                                <div class="inventoryslot"></div>
+                                <div class="inventoryslot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box3" class="hidebox hidden">
+                        <div class = "map"></div>
+                    </div>
+                    <div id="box4" class="hidebox hidden">
+                        <div class = "dialoguemenu">
+                            <div class = "shop hidden"></div>
+                            <div class = "dialogueoptions">
+                                <div class = "dialogueoption">
+                                    <p>There is no one here.</p>
+                                </div>
+                            </div>
+                            <div class = "dialogueresponse hidden">
+                                <div class = "dialoguetext">
+                                    <p>This is some information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "right">
+            <div class="centerbox">
+                <div class="infobox">
+                    <p class="welcomemessage">Welcome Anonymous User</p>
+                    <p>Use the button below to connect to chat</p>
+                    <input id="openchat" type="submit" value="Connect"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "footer">
+        <p>Enjoy the game? Support this and other furry games at my patreon https://www.patreon.com/blueballsgames</p>		
+    </div>	
+
+</body>
 </html>
