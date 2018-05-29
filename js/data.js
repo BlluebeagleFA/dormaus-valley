@@ -103,6 +103,7 @@ var dv_data = {};
         get: get,
         set: set,
         valid: is_valid_session,
+        push: push,
         refresh : refresh
     }
 
