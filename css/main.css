@@ -708,7 +708,6 @@ input {
 }
 
 .dialogueoptions, .dialogueresponse {
-	flex-basis: 100%;
 	display: flex;
 	flex-direction: column;
 }
