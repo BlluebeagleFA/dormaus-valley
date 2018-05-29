@@ -108,7 +108,7 @@ $(document).ready(function() {
             dv_backend.ws_connect(function(err){
 
                 if(err){
-                    console.err(err);
+                    console.error(err);
                     return;
                 }
 
