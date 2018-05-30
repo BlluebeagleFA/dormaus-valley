@@ -49,7 +49,7 @@ $(document).ready(function() {
     		DV.WebServices.cog_register(username,password,email,function(err,result){
 	            if (err) {
 	                console.log(err);
-	                return;
+	                alert(err.message);
 	            }
 	            $("#right").append("<p>Registration email sent. Please don't forget to check your spam folder</p>");
 	        });
