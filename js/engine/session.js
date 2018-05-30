@@ -44,9 +44,9 @@ DV.Session = (function(){ // start of module namespace
             },
             set: function(target, name, value) {
                 target[name] = value;
-                target["last_updated"] = new Date().getTime();
+                local_db["save"]["last_updated"] = new Date().getTime();
                 localStorage.setItem("dv_data",JSON.stringify(local_db));
-                
+
                 in_sync = false;
                 console.log("SET SAVE DATA: " + name);
                 console.log(target[name]);
@@ -199,6 +199,7 @@ DV.Session = (function(){ // start of module namespace
                 console.error(err);
                 return;
             }
+            console.log("Database sync");
         });
     }
 
