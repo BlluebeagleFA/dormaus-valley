@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    if(dv_data.valid()){
-        console.log("Session found, bringing to main page");
+    if(localStorage.getItem("dv_data")){
+        console.log("Session found, bringing to main page.");
         window.location.replace("./main.html");
     }
 	
@@ -17,22 +17,14 @@ $(document).ready(function() {
     	}
     	
     	if (username && password) {
-    		dv_backend.authenticate(username,password,function(err,result){
+    		DV.Session.create_session(username,password,function(err,result){
 
                 if(err){
                     console.error(err);
                     console.log("Oh shit");
                     return;
-                }
-
-	            var accessToken = result.access_token;
-				console.log('access token + ' + accessToken);
-				
-				localStorage.clear();
-                
-                dv_data.set("username",result.username);
-                dv_data.set("token",accessToken);
-                
+				}
+				                
                window.location.replace("./main.html");
             });
     	}
@@ -54,7 +46,7 @@ $(document).ready(function() {
     	}
     	
     	if (username && password && email) {
-    		dv_backend.register(username,password,email,function(err,result){
+    		DV.WebServices.cog_register(username,password,email,function(err,result){
 	            if (err) {
 	                console.log(err);
 	                return;
