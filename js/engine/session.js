@@ -22,28 +22,36 @@ DV.Session = (function(){ // start of module namespace
 
     var Session = {
         get _lambda() {return lambda;},
+        get _local_db() {return local_db    ;},
         get username() {
             return local_db["username"];
         },
         set save(data) {
-            console.log(data);
             local_db["save"] = data;
+            localStorage.setItem("dv_data",JSON.stringify(local_db));
         },
         get save() {
-            return new Proxy(local_db["save"],{
-                get: function(target, name, receiver) {
-                    console.log("GET SAVE DATA: " + target[name]);
-                    return target[name];
-                },
-                set: function(target, name, value) {
-                    console.log("SET SAVE DATA BEFORE: " + target[name]);
-                    target[name] = value;
-                    target["last_updated"] = new Date().getTime();
-                    in_sync = false;
-                    console.log("SET SAVE DATA AFTER: " + target[name]);
-                }
-            });
+            return save_data_proxy(local_db["save"]);
         }
+    }
+
+    function save_data_proxy(obj){
+        return new Proxy(obj,{
+            get: function(target, name, receiver) {
+                if(typeof target[name] == 'object' && target[name] != null)
+                    return save_data_proxy(target[name]);
+                return target[name];
+            },
+            set: function(target, name, value) {
+                target[name] = value;
+                target["last_updated"] = new Date().getTime();
+                localStorage.setItem("dv_data",JSON.stringify(local_db));
+                
+                in_sync = false;
+                console.log("SET SAVE DATA: " + name);
+                console.log(target[name]);
+            }
+        });
     }
 
     function get_session(callback) {
@@ -52,7 +60,7 @@ DV.Session = (function(){ // start of module namespace
             callback(null,Session);
             return;
         }
-        
+
         var local_store = localStorage.getItem("dv_data");
         if(local_store) {
             try {
@@ -107,7 +115,7 @@ DV.Session = (function(){ // start of module namespace
 
                     try {
                         var userdata = JSON.parse(JSON.parse(db_result.Payload)).Item.save;
-                        if(local_db["save"]){
+                        if(local_db["save"]  && typeof local_db["save"] == 'object'){
                             if(userdata["last_updated"]){
                                 if(userdata["last_updated"] > local_db["last_updated"]){
                                     console.warn("Database has newest last updated value, overwriting local copy.");
@@ -119,6 +127,8 @@ DV.Session = (function(){ // start of module namespace
                                 console.warn("No last updated value on the server, using local copy instead");
                             }
                         }else{
+                            console.log(typeof local_db["save"]);
+                            console.warn("No local save data, starting session with database copy.");
                             local_db["save"] = userdata;
                         }
                     } catch (e) {
@@ -127,7 +137,7 @@ DV.Session = (function(){ // start of module namespace
                         console.log(e);
                         console.log(db_result);
 
-                        if(local_db["save"]){
+                        if(local_db["save"] && typeof local_db["save"] == 'object'){
                             console.warn("No data recived from database, using local copy instead.");
                         } else {
                             console.warn("No local save data, and none recived from database, starting session with empty data.");
@@ -184,7 +194,7 @@ DV.Session = (function(){ // start of module namespace
     }
 
     function sync_session() {
-        DV.WebServices.dyna_set(lambda,local_db["username"],JSON.stringify(local_db["save"]),function(err){
+        DV.WebServices.dyna_set(lambda,local_db["username"],local_db["save"],function(err){
             if(err){
                 console.error(err);
                 return;
