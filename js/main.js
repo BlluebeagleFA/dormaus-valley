@@ -160,7 +160,11 @@ function main(err,session) {
     });
     
     function sendHearbeat() {
-    	client.send("global", "heartbeat", {user: username, description: player.description});
+        var descToUse = player.description;
+        if (player.trapped_desc) {
+            descToUse = player.trapped_desc;
+        }
+    	client.send("global", "heartbeat", {user: username, description: descToUse});
     	timeoutUserLog();
     }
     

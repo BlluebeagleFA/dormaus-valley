@@ -31,7 +31,7 @@ var itemdata = {
 		type: "attribute",
 		icon: "speciesicon",
 		title: "Species",
-		description: ["You are an ordinary human.", "You are a big furry bear.", "You are a scrawny little mouse.", "You are a furry, eager dog."]
+		description: ["You are an ordinary human.", "You are a big furry bear.", "You are a scrawny little mouse.", "You are a furry, eager dog.", "You are a tall, winged stone gargoyle.", "You are a soft small living teddy bear."]
 	},
 	//Items
 	wine_1: {
