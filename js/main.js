@@ -92,6 +92,12 @@ function main(err,session) {
     var currentChannel = "local";
     var client;
     
+    var onlineUsers = [username];
+    var userMap = {};
+    userMap[username] = new Date();
+    var userDescriptions = {};
+    userDescriptions[username] = player.description;
+    
     $("#openchat").click(function() {
 
         client = new DV.Socket(session);
@@ -118,6 +124,13 @@ function main(err,session) {
                 };
                 messageQueue[recMessage.area].push(formattedMessage);
                 appendChat(formattedMessage);
+            } else if (packet.type == "heartbeat") {
+            	console.log("heartbeat received");
+            	var heartBeat = packet;
+            	updateWhoIs({
+            		user: heartBeat.user,
+            		description: heartBeat.description
+            	});
             }
 
         };
@@ -129,6 +142,9 @@ function main(err,session) {
                 return;
             }
 
+            setInterval(sendHearbeat, 1000*60);
+            drawWhoIs();
+            
             $("#right .centerbox").empty();
             $("#right .centerbox").append(
                     '<div id="chattabs"><div id="localtab" class="chattab active">Local</div><div id="globaltab" class="tab">Global</div></div>' +
@@ -142,6 +158,43 @@ function main(err,session) {
             client.send("global","message",enter_message);
         });
     });
+    
+    function sendHearbeat() {
+    	client.send("global", "heartbeat", {user: username, description: player.description});
+    	timeoutUserLog();
+    }
+    
+    function updateWhoIs(message) {
+    	userMap[message.user] = new Date();
+    	userDescriptions[message.user] = message.description;
+    	if (!onlineUsers.includes(message.user)) {
+    		onlineUsers.push(message.user);
+    		drawWhoIs();
+    	}
+    };
+    
+    function timeoutUserLog() {
+    	var now = new Date();
+    	var users = [];
+    	for (var i = 0; i < onlineUsers.length; i++) {
+    		var lastTime = userMap[onlineUsers[i]];
+    		if ((Date.parse(now) - Date.parse(lastTime)) < 1000*60) {
+    			users.push(onlineUsers[i]);
+    		}
+    	}
+    	onlineUsers = users;
+    	drawWhoIs();
+    };
+    
+    function drawWhoIs() {
+    	$("#whois").empty();
+    	for (var i = 0; i < onlineUsers.length; i++) {
+    		var description = userDescriptions[onlineUsers[i]] || "Unknown player";
+    		var newUserBox = $('<div class="user" data-description="' + description + '"></div>');
+    		newUserBox.text(onlineUsers[i]);
+    		$("#whois").append(newUserBox);
+    	}
+    }
     
     function appendChat(message) {
         if ((currentChannel == "global" && message.area == "global") || (currentChannel == "local" && message.area == player.area)) {
@@ -357,9 +410,26 @@ function main(err,session) {
     $("#box4").on("mouseenter", ".shopicon", mouseInIcon);
     $("#box4").on("mouseleave", ".shopicon", mouseOutIcon);
     
+    $("#right").on("mouseenter", ".user", mouseInUser);
+    $("#right").on("mouseleave", ".user", mouseOutIcon);
+    
     function displayMap() {
         updateMap();
     };
+    
+    function mouseInUser() {
+        var data = $(this).data();
+        var desc = data.description;
+        
+        $(".overlaytitle").text("");
+        $(".overlaytext").empty();
+        $(".overlaytext").append(desc);
+        $('#iconoverlay').css({
+            "top" : $(this).offset().top + 10,
+            "left" : $(this).offset().left + 110
+        });
+        $("#iconoverlay").removeClass("hide");
+    }
     
     function mouseInIcon() {
         var data = $(this).data();
