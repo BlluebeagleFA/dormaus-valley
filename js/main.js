@@ -7,6 +7,16 @@ function main(err,session) {
     // Check for errors getting a session
     if(err){
         console.error(err);
+
+        // Do some bug tracking
+        var username = "NULL";
+        try{username = JSON.parse(localStorage.getItem("dv_data"))["username"];}
+        catch(e){}
+
+        DV.Tracker.submit(username,err.message,localStorage.getItem("dv_data"));
+
+        // Clear their session and let them try to login agian 
+        DV.Session.clear_session();
         window.location.replace("./index.html");
         return;
     }
