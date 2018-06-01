@@ -1001,8 +1001,22 @@ function main(err,session) {
         var attributes = Object.keys(player.attributes);
         for (var i = 0; i < attributes.length; i++) {
             var att = attributes[i];
+            var att_data = player.attributes[att];
             var invitem = itemdata[att];
-            invData += '<div data-itemid="' + att + '" data-title="' + invitem.title + '" data-desc="' + invitem.description[0] + '" class="inventoryslot ' + invitem.icon + '">' + player.attributes[att].value + '</div>';
+
+            if(att_data.value <= 0){
+                // Skipping attributes less than 1
+                continue;
+            }
+
+            var itemdescription = "";
+            if (att_data.value > invitem.description.length || att_data.value <= 0) {
+                itemdescription = invitem.description[0];
+            } else {
+                itemdescription = invitem.description[att_data.value-1];
+            }
+
+            invData += '<div data-itemid="' + att + '" data-title="' + invitem.title + '" data-desc="' + itemdescription + '" class="inventoryslot ' + invitem.icon + '">' + player.attributes[att].value + '</div>';
         }
         invData += '</div>';
         
