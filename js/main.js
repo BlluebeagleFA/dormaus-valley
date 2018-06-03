@@ -577,9 +577,9 @@ function main(err,session) {
                 var x = area.position[0]*width;
                 var y = area.position[1]*width;
                 if (areaId == player.area) {
-                    $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
+                    $(".map").append('<div title="' + area.header + '" style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
                 } else {
-                    $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
+                    $(".map").append('<div title="' + area.header + '" style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
                 }
 //		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
             }
