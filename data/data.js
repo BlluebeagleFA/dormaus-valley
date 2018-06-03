@@ -7,10 +7,13 @@ var datafile = {
     	"shop": area_shop,
     	"shop_rooms": area_shop_rooms,
     	"fountain": area_fountain,
+    	"marketplace": area_marketplace,
     	"mayor": area_mayors,
     	"hotel": area_hotel,
     	"hotel_rooms": area_hotel_rooms,
     	"churchyard": area_churchyard,
-    	"church": area_church
+    	"church": area_church,
+    	"alley": area_alleyway,
+    	"pumpkins": area_pumpkins
     }
 }
