@@ -1169,7 +1169,7 @@ function main(err,session) {
             var key = itemKeys[i];
             if (DV.Data.item_data[key] && ((DV.Data.item_data[key].slot == slot) || (DV.Data.item_data[key].slot == null && slot == null))) {
                 var item_data = JSON.parse(JSON.stringify(DV.Data.item_data[key]));
-                item_data = player.items[key];
+                item_data.quantity = player.items[key];
                 item_data.itemId = key;
                 results.push(item_data);
             }
