@@ -1,4 +1,4 @@
-var area_bar_rooms = {
+var area = {
         "title": "bar_rooms",
         "position": [0.72,0.71],
         "header": "The Fur and Feather Stalls",

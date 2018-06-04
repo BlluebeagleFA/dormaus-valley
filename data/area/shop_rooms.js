@@ -1,4 +1,4 @@
-var area_shop_rooms = {
+var area = {
         "title": "shop_rooms",
         "position": [0.61,0.72],
         "header": "The Want of a Nail Back Rooms",

@@ -1,4 +1,4 @@
-var area_fountain = {
+var area = {
         "title": "fountain",
         "position": [0.24,0.80],
         "header": "Fountain Plaza",

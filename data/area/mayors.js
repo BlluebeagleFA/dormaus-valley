@@ -1,4 +1,4 @@
-var area_mayors = {
+var area = {
         "title": "mayors",
         "position": [0.15,0.71],
         "header": "Town Hall",

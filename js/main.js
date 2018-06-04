@@ -29,6 +29,9 @@ function main(err,session) {
     
     $(".subtitle h2").text("Welcome back, " + username);
     $(".welcomemessage").text("Welcome " + username);
+
+    // Cache the area data instead of fetching it everytime
+    var area;
     
     var player = {
         area: "bar",
@@ -301,7 +304,7 @@ function main(err,session) {
     });
     
     $( window ).resize(function() {
-        displayMap();
+        //displayMap();
     });
     
     function switchTabs(id) {
@@ -315,7 +318,6 @@ function main(err,session) {
             $("#box2").removeClass("hidden");
         } else if (id == "tab3") {
             $("#box3").removeClass("hidden");
-            displayMap();
         } else if (id == "tab4") {
             $("#box4").removeClass("hidden");
         }
@@ -376,8 +378,8 @@ function main(err,session) {
         var data = $(this).data();
         var itemtype = data.item;
         var quantity = $(".buyfield." + itemtype).val();
-        if (itemdata[itemtype] && quantity && quantity > 0) {
-            var iteminfo = itemdata[itemtype];
+        if (DV.Data.item_data[itemtype] && quantity && quantity > 0) {
+            var iteminfo = DV.Data.item_data[itemtype];
             var price = iteminfo.value*2*quantity;
             if (player.dust >= price) {
                 player.dust -= price;
@@ -393,8 +395,8 @@ function main(err,session) {
         var data = $(this).data();
         var itemtype = data.item;
         var quantity = $(".sellfield." + itemtype).val();
-        if (itemdata[itemtype] && quantity && quantity > 0) {
-            var iteminfo = itemdata[itemtype];
+        if (DV.Data.item_data[itemtype] && quantity && quantity > 0) {
+            var iteminfo = DV.Data.item_data[itemtype];
             var price = iteminfo.value*quantity;
             if (player.items[itemtype] >= quantity) {
                 player.dust += price;
@@ -441,7 +443,7 @@ function main(err,session) {
         var desc = data.desc;
         var itemid = data.itemid;
         
-        var itemblock = itemdata[itemid];
+        var itemblock = DV.Data.item_data[itemid];
         
         if (itemblock && itemblock.attributes) {
             var atts = Object.keys(itemblock.attributes);
@@ -526,31 +528,31 @@ function main(err,session) {
         var bonus = 0;
         var item;
         if (player.equipment.head) {
-            item = itemdata[player.equipment.head];
+            item = DV.Data.item_data[player.equipment.head];
             if (item.attributes[stat]) {
                 bonus += item.attributes[stat];
             }
         }
         if (player.equipment.clothes) {
-            item = itemdata[player.equipment.clothes];
+            item = DV.Data.item_data[player.equipment.clothes];
             if (item.attributes[stat]) {
                 bonus += item.attributes[stat];
             }
         }
         if (player.equipment.weapon) {
-            item = itemdata[player.equipment.weapon];
+            item = DV.Data.item_data[player.equipment.weapon];
             if (item.attributes[stat]) {
                 bonus += item.attributes[stat];
             }
         }
         if (player.equipment.feet) {
-            item = itemdata[player.equipment.feet];
+            item = DV.Data.item_data[player.equipment.feet];
             if (item.attributes[stat]) {
                 bonus += item.attributes[stat];
             }
         }
         if (player.equipment.ally) {
-            item = itemdata[player.equipment.ally];
+            item = DV.Data.item_data[player.equipment.ally];
             if (item.attributes[stat]) {
                 bonus += item.attributes[stat];
             }
@@ -566,21 +568,22 @@ function main(err,session) {
             $("#box3").empty();
             $("#box3").append('<div class="map"></div>');
             var width = $("#box3").width();
-            $(".map").width(width);
-            $(".map").height(width);
+            $(".map").width("100%");
+            $(".map").css("padding-top","100%");
             $(".map").empty();
-            var areaIds = Object.keys(datafile.areas);
+            var areaIds = Object.keys(DV.Data.areas);
             var width = $(".map").width();
             for (var i = 0; i < areaIds.length; i++) {
                 var areaId = areaIds[i];
-                var area = datafile.areas[areaId];
-                var x = area.position[0]*width;
-                var y = area.position[1]*width;
-                if (areaId == player.area) {
-                    $(".map").append('<div title="' + area.header + '" style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
-                } else {
-                    $(".map").append('<div title="' + area.header + '" style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
-                }
+                DV.Data.load_area(areaId,function(err,area_data){
+                    var x = area_data.position[0]*100;
+                    var y = area_data.position[1]*100;
+                    if (areaId == player.area) {
+                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
+                    } else {
+                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton" data-area="' + areaId + '"></div>');
+                    }
+                });
 //		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
             }
         }
@@ -669,7 +672,6 @@ function main(err,session) {
     }
     
     function displayEvent(eventId) {
-        var area = datafile.areas[player.area];
         var event = null;
         for (var i = 0; i < area.events.length; i++) {
             if (area.events[i].id == eventId) {
@@ -715,7 +717,7 @@ function main(err,session) {
             for (var i = 0; i < outcome.outcomes.length; i++) {
                 var quantity = 0;
                 
-                var oAtt = itemdata[outcome.outcomes[i].parameter];
+                var oAtt = DV.Data.item_data[outcome.outcomes[i].parameter];
                 if (outcome.outcomes[i].quantity) {
                     quantity = outcome.outcomes[i].quantity;
                 } else {
@@ -785,7 +787,7 @@ function main(err,session) {
         var valid = true;
         for (var i = 0; i < event.requirements.length; i++) {
             var req = event.requirements[i];
-            var oAtt = itemdata[req.parameter];
+            var oAtt = DV.Data.item_data[req.parameter];
             var value;
             if (oAtt.type == "suffering") {
                 value = player.suffering[req.parameter].value;
@@ -822,7 +824,7 @@ function main(err,session) {
     }
     
     function addValuesToPlayer(parameter, quantity, type, max) { //returns [oldvalue, newvalue]
-        var oAtt = itemdata[parameter];
+        var oAtt = DV.Data.item_data[parameter];
         if (oAtt.type == "suffering") {
             var value = player.suffering[parameter].value;
             if (type == "add") {
@@ -945,7 +947,6 @@ function main(err,session) {
     };
     
     function displayConversation(npcId) {
-        var area = datafile.areas[player.area];
         var npc = null;
         for (var i = 0; i < area.npcs.length; i++) {
             if (area.npcs[i].id == npcId) {
@@ -970,7 +971,7 @@ function main(err,session) {
                 if (npc.shop.trades) {
                     for (var i = 0; i < npc.shop.trades.length; i++) {
                         var itemtype = npc.shop.trades[i];
-                        var shopitem = itemdata[itemtype];
+                        var shopitem = DV.Data.item_data[itemtype];
                         var quantity = player.items[itemtype] || 0;
                         $(".dialoguemenu .shop").append(
                             '<div class="shoprow">' +
@@ -1012,7 +1013,6 @@ function main(err,session) {
     };
     
     function displayConvResponse(npcId, index) {
-        var area = datafile.areas[player.area];
         var npc = null;
         for (var i = 0; i < area.npcs.length; i++) {
             if (area.npcs[i].id == npcId) {
@@ -1086,7 +1086,7 @@ function main(err,session) {
         for (var i = 0; i < attributes.length; i++) {
             var att = attributes[i];
             var att_data = player.attributes[att];
-            var invitem = itemdata[att];
+            var invitem = DV.Data.item_data[att];
 
             if(att_data.value <= 0){
                 // Skipping attributes less than 1
@@ -1106,19 +1106,19 @@ function main(err,session) {
         
         invData += '<div class="inventorybag">';
         if (player.suffering.pain.value > 0) {
-            var invitem = itemdata.pain;
+            var invitem = DV.Data.item_data.pain;
             invData += '<div data-title="' + invitem.title + '" data-desc="' + invitem.description[0] + '" class="inventoryslot ' + invitem.icon + '">' + player.suffering.pain.value + '</div>';
         }
         if (player.suffering.guilt.value > 0) {
-            var invitem = itemdata.guilt;
+            var invitem = DV.Data.item_data.guilt;
             invData += '<div data-title="' + invitem.title + '" data-desc="' + invitem.description[0] + '" class="inventoryslot ' + invitem.icon + '">' + player.suffering.guilt.value + '</div>';
         }
         if (player.suffering.outcast.value > 0) {
-            var invitem = itemdata.outcast;
+            var invitem = DV.Data.item_data.outcast;
             invData += '<div data-title="' + invitem.title + '" data-desc="' + invitem.description[0] + '" class="inventoryslot ' + invitem.icon + '">' + player.suffering.outcast.value + '</div>';
         }
         if (player.suffering.curse.value > 0) {
-            var invitem = itemdata.curse;
+            var invitem = DV.Data.item_data.curse;
             invData += '<div data-title="' + invitem.title + '" data-desc="' + invitem.description[0] + '" class="inventoryslot ' + invitem.icon + '">' + player.suffering.curse.value + '</div>';
         }
         invData += '</div>';
@@ -1133,8 +1133,8 @@ function main(err,session) {
         var icon = '';
         var title = '';
         var desc = '';
-        if (itemId && itemdata[itemId]) {
-            var item = itemdata[itemId];
+        if (itemId && DV.Data.item_data[itemId]) {
+            var item = DV.Data.item_data[itemId];
             icon = item.icon;
             title = item.title;
             desc = item.description[0];
@@ -1165,11 +1165,11 @@ function main(err,session) {
         var itemKeys = Object.keys(player.items);
         for (var i = 0; i < itemKeys.length; i++) {
             var key = itemKeys[i];
-            if (itemdata[key] && ((itemdata[key].slot == slot) || (itemdata[key].slot == null && slot == null))) {
-                var itemData = JSON.parse(JSON.stringify(itemdata[key]));
-                itemData.quantity = player.items[key];
-                itemData.itemId = key;
-                results.push(itemData);
+            if (DV.Data.item_data[key] && ((DV.Data.item_data[key].slot == slot) || (DV.Data.item_data[key].slot == null && slot == null))) {
+                var item_data = JSON.parse(JSON.stringify(DV.Data.item_data[key]));
+                item_data = player.items[key];
+                item_data.itemId = key;
+                results.push(item_data);
             }
         }
         return results;
@@ -1180,58 +1180,61 @@ function main(err,session) {
     }
     
     function displayArea(areaName) {
-        var area = datafile.areas[areaName];
-        $("#box1").empty();
-        $("#box1").append(
-            '<div class= "areadescriptor">' +
-            '<h1>' + area.header +'</h1>' +
-            '<h2>' + area.subheader +'</h2>' +
-            '</div>'
-        );
-        $("#box1").append('<div class= "npclist">');
-        for (var i = 0; i < area.npcs.length; i++) {
-            var npc = area.npcs[i];
+        DV.Data.load_area(areaName,function(err,area_data){
+            area = area_data;
+            $("#box1").empty();
             $("#box1").append(
-                '<div id="' + npc.id +'" class="npc">' +
-                '<div class="npcicon ' + npc.icon + '"></div>' +
-                '<p class="npcname">' + npc.name + '</p>' +
+                '<div class= "areadescriptor">' +
+                '<h1>' + area.header +'</h1>' +
+                '<h2>' + area.subheader +'</h2>' +
                 '</div>'
             );
-        }
-        $("#box1").append('</div>');
-        for (var i = 0; i < area.events.length; i++) {
-            var event = area.events[i];
-            if (isEventValid(event)) {
-                var chance = Math.floor(getSuccessChance(event)*100);
-                if (event.type != "statcheck") {
-                    chance = 100;
-                }
-                if (eventValid(event, player)) {
-                    newHtml = '<div class = "event">' +
-                            '<div class="eventicon ' + event.icon + '"></div>' +
-                            '<div class="eventbox">' +
-                                '<div class="eventdetails">' +
-                                    '<p class="eventtitle">' + event.title + '</p>' +
-                                    '<div class="eventconfirm"><div class="eventconfirmtext">' +
-                                        '<p>' + event.subtitle + '</p></div>' +
-                                        '<div class="eventbuttonholder">';
-                    if (event.type == "statcheck") {
-                        newHtml += '<p>' + chance + '%</p>' +
-                                '<div class="eventminiicon ' + event.stat + '"></div>';
+            $("#box1").append('<div class= "npclist">');
+            for (var i = 0; i < area.npcs.length; i++) {
+                var npc = area.npcs[i];
+                $("#box1").append(
+                    '<div id="' + npc.id +'" class="npc">' +
+                    '<div class="npcicon ' + npc.icon + '"></div>' +
+                    '<p class="npcname">' + npc.name + '</p>' +
+                    '</div>'
+                );
+            }
+            $("#box1").append('</div>');
+            for (var i = 0; i < area.events.length; i++) {
+                var event = area.events[i];
+                if (isEventValid(event)) {
+                    var chance = Math.floor(getSuccessChance(event)*100);
+                    if (event.type != "statcheck") {
+                        chance = 100;
                     }
-                    newHtml += '<div class="okbuttonbox">' +
-                        '<input data-event = "' + event.id +'" class="openevent" type="submit" value="Ok"></input>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>' +
-                        '</div>';
-                    $("#box1").append(newHtml);
+                    if (eventValid(event, player)) {
+                        newHtml = '<div class = "event">' +
+                                '<div class="eventicon ' + event.icon + '"></div>' +
+                                '<div class="eventbox">' +
+                                    '<div class="eventdetails">' +
+                                        '<p class="eventtitle">' + event.title + '</p>' +
+                                        '<div class="eventconfirm"><div class="eventconfirmtext">' +
+                                            '<p>' + event.subtitle + '</p></div>' +
+                                            '<div class="eventbuttonholder">';
+                        if (event.type == "statcheck") {
+                            newHtml += '<p>' + chance + '%</p>' +
+                                    '<div class="eventminiicon ' + event.stat + '"></div>';
+                        }
+                        newHtml += '<div class="okbuttonbox">' +
+                            '<input data-event = "' + event.id +'" class="openevent" type="submit" value="Ok"></input>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+                        $("#box1").append(newHtml);
+                    }
                 }
             }
-        }
+        });
     };
     
     displayArea(player.area);
+    displayMap();
 }

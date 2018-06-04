@@ -1,4 +1,4 @@
-var area_bar_rooms = {
+var area = {
         "title": "tartarus",
         "position": null,
         "header": "Somewhere dark and cold",
@@ -10,9 +10,11 @@ var area_bar_rooms = {
         		"subtitle": "Home is a long way from here. But you remember the way, now.",
         		"type": "random",
         		"requirements": [
-        			"parameter": "pain",
-        			"value": 1,
-        			"comparison": "less"
+                    {
+                        "parameter": "pain",
+        			    "value": 1,
+        			    "comparison": "less"
+                    }
         		],
         		"results": {
         			"success": {
@@ -27,9 +29,11 @@ var area_bar_rooms = {
         		"subtitle": "There are people waiting for you.",
         		"type": "random",
         		"requirements": [
-        			"parameter": "grizz_connection",
-        			"value": 1,
-        			"comparison": "greater"
+                    {
+                        "parameter": "grizz_connection",
+                        "value": 1,
+                        "comparison": "greater"
+                    }
         		],
         		"results": {
         			"success": {

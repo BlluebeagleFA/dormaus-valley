@@ -1,4 +1,4 @@
-var area_dormaus_entrance = {
+var area = {
         "title": "dormaus_entrance",
         "position": [0.84,0.85],
         "header": "Dormaus Gates",

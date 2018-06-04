@@ -1,4 +1,4 @@
-var area_dormaus_streets = {
+var area = {
         "title": "bar_rooms",
         "position": [0.74,0.79],
         "header": "The Streets of Dormaus",

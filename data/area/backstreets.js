@@ -1,8 +1,8 @@
-var area_bar = {
-        "title": "bar",
-        "position": [0.76,0.74],
-        "header": "The Fur and Feather Bar",
-        "subheader": 'The bar is dim compared to the streets outside, but a roaring fire and many flickering candles gives it a homely and welcoming feeling. A massive dire-bear-skin rug lies next to the fireplace, and behind the bar, a dizzying array of colourful spirits are begging to be tasted.',
+var area = {
+        "title": "backstreets",
+        "position": [0.40,0.60],
+        "header": "Backstreets",
+        "subheader": 'The back streets of Dormaus are less busy than the rest. The ground here splits, one path rising up and the other moving down. On both, small cottages stand, each with horseshoes on the doors. At the bottom of the southern lane, a small village post office is open for business.',
         "events": [
         	{
                 "id": "pub_cleantables",
