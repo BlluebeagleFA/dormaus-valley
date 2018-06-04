@@ -1,5 +1,5 @@
 var area = {
-        "title": "bar_rooms",
+        "title": "dormaus_streets",
         "position": [0.74,0.79],
         "header": "The Streets of Dormaus",
         "subheader": 'The streets of Dormaus Town are paved with smooth cobblestones, and the buildings around you are charming thatched cottages with colourful flowers blooming from every windowsill, and from the many hanging baskets. You can see a plaza to the west, and a large multi-storey pub to the north. A set of wooden stairs lead up to a second-floor general store.',

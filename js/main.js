@@ -581,9 +581,9 @@ function main(err,session) {
                     var x = area_data.position[0]*100;
                     var y = area_data.position[1]*100;
                     if (areaId == player.area) {
-                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton currentareabutton" data-area="' + areaId + '"></div>');
+                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton currentareabutton" data-area="' + area_data.title + '"></div>');
                     } else {
-                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton" data-area="' + areaId + '"></div>');
+                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
                     }
                 });
 //		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
@@ -1183,6 +1183,12 @@ function main(err,session) {
     
     function displayArea(areaName) {
         DV.Data.load_area(areaName,function(err,area_data){
+            if(err){
+                console.log(err);
+                player.area = "dormaus_entrance";
+                displayArea(data.area);
+                return;
+            }
             area = area_data;
             $("#box1").empty();
             $("#box1").append(

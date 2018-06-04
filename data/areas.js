@@ -10,7 +10,7 @@ DV.Data.areas = {
 	"shop_rooms": "./data/area/shop_rooms.js",
 	"fountain": "./data/area/fountain.js",
 	"marketplace": "./data/area/marketplace.js",
-	"mayor": "./data/area/mayors.js",
+	"mayors": "./data/area/mayors.js",
 	"hotel": "./data/area/hotel.js",
 	"hotel_rooms": "./data/area/hotel_rooms.js",
 	"churchyard": "./data/area/churchyard.js",
