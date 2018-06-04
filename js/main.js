@@ -4,6 +4,8 @@ $(document).ready(function() {
 
 function main(err,session) {
 
+    $("#mainloader").addClass("hide");
+
     // Check for errors getting a session
     if(err){
         console.error(err);
