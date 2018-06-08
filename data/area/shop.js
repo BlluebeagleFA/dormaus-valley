@@ -81,12 +81,12 @@ var area = {
                     }
                 }
             },{
-                "id": "daddy_mikhail",
+                "id": "daddy_mikhail_male",
                 "title": "Daddy Mikhail",
                 "subtitle": 'As you browse the little shop, you start to notice little photographs tucked in between the goods and trinkets. They all contain the tall and distinguished dog shopkeeper, Mikhail, but he\'s with a different younger dog in each image. His stern grey-streaked moustache and silver-dusted fur is contrasted by the youthful energy of the other dogs, all the same breed as him, and all roughly in their twenties, with similar fur patterns and markings. </p>You get curious, and ask Mikhail what the photos are of. He looks up from a drawer he is organising, and smiles. </p>"Those are my sons, of course. I have many eager and loyal sons, and they\'d do anything for their daddy." That last word makes you blush a little, and he raises one bushy eyebrow. </p>"Is something the matter, son?" he says, putting emphasis on the last word. His eyes stare between your legs, and a bit of a smirk makes his fluffy muzzle twitch. "If I didn\'t know better, I\'d think you wanted a daddy of your own, boy. Is that what you want? To come sit on daddy\'s lap?" </p>Do you admit your arousal to the handsome german shepherd?',
                 "type": "random",
                 "requirements": [
-                	{
+                    {
                         "parameter": "mikhail_connection",
                         "value": 0,
                         "comparison": "greater" //default greater
@@ -95,12 +95,53 @@ var area = {
                         "parameter": "species",
                         "value": 4,
                         "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
                     }
                 ],
                 "icon": "mikhailicong",
                 "results": {
                     "mikhailsex": {
                         "text": 'Mikhail sits down on a large leather armchair, spreads his legs, and pats his thigh. “Come on now, boy. Show your daddy some love.” You walk over nervously, and sit down carefully on the dog\'s lap, feeling the bulge of his cock pressing out from his pants. </p>He wraps his powerful arms around you, and presses you against his chest. You didn\'t realise how tall he was. He looks down at you through his glasses, and leans forward. His moustache tickles your face as his long red tongue slides into your mouth. As he kisses you, his furry arm strokes along your chest, up and down, teasing and stroking you. Then it slides down to his pants, and reaches inside, to slowly pull out his cock. It stands proud and erect in the air, long and firm. </p>“Tell me you want it, son. Say you want daddy\'s cock.” You gulp and pant, then find yourself saying it out loud. “I want daddy\'s cock”, you stammer, and he growls with lust as he lifts you up, then pulls you down as he plunges his cock into your ass. </p>Your rear stretches around the older dog\'s shaft, and he growls a little as he thrusts in and out, his cock throbbing within you. Your heart pounds and your face is flushed with the pleasure of his shaft ramming your ass. You can feel your tailbone start to twitch, wiggling as it grows. It lengthens out behind you, and starts to wag from side to side, before growing fluffy fur. That same fur spreads up your back, where Mikhail strokes his clawed hands through it, admiring the same patterns and colours as his own furry body. Your face grows, pushing into his kiss as you grow a muzzle of your own. Your ears grow longer, develop fur, then flop over like a dog\'s. Your hands and feet throb for a moment, forming rough pawpads, and your nails become hard and sharp as they transform into claws. </p>Your whole body is changing, taking on aspects of your daddy\'s form, as you become a dog, the spitting image of Mikhail as a younger man. </p>He chuckles, and grips your shaft, stroking and pumping it as it turns red and pointed. The base swells out and inflates, forming a doggy knot, which he squeezes firmly in his hand. You whimper and bark with lust, and he growls at you. </p>“Cum for your daddy, pup.” You cannot disobey. You howl and bark, your cock pulsing and spraying out a thick load of cum into the air, that splatters over his shirt and over your furry chest. Then he holds you firmly and growls, and you feel his own cock release its musky load as a rush of heat deep in your rear. </p>You are left panting and dizzy, until he carefully pulls his cock free from your rear and allows you to stand. </p>“Good boy, son. You make your daddy proud.” he says. Your tail wags happily to hear your dad\'s praise.',
+                        "descriptionchange": "This adventurer is a furry, eager dog.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 4,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "daddy_mikhail_female",
+                "title": "Daddy Mikhail",
+                "subtitle": 'As you browse the little shop, you start to notice little photographs tucked in between the goods and trinkets. They all contain the tall and distinguished dog shopkeeper, Mikhail, but he\'s with a different younger dog in each image. His stern grey-streaked moustache and silver-dusted fur is contrasted by the youthful energy of the other dogs, all the same breed as him, and all roughly in their twenties, with similar fur patterns and markings. </p>You get curious, and ask Mikhail what the photos are of. He looks up from a drawer he is organising, and smiles. </p>“Those are my sons, of course. I have many eager and loyal sons, and they\'d do anything for their daddy.” That last word makes you blush a little, and he raises one bushy eyebrow. </p>“Is something the matter, lass?” he says curiously. His eyes stare deep into yours, and a bit of a smirk makes his fluffy muzzle twitch. “If I didn\'t know better, I\'d think you wanted a daddy of your own, lass. Is that what you want? To come sit on daddy\'s lap?” </p>Do you admit your arousal to the handsome german shepherd?',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "mikhail_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "species",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "mikhailicong",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'Mikhail sits down on a large leather armchair, spreads his legs, and pats his thigh. “Come on now, girl. Show your daddy some love.” You walk over nervously, and sit down carefully on the dog\'s lap, feeling the bulge of his cock pressing out from his pants. </p>He wraps his powerful arms around you, and presses you against his chest. You didn\'t realise how tall he was. He looks down at you through his glasses, and leans forward. His moustache tickles your face as his long red tongue slides into your mouth. As he kisses you, his furry arm strokes along your chest, up and down, teasing and stroking you. Then it slides down to his pants, and reaches inside, to slowly pull out his cock. It stands proud and erect in the air, long and firm. </p>“Tell me you want it, girl. Say you want daddy\'s cock.” You gulp and pant, then find yourself saying it out loud. “I want daddy\'s cock”, you stammer, and he growls with lust as he lifts you up, then pulls you down as he plunges his cock into your pussy. </p>You feel stretched around the older dog\'s shaft, and he growls a little as he thrusts in and out, his cock throbbing within you and sliding along your sensitive inner walls. Your heart pounds and your face is flushed with the pleasure of his shaft ramming you rough and hard. You can feel your tailbone start to twitch, wiggling as it grows. It lengthens out behind you, and starts to wag from side to side, before growing fluffy fur. That same fur spreads up your back, where Mikhail strokes his clawed hands through it, admiring the same patterns and colours as his own furry body. Your face grows, pushing into his kiss as you grow a muzzle of your own. Your ears grow longer, develop fur, then flop over like a dog\'s. Your hands and feet throb for a moment, forming rough pawpads, and your nails become hard and sharp as they transform into claws. </p>Your whole body is changing, taking on aspects of your daddy\'s form, as you become a dog, a beautiful daughter for your loving daddy. </p>He chuckles, and strokes your breasts, squeezing and gently teasing them as they are covered in fur. You whimper and bark with lust, and he growls at you. </p>“You love your daddy, don\'t you, pup. Howl for me.” You cannot disobey. You howl and bark, and as you do, the pleasure of his cock deep inside you becomes too much, and your body heats up as a shuddering orgasm rolls from your toes to your head, filling you completely. Then he holds you firmly and growls, and you feel his own cock release its musky load as a rush of heat deep into your pussy. </p>You are left panting and dizzy, until he carefully pulls his cock free from you and allows you to stand. </p>“Good girl, lass. You make your daddy proud.” he says. Your tail wags happily to hear your dad\'s praise.',
                         "descriptionchange": "This adventurer is a furry, eager dog.",
                         "outcomes": [
                             {

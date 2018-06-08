@@ -680,6 +680,11 @@ function main(err,session) {
                 event = area.events[i];
             }
         }
+        for (var i = 0; i < global_area.events.length; i++) {
+            if (global_area.events[i].id == eventId) {
+                event = global_area.events[i];
+            }
+        }
         if (event) {
             var outcome = getEventResolution(event);
             
@@ -799,6 +804,8 @@ function main(err,session) {
                 } else {
                     value = player.attributes[req.parameter].value;
                 }
+                var equipBonus = getItemBonus(req.parameter);
+                value += equipBonus;
             } else if (oAtt.type == "item") {
                 if (!player.items[req.parameter]) {
                     value = 0;
@@ -1190,6 +1197,7 @@ function main(err,session) {
                 return;
             }
             area = area_data;
+            var areaEvents = global_area.events.concat(area.events);
             $("#box1").empty();
             $("#box1").append(
                 '<div class= "areadescriptor">' +
@@ -1208,8 +1216,8 @@ function main(err,session) {
                 );
             }
             $("#box1").append('</div>');
-            for (var i = 0; i < area.events.length; i++) {
-                var event = area.events[i];
+            for (var i = 0; i < areaEvents.length; i++) {
+                var event = areaEvents[i];
                 if (isEventValid(event)) {
                     var chance = Math.floor(getSuccessChance(event)*100);
                     if (event.type != "statcheck") {

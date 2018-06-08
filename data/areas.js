@@ -16,5 +16,6 @@ DV.Data.areas = {
 	"churchyard": "./data/area/churchyard.js",
 	"church": "./data/area/church.js",
 	"alley": "./data/area/alleyway.js",
-	"pumpkins": "./data/area/pumpkins.js"
+	"pumpkins": "./data/area/pumpkins.js",
+	"backstreets": "./data/area/backstreets.js"
 }

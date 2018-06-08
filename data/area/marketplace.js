@@ -4,7 +4,33 @@ var area = {
         "header": "Dormaus Marketplace",
         "subheader": 'The marketplace is busy every time of day. Traders walk through, leading strange beasts of burden laden with goods, from walking birds to four-legged armored monsters. Colourful tents ring the marketplace, and between them, merchants hawk their wares from carpets or hand baskets.',
         "events": [
-        	{
+            {
+                "id": "guest_fursuit",
+                "title": "The Fursuit Store",
+                "subtitle": 'You find yourself in front of an unfamiliar building, unsure of how you got there and feeling a vague sense of Deja Vu. The street you are on is eerily quiet, not a single other person around you for as far as you can see. All the other buildings around you feeling very empty and devoid of life. The building in front of you resembles some sort of store, with large windows and a glass door with a “We are Open” sign hanging on the inside. When you try to glance through the windows, you find the inside of the store to be quite dim and through the glass you can make out what looks like suits or costumes hanging from some racks. You back up and notice a sign above the door, which you can almost swear was not there before. The sign has text in a comic sans font which says “Fur-Real Costume Shop” and below the text is a picture of a really exaggerated blue cartoon fox winking. Do you decide to enter the shop?',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 7,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You decide to sate your curiosity and enter the unusual shop. When you open the door a bell above you rings, and you walk forward into the dimly lit shop. All around you, you see mascot costumes hanging from the racks. They are really colorful ranging from bright neon blues and reds to dimmer brown and whites. The heads of the costumes appear to be on some shelves on the left side of the store. Their eyes blankly stare at you with perpetual smiles on their faces. You decide to walk around to shop to see if you can find the store owner or a desk, but all you find, other than more of the costumes, is an intricate gilded mirror in the back of the store.</p>After a while of waiting in the store, you decide to leave, confident that no store clerk or owner is going to arrive. You make it all the way across the store and start to open the door when you hear a large crash behind you. When you turn around you see one of the costumes, fallen on the ground. </p>Out of common courtesy you go to put the costume back where it belongs. However when your hand touches the surprisingly soft fur, you instantly have an urge to try the suit on. You pick it up and start to look at it. It is a blue and white furred costume with a tail in the back and attached arm and leg paws. You check a tag on the bottom of the tail and realize that the costume is meant to be an arctic fox. You look around to make sure no one is around and with the suit in your hands you walk toward the mirror. You hesitate for a second, staring into the smooth inside of the suit not sure why you are doing this, but nevertheless you begin to slip on the suit. The inside feels warm and smooth to the touch, and it slides perfectly onto your body. </p>Zipped up, the suit fits perfectly upon your body, almost as if it was made specifically for you. You look in the mirror and move around, seeing how it looks on you. Other than your head, which is contrasting with the rest of your body, you think that you look great. Everything below looks like a larger than life fox. Your “paws” are slightly oversized, your “tail” is extremely bushy and sways almost lifelike when you move, and the white and blue color palette accentuates the suit on your body. </p>You start to lose track of the time as you keep posing and turning with the suit on your body, it becoming an obsession. After a while you decide it is finally time to take off the suit and you attempt to pull down the zipper. As you do, you find that it is stuck and you can’t pull it down. No matter how hard you pull down, it doesn’t budge an inch. You keep trying, slight panic swelling up from within you.</p>Then a calm thought, not entirely your own, enters your mind. “The suit is not complete…” At this you realize what was off all along. You were missing your head. You immediately run to the rack of heads you saw before and search for yours. It doesn’t take long, the right one standing out as bright as day. In the middle of the shelves, it is blue and white, like the rest of your body. The large cartoon eyes and gleaming smile practically telling you to put it on then and there. And so you do. You close your eyes and take the mask off the shelf, slipping it onto your head. It fits perfectly, like the rest of the suit, and slipping it on makes you feel a comfort you never felt before. Unknown to you, the head of the suit merged with the suit’s body, becoming one over your own.</p>At this you finally feel complete and whole, the suit filling the emptiness inside you. Conversely, your body begins to disappear under the suit, becoming a void beneath the cloth of the costume. Your “body” becomes lighter and hollower, just as it always was meant to be. You open your “eyes” and look around the shop. Then you look down at the zipper which confounded you earlier, and pull it down with ease. Inside your suit there is nothing but the inner black lining, and you feel happy. After a while you leave the shop content, but slightly confused why you went to a costume shop since as far as you can remember you can remember, you were always a walking fursuit. [Guest event from CJMPinger]',
+                        "descriptionchange": 'This adventurer is a living fursuit. Inside they are hollow and lined with fabric, and outside they are a cartoonish white and blue arctic fox with large eyes, paws, and a bushy tail.',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 7,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "market_random",
                 "title": "Wander the Market",
                 "subtitle": "There are many peddlers selling their wares, along with a number of brick-and-mortar stores selling odd things.",

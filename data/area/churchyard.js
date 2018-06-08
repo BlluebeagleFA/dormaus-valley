@@ -31,6 +31,56 @@ var area = {
                     }
                 }
             },{
+                "id": "wolf_ghost_male",
+                "title": "Read a Gravestone",
+                "subtitle": 'One of the stones in the churchyard draws your eye. For a moment, you thought you saw someone sitting on it.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You feel a chill in your spine, and shudder as you turn to look at a mossy gravestone at the side of the churchyard. Something makes the hair on the back of your neck stand up with trepidation. You brush the moss away, but the name on the stone is unreadable. When you stand up, you have a powerful feeling that there is someone behind you. You turn, and see the shadowy outline of a wolf only slightly visible in the air. His eyes are just glowing yellow lights. </p>Before you can react, he steps forward, his insubstantial body moving into yours with an icy cold, tingly sensation. Your struggle to move, your body no longer reacting under your own power. Your face twists into a new expression, a cruel and smug grin. You feel your body moving seemingly of its own accord, as your hand strokes down your belly and grips around your cock. You pant and moan, with a rough and scratchy voice. You are pounding your cock like you haven\'t felt sexual pleasure in decades. The intensity of your strokes are almost painful, and before long, you are panting and shaking. Your cock spurts and shakes, spraying hot white jizz all over the gravestone. As the sexual pleasure fades, you feel a coldness move out of you, and you see the grinning face of a shadowy wolf before he disappears into the foggy air.',
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "wolf_ghost_female",
+                "title": "Read a Gravestone",
+                "subtitle": 'One of the stones in the churchyard draws your eye. For a moment, you thought you saw someone sitting on it.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You feel a chill in your spine, and shudder as you turn to look at a mossy gravestone at the side of the churchyard. Something makes the hair on the back of your neck stand up with trepidation. You brush the moss away, but the name on the stone is unreadable. When you stand up, you have a powerful feeling that there is someone behind you. You turn, and see the shadowy outline of a wolf only slightly visible in the air. His eyes are just glowing yellow lights. </p>Before you can react, he steps forward, his insubstantial body moving into yours with an icy cold, tingly sensation. Your struggle to move, your body no longer reacting under your own power. Your face twists into a new expression, a cruel and smug grin. You feel your body moving seemingly of its own accord, as your hand strokes down your belly and against your pussy. "Never had one of these before...", you find yourself saying, with a rough and scratchy voice. You slide your fingers into yourself, and start to thrust and pump into your pussy like you haven\'t felt sexual pleasure in decades. The intensity of your fingering is almost painful, and before long, you are panting and shaking. Your body pulses with an intense and hot orgasm that leaves you moaning and your body almost steaming with warmth in the cold air. As the sexual pleasure fades, you feel a coldness move out of you, and you see the grinning face of a shadowy wolf before he disappears into the foggy air.',
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "churchyard_random",
                 "title": "Explore the Churchyard",
                 "subtitle": "It is strangely cold here, even when the sun is shining brightly.",
@@ -41,16 +91,6 @@ var area = {
                 "results": {
                     "Ghost Fox": {
                         "text": 'You hear a grunting and moaning from the churchyard, and walk around behind a tree to see a peculiar sight. A fox adventurer is sitting pantsless on the grass, moaning and humping with his tail raised. When you get closer, you see that there is another fox, or something like one. Atop the adventurer is a ghostly, faint blue image of a fox with a horny, lustful grin. </p>The ghost\'s translucent cock is ramming into the living fox\'s ass, and he\'s feeling it as if it were as solid as any real cock. You hear a faint voice, sinister yet almost like just noise in the wind. "Yes, cum for me. Release your life essence!" it says. The living fox whimpers, and strokes his own throbbing cock, before moaning and spraying his cum all over the grass. When he does, his orange fur starts to look strange. His cock is still leaking and spraying something, but it almost looks like glimmering, shining sparkles, that are flowing out from him and up into the ghostly fox above. </p>The living fox\'s cock starts to turn transparent and ghostly, and he yelps as he looks at his hands and realises he can see right through them! Slowly, his orange fades to an icy, barely-visible blue, and he begins to float up off the ground. He turns and spins, confused and aroused, until the other fox ghost grabs him and squeezes him possessively. </p>The other ghost is much more visible now, almost like a floating blue ordinary fox. "Your life force felt great, new guy. You\'ll make a fun little ghost slave for me." he whispers. The wind rises up suddenly, and you are forced to blink. When you open your eyes, you see no one in the churchyard with you at all.',
-                        "outcomes": [
-                            {
-                                "parameter": "muscat_1",
-                                "quantity": 5,
-                                "change": "add"
-                            }
-                        ]
-                    },
-                    "Ghost Wolf": {
-                        "text": 'You feel a chill in your spine, and shudder as you turn to look at a mossy gravestone at the side of the churchyard. Something makes the hair on the back of your neck stand up with trepidation. You brush the moss away, but the name on the stone is unreadable. When you stand up, you have a powerful feeling that there is someone behind you. You turn, and see the shadowy outline of a wolf only slightly visible in the air. His eyes are just glowing yellow lights. </p>Before you can react, he steps forward, his insubstantial body moving into yours with an icy cold, tingly sensation. Your struggle to move, your body no longer reacting under your own power. Your face twists into a new expression, a cruel and smug grin. You feel your body moving seemingly of its own accord, as your hand strokes down your belly and grips around your cock. You pant and moan, with a rough and scratchy voice. You are pounding your cock like you haven\'t felt sexual pleasure in decades. The intensity of your strokes are almost painful, and before long, you are panting and shaking. Your cock spurts and shakes, spraying hot white jizz all over the gravestone. As the sexual pleasure fades, you feel a coldness move out of you, and you see the grinning face of a shadowy wolf before he disappears into the foggy air.',
                         "outcomes": [
                             {
                                 "parameter": "muscat_1",

@@ -3,38 +3,83 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 DV.Data.item_data = {
 	//Attributes
 	//Note: inventory not showing correct description choice
-	grizz_interest: {
-		max: 5,
-		type: "attribute",
-		icon: "grizzicon",
-		title: "Grizz [Interest]",
-		description: ["Grizz has been watching you at work."]
-	},
-	grizz_connection: {
-		type: "attribute",
-		icon: "grizzicong",
-		title: "Grizz [Friend]",
-		description: ["Grizz is fond of you."]
-	},
-	mikhail_interest: {
-		max: 5,
-		type: "attribute",
-		icon: "mikhailicon",
-		title: "Mikhail [Interest]",
-		description: ["Mikhail appreciates you working at the store."]
-	},
-	mikhail_connection: {
-		type: "attribute",
-		icon: "mikhailicong",
-		title: "Mikhail [Friend]",
-		description: ["Mikhail is fond of you."]
-	}, 
-	species: {
-		type: "attribute",
-		icon: "speciesicon",
-		title: "Species",
-		description: ["You are an ordinary human.", "You are a big furry bear.", "You are a scrawny little mouse.", "You are a furry, eager dog.", "You are a tall, winged stone gargoyle.", "You are a soft small living teddy bear."]
-	},
+        grizz_interest: {
+            max: 5,
+            type: "attribute",
+            icon: "grizzicon",
+            title: "Grizz [Interest]",
+            description: ["Grizz has been watching you at work."]
+        },
+        grizz_connection: {
+            type: "attribute",
+            icon: "grizzicong",
+            title: "Grizz [Friend]",
+            description: ["Grizz is fond of you."]
+        },
+        flute_interest: {
+            type: "attribute",
+            icon: "fluteicon",
+            title: "Flute [Interest]",
+            description: ["You have been working hard as Flute's assistant."]
+        },
+        flute_connection: {
+            type: "attribute",
+            icon: "fluteicong",
+            title: "Flute [Connection]",
+            description: ["Flute has started to change you to suit his desires."]
+        },
+        flute_master: {
+            type: "attribute",
+            icon: "fluteiconr",
+            title: "Flute [Master]",
+            description: ["Flute is your master. You will do anything he says."]
+        },
+        mikhail_interest: {
+            max: 5,
+            type: "attribute",
+            icon: "mikhailicon",
+            title: "Mikhail [Interest]",
+            description: ["Mikhail appreciates you working at the store."]
+        },
+        mikhail_connection: {
+            type: "attribute",
+            icon: "mikhailicong",
+            title: "Mikhail [Friend]",
+            description: ["Mikhail is fond of you."]
+        }, 
+        species: {
+            type: "attribute",
+            icon: "speciesicon",
+            title: "Species",
+            description: [
+                "You are an ordinary human.", //1
+                "You are a big furry bear.", //2
+                "You are a scrawny little mouse.", //3 
+                "You are a furry, eager dog.", //4
+                "You are a tall, winged stone gargoyle.", //5
+                "You are a soft small living teddy bear.", //6
+                "You are a living blue fox fursuit, made of fabric.", //7
+                "You are a furry orange fox with a bushy tail" //8
+                ]
+        },
+        gender: {
+            type: "attribute",
+            icon: "gendericon",
+            title: "Gender",
+            description: ["You have male genitals.", "You have female genitals.", "You have both male and female genitals.", "You have no genitals at all."]
+        },
+        submissiveness: {
+            type: "attribute",
+            icon: "subicon",
+            title: "Submissive",
+            description: ["You prefer to be submissive and obedient."]
+        },
+        dominance: {
+            type: "attribute",
+            icon: "domicon",
+            title: "Dominant",
+            description: ["You prefer to be dominant and in control."]
+        },
 	//Items
 	wine_1: {
 		type: "item",

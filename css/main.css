@@ -355,6 +355,14 @@ div.theft {
 	background-image: url("../img/flute_b.png");
 }
 
+.fluteicong {
+	background-image: url("../img/flute_g.png");
+}
+
+.fluteiconr {
+	background-image: url("../img/flute_r.png");
+}
+
 .maineicon {
 	background-image: url("../img/mayorb.png");
 }
@@ -427,6 +435,18 @@ div.theft {
 
 .speciesicon {
 	background-image: url("../img/speciesicon.png");
+}
+
+.gendericon {
+	background-image: url("../img/gender.png");
+}
+
+.subicon {
+	background-image: url("../img/submissive.png");
+}
+
+.domicon {
+	background-image: url("../img/dominant.png");
 }
 
 .playericon {
