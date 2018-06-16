@@ -375,6 +375,14 @@ div.theft {
 	background-image: url("../img/mikhail_g.png");
 }
 
+.turnericon {
+	background-image: url("../img/turner_b.png");
+}
+
+.turnericong {
+	background-image: url("../img/turner_g.png");
+}
+
 .linicon {
 	background-image: url("../img/lin_b.png");
 }
@@ -443,6 +451,10 @@ div.theft {
 
 .subicon {
 	background-image: url("../img/submissive.png");
+}
+
+.navigateicon {
+	background-image: url("../img/navigate_icon.png");
 }
 
 .domicon {

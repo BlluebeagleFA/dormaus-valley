@@ -319,6 +319,7 @@ function main(err,session) {
             displayInventory();
             $("#box2").removeClass("hidden");
         } else if (id == "tab3") {
+            hideMap();
             $("#box3").removeClass("hidden");
         } else if (id == "tab4") {
             $("#box4").removeClass("hidden");
@@ -562,22 +563,44 @@ function main(err,session) {
         return bonus;
     };
     
+    function hideMap() {
+        DV.Data.load_area(player.area,function(err,area_data){
+            if (area_data) {
+                if (player.trapped) {
+                    $("#box3 .map").addClass("hide");
+                    $("#box3 .mapblock").removeClass("hide");
+                    $("#box3 .mapblock").empty();
+                    $("#box3 .mapblock").append('<p>' + player.trapped + '</p>');
+                } else if (!area_data.position) {
+                    $("#box3 .map").addClass("hide");
+                    $("#box3 .mapblock").removeClass("hide");
+                    var noMapText = "You don't know your way around this area yet. You'll have to navigate on foot.";
+                    if (area_data.nomap) {
+                        noMapText = area_data.nomap;
+                    }
+                    $("#box3 .mapblock").empty();
+                    $("#box3 .mapblock").append('<p>' + noMapText + '</p>');
+                } else {
+                    $("#box3 .map").removeClass("hide");
+                    $("#box3 .mapblock").addClass("hide");
+                }
+            }
+        });
+    }
+    
     function updateMap() {
-        if (player.trapped) {
-            $("#box3").empty();
-            $("#box3").append('<p>' + player.trapped + '</p>');
-        } else {
-            $("#box3").empty();
-            $("#box3").append('<div class="map"></div>');
-            var width = $("#box3").width();
-            $(".map").width("100%");
-            $(".map").css("padding-top","100%");
-            $(".map").empty();
-            var areaIds = Object.keys(DV.Data.areas);
-            var width = $(".map").width();
-            for (var i = 0; i < areaIds.length; i++) {
-                var areaId = areaIds[i];
-                DV.Data.load_area(areaId,function(err,area_data){
+        $("#box3").empty();
+        $("#box3").append('<div class="mapblock hide"></div><div class="map"></div>');
+        var width = $("#box3").width();
+        $(".map").width("100%");
+        $(".map").css("padding-top","100%");
+        $(".map").empty();
+        var areaIds = Object.keys(DV.Data.areas);
+        var width = $(".map").width();
+        for (var i = 0; i < areaIds.length; i++) {
+            var areaId = areaIds[i];
+            DV.Data.load_area(areaId,function(err,area_data){
+                if (area_data.position) {
                     var x = area_data.position[0]*100;
                     var y = area_data.position[1]*100;
                     if (areaId == player.area) {
@@ -585,9 +608,9 @@ function main(err,session) {
                     } else {
                         $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
                     }
-                });
+                }
+            });
 //		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
-            }
         }
     }
     
@@ -673,6 +696,26 @@ function main(err,session) {
         }
     }
     
+    //TODO: Move this to a function-event when those exist
+    var fixStuckEvent = {
+        "id": "save_me_batty",
+        "title": "Save me Mr Bat!",
+        "trapped": true,
+        "subtitle": 'A tall bat in a cloak bumps into you, and blinks with surprise. "Oh my! Do you require assistance?"',
+        "type": "random",
+        "requirements": [
+        ],
+        "icon": "speciesicon",
+        "results": {
+            "success": { 
+                "text": 'The bat adjusts his glasses and takes a close look at you. He strokes his chin for a moment, then opens up his long cloak. From within, he draws out a small black book and reads it thoughtfully. "Here you are, this should resolve your problem, my friend", he says. He touches the page and quickly mutters a long string of complex syllables. The words seem to spin and twirl around you, and for a moment your body feels completely fluid. There is a crackle and pop of electricity, and then with a sudden SNAP, the curse binding you is undone! </p>As you look down at yourself, your form restored, the bat gives you a little bow. "I am glad I found myself lost so that I could provide you assistance, my friend. Until we meet again!"',
+                "freeTrap": true,
+                "outcomes": [
+                ]
+            }
+        }
+    };
+    
     function displayEvent(eventId) {
         var event = null;
         for (var i = 0; i < area.events.length; i++) {
@@ -694,6 +737,10 @@ function main(err,session) {
             } else if (outcome.freeTrap) {
                 player.trapped = null;
                 player.trapped_desc = null;
+            }
+            
+            if (outcome.area) {
+                player.area = outcome.area; 
             }
             
             if (outcome.descriptionchange) {
@@ -977,6 +1024,24 @@ function main(err,session) {
             );
             if (npc.shop) {
                 $(".dialoguemenu .shop").removeClass("hidden");
+                if (npc.shop.buys) {
+                    for (var i = 0; i < npc.shop.buys.length; i++) {
+                        var itemtype = npc.shop.buys[i];
+                        var shopitem = DV.Data.item_data[itemtype];
+                        var quantity = player.items[itemtype] || 0;
+                        $(".dialoguemenu .shop").append(
+                            '<div class="shoprow">' +
+                                '<div class="shopicon ' + shopitem.icon + '" data-itemid="' + itemtype + '" data-title="' + shopitem.title + '" data-desc="' + shopitem.description[0] + '">' + quantity + '</div>' +
+                                '<div class="shopbuy">' +
+                                '</div>' +
+                                '<div class="shopsell">' +
+                                    '<input class="' + itemtype + ' sellfield" data-item="' + itemtype + '" type="text" placeholder="' + shopitem.value + ' Dust to sell. Enter quantity.">' +
+                                    '<input data-item="' + itemtype + '" class="sellbutton" type="submit" value="Sell"></input>' +
+                                '</div>' +
+                            '</div>'
+                        );
+                    }
+                }
                 if (npc.shop.trades) {
                     for (var i = 0; i < npc.shop.trades.length; i++) {
                         var itemtype = npc.shop.trades[i];
@@ -1198,6 +1263,19 @@ function main(err,session) {
             }
             area = area_data;
             var areaEvents = global_area.events.concat(area.events);
+            var freedomAvailable = false;
+            for (var i = 0; i < area.events.length; i++) {
+                var outcomesForEvent = Object.keys(area.events[i].results);
+                for (var j = 0; j < outcomesForEvent.length; j++) {
+                    var thisOutcome = area.events[i].results[outcomesForEvent[j]];
+                    if (thisOutcome.freeTrap) {
+                        freedomAvailable = true;
+                    }
+                }
+            }
+            if (!freedomAvailable && player.trapped) {
+                areaEvents.push(fixStuckEvent);
+            }
             $("#box1").empty();
             $("#box1").append(
                 '<div class= "areadescriptor">' +

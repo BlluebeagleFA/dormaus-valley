@@ -489,8 +489,8 @@ var area = {
                 "description": "Flute is a slender, sneaky fox male. He has a fetching grin and an even more fetching silver tongue.",
                 "icon": "fluteicon",
                 "shop": {
-                    "trades": ["shirt_1"],
-                    "buys": ["boots_1", "socks_1"],
+                    "trades": ["slutty_shirt"],
+                    "buys": ["ace_boots", "mikhail_socks"],
                     "sells": []
                 },
                 "dialogue": [

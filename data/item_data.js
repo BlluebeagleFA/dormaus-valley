@@ -3,6 +3,19 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 DV.Data.item_data = {
 	//Attributes
 	//Note: inventory not showing correct description choice
+        turner_interest: {
+            max: 5,
+            type: "attribute",
+            icon: "turnericon",
+            title: "Turner [Interest]",
+            description: ["You have been working on the farm with Turner."]
+        },
+        turner_connection: {
+            type: "attribute",
+            icon: "turnericong",
+            title: "Turner [Friend]",
+            description: ["Turner is fond of you."]
+        },
         grizz_interest: {
             max: 5,
             type: "attribute",
@@ -59,7 +72,9 @@ DV.Data.item_data = {
                 "You are a tall, winged stone gargoyle.", //5
                 "You are a soft small living teddy bear.", //6
                 "You are a living blue fox fursuit, made of fabric.", //7
-                "You are a furry orange fox with a bushy tail" //8
+                "You are a furry orange fox with a bushy tail", //8
+                "You are a big chubby pink pig", //9,
+                "You are a tall and muscular horse" //10
                 ]
         },
         gender: {

@@ -4,7 +4,33 @@ var area = {
         "header": "Dormaus Gates",
         "subheader": 'The grassy road opens up here, leading to two wooden poles, bedecked with flags. This marks the entrance to the sleepy town of Dormaus, and the smell of bread and sound of lively music flows through the air as you approach.',
         "events": [
-        	{
+            {
+                "id": "entrance_south",
+                "title": "Travel South through the Valley",
+                "subtitle": "Leaving the village would be unwise unless you're strong and in good health.",
+                "type": "statcheck", //or random
+                "stat": "might",
+                "difficulty": 10,
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You are feeling strong and experienced enough to tackle the world outside. You start your journey south, with the wind at your back. Before long, the town disappears behind you, and you are walking through the grassy countryside. For now, the landscape is still tamed by farms and agriculture, but you can see it getting wilder and more dangerous the further you go. Walking on foot really hammers home how wide and long the valley is. You slow your pace as you begin to approach a small old-fashioned farm, several miles south of where you started.",
+                        "area": "farmpath",
+                        "outcomes": []
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": 'Lin gives you a worried glance as you start your journey south. It\'s a long and winding path, and the cobblestones soon give way to rough mud. You are barely out of sight of the town when you are already feeling achey and weak. You stop for a moment, and Lin appears near you. </p>"Ah, adventurer, I think you should spend some time in the town first to get used to your body, before you venture outside! I can\'t protect you if you get into trouble beyond the town walls!", she says. She leads you back to the village for now.',
+                        "outcomes": [{
+                            "parameter": "pain",
+                            "quantity": 1,
+                            "max": 1,
+                            "change": "add"
+                        }]
+                    }
+                }
+            },{
                 "id": "flute_gift",
                 "title": "Flute's Gift",
                 "subtitle": 'You look around the gentle pastoral road leading up to the town. It seems the road here gets a lot of traffic, and some of said traffic approaches while you\'re waiting around. A slender fox man is hiking up to the gate, his back loaded heavily with a huge backpack, from which various strange trinkets and fabrics are sticking out into the air. When he sees you, he grins a wide vulpine smile and drops his bag.</p>"Well hello there! Let me guess, a new adventurer? What you need is an adventurer\'s kit!" The fox roots around in his bag and pulls out a wrapped package, which he tosses to you. "The name\'s Flute, and helping people out is my second favourite thing to do!" </p>Do you want to accept the package?',
@@ -191,6 +217,10 @@ var area = {
                     {
                     	"input": 'How do I equip things?',
                         "output": '"Go to your inventory tab. You\'ll see your equipment slots, and any equipment you own next to them. Click something to wear it, or click your equipment slot to empty it. Equipment alters your stats, usually in a positive way. You can see your equipment effects next to your stats, on the left."'
+                    },
+                    {
+                        "input": 'How come sometimes I just get money after an event even though the it didn\'t say anything about that?',
+                        "output": '"All experience is valuable! Consider the cash that appears after you see a random event to be a physical representation of the value you\'ve gained from what you learned."'
                     },
                     {
                     	"input": 'See you later.',
