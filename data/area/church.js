@@ -54,6 +54,21 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "enter_shrine",
+                "title": "Enter a Small Shrine",
+                "subtitle": "A narrow staircase leads down to a tiny room where you can pray for a new beginning.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You follow a tiny spiral staircase down into the darkness, where you find a tiny, strange shrine.",
+                        "area": "resetshrine",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [
@@ -94,6 +109,10 @@ var area = {
                     {
                         "input": 'What does it mean when you say the first dragon changes the world?',
                         "output": '"They say that the great dragon sometimes shifts the very land itself. Of course, we here on the world could not see it happening, for he freezes and changes time when he does it. Only an extraplanar being would even know things had changed."'
+                    },
+                    {
+                        "input": 'What\'s that weird little shrine for?',
+                        "output": '"That was here when I took over as pastor for this church. I believe it is a shrine to an old goddess, one who has control over memories and history."'
                     },
                     {
                         "input": 'Can I see your cock?',

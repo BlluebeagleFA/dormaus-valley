@@ -66,6 +66,22 @@ var area = {
                     }
                 }
             },{
+                "id": "cockvore",
+                "title": "Bet Your Body With Ace",
+                "subtitle": 'Perhaps if you don\'t want to risk your chips, Ace would take your body as collateral? If you lose, you\'re lunch.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "aceicon",
+                "results": {
+                    "grizzpay": {
+                        "text": 'You sit down, and start playing poker with Ace once more. The cards fly, the river runs, and you\'re doing well. So well, in fact, that you give Ace a cocky grin, slam your cards down, and tell him you\'re so confident that you\'d be willing to bet your entire body against him in this hand. If you lose, he can eat you. The coyote grins widely, his teeth gleaming. "Is that so, partner? Turns out I just had some food. Cock food, that is. Nice little corgi by the name a\' Zeke.", he says with a smug drawl. He leans back on his chair, revealing what he\'s been hiding under the table. His pants are off, and his furry coyote balls are enormously swollen. They\'re bulging as big as watermelons, and as you watch, they bulge and shift a little, like something inside is struggling and moving. Slowly, the struggles subside, and his balls shrink a little more. "Ah reckon he\'s just about done though, so I think I got room for you too", he says.</p>You suddenly feel a little less confident about this bet, but it\'s too late to back down now. You reveal your cards - an ace and a king, going with the cards on the table making that two pairs. A good hand, to be sure. Then Ace reveals his own cards; two jacks. One pair versus two, surely you\'re in luck. Then he turns over the final card on the table...to reveal a jack. "Bad luck, partner. Three of a kind beats two pair. Looks like there\'s another pair in your future - a pair of my balls", he says with a chuckle.</p>The coyote steps up onto the table and walks over the cards, looming over you. You stammer and try to back away, but as you look up at the thick, heavy cotote cock and pendulous musky furry balls above you, you start to feel light headed and slow. The powerful, beastly stink of Ace\'s balls flows over you, the strong masculine smell of a powerful predator. It makes you freeze up like a rabbit under the glare of a fox. Ace grabs you by your shoulders, and pulls you in closer to his crotch. His cock pushes against your head, and starts to grow and stretch as his slit opens up and slowly engulfs your head. Thick, slippery pre oozing from his bulging cock lubricates the way, as your face is pushed into slimy wet darkness. You feel his cock sliding down over your shoulders, pinning your arms to your sides. You are tugged in deeper, and deeper, squeezed tightly on all sides as you are devoured. Pre soaks your face and chest, and you feel your hips and legs get drawn in too. Soon, your whole body is engulfed by Ace\'s cock, and you are forced deeper and deeper inside him. You feel yourself sliding down into his body, until you are pushed out into a new space, one that stretches and grows heavy and huge to fit you. You are curled up tightly in a ball inside the warm, dark caverns of Ace\'s ballsack. Cum is all around you, soaking into your body, covering your face and getting into your mouth and in every crevice of your body.</p>You feel Ace sitting back down, and spreading his legs aside his new heavily swollen balls. His hands pushes against the outside of his ballsack, massaging and rubbing against you. You feel yourself starting to feel sticky and weak. Cum seems to be oozing out of you from every pore in your body. You can taste it in the back of your throat, and in your nose. Your flesh is turning whiter and paler, your entire body slowly digesting and transforming into more hot, thick sticky coyote cum. You try to struggle, but your limbs are goopy and soft. The more you move, the more you just sink and mix yourself into the cum all around you, splooshing it around and losing more of your definition. Your legs and arms melt and gloop down, falling apart into cum. Finally your face starts to lose its shape, and you struggle and gasp once more before all you can see, and think, is cum.</p>With your entire body now just mindless, sticky cum, Ace keeps you around for a few hours, enjoying the fullness in his balls. Then he starts to stroke and pump his cock, feeling his massive balls jiggle and bounce. The dirty coyote grunts and flexes his toes in his boots, before growling and panting with lust, as he unloads an enormous gushing jet of cum that arcs up into the air and splatters down over the floor and walls in bucketloads. Load after load slams over the room, coating everything in dripping musky jizz, until finally he\'s pumped out every last drop of you, leaving you nothing but a mess in the bar room casino.',
+                        "trapped_desc": "The walls of this room are stained with massive amounts of cum.",
+                        "trapped": 'You are nothing but a messy splatter of cum dripping down the walls.',
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "bar_random",
                 "title": "Watch the Gamblers",
                 "subtitle": "People come and go at the gambling tables regularly.",
@@ -92,6 +108,27 @@ var area = {
                                 "quantity": 5,
                                 "change": "add"
                             }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "ace_piss",
+                "title": "Ace's Piss",
+                "subtitle": "Ace keeps glancing towards the bathroom.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "pisscurse",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "aceicon",
+                "results": {
+                    "grizzpay": {
+                        "text": 'Ace is shifting uncomfortably in his seat, and glancing over to the bathroom. When he does though, he sees you, and a grin stretches across his muzzle. “Howdy, you are just what I need. How about a game? Loser has to drink the winner\'s piss.” he says in his southern drawl. You try to refuse that absurd gamble, but instead your mouth opens up and you find yourself shouting yes, with obvious desperation. You sit down at the table, shaking slightly, as Ace deals the cards. By the time the river has been played, you can see that you have an almost unbeatable hand. A royal flush! Thinking of flush just makes you think of hot, wet piss, flowing down over your face, however. By the time you shake your thoughts back to normal, you realise you have folded and surrendered the game. Ace chuckles, and reveals that his own hand was worthless trash. “Guess I bluffed ya, partner. Now get under the table, I got me a barrel to empty.” he says.</p>You get on your knees and crawl under the table, until your face is next to Ace\'s dirty leather breeches. You unbuckle his belt and pull them down, allowing his thick and warm cock to flop out, where it lands against your face. You inhale his sweaty coyote stink, before opening your mouth and sliding it over his shaft, with your face pressed firmly into his furry crotch. He holds one of his gloved hands on your head, and sighs as he relieves his swollen bladder. You gulp down his hot, steaming piss, every drop of it nasty and sharp on your tongue. He doesn\'t let you move until you drink every bit of it though, using you as his own portable urinal. When he pulls free and buckles his pants back up, you are left with a belly that is gurgling and sloshing with coyote piss.',
+                        "outcomes": [
                         ]
                     }
                 }

@@ -14,7 +14,7 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "grizz_interest",
-                        "value": 5,
+                        "value": 2,
                         "comparison": "less" //default greater
                     }
                 ],
@@ -53,7 +53,7 @@ var area = {
                 "requirements": [
                 	{
                         "parameter": "grizz_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     }
                 ],
@@ -64,7 +64,7 @@ var area = {
                         "outcomes": [
                             {
                                 "parameter": "wine_1",
-                                "quantity": 75,
+                                "quantity": 15,
                                 "change": "add"
                             },
                             {
@@ -107,6 +107,544 @@ var area = {
                                 "parameter": "species",
                                 "quantity": 2,
                                 "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "dumb_0",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. You blink a few times, and realise you have a dumb, slow grin on your face. You rub your forehead and realise you\'re reacting slower than you used to. You can\'t seem to focus on anything for long. You are stupider than you used to be, but there\'s a sort of slow, addictive happiness to your new ignorance.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 3,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_1",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Your stupid brain seems to be stopping completely. You struggle to form even a single sentence in your head. You try to speak, but all that comes out is grunts and noises. You vaguely understand that you are losing something, but you don\'t understand the concept of what is happening to you. You are working on basic, animal instinct, nothing more than a beast. You can no longer speak.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 1,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_2",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Your stupid brain seems to be stopping completely. You struggle to form even a single sentence in your head. You try to speak, but all that comes out is grunts and noises. You vaguely understand that you are losing something, but you don\'t understand the concept of what is happening to you. You are working on basic, animal instinct, nothing more than a beast. You can no longer speak.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 1,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_3",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. Your already-below-average brain seems to slow to a crawl. You blink slowly and start to drool. Your mind is full of fog and wool, and you can barely focus on any thought for more than a few moments, before your mind drifts away. You look down and see a discarded newsletter by your feet, and realise that there is something written on it, but you can no longer understand the letters. You laugh, in a dumb, slow, stupid way. You are happy and content in your stupid tiny brain. You will struggle to speak intelligently now.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 2,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_4",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. You blink a few times, and realise you have a dumb, slow grin on your face. You rub your forehead and realise you\'re reacting slower than you used to. You can\'t seem to focus on anything for long. You are stupider than you used to be, but there\'s a sort of slow, addictive happiness to your new ignorance.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 3,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_5",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 5,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. Your intelligent mind feels a little strange. You blink a few times, and almost feel a thick, slow morass in your head, slowing you down. You feel like things like algebra and science would be less easy to understand now. You are thinking at the level of an average person.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 4,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_6",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 6,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. Your rapid and intelligent thoughts seem to move slower and more sluggishly, like they are struggling through thick fluid. You can feel it in your head, slowing you down. You know you are more intelligent than average, but you no longer so easily grasp ultra-complex thoughts.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 5,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dumb_7",
+                "title": "Drink a Stupidity Potion",
+                "subtitle": "Is that really wise?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dumb_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 7,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the strange creamy milk. It is warm and salty and very very thick. Your mechanical mind whirrs and chugs for a moment, as stupidity almost seems to flow into your head and clog the delicate and powerful machinery of your brain. The hot, rapid thoughts in your robot brain start to slow down, and you feel warm and squishy and soft in your head. Your stiff, robotic posture slouches a little, and you begin to breathe, and sweat. Your body aches as you sense organic sensations and impulses. You cough and rub your face as you return to a flesh and blood creature.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 6,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "dumb_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "smart_0",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. You feel smarter, and faster. Your mind runs through alebra and riddles, and they unravel with ease under the power of your fast and potent thoughts.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 4,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_1",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. Your basic, instinctive animal brain sparks and tingles. You look around, and feel thoughts in your head. Stupid, and slow, and basic, but still thoughts. You no longer have the mind of a simple animal.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 2,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_2",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. You stop drooling, and your slack idiot grin sobers up, though you still struggle to think straight. You are slow and dumb, but smarter than you were before.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 3,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_3",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. You blink and stretch, your mind understanding concepts properly again. Anything complex and powerful would be tough, but you\'re no dumber than the average person.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 4,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_4",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. You feel smarter, and faster. Your mind runs through alebra and riddles, and they unravel with ease under the power of your fast and potent thoughts.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 5,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_5",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 5,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. Your intelligent brain burgeons with power and speed. Everything around you seems to move slower, as you realise you are comprehending and analysing everything around you. Even incredibly complex problems are almost instantly solved in your head. You realise, suddenly, that you understand capital letters now. It\'s so simple!',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 6,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "smart_6",
+                "title": "Drink an Intelligence Potion",
+                "subtitle": "What could be bad about being smarter?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "smart_potion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "intelligence",
+                        "value": 6,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "smart_potion",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You swallow the thin and tingly fluid. It almost feels electrical in your mouth, and it makes your brain zap and tingle. Your mind begins to move at speeds you could never have even imagined. In a microsecond you have analysed everything around you. You think through plans and strategies for every eventuality in an instant. Your body is no longer moving like an ordinary being. Your posture becomes stiff and straight. Your breathing slows, then stops completely. You no longer need it. You feel cold, and complex, and mechanical inside. Your skin becomes cold and firm, your organs begin to transform into whirring and buzzing machinery. Your brain, organic and sticky and slow, is rapidly replaced by a perfect artificial intelligence. Your wrinkled and wet organic mind becomes a perfect glittering sphere in your head, a mechanical computer far more powerful than it ever was before.',
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 7,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "smart_potion",
+                                "quantity": 1,
+                                "change": "sub"
                             }
                         ]
                     }
@@ -158,6 +696,54 @@ var area = {
                                 "quantity": 5,
                                 "change": "add"
                             }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "dwarf",
+                "title": "A Loud Party Underground",
+                "subtitle": 'Grizz looks annoyed at the banging and shouting coming from a trapdoor behind the bar. He mutters something about "dwarf parties".',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 20,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You ask Grizz what\'s going on, and he grunts and pounds his foot on a wooden trapdoor near the back of the bar. You can hear shouting, clanging and music coming from beneath it. "Private party", he mutters. Curious, you ask him if you can go in, and you take his disinterested shrug as an agreement.</p>You pull on the heavy iron ring attached to the trapdoor, and heave it open. The sounds become much louder as you do, and it\'s clearly a group of men with deep, gravelly voices singing together. You start to climb down, and Grizz kicks the trapdoor closed as you descend. You find yourself under the bar, where kegs are lined up against pipes in the ceiling. The walls are rough-hewn stone, and you follow the sounds through a tunnel where the stone becomes rougher and coarser, until finally you enter into a wider stone room, complete with stone benches, a few kegs, and some guttering braziers on the walls.</p>Inside the room are dozens of short, bearded men, all of them singing and drinking, and many of them lewdly engaging in sex together. They range from three to four feet tall, and every one of them is sporting a thick beard and moustache. Some have them braided, and some have rings or bands in them, but they all have at least half their rugged faces covered by facial hair. As you watch, one of the dwarves kicks off his huge steel-capped boots, revealing his rough muscular feet, then drops his leather pants to show off a thick rock-hard cock that looks enormous on his short body. The dwarf next to him grins widely under his thick golden facial hair, and grabs his friend\'s hips before lowering his head to that fat cock and starting to suck on it eagerly, the shaft sliding in and out between his massive moustache.</p>You don\'t know if it\'s the music, the sights of a dwarf orgy happening in front of you, or perhaps even the rough, masculine scent of a gang of hard-working miners, but you feel compelled to walk in and sit down. One dwarf, a man with a dark black beard and moustache, pats the bench beside him. You sit down next to him and he hands you a tankard filled with foaming ale. "Och aye, ain\'t you a bonny lad!", he says. You gulp down the heady, foaming ale, and the dwarf starts to pull down your pants. Your head swims and you grin, feeling dizzy and giddy after only a few gulps. You spread your legs as the dwarf holds your cock in his wide, rough, shovel-like hand, and starts to squeeze and stroke it. Once you rise to full hardness, he leans down and begins to suck on it. The feeling of his moustache tickling against your bare crotch makes you squirm and thrust into him. Another dwarf, with rust-red hair, takes hold of your shoulders, and pulls you down with his powerful muscular arms until you\'re lying on your back on the bench. He straddles your waist, and starts to push his fat cock into your mouth as he face fucks you. You look up past his hard, round beer belly, up at his wild bushy red beard and moustache, as he pants and moans with a huge, eager grin. "Aye lad, take it!", he grunts, and you feel your body starting to change as the two dwarves have their way with you.</p>Your bones creak and thicken, getting heavier and stouter, even as you start to shrink down. Your muscles toughen and harden like powerful aged wood, and your skin becomes rough and hairy. Your hands and feet grow larger even as your body gets shorter, as your proportions change to match the stout and sturdy form of the other dwarves around you. Most importantly, you feel a prickling and tingling on your face, as thick hair grows down your cheeks and over your chin. It thickens and gets longer and bushier, forming into a massive moustache of your own that completely covers your mouth, along with a large and masculine beard growing thick from all over your chin and cheeks.</p>The red-haired dwarf grunts and slams down his tankard of ale, as his cock unloads a rush of thick, hot cum deep into your throat. You feel your own thicker cock pulse and gush cum, as a powerful orgasm rushes through your body. The black-haired dwarf pulls himself off your crotch and wipes your cum from his beard. "Welcome, brother!", he says. Your two new friends pull you to your feet, and you party and quaff ale deep into the night.',
+                        "descriptionchange": "This adventurer is a short, muscular dwarf with a huge beard and moustache.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 20,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "grizz_piss",
+                "title": "Grizz's Piss",
+                "subtitle": "You want to ask for a special brew today.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "pisscurse",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "grizzicon",
+                "results": {
+                    "grizzpay": {
+                        "text": '"What are ya havin\'", Grizz grunts. You turn to the barkeeper, not having intended to really buy anything right now, but before you can respond, your curse starts to feel warm and heavy in your chest. Your voice speaks without you meaning to, and you find yourself saying "Piss!"</p>You quickly cover your mouth, but it\'s too late. Grizz just nods, and reaches forward over the bar, before grabbing hold of you and dragging you close to him. He shoves you onto your knees behind the bar, your face next to his heavy and musky cock. He shoves his thumb into your mouth to force it open, then rams his cock forward, and holds your face firmly against his crotch. You are left with your jaw aching around his shaft for a moment, before he starts to grunt, and you feel him relieve himself. His piss is very warm, and it flows directly down your throat and into your belly. You taste only a little at the back of your throat, and it is bitter and acrid. Your stomach seems to almost bulge and swell as the bear releases what feels like pints of urine into you, and your head feels foggy and dizzy. When he finally pulls free, and the last of his piss dribbles down your face, you hiccup and realise you are drunk!',
+                        "outcomes": [
                         ]
                     }
                 }

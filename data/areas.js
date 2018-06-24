@@ -15,11 +15,20 @@ DV.Data.areas = {
 	"hotel_rooms": "./data/area/hotel_rooms.js",
 	"churchyard": "./data/area/churchyard.js",
 	"church": "./data/area/church.js",
+	"resetshrine": "./data/area/resetshrine.js",
 	"alley": "./data/area/alleyway.js",
 	"pumpkins": "./data/area/pumpkins.js",
 	"backstreets": "./data/area/backstreets.js",
+	"art_store": "./data/area/art_store.js",
+	"contributor_1": "./data/area/contributor_1.js",
 	"farmpath": "./data/area/farmpath.js", //FARM STARTS HERE
 	"farmhouse": "./data/area/farmhouse.js",
 	"farmfield": "./data/area/farmfield.js",
-	"farmsouth": "./data/area/farmsouth.js"
+	"farmsouth": "./data/area/farmsouth.js",
+	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
+	"quartzcavern": "./data/area/quartzcavern.js",
+	"wetcavern": "./data/area/wetcavern.js",
+	"darkcavern": "./data/area/darkcavern.js",
+	"deepestcavern": "./data/area/deepestcavern.js",
+	"belly": "./data/area/belly.js" //OTHER
 }

@@ -5,6 +5,164 @@ var area = {
         "subheader": 'The marketplace is busy every time of day. Traders walk through, leading strange beasts of burden laden with goods, from walking birds to four-legged armored monsters. Colourful tents ring the marketplace, and between them, merchants hawk their wares from carpets or hand baskets.',
         "events": [
             {
+                "id": "magic_shop",
+                "title": "Work at Saberhagen\'s Bakery",
+                "subtitle": "How hard could it possibly be?",
+                "type": "statcheck", //or random
+                "stat": "magic",
+                "difficulty": 20,
+                "requirements": [
+                    
+                ],
+                "icon": "pie_1",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Saberhagen is so happy to have assistance that he practically bounces on his paws. His form of baking is a little more magical than you might expect, but your own knowledge of such things is more than up to the task. When the dough gets mad and start to form itself into a big goopy fist, you just challenge it to rock paper scissors. The rolls try to roll away, so you put them in a big bowl so they can bounce around with eachother without causing trouble. Even the croissants, a notoriously difficult pastry to wrangle, are no match for you. When they try to whip at you like soft little sickles, you catch them in a net. They struggle in there uselessly, making angry little \'hon\' noises.</p>Saberhagen himself is amazed with your skills. With the other tasks handled he\'s able to make several more batches of goods than he normally would. He dashes all around the tent, setting things up and pulling new bread out of his little oven, until he bumps into you by accident. His chest lands against yours and he looks at you with surprise, along with a little bit of a blush barely visible under his dark fur.</p>You get out of his way and start to cover the front counter, where you soon realise that Saberhagen is a very popular merchant. A small crowd gathers very early on, eager to start their day with fresh bread. With how much extra you\'ve been able to make, you even have some left over after the initial rush. Passing merchants and shoppers try out your stocks on a whim, and soon you have even more customers who will be making regular visits to get more in the future.</p>At the end of the day, Saberhagen invites you over to a few cushions by his warm hearth, and splits some pumpkin pie with you. It\'s warm and freshly made, and you feel surprisingly at home in his little tent. He splits the day\'s takings with you evenly, resulting in a very reasonable little pile of coins. "Thanks so much for your help today! We made more food than ever, and everyone seemed really happy. I really appreciate you spending the day with me", he says. His eyes shine brightly and happily in the dim tent, and you finish up the pie before leaving.',
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 20,
+                                "change": "add"
+                            },
+                            {
+                                "parameter": "saberhagen_interest",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": 'While Saberhagen is overjoyed to have someone helping him in his little tent, you soon discover that baked goods in this land are far more complicated than you\'d imagine. When you try to knead the dough, it rises up in the shape of a fist and knocks you away. The rolls keep rolling around the tent, gathering dust, and the croissants are just completely impossible to argue with. They keep flying over your head, getting tangled in the sheets.</p>Despite your constant screwups, Saberhagen remains very positive. He reprimands the dough for hitting you, shows you how to kneel down when getting the rolls so you don\'t spook them, and gives you a net to catch the croissants with. When you try to handle the dough for the second time, he puts his hands in with you, guiding you along and teaching you how to push through the warm soft dough without making it annoyed. His hand touches yours in the bowl, and you see his whiskers twitch a little in embarrassment.</p>After the baking is all done, or at least the parts of it that can be salvaged, you cover the front counter for a while. You are surprised to discover how popular Saberhagen\'s food is. A small crowd gathers in the morning, eager to start their day with some fresh bread from "that nice cat who is visiting". Although you sell out everything you baked, with how much you messed up, the tent barely makes enough money to cover the cost of ingredients.</p>You are expecting to be sent home with just bruises and no money, when Saberhagen cheerfully walks up and holds your hands with his own soft furry black ones. You feel a calming warmth flow through you, and your minor injuries from the day are washed away. He then presses a couple of coins into your palm. "Here you go, friend. Your half for the day!", he says. You feel a little guilty for taking the money, but he waves it off. "Don\'t be silly! No one is perfect their first time trying. I am sure you\'ll be a great baker one day! Don\'t get discouraged!", he says. Maybe you actually will, with a teacher like him.',
+                        "outcomes": [{
+                            "parameter": "muscat_1",
+                            "quantity": 3,
+                            "change": "add"
+                        }]
+                    }
+                }
+            },{
+                "id": "bakery_payday",
+                "title": "Make a Move on Saberhagen",
+                "subtitle": "He is clearly interested, but he is too shy to say so.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_interest",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "saberhagen_connection",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "saberhagenicon",
+                "results": {
+                    "grizzpay": {
+                        "text": 'You\'ve been working with the black cat long enough to know that, despite his bashfulness and reticence, he does have some sexual and romantic interest. The romance novels he\'s so ashamed of that he hides in the back of his tent, for example. He\'s clearly never going to work up the courage to make a move though, so maybe you need to make one for him.</p>As you work at the bakery today, you spend a little extra time focusing on Saberhagen. After he pulls out some freshly baked rolls from his oven, you walk up close to him and rub his shoulders. His body is lithe and thin under his robes, and he blushes a little. "Ah, how unexpected. What brought this on?", he asks. You tell him that he just looks like he\'s been working hard and needs a bit of attention. His fluffy ears twitch a bit, and he looks away, but he doesn\'t stop you from your massage. You press your fingers into his shoulders and along the back of his neck, and you feel a faint rumbling, along with a low, quiet sound. He\'s purring!</p>Taking the opportunity, you reach down under the hem of his thick leather robe and push your hands up under it. Your fingers stroke into the soft, warm black fur on his back, and he makes a nervous yelp. His tail twitches and lashes, but as you continue to stroke and touch him, his tension and shyness very gradually recede. He leans backwards into your touch, and you stroke your hands down his shoulderblades and then around his chest, holding him close to you. He purrs a little more, then coughs. "Um, my sincerest thanks for that. It was very considerate of you", he stammers, before gently untangling himself and going back to work.</p>Later that day, you make an idle complaint about how warm it is, and take off your shirt. You are amused to notice that he stares at you and blushes deeply every time he thinks you\'re not looking. It seems the cat has a crush on you. The next day when you come to work, you discover a letter from him near the work desk. "Dearest Friend, I really think that you would make a fine magician. With your adventuring skills, I am sure you could find the rare items I need to make spellbread designed just for you. Please give this to the mayor as a letter of recommendation for a license to become an official treasure digger. I would take you myself, but I confess I find myself overcome with an uncharacteristic shyness as of late. Deepest regards, Saberhagen"',
+                        "outcomes": [
+                            {
+                                "parameter": "saberhagen_connection",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "saberhagensex_m",
+                "title": "Move to the Next Level",
+                "subtitle": 'Saberhagen has a big crush on you, but he\'s also a sheltered virgin scholar. Time to take things further.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "species",
+                        "value": 19,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "saberhagenicong",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You choose a day where Saberhagen has been paying particular attention to you. Likely because you aren\'t wearing a shirt, but he keeps looking over, and the distraction makes him stumble, or drop his bread, or knock over some books. By the end of the day he\'s a blushing nervous mess. You help him close up the store, but instead of leaving for the day like normal, you walk into the tent with him. He looks up at you, his cat eyes shining in the dark tent. "Oh! Goodness, is there something I can, er, help you with?", he asks.</p>You tell him that actually, there is. Then, you take hold of his wrist and pull him close to you. His arms are slim and soft, and he doesn\'t resist at all. In fact, he looks completely star struck. You lean in close to him, and press your face to his soft furry muzzle. Your tongue slides into his mouth as you kiss him, feeling the smooth points of his teeth, and the hot warmth of his rough tongue. Judging by his nervousness and the motion of his tongue, you\'re probably his first kiss. You lean back and look at him, his face almost glowing with the red blush that covers his cheeks and muzzle. "I, oh, scholars, er...at the tower, we\'re not supposed to engage in...", he says, stumbling over his words.</p>You take his shaky hands and press them onto your chest, letting him feel your body. He strokes them over you, and bites his lower lip nervously. You can see him looking intensely at your crotch, and you oblige him by reaching down and pushing them off you, to reveal your erect cock. He almost gasps as it rises up into the air, and his whiskers twitch.</p>You reach forward and push open his robe, sliding it across his shoulders until it falls to the floor under its own weight. Then, in an authoritative tone, you tell him to take off his shirt and pants. He hesitates for a moment, but he can\'t take his eyes off your cock, and he pulls his shirt up over his head. His torso is the same shade of silky black as the rest of his body, and his chest is slender and narrow. You walk closer, and slide your hands along his hips, feeling his soft fur, before you push down his breeches, to reveal his hard, pre-leaking cock. He looks up at you and leans in for another kiss, which you oblige. Though his motions are still nervous and unsure, you can tell he\'s excited. You hold onto his cock, feeling its firmness in your hand as you slowly stroke and tease him. He purrs and yowls, wiggling at your touch. "I\'ve...I\'ve never...", he mutters, but you just lower him down onto the cushions that scatter the floor of the tent.</p>The cat closes his eyes and shakes a little as you lift his legs up and press your cock to his tailhole. He\'s very tight, and as you push forward, you feel him gasp and squirm. However, you soon manage to slide yourself into him, and feel his ass clenching around your cock. You start to thrust, pushing your cock into him, in and out, getting faster and faster. He pants and gasps, his own cock bouncing and leaking large amounts of precum. "I can\'t, it\'s, I!", he stammers, before yowling and suddenly cumming after only a few thrusts. His cock pulses and gushes a thick stream of cum into the air, but as it does so, a rush of almost electrical energy explodes from his fur and blasts into you. You find yourself yowling too, and thrusting hard into his rear as you shudder with sensation. Your skin prickles as soft black fur grows all over you. Your hands and feet sting as sharp, narrow claws push out from the tips. Your tailbone grows out, flicking and shaking as it stretches into a thin, furry feline tail. With the change comes a growing pleasure, and as your ears stretch up and grow pointed and triangular atop your head, you gasp. Your face pushes forward into a short, streamlined muzzle, and you grunt as you start to cum. Your cock unloads hot, dripping cum deep into Saberhagen\'s rear, overwhelmed by the pleasure of your changes. When you pull out, you leave him an oozing mess, and he covers his face with embarrassment. "I\'m so sorry! I lost control! I, but, you make a very handsome cat", he says shyly. You grin at him, and stand up, feeling your new feline body. This could certainly be fun.',
+                        "descriptionchange": "This adventurer is a lithe and slender magical black cat.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 19,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "saberhagensex_f",
+                "title": "Move to the Next Level",
+                "subtitle": 'Saberhagen has a big crush on you, but he\'s also a sheltered virgin scholar. Time to take things further.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "species",
+                        "value": 19,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "saberhagenicong",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You choose a day where Saberhagen has been paying particular attention to you. Likely because you aren\'t wearing a shirt, but he keeps looking over, and the distraction makes him stumble, or drop his bread, or knock over some books. By the end of the day he\'s a blushing nervous mess. You help him close up the store, but instead of leaving for the day like normal, you walk into the tent with him. He looks up at you, his cat eyes shining in the dark tent. "Oh! Goodness, is there something I can, er, help you with?", he asks.</p>You tell him that actually, there is. Then, you take hold of his wrist and pull him close to you. His arms are slim and soft, and he doesn\'t resist at all. In fact, he looks completely star struck. You lean in close to him, and press your face to his soft furry muzzle. Your tongue slides into his mouth as you kiss him, feeling the smooth points of his teeth, and the hot warmth of his rough tongue. Judging by his nervousness and the motion of his tongue, you\'re probably his first kiss. You lean back and look at him, his face almost glowing with the red blush that covers his cheeks and muzzle. "I, oh, scholars, er...at the tower, we\'re not supposed to engage in...", he says, stumbling over his words.</p>You take his shaky hands and press them onto your chest, letting him feel your breasts. He strokes them, his eyes wide in admiration, and bites his lower lip nervously. You can see him looking intensely at your body, and you oblige him by reaching down and pushing your pants off, to reveal your full nudity. He almost gasps as your clothes drop to the floor, and his whiskers twitch.</p>You reach forward and push open his robe, sliding it across his shoulders until it falls to the floor under its own weight. Then, in an authoritative tone, you tell him to take off his shirt and pants. He hesitates for a moment, but he can\'t take his eyes off your body, and he pulls his shirt up over his head. His torso is the same shade of silky black as the rest of his body, and his chest is slender and narrow. You walk closer, and slide your hands along his hips, feeling his soft fur, before you push down his breeches, to reveal his hard, pre-leaking cock. He looks up at you and leans in for another kiss, which you oblige. Though his motions are still nervous and unsure, you can tell he\'s excited. You hold onto his cock, feeling its firmness in your hand as you slowly stroke and tease him. He purrs and yowls, wiggling at your touch. "I\'ve...I\'ve never...", he mutters, but you just lower him down onto the cushions that scatter the floor of the tent.</p>The cat closes his eyes and shakes a little as you lift yourself up and slide down onto his cock. You push forward, and feel him gasp and squirm. You start to thrust, riding him, in and out, getting faster and faster. He pants and gasps, his own cock leaking large amounts of precum inside you. "I can\'t, it\'s, I!", he stammers, before yowling and suddenly cumming after only a few moments. His cock pulses and gushes a thick stream of cum, filling you with warmth deep inside, but as it does so, a rush of almost electrical energy explodes from his fur and blasts into you. You find yourself yowling too, and hilting his cock inside you as you shudder with sensation. Your skin prickles as soft black fur grows all over you. Your hands and feet sting as sharp, narrow claws push out from the tips. Your tailbone grows out, flicking and shaking as it stretches into a thin, furry feline tail. With the change comes a growing pleasure, and as your ears stretch up and grow pointed and triangular atop your head, you gasp. Your face pushes forward into a short, streamlined muzzle, and you grunt as you start to orgasm too, overwhelmed by the pleasure of your changes. When you pull out, you leave him an oozing mess, and he covers his face with embarrassment. "I\'m so sorry! I lost control! I, but, you make a very beautiful cat", he says shyly. You grin at him, and stand up, feeling your new feline body. This could certainly be fun.',
+                        "descriptionchange": "This adventurer is a lithe and slender magical black cat.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 19,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "cat_vore",
+                "title": "Saberhagen's Guest?",
+                "subtitle": "You are poking around in the marketplace, which is pretty difficult on tiny mouse legs, when you notice something a bit odd. Saberhagen, normally so refined and dignified, is nervously talking to a taller black cat with a wide grin. He notices you and starts staring at you with a look of strange concern. He shakes his head slightly.</p>Now that you are paying attention, you notice he is vibrating with barely-concealed intensity. Being a wizard from a foreign land, he isn\'t a horny sex-lunatic like everyone else in this town, so it\'s pretty weird to see him acting so uncharacteristically. Do you want to go ask him what\'s wrong?",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You scurry over on four legs, intending to ask Saberhagen if something is wrong. The moment you get within arms range, your world is suddenly turned upside down! The other cat wizard has lunged forward with lightning speed and grabbed you in one of his hands, and you are dangling upside down by your tail, dizzy from the haste. You notice his claws are out, shiny and gleaming, and his mouth is drooling. </p>You wiggle and squeak, and Saberhagen drags the cat into his tent. "Let him go, Ritter! They don\'t eat people here!", Saberhagen pleads, but the other cat is snarling. "I try so hard to remain dignified..." he mutters, dropping you on the ground. When you scurry to escape, he lunges and slams a hand down in front of you, and when you retreat, he does it again. He purrs with amusement. "But this absurd town...letting MICE wander around freely! How can I resist that?!" he says. </p>He snaps his fingers, and his robes and hat disappear in a puff of smoke. Saberhagen is thrust across the room, his arms bound with gleaming strands of green light. Ritter\'s body is lean and lithe, his black fur sleek on his slender body. Between his legs, a furry black sheath holds a firm, erect cock. The whiteness of his grin stands out in the dark tent, almost like a cheshire cat\'s disembodied smile. Whether or not you find him attractive, his actions have triggered some primal survival instinct in your rodent body, and you spin around for a moment and flee as fast as your little paws will carry you. </p>There is another puff of purple smoke, and suddenly you are running along a warm, black, furry surface. You look up to see that you\'re walking on Ritter\'s chest, running towards his face! He grabs you, and drops you down between his legs, where you land on his twitching cock. Before you can move, he grips you firmly in his hand, and starts to squeeze you against his shaft. He pulls you up and down, rubbing you along his cock like a fuck toy, and the more you squeak and struggle, the more he purrs and the harder he gets.</p> "Mice...are toys. Toys for cats to amuse themselves with, and then, when we are done...to devour." he whispers. Pre oozes from his bulging cock and soaks your fur, making you slippery and wet. Just as his cock is bobbing and tensing, about to blow, he grabs you in his hand and lifts you to his mouth. You dangle over his wide, gaping maw, until suddenly your stomach lurches as you are dropped. You land on Ritter\'s wide, rough tongue, clinging on desperately as his fanged maw closes around you. In the dark wetness of his mouth, his tongue slides up and down your chest, licking and teasing you all over. You can feel how aroused he is by his panting breath over you, and the moans and purrs emitting from his throat. </p>With a shudder, and a loud, orgasmic moan, the cat blows his load, and swallows you at the same time. You are sent down a slippery slide along the tight confines of Ritter\'s throat and into his belly, even as he soaks his own chestfur with creamy cum.',
+                        "area": "belly",
+                        "outcomes": [
+                        ]
+                    }
+                }
+            },{
                 "id": "guest_fursuit",
                 "title": "The Fursuit Store",
                 "subtitle": 'You find yourself in front of an unfamiliar building, unsure of how you got there and feeling a vague sense of Deja Vu. The street you are on is eerily quiet, not a single other person around you for as far as you can see. All the other buildings around you feeling very empty and devoid of life. The building in front of you resembles some sort of store, with large windows and a glass door with a “We are Open” sign hanging on the inside. When you try to glance through the windows, you find the inside of the store to be quite dim and through the glass you can make out what looks like suits or costumes hanging from some racks. You back up and notice a sign above the door, which you can almost swear was not there before. The sign has text in a comic sans font which says “Fur-Real Costume Shop” and below the text is a picture of a really exaggerated blue cartoon fox winking. Do you decide to enter the shop?',
@@ -88,6 +246,11 @@ var area = {
                 "name": "Saberhagen",
                 "description": "Saberhagen is a male black cat, wearing a wide-brimmed pointed hat. He is constantly checking his store and pulling baked goods out of the oven, or arranging his shelves.",
                 "icon": "saberhagenicon",
+                "shop": {
+                    "trades": [],
+                    "buys": ["lotus_1", "bloodstone", "skull_mask", "stone_shield"],
+                    "sells": []
+                },
                 "dialogue": [
                     {
                         "input": "What is your name?",

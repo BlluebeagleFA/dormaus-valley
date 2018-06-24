@@ -14,7 +14,7 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "mikhail_interest",
-                        "value": 5,
+                        "value": 2,
                         "comparison": "less" //default greater
                     }
                 ],
@@ -53,7 +53,7 @@ var area = {
                 "requirements": [
                 	{
                         "parameter": "mikhail_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     }
                 ],
@@ -64,7 +64,7 @@ var area = {
                         "outcomes": [
                             {
                                 "parameter": "muscat_1",
-                                "quantity": 75,
+                                "quantity": 15,
                                 "change": "add"
                             },
                             {
@@ -211,7 +211,7 @@ var area = {
                 "description": "Mikhail is an older german-shepherd dog. His fur is dusted with grey hairs, as is his fluffy moustache.",
                 "icon": "mikhailicon",
                 "shop": {
-                	"trades": ["chips_1", "muscat_1", "watervine_1", "old_sword", "magic_hat", "comb", "useless_raccoon"],
+                	"trades": ["chips_1", "muscat_1", "watervine_1", "nosering", "old_sword", "magic_hat", "comb", "useless_raccoon"],
                 	"buys": [],
                 	"sells": []
                 },

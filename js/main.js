@@ -566,12 +566,17 @@ function main(err,session) {
     function hideMap() {
         DV.Data.load_area(player.area,function(err,area_data){
             if (area_data) {
+                var currentareaname = area_data.title;
+                $(".areabutton").removeClass("currentareabutton");
+                console.log(currentareaname);
+                $(".areabutton[data-area=" + currentareaname + "]").addClass("currentareabutton");
+                
                 if (player.trapped) {
                     $("#box3 .map").addClass("hide");
                     $("#box3 .mapblock").removeClass("hide");
                     $("#box3 .mapblock").empty();
                     $("#box3 .mapblock").append('<p>' + player.trapped + '</p>');
-                } else if (!area_data.position) {
+                } else if (area_data.nomap) {
                     $("#box3 .map").addClass("hide");
                     $("#box3 .mapblock").removeClass("hide");
                     var noMapText = "You don't know your way around this area yet. You'll have to navigate on foot.";
@@ -737,6 +742,65 @@ function main(err,session) {
             } else if (outcome.freeTrap) {
                 player.trapped = null;
                 player.trapped_desc = null;
+            }
+            
+            var updated = player.last_updated;
+            if (outcome.newchar) {
+                player = outcome.newchar;
+                player.last_updated = updated;
+            }
+            
+            if (outcome.reset == "minor") {
+                player.attributes = {};
+                player.last_updated = updated;
+            }
+            
+            if (outcome.reset == "major") {
+                player = {
+                    area: "bar",
+                    dust: 0,
+                    description: "This adventurer is an ordinary human.",
+                    equipment: {
+                        head: null,
+                        clothes: null,
+                        weapon: null,
+                        feet: null,
+                        ally: null
+                    },
+                    stats: {
+                        stealth: 1,
+                        might: 1,
+                        magic: 1,
+                        charm: 1
+                    },
+                    statprogress: {
+                        stealth: 0,
+                        might: 0,
+                        magic: 0,
+                        charm: 0
+                    },
+                    items: {},
+                    attributes: {},
+                    suffering: {
+                        pain: {
+                            value: 0,
+                            progress: 0
+                        },
+                        guilt: {
+                            value: 0,
+                            progress: 0
+                        },
+                        outcast: {
+                            value: 0,
+                            progress: 0
+                        },
+                        curse: {
+                            value: 0,
+                            progress: 0
+                        }
+                    }
+                };
+                player.last_updated = updated;
             }
             
             if (outcome.area) {
@@ -907,6 +971,9 @@ function main(err,session) {
                 if (progress < 0) {
                     player.suffering[parameter].progress = 0;
                     player.suffering[parameter].value = player.suffering[parameter].value-1;
+                    if (player.suffering[parameter].value < 0) {
+                        player.suffering[parameter].value = 0;
+                    }
                     return [1, 0, player.suffering[parameter].value];
                 } else {
                     return [(progress+quantity)/next, progress/next, player.suffering[parameter].value];
@@ -944,6 +1011,9 @@ function main(err,session) {
                 if (progress < 0) {
                     player.attributes[parameter].progress = 0;
                     player.attributes[parameter].value = player.attributes[parameter].value-1;
+                    if (player.attributes[parameter].value < 0) {
+                        player.attributes[parameter].value = 0;
+                    }
                     return [1, 0, player.attributes[parameter].value];
                 } else {
                     return [(progress+quantity)/next, progress/next, player.attributes[parameter].value];
@@ -959,6 +1029,9 @@ function main(err,session) {
                 player.items[parameter] = quantity;
             } else if (type == "sub") {
                 player.items[parameter] -= quantity;
+                if (player.items[parameter] < 0) {
+                    player.items[parameter] = 0;
+                }
             }
             if (player.items[parameter] <= 0) {
                 delete player.items[parameter];
@@ -992,6 +1065,9 @@ function main(err,session) {
                 if (progress < 0) {
                     player.statprogress[parameter] = 0;
                     player.stats[parameter] = player.stats[parameter]-1;
+                    if (player.stats[parameter] < 0) {
+                        player.stats[parameter] = 0;
+                    }
                     updateStat(parameter);
                     return [1, 0, player.stats[parameter]];
                 } else {
@@ -1254,6 +1330,7 @@ function main(err,session) {
     }
     
     function displayArea(areaName) {
+//        console.log(JSON.stringify(player));
         DV.Data.load_area(areaName,function(err,area_data){
             if(err){
                 console.log(err);

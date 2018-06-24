@@ -94,6 +94,72 @@ var area = {
                     }
                 }
             },{
+                "id": "lioness_place_m",
+                "title": "Your Master Calls",
+                "subtitle": "You can smell the lion, the one who owned you. You need him, desperately.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "submissiveness",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "leonar_master",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "The Shining": {
+                        "text": 'As you stand in the hotel room, you begin to feel strange. Your body is flushed, and warm. Tingling sensations are flowing along your thighs, and your lion body feels warm and tingly. You have a desperate urge, an overpowering need to be filled. You start to pant, and your nostrils flare as you detect the source of your desire. A musk in the air, just a faint trace, but one which is hammering at your deepest desires like a jackhammer. You can smell a powerful, fertile male lion, and you are in the throes of some sort of strange heat.</p>You leave the room and follow the scent down the corridor, your heart pounding in your chest. With each step the musky, primal savannah scent of a horny lion gets stronger. You follow it up the stairs to the royal suite of the hotel, normally off-limits to all but the most prestigious of guests. You push open the double doors, and your mind swims at what you see. In front of you, lying on his back naked in a massive four poster bed, is your king, your lion. His handsome face is stretched into a gleaming fanged grin, and his arms are crossed behind his head, showing off his huge furry armpits. Surrounding him, at his feet and sides and curled on the floor, are many beautiful female lions, purring and gazing up at their ruler with adoration. He flexes his mighty paws, and you find yourself staring between his legs at the gigantic rock-hard lion cock standing erect in the air.</p>"I knew you would come, my lioness. Serve me", he commands. You feel like you should correct him, to say you are male. But it does not matter. Male, female...you are his lioness. You are helpless to resist. You move forward and kneel before his bed, taking hold of one of his mighty footpaws and beginning to stroke and massage it. He growls with pleasure and flexes his paw, then motions you to come up on the bed. Obediently, you climb up onto the plush and comfortable bed, but all you want to be on is your master\'s glorious body. He stares at you with his glowing amber eyes, as you stroke and kiss his legs, then rub your hands along the powerful muscles of his furry chest. He reaches up and strokes your chest, then pulls you down and rolls you over. His heavy, hot, musky body presses down onto you, as he growls with dominance and possessiveness.</p>"You are my lioness. My slave", he says, and you just nod, accepting your place. He teases and strokes your breasts, then begins to push forward, his mighty shaft stroking along your cock, as he frots and grinds against you. You exist to please him, to serve him. He cock rubs over your furry skin, oozes pre into your pelt, and every motion he makes causes you to forget your old life more and more. You want only to be with him forever, be one of his adoring harem slaves. He starts to thrust faster, his fanged maw slavering as his fur rises. Over and over he grinds against you, until his chest heaves with lust and his hands unleash claws that leave massive ragged tears in the bedsheets.</p>You hear his orgasm coming, as a rumbling, earthshaking roar building in his chest, until it crashes out from his muzzle. His enormous roar crushes your will, makes you know that you are beneath him, serving him, and when his cock unleashes its hot gift all over your chest, you accept it with bliss. Your master has used you and taken you, and blessed you with his cum. Your own body shudders and heats with pleasure, a heartpounding orgasm that washes away your thoughts and fills you with desire for your man. Your smaller cock erupts with your own seed, mingling with his. Slowly, you look up to him, and whimper something unintelligable, trying to express your love. He grins, his eyes gleaming...and rolls you over to fuck your ass, already hard and ready to go.</p>All night you are mounted and taken by your king, sent to heights of pleasure you have never felt before. By the morning, you are an exhausted mess, and he leaves you dripping with his cum on the bed as he gathers his slaves to go. Before he leaves, he kisses your neck and places something next to you. When you recover your senses enough to get up, you find a beautiful silver slave collar. Engraved on the front are the words "My Lioness"',
+                        "outcomes": [
+                            {
+                                "parameter": "leonar_master",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "lioness_place_f",
+                "title": "Your Master Calls",
+                "subtitle": "You can smell the lion, the one who owned you. You need him, desperately.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "submissiveness",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "leonar_master",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "The Shining": {
+                        "text": 'As you stand in the hotel room, you begin to feel strange. Your body is flushed, and warm. Tingling sensations are flowing along your thighs, and your lioness pussy feels warm and wet. You have a desperate urge, an overpowering need to be filled. You start to pant, and your nostrils flare as you detect the source of your desire. A musk in the air, just a faint trace, but one which is hammering at your deepest desires like a jackhammer. You can smell a powerful, fertile male lion, and you are in the throes of heat.</p>You leave the room and follow the scent down the corridor, your heart pounding in your chest. With each step the musky, primal savannah scent of a horny lion gets stronger. You follow it up the stairs to the royal suite of the hotel, normally off-limits to all but the most prestigious of guests. You push open the double doors, and your mind swims at what you see. In front of you, lying on his back naked in a massive four poster bed, is your king, your lion. His handsome face is stretched into a gleaming fanged grin, and his arms are crossed behind his head, showing off his huge furry armpits. Surrounding him, at his feet and sides and curled on the floor, are many beautiful female lions, purring and gazing up at their ruler with adoration. He flexes his mighty paws, and you find yourself staring between his legs at the gigantic rock-hard lion cock standing erect in the air.</p>"I knew you would come, my lioness. Serve me", he commands. You are helpless to resist. You move forward and kneel before his bed, taking hold of one of his mighty footpaws and beginning to stroke and massage it. He growls with pleasure and flexes his paw, then motions you to come up on the bed. Obediently, you climb up onto the plush and comfortable bed, but all you want to be on is your master\'s glorious body. He stares at you with his glowing amber eyes, as you stroke and kiss his legs, then rub your hands along the powerful muscles of his furry chest. He reaches up and strokes your chest, then pulls you down and rolls you over. His heavy, hot, musky body presses down onto you, as he growls with dominance and possessiveness.</p>"You are my lioness. My slave", he says, and you just nod, accepting your place. He teases and strokes your breasts, then begins to push forward, his mighty shaft stroking along your labia, before plunging deep into your pussy. You gasp and moan, your insides so sensitive and so pleasured by the touch of your king\'s shaft. You exist to please him, to serve him. He thrusts and plunges into you, in and out, in and out, and every motion he makes causes you to forget your old life more and more. You want only to be with him forever, be one of his adoring harem girls. He starts to thrust faster, his fanged maw slavering as his fur rises. Over and over he pounds into you, until his chest heaves with lust and his hands unleash claws that leave massive ragged tears in the bedsheets.</p>You hear his orgasm coming, as a rumbling, earthshaking roar building in his chest, until it crashes out from his muzzle. His enormous roar crushes your will, makes you know that you are beneath him, serving him, and when his cock unleashes its hot gift deep into your pussy, you accept it with bliss. Your master has mounted you and taken you, and filled you with his cum. Your own body shudders and heats with pleasure, a heartpounding orgasm that washes away your thoughts and fills you with desire for your man. Slowly, you look up to him, and whimper something unintelligable, trying to express your love. He grins, his eyes gleaming...and starts to fuck you again, already hard and ready to go.</p>All night you are mounted and taken by your king, sent to heights of pleasure you have never felt before. By the morning, you are an exhausted mess, and he leaves you dripping with his cum on the bed as he gathers his slaves to go. Before he leaves, he kisses your breast and places something next to you. When you recover your senses enough to get up, you find a beautiful silver slave collar. Engraved on the front are the words "My Lioness"',
+                        "outcomes": [
+                            {
+                                "parameter": "leonar_master",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "hotelroom_random",
                 "title": "Explore the Upper Hotel",
                 "subtitle": "Despite this building's small size, the winding corridors and room numbers would suggest a much larger structure.",

@@ -64,7 +64,7 @@ var area = {
                     },
                     {
                         "parameter": "flute_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     },
                     {
@@ -130,7 +130,7 @@ var area = {
                     },
                     {
                         "parameter": "flute_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     },
                     {
@@ -238,7 +238,7 @@ var area = {
                     },
                     {
                         "parameter": "flute_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     },
                     {
@@ -309,7 +309,7 @@ var area = {
                     },
                     {
                         "parameter": "flute_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     },
                     {
@@ -412,7 +412,7 @@ var area = {
                     },
                     {
                         "parameter": "flute_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     },
                     {
@@ -480,6 +480,40 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "get_piss_curse",
+                "title": "Cursed Bottle?",
+                "subtitle": 'Flute is pawning off a strange bottle today [This will unlock watersports scenes].',
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "pisscurse",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "muscat_1",
+                        "value": 49,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "theft",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Flute sees you and suddenly sidles in front of your path, while lifting a strange bottle and waving it at you. "Wait wait wait my friend, you cannot miss an opportunity like this! I have here in my hands a flask of water from that rarest and most magical of beings - a primordial dragon! Drink this, and untold powers will be yours!", he insists. You try to get away, but he keeps stopping you, and explaining how rare and magical this potion is. Finally you relent, and buy it. You look down at the bottle suspiciously. What\'s the worst that could happen?</p>You uncork the bottle of dragon piss, and hesitate for a moment before gulping it down. It burns as it goes down your throat, and you cough and gag at the vile taste. Yet despite that, you find yourself shaking the bottle, desperate for a few more drops. You drop it with shaking hands when you cannot get more piss from it, and realise you are now cursed with an insatiable lust for urine.',
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 50,
+                                "change": "sub"
+                            },
+                            {
+                                "parameter": "pisscurse",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [
@@ -489,7 +523,7 @@ var area = {
                 "description": "Flute is a slender, sneaky fox male. He has a fetching grin and an even more fetching silver tongue.",
                 "icon": "fluteicon",
                 "shop": {
-                    "trades": ["slutty_shirt"],
+                    "trades": ["supplies", "slutty_shirt"],
                     "buys": ["ace_boots", "mikhail_socks"],
                     "sells": []
                 },

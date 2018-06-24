@@ -395,6 +395,10 @@ div.theft {
 	background-image: url("../img/saberhagen_b.png");
 }
 
+.saberhagenicong {
+	background-image: url("../img/saberhagen_g.png");
+}
+
 .grizzicon {
 	background-image: url("../img/grizzicon.png");
 }
@@ -463,6 +467,74 @@ div.theft {
 
 .playericon {
 	background-image: url("../img/playericon.png");
+}
+
+.westwoodicon {
+	background-image: url("../img/westwood.png");
+}
+
+.anonicon {
+	background-image: url("../img/anonicon.png");
+}
+
+.lotus_1 {
+	background-image: url("../img/witch_lotus.png");
+}
+
+.nosering {
+	background-image: url("../img/nosering.png");
+}
+
+.leonar_r {
+	background-image: url("../img/leonar_r.png");
+}
+
+.suppliess {
+	background-image: url("../img/suppliess.png");
+}
+
+.suppliesg {
+	background-image: url("../img/suppliesg.png");
+}
+
+.thevoid {
+	background-image: url("../img/thevoid.png");
+}
+
+.mailbox {
+	background-image: url("../img/mailboxicon.png");
+}
+
+.supplies {
+	background-image: url("../img/supplies.png");
+}
+
+.skullmask {
+	background-image: url("../img/skullmask.png");
+}
+
+.bloodstone {
+	background-image: url("../img/bloodstone.png");
+}
+
+.kind {
+	background-image: url("../img/kind.png");
+}
+
+.cruel {
+	background-image: url("../img/cruel.png");
+}
+
+.stoneshield {
+	background-image: url("../img/stoneshield.png");
+}
+
+.leatherjacket {
+	background-image: url("../img/leatherjacket.png");
+}
+
+.cigarette {
+	background-image: url("../img/cigarette.png");
 }
 
 .dustbox {
@@ -703,7 +775,7 @@ input {
 
 .map {
 	width: 100%;
-	background-image: url("../img/dormausvillage.png");
+	background-image: url("../img/dormausvillage.jpg");
 	background-size: cover;
 	position: relative;
 }

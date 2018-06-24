@@ -31,6 +31,48 @@ var area = {
                     }
                 }
             },{
+                "id": "mummy_m",
+                "title": "An Out-of-Place Tomb",
+                "subtitle": 'One of the tombs is very unlike the others. It\'s pyramidal, and decorated in sandstone. [Guest event from OsirionMummy]',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzpay": {
+                        "text": 'The graveyard is covered with fog and vines cover the pathways. Suddenly dirt gives way to sand and you happen upon a large sandstone crypt. A desert heat beats down on you, encouraging you to take refuge inside the tomb. Torches light your way into a large chamber. </p>Open sarcophagi lay in rows. Most are empty, with their lids off to the side. But some are occupied. You hear muffled moans coming from inside the stone boxes.</p>At the center of the chamber lays a golden sarcophagus. With a grinding sound, the lid opens revealing bandaged jackal with glowing yellow eyes. He shuffles towards you from a golden sarcophagus. "Hello. Welcome to my necropolis!"</p>"Over the centuries, many have sought immortality. It is here, where they’ve found it." The jackal opens a nearby sarcophagus to reveal a squirming mummified male. His arms are crossed over his chest, his legs and tail wrapped together, his cock fastened proudly to his stomach. Over his face, a golden burial mask of a stoic fox. "He has been here for millennia, undisturbed."</p>His eyes stare at yours as his soft, cloth-covered paws pet your chin. They comfort you as the jackal chuckles, "You’ve traveled so long. You deserve an eternal rest…"</p>You feel tired while looking into the jackal’s hypnotic eyes. And you say yes to the jackal’s comforting words. "Wonderful! You can be assured that my mummies have the best quality. Not that you\'ll find another embalmer like me out there," the jackal chuckles as he leads you to a sandstone altar. </p>In ceremonies that last for days but to you seems like minutes, the jackal anoints you with oils, preserving your body.</p>Your master pumps your hardened cock, spilling your juices onto the altar over and over. Gradually your flesh begins to lose moisture until your cock and your entire body is a jerkied shell of its former self.</p>The jackal chants over your body as bandages crawl from their stone cabinets and adhere to your limbs. As the bandages tightly wrap, they leave not one hair or patch of skin free. And eventually they cover your eyes, snuffing out your vision.</p>Another layer is added to you, and another. Finally the flurry of bandages seems to stop. And the jackal picks you up, taking you to your sarcophagus. A golden burial mask is placed on your head, where it adheres tightly.</p>In darkness, you feel one last stroke on your sensitive bandaged cock. "Sweet dreams, my slave." You hear the lid closing over your tomb, and then nothing…',
+                        "trapped_desc": "There is a lifeless mummy in a golden sarcophagus here.",
+                        "trapped": 'You are trapped in the darkness of a glorious sarcophagus. Your body is a silent still mummy, wrapped tightly in bandages, and adorned in golden ornaments. You will remain here forever.',
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "mummy_f",
+                "title": "An Out-of-Place Tomb",
+                "subtitle": 'One of the tombs is very unlike the others. It\'s pyramidal, and decorated in sandstone. [Guest event from OsirionMummy]',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzpay": {
+                        "text": 'The graveyard is covered with fog and vines cover the pathways. Suddenly dirt gives way to sand and you happen upon a large sandstone crypt. A desert heat beats down on you, encouraging you to take refuge inside the tomb. Torches light your way into a large chamber. </p>Open sarcophagi lay in rows. Most are empty, with their lids off to the side. But some are occupied. You hear muffled moans coming from inside the stone boxes.</p>At the center of the chamber lays a golden sarcophagus. With a grinding sound, the lid opens revealing bandaged jackal with glowing yellow eyes. He shuffles towards you from a golden sarcophagus. "Hello. Welcome to my necropolis!"</p>"Over the centuries, many have sought immortality. It is here, where they’ve found it." The jackal opens a nearby sarcophagus to reveal a squirming mummified male. His arms are crossed over his chest, his legs and tail wrapped together, his cock fastened proudly to his stomach. Over his face, a golden burial mask of a stoic fox. "He has been here for millennia, undisturbed."</p>His eyes stare at yours as his soft, cloth-covered paws pet your chin. They comfort you as the jackal chuckles, "You’ve traveled so long. You deserve an eternal rest…"</p>You feel tired while looking into the jackal’s hypnotic eyes. And you say yes to the jackal’s comforting words. "Wonderful! You can be assured that my mummies have the best quality. Not that you\'ll find another embalmer like me out there," the jackal chuckles as he leads you to a sandstone altar. </p>In ceremonies that last for days but to you seems like minutes, the jackal anoints you with oils, preserving your body.</p>Your master stuffs your clit with oil-soaked bandages. The bandages give you a tingly feeling inside as they draw out moisture from your body and turn your entire body into jerky.</p>The jackal chants over your body as bandages crawl from their stone cabinets and adhere to your limbs. As the bandages tightly wrap, they leave not one hair or patch of skin free. And eventually they cover your eyes, snuffing out your vision.</p>Another layer is added to you, and another. Finally the flurry of bandages seems to stop. And the jackal picks you up, taking you to your sarcophagus. A golden burial mask is placed on your head, where it adheres tightly.</p>In darkness, you feel one last stroke on your sensitive bandaged clit. "Sweet dreams, my slave." You hear the lid closing over your tomb, and then nothing…',
+                        "trapped_desc": "There is a lifeless mummy in a golden sarcophagus here.",
+                        "trapped": 'You are trapped in the darkness of a glorious sarcophagus. Your body is a silent still mummy, wrapped tightly in bandages, and adorned in golden ornaments. You will remain here forever.',
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "wolf_ghost_male",
                 "title": "Read a Gravestone",
                 "subtitle": 'One of the stones in the churchyard draws your eye. For a moment, you thought you saw someone sitting on it.',

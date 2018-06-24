@@ -75,6 +75,22 @@ var area = {
                     }
                 }
             },{
+                "id": "plant_vore",
+                "title": "A Strangely Appealing Plant",
+                "subtitle": "As you walk through the pumpkin patch, you notice the thick and tall pants near the far end of the field, where the grass gets wilder and more rugged. One of them in particular catches your eye. A massive pitcher plant, that you know is filled with powerful digestive fluids, and a slippery interior that is inescapable. Despite the danger, the plant\'s strange scent, irresistably excited by the thought of becoming fertilizer for this plant. Do you dare climb in?",
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "default",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Could you possibly really do it? Offer yourself up to become plant food? It seems absurd, but before you know it, you have your hands pressed up against the massive plant\'s sides, and you are gently stroking the cool, smooth surface. The plant is mindless, thoughtless and stoic. It won\'t even be aware of you as it digests you, turns you into nothing but nutrients. Destroying your body just for the benefit of a vegetable. You are getting aroused just thinking about it.</p>You start to climb up the tall green plant, your hands and feet gripping onto the smooth rind as you heave yourself up it. You pull yourself to the top, and look down into the inside of the thing that will soon be digesting you. While the outside is shiny, firm and green, the top of the plant flares out to show off an opening that is wet, pink and slimy. It glistens with slippery goo, and when you gently touch it, the cold slime is thin and very slick. This is your last chance to turn back and stop this foolish idea. Instead of doing that though, you pull yourself up, and dangle your legs down the inside of the plant. At the bottom, where the base bulges out, there is a slick pool of slime, which you will soon be adding to. You hold the edges and drop down, your back sliding down the wet and slippery inside of the plant, and then you land with a messy splash in the thick, sticky slime in the middle of the flower.</p>You slowly sink in the goo, your legs being pulled down into the thick digestive plant juices. You are pulled down to your chest, only your arms and head sticking up out of the fluids. Experimentally, you try pulling on the sides of the wall, but they are slimy and frictionless. Escape is impossible. Nothing to do but lie back and accept your fate as plant food. You move your legs slowly in the goo, feeling a tingling growing in them. They feel weak and limp, the tingling growing to an intense pins and needles, and then you can no longer feel them at all. You scoop up some of the digestive slime and rub it on your chest and face, feeling it tingle and fizz against your skin. Your body is tingling and flushed under the slime, with your arousal at knowing you are literally digesting right now. You reach down and slowly stroke yourself, fondling and masturbating with the thick, cool slimy goo, until you feel your fingers squish through your crotch as it falls apart and melts into more slime. You try to pull your hands back up, but they go numb and melt away. You feel your torso sinking down further, your skin glistening and gleaming as it turns green and goopy. You look up at the sky through the top hole of your predatory flower, and relax as you let yourself sink down into goo, your body and head melting away as your mind and thoughts sink into calm, slimy darkness.',
+                        "area": "belly",
+                        "outcomes": [
+                        ]
+                    }
+                }
+            },{
                 "id": "patch_random",
                 "title": "Explore the Pumpkin Patch",
                 "subtitle": "The pumpkin patch stretches across the hills and reaches up to the scrubland and ruins to the north.",

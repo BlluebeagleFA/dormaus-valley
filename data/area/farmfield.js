@@ -20,6 +20,26 @@ var area = {
                     }
                 }
             },{
+                "id": "farmfield_e",
+                "title": "Enter the Dark Cavern",
+                "subtitle": "Your Digger's permit causes the protective charms to move aside when you get close",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "digger",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You push nervously past the glowing charms, but their strange resistive force seems to have dissipated. The dark caverns lie beyond.",
+                        "area": "cavernentrance",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "farmfield_random",
                 "title": "Explore the muddy fields",
                 "subtitle": "The mud sticks to your feet and it feels like you might sink into it at any moment",

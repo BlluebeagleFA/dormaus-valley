@@ -139,7 +139,7 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "turner_interest",
-                        "value": 5,
+                        "value": 2,
                         "comparison": "less" //default greater
                     }
                 ],
@@ -178,7 +178,7 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "turner_interest",
-                        "value": 4,
+                        "value": 1,
                         "comparison": "greater" //default greater
                     }
                 ],
@@ -189,7 +189,7 @@ var area = {
                         "outcomes": [
                             {
                                 "parameter": "watervine_1",
-                                "quantity": 5,
+                                "quantity": 3,
                                 "change": "add"
                             },
                             {
@@ -308,6 +308,26 @@ var area = {
                                 "quantity": 7,
                                 "change": "add"
                             }
+                        ]
+                    }
+                }
+            },{
+                "id": "turner_piss",
+                "title": "Turner's Piss",
+                "subtitle": "Turner is relieving himself and you can't stop thinking about it.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "pisscurse",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "turnericon",
+                "results": {
+                    "grizzpay": {
+                        "text": 'You hear a loud splashing noise, like a hose, and faintly detect a sharp and acrid smell in the air. You look around until you notice Turner standing against a tree, with his overalls open in the front. One of his hands is leaning on the bark, and the other is holding his enormous cock, which is unloading a forceful stream of steaming yellow piss all over the tree\'s roots.</p>You try to resist, but the curse inside you starts to hum and tingle, and you find yourself walking forward quickly, before throwing yourself against the tree and falling onto your ass, your face looking straight into the flow. Turner whinnies in surprise, but he can\'t stop mid-stream, and his urine blasts against your face and mouth. The force of it is like a water cannon, and your head is pushed back against the tree. Your mouth opens as his bitter urine flows over your tongue and spills down your front. Your body is soaked, and by the time he stops, you are left sitting in a warm puddle of horse piss.',
+                        "outcomes": [
                         ]
                     }
                 }

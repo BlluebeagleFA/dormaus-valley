@@ -3,99 +3,171 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 DV.Data.item_data = {
 	//Attributes
 	//Note: inventory not showing correct description choice
-        turner_interest: {
-            max: 5,
-            type: "attribute",
-            icon: "turnericon",
-            title: "Turner [Interest]",
-            description: ["You have been working on the farm with Turner."]
-        },
-        turner_connection: {
-            type: "attribute",
-            icon: "turnericong",
-            title: "Turner [Friend]",
-            description: ["Turner is fond of you."]
-        },
-        grizz_interest: {
-            max: 5,
-            type: "attribute",
-            icon: "grizzicon",
-            title: "Grizz [Interest]",
-            description: ["Grizz has been watching you at work."]
-        },
-        grizz_connection: {
-            type: "attribute",
-            icon: "grizzicong",
-            title: "Grizz [Friend]",
-            description: ["Grizz is fond of you."]
-        },
-        flute_interest: {
-            type: "attribute",
-            icon: "fluteicon",
-            title: "Flute [Interest]",
-            description: ["You have been working hard as Flute's assistant."]
-        },
-        flute_connection: {
-            type: "attribute",
-            icon: "fluteicong",
-            title: "Flute [Connection]",
-            description: ["Flute has started to change you to suit his desires."]
-        },
-        flute_master: {
-            type: "attribute",
-            icon: "fluteiconr",
-            title: "Flute [Master]",
-            description: ["Flute is your master. You will do anything he says."]
-        },
-        mikhail_interest: {
-            max: 5,
-            type: "attribute",
-            icon: "mikhailicon",
-            title: "Mikhail [Interest]",
-            description: ["Mikhail appreciates you working at the store."]
-        },
-        mikhail_connection: {
-            type: "attribute",
-            icon: "mikhailicong",
-            title: "Mikhail [Friend]",
-            description: ["Mikhail is fond of you."]
-        }, 
-        species: {
-            type: "attribute",
-            icon: "speciesicon",
-            title: "Species",
-            description: [
-                "You are an ordinary human.", //1
-                "You are a big furry bear.", //2
-                "You are a scrawny little mouse.", //3 
-                "You are a furry, eager dog.", //4
-                "You are a tall, winged stone gargoyle.", //5
-                "You are a soft small living teddy bear.", //6
-                "You are a living blue fox fursuit, made of fabric.", //7
-                "You are a furry orange fox with a bushy tail", //8
-                "You are a big chubby pink pig", //9,
-                "You are a tall and muscular horse" //10
-                ]
-        },
-        gender: {
-            type: "attribute",
-            icon: "gendericon",
-            title: "Gender",
-            description: ["You have male genitals.", "You have female genitals.", "You have both male and female genitals.", "You have no genitals at all."]
-        },
-        submissiveness: {
-            type: "attribute",
-            icon: "subicon",
-            title: "Submissive",
-            description: ["You prefer to be submissive and obedient."]
-        },
-        dominance: {
-            type: "attribute",
-            icon: "domicon",
-            title: "Dominant",
-            description: ["You prefer to be dominant and in control."]
-        },
-	//Items
+    turner_interest: {
+        max: 5,
+        type: "attribute",
+        icon: "turnericon",
+        title: "Turner [Interest]",
+        description: ["You have been working on the farm with Turner."]
+    },
+    turner_connection: {
+        type: "attribute",
+        icon: "turnericong",
+        title: "Turner [Friend]",
+        description: ["Turner is fond of you."]
+    },
+    grizz_interest: {
+        max: 5,
+        type: "attribute",
+        icon: "grizzicon",
+        title: "Grizz [Interest]",
+        description: ["Grizz has been watching you at work."]
+    },
+    grizz_connection: {
+        type: "attribute",
+        icon: "grizzicong",
+        title: "Grizz [Friend]",
+        description: ["Grizz is fond of you."]
+    },
+    flute_interest: {
+        type: "attribute",
+        icon: "fluteicon",
+        title: "Flute [Interest]",
+        description: ["You have been working hard as Flute's assistant."]
+    },
+    flute_connection: {
+        type: "attribute",
+        icon: "fluteicong",
+        title: "Flute [Connection]",
+        description: ["Flute has started to change you to suit his desires."]
+    },
+    saberhagen_interest: {
+        type: "attribute",
+        icon: "saberhagenicon",
+        title: "Saberhagen [Interest]",
+        description: ["You have been working with Saberhagen at the bakery."]
+    },
+    saberhagen_connection: {
+        type: "attribute",
+        icon: "saberhagenicong",
+        title: "Saberhagen [Connection]",
+        description: ["Saberhagen has a rapidly-growing crush on you."]
+    },
+    flute_master: {
+        type: "attribute",
+        icon: "fluteiconr",
+        title: "Flute [Master]",
+        description: ["Flute is your master. You will do anything he says."]
+    },
+    leonar_master: {
+        type: "attribute",
+        icon: "leonar_r",
+        title: "Leonar [Master]",
+        description: ["You met a hypnotically handsome lion, and he commanded you to come to his hotel room.", "You have a collar locked around your neck, declaring that you are a harem slave."]
+    },
+    mikhail_interest: {
+        max: 5,
+        type: "attribute",
+        icon: "mikhailicon",
+        title: "Mikhail [Interest]",
+        description: ["Mikhail appreciates you working at the store."]
+    },
+    mikhail_connection: {
+        type: "attribute",
+        icon: "mikhailicong",
+        title: "Mikhail [Friend]",
+        description: ["Mikhail is fond of you."]
+    }, 
+    species: {
+        type: "attribute",
+        icon: "speciesicon",
+        title: "Species",
+        description: [
+            "You are an ordinary human.", //1
+            "You are a big furry bear.", //2
+            "You are a scrawny little mouse.", //3 
+            "You are a furry, eager dog.", //4
+            "You are a tall, winged stone gargoyle.", //5
+            "You are a soft small living teddy bear.", //6
+            "You are a living blue fox fursuit, made of fabric.", //7
+            "You are a furry orange fox with a bushy tail", //8
+            "You are a big chubby pink pig", //9,
+            "You are a tall and muscular horse", //10
+            "You are a slimy slug creature made of goo", //11
+            "You are a powerful naga, with a snake for a lower body", //12
+            "You are a monstrous tentacled illithid", //13
+            "You are a sleek, golden lion", //14,
+            "You are a short pudgy imp", //15
+            "You are a lizard-shaped faceless crystal drone", //16
+            "You are a mighty, proud wolf", //17
+            "You are a skunk with a big black striped tail", //18
+            "You are a lithe, magical black cat", //19
+            "You are a short muscular dwarf with a thick moustache", //20
+            "You are a muscular gorilla, with long hairy arms and tough grey skin", //21
+            "You are a drider, a sinister creature with a huge spider for a lower half" //22
+            ]
+    },
+    gender: {
+        type: "attribute",
+        icon: "gendericon",
+        title: "Gender",
+        description: ["You have male genitals.", "You have female genitals.", "You have both male and female genitals.", "You have no genitals at all."]
+    },
+    submissiveness: {
+        type: "attribute",
+        icon: "subicon",
+        title: "Submissive",
+        description: ["You prefer to be submissive and obedient."]
+    },
+    dominance: {
+        type: "attribute",
+        icon: "domicon",
+        title: "Dominant",
+        description: ["You prefer to be dominant and in control."]
+    },
+    westwood: {
+        type: "attribute",
+        icon: "westwoodicon",
+        title: "Westwood Native",
+        description: ["You were born in the dusty arid western deserts past Westwood."]
+    },
+    digger_progress: {
+        type: "attribute",
+        icon: "suppliess",
+        title: "Dig Progress",
+        description: ["You are progressing down in a digger delve."]
+    },
+    digger: {
+        type: "attribute",
+        icon: "suppliesg",
+        title: "Digger",
+        description: ["You are an officially licensed Digger."]
+    },
+    kind: {
+        type: "attribute",
+        icon: "kind",
+        title: "Kind",
+        description: ["You have a soft heart, deep down."]
+    },
+    cruel: {
+        type: "attribute",
+        icon: "cruel",
+        title: "Cruel",
+        description: ["You have a cold and wicked heart."]
+    },
+    intelligence: {
+        type: "attribute",
+        icon: "smart_potion",
+        title: "Intelligence",
+        description: ["Your intelligence and ability to reason and think."]
+    },
+    pisscurse: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Curse [Piss]",
+        description: ["You are cursed with an uncontrollable love of urine."]
+    },
+//Items
 	wine_1: {
 		type: "item",
 		icon: "wine_1",
@@ -180,8 +252,92 @@ DV.Data.item_data = {
 		value: 50,
 		description: ["This rare flower grows only in places that have been suffused with a sense of great loss. Their shimmering petals pulse with magical power."]
 	},
+	bloodstone: {
+        type: "item",
+        icon: "bloodstone",
+        title: "Bloodstone",
+        value: 100,
+        description: ["A rare, smooth gem. It is dark in colour, but shot through with glistening red veins. It forms only in areas of deep magical concentration."]
+    },
+    supplies: {
+        type: "item",
+        icon: "supplies",
+        title: "Supplies",
+        value: 1,
+        description: ["Digger supplies, everything you need to delve into caves, ruins and ancient temples."]
+    },
 	//Equipment
-	ace_boots: {
+	cowboy_boots: {
+        type: "item",
+        icon: "boots_1",
+        title: "Cowboy Boots",
+        value: 500,
+        slot: "feet",
+        attributes: {
+            might: 2,
+        },
+        description: ["These dirty boots are heavy and thick. The tips are metal-plated, and the insides are sweaty and humid with a rank, manly stench of unwashed wolf paws."]
+    },
+    leather_jacket: {
+        type: "item",
+        icon: "leatherjacket",
+        title: "Leather Jacket",
+        value: 300,
+        slot: "clothes",
+        attributes: {
+            might: 1,
+            charm: 1
+        },
+        description: ["A well-made leather jacket, both serviceable to protect you from harm, and also quite attractive. It has patches sewn into the sleeves, and the front is broken so it always hangs open and shows off your chest."]
+    },
+    cigarette: {
+        type: "item",
+        icon: "cigarette",
+        title: "Magic Cigarette",
+        value: 500,
+        slot: "head",
+        attributes: {
+            charm: 2
+        },
+        description: ["This foul-smelling cigarette is enchanted to never burn out. It stains your teeth and fingers yellow, yet the noxious stink makes people strangely attracted to you."]
+    },
+    nosering: {
+        type: "item",
+        icon: "nosering",
+        title: "Minotaur Nose Ring",
+        value: 100,
+        slot: "head",
+        attributes: {
+            dominance: 1
+        },
+        description: ["This ornate nose ring was pawned off by a minotaur beserker. Some of his dominant essence seems to remain in the metal."]
+    },
+    skull_mask: {
+        type: "item",
+        icon: "skullmask",
+        title: "Ritual Mask",
+        value: 1200,
+        slot: "head",
+        attributes: {
+            magic: 3,
+            charm: 1,
+            might: 1
+        },
+        description: ["This bone mask is shaped like a large lizard's skull. It is clearly ancient, and it hums with incredible magical power. When you wear it, you hear faint echoes of the past."]
+    },
+    stone_shield: {
+        type: "item",
+        icon: "stoneshield",
+        title: "Stone Shield",
+        value: 800,
+        slot: "weapon",
+        attributes: {
+            magic: 1,
+            might: 2
+        },
+        description: ["This ancient stone tablet is engraved with a long-forgotten language. It has an aura of danger, and can be wielded as a shield, if you hold it with both hands."]
+    },
+    ace_boots: {
 		type: "item",
 		icon: "boots_1",
 		title: "Ace's Old Boots",

@@ -5,6 +5,26 @@ var area = {
         "subheader": 'The grassy road opens up here, leading to two wooden poles, bedecked with flags. This marks the entrance to the sleepy town of Dormaus, and the smell of bread and sound of lively music flows through the air as you approach.',
         "events": [
             {
+                "id": "to_makarna",
+                "title": "To the Land of Lions",
+                "subtitle": "COMING SOON",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "leonar_master",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "The Shining": {
+                        "text": 'The journey to Makarna as Leonar\'s slave is coming soon. Keep an eye on my twitter for the release.',
+                        "outcomes": [
+                        ]
+                    }
+                }
+            },{
                 "id": "entrance_south",
                 "title": "Travel South through the Valley",
                 "subtitle": "Leaving the village would be unwise unless you're strong and in good health.",
@@ -176,6 +196,16 @@ var area = {
                     },
                     "ap_carpenter": {
                         "text": 'You hear a racket coming from the flagpoles, and look up to see Mikhail the dog hammering fresh nails into the sign bearing the name of the town. His shirt is off as he works, showing off his strong muscle gut and big, hairy forearms. He shouts some orders to another dog on the other side, who looks very much like him, though younger and skinnier. </p>"Boy, get your head in the game! You\'re gonna make this whole sign fall down." Mikhail sighs as the other dog stumbles, and drops his nails. "Boy, I need a man to do this job right." He clicks his fingers, and the smaller dog growls and shudders. His body grows larger, making his shirt and clothes creak, and he rips his shirt off with arms that are thickening and getting rougher. His soft fur becomes thick and shaggy, and his lithe chest develops hard muscle, which is then softened by a layer of pudge. His face becomes rugged, as his fur forms grey streaks and he grows a bristly beard across his cheeks. </p>He laughs in a deep, mature voice. "Well pops, guess I should call ya brother now!" he says. Mikhail nods, and they get back to work. Once they\'re done, the new carpenter walks past you and tosses you a few coins. "Buy yourself something nice, son!", he calls out to you.',
+                        "outcomes": [
+                            {
+                                "parameter": "chips_1",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
+                    },
+                    "ace_pissing": {
+                        "text": 'You pass Ace the coyote on the way through town, who\'s boots are coated in thick mud. His leather duster is tattered at the hems, and he grumbles as he strokes a revolver at his side. "Howdy, partner. Just got back from that blasted cave. Slimes in there don\'t give two shits about my bullets, and they ruined my fuckin\' coat." he growls. He spits at the side of the street, then walks over behind a tree by the side of the road. He adjusts his belt, then pulls down his chaps and trousers to pull out a thick and dark-coloured cock with a thick sheath. </p>He sighs as he relieves himself with a stream of steaming piss on the tree\'s roots, then when he is done, grabs his cock and starts to stroke it. He grunts and pants, grinding his boot into the dirt as he jerks off. His furry muzzle hangs open, and he shudders with relief, his cock jerking and spurting strange, sticky green cum that splatters over the tree and glows faintly. Huge amounts of it stream and spurt from his cock, until half the tree is coated in slime. He sees you watching and chuckles. </p>"When bullets don\'t work, I got a few other tricks to get folks outta my way." he says. He winks at you, pulls his pants back up, and heads towards the bar.',
                         "outcomes": [
                             {
                                 "parameter": "chips_1",

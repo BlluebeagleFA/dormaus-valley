@@ -4,7 +4,105 @@ var area = {
         "header": "Town Hall",
         "subheader": 'The town hall is a small wooden building. On one wall, a notice board is holding a variety of messages and papers, advertising fairs or making requests. A ticking clock on the opposite wall stands above the clerk\'s desk and gives the room a businesslike ambience. The mayor\'s desk is behind a glass panel, in a slightly more cozy-looking room.',
         "events": [
-        	{
+            {
+                "id": "supplies_booze",
+                "title": "Ply Workers With Booze",
+                "subtitle": 'You\'ll need assistance when diving into the caves. The best way to get that assistance is with lots and lots of booze.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "wine_1",
+                        "value": 49,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "digger",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "supplies",
+                "results": {
+                    "grizzsex": {
+                        "text": 'Mayor Maine folds one of his legs over the other and leans back in his chair. He considers you carefully for a while, and then finally nods. "Alright adventurer. I suppose I can see my way towards giving you a permit for the caves. After all, what sort of fellow would I be were I to go against the word of one of my fellow cats? I won\'t even make you kiss my feet for the privilege", he says. His eyes glimmer a little at that last part, although by now you are starting to get used to his proclivities. He gets out of his chair and leads you over to the record office, where he begins to fill in a form. "Now, if you want a successful cave dive, you\'re going to need more than just this permit. You\'ll want to gather up some cave-diving supplies. Ten is the bare minimum, but you could probably carry about twenty. Do let me know if you find anything of historical value!", he says, before handing you a piece of paper. It\'s signed with his official seal, and marks you as a licensed treasure digger. "You can gather up help and assistance at the cave entrance if you have favours to call in, but the easiest way to gather supplies is just to purchase them. Unfortunately, due to a complicated bureaucratic mixup, Flute is our official town supplier. He does have a tendency to overcharge.", he finishes. He sits back down at his desk and leaves you to your business.',
+                        "outcomes": [
+                            {
+                                "parameter": "supplies",
+                                "quantity": 1,
+                                "change": "add"
+                            },{
+                                "parameter": "wine_1",
+                                "quantity": 50,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "supplies_chips",
+                "title": "Gamble For Supplies",
+                "subtitle": 'What else are you going to do with poker chips? Conveniently, Ace himself is a licensed digger, and he\'d be happy to roll some dice to see if you get his supplies.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "chips_1",
+                        "value": 49,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "digger",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "supplies",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You challenge Ace to a showdown. Best digger takes the pot. Naturally he wins almost immediately, but then you challenge him to best two out of three. It carries on that way for a while, with you losing chips into Ace\'s bottomless pit of card sharkery. Finally, he takes pity on you, and says that you can have some of his supplies, since he needs to unload himself to carry all your chips back home with him anyway.',
+                        "outcomes": [
+                            {
+                                "parameter": "supplies",
+                                "quantity": 1,
+                                "change": "add"
+                            },{
+                                "parameter": "chips_1",
+                                "quantity": 50,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "become_digger",
+                "title": "Ask for a Digger's Permit",
+                "subtitle": 'Saberhagen gave you a letter of recommendation, so you may as well use it',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "digger",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "supplies",
+                "results": {
+                    "grizzsex": {
+                        "text": 'Mayor Maine folds one of his legs over the other and leans back in his chair. He considers you carefully for a while, and then finally nods. "Alright adventurer. I suppose I can see my way towards giving you a permit for the caves. After all, what sort of fellow would I be were I to go against the word of one of my fellow cats? I won\'t even make you kiss my feet for the privilege", he says. His eyes glimmer a little at that last part, although by now you are starting to get used to his proclivities. He gets out of his chair and leads you over to the record office, where he begins to fill in a form. "Now, if you want a successful cave dive, you\'re going to need more than just this permit. You\'ll want to gather up some cave-diving supplies. Ten is the bare minimum, but you could probably carry about twenty. Do let me know if you find anything of historical value!", he says, before handing you a piece of paper. It\'s signed with his official seal, and marks you as a licensed treasure digger. "You can gather up help and assistance at the cave entrance if you have favours to call in, but the easiest way to gather supplies is just to purchase them. Unfortunately, due to a complicated bureaucratic mixup, Flute is our official town supplier. He does have a tendency to overcharge.", he finishes. He sits back down at his desk and leaves you to your business.',
+                        "outcomes": [
+                            {
+                                "parameter": "digger",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "mayor_job",
                 "title": "Work at the Town Hall",
                 "subtitle": "The amount of paperwork in this office is enough to drown in. How does such a small town have so much?",
@@ -103,6 +201,23 @@ var area = {
                     },
                     "fail": { //success and fail, rare success, rare fail, or random
                         "text": 'You are not a footstool! You have to focus and remember who you used to be. You may just be a leather-clad cube right now, but once you had legs, and...arms? Something like that, some sort of strange, uncomfortable bits sticking out, instead of the nice easy smoothness of a good footstool. You don\'t belong under some evil cat\'s feet, serving him, obeying him, right? Feeling his toes splay across your top, his musky paws stroking at your sides. Flushed with pleasure and sensation as he toys and teases with you, resting his tired feet on top of you. Using you to help him relax his big, gorgeous paws every day. Showing you what a good, obedient, loyal object you are. You belong here, after all. What were you thinking? Probably nothing. You don\'t need to think. Just be a happy, mindless object. This is where you belong.',
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "become_foot",
+                "title": "Mayor Maine\'s Latest Intern",
+                "subtitle": 'All of his previous interns ended up absorbed into his feet, but surely you are confident that won\'t be your fate too?',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "maineicon",
+                "results": {
+                    "grizzpay": {
+                        "text": 'You enter into the Mayor\'s office, asking to see him about a job. He\'s sitting behind his desk, leaning back on his thick leather chair as he looks at himself in a mirror and combs his thick, soft moustache. His bare feet are resting on his gleaming executive table, and you can\'t help but notice that his wide, soft paws have five toes on one foot and six on the other. An unusual mutation that is common on the breed of cats called Maine coons, a breed that the jolly yet sinister mayor closely resembles. He notices you looking, and grins a little.</p>"Hello there good sir! I hear that you\'re looking for some gainful employment. Can\'t tell you how happy I am to see a guest wanting to contribute to the development of my lovely little town", he says. You walk closer as he points to some papers on the table between his feet. You pick up a pen and start to read the papers, but the close proximity of the mayor\'s big soft paws, and the strange way he moves and flexes his toes in an almost hypnotic rhythm, makes it hard to focus on the words. Your vision keeps skipping over sentences as you take glances at the cat\'s feet. "Nothing to worry about, just the usual stipulations. I can promote you whenever you show you\'ve earned it, you are contractually bound to the job for as long as appropriate, and so forth. All very normal", he says. You nod, and find yourself signing almost robotically without thinking. The mayor quickly slips the papers away as soon as you do, and stands up. "Welcome to the team, intern!", he says with glee.</p>For the rest of the day you\'re not sure whether you just want to make a good impression in your new job, or whether it\'s some sort of hypnotic compulsion, but you trail around behind the mayor without ever leaving his side, and you immediately obey his commands as soon as he makes them. At first his orders are fairly normal office things. Fetch papers, make cups of tea, organise files. However, over time they start to get a little stranger. Inspect visitor\'s feet, check the mayor\'s carpet, brush his fur. You don\'t get any breaks, and even when you\'re sitting in the mayor\'s office, carefully running a brush through the thick fur on his round belly, you find yourself unable to question him. "You are doing great, new hire", he reassures you. "Why, you\'re obeying me so well you\'re practically like a body part", he continues. You blush at that, but still remain silent.</p>At the end of the day, you are exhausted and very ready to go home. The mayor, however, has other ideas. He orders you to follow him out of the office, and you tag along behind him like a confused puppy. He leads you all the way down past the other houses, to a larger one nestled against the high cliffs that border Dormaus town.</p>As you walk into the house, and step onto the thick carpet, the mayor orders you to drop your shirt. You do, and then your shoes, and socks, and pants. The deeper into the house you go, the more he orders you naked, and you just can\'t help yourself. You have to obey your boss. You soon enter into a palatial bedroom, where the mayor takes off his own clothes too, revealing his large round belly and his soft, furry cock and balls. He slides under the covers, and orders you to enter too - at the foot of his bed, by his paws. You are unable to resist, as you slide yourself under the sheets and curl up, confused in the dark with your boss\'s paws resting on your face.</p>When you wake up in the morning, you are more bleary, confused and dizzy than ever. You collapse out of the bed and land face-first on the carpet, only for the mayor to slide down to the edge of the bed and rest one of his paws on your naked back. You look to the side and see his other paw, the toes flexing. "That\'s right. On the ground, where you belong. Naked, of course. I never deal in footwear, after all, and you are my foot", he says. You are...what? Who are you? What are you?</p>"Raise my left toe", he commands. Obediently and immediately, you lift your left arm. "Now my right", he continues. Your right arm follows too. As you obey him, it seems to come more instinctively, your body reacting instantly without thought to his commands. His fur begins to flow down over your body as the weight on your back gets heavier. Your arms start to shrink, getting thicker and fatter. Your fists curl up and melt into your arms, leaving behind narrow slits for the mayor\'s claws. Your belly presses into the carpet and flattens, while your legs and lower body start to draw up and crush together, melting into his heel. Your confusion only grows when your head feels like it\'s about to split - and then it does. Your whole head separating into multiple objects, your face flattening and melting out, replaced by toe pawpads. You feel the mayor stretch his toes, stretch your body. He flexes his claws and they slide out from your skin and retract again with a strange, sensitive feeling. As he stands, you are pressed into the carpet. With each step he takes, you lose more of your mind. Carpet, then round smooth cobblestones, then the rough wood of his office. By the time he sits at his desk, you don\'t remember anything at all. You are just a foot. A big, soft cat\'s paw. He smiles and admires his feet. "There. Six toes on each paw. I much prefer that. You were a good intern", he says with a purr. You don\'t understand who he is talking about. You have always been a foot.',
+                        "area": "fountain",
+                        "trapped_desc": "Mayor Maine's foot is looking very large and handsome today.",
+                        "trapped": 'You are nothing but the Mayor\'s foot. You exist to serve beneath him, carry his weight, and feel the ground underneath you.',
                         "outcomes": []
                     }
                 }
