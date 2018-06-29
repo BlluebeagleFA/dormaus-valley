@@ -747,6 +747,7 @@ function main(err,session) {
             var updated = player.last_updated;
             if (outcome.newchar) {
                 player.trapped = null;
+                player.trapped_desc = null;
                 player.area = outcome.newchar.area;
                 player.dust = outcome.newchar.dust;
                 player.description = outcome.newchar.description;
