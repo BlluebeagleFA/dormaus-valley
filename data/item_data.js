@@ -294,7 +294,7 @@ DV.Data.item_data = {
         type: "item",
         icon: "supplies",
         title: "Supplies",
-        value: 1,
+        value: 50,
         description: ["Digger supplies, everything you need to delve into caves, ruins and ancient temples."]
     },
 	//Equipment
