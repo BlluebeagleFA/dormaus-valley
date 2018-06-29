@@ -34,7 +34,7 @@ var area = {
                             "change": "sub"
                         },{
                             "parameter": "digger_progress",
-                            "quantity": 3,
+                            "quantity": 4,
                             "change": "add"
                         }]
                     },
@@ -78,7 +78,7 @@ var area = {
                             "change": "sub"
                         },{
                             "parameter": "digger_progress",
-                            "quantity": 2,
+                            "quantity": 3,
                             "change": "add"
                         }]
                     },
@@ -122,7 +122,7 @@ var area = {
                             "change": "sub"
                         },{
                             "parameter": "digger_progress",
-                            "quantity": 1,
+                            "quantity": 2,
                             "change": "add"
                         }]
                     },
@@ -148,7 +148,7 @@ var area = {
                         "comparison": "nequal" //default greater
                     }
                 ],
-                "icon": "default",
+                "icon": "tffetish",
                 "results": {
                     "grizzsex": {
                         "text": 'You push through the webs, which part slowly, as though you are ripping through thin fabric. They lead deeper into a section of the caves that you hadn\'t noticed before. The webbing gets thicker, and harder to see, and you worry that some horrible creature might drop down on you. What you don\'t expect, is when you suddenly drop into a hidden pit. You fall through thicker and thicker webs, slowing your descent but wrapping and tangling you up in soft, sticky fabric. Finally, you end up bouncing and dangling on the end of a tangled rope of web, while hanging over some deep abyss. You didn\'t think you would be the one dropping down on a creature!</p>You hear something approaching with a skittering, clacking sound. You struggle, and try to turn or escape, but you are only able to catch a glimpse of enormous chitin-plated black legs, each as thick as a sturdy tree branch. They reach down from the dark and touch against you, the tips sharp and deadly. You start to spin as the legs toy with you, turning you around and around and wrapping you up tighter in webs that tightly bind your limbs to your sides, making it impossible to struggle. The legs hold onto your sides, and the massive creature pulls itself closer, finally letting you see your captor in full.</p>Though the lower body of the creature is a massive, bulging and gleaming black spider body, with sinister red stripes on the armour-like chitin, the upper body is not at all what you expected. Emerging from the end of the spider body is the naked, muscular torso of a humanoid male. His muscles gleam in the darkness, and his skin is a deep, inhuman purple. His eyes glow yellow, and his hair is long and white, hanging back from his head in a wild mane behind a long, pointy pair of elf-like ears. "Now, who do we have visiting my parlour?", he says in a deep, sultry voice. His massive spider leg strokes gently down the front of your body, though you cannot feel it through the heavy webbing. "It appears that tea has delivered itself to me today, and yet I do not hunger, for I ate repast only hours hence. Yet, perhaps there is another hunger this one could sate?", he says, more to himself than to you, since the webbing wrapped around your face makes you unable to speak.</p>He leans forward, opening his mouth to reveal large, gleaming vampire-like fangs. They tear at the web, and his mouth presses to yours as his cold, purple tongue slides into your mouth and strokes over your tongue. He holds your face in his humanoid hands, and the more he kisses you, the more you begin to feel strange. A cold, peculiar sensation of darkness flows down from your mouth, deep into your core. Your skin tingles and flushes with hot-and-cold sensations, as the colour pulses and deepens into a strange, deep purple hue. Your muscles feel firm and strong, as they harden and toughen. You feel your hair move and shift, as the colour in it disappears, replaced by a pure and gleaming white. The most intense change, however, is below your waist. You feel as though something is forming under the webs, something heavy, and hard, that strokes and flows down over you and traps you inside it. The webbing bulges and grows as your lower body is encased in a massive, bulging round form. You try to move or wiggle your legs, and you get a very odd sensation, as you can feel your legs briefly inside the big round object, but then your perception of them seems to split, and move out, becoming multiple feelings at the sides of your growing body. You flex, and push, and finally you feel the webs tear away, as enormous sharp black gleaming spider legs slice through your prison. You almost fall for a moment, but you instinctively twist your eight new legs, grabbing onto the webbing, but ending up directly below the other grinning spidertaur. Your armoured spider body is pressed belly-to-belly against his, and you feel his legs wrapping around you, holding you close in a mating clutch. You squirm, and gasp, feeling something thick and huge entering you in a place at the base of your new body. He stretches you as he thrusts forward, your bodies tangled in a confusing, arachnoid mating dance. You pant and struggle, confused by the feelings of lust growing inside you, and you feel something pushing up and filling you inside, sliding out from his body into yours. When he pulls free of you, you scutter away, struggling to control yourself. You feel filled to bursting, desperate to cum. Something emerges from underneath your legs, a huge, thick and long silvery organ. You gasp and moan with a loud, uncontrollable orgasm, as your new ovipositor unloads a large, round white egg into the webs around you. Another, and another, you unload egg after egg, emptying out your new womb and serving your purpose as a drider breeder. When you are finally empty, you scuttle away, trying to escape, but hearing his words as you depart. "You will return, my dear. You belong with me."',
@@ -174,7 +174,7 @@ var area = {
                         "comparison": "equal" //default greater
                     }
                 ],
-                "icon": "default",
+                "icon": "vorefetish",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": 'The darkness of this cavern makes it very difficult to navigate. It\'s so quiet, and cold. You move carefully, to avoid pits, and then you feel a tingling on the back of your neck. Dread shivers down your spine. Something is moving in the darkness. It was just for a moment, but you felt something slither past. Grues are strange and mysterious creatures. They exist only in absolute darkness, and can never be seen. They are indestructible, and deadly, and always hungry. And one is right next to you.</p>Some sort of enormous paw or talon pins you down to the floor. You can\'t see what it is, but you feel the gigantic claws, as thick as your upper arm. You feel the sharp points pressing down on your belly, and the thick, heavy fur of the beast that covers its foot. You smell a musty, beastly stink surrounding you, as the weight on top of you pushes down harder. Something leans in, and you feel the hot breath of a massive creature washing over you. Drool drips from gigantic fangs, and the heat of a terrible beast washes down over you from above. You feet its tongue slide out, and lick slowly up your chest. It wraps around you like a tentacle, warm and wet. You are constricted and squeezed, as the tongue licks between your legs, up your rear, tasting every inch of you. You are drawn inescapably into the maw of the creature, and it closes its mouth around you. The darkness within its maw is no less pitch-black than the cave itself, but it is warm and wet and slippery.</p>You struggle helplessly as you are swallowed. Your body constricted on all sides, dragged down into the stomach of a terrifying beast of myth and darkness. You never stood a chance.',

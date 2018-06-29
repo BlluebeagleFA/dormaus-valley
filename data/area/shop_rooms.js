@@ -81,7 +81,7 @@ var area = {
                 "type": "random",
                 "requirements": [
                 ],
-                "icon": "default",
+                "icon": "inanimatefetish",
                 "results": {
                     "socks_1": {
                         "text": 'It\'s particularly humid and sweaty inside your owner\'s boot today. Mikhail is doing a lot of work restocking the back room, and the sweat from his paw is soaking into your fabric and making you feel heavy and wet. Being sweat-soaked is a strange feeling. Your thoughts become slow and stupid, and you almost seem to get drunk on the stink and taste of your owner\'s feet. </p>As the day wears on, his hot, heavy foot stomps down on you over and over, his scent grinding into your fibres. His sweat is filling you completely, and the smell of him is inescapable. The sweat is filling you up so much that there feels like there is no room for your thoughts and memories. They are pushed away and drift aside, to make more room for stink, to make you a more absorbent, helpful sock. You don\'t remember growing up anymore, but you know you are being a good object, and that\'s what counts.',

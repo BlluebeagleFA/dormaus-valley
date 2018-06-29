@@ -415,6 +415,22 @@ div.theft {
 	background-image: url("../img/aceicong.png");
 }
 
+.robbyicon {
+	background-image: url("../img/robby_b.png");
+}
+
+.robbyicong {
+	background-image: url("../img/robby_g.png");
+}
+
+.jackicon {
+	background-image: url("../img/jack_b.png");
+}
+
+.jackicong {
+	background-image: url("../img/jack_g.png");
+}
+
 .pain {
 	background-image: url("../img/painicon.png");
 }
@@ -535,6 +551,26 @@ div.theft {
 
 .cigarette {
 	background-image: url("../img/cigarette.png");
+}
+
+.footfetish {
+	background-image: url("../img/feet.png");
+}
+
+.vorefetish {
+	background-image: url("../img/vore.png");
+}
+
+.tffetish {
+	background-image: url("../img/transformation.png");
+}
+
+.inanimatefetish {
+	background-image: url("../img/inanimate.png");
+}
+
+.fish {
+	background-image: url("../img/fishbones.png");
 }
 
 .dustbox {
@@ -775,6 +811,7 @@ input {
 
 .map {
 	width: 100%;
+	min-width: 500px;
 	background-image: url("../img/dormausvillage.jpg");
 	background-size: cover;
 	position: relative;

@@ -20,6 +20,33 @@ var area = {
                     }
                 }
             },{
+                "id": "topv_south",
+                "title": "Travel South towards the coast",
+                "subtitle": "It will be a long trip. You should make sure you're prepared.",
+                "type": "statcheck", //or random
+                "stat": "might",
+                "difficulty": 20,
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You leave the relative safety of Turner's farm, making your way down as the muddy path gives way to a small trail, and then only a flattened area of grass in the fields.",
+                        "area": "top_valley",
+                        "outcomes": []
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You leave the relative safety of Turner's farm, making your way down as the muddy path gives way to a small trail, and then only a flattened area of grass in the fields. It does not take long before you are feeling tired and your legs are aching from the long walk.",
+                        "area": "top_valley",
+                        "outcomes": [{
+                            "parameter": "pain",
+                            "quantity": 1,
+                            "max": 1,
+                            "change": "add"
+                        }]
+                    }
+                }
+            },{
                 "id": "become_cocktree",
                 "title": "Become a Ficus Malus",
                 "subtitle": 'Doing hard work in the fields is far too much effort. Why exert yourself when you could just soak up the sunlight and make money that way?',
@@ -31,7 +58,7 @@ var area = {
                         "comparison": "equal" //default greater
                     }
                 ],
-                "icon": "default",
+                "icon": "inanimatefetish",
                 "results": {
                     "grizzpay": {
                         "text": 'You go get Turner and explain to him that you\'d still like to help on the farm, but that you want a more relaxing position. One in the orchard, with the other trees. He seems surprised at first, but eventually accepts. He\'ll plant you, and when you bear fruit, he\'ll sell it and you can have a portion of the profits.</p>You walk with him to an area at the side of the orchard grove. The soil here is cool and freshly tilled, and the tree next to you is still pink and soft, the flesh not yet fully turned to bark. Seeing that makes you a little nervous at first, but you just reassure yourself that this is a temporary scheme, and resolve to see through it.</p>First, the big horse helps you take off all your clothes, and puts your belongings into a wheelbarrow. "Ah\'ll keep this here safe until ya want it back", he says. He then lifts the huge hoe he\'s been carrying around, and digs it into the soil. His muscles bulge as he turns and digs at the ground, slowly digging a furrow. He then helps you step down into it. Your bare feet feel cool as your toes sink into the dirt. The horse\'s huge hand strokes your chest as he presses you down into the mud, belly-up. He instructs you to place your arms out and spread your legs slightly, and then he starts to shovel the mud over your limbs. Bit by bit, the mud covers your legs, arms, and chest, slowly burying you in it. It feels like a heavy blanket over your body, with just your face looking up into the sky. The big horse kneels down on top of you, and starts to pack the mud over your crotch, creating a small mound. His huge muscular rear, barely contained in his overalls, wags in your face as he does so. He then stands up, with his massive hooves right on top of where your body is hidden, as he stomps down the mud, making it tighter and harder for you to move. Once you are fully planted, he looks down at you and nods. "Eeyup, that should do it. Ah\'ll come check on ya tomorrow, and keep ya well-watered. Look forward to harvest season, ya hear?", he says. He then walks away, leaving you alone.</p>Well, you did sort of expect this. You\'re technically a plant from his point of view, now. You lie there, experimentally testing how much you can move. It\'s not much - just the barest wiggling. He sure did pack you in tight.</p>You resolve to make the most of the situation, and just relax, like a real tree. You look up into the sky and watch the clouds moving past. The sun feels warm and comforting on your face, and the cool soil all around you is surprisingly relaxing. The sky slowly turns orange, then purple, and night falls. You feel like you\'re in a trance, watching the stars come out, and then blue return to the sky as the delicious, tingly warmth of the sun returns. You are shaken out of your stupor by a pleasurable feeling in your crotch. A cool, refreshing shower of water is falling onto it. Your vision focuses as you look down, and see Turner gently pouring a watering can over your crotch. You blink and feel dozy, and ask him whether it\'s too soon to water you. He smiles at you. "Shucks, you took to this easy, huh? It\'s been a whole day, friend!", he says. That doesn\'t seem right at all, but you feel too relaxed to correct him. You can feel your cock growing, slowly rising and sliding through the mud, until it emerges from the mound of soil. It\'s thick, and hard, and feels amazing.</p>You watch the sky some more and relax to enjoy the feeling of your cock, as it thickens and slowly grows. The sun rises, and falls, and rises, again and again. You barely register it. But you do feel your cock, it\'s all you can focus on. It gets thicker, and harder. Throbbing as it grows longer and taller, never going soft, always firm and pleasurable. It rises up gradually, reaching a foot in length, and then two. You can feel water flowing up from the ground around you, up into your shaft and down again. You feel your soft fleshy shaft becoming green and shiny. It hardens as it changes, the insides remaining green and lush, but the outside toughening and slowly turning brown. Your growing bark feels very satisfying and thick. Day after day, Turner waters and cares for you like any other plant. When you grow your first branches, it is like five orgasms at once. You can feel each of them stretching out and growing like they are cocks of their own.</p>Then, your leaves start to grow in. They are so sensitive you could almost scream. Every rustle of the wind makes them twitch and move, and it\'s like being edged and teased in a way you\'ve never imagined. You drip sticky sap, but despite the maddening pleasure, you never orgasm. Instead, you simply live in a constant state of bliss.</p>When your pears start to grow, you think the pleasure might actually drive you to insanity. You feel like you have new cocks that are getting erect, but maddeningly slowly. Gradually bulging and swelling, filling with juice and delicious fresh fruit flavour. Getting bigger, and heavier, and more pleasurable every day.',

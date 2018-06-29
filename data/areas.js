@@ -30,5 +30,15 @@ DV.Data.areas = {
 	"wetcavern": "./data/area/wetcavern.js",
 	"darkcavern": "./data/area/darkcavern.js",
 	"deepestcavern": "./data/area/deepestcavern.js",
+	"top_valley": "./data/area/top_valley.js", //OTTERTON
+	"down_valley": "./data/area/down_valley.js",
+	"beside_river": "./data/area/beside_river.js",
+	"dragon_vore": "./data/area/dragon_vore.js",
+	"windy_path": "./data/area/windy_path.js",
+	"jacks_hideout": "./data/area/jacks_hideout.js",
+	"otterton_hill": "./data/area/otterton_hill.js",
+	"otterton": "./data/area/otterton.js",
+	"otterton_dock": "./data/area/otterton_dock.js",
+	"witch_peak": "./data/area/witch_peak.js",
 	"belly": "./data/area/belly.js" //OTHER
 }

@@ -44,7 +44,7 @@ var global_area = {
                         "outcomes": [
                             {
                                 "parameter": "gender",
-                                "quantity": 1,
+                                "quantity": 2,
                                 "change": "set"
                             }
                         ]

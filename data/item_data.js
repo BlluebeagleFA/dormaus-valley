@@ -65,6 +65,24 @@ DV.Data.item_data = {
         title: "Leonar [Master]",
         description: ["You met a hypnotically handsome lion, and he commanded you to come to his hotel room.", "You have a collar locked around your neck, declaring that you are a harem slave."]
     },
+    robby_spell: {
+        type: "attribute",
+        icon: "robbyicon",
+        title: "Otter Spell",
+        description: ["You have a long, thick muscular furless otter tail, which Robby assures you is only temporary.", "You have a long, thick otter tail, and a short otter-like furless muzzle with sharp white teeth. All temporary, according to the otter that did this to you.", "You have a long thick otter tail, a sleek otter shaped muzzle, and your hands and feet are webbed with dark skin. You can go back at any time though, it's not like you're addicted to otterdom.", "You have fully turned into an otter, the perfect twin of Robby. You have a strong crush on the other otter."]
+    },
+    jack_spell: {
+        type: "attribute",
+        icon: "jackicon",
+        title: "Raccoon Spell",
+        description: ["You have a pair of flexible, furry footpaws, with dark tough soles.", "You have clawed raccoon paws, and a long striped raccoon tail. Your accent is rough and you keep swearing.", "You have a short scrawny body, with fur all over it. Your short scruffy muzzle, clawed paws, and stripy tail makes you almost a full raccoon.", "You are a raccoon, but more importantly you are a dirty criminal, with no morality and a filthy mouth that is constantly swearing and insulting people."]
+    },
+    jack_friend: {
+        type: "attribute",
+        icon: "jackicon_g",
+        title: "Jack [Friend]",
+        description: ["You have befriended a crude, smelly jerk of a raccoon."]
+    },
     mikhail_interest: {
         max: 5,
         type: "attribute",
@@ -104,7 +122,13 @@ DV.Data.item_data = {
             "You are a lithe, magical black cat", //19
             "You are a short muscular dwarf with a thick moustache", //20
             "You are a muscular gorilla, with long hairy arms and tough grey skin", //21
-            "You are a drider, a sinister creature with a huge spider for a lower half" //22
+            "You are a drider, a sinister creature with a huge spider for a lower half", //22
+            "You are a half-wyvern, a humanoid creature with scaly skin and huge batlike wing arms", //23
+            "You are a cute furry otter with a lithe and slender body", //24
+            "You are a chubby seal with a round belly and smooth grey skin", //25
+            "You are a cute little fruitbat with a leaf-shaped nose", //26
+            "You are a fishlike creature, with webbed feet and smooth slippery skin", //27
+            "You are a scruffy, short and dirty raccoon, with long and dextrous paws" //28
             ]
     },
     gender: {
@@ -231,6 +255,13 @@ DV.Data.item_data = {
 		value: 2,
 		description: ["These old, tarnished coins are commonly used for bartering in Dormaus Valley. They are some of the last holdovers from the once mighty Muscat Kingdom."]
 	},
+	fish: {
+        type: "item",
+        icon: "fish",
+        title: "Fish Bones",
+        value: 1,
+        description: ["Places that trade with the sea kingdom often have stocks of fish bones lying around. The sea people use particularly smooth and healthy fish bones as currency."]
+    },
 	pie_1: {
 		type: "item",
 		icon: "pie_1",
