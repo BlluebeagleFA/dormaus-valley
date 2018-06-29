@@ -36,7 +36,7 @@ function main(err,session) {
     var area;
     
     var player = {
-        area: "bar",
+        area: "dormaus_entrance",
         dust: 0,
         description: "This adventurer is an ordinary human.",
         equipment: {
@@ -746,61 +746,64 @@ function main(err,session) {
             
             var updated = player.last_updated;
             if (outcome.newchar) {
-                player = outcome.newchar;
-                player.last_updated = updated;
+                player.area = outcome.newchar.area;
+                player.dust = outcome.newchar.dust;
+                player.description = outcome.newchar.description;
+                player.equipment = outcome.newchar.equipment;
+                player.stats = outcome.newchar.stats;
+                player.statprogress = outcome.newchar.statprogress;
+                player.items = outcome.newchar.items;
+                player.attributes = outcome.newchar.attributes;
+                player.suffering = outcome.newchar.suffering;
             }
             
             if (outcome.reset == "minor") {
                 player.attributes = {};
-                player.last_updated = updated;
             }
             
             if (outcome.reset == "major") {
-                player = {
-                    area: "bar",
-                    dust: 0,
-                    description: "This adventurer is an ordinary human.",
-                    equipment: {
-                        head: null,
-                        clothes: null,
-                        weapon: null,
-                        feet: null,
-                        ally: null
+                player.area = "dormaus_entrance";
+                player.dust = 0;
+                player.description = "This adventurer is an ordinary human.";
+                player.equipment = {
+                    head: null,
+                    clothes: null,
+                    weapon: null,
+                    feet: null,
+                    ally: null
+                };
+                player.stats = {
+                    stealth: 1,
+                    might: 1,
+                    magic: 1,
+                    charm: 1
+                };
+                player.statprogress = {
+                    stealth: 0,
+                    might: 0,
+                    magic: 0,
+                    charm: 0
+                };
+                player.items = {};
+                player.attributes = {};
+                player.suffering = {
+                    pain: {
+                        value: 0,
+                        progress: 0
                     },
-                    stats: {
-                        stealth: 1,
-                        might: 1,
-                        magic: 1,
-                        charm: 1
+                    guilt: {
+                        value: 0,
+                        progress: 0
                     },
-                    statprogress: {
-                        stealth: 0,
-                        might: 0,
-                        magic: 0,
-                        charm: 0
+                    outcast: {
+                        value: 0,
+                        progress: 0
                     },
-                    items: {},
-                    attributes: {},
-                    suffering: {
-                        pain: {
-                            value: 0,
-                            progress: 0
-                        },
-                        guilt: {
-                            value: 0,
-                            progress: 0
-                        },
-                        outcast: {
-                            value: 0,
-                            progress: 0
-                        },
-                        curse: {
-                            value: 0,
-                            progress: 0
-                        }
+                    curse: {
+                        value: 0,
+                        progress: 0
                     }
                 };
-                player.last_updated = updated;
             }
             
             if (outcome.area) {
