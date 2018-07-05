@@ -5,6 +5,75 @@ var area = {
         "subheader": 'The marketplace is busy every time of day. Traders walk through, leading strange beasts of burden laden with goods, from walking birds to four-legged armored monsters. Colourful tents ring the marketplace, and between them, merchants hawk their wares from carpets or hand baskets.',
         "events": [
             {
+                "id": "spells_1",
+                "title": "Trade Lotuses For Magic Training",
+                "subtitle": "Saberhagen is willing to teach you basic spells for ten lotuses",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "lotus_1",
+                        "value": 9,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "magicuser",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "lotus_1",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Saberhagen takes the glowing flowers from you with wide, eager eyes. "Incredible! You found witch lotuses! These are exactly what I need for my research!", he says with delight. He places the flowers in a small basket, and places them carefully in the back of his tent. He then returns to you. "Right! Now for my part of the bargain, friend. Let me just see how much magic will be needed to instill my first few spells in you", he says. He pulls off the large leather gloves that cover his hands, and carefully holds your own in his soft furry paws. Almost immediately he jerks his hands back, and steps backwards in surprise. "I-incredible! Where in the fourth world are you from, friend? You have more magical potential than I\'ve ever seen! It must be very difficult for you to travel on your adventures without being constantly affected by spells and transformations! I know just the recipe for you", he says.</p>The cat ducks back into his tent, and begins to fiddle with his bowls and ingredients. You wait patiently as he kneads a roll of dough and places it into the oven. He returns not much time later, and hands you a small, freshly baked bun, with a symbol carved into the top. When you bite into it, you feel a powerful energy flow through your body. It moves through your veins like electricity, and you feel a rush of power and knowledge.</p>You can now cast the spells Befox and Berabbit on other players, by typing "/fox (username)" or "/rabbit (username)" into the chat window.',
+                        "outcomes": [
+                            {
+                                "parameter": "lotus_1",
+                                "quantity": 10,
+                                "change": "sub"
+                            },
+                            {
+                                "parameter": "magicuser",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "spells_2",
+                "title": "Trade Bloodstone For Magic Training",
+                "subtitle": "Saberhagen said he would teach you more in exchange for magical ore. But it's someone else waiting for you here.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "bloodstone",
+                        "value": 9,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "magicuser",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "bloodstone",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'You bring the shining bloodstones to Saberhagen\'s tent, intending to ask him for further magical training. However, he doesn\'t seem to be at home today. Instead, a taller and much more cocky black cat is sitting on his chair, with his boots up on top of a stack of Saberhagen\'s books. The other cat looks up to you and grins. "Ah, you\'re that friend of Saberhagen\'s, correct? You can call me Ritter. I am here to collect those lovely little stones on my fellow student\'s behalf", he says. He stands up and takes the stones from you before you can protest. His eyes go wide as he looks at them. "Incredible quality! You must have found a very potent manse, for them to have formed in such excellent condition. Here, I will reward you with my favourite spell", the cat says.</p>Ritter looks around Saberhagen\'s tent, and finds a white bread roll. He takes a bite out of it with his sharp fangs, and then places one of his arms around your shoulders, and presses his face against yours. As he kisses you, he pushes the bread into your mouth. His muzzle rubs against your face and his arms are powerful despite his seemingly slender body. There is a prickle and crackle of electric energy, as you feel more magical knowledge burn through your mind. Ritter steps back and gives you a wink, before leaving with his bloodstones.</p>You can now cast the spell Vore on other players, by typing "/vore (username)" into the chat window.',
+                        "outcomes": [
+                            {
+                                "parameter": "bloodstone",
+                                "quantity": 10,
+                                "change": "sub"
+                            },
+                            {
+                                "parameter": "magicuser",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
                 "id": "magic_shop",
                 "title": "Work at Saberhagen\'s Bakery",
                 "subtitle": "How hard could it possibly be?",

@@ -40,5 +40,12 @@ DV.Data.areas = {
 	"otterton": "./data/area/otterton.js",
 	"otterton_dock": "./data/area/otterton_dock.js",
 	"witch_peak": "./data/area/witch_peak.js",
+	"lionquest_harem": "./data/area/lionquest_harem.js", //MAKARNAQUEST
+	"lionquest_throne": "./data/area/lionquest_throne.js",
+	"lionquest_sea": "./data/area/lionquest_sea.js",
+	"lionquest_glowscale": "./data/area/lionquest_glowscale.js",
+	"lionquest_westwood": "./data/area/lionquest_westwood.js",
+	"lionquest_acecock": "./data/area/lionquest_acecock.js",
+	"lionquest_aceboot": "./data/area/lionquest_aceboot.js",
 	"belly": "./data/area/belly.js" //OTHER
 }

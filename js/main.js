@@ -80,6 +80,8 @@ function main(err,session) {
         }
     };
     
+    var temporary_parameters = [];
+    
     var savedKeys = Object.keys(session.save);
     for (var i = 0; i < savedKeys.length; i++) {
         player[savedKeys[i]] = session.save[savedKeys[i]];
@@ -102,6 +104,8 @@ function main(err,session) {
     userMap[username] = new Date();
     var userDescriptions = {};
     userDescriptions[username] = player.description;
+    var userAreas = {};
+    userAreas[username] = player.area;
     
     $("#openchat").click(function() {
 
@@ -128,13 +132,16 @@ function main(err,session) {
                     area: recMessage.area
                 };
                 messageQueue[recMessage.area].push(formattedMessage);
+                receiveSpell(recMessage);
                 appendChat(formattedMessage);
+                unreadMessage(formattedMessage);
             } else if (packet.type == "heartbeat") {
             	console.log("heartbeat received");
             	var heartBeat = packet;
             	updateWhoIs({
             		user: heartBeat.user,
-            		description: heartBeat.description
+            		description: heartBeat.description,
+            		area: heartBeat.area
             	});
             }
 
@@ -147,12 +154,12 @@ function main(err,session) {
                 return;
             }
 
-            setInterval(sendHearbeat, 1000*60);
+            setInterval(sendHearbeat, 1000*30);
             drawWhoIs();
             
             $("#right .centerbox").empty();
             $("#right .centerbox").append(
-                    '<div id="chattabs"><div id="localtab" class="chattab active">Local</div><div id="globaltab" class="tab">Global</div></div>' +
+                    '<div id="chattabs"><div id="localtab" class="chattab active">Local<div class="newmessage">!</div></div><div id="globaltab" class="chattab">Global<div class="newmessage">!</div></div></div>' +
                     '<div id="whois"></div>' +
                     '<div id="chatbox"></div>' +
                     '<input id="chatfield" type="text" value="">'
@@ -164,18 +171,25 @@ function main(err,session) {
         });
     });
     
+    function receiveSpell(message) {
+        if (username == message.target) {
+            temporary_parameters.push(message.spell);
+        }
+    };
+    
     function sendHearbeat() {
         var descToUse = player.description;
         if (player.trapped_desc) {
             descToUse = player.trapped_desc;
         }
-    	client.send("global", "heartbeat", {user: username, description: descToUse});
+    	client.send("global", "heartbeat", {user: username, description: descToUse, area:player.area});
     	timeoutUserLog();
     }
     
     function updateWhoIs(message) {
     	userMap[message.user] = new Date();
     	userDescriptions[message.user] = message.description;
+    	userAreas[message.user] = message.area;
     	if (!onlineUsers.includes(message.user)) {
     		onlineUsers.push(message.user);
     		drawWhoIs();
@@ -197,12 +211,27 @@ function main(err,session) {
     
     function drawWhoIs() {
     	$("#whois").empty();
+    	$("#whois").append('<div class="whohere"></div>');
+    	$("#whois").append('<div class="whothere"></div>');
     	for (var i = 0; i < onlineUsers.length; i++) {
     		var description = userDescriptions[onlineUsers[i]] || "Unknown player";
+    		var whoarea = userAreas[onlineUsers[i]] || "global";
     		var newUserBox = $('<div class="user" data-description="' + description + '"></div>');
     		newUserBox.text(onlineUsers[i]);
-    		$("#whois").append(newUserBox);
+    		if (whoarea == player.area) {
+    		    $("#whois .whohere").append(newUserBox);
+    		} else {
+    		    $("#whois .whothere").append(newUserBox);
+    		}
     	}
+    }
+    
+    function unreadMessage(message) {
+        if (currentChannel == "global" && message.area != "global") {
+            $("#localtab").addClass("notification");
+        } else if (currentChannel == "local" && message.area == "global") {
+            $("#globaltab").addClass("notification");
+        }
     }
     
     function appendChat(message) {
@@ -228,6 +257,7 @@ function main(err,session) {
     }
     
     $("#right").on("click", "#localtab", function() {
+        $("#localtab").removeClass("notification");
         currentChannel = "local";
         $("#localtab").addClass("active");
         $("#globaltab").removeClass("active");
@@ -241,6 +271,7 @@ function main(err,session) {
     });
             
     $("#right").on("click", "#globaltab", function() {
+        $("#globaltab").removeClass("notification");
         currentChannel = "global";
         $("#localtab").removeClass("active");
         $("#globaltab").addClass("active");
@@ -250,17 +281,114 @@ function main(err,session) {
         }
     });
     
+    function stupidFilter(text) {
+        var beastnoises = ["bark", "woof", "arf"];
+        var result = text;
+        if (player.attributes.intelligence && player.attributes.intelligence.value == 1) {
+            if (!text.startsWith("/me")) {
+                var words = text.split(" ");
+                var newwords = [];
+                for (var i = 0; i < words.length; i++) {
+                    var bark = beastnoises[Math.floor(Math.random()*beastnoises.length)];
+                    newwords.push(bark);
+                }
+                result = newwords.join(" ");
+            }
+        }
+        return result;
+    };
+    
+    var spells = ["fox", "rabbit", "vore"];
+    var spellRequirements = {
+        fox: 1,
+        rabbit: 1,
+        vore: 2,
+        heat: 3
+    };
+    var spellCasts = {
+        fox: '{caster} casts fox on {target}. Their skin prickles as they develop soft, fluffy orange fur. The fur becomes light and peachy on their neck and chest, and dark at their hands and feet. Their head stretches forward into a pointed muzzle, while their ears grow pointed and fluffy. A long, bushy tail sprouts from their rear, swaying in the air as they become a fluffy fox.',
+        rabbit: '{caster} casts rabbit on {target}. Their skin prickles as they develop soft, silky white fur. It spreads down their body, and when it hits their legs, they thicken with muscle, then their feet grow long and thin. They start to shrink, and their head develops a small rounded muzzle, while their ears grow enormously long, stretching above their head and twitching in the air. A soft, white cottontail sprouts from their rear, bobbing in the air as they become a cuddly rabbit!',
+        vore: '{caster} casts the vore spell, and their body glows with power. They open their mouth revealing large fanged teeth dripping with drool. Their face contorts into a snarling, predatory grimace and their belly growls loudly. With beastlike rage, they grab {target} and grip them firmly in their hands. Opening their jaw wide, they start to shove {target} into their mouth. They drool and snarl as the victim wriggles and struggles in their grip. Their tongue licks over the victim as you they to swallow, dragging the prey into their throat. Their neck bulges with the victim\'s desperate form, and with another swallow the bulge slides down into their belly. They lick their lips, patting the big round bulge in their stomach.',
+        heat: '3'
+    };
+    
+    function fillSpell(text, user, target) {
+        text = text.replace(/{caster}/gi, user);
+        text = text.replace(/{target}/gi, target);
+        return text;
+    }
+    
+    function isCasting(text) {
+        var result = false;
+        for (var i = 0; i < spells.length; i++) {
+            var incantation = "/" + spells[i];
+            if (text.startsWith(incantation)) {
+                result = spells[i];
+            }
+        }
+        return result;
+    }
+    
     $("#right").on("keyup", "#chatfield", function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {
-            var text = $("#chatfield").val();
-            var area = player.area;
-            if (currentChannel == "global") {
-                area = "global";
+            var rawtext = $("#chatfield").val();
+            var spell = isCasting(rawtext);
+            if (spell) {
+                var target = rawtext.replace("/" + spell + " ", "");
+                userAreas[onlineUsers[i]]
+                if (onlineUsers.includes(target)) {
+                    if (userAreas[target] == player.area) {
+                        var magelevel = 0;
+                        if (player.attributes.magicuser && player.attributes.magicuser.value) {
+                            magelevel = player.attributes.magicuser.value;
+                        }
+                        var requiredLevel = spellRequirements[spell];
+                        console.log("Level needed " + requiredLevel + " have " + magelevel);
+                        if (magelevel >= requiredLevel) {
+                            var rawSpell = spellCasts[spell];
+                            var finalSpell = fillSpell(rawSpell, username, target);
+                            var enter_message = {
+                                user : "System",
+                                mod : "normal", 
+                                area: player.area, 
+                                text: finalSpell,
+                                target: target,
+                                spell: spell
+                            };
+                            client.send("global","message",enter_message);
+                        } else {
+                            appendChat({
+                                user: "System",
+                                area: player.area,
+                                text: "Your do not know that spell"
+                            });
+                        }
+                    } else {
+                        appendChat({
+                            user: "System",
+                            area: player.area,
+                            text: "Your target is too far away"
+                        });
+                    }
+                } else {
+                    appendChat({
+                        user: "System",
+                        area: player.area,
+                        text: "No such adventurer found"
+                    });
+                }
+                $("#chatfield").val("");
+            } else {
+                var text = stupidFilter(rawtext);
+                var area = player.area;
+                if (currentChannel == "global") {
+                    area = "global";
+                }
+                var enter_message = {user : username, mod : "normal", area: area, text: text};
+                client.send("global","message",enter_message);
+                $("#chatfield").val("");
             }
-            var enter_message = {user : username, mod : "normal", area: area, text: text};
-            client.send("global","message",enter_message);
-            $("#chatfield").val("");
         }
     });
     
@@ -710,7 +838,7 @@ function main(err,session) {
         "type": "random",
         "requirements": [
         ],
-        "icon": "speciesicon",
+        "icon": "mrbat",
         "results": {
             "success": { 
                 "text": 'The bat adjusts his glasses and takes a close look at you. He strokes his chin for a moment, then opens up his long cloak. From within, he draws out a small black book and reads it thoughtfully. "Here you are, this should resolve your problem, my friend", he says. He touches the page and quickly mutters a long string of complex syllables. The words seem to spin and twirl around you, and for a moment your body feels completely fluid. There is a crackle and pop of electricity, and then with a sudden SNAP, the curse binding you is undone! </p>As you look down at yourself, your form restored, the bat gives you a little bow. "I am glad I found myself lost so that I could provide you assistance, my friend. Until we meet again!"',
@@ -719,6 +847,17 @@ function main(err,session) {
                 ]
             }
         }
+    };
+    
+    Array.prototype.remove = function() {
+        var what, a = arguments, L = a.length, ax;
+        while (L && this.length) {
+            what = a[--L];
+            while ((ax = this.indexOf(what)) !== -1) {
+                this.splice(ax, 1);
+            }
+        }
+        return this;
     };
     
     function displayEvent(eventId) {
@@ -742,6 +881,10 @@ function main(err,session) {
             } else if (outcome.freeTrap) {
                 player.trapped = null;
                 player.trapped_desc = null;
+            }
+            
+            if (outcome.clearTemp) {
+                temporary_parameters.remove(outcome.clearTemp);
             }
             
             var updated = player.last_updated;
@@ -910,39 +1053,45 @@ function main(err,session) {
         var valid = true;
         for (var i = 0; i < event.requirements.length; i++) {
             var req = event.requirements[i];
-            var oAtt = DV.Data.item_data[req.parameter];
-            var value;
-            if (oAtt.type == "suffering") {
-                value = player.suffering[req.parameter].value;
-            } else if (oAtt.type == "attribute") {
-                if (!player.attributes[req.parameter]) {
-                    value = 0;
-                } else {
-                    value = player.attributes[req.parameter].value;
+            if (req.temporary_param) {
+                if (!temporary_parameters.includes(req.temporary_param)) {
+                    valid = false;
                 }
-                var equipBonus = getItemBonus(req.parameter);
-                value += equipBonus;
-            } else if (oAtt.type == "item") {
-                if (!player.items[req.parameter]) {
-                    value = 0;
-                } else {
-                    value = player.items[req.parameter]
+            } else {
+                var oAtt = DV.Data.item_data[req.parameter];
+                var value;
+                if (oAtt.type == "suffering") {
+                    value = player.suffering[req.parameter].value;
+                } else if (oAtt.type == "attribute") {
+                    if (!player.attributes[req.parameter]) {
+                        value = 0;
+                    } else {
+                        value = player.attributes[req.parameter].value;
+                    }
+                    var equipBonus = getItemBonus(req.parameter);
+                    value += equipBonus;
+                } else if (oAtt.type == "item") {
+                    if (!player.items[req.parameter]) {
+                        value = 0;
+                    } else {
+                        value = player.items[req.parameter]
+                    }
+                } else if (oAtt.type == "stat") {
+                    value = player.stats[req.parameter];
                 }
-            } else if (oAtt.type == "stat") {
-                value = player.stats[req.parameter];
-            }
-            if (req.comparison == "greater" && value <= req.value) {
-                valid = false;
-            } else if (req.comparison == "less" && value >= req.value) {
-                valid = false;
-            } else if (req.comparison == "equal" && value != req.value) {
-                valid = false;
-            } else if (req.comparison == "nequal" && value == req.value) {
-                valid = false;
-            } else if (req.comparison == "gequal" && value < req.value) {
-                valid = false;
-            } else if (req.comparison == "lequal" && value > req.value) {
-                valid = false;
+                if (req.comparison == "greater" && value <= req.value) {
+                    valid = false;
+                } else if (req.comparison == "less" && value >= req.value) {
+                    valid = false;
+                } else if (req.comparison == "equal" && value != req.value) {
+                    valid = false;
+                } else if (req.comparison == "nequal" && value == req.value) {
+                    valid = false;
+                } else if (req.comparison == "gequal" && value < req.value) {
+                    valid = false;
+                } else if (req.comparison == "lequal" && value > req.value) {
+                    valid = false;
+                }
             }
         }
         return valid;

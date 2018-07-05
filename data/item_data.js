@@ -128,7 +128,10 @@ DV.Data.item_data = {
             "You are a chubby seal with a round belly and smooth grey skin", //25
             "You are a cute little fruitbat with a leaf-shaped nose", //26
             "You are a fishlike creature, with webbed feet and smooth slippery skin", //27
-            "You are a scruffy, short and dirty raccoon, with long and dextrous paws" //28
+            "You are a scruffy, short and dirty raccoon, with long and dextrous paws", //28
+            "You are a soft small rabbit with strong legs and long fuzzy paws", //29
+            "You are a chubby frog with long green legs and a smooth slippery belly", //30
+            "You are a cow with a spotted black and white flank and large thick horns" //31
             ]
     },
     gender: {
@@ -190,6 +193,25 @@ DV.Data.item_data = {
         icon: "thevoid",
         title: "Curse [Piss]",
         description: ["You are cursed with an uncontrollable love of urine."]
+    },
+    magicuser: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Magician",
+        description: ["You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username)",
+            "You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username), Vore (/vore username)"]
+    },
+    time: {
+        type: "attribute",
+        icon: "time",
+        title: "Time",
+        description: ["Time is passing..."]
+    },
+    contributor: {
+        type: "attribute",
+        icon: "contributor",
+        title: "Contributor",
+        description: ["You contributed to the resurrection of Dormaus Valley. Thank you!"]
     },
 //Items
 	wine_1: {
@@ -298,7 +320,29 @@ DV.Data.item_data = {
         description: ["Digger supplies, everything you need to delve into caves, ruins and ancient temples."]
     },
 	//Equipment
-	cowboy_boots: {
+    magic_boots: {
+        type: "item",
+        icon: "magicboots",
+        title: "Magic Boots",
+        value: 500,
+        slot: "feet",
+        attributes: {
+            magic: 2,
+        },
+        description: ["These light, soft fabric boots are enchanted with magical patterns that move and swirl faintly on their own."]
+    },
+    paw_musk: {
+        type: "item",
+        icon: "pawmusk",
+        title: "Paw Musk",
+        value: 500,
+        slot: "feet",
+        attributes: {
+            charm: 2,
+        },
+        description: ["This small bottle of magic potion will cause your feet to emit a very powerful, hypnotic scent."]
+    },
+    cowboy_boots: {
         type: "item",
         icon: "boots_1",
         title: "Cowboy Boots",
@@ -332,6 +376,28 @@ DV.Data.item_data = {
         },
         description: ["This foul-smelling cigarette is enchanted to never burn out. It stains your teeth and fingers yellow, yet the noxious stink makes people strangely attracted to you."]
     },
+    candle_glory: {
+        type: "item",
+        icon: "candleofglory",
+        title: "Candle of Glory",
+        value: 500,
+        slot: "weapon",
+        attributes: {
+            stealth: 2
+        },
+        description: ["This enchanted black candle will make your movements silent as long as you are holding it."]
+    },
+    dwarf_axe: {
+        type: "item",
+        icon: "dwarfaxe",
+        title: "Dwarven Axe",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            might: 3
+        },
+        description: ["This axe is forged with the finest dwarven craftsmanship. The metal is titan ore, and it gleams with light even in the darkest depths of the earth."]
+    },
     nosering: {
         type: "item",
         icon: "nosering",
@@ -342,6 +408,28 @@ DV.Data.item_data = {
             dominance: 1
         },
         description: ["This ornate nose ring was pawned off by a minotaur beserker. Some of his dominant essence seems to remain in the metal."]
+    },
+    fancyhat: {
+        type: "item",
+        icon: "fancyhat",
+        title: "Fancy Hat",
+        value: 500,
+        slot: "head",
+        attributes: {
+            charm: 2
+        },
+        description: ["This big floppy hat is incredibly expensive. People tend to react favourably to people wearing expensive hats."]
+    },
+    iron_helm: {
+        type: "item",
+        icon: "magichelm",
+        title: "Muscat Helmet",
+        value: 500,
+        slot: "head",
+        attributes: {
+            might: 2
+        },
+        description: ["This is one of the helmets that used to be given to captains in the military of the Dormaus kingdom. It is very high quality."]
     },
     skull_mask: {
         type: "item",
@@ -403,6 +491,28 @@ DV.Data.item_data = {
 		},
 		description: ["This loud pink shirt proclaims to everyone around that you are a slut for foxes, or possibly that you are a slutty fox. It's incredibly embarrassing."]
 	},
+	prison_shirt: {
+        type: "item",
+        icon: "prisonshirt",
+        title: "Prison Shirt",
+        value: 100,
+        slot: "clothes",
+        attributes: {
+            stealth: 1
+        },
+        description: ["This shirt was thrown away by an escaped convict from Hornloft prison. Some of his sneakiness seems to have rubbed off on it."]
+    },
+    water_cloth: {
+        type: "item",
+        icon: "watercloth",
+        title: "Falling Water Robe",
+        value: 500,
+        slot: "clothes",
+        attributes: {
+            magic: 2
+        },
+        description: ["This shimmering, smooth silken fabric moves almost like water falling through the air. It is woven with great magical skill."]
+    },
 	old_sword: {
 		type: "item",
 		icon: "sword_1",
@@ -450,6 +560,17 @@ DV.Data.item_data = {
 		},
 		description: ["This raccoon is completely useless. Just absolutely terrible at everything, and constantly getting in the way."]
 	},
+	horse_son: {
+        type: "item",
+        icon: "horseson",
+        title: "Horse Son",
+        value: 25,
+        slot: "ally",
+        attributes: {
+            might: 1
+        },
+        description: ["This is your son, a strong and healthy colt. He's quite strong, just like his father."]
+    },
 	//Troubles
 	pain: {
 		type: "suffering",

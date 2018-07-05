@@ -20,6 +20,35 @@ var area = {
                     }
                 }
             },{
+                "id": "jack_0repeat",
+                "title": "Thief Training (Repeat)",
+                "subtitle": 'Jack can\'t wait to start training his "newbie"',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "jack_spell",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 28,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "jackicon",
+                "results": {
+                    "grizzsex": {
+                        "text": 'Your training starts immediately. First, Jack has you try to walk across his hideout without making any nose. It doesn\'t seem too hard, but the random clothes and objects secretly conceal a large amount of bells and jangly keychains that he\'s hidden underneath. He teaches you how to carefully place your feet, lifting and pressing them down in such a way so they don\'t move anything or make noise, but still let you move quickly. As you practice, your feet start to grow soft, dark fur. Your toes lengthen, and you feel claws grow from the ends, and your soles toughen and darken as black pads cover them completely. With your new feet, you seem to be able to place your steps more carefully, to stretch your toes and put your claws down where they will make the least noise. You also notice that the scent coming from your new raccoon feet is the same dirty aroma surrounding Jack.',
+                        "outcomes": [
+                            {
+                                "parameter": "jack_spell",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "jack_0",
                 "title": "Thief Training",
                 "subtitle": 'Jack can\'t wait to start training his "newbie"',

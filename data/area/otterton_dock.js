@@ -20,6 +20,35 @@ var area = {
                     }
                 }
             },{
+                "id": "robby_0again",
+                "title": "Otter Fishing (Repeat)",
+                "subtitle": 'There is an otter sitting on the edge of the pier, with a fishing line around his tail. He\'s lounging on his back and looks very relaxed. He notices you, and asks if you\'d like to fish with him.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "robby_spell",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 24,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "robbyicon",
+                "results": {
+                    "grizzsex": {
+                        "text": 'You ask the otter what he\'s doing, and he looks up at you, then grins. His lithe brown-furred body is completely naked, but he looks relaxed and comfortable like that. "I\'m fishing, bro. What\'s it look like?", he asks, then laughs. His tail twitches as something on the end of the line tugs at it. He flexes and pulls his tail, then yanks hard. A fish flies up into the air from the water, which he grabs in his muzzle in a sudden, agile flash. He places it down by his side, and offers you a pole. "Wanna join me?", he asks.</p>You take the pole, and sit down next to him. He remains lying on his back, and you can\'t help but look down over his smooth, furry chest, at his strong bronze-furred legs, and particularly the furry balls resting between them.</p>You wait for a long while, and the otter catches several more fish, but you have much less luck. When your pole twitches, you seem to react too slowly, and even when you do get it, you can\'t pull or tug the rod as well as the otter can. He notices your trouble, and waves at you. "Hey, bro. See this?", he says, pointing to his tail. He takes your hand and strokes it down the side of his wide rudder tail. You feel the firm muscles underneath it, the smooth streamlined shape of it, and the ultra soft fur. "If you had one of these, it\'d be way easier. You don\'t have to go all the way, but I mean, obviously everyone is better with an otter tail, right?", he says.</p>You blush, but realise that you have been admiring his tail, and you do feel envious. He grins and tells you to just relax. You lay down, like him, and let yourself enjoy the warm sun on your chest, and the cool sea breeze blowing over you. You feel your tailbone starting to grow, beginning to stretch and thicken. New muscle forms on it, making it grow stronger and longer. You slide your legs apart a little, letting it grow to full size, with all the strength and power of a full otter tail, though it lacks the smooth fur. Soon it\'s exactly the same size and width as the otter\'s, and he grins as he pulls the line off your fishing pole and ties it around your tailtip instead. "Relax with me, bro. You can call me Robby, by the way", he says. His green eyes gleam, and you feel strangely at home with him.</p>Your next few attempts at fishing go much better. Your sensitive tail picks up on every twitch of the line, and the thick muscles in it are perfect for hauling the fish up.',
+                        "outcomes": [
+                            {
+                                "parameter": "robby_spell",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "robby_0",
                 "title": "Otter Fishing",
                 "subtitle": 'There is an otter sitting on the edge of the pier, with a fishing line around his tail. He\'s lounging on his back and looks very relaxed. He notices you, and asks if you\'d like to fish with him.',

@@ -121,6 +121,32 @@ var area = {
                     }
                 }
             },{
+                "id": "birth",
+                "title": "Breed",
+                "subtitle": "You are a mare, you have a stallion. Do what's natural.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "horse_son",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "horseson",
+                "results": {
+                    "footstool_1": {
+                        "text": "Your life in the pasture is a very simple one. You eat grass, enjoy the sun, and most importantly, get filled by your stallion. You are only one of his many mares, so the anticipation of the days when he will come up behind you, sniff your flaring pussy, and mount you, are incredibly exciting.</p>It\'s one of those days when the farmer discovers you for the first time. Your stallion is up on your back, his powerful body weighing down on you, and his hooves aside your chest. His hot breath is huffing on your neck as he slams his enormous horse cock in and out of you.</p>The farmer is a large hairy human, who counts the mares and notices you are one extra. He stays well back, watching as the stallion whinnies and unloads his hot, thick fertile cum into you. Once he pulls off and walks away, he comes up and strokes your neck. He notices your belly, which is rounder and feels heavy. He reaches down and strokes it, feeling a faint kick.</p>Many months later, your belly is heavier than ever, growing large with the foal inside you. You are leaning down, eating grass, when you feel an intense pressure and need inside you. You spread your legs as water gushes from under your tail. The farmer comes over, patting and comforting you. You push, feeling the foal inside you moving, pushing out. The farmer reaches his hands carefully into your pussy, and takes hold of your foal, guiding it out. You push more, panting with exertion, but finally the farmer pulls free a wet, small baby horse. He places the foal down, who stands with shaking, confused legs. You look over to see your son, a handsome black colt, just like his father. He nuzzles between your legs, and starts to suck at your teats. You feel intensely proud as he drinks your milk, hoping he will grow up just as strong as your stallion is.",
+                        "outcomes": [
+                            {
+                                "parameter": "horse_son",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "farmpath_random",
                 "title": "Walk along the path",
                 "subtitle": "The road is rough and muddy, and there's a long way to go before you get anywhere",

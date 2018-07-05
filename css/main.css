@@ -190,6 +190,28 @@ header .subtitle h2 {
 	border-bottom: 1px solid #8e7059;
 }
 
+.chattab {
+	display: flex;
+    justify-content: space-between;
+}
+
+.newmessage {
+	color: brown;
+	display: none;
+}
+
+.chattab.notification .newmessage {
+	display: inherit;
+}
+
+.whothere::before { 
+    content: "Elsewhere:";
+}
+
+.whohere::before { 
+    content: "Here:";
+}
+
 .active {
 	background-color: #e0d2c7;
 	border-bottom: 1px solid #e0d2c7;
@@ -317,6 +339,14 @@ div.theft {
 
 .chips_1 {
 	background-image: url("../img/chipsicon.png");
+}
+
+.time {
+	background-image: url("../img/time.png");
+}
+
+.contributor {
+	background-image: url("../img/contributor.png");
 }
 
 .watervine_1 {
@@ -505,6 +535,14 @@ div.theft {
 	background-image: url("../img/leonar_r.png");
 }
 
+.mrbat {
+	background-image: url("../img/mrbat.png");
+}
+
+.rufo {
+	background-image: url("../img/rufo.png");
+}
+
 .suppliess {
 	background-image: url("../img/suppliess.png");
 }
@@ -551,6 +589,42 @@ div.theft {
 
 .cigarette {
 	background-image: url("../img/cigarette.png");
+}
+
+.magicboots {
+	background-image: url("../img/magicboots.png");
+}
+
+.pawmusk {
+	background-image: url("../img/pawmusk.png");
+}
+
+.candleofglory {
+	background-image: url("../img/candleofglory.png");
+}
+
+.watercloth {
+	background-image: url("../img/watercloth.png");
+}
+
+.prisonshirt {
+	background-image: url("../img/prisonshirt.png");
+}
+
+.fancyhat {
+	background-image: url("../img/fancyhat.png");
+}
+
+.magichelm {
+	background-image: url("../img/magichelm.png");
+}
+
+.dwarfaxe {
+	background-image: url("../img/magicaxe.png");
+}
+
+.horseson {
+	background-image: url("../img/horseson.png");
 }
 
 .footfetish {
