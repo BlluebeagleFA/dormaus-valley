@@ -514,7 +514,7 @@ function main(err,session) {
             var price = iteminfo.value*2*quantity;
             if (player.dust >= price) {
                 player.dust -= price;
-                player.items[itemtype] = quantity;
+                player.items[itemtype] += quantity;
                 updateStats();
                 $(".shopicon." + itemtype).text(player.items[itemtype]);
             }
@@ -887,6 +887,11 @@ function main(err,session) {
                 temporary_parameters.remove(outcome.clearTemp);
             }
             
+            var donator = false;
+            if (player.attributes.contributor && player.attributes.contributor.value > 0) {
+                donator = true;
+            }
+            
             var updated = player.last_updated;
             if (outcome.newchar) {
                 player.trapped = null;
@@ -949,6 +954,13 @@ function main(err,session) {
                         progress: 0
                     }
                 };
+            }
+            
+            if (donator) {
+                player.attributes.contributor = {  
+                    "value":1,
+                    "progress":0
+                 }
             }
             
             if (outcome.area) {
