@@ -12,6 +12,10 @@ hr {
     margin: 50px 0 5px 0;
 }
 
+.footer a {
+	color: lightblue;
+}
+
 body 
 {
 	background-color: black;
@@ -369,6 +373,14 @@ div.theft {
 	background-image: url("../img/uselessraccoon.png");
 }
 
+.usefulraccoon {
+	background-image: url("../img/usefulraccoon.png");
+}
+
+.goblin {
+	background-image: url("../img/goblins.png");
+}
+
 .boots_1 {
 	background-image: url("../img/boots1.png");
 }
@@ -419,6 +431,22 @@ div.theft {
 
 .priesticon {
 	background-image: url("../img/bonaciuex_b.png");
+}
+
+.priesticong {
+	background-image: url("../img/bonaciuex_g.png");
+}
+
+.duelpistol {
+	background-image: url("../img/duelpistol.png");
+}
+
+.mysterydragons {
+	background-image: url("../img/mysterydragons.png");
+}
+
+.accursedicon {
+	background-image: url("../img/accursedicon.png");
 }
 
 .saberhagenicon {

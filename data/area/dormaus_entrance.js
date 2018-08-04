@@ -11,11 +11,6 @@ var area = {
                 "type": "random",
                 "requirements": [
                     {
-                        "parameter": "contributor",
-                        "value": 1,
-                        "comparison": "equal" //default greater
-                    },
-                    {
                         "parameter": "leonar_master",
                         "value": 2,
                         "comparison": "equal" //default greater

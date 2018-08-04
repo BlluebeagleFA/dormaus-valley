@@ -5,6 +5,26 @@ var area = {
         "subheader": 'Otterton is a tiny and quaint village, existing mostly just to service the little-used port at the southern end. A few brightly-painted shops and stands surround a cicular plaza that makes up the town center, with some residential cottages down one road. The cry of seagulls and salty sea air makes the atmosphere bright and welcoming.',
         "events": [
             {
+                "id": "gotopatron",
+                "title": "Go to the Patron's Lounge",
+                "subtitle": "A mysterious door here leads to the patrons-only area.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "contributor",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You open the door, and walk through into a mysterious ballroom.",
+                        "area": "patrons",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "otterton_n",
                 "title": "Travel North to the old stone wall",
                 "subtitle": "Leaving Otterton is the first step on the road back north to Dormaus.",
@@ -81,6 +101,11 @@ var area = {
                 "subtitle": 'You notice that at one end of the plaza is a raised platform, on which is a pair of old-fashioned stocks. They\'re a little odd though, as they have two sets of holes each, and are low to the ground. Just as you are wondering what they are for, you see a white rat struggling as he is dragged along by a burly otter wearing a police shirt. "It\'s stocks for you, criminal. A few hours in here will teach you not to pilfer!", the otter says. He pulls up the stocks and forces the rat to bend over. His pink paws are forced into one set of holes, before his arms are placed in the other, and the whole contraption is locked up tight. The rat struggles and curses, but he\'s unable to escape. The otter then leaves him to his fate.</p></p>It occurs to you that the helpless rat couldn\'t do anything about it if you wanted to play with his exposed pink paws. Do you want to have some fun?',
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 35,
+                        "comparison": "nequal" //default greater
+                    }
                 ],
                 "icon": "footfetish",
                 "results": {
@@ -91,6 +116,56 @@ var area = {
                             "quantity": 10,
                             "change": "add"
                         }]
+                    }
+                }
+            },{
+                "id": "rat_tf",
+                "title": "A Short Reprieve",
+                "subtitle": 'The rat in the stocks gestures to you with his head, a desperate look in his eyes. "Hey! Buddy! Please, you gotta help me out. Take my place for just ten minutes would ya? I need to piss real bad!"',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 35,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You approach the rat, and he grins eagerly. His head is covered in light brown fur, which forms markings like a hood down his neck, before transitioning into the soft white fur that covers the rest of his body. He looks up at you with a slightly nervous grin. \"Can you believe this? All I did was steal some bread! And like, one or two other things. They\'ve had me stuck in here for hours! Please, you gotta help me\", he says.</p>You ask him what you can do, and he glances aside nervously. \"So just like, agree to take my place for a bit? It\'ll only be ten minutes. You\'ll be me for a little while, I get to go take a quick piss, and then we change right back. Simple, right?\", he explains.</p>You look down at him, while he gives you a desperate smile. He is admittedly kind of cute. His pink paws are large and soft, and his tail is stretched out behind him and is equally smooth and pink. His body is lean, but not too thin, with soft cute white fur and a very noticeable pair of large furry rat balls. His long, ratty muzzle is very slightly crooked, and his front teeth are long and just out from his face.</p>You get the strong impression that he is trying to swindle you. Even so, you hesitantly agree. He looks legitimately shocked. \"Er, great! Just touch that symbol there on the front of the stocks, to show you\'re willing to take on my punishment. Temporarily\", he says. You kneel down, ignoring his large bare feet, and see the symbol he means. It\'s a painted sigil on the wood. You press your finger against the black paint, and immediately it starts to glow. The wooden stocks disappear, and the rat leaps up eagerly. He hops backwards as you find yourself dragged forward onto the platform. You are forced down onto your rear, and then you feel your body bend forward like someone is pushing on your back. The air in front of you glows, and the stocks reappear, surrounding your hands and feet and trapping you in this uncomfortable pose.</p>The first thing that changes is your feet. You feel them start to grow, your soles becoming softer and bulging out slightly. They feel very sensitive and smooth, and your toes stretch out, becoming longer and stronger. Small claws appear at the tips, and your hands start to change the same way. Your skin getting softer, your nails becoming short, sharp claws. Behind you, you feel your tailbone starting to grow. It stretches and shifts as it segments itself, growing out into a long, thin tail covered in smooth pink skin, with ridged areas like the body of a worm.</p>Your face pushes out, stretching and growing as it elongates into a rat\'s thin, long muzzle. There is a strange bending feeling for a moment, as you take on the rat\'s unusual kinked-muzzle shape. You feel your front teeth push out over your lips and stretch down, becoming open to the air. Whiskers sprout from your new rat face, and twitch as you smell the salty air around you more strongly than before. Your ears grow larger and rounder, while fur begins to spread down your body. It is smooth and white below your neck, covering your slender new form, but a darker brown over your head.</p>You look up at the former rat, as he shifts and changes. He strokes his face, feeling his altered form as he takes on your former appearance. \"Woah, I cannot believe someone fell for that\", he says in your own voice. You shrug, having basically expected this would happen. At least his punishment is only a few more hours. The most annoying part is that he was telling the truth about needing to piss, and judging by the uncomfortable swollen feeling behind your huge furry rat balls, you took that aspect of him too.</p>The former rat turns to leave, but he gets distracted, finding himself staring at your feet. You wiggle your toes and flex them, and he starts to drool. \"F-fuck, what the hell...do you have a foot fetish or something? I can\'t stop looking...\", he says. Whether you do have a foot fetish, or whether he\'s just in denial about his own, he finds himself kneeling in front of you.</p>He slowly strokes his finger down your long, smooth paw. It\'s extremely sensitive, and you squirm a little. He takes your foot in both his hands, and starts to rub his fingers and thumbs against your soft, bulging feet. He massages small circles along your sole, and squeezes and rubs your long toes. Before long, he\'s pressing his face into your feet, and sniffing and nuzzling them eagerly. He opens his mouth and starts to lick your bare paws, tasting every inch of them and even sliding his tongue between each toe. He slides one of your toes into his mouth, sucking it as he squeezes and rubs the sole, then moves on to your other foot to give it the same treatment. He services you like that for hours, only stopping when someone comes to set you free. As he sees your stocks getting unlocked, he quickly gets up, wipes your paw sweat off his face, and flees before you can get him back.",
+                        "descriptionchange": "This adventurer is a scrawny white rat with smooth, soft pink feet and a slightly crooked, cute brown muzzle.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 35,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "rat_piss",
+                "title": "A Different Reprieve",
+                "subtitle": 'The rat in the stocks gestures to you with his head, a desperate look in his eyes. "Hey! Buddy! Please, you gotta help me out. Take my place for just ten minutes would ya? I need to piss real bad!" Your eyes gleam and you grin at the word "piss", and he starts to look nervous.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 35,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "pisscurse",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzpay": {
+                        "text": "You walk up to the rat, and he grins nervously. \"H-hey, you\'re gonna help me out, right?\", he says. You ignore him, and walk around behind the stocks. He tries to turn and look at you, and struggles in his bindings. \"Hey! What are you doing?!\", he says with an increasingly panicked voice. You lie down, and slide yourself against him. He yelps and bounces up as your head pushes against his rear, which lets you get yourself underneath him. His huge, fuzzy rat balls rest on your neck, and his thick flaccid cock twitches in front of you. \"What the fuck are you doing, you lunatic?!\", he says. You just open your mouth, lean your head up, and slide his warm, soft cock into your mouth. It rests on your tongue, twitching and tasting faintly salty.</p>Eventually, he realises what you want. He groans, and struggles, but he can\'t get himself free from you. Finally, he relents. With a blush on his face, he closes his eyes and tries to relax. After a long pause, his cock bounces and he starts to unload a thick, hot stream of acrid piss. You guzzle it down eagerly, not wasting a single drop. Once he starts, the flow comes in earnest, as he unloads a swollen bladder full of stinky rat urine.</p>Eventually, he finishes, and you lick the last traces of piss from his cockhead. You climb out from under him, and he looks away, his cheeks red. You tell him you\'ll be back later when he needs to go again. \"Please don\'t\", he squeaks.",
+                        "outcomes": [
+                        ]
                     }
                 }
             },{

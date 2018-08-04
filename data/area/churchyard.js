@@ -5,6 +5,32 @@ var area = {
         "subheader": 'The churchyard is a place of quiet and respite from the otherwise busy streets of Dormaus. Benches sit amongst the grass, under the shade of tall trees. To the north, the wooden church itself stands, with a tall pointed bell tower atop it.',
         "events": [
             {
+                "id": "priestquest2",
+                "title": "Journey Into Darkness",
+                "subtitle": "Bonaciuex is waiting for you, in front of an ancient and decrepit tomb.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "priest_quest",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "priesticong",
+                "results": {
+                    "grizzsex": {
+                        "text": "Bonacieux is waiting for you as he promised. He\'s standing next to one of the larger, older crypts. His usual long robes are missing, and he\'s wearing something that looks more like a brown duster jacket, with padded brown leather armor beneath. He gives you a curt nod as you walk forward. \"I am very glad to have you along, child\", he says. He turns and unlocks the heavy metal grate of the crypt, using a huge brass key. It opens only with extreme difficulty, the hinges squealing with frustration.</p>He leads you into the dark, damp-smelling interior of the crypt, and past the stone sarcophagus towards a cramped stone stairway behind it. You descend down the small steps, the area getting darker and darker, until Bonacieux is forced to light a torch in order to illuminate the way.</p>Finally, you come to the bottom of the crypt. The walls and ceiling look similar to the room above, except for that half of the room has collapsed. In its place is a deep, dark crevice that sinks down into the earth. Bonacieux kneels down and begins to hammer a crampon into the stone, before attaching a climbing rope. \"Be cautious, adventurer. These old crypts have been unstable for centuries, and pitfalls lie in wait around every corner\", he says. You hammer in your own climbing rope, and begin to descend into the dark alongside the old wolf.",
+                        "area": "under_graveyard",
+                        "outcomes": [
+                            {
+                                "parameter": "b_supplies",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "inspect_gargoyle",
                 "title": "Examine the Gargoyles",
                 "subtitle": 'You walk up the path to the church, and notice something about the statues at the sides of the doorway. While twisted, monstrous stone gargoyles perch atop the door and to the side, one of the platforms where they stand is empty. You think you can see something glinting in the eaves above the empty platform. Do you want to climb up and take a closer look?',

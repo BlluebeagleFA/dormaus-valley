@@ -524,7 +524,7 @@ var area = {
                 "icon": "fluteicon",
                 "shop": {
                     "trades": ["supplies", "slutty_shirt"],
-                    "buys": ["ace_boots", "mikhail_socks"],
+                    "buys": ["ace_boots", "mikhail_socks", "stallion"],
                     "sells": []
                 },
                 "dialogue": [

@@ -20,6 +20,40 @@ var area = {
                     }
                 }
             },{
+                "id": "orc_tf",
+                "title": "Hunt Goblins",
+                "subtitle": "The caves around these cliffs are lousy with goblins. The small, dirty creatures like to steal and vandalise the town, and it would be helpful to have someone put them in their place.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 36,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "dominance",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You hunt around the cliffside, looking for signs of goblins. Eventually you discover a flattened area of grass, with a pile of burned rocks in the middle, and bones scattered about. A primitive goblin campfire. You hide behind some of the rocks on the cliffside and wait for nightfall.</p>Sure enough, once the sun gets low in the sky, you hear the frenzied giggles and chattering voices of some goblins, as they crawl up from the caves below to meet atop the cliff. You wait for them to start up their fire and begin their strange, ritualistic dancing before you make a move.</p>You lunge out from behind the rock, dashing in and striking one of the goblins across the face. He falls backwards and rolls, his short green body bouncing on the firm stony ground. Two of the goblins panic and grab their weapons, simplistic sticks with rusty blades attached by dirty strips of cloth. You dodge their clumsy lunges, and grip one of the weapons. With a twist of your arms, you disarm one goblin and smash the other across the head. Something is odd though. The goblins you brutalised are grinning massively, showing off their yellow, jagged sharklike teeth. You turn to the lead goblin, who\'s skin is a rusty reddish shade, and covered in muddy painted symbols. He\'s still chanting, and dancing around the fire, his yellow eyes fixed on you.</p>You find yourself grunting and clutching the weapon in your hand. Your grip shakes for a moment, then the flimsy wood snaps like a twig in your fist. These little worms thought they could best you with something so pathetic? Absurd. The fire seems to rise higher, the smoke from it thick and heady with strange, exotic spices and scents.</p>The three goblins you hit crawl towards you slowly, looking up at you with strange, adoring expressions on their deranged faces. Their long pointy green ears twitch. You feel like you can almost understand the words the lead goblin is saying. Almost, but not quite. These weaklings are no threat to you. You lean back on a rock, spreading your legs and lounging like a king amongst his inferiors. Two of the goblins kneel at your feet, and start to rub them. Their small, rough fingers stroke along your heel and sole, massaging and stroking them. They open their mouths, and reveal long dripping tongues, which they use to lick your toes and clean the dust from your feet. As they should. They should be serving a superior, powerful warrior like you.</p>You relax more, leaning backwards and grinning wide. As the goblins stroke your feet, they seem to get longer and wider. Your toes stretching out, muscles starting to bulge under your skin. Your calves change too, bulging with hard, firm muscle. Gradually, as the goblins soak your feet in their slimy saliva, your skin begins to darken, and change hue. It becomes a deep, grassy green. You stroke your chest, feeling it flatten and widen. Your shoulders stretch out, while your abs become rock hard and well defined. Your arms bulge with muscle, swelling and growing huge and hard. The green shade continues to spread up your legs, covering your rear and crotch, then spreading up your chest and down your arms.</p>Your face aches as your teeth seem to grow too large for your mouth. You grunt and growl, licking your lower canines as they bulge, swell, and stretch out from your mouth. They curve up over your lips, becoming thick, powerful fangs. Your face becomes more rugged and harsh, your forehead bulging and your nose becoming flat and wide. Your ears stretch, becoming pointed and wide, while your hair turns into a dark, wild mane.</p>Finally, you realise you can understand the goblins after all. Their pathetic clumsy speech is a depraved, corrupted form of orcish. The ones at your feet are calling you master, king, lord orc. The lead goblin is reciting an old chant, a spell of sorts that calls out into the world for a powerful monster. One who can lead them and order them around.</p>You chuckle, in a deep and powerful orcish voice, as you command the lead goblin to stop his blabbering, and come over and get his head between your legs. These worthless cretins belong to you, now.",
+                        "descriptionchange": "This adventurer is a huge, muscular orc, with deep green skin and a powerful warrior body.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 36,
+                                "change": "set"
+                            },{
+                                "parameter": "goblins",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "battf",
                 "title": "Cliffside Bats",
                 "subtitle": 'You can hear some sort of squeaking, and smell an odd musky scent coming from the edge of the cliff. You walk over and peek down to see caves that you had not noticed before. The sun is starting to set, and as the light dims, some shapes poke their heads out from the caves. They have flat pink leaf-shaped noses, tall pointy ears, and huge skin-covered wings at their sides. They are preparing to leave as the sun sets. Do you want to wait with them?',

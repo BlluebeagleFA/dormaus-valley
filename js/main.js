@@ -1,5 +1,12 @@
 $(document).ready(function() {
     DV.Session.get_session(main);
+    
+//    var itemparams = Object.keys(DV.Data.item_data);
+//    var logthing = "";
+//    for (var i = 0; i < itemparams.length; i++) {
+//        logthing += '\'<option value="' + itemparams[i] + '">' + itemparams[i] + '</option>\'+\n';
+//    }
+//    console.log(logthing);
 });
 
 function main(err,session) {
@@ -508,13 +515,15 @@ function main(err,session) {
         e.preventDefault();
         var data = $(this).data();
         var itemtype = data.item;
-        var quantity = $(".buyfield." + itemtype).val();
+        var quantity = parseInt($(".buyfield." + itemtype).val());
         if (DV.Data.item_data[itemtype] && quantity && quantity > 0) {
             var iteminfo = DV.Data.item_data[itemtype];
-            var price = iteminfo.value*2*quantity;
+            var price = parseInt(iteminfo.value*2*quantity);
+            var playerdust = parseInt(player.dust);
             if (player.dust >= price) {
-                player.dust -= price;
-                player.items[itemtype] += quantity;
+                player.dust = playerdust-price;
+                var oldquantity = player.items[itemtype] || 0;
+                player.items[itemtype] = parseInt(oldquantity) + quantity;
                 updateStats();
                 $(".shopicon." + itemtype).text(player.items[itemtype]);
             }
@@ -525,13 +534,14 @@ function main(err,session) {
         e.preventDefault();
         var data = $(this).data();
         var itemtype = data.item;
-        var quantity = $(".sellfield." + itemtype).val();
+        var quantity = parseInt($(".sellfield." + itemtype).val());
         if (DV.Data.item_data[itemtype] && quantity && quantity > 0) {
             var iteminfo = DV.Data.item_data[itemtype];
-            var price = iteminfo.value*quantity;
+            var price = parseInt(iteminfo.value*quantity);
             if (player.items[itemtype] >= quantity) {
-                player.dust += price;
-                player.items[itemtype] -= quantity;
+                player.dust = parseInt(player.dust) + price;
+                var oldquantity = player.items[itemtype] || 0;
+                player.items[itemtype] = parseInt(oldquantity) - quantity;
                 updateStats();
                 $(".shopicon." + itemtype).text(player.items[itemtype]);
             }

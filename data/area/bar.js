@@ -4,7 +4,27 @@ var area = {
         "header": "The Fur and Feather Bar",
         "subheader": 'The bar is dim compared to the streets outside, but a roaring fire and many flickering candles gives it a homely and welcoming feeling. A massive dire-bear-skin rug lies next to the fireplace, and behind the bar, a dizzying array of colourful spirits are begging to be tasted.',
         "events": [
-        	{
+            {
+                "id": "gotopatron",
+                "title": "Go to the Patron's Lounge",
+                "subtitle": "A mysterious door here leads to the patrons-only area.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "contributor",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You open the door, and walk through into a mysterious ballroom.",
+                        "area": "patrons",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "pub_cleantables",
                 "title": "Clean Tables",
                 "subtitle": "Waiting tables isn't glamorous, but it pays the bills.",
@@ -756,7 +776,7 @@ var area = {
                 "description": "Grizz is an enormous musclebound bear, his powerful muscles coated by soft blubber and thick, heavy fur.",
                 "icon": "grizzicon",
                 "shop": {
-                	"trades": ["wine_1", "wine_2", "gro_potion", "shrink_potion", "smart_potion", "dumb_potion"],
+                	"trades": ["wine_1", "wine_2", "smart_potion", "dumb_potion"],
                 	"buys": [],
                 	"sells": []
                 },

@@ -40,6 +40,36 @@ var area = {
                     }
                 }
             },{
+                "id": "ram_tf",
+                "title": "Help Round Up Sheep",
+                "subtitle": 'A massive shaggy sheepdog is panting and leaning on the fence. Beyond it, you can see a number of sheep, scattered around and wandering off. He sees you and waves. "Hey there friend! Dinnae suppose you could help? I need someone tough who can keep these ladies in line!", he says.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 33,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "dominance",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You nod, and get closer to the sheepdog. He\'s quite portly, though it may just be because of his thick coat of long, shaggy fur. He wipes his long fringe out of his eyes before explaining his problem. \"Aye, having a tough time today, I am. These she-devils just willnae listen to me! I need em to stay put else\'or some wolf\'ll gobble em up, but they dinnae respect me. Need someone to put em in line!\", he says. You doubt it will be all that difficult to intimidate a bunch of rambunctious sheep, so you agree and hop over the fence.</p>At first, it\'s harder than you thought. The sheep scatter whenever you get close, and you find yourself getting more and more frustrated. These ewes should be deferring to you more! You sneak up around to one, and it sniffs the air and runs off with a bleat. Your head starts to ache, and you snort as you rub at your temple, feeling a thick, hard bulge at the side of your head that only makes you feel more angry and demanding.</p>When the next sheep runs off, and you see it\'s rear end bouncing up into the air as it runs from you, you feel a rush of heat and emotion inside you. That ewe is YOURS. You start sprinting after her, your feet growing tough and hard as they turn black. Your toes merge together, each fusing into two huge halves of a cloven hoof on each foot. With your huge hooves, you start to run faster and gain on the ewe. The closer you get, the more the controlling and possessive feelings start to grow inside you. You snort and feel the bulges on your head growing more, stretching out from the sides of your skull and beginning to curl and twist. Their weight seems to drive you even more frustrated and needy. These are your ewes! They must obey you!</p>You fall to all fours, your hands toughening as each pair of fingers fuses together and hardens into cloven hooves. You feel a weight growing between your legs, a thick bulging needy presence that is rapidly taking over all of your concerns. It bounces and thickens, growing harder and heavier the more you smell the ewe you are chasing. Finally, you catch up to her, and leap forward, pressing your weight down atop her fluffy curly wool as she bleats and complains. You push your face down into her wool, breathing in that delicious, arousing scent. The scent of YOUR ewe. She belongs to YOU. Your new ram cock, rock hard and dripping with pre, is controlling your thoughts now. You thrust it and shove, rutting like an animal as you search for the ewe\'s pussy. Finally, you feel yourself plunge in deep, and you both bleat together, hers feminine and yours deep and bellowing.</p>You thrust and fuck, slamming in over and over as your face pushes forward and stretches, growing longer the more you sniff her arousing scent. Your skin darkens and turns black, and you feel hair starting to grow from you all over, thick and curly and wooly. It thickens into a heavy, hot pelt of ram wool, stinking with your masculine, dominant musk. The closer you get to orgasm, the more you seem to think with your cock, becoming dumber and more aggressive. Finally, you feel your balls pulse and tense, and you bleat loudly, filling your ewe with your hot, fertile cum. Your eyes glow for a moment, as your pupils become horizontal slits. You pull out, and your ewe submissively follows behind you.</p>For the rest of the day, you track down and breed every one of your ewes, making sure they know exactly who they belong to. As the sun sets, you return to the sheepdog, feeling yourself rise back up onto two legs, as your feral form becomes more anthro. By the time you reach him, you are a tall, muscular and cocky ram man, who\'s brain is as small as his muscles are huge. \"Good work out there laddie!\", he says. You snort, and warn him not to mess with your ladies unless he wants to join them, then hop over the fence to get back to adventuring.",
+                        "descriptionchange": "This adventurer is an enormous muscular ram, with gigantic curling horns and a cocky, arrogant stride.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 33,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "farmfield_random",
                 "title": "Explore the muddy fields",
                 "subtitle": "The mud sticks to your feet and it feels like you might sink into it at any moment",

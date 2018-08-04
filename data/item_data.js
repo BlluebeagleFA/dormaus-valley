@@ -131,7 +131,12 @@ DV.Data.item_data = {
             "You are a scruffy, short and dirty raccoon, with long and dextrous paws", //28
             "You are a soft small rabbit with strong legs and long fuzzy paws", //29
             "You are a chubby frog with long green legs and a smooth slippery belly", //30
-            "You are a cow with a spotted black and white flank and large thick horns" //31
+            "You are a cow with a spotted black and white flank and large thick horns", //31
+            "You are a squeaky rubber tiger with painted stripes", //32
+            "You are a wooly sheep with thick curly fur and cloven hooves", //33
+            "You are a slinky thin pine marten with a long fuzzy tail", //34
+            "You are a scrawny rat with a long pink tail", //35
+            "You are a mighty orc, a green-skinned warrior with huge tusks." //36
             ]
     },
     gender: {
@@ -163,6 +168,18 @@ DV.Data.item_data = {
         icon: "suppliess",
         title: "Dig Progress",
         description: ["You are progressing down in a digger delve."]
+    },
+    priest_quest: {
+        type: "attribute",
+        icon: "priesticong",
+        title: "Hunting with Bonacieux",
+        description: ["Bonacieux wants your help to defeat a monster beneath the church."]
+    },
+    mystery_dragons: {
+        type: "attribute",
+        icon: "mysterydragons",
+        title: "Mystery: The Six Dragons",
+        description: ["You have learned about the old religion that worshipped six colourful dragons who maintained the world. It is no longer widely believed in, but you feel like there is something important about it, hidden just below the surface."]
     },
     digger: {
         type: "attribute",
@@ -318,6 +335,13 @@ DV.Data.item_data = {
         title: "Supplies",
         value: 50,
         description: ["Digger supplies, everything you need to delve into caves, ruins and ancient temples."]
+    },
+    b_supplies: {
+        type: "item",
+        icon: "priesticon",
+        title: "Bonacieux's Supplies",
+        value: 1,
+        description: ["Bonacieux is well supplied with all of the tools he needs for this trip. He should be able to bail you out at least once if trouble arises."]
     },
 	//Equipment
     magic_boots: {
@@ -546,6 +570,17 @@ DV.Data.item_data = {
 		},
 		description: ["When you're wielding a fancy comb, you are always prepared for the challenge of a social engagement."]
 	},
+	pistol: {
+        type: "item",
+        icon: "duelpistol",
+        title: "Engraved Pistol",
+        value: 5000,
+        slot: "weapon",
+        attributes: {
+            might: 5
+        },
+        description: ["A beautifully ornate pistol, inlaid with silver. The engraving reads 'For my little brother. I will always protect you. Deus.'"]
+    },
 	useless_raccoon: {
 		type: "item",
 		icon: "useless_raccoon",
@@ -570,6 +605,44 @@ DV.Data.item_data = {
             might: 1
         },
         description: ["This is your son, a strong and healthy colt. He's quite strong, just like his father."]
+    },
+    useful_raccoon: {
+        type: "item",
+        icon: "usefulraccoon",
+        title: "Useful Raccoon",
+        value: 1,
+        slot: "ally",
+        attributes: {
+            might: 5,
+            magic: 5,
+            stealth: 5,
+            charm: 5
+        },
+        description: ["This raccoon looks exactly like the useless raccoons, but he is unable to talk about anime all the time like they do, because he has an important deadline. While he clatters away on his laptop, the game will go more smoothly for you."]
+    },
+    stallion: {
+        type: "item",
+        icon: "horseson",
+        title: "Black Stallion",
+        value: 50,
+        slot: "ally",
+        attributes: {
+            might: 3
+        },
+        description: ["A formerly mighty black stallion, bulging with muscle but still only a shadow of his formerly dominant self."]
+    },
+    goblins: {
+        type: "item",
+        icon: "goblin",
+        title: "Goblin Gang",
+        value: 50,
+        slot: "ally",
+        attributes: {
+            stealth: 1,
+            charm: -1,
+            might: 1
+        },
+        description: ["A gaggle of obedient, stupid smelly goblins who desperately want to do everything you say."]
     },
 	//Troubles
 	pain: {

@@ -1,0 +1,232 @@
+<html>
+	<head>
+		<title>Data Transformation Tool</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+		<script src="./js/mqtt-client.min.js"></script>
+		<script src="./js/amazon-cognito-identity.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/aws-sdk-2.240.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/iconselect.css" >
+        <script type="text/javascript" src="data/iconselect.js"></script>
+		<script type="text/javascript" src="data/iscroll.js"></script>
+	</head>
+	<body>
+		<div id = "main">
+			<div id = "event">
+				<p><b>Event</b></p>
+				<label>Title</label>
+				<input id="title" type="text" name="title">
+				<label>Description</label>
+				<textarea id="description" rows="4" cols="50"></textarea>
+				</p>
+				<label>Icon</label>
+				<div id="icon"></div>				
+				<div></div>
+				<label>Requirements</label>
+				<div class="requirements">
+					<div id="requirementcontainer">
+					</div>
+					<input id="addrequirement" type="button" value="Add Requirement">
+					<input id="clearrequirements" type="button" value="Clear Requirements">
+				</div>
+				<label>Type (Random gives random result. Check tests a stat and can have results success, fail, rareSuccess, rareFail)</label>
+				<div class="flex">
+					<label>Random</label>
+					<input id="randombutton" type="radio" class="radio typedata" name="eventtype" value="Random" checked>
+					<label>Check</label>
+					<input id="checkbutton" type="radio" class="radio typedata" name="eventtype" value="Check">
+				</div>
+				<div class="checkfields flex hidden">
+					<label>Attribute</label>
+					<select id="attribute">
+						<option value="turner_interest">turner_interest</option>
+<option value="turner_connection">turner_connection</option>
+<option value="grizz_interest">grizz_interest</option>
+<option value="grizz_connection">grizz_connection</option>
+<option value="flute_interest">flute_interest</option>
+<option value="flute_connection">flute_connection</option>
+<option value="saberhagen_interest">saberhagen_interest</option>
+<option value="saberhagen_connection">saberhagen_connection</option>
+<option value="flute_master">flute_master</option>
+<option value="leonar_master">leonar_master</option>
+<option value="robby_spell">robby_spell</option>
+<option value="jack_spell">jack_spell</option>
+<option value="jack_friend">jack_friend</option>
+<option value="mikhail_interest">mikhail_interest</option>
+<option value="mikhail_connection">mikhail_connection</option>
+<option value="species">species</option>
+<option value="gender">gender</option>
+<option value="submissiveness">submissiveness</option>
+<option value="dominance">dominance</option>
+<option value="westwood">westwood</option>
+<option value="digger_progress">digger_progress</option>
+<option value="digger">digger</option>
+<option value="kind">kind</option>
+<option value="cruel">cruel</option>
+<option value="intelligence">intelligence</option>
+<option value="pisscurse">pisscurse</option>
+<option value="magicuser">magicuser</option>
+<option value="time">time</option>
+<option value="contributor">contributor</option>
+<option value="wine_1">wine_1</option>
+<option value="wine_2">wine_2</option>
+<option value="gro_potion">gro_potion</option>
+<option value="shrink_potion">shrink_potion</option>
+<option value="smart_potion">smart_potion</option>
+<option value="dumb_potion">dumb_potion</option>
+<option value="chips_1">chips_1</option>
+<option value="bullet_1">bullet_1</option>
+<option value="muscat_1">muscat_1</option>
+<option value="fish">fish</option>
+<option value="pie_1">pie_1</option>
+<option value="watervine_1">watervine_1</option>
+<option value="lotus_1">lotus_1</option>
+<option value="bloodstone">bloodstone</option>
+<option value="supplies">supplies</option>
+<option value="magic_boots">magic_boots</option>
+<option value="paw_musk">paw_musk</option>
+<option value="cowboy_boots">cowboy_boots</option>
+<option value="leather_jacket">leather_jacket</option>
+<option value="cigarette">cigarette</option>
+<option value="candle_glory">candle_glory</option>
+<option value="dwarf_axe">dwarf_axe</option>
+<option value="nosering">nosering</option>
+<option value="fancyhat">fancyhat</option>
+<option value="iron_helm">iron_helm</option>
+<option value="skull_mask">skull_mask</option>
+<option value="stone_shield">stone_shield</option>
+<option value="ace_boots">ace_boots</option>
+<option value="mikhail_socks">mikhail_socks</option>
+<option value="slutty_shirt">slutty_shirt</option>
+<option value="prison_shirt">prison_shirt</option>
+<option value="water_cloth">water_cloth</option>
+<option value="old_sword">old_sword</option>
+<option value="magic_hat">magic_hat</option>
+<option value="comb">comb</option>
+<option value="useless_raccoon">useless_raccoon</option>
+<option value="horse_son">horse_son</option>
+<option value="pain">pain</option>
+<option value="outcast">outcast</option>
+<option value="guilt">guilt</option>
+<option value="curse">curse</option>
+<option value="might">might</option>
+<option value="magic">magic</option>
+<option value="charm">charm</option>
+<option value="stealth">stealth</option>
+					</select>
+					<label>Difficulty (roughly the expected stat level to get a good chance)</label>
+					<input id="quantity" type="number" name="quantity">
+				</div>
+				<label>Outcomes</label>
+				<div class="outcomes">
+					<div id="outcomecontainer">
+						<div class="outcome">
+							<label>Title (must be success/fail/rareSuccess/rareFail for check events. otherwise anything)</label>
+							<input class="outcometitle" type="text" name="title">
+							<label>Description Change</label>
+							<input class="outcomedescchange" type="text" name="title">
+							<label>Move To</label>
+							<select class="outcomemove">
+								<option value="none">None</option>
+								<option value="alleyway">Alleyway</option>
+								<option value="art_store">Art Store</option>
+								<option value="backstreets">Backstreets</option>
+								<option value="bar_rooms">Bar Rooms</option>
+								<option value="bar">Bar</option>
+								<option value="belly">Belly</option>
+								<option value="beside_river">Beside River</option>
+								<option value="cavernentrance">Cavern Entrance</option>
+								<option value="church">Church</option>
+								<option value="churchyard">Churchyard</option>
+								<option value="contributor_1">Contributor 1</option>
+								<option value="darkcavern">Dark Cavern</option>
+								<option value="deepestcavern">Deep Cavern</option>
+								<option value="dormaus_entrance">Dormaus Entrance</option>
+								<option value="dormaus_streets">Dormaus Streets</option>
+								<option value="down_valley">Down the Valley</option>
+								<option value="dragon_vore">Dragon Vore Choice</option>
+								<option value="farmfield">Farm Field</option>
+								<option value="farmhouse">Farm House</option>
+								<option value="farmpath">Farm Path</option>
+								<option value="farmsouth">Farm South</option>
+								<option value="fountain">Fountain</option>
+								<option value="hotel_rooms">Hotel Rooms</option>
+								<option value="hotel">Hotel</option>
+								<option value="jacks_hideout">Jack's Hideout</option>
+								<option value="lionquest_aceboot">Ace's Boot</option>
+								<option value="lionquest_acecock">Ace's Cock</option>
+								<option value="lionquest_glowscale">Glowscale (Quest)</option>
+								<option value="lionquest_harem">Harem (Quest)</option>
+								<option value="lionquest_sea">Pirate Ship (Quest)</option>
+								<option value="lionquest_throne">Throne Room (Quest)</option>
+								<option value="lionquest_westwood">Westwood (Quest)</option>
+								<option value="marketplace">Marketplace</option>
+								<option value="mayors">Mayor's Office</option>
+								<option value="otterton_dock">Otterton Dock</option>
+								<option value="otterton_hill">Otterton Hill</option>
+								<option value="otterton">Otterton</option>
+								<option value="pumpkins">Pumpkins</option>
+								<option value="quartzcavern">Quartz Cavern</option>
+								<option value="resetshrine">Reset Shrine</option>
+								<option value="shop_rooms">Shop Rooms</option>
+								<option value="shop">Shop</option>
+								<option value="tartarus">Tartarus</option>
+								<option value="top_valley">Top Valley</option>
+								<option value="wetcavern">Wet Cavern</option>
+								<option value="windy_path">Windy Path</option>
+								<option value="witch_peak">Witch Peak</option>
+								<option value="makarna">Makarna</option>
+							</select>
+							<div></div>
+							<label>Remove Trap (Remove inanimate status)</label>
+							<input class="outcomecleartrap" type="checkbox" value="clear">
+							<label>Trap Description Change (Description while trapped)</label>
+							<input class="outcometrapdesc" type="text" name="title">
+							<label>Trap Block (Text when trying to move while trapped)</label>
+							<input class="outcometrapblock" type="text" name="title">
+							<label>Text</label>
+							<textarea class="outcometext" rows="4" cols="50"></textarea>
+							<div></div>
+							<div class="changes">
+								<div class="changecontainer">
+								</div>
+								<input class="addchange" type="button" value="Add Change">
+								<input class="clearchanges" type="button" value="Clear Changes">
+							</div>
+						</div>
+					</div>
+					<input id="addoutcome" type="button" value="Add Outcome">
+					<input id="resetoutcome" type="button" value="Reset Outcomes">
+				</div>
+				<input id="submitevent" type="button" value="Submit">
+				<label>Result</label>
+				<textarea id="result" rows="4" cols="50" readonly placeholder="Result goes here when you click Submit. Paste the output to the developer"></textarea>
+			</div>
+			<hr>
+			<div id = "npc">
+				<p>NPC</p>
+				<label>Title</label>
+				<input id="npctitle" type="text" name="title">
+				<label>Description</label>
+				<textarea id="npcdescription" rows="4" cols="50"></textarea>
+				<div></div>
+				<label>Icon</label>
+				<div id="npcicon"></div>
+				<label>Topics</label>
+				<div class="topics">
+					<div id="topiccontainer">
+					</div>
+					<input id="addtopic" type="button" value="Add Topic">
+					<input id="cleartopics" type="button" value="Clear Topics">
+				</div>
+				<input id="submitnpc" type="button" value="Submit">
+				<label>Result</label>
+				<textarea id="resultnpc" rows="4" cols="50" readonly placeholder="Result goes here when you click Submit. Paste the output to the developer"></textarea>
+			</div>
+			<hr>
+		</div>
+
+		<script src='./js/index.js'></script>
+	</body>
+</html>

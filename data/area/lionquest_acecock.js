@@ -111,6 +111,10 @@ var area = {
                                 "parameter": "time",
                                 "quantity": 0,
                                 "change": "set"
+                            },{
+                                "parameter": "leonar_master",
+                                "quantity": 0,
+                                "change": "set"
                             }
                         ]
                     }

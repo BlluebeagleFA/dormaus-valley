@@ -10,6 +10,10 @@ var global_area = {
                         "parameter": "contributor",
                         "value": 1,
                         "comparison": "less" //default greater
+                    },{
+                        "parameter": "contributor",
+                        "value": 10,
+                        "comparison": "greater" //default greater
                     }
                 ],
                 "icon": "contributor",

@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+body 
+{
+	background-color: white;
+	font-family: Roboto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin: 0px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.outcome, .outcomes, #event, #area {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.flex {
+	display: flex;
+}
+
+.radio {
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	box-sizing: border-box;
+	height: 26px;
+	display: block;
+	padding: 3px 5px !important;
+	width: auto !important;
+	font-size: 14px;
+	background: #FFF;
+	color: #000;
+	font-weight: bold;
+	border: 1px solid #5E3D1A;
+	box-shadow: 1px 1px 2px 0px #666;
+	text-decoration: none !important;
+	margin: 0;
+	cursor: pointer;
+
+}
+
+.checkfields, .changecontainer, .outcomechange, .requirementcontainer, .requirement, #topiccontainer {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+
+input, textarea {
+	margin-bottom: 10px;
+}
+
+
+.poncho {
+  background: url("../poncho.svg") 0 0 no-repeat;
+}

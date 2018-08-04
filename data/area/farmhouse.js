@@ -312,6 +312,35 @@ var area = {
                     }
                 }
             },{
+                "id": "phantommare",
+                "title": "Make Horse Milk",
+                "subtitle": 'Turner\'s farm has a breeding tool for "milking" male stallions for ingredients to make the popular horse milk drink.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "intelligence",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "grizzsex": {
+                        "text": "Since you are currently a horse, you are curious to try some of the experiences that natural horses have. One of those, you have learned, is taking a ride on the \"phantom mare\". You find it in a back room of Turner\'s barn, and at first you are not particularly impressed.</p>The object is a sort of large upholstered bench, standing on four spreadeagled metal legs. In one end is a very large entrance, looking a little bit like a fleshlight, but big enough to handle even the enormous rods of horny stallions. You get close and sniff it, noticing the very obvious smell of many sweaty horny horses that have used this thing before you. You drop your pants, and stroke your thick, long horse cock for a while, getting it slowly hard before pressing the end into the tip of the object. As it slides in, you snort and your ears twitch with surprise. The inside of it feels good. Really good. It\'s ribbed, and textured, and when you slide your sensitive, thick cockmeat in and out it feels fucking amazing.</p>You lean over it, resting your muscular chest atop the cushioned part, before thrusting in deeper. You whinny, overcome with pleasure, and you start to thrust faster. You pull your cock out, over a foot of it, then thrust in again, feeling the wonderful tightness and texture rubbing over you, before doing it again and again. Something inside squeezes and bounces off your medial ring, and a spongy wall at the end squishes against your flat cockhead. You sweat and pant, utterly addicted to this pleasure. Your brain feels foggy and slow, as fucking the phantom mare becomes all you can think about. You drool a little, and grunt and snort, losing yourself completely in the feeling.</p>Finally, you feel pleasure building up all through your body. Your skin is hot and tingly, and your balls feel ready to explode. You thrust in once more, and neigh with all your might as you unload what feels like gallons of cum. It rushes through your long cock and erupts into the depths of the phantom mare, filling up its reservoirs. As your jizz flows out of you, you feel like your brain is emptying out too. Your thoughts get slower and dumber, and you snort and rut like a beast, as you slowly pull free of the toy and stumble away.",
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "turner_piss",
                 "title": "Turner's Piss",
                 "subtitle": "Turner is relieving himself and you can't stop thinking about it.",

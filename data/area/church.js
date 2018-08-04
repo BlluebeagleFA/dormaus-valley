@@ -4,7 +4,40 @@ var area = {
         "header": "Temple of the First Dragon",
         "subheader": 'The church is quiet today. Rows of pews face towards an altar, behind which, a serene statue of a goddess looks with benevolence upon the congregation. The coloured glass in the windows causes the light here to shine ethereally.',
         "events": [
-        	{
+            {
+                "id": "priestquest1",
+                "title": "A Job Offer",
+                "subtitle": 'Bonacieux is lighting the candles when he notices you. He stops, and turns to you. "Ah, just the adventurer I was looking for. I have heard that you are becoming quite the accomplished digger. That is exactly what I need right now", he says.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "priest_quest",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "digger",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "priesticong",
+                "results": {
+                    "grizzsex": {
+                        "text": "You tell the wolf that you are interested in what he has to say. He leads you outside, and points across the river, to the crumbling castle in the distance. \"There is trouble brewing, more than I can handle by myself. Are you aware of the catacombs beneath this village? They connect to the ruins of the castle, and recently I have discovered signs that suggest an accursed one is down there, growing stronger. If I am correct, and this is not dealt with, it could threaten the entire town. I warn you, the catacombs are likely to be the most dangerous place you have ever explored. There is a strong risk of death in this mission, and I cannot guarantee your safety\", he says.</p>The old wolf\'s face is surprisingly serious, with none of the vaguely-amused naughtiness you normally associate with him. You tell him you might be interested, but that you\'ll need more information. He nods, and takes you back into the church. You follow him into a room in the back, where he unrolls a large package of black felt, to reveal a small arsenal of weapons. Crossbows, gleaming silver knives, ropes and tackle, and small crystal phials that glow faintly. \"I am taking this very seriously. I have dealt with accursed before, and they are unpredictable and deadly. I will bring supplies, but I would advise you to fetch your own, along with any weapons you can muster. First, we will descend into the catacombs using an entrance in one of the crypts. From there, we must navigate the ancient passageways, and try to track the accursed. Once we identify it, we put it down. If you are willing, then meet me in the graveyard. I cannot promise you a reward that makes up for the danger involved, but I will reimburse you as best I am able\", he says.</p>He gives you a satchel of coins, and instructs you to use this to supplement your supplies. He then begins polishing a long saber, and you leave him to his preparations.</p>This mission sounds extremely serious. You suspect that it will require all of your abilities and a great deal of preparation if you wish to be successful.",
+                        "outcomes": [
+                            {
+                                "parameter": "priest_quest",
+                                "quantity": 1,
+                                "change": "set"
+                            },{
+                                "parameter": "muscat_1",
+                                "quantity": 100,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "church_random",
                 "title": "Wait in the Pews",
                 "subtitle": "It's very quiet in here. Seems like a good place to relax and contemplate.",

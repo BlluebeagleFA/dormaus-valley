@@ -47,5 +47,11 @@ DV.Data.areas = {
 	"lionquest_westwood": "./data/area/lionquest_westwood.js",
 	"lionquest_acecock": "./data/area/lionquest_acecock.js",
 	"lionquest_aceboot": "./data/area/lionquest_aceboot.js",
-	"belly": "./data/area/belly.js" //OTHER
+	"under_graveyard": "./data/area/under_graveyard.js", //BONACIEUX QUEST
+	"catacombs": "./data/area/catacombs.js",
+	"above_abyss": "./data/area/above_abyss.js",
+	"abyss": "./data/area/abyss.js",
+	"belly": "./data/area/belly.js", //OTHER
+	"makarna_training": "./data/area/makarna_training.js",
+    "patrons": "./data/area/patrons.js"
 }
