@@ -305,15 +305,17 @@ function main(err,session) {
         return result;
     };
     
-    var spells = ["fox", "rabbit", "vore"];
+    var spells = ["fox", "rabbit", "vore", "sparkle"];
     var spellRequirements = {
         fox: 1,
         rabbit: 1,
+        sparkle: 1,
         vore: 2,
         heat: 3
     };
     var spellCasts = {
         fox: '{caster} casts fox on {target}. Their skin prickles as they develop soft, fluffy orange fur. The fur becomes light and peachy on their neck and chest, and dark at their hands and feet. Their head stretches forward into a pointed muzzle, while their ears grow pointed and fluffy. A long, bushy tail sprouts from their rear, swaying in the air as they become a fluffy fox.',
+        sparkle: '{caster} waves their hands, and a glittering wave of sparkling lights appear. They gather up into a ball, and bounce between their hands and over {target}\'s head for a moment before disappearing.',
         rabbit: '{caster} casts rabbit on {target}. Their skin prickles as they develop soft, silky white fur. It spreads down their body, and when it hits their legs, they thicken with muscle, then their feet grow long and thin. They start to shrink, and their head develops a small rounded muzzle, while their ears grow enormously long, stretching above their head and twitching in the air. A soft, white cottontail sprouts from their rear, bobbing in the air as they become a cuddly rabbit!',
         vore: '{caster} casts the vore spell, and their body glows with power. They open their mouth revealing large fanged teeth dripping with drool. Their face contorts into a snarling, predatory grimace and their belly growls loudly. With beastlike rage, they grab {target} and grip them firmly in their hands. Opening their jaw wide, they start to shove {target} into their mouth. They drool and snarl as the victim wriggles and struggles in their grip. Their tongue licks over the victim as you they to swallow, dragging the prey into their throat. Their neck bulges with the victim\'s desperate form, and with another swallow the bulge slides down into their belly. They lick their lips, patting the big round bulge in their stomach.',
         heat: '3'
@@ -895,6 +897,10 @@ function main(err,session) {
             
             if (outcome.clearTemp) {
                 temporary_parameters.remove(outcome.clearTemp);
+            }
+            
+            if (outcome.temporary_param) {
+                temporary_parameters.push(outcome.temporary_param);
             }
             
             var donator = false;
@@ -1515,7 +1521,7 @@ function main(err,session) {
                 return;
             }
             area = area_data;
-            var areaEvents = global_area.events.concat(area.events);
+            var areaEvents = area.events.concat(global_area.events);
             var freedomAvailable = false;
             for (var i = 0; i < area.events.length; i++) {
                 var outcomesForEvent = Object.keys(area.events[i].results);
@@ -1547,6 +1553,7 @@ function main(err,session) {
                 );
             }
             $("#box1").append('</div>');
+            var invalidEvents = [];
             for (var i = 0; i < areaEvents.length; i++) {
                 var event = areaEvents[i];
                 if (isEventValid(event)) {
@@ -1577,7 +1584,32 @@ function main(err,session) {
                             '</div>';
                         $("#box1").append(newHtml);
                     }
+                } else if (!event.global){
+                    invalidEvents.push(event);
                 }
+            }
+            for (var i = 0; i < invalidEvents.length; i++) {
+                var event = invalidEvents[i];
+                var requirements = "Requires: ";
+                for (var j = 0; j < event.requirements.length; j++) {
+                    if (j != 0) {
+                        requirements += ", "
+                    }
+                    var param = DV.Data.item_data[event.requirements[j].parameter];
+                    requirements += param.title;
+                }
+                    newHtml = '<div class = "event locked">' +
+                            '<div class="eventbox">' +
+                                '<div class="eventdetails">' +
+                                    '<p class="eventtitle">' + event.title + ' [Locked]</p>' +
+                                    '<div class="eventconfirm"><div class="eventconfirmtext">' +
+                                        '<p>' + requirements + '</p></div>';
+                    newHtml += 
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+                    $("#box1").append(newHtml);
             }
         });
     };

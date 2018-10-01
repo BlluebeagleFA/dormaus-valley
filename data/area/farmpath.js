@@ -102,6 +102,10 @@ var area = {
                                 "parameter": "stallion",
                                 "quantity": 1,
                                 "change": "add"
+                            },{
+                                "parameter": "gender",
+                                "quantity": 1,
+                                "change": "set"
                             }
                         ]
                     },

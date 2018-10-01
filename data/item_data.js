@@ -79,7 +79,7 @@ DV.Data.item_data = {
     },
     jack_friend: {
         type: "attribute",
-        icon: "jackicon_g",
+        icon: "jackicong",
         title: "Jack [Friend]",
         description: ["You have befriended a crude, smelly jerk of a raccoon."]
     },
@@ -136,7 +136,13 @@ DV.Data.item_data = {
             "You are a wooly sheep with thick curly fur and cloven hooves", //33
             "You are a slinky thin pine marten with a long fuzzy tail", //34
             "You are a scrawny rat with a long pink tail", //35
-            "You are a mighty orc, a green-skinned warrior with huge tusks." //36
+            "You are a mighty orc, a green-skinned warrior with huge tusks.", //36
+            "You are a short and fuzzy flying squirrel.", //37
+            "You are a donkey, with long ears and cute, scruffy fur.", //38
+            "You are a horse-satyr, with your lower body transformed into the two legs of an anthro horse.", //39
+            "You are a strange purple rabbit made of flickering light, with a crystal replacing your crotch.", //40
+            "You are a monstrous red-furred hellhound.", //41
+            "You are a smelly and brutish gnoll." //42
             ]
     },
     gender: {
@@ -217,6 +223,12 @@ DV.Data.item_data = {
         title: "Magician",
         description: ["You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username)",
             "You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username), Vore (/vore username)"]
+    },
+    sparkle: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Sparkle",
+        description: ["You have learned the spell Sparkle. It is almost completely useless, but you can use it on someone in chat by typing /sparkle username"]
     },
     time: {
         type: "attribute",

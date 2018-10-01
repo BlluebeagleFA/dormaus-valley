@@ -50,6 +50,32 @@ var area = {
                     }
                 }
             },{
+                "id": "horsatyr_tf",
+                "title": "Help Out in the Stables",
+                "subtitle": 'Turner could always use some assistance with the horses, of numerous varieties.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 39,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You look around the farm for Turner, and soon find the tall horse mucking out the stables with a long pitchfork. He wipes the sweat from his forehead and leans on the handle of his tool as you approach. \"Heya friend! How can I do ya for?\", he asks.</p>You ask him whether you could help him out in the stables, and he practically drags you inside. \"Fer sure! Can never get enough help with these fellas!\", he says cheerfully.</p>He shows you around inside the stables to begin with. The floor is packed dirt, strewn with hay, and the walls and ceilings are wooden planks with tall, dusty rafters. In the many stalls of the stable are a variety of equines. There are a few scruffy, long-eared donkeys, several enormous muscular stallions, and even a few seemingly normal anthro horses.</p>You stop in front of one such horse, curious about what he's doing. He's a tall grey percheron with soft pale spots all down his flank. He's completely naked, and seems totally relaxed in his stall, chewing on some hay. You try asking him why he's here, and he just stares at you, then gives Turner a meaningful look. Turner chuckles. \"Ah, some folks want the simple life, yknow? This here fella sold himself to us an' he doesn't wanna talk or think or make decisions, just wants to be like a workin' horse. I can almost see the appeal, m'self. His name's Pech now\", he explains.</p>After that, Turner shows you what he needs you to do. Muck out the stables with the pitchfork, replace the hay with fresh stuff, sweep the floors and brush down the horses. It's the last part you look forward to most, and you find yourself imagining stroking your brush down the firm, warm hides of the many horses in the stables as you do the other, more tedious work. You find yourself sweating quite a lot as you work, and since your clothes are also getting quite dirty, you decide to pull your shirt off and continue without it. Your legs ache and feel warm as you continue to heave all the dirty hay away and brush down the stables, and soon your feet are aching and sore, feeling almost like they're swollen. You remove your shoes, and flex your toes. They feel stiff and firm, but now that you're barefoot you are already feeling better. You carry on working, your feet starting to make cute clopping sounds as you work, but you are too distracted by your upcoming final task to notice that.</p>You take the horse brush from its hook on the wall, and open up the door to Pech's stall. He gives you a blank look, and snorts from his large nostrils. You remember to treat him just like a normal horse, and first gently rub his nose to let him smell you before you stroke his sides and ease your brush against his fur. His tail flicks and sways as you begin to stroke the brush firmly down his broad, muscular sides. He seems incredibly relaxed, and it starts to rub off on you too. As he mindlessly stares into the distance and enjoys the brushing, your own thoughts start to slow and feel calm and mellow. Your stiff, firm feet harden more, and stretch out. They push into the ground as they form into powerful hooves. You find yourself admiring the large horse, and daydreaming about sharing his simple, obedient life. You look down at his massive hooves, his thick and powerful legs, and his huge, soft black sheath, hanging like a sleeve atop a pair of huge, musky balls. You inhale his scent, and lean in closer to him. You barely notice as he gently takes the brush from you, and starts to stroke it down your sides. The firm bristles sliding down your legs, making them muscular and firm. Causing you to grow soft horsehair, just like his. He brushes it over your rear, making it plump and grow, and you snort as you feel your own horsehair tail start to grow from your behind, flicking and twitching like his.</p>Just as he raises the brush to spread the changes further, you are suddenly interrupted. Turner stomps into the stable, pulls open the stall, and grabs the brush. \"Pech! Ah told ya a dozen times! You can't be turnin' folks into horses without askin'!\", he yells. Pech snorts and flicks his tail sullenly.</p>Turner takes you by the arm and drags you out of the stables. You struggle a little, your gait feeling odd as you walk on your strong hooves and muscular horse legs, but with your upper torso the same as it was before. \"Ah apologise fer him. He can be a handful. You do look cute as a horse satyr though, friend!\", Turner says cheerfully. You nod, still dazed and confused, as Turner hands you your pay for the day and sets you loose.",
+                        "descriptionchange": "This adventurer appears to be half horse. Their lower body is the muscular, firm body of an anthro horse, with a spotted grey hide and large, strong hooves.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 39,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "become_pig",
                 "title": "Work in the Pigpen",
                 "subtitle": 'You hear a dull, repetitive noise coming from behind Turner\'s ramshackle barn. You walk around the building to see Turner, his shirt off to reveal his muscular horse body, using a shovel to muck out an old pen. He sees you approaching and give you a wave. "Pa says ah haf ta\' get this pen back into usable order," the huge horse says, pulling at the strap of his overalls. He steps out and points back into the pen. "Why don\' you see if ya think it\'s worth living in?" Do you want to help him out? [Guest event from GrayVanillaWafers]',
@@ -312,7 +338,7 @@ var area = {
                     }
                 }
             },{
-                "id": "phantommare",
+                "id": "phantommare_null",
                 "title": "Make Horse Milk",
                 "subtitle": 'Turner\'s farm has a breeding tool for "milking" male stallions for ingredients to make the popular horse milk drink.',
                 "type": "random",
@@ -324,6 +350,35 @@ var area = {
                     },{
                         "parameter": "intelligence",
                         "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "grizzsex": {
+                        "text": "Since you are currently a horse, you are curious to try some of the experiences that natural horses have. One of those, you have learned, is taking a ride on the \"phantom mare\". You find it in a back room of Turner\'s barn, and at first you are not particularly impressed.</p>The object is a sort of large upholstered bench, standing on four spreadeagled metal legs. In one end is a very large entrance, looking a little bit like a fleshlight, but big enough to handle even the enormous rods of horny stallions. You get close and sniff it, noticing the very obvious smell of many sweaty horny horses that have used this thing before you. You drop your pants, and stroke your thick, long horse cock for a while, getting it slowly hard before pressing the end into the tip of the object. As it slides in, you snort and your ears twitch with surprise. The inside of it feels good. Really good. It\'s ribbed, and textured, and when you slide your sensitive, thick cockmeat in and out it feels fucking amazing.</p>You lean over it, resting your muscular chest atop the cushioned part, before thrusting in deeper. You whinny, overcome with pleasure, and you start to thrust faster. You pull your cock out, over a foot of it, then thrust in again, feeling the wonderful tightness and texture rubbing over you, before doing it again and again. Something inside squeezes and bounces off your medial ring, and a spongy wall at the end squishes against your flat cockhead. You sweat and pant, utterly addicted to this pleasure. Your brain feels foggy and slow, as fucking the phantom mare becomes all you can think about. You drool a little, and grunt and snort, losing yourself completely in the feeling.</p>Finally, you feel pleasure building up all through your body. Your skin is hot and tingly, and your balls feel ready to explode. You thrust in once more, and neigh with all your might as you unload what feels like gallons of cum. It rushes through your long cock and erupts into the depths of the phantom mare, filling up its reservoirs. As your jizz flows out of you, you feel like your brain is emptying out too. Your thoughts get slower and dumber, and you snort and rut like a beast, as you slowly pull free of the toy and stumble away.",
+                        "outcomes": [
+                            {
+                                "parameter": "intelligence",
+                                "quantity": 3,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "phantommare",
+                "title": "Make Horse Milk",
+                "subtitle": 'Turner\'s farm has a breeding tool for "milking" male stallions for ingredients to make the popular horse milk drink.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "intelligence",
+                        "value": 1,
                         "comparison": "greater" //default greater
                     }
                 ],

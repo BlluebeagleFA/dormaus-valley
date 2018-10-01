@@ -65,6 +65,10 @@ var area = {
                                 "parameter": "species",
                                 "quantity": 33,
                                 "change": "set"
+                            },{
+                                "parameter": "dominance",
+                                "quantity": 1,
+                                "change": "add"
                             }
                         ]
                     }

@@ -142,6 +142,35 @@ var area = {
                     }
                 }
             },{
+                "id": "learn_sparkle",
+                "title": "Ask Lin to teach you a spell",
+                "subtitle": 'She teaches things, right? Perhaps she knows some magic.',
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "magicuser",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "sparkle",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "The question mark on Lin's hat wobbles as you ask her about magic, and she claps her hands together with delight. \"Of course I can teach you something, hun!\" she says cheerfully. \"As a matter of fact, I used to teach this one to everyone back in the old days, but it fell out of favour a little\", she continues.</p>Lin motions for you to copy her, and places her hands forward, palms up. She then waves one hand over the other, and makes a motion like she is tying a rope and pulling it taut. Finally, she spreads out her arms like a magician saying \"ta-da!\". You dutifully memorise the motions. \"Ok, now focus your attention on your hands, and do it again, but faster\", she explains. It takes you a few attempts, but on your fourth try, you feel the magic working. Energy collects in your hands, builds up, and finally as you spread your arms, your fingers spray glittering, sparkling lights into the air. They glint for just a moment before disappearing. Lin bounces up and down and claps. \"Very well done! You're a natural!\", she exclaims.",
+                        "outcomes": [
+                            {
+                                "parameter": "sparkle",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "reduce_pain",
                 "title": "Ask Lin to Help With Pain",
                 "subtitle": 'Lin is happy to help new adventurers with their problems.',

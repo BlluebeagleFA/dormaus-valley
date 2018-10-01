@@ -6,7 +6,7 @@ var area = {
         "events": [
             {
                 "id": "become_pumpkin",
-                "title": "Walk amonst the pumpkins",
+                "title": "Walk amongst the pumpkins",
                 "subtitle": 'This seems more dangerous than it looks. You might end up trapped.',
                 "type": "random",
                 "requirements": [

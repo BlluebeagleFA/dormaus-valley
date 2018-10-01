@@ -32,6 +32,33 @@ var area = {
                     }
                 }
             },{
+                "id": "windy_west",
+                "title": "Travel to the Western Woods",
+                "subtitle": "The woods are dense and dark to the west, and they go all the way up the mountainside",
+                "type": "statcheck", //or random
+                "stat": "might",
+                "difficulty": 20,
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You walk into the woods, the light around you fading as you get deeper.",
+                        "area": "eastwoods_entrance",
+                        "outcomes": []
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": 'You walk into the woods, the light around you fading as you get deeper. You are nicked and cut by branches and brambles as you travel.',
+                        "area": "eastwoods_entrance",
+                        "outcomes": [{
+                            "parameter": "pain",
+                            "quantity": 1,
+                            "max": 1,
+                            "change": "add"
+                        }]
+                    }
+                }
+            },{
                 "id": "windy_south",
                 "title": "Travel further South",
                 "subtitle": "The coast is gleaming on the horizon.",

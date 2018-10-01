@@ -787,6 +787,10 @@ div.theft {
 	font-weight: bold;
 }
 
+.locked .eventtitle {
+	margin-bottom: 0px;
+}
+
 .okbuttonbox {
 	display: flex;
 	margin-left: 10px;

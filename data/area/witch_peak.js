@@ -49,6 +49,10 @@ var area = {
                                 "parameter": "goblins",
                                 "quantity": 1,
                                 "change": "add"
+                            },{
+                                "parameter": "dominance",
+                                "quantity": 1,
+                                "change": "add"
                             }
                         ]
                     }

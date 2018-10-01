@@ -271,11 +271,13 @@ $(document).ready(function() {
 			icon: icon,
 			topics: topics
 		}
-		$("#resultnpc").val(JSON.stringify(result));
+		$("#resultnpc").val(JSON.stringify({
+		    desc: description
+		}));
 	});
 
 	function adjustText(text) {
-		return text.replace(/(?:\r\n|\r|\n)/g,"</p>").replace(/'/g, "\\'")
+		return text.replace(/(?:\r\n|\r|\n)/g,"</p>")
 	}
 
 	$("#randombutton").on("click", function() {

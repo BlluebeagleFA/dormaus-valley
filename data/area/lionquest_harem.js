@@ -80,6 +80,36 @@ var area = {
                     }
                 }
             },{
+                "id": "losecocktoleonar",
+                "title": 'Surrender Your Dick to Leonar',
+                "subtitle": 'You know that your king prefers female genitals. He has graciously allowed you to serve him while still being entirely male, but you want only to be what he desires.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "time",
+                        "value": 2,
+                        "comparison": "less" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": "You think carefully on your decision while you wait in the harem. Your love and obsession over your powerful, handsome master may be entirely artificial, but it certainly feels real. You have seen how much he loves it when he fills the pussies of the lionesses, and how his manly feline face twists into a snarl of dominance and pleasure. You want that too - you want to be able to carry his cubs and feel his manly cock inside you.</p>When the guards next come to take you up for your master's pleasure, you steel yourself and feel more and more excited at what you're going to say. Your cock is rock hard, and leaking pre, but you stubbornly refuse to touch yourself. Finally, the doors open, and you look upon the naked, muscular form of your king, lying on his bed with his huge hard cock standing firm. Today you are fortunate enough to be permitted to service his cock yourself.</p>You climb onto the bed as you normally would, and obediently begin to touch your master's cock. It throbs in your grip, and you squeeze it gently, stroking your hand up and down the long shaft. As you feel his length stiffen and twitch in your grip, you look up at your beloved king with your cheeks blushing and hot. \"Master, please take my cock. I want to have a pussy that you can fill and use!\", you beg him. He chuckles, and reaches down to stroke your short, soft mane. \"Very well, my loyal little lion slave. Merely focus all your attention on my cock, for it is the only one that matters to you now\", he commands.</p>You immediately obey. You close your eyes and start to kiss your king's shaft, nuzzling your muzzle along his girthy cock and licking your long tongue all around it. You worship and stroke it, touching every inch, serving it like it is all that matters in the world. Your own cock feels harder than ever, yet somehow you can feel it starting to dwindle. You open your mouth and slide Leonar's dick inside your muzzle, feeling it rub over your tongue and plunge down your throat, and all the while your balls tighten and shrink, and your shaft loses inch after inch. Your master presses your head down firmly, forcing you to press your nose into his pubes and feel his cock oozing and filling your throat. Your own cock desperately craves touch, but you refuse to acknowledge it. </p>Your king seems pleased, and he pulls your head off his cock, and then drags you up on top of him. His muscular arms wrap around your chest, stroking down your lithe, slender body. You look down and see your cock, now barely a few inches long, oozing a huge amount of pre. Your king's muzzle is by the side of your face, and you can feel his hot breath upon you, making you shiver. \"Now, my lioness, prove your words. Surrender your manhood to me, without a single touch. Cum away your cock from merely thinking of the joy of my shaft inside you\", he whispers. You focus your mind on the thought of your perfect, glorious master. His enormous cock, which you can feel pressing into your back. His muscular, powerful body. The thought of him filling you, mounting you, breeding you. Your cock oozes and gushes with more pre, and finally you gasp and whimper, as it twitches and cums, spraying you down with hot white jizz. Load after load spurts from you, and your manhood dwindles with every drop, first becoming a small nub, and then finally receding into you, leaving behind a wet, dripping, warm new pussy.</p>Leonar grips you firmly by the shoulder, and rolls you over, forcing his huge body atop you. He looks down on you with a huge, feral grin, his chest panting. \"A lion, yet with feminine parts. To think I had not considered such a treat!\", he growls. </p>His cock oozes pre over your chest as he lowers it down to your new parts. You whimper and clutch the sheets of the bed as he plunges himself into you, his thick shaft stretching your virgin pussy and sliding deep inside you. It fills you, both literally and with a figurative pleasure, warmth and sensation you have never experienced before. You can feel every inch of him against your inner walls, your body serving him in a new, wonderful way. He thrusts, and pounds, and fucks you hard, slamming his dick into you over and over and making your pleasure grow more and more, building to an incredible, strange yet wonderful new climax.</p>Finally, your beloved master unloads, growling and snarling as heat rushes up out of his cock and fills you deep inside. You can feel his seed squirting up inside you, and your whole body trembles and aches, suddenly rushing with heat and pleasure and sensation. You moan and gasp like a bitch in heat, overcome with this new orgasm.</p>That was your first experience with your new pussy, but you have many, many more that night. When you finally return to the harem, you are exhaused and covered in cum, and you know your master will love to use you much more often.",
+                        "descriptionchange": "This adventurer is a slender male lion, with a short and soft mane, but instead of a cock, he has female genitals that faintly smell of powerful lioness pheromones.",
+                        "outcomes": [
+                            {
+                                "parameter": "gender",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "whispers",
                 "title": 'Whispers in the Night',
                 "subtitle": 'You awaken one night to the sound of hushed voices',

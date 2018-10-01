@@ -222,6 +222,27 @@ var area = {
                     }
                 }
             },{
+                "id": "cat_vore",
+                "title": "A Mouse in the Mayor's Office?",
+                "subtitle": "As you scurry into his office, Mayor Maine’s eyes bolt up from the papers on his desk and the gargantuan cat fixes his gaze on you. His toes flex in anticipation as he eagerly rubs his paws on the carpet. It’s been some time since a mouse so eagerly entered his lair. [From Cedo]",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "vorefetish",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": 'Well, hello adventurer," he booms. "Why don’t you come closer?" </p></p>You know you should run straight back out the door, but you freeze in place as you look up into the Mayor’s glowing eyes. Your heart races as your little feet drag you forward until the great cat is towering over you with a vicious grin.</p></p>"Such a good, obedient mouse," Mayor Maine says as he lifts his foot over you. "You know you belong beneath my lovely paws." He knocks you onto your back against the carpet, engulfing your body in his massive fluffy foot as he pins your little head between his toes. The cat lets out a sigh of pleasure as he presses his foot down and rubs his toes over your face. He releases his enchanting hold on you, letting you hopelessly squirm and wriggle against him.</p></p>Mayor Maine slides his foot down to pin your little chest beneath his big toe. You watch in horror as his claw slides out until the sharp point is pressed against your little pink nose. Above you, the cat has pulled out his cock and begun stroking it while he toys with you. He opens his shirt and rubs the colossal round belly looming over you and licks his chops as he says, "So many visitors are eager to worship my paws, but that seems a waste of such a delicious little morsel."</p></p>He grasps you in his toes and lowers himself to the ground to lie on his back, lifting his foot up to drop you in the center of his belly. You start to run, racing across the soft fur that covers the cat’s gut, but he easily bats you back to the center over and over again as you attempt to escape. Mayor Maine laughs and strokes his furry cock, playing with you like that until you’re slowly limping across his vast expanse like the defeated prey you are. </p></p>With one last burst of determination after being knocked down again, you try to rise and escape when the world beneath you shakes. Mayor Maine’s belly rumbles hungrily and he scoops you up in his hand and dangles you over his glistening sharp teeth as he says, "I could play with a lovely little toy like you forever, but you know what they say…" Mayor Maine grins. "You can’t have your mouse and eat it too."</p></p>The cat drops you into his gaping mouth and slams his jaw shut behind you. You squirm against his massive coarse tongue, darting around his mouth and trying to escape, but your scurrying just makes Mayor Maine moan in pleasure and makes his cock harder. Salivating, the cat drenches you in his saliva, tossing you about with his nimble tongue.</p></p>A ray of light shines in when Mayor Maine parts his teeth and lets out a deafening moan. You have one chance and you take it, but just as you slip out the cat squeezes his teeth against your soft stomach to grab you. You’re trapped, a wet mouse hanging from his mouth helplessly as his massive eyes stare past his nose at you. He licks your little toes and watches you squirm against his powerful jaws until his cock is nearly ready to burst.</p></p>Mayor Maine throws back his head as he opens his jaws wide, sending you tumbling to the back of his mouth where, with a gulp, his powerful muscles grasp your feet and drag you down his throat. The feeling of your wriggling little body working its way down to his stomach pushes him over the edge. He pumps thick ropes of cum all over his belly and then lies there, rubbing it contentedly until he drifts off for a little cat nap.',
+                        "area": "belly",
+                        "outcomes": [
+                        ]
+                    }
+                }
+            },{
                 "id": "mayor_random",
                 "title": "Sit in the Waiting Room",
                 "subtitle": "There are always several other people waiting to see the mayor. Some of them seem to have been waiting forever.",

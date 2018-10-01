@@ -10,6 +10,7 @@ DV.Data.areas = {
 	"shop_rooms": "./data/area/shop_rooms.js",
 	"fountain": "./data/area/fountain.js",
 	"marketplace": "./data/area/marketplace.js",
+	"costume_store": "./data/area/costume_store.js",
 	"mayors": "./data/area/mayors.js",
 	"hotel": "./data/area/hotel.js",
 	"hotel_rooms": "./data/area/hotel_rooms.js",
@@ -21,6 +22,8 @@ DV.Data.areas = {
 	"backstreets": "./data/area/backstreets.js",
 	"art_store": "./data/area/art_store.js",
 	"contributor_1": "./data/area/contributor_1.js",
+	"contributor_1_1": "./data/area/contributor_1_1.js",
+	"contributor_1_2": "./data/area/contributor_1_2.js",
 	"farmpath": "./data/area/farmpath.js", //FARM STARTS HERE
 	"farmhouse": "./data/area/farmhouse.js",
 	"farmfield": "./data/area/farmfield.js",
@@ -33,6 +36,9 @@ DV.Data.areas = {
 	"top_valley": "./data/area/top_valley.js", //OTTERTON
 	"down_valley": "./data/area/down_valley.js",
 	"beside_river": "./data/area/beside_river.js",
+	"eastwoods_entrance": "./data/area/eastwoods_entrance.js",
+	"grease_lot": "./data/area/grease_lot.js",
+	"greasepit": "./data/area/greasepit.js",
 	"dragon_vore": "./data/area/dragon_vore.js",
 	"windy_path": "./data/area/windy_path.js",
 	"jacks_hideout": "./data/area/jacks_hideout.js",

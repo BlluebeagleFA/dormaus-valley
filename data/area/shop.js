@@ -200,6 +200,16 @@ var area = {
                                 "change": "add"
                             }
                         ]
+                    },
+                    "stache": {
+                        "text": "Mikhail is discussing something with one of his customers, and you listen in curiously. The short rabbit he's talking to seems very excitable, and is bouncing and hopping from paw to paw. \"So, yeah, that's why I just, why I just think you're the hottest dad in town, sir\", he says with a nervous grin.</p>Mikhail chuckles and leans back in his chair, before stroking his beard and gently brushing his claws through his thick, soft moustache. \"You know what the trick to being a handsome dad is, kid? The moustache\", he says. The rabbit nods, utterly entranced. \"It has to be thick, and well-groomed, and ideally just a little bit ticklish, as it brushes over the body of an obedient and horny friend\", he says. His moustache twitches as he grins, and the rabbit moves forward, inching closer and closer to him. He places his hands on the bunny, and lifts him up, before nuzzling and stroking his muzzle across the short rabbit's body. The rabbit's paws kick and flail, and he whines and whimpers as Mikhail's moustache brushes up against his sensitive inner thigh, along his bare panting belly, and over his neck and cheeks. \"I...I want to be your moustache, daddy!\", he yelps. Mikhail smiles, and starts to press the rabbit into his muzzle, his hands pushing down on his back. The rabbit's soft, fluffy white fur starts to turn brown, and thick, and bristly. His limbs soften, losing definition as they become brushy tufts of fur. Mikhail starts to stroke his claws through the rabbit's thick furry body, as he clings desperately to the dog's face, his entire body fusing with the end of Mikhail's muzzle.</p>As he is entirely overcome with the fuzzy fur he is becoming, the rabbit humps and thrusts, trying desperately to cum, but soon his motions slow and stop. His face and head become just more fur and bristly fuzz, as Mikhail's fingers smooth and groom and adjust him, combing him into his moustache until there is no sign he was ever there, except that his facial fuzz is now thicker and bushier than ever.",
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
                     }
                 }
             }

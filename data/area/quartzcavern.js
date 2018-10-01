@@ -184,6 +184,32 @@ var area = {
                     }
                 }
             },{
+                "id": "hologram_tf",
+                "title": "An Unusual Crystal",
+                "subtitle": 'You decide on a whim to check deeper in the cave, where the crystals are clustered most densely. At the furthest end of the cavern is one quartz crystal that is smooth and lacks the jagged, broken edges of the others.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 40,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You approach the large crystal, noticing that the gleaming reflection from it seems to be more visible than it should, considering the gloom and low light at this end of the cave. Almost as if the flat, smooth surface is glowing faintly from within. You place your hands against it, feeling the large flat panel, and a strange sound echoes in your head. It is like a voice, devoid of ordinary tone or inflection. \"The application has encountered a critical error. Attempt to recover data?\", the voice says.</p>You look around curiously, wondering who could be speaking. There is a silent, long pause, before it speaks again. \"Recovery in progress\", it says. The surface of the crystal glows brightly with pulsing purple light, which crackles across it in blinding flashes. Then the light bursts free, and crashes into you with an explosion of burning, aching sensation.</p>Your limbs start to ache, as you find your joints pulling together like they are on puppet strings. You clutch your stomach, feeling bizarre sensations roiling around inside you. Your mind is being assaulted with visions, a mix of images and sounds that you cannot comprehend. They wash over you and seem to flow down your body, making you squeeze and curl up tighter and tighter. Your skin glistens and shines as it begins to harden. You fall to the floor, curling up into a ball while your insides ache, toughen, and start to change. Bones and flesh becoming hard, powerful crystal. Your limbs smoothing over, your features merging down into your solid, gleaming purple crystal core. There is a faint ringing noise as your spherical, smooth round body falls to the floor and echoes against the stone. The last of your distinguishing features melt away into the unblemished crystal, and you are trapped with just your confused, scrambled thoughts.</p>You lay on the cold stone, struggling to move or do anything for what seems like hours. Then, the meaningless information rattling around inside you starts to make a little more sense. You focus on your limbs, picturing them as best you can. It takes a great deal of effort, and more attention on a three-dimensional representation of your own body than you ever thought you would have to have, but eventually you start to feel something, like phantom limbs surrounding your sphere. You flex them, and there is a crackle and a shimmer in the air, like a mirage. Gradually, a purple light starts to glow from your core, becoming more defined and fixed as you focus harder. It takes on the rough shape of a body, but your limbs are different. Your feet appear from the light as long, soft purple paws. Your core rises up from the ground somewhere near where your waist should be, and you struggle to balance yourself for a moment. Your face appears as a simple blob at first, then you feel long ears push up from your head, and a short muzzle shape itself from the light.</p>When you lose focus, your body flickers in and out of existence, and your core wobbles on whatever force it keeping it upright. But eventually you manage to stumble to one of the reflective crystals and look inside. You seem to be a rabbit, with unnaturally smooth, purple fur. Where your waist should be, is instead the solid glowing core that you know is currently your actual body. Despite apparently being made of light, you seem able to touch and interact with things, but keeping your body in shape will take some getting used to.",
+                        "descriptionchange": "This adventurer is an odd purple rabbit, with a glowing spherical crystal floating around where their waist should be. They occasionally flicker and shimmer like a reflection in water.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 40,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "crystal_prison",
                 "title": "A Trick of the Light",
                 "subtitle": 'As you walk past one of the larger white crystals in this room, you swear for a moment you saw a weird reflection, like a person. You turn to look behind you, but there is no one there. When you look back into the crystal and squint, you start to make out what looks like a canine warrior, mouthing silently to you as a reflection in the gleaming crystal. Do you want to try to speak with the ghostly image?',
