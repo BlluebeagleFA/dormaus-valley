@@ -99,6 +99,7 @@ function main(err,session) {
     player = session.save;
     
     $("#logout").on("click", function() {
+        DV.Session.sync_session();
         DV.Session.clear_session();
         window.location.replace("./index.html");
     });

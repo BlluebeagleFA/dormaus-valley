@@ -206,7 +206,8 @@ DV.Session = (function(){ // start of module namespace
     return {
         get_session: get_session,
         create_session : create_session,
-        clear_session : clear_session
+        clear_session : clear_session,
+        sync_session : sync_session
     }
 
 })();
