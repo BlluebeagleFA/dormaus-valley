@@ -1,6 +1,33 @@
 var global_area = {
         "events": [
             {
+                "id": "to_jail",
+                "title": "Imprisoned",
+                "global": true,
+                "subtitle": 'Your crimes have caught up to you at last.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 100,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "guilt",
+                "results": {
+                    "success": { 
+                        "text": "You get the feeling that your most recent crime may have been just a step too far. This feeling is generally exacerbated when you feel someone strike you hard from behind, and cold cuffs locked around your wrists as you pass out.</p>You are awakened some time later with a sore head, by a lurching and jolting motion. You blearily look around and see the wooden boards of some kind of wagon. As you sit up, a clanking sound reveals that you are chained to a bench, by a pair of heavy shackles around your hands. You try on a whim to cast magic, but you feel it fizzle out in your fingers, as the metal shackles seem to somehow ground and steal it. There are other prisoners in the wagon, all of them looking downcast and glum. A raccoon, a fox, and a bear. When you try to ask where you're headed, the fox looks up to you with deep, baggy eyes and gives a weak smile. \"We're being sent to Hornloft, unlucky one. We won't be returning alive\", he says.</p>Over the course of several days, you make short conversation with the other prisoners. Hornloft, you discover, is an infamous prison in the northern kingdom of Horn. The gryphons of Horn believe firmly in retribution, and agree to take the criminals of other lands in exchange for payment. The raccoon and bear were caught in the act of burglary, the bear being a lockpick and the raccoon his muscle. The fox is from the wealthy city of Gran Campion, and was imprisoned for being an anti-monarchist, he claims.</p>Once a day the guards open the barred doors of the wagon and give you all bowls of thin, unpleasant gruel. They are a pair of stoic, muscular canines, and any questions are answered with growls or painful jabs from their batons. The air gets colder and colder as the days pass, making you all shiver and feel weak. Finally, on a day where your breath is crystallizing in the air, the wagon comes to a stop. The door is opened, and the guards pull you out, and lead you chained together through a snowy path.</p>You can tell from the cold, and the thin, painful air, that you are high in the mountains. You pass through dark conifers along a stone-paved path higher and higher, until finally you are led beyond the trees and see your destination. At the edge of a mountain, dangling perilously over the edge, is a massive black fortress. It looms like a sullen beast, with the white snow settling atop it like a shroud. As you walk up the mountainside towards it, you peer down over the edge to see a large city below you, with high thick walls and many dark, squat buildings poking out from between snowy streets.</p>You stop at the entrance to the fortress, in front of a massive mechanical drawbridge. Hornloft itself is built on the edge of a precipice, surrounded on all sides by a sheer drop of cold ice. This drawbridge seems to be the only accessway. The canine guards hand your chains over to two pike-bearing gryphons, wearing dour black armor. They lead you within, and you notice as you enter the narrow passages of the black stone building that it is only barely less bitterly cold than the outside.</p>Your belongings are confiscated, and locked away. You notice they say nothing about ever returning it, or about when or if you will be freed. You are given a grey prison uniform, and taken to a cell high in one of the towers. It is barren and cold, with only a wooden bench, toilet, and a tiny barred window looking out into the steely gray skies.",
+                        "area": "hornloft_1",
+                        "outcomes": [
+                            {
+                                "parameter": "guilt",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "contributor",
                 "title": "Thank You",
                 "global": true,

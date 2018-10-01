@@ -57,6 +57,12 @@ DV.Data.areas = {
 	"catacombs": "./data/area/catacombs.js",
 	"above_abyss": "./data/area/above_abyss.js",
 	"abyss": "./data/area/abyss.js",
+	"hornloft_1": "./data/area/hornloft_1.js", //PRISON
+	"hornloft_2": "./data/area/hornloft_2.js",
+	"hornloft_3": "./data/area/hornloft_3.js",
+	"hornloft_4": "./data/area/hornloft_4.js",
+	"hornloft_4_2": "./data/area/hornloft_4_2.js",
+	"hornloft_5": "./data/area/hornloft_5.js",
 	"belly": "./data/area/belly.js", //OTHER
 	"makarna_training": "./data/area/makarna_training.js",
     "patrons": "./data/area/patrons.js"

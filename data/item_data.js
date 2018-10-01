@@ -53,6 +53,18 @@ DV.Data.item_data = {
         title: "Saberhagen [Connection]",
         description: ["Saberhagen has a rapidly-growing crush on you."]
     },
+    gon_connection: {
+        type: "attribute",
+        icon: "gonicong",
+        title: "Gon [Friend]",
+        description: ["Gon is friend!"]
+    },
+    vicious_connection: {
+        type: "attribute",
+        icon: "viciousiconr",
+        title: "Vicious [Connection]",
+        description: ["Vicious is slowly forming a strange, deranged obsession with you."]
+    },
     flute_master: {
         type: "attribute",
         icon: "fluteiconr",
@@ -142,7 +154,10 @@ DV.Data.item_data = {
             "You are a horse-satyr, with your lower body transformed into the two legs of an anthro horse.", //39
             "You are a strange purple rabbit made of flickering light, with a crystal replacing your crotch.", //40
             "You are a monstrous red-furred hellhound.", //41
-            "You are a smelly and brutish gnoll." //42
+            "You are a smelly and brutish gnoll.", //42
+            "You are an elegant arctic fox with beautiful white fur.", //43
+            "You are a twitchy short and thin ermine, with a long white body.", //44
+            "You are a massive, powerful polar bear, with a huge belly.", //45
             ]
     },
     gender: {
@@ -235,6 +250,16 @@ DV.Data.item_data = {
         icon: "time",
         title: "Time",
         description: ["Time is passing..."]
+    },
+    escape_plan: {
+        type: "attribute",
+        icon: "time",
+        title: "Escape Plan",
+        description: ["If you can unlock the unguarded door to the garbage collection point, you can slide down it to freedom without worrying about the anti-life bayonets that would kill a normal person.",
+            "You have gotten your hands on a thick, tough soap bar. It will make a perfect mould for a key...",
+            "You have managed to take a mould pressing of the garbage collection key, in your secret bar of soap.",
+            "You have forged a very brittle and fragile key. It will probably only work once. Now you need to ensure you can survive the harsh weather outside.",
+            "You have a key, and cold protection. It's time to make your escape."]
     },
     contributor: {
         type: "attribute",

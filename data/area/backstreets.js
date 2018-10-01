@@ -41,7 +41,6 @@ var area = {
                         "outcomes": [{
                             "parameter": "guilt",
                             "quantity": 1,
-                            "max": 2,
                             "change": "add"
                         }]
                     }

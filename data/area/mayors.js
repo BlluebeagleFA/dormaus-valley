@@ -272,6 +272,26 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "mayor_punch",
+                "title": "Punch the Mayor",
+                "subtitle": "Unwise. Fail or succeed, either way he'll send you immediately to jail if you do this. There is nothing to be gained from this action.",
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "guilt",
+                "results": {
+                    "mayor_intern": {
+                        "text": "You walk up close to Mayor Maine's desk, and he looks up at you with his smug smile. With all your strength, you lunge forward with your strongest punch.</p>Inches from his face, you find yourself stopped. Something is wrapped around your wrist, and your legs. You look down to see that the mayor's sash has come to life, and is coiled around your arm like a snake. Below you, your feet feel glued to the carpet. Looking down, you see that the carpet itself has risen like a slime, and engulfed your ankles. You are suddenly dragged backwards, as the carpet pulls you down and grips you by the arms and legs.</p>Maine stands from his chair and walks over to you. His huge, soft bare paw presses down on your chest as he looks at you and shakes his head. \"Ah, such terrible impoliteness. I don't blame you, of course, some people simply aren't ready for polite society. Fear not, my friend, for I know a place that will suit you just fine\", he says. He strokes his foot over your face for a moment, before returning to his desk and taking a quill pen out, to write a letter.</p>\"Feel free to proceed out of my office at any time. In a few moments Warden Vicious, a personal acquaintance of mine, will be fully informed of your needs\", he says. The carpet carries you out from his room like a strange slug, and tosses you into the street.",
+                        "outcomes": [
+                            {
+                                "parameter": "guilt",
+                                "quantity": 5,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [
