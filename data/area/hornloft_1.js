@@ -83,6 +83,66 @@ var area = {
                     }
                 }
             },{
+                "id": "gon_ask_hunter",
+                "title": "Ask Gon about becoming his hunting partner",
+                "subtitle": 'You know of two positions in Gon\'s dance. One of the hunting partner, and one of the marriage partner.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gon_connection",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "vicious_connection",
+                        "value": 5,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "gonicon",
+                "results": {
+                    "Brogulls": {
+                        "text": "Gon is very happy to hear you ask about the dances. He hops down from his bed and pulls you over close to him. \"Gon will explain!\", he says. He takes you through the steps, showing you where you would step, how he would move around you, blocking you, pinning you. \"This dance is the hunting dance. Gon shows you where you belong, how you respond to Gon's movements. Gon make you loyal partner, make you respect Gon and obey\", he says. Your skin tingles as he shows you more, and you find yourself panting and snarling slightly. He stops you and pauses, letting the strange feeling fade.</p>\"You gotta want it too for it to work. You become Gon's wolf, Gon's loyal dog and companion. Gon give you new name, give you place to be, and you hunt with Gon and help feed the village. Is good place!\", he says.</p>You nod, and break off the dance, for now. Even that short section affected you heavily, though. You feel dizzy, and drop to your hands and knees, sitting down like a dog. Gon rubs your head, and your tongue lolls out. \"You make good dog! Not yet, though. Only when you want to be with Gon forever!\", he says. You nod, and let out a growly bark of agreement, before nuzzling his furry chest. For the rest of the day you fight the urge to walk on all fours and bark at people, until the effect very slowly fades.",
+                        "area": "hornloft_2",
+                        "outcomes": [
+                            {
+                                "parameter": "gon_connection",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "gon_ask_partner",
+                "title": "Ask Gon about becoming his partner",
+                "subtitle": "You know of two positions in Gon's dance. One of the hunting partner, and one of the marriage partner.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gon_connection",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "vicious_connection",
+                        "value": 5,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "gonicon",
+                "results": {
+                    "Brogulls": {
+                        "text": "Gon's tail wags rapidly when you ask about that part of the dance. He rubs his cheeks bashfully and grins. \"Partner dance VERY special dance!\", he says. He holds your hand gently, and pulls you over next to him. \"In this dance, Gon and partner do exact same moves. Show they work together, think together. Show they are a team, they can face things together as one!\", he says. You follow his moves carefully, memorising them, copying each step and spin.</p>As you do, you feel a little tingly and strange. Your eyes feel fuzzy, and you blink as you look at Gon. You had never really fully appreciated how handsome he is. His thick, scruffy fur just makes him look more carefree and masculine. His big smile, from his shining, positive personality. His warm, strong body, his powerful arms. Gon notices you, and stops the dance. He holds your hand and you blush hotly. \"Ah! Gon not realise you feel dance so strong. Gon want to wait, until you decide you really want to be with Gon forever\", he says. You nod, your face hot all over with a blush. He squeezes your hand gently, and you lean down towards him. He presses his muzzle to your face, and gives you a gentle, slurpy kiss with his big tongue.</p>Magical or not, your infatuation with Gon lasts all day and takes a long time to fade out. You find yourself sniffing his pillow, feeling happy and safe when you smell his scent. You stare at him longingly, and constantly feel an urge to grab him and hug him. You can't help but fantasise about feeling like this all of the time, and becoming his forever.",
+                        "area": "hornloft_2",
+                        "outcomes": [
+                            {
+                                "parameter": "gon_connection",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "pet_monster",
                 "title": "My Pet Monster",
                 "subtitle": 'Vicious is pleased to see you are back where you belong, but you need your true form restored.',
@@ -102,6 +162,7 @@ var area = {
                 "results": {
                     "Brogulls": {
                         "text": "Your cell door opens, and you smell a familiar scent. You look up, and see Vicious, leaning against the side of your door and grinning at you. \"My puppy is looking a little different today. Let's fix that, shall we?\", he says. You growl at him lustfully, and he begins to pull off your clothes. He rips your prison shirt over your head, and pushes down your pants, then shoves you against the wall. You snarl and snap your teeth at him, and he strokes his hand down your chest.</p>You feel him closing something around your neck - a thick, heavy collar. He tugs on it, and leads you out from your cell, naked. As you walk along the cold stone floor behind him, you feel your feet starting to toughen and harden. Your pawpads return, your claws emerge from them and begin clacking on the ground. You feel your tail growing back, and wagging and shaking in the air behind you as you follow your master and lover.</p>As you walk past prisoners, Vicious orders you to attack them. You lunge and snap, retrained back inches from their bare flesh as he tugs on your leash. Watching their fear and smelling their sweat and anxiety fills you with delight. After the third such prisoner, Vicious doesn't retrain you, and you actually manage to close your jaws around the arm of a tall rabbit. You bite hard and drag him around, thrashing him from side to side like a chew toy as your muzzle returns to its long, cruel shape, your ears grow pointed once more, and your fur starts to return to how it should be. \"Heel, boy!\", Vicious commands. You release the bleeding, shaking rabbit, and lunge at Vicious instead, clawing and biting at him in blood-drunk lust. He wrestles you to the ground, smashing your face into the cold floor, and you feel blood leak from your nose as you look up at him.</p>He is grinning with delight. \"Glad to have you back, my beloved monster\", he says. You wag your tail and think about how good his blood tastes.</p>You follow along behind him on all fours after that, feeling like a truly feral beast, a deadly and cruel fighter dog with no conscience or care for others. He leads you into his office, your mind becoming more and more obsessed with violence and blood, and you sniff the air as you walk in.</p>There is an otter on the ground in front of Vicious's desk, covered in bruises and wounds. Vicious strokes his hand along your head, and leans down close to your ear. \"Kill\", he whispers.</p>A few hours later, you return to your cell, your stomach full and your muzzle stained with sticky red gore. You are truly Vicious's hound, in body and soul.",
+                        "descriptionchange": "This adventurer is a terrifying doberman, with thick, strong muscles and a long, snarling muzzle. Their expression is twisted in a snarl of primal bloodlust.",
                         "area": "hornloft_2",
                         "outcomes": [
                             {

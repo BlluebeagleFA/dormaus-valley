@@ -57,6 +57,7 @@ DV.Data.areas = {
 	"catacombs": "./data/area/catacombs.js",
 	"above_abyss": "./data/area/above_abyss.js",
 	"abyss": "./data/area/abyss.js",
+	"wolf_choice": "./data/area/wolf_choice.js",
 	"hornloft_1": "./data/area/hornloft_1.js", //PRISON
 	"hornloft_2": "./data/area/hornloft_2.js",
 	"hornloft_3": "./data/area/hornloft_3.js",

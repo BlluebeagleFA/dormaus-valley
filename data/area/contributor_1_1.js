@@ -61,6 +61,11 @@ var area = {
                 "subtitle": "While trying to squeeze through the crevasse you begin to hear an odd sound emanating behind you. A peculiar sort of chirping with an undertone of a hiss getting louder and closer. Your fight or flight instincts begin to flare up into panic mode. You get the unnerving feeling that no matter what you shouldn't turn around, but do you ignore your instincts and face whatever is behind you?",
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 41,
+                        "comparison": "nequal" //default greater
+                    }
                 ],
                 "icon": "inanimate",
                 "results": {

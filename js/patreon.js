@@ -47,7 +47,8 @@ function main(err,session) {
                 clothes: null,
                 weapon: null,
                 feet: null,
-                ally: null
+                ally: null,
+                memory: null
             },
             stats: {
                 stealth: 1,

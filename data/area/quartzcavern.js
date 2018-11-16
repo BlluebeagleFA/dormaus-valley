@@ -246,7 +246,8 @@ var area = {
                                "weapon":null,
                                "feet":null,
                                "ally":null,
-                               "clothes":null
+                               "clothes":null,
+                               "memory":null
                             },
                             "stats":{  
                                "stealth":15,

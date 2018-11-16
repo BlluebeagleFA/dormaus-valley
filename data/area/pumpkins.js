@@ -91,6 +91,27 @@ var area = {
                     }
                 }
             },{
+                "id": "festival_pumpkin",
+                "title": "Help With Pumpkins",
+                "subtitle": "There's not going to be enough pumpkins for the festival. The mayor insists that he didn't exceed his permitted quota for stomped vegetables, but nonetheless there is a shortage. Fortunately there's plenty of volunteers to take up the slack",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": "You show up at the pumpkin fields, noticing how different it looks this time of year. The many pumpkins that usually cluster over the ground are now much more sparse, as they have been plucked and piled high on carts and wheelbarrows. Turner is helping out this year, and he sees you and waves. You walk up to him, and see that he's checking over a small queue of excited-looking townsfolk.</p>He strokes his hands down the chest of a stocky armadillo, his fingers sliding into his pants and patting over his butt. The armadillo looks bashfully to one side, struggling to hide his obvious arousal. \"Eeyup, you'll do great! Thanks a bunch for volunteering, y'all, yer really helpin' the town!\", he says. The armadillo grins and mutters something, and Turner pushes him over towards you. \"Yer a right bit of a mage right? Take this one and pumpkin him up for us, would ya?\", he says.</p>The armadillo follows you over to an empty spot on the field, and nervously starts removing his clothes. He pushes his rough pants down over his bare, long-clawed feet, and pulls his shirt up, revealing his wide, chubby chest and thick armor plated scales. He sits down, his short but chubby cock clearly hard. \"Er, this is my first time transforming. I'm pretty excited\", he says nervously.</p>You call up some magic into your hands, drawing it from the surroundings. The field is awash with a tingling feeling of magical energy, and you find it easy to focus on pumpkins as you lay your hands on the armadillo's smooth round belly and let the pumpkin essence flow. Gradually, his yellow-brown skin starts to turn brighter and more colourful, the dull colours becoming a vibrant, healthy orange. He shivers and fidgets a lot, his feet wiggling and his cock leaking droplets of pre. \"C-can I jerk off a bit, while I change? I'm sorry if that's rude\", he says nervously. You shrug and nod, and he looks up at you with a hesitant grin as he takes his cock and starts to slowly pump and squeeze it.</p>You continue the spell, stroking your hand up and down his belly and along his chest. He closes his eyes and pants, while his orange chest starts to form ridges and grooves, the soft flesh becoming firm, hard rind. His limbs begin to shrink, and his head sinks down into his torso, as he becomes rounder all over. His thick plated scales turn orange too, starting to smooth out and merge together as they become part of his rind.</p>He wiggles his paws and yelps as he falls back, rolling back and forth on his large round body. His shrunken limbs struggle to reach his cock, which starts to stiffen and darken, becoming a thick firm stem. He pants and whimpers as you stroke your hand over it, before his face closes over and melts away into his smooth, orange body.</p>The massive pumpkin in front of you wiggles and rolls slightly for a moment, before finally going still. Turner walks over and picks it up, heaving as he hoists the pumpkin up and carries it over to a wheelbarrow. \"Mighty kind of ya! Thanks, friend!\", he says, before returning to the other volunteers.",
+                        "outcomes": [
+                            {
+                                "parameter": "festival_time",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "patch_random",
                 "title": "Explore the Pumpkin Patch",
                 "subtitle": "The pumpkin patch stretches across the hills and reaches up to the scrubland and ruins to the north.",

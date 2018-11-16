@@ -116,7 +116,7 @@ var area = {
                     }
                 }
             },{
-                "id": "cleaning_duty",
+                "id": "normal_cleaning_duty",
                 "title": "Normal Cleaning Duty",
                 "subtitle": "The days pass by in drudgery and enslavement.",
                 "type": "random",
@@ -130,6 +130,35 @@ var area = {
                         "area": "hornloft_3",
                         "outcomes": [
                             
+                        ]
+                    }
+                }
+            },{
+                "id": "drum_festival",
+                "title": "The Iron Sky Watches",
+                "subtitle": "It is the night of the festival, and even in this dark and dreary prison, the prisoners are huddling together to have tiny celebrations of their own. Dirty homemade booze, a few smuggled snacks, but in a place like this such small things can be a feast, and a way to remember that you are still a person.</p>Something draws you out past the cells and other prisoners, however. To the darker and colder tunnels that weave up higher in the castle. Even the guards are clustered together, playing cards and burning the fire high in their break room as their own little Rebel's Bonfire night. They don't notice you as you climb up into the highest, darkest tower of the prison. You push open a trapdoor, and feel the icy winds burn your skin as you climb out onto the snow-dusted roof. There is someone else here. An enormous, hunched over figure at the parapet, staring out towards the city. As you look at him, you feel his silhouette almost seem to glow, and you pant and shiver as you hear the drums of war and your body aches to kneel and obey. It is Emperor Drum.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "festival_time",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "drumicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You walk forward, pushing against the cold wind, even as frost starts to form on your prison clothes. This close to him, his overpowering presence is almost blinding. The rest of the world seems to go dim and lose its colour, and there is only your glorious Emperor.</p>His massive wings could engulf the entire tower, and each feather is like a perfect gleaming spear. His feet, those gigantic lion paws, barely covered by pristine and perfect white fabric. You would face armies for the honour of touching and stroking those feet. His unstoppable muscles, his mighty and dominant form. Towering above you like a god, not a single thread out of place on that distinguished and expertly made black uniform. Each angle and curve of his powerful beak, the shape of his feathers, it all makes your heart pound with obedience and desire. Even the grey feathers dusting his sides only shows how distinguished and experienced he is.</p>You step closer, the cold and wind now completely impossible to notice, as you are mere inches away from your beloved emperor. You will serve him forever, face anything for him. You wish only for him to give you an order, to put you in your place.</p>Yet, that order never comes. You stand there, eyes gleaming with admiration, for what seems like hours, but is only minutes. He isn't paying you any attention at all. You look down past the prison to see what he is looking at. Far in the distance, in the middle of the city of Horn, there is an enormous red glow. A gigantic bonfire. You can just barely made out the shadows and shapes of the people around it, dancing and celebrating. It's probably the largest Rebel's Bonfire celebration on the continent.</p>You watch it for a while with him, and slowly, you feel the strange compulsion begin to fade. It's like your eyes are adjusting after walking out into the daylight and being blinded by the sun. You look up at your Emperor - at Drum - and you struggle to see what emotion might be hidden under that stony, stoic gaze. He is enormous, yes, but not impossibly so. His dark, piercing eyes are surrounded by deep wrinkles, and his beak is scarred and pitted with age and weathering. It is not the smooth and perfect weapon you saw only moments ago. Your eyes trace down his body, and you see strength and muscles yes, but also the pain of age. His feathers are greying at the tips, and his breathing is hard. You look down further, where his hands are grasping the edge of the parapet, and you almost step back.</p>His large, taloned hands are horrifically and hideously scarred. The yellow ridges that would normally be visible on an avian are malformed and twisted, and covered by pink and red scar tissue, looking almost like melted wax. You begin to realise how painfully cold you are, and you suddenly shiver and gasp, as the grip around your mind fades completely.</p>Drum finally responds to you. His eyes glance for only a moment in your direction, and suddenly you fall to your knees. He is once again the perfect, ideal man. The leader of the kingdom, and soon the leader of the world! You want to kiss his feet, to polish his armour, to spend your entire life serving him. His voice resonates and booms in your head, and you shiver and moan in orgasmic bliss as you speaks to you. \"Return to your cell, and warm yourself. There is nothing up here worth suffering the cold for\", he says.</p>You don't even register the words, only your emperor's command. You salute and march back to the trapdoor, your body and mind almost like a puppet. You only regain your will much later, when you blearily realise you are wrapped up in a blanket on your bunk, with a warm drink. It seems like the experience was a dream, and you struggle to remember what just happened.",
+                        "outcomes": [
+                            {
+                                "parameter": "festival_time",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "skin_beneath",
+                                "quantity": 1,
+                                "change": "set"
+                            }
                         ]
                     }
                 }

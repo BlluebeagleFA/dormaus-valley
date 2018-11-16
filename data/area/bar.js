@@ -210,6 +210,37 @@ var area = {
                 }
             },
             {
+                "id": "festival_party",
+                "title": "Help Decorate the Bar",
+                "subtitle": "You see Ace leaning on the side of the bar, talking to Grizz. Grizz is silently wiping the counter and ignoring him. \"C'mon, Grizz. Where's your festival spirit? You never decorate for Red Night, so why not let me do the place up with some old Westwood traditions?\", he says. Grizz remains silent. Ace notices you watching, and lifts his hat up a bit before smiling at you.</p>\"See, here's the perfect person to help out! I got a great idea on how we can get some Wolf Party decorations for this boring watering hole, an' even get some treats for Red Night. You interested?\", Ace says. Grizz gives you a snorting grunt, which makes you think that Ace may not have your best interests at heart with this plan.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 50,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You agree, with only slight hesitation. Ace grabs you by the wrist, and pulls you over towards the bar. \"Don't worry, this won't hurt a bit. Grizz, gimme that old bottle a' sweet bacanora I brought back with me\", he says. Grizz sighs and reaches down under the bar. You hear the sound of clinking glass as he grabs a bottle and places it on the counter. The insides are a golden brown, and when Ace grabs the cork and yanks it out, your nostrils sting with the potency of the alcohol within.</p>Ace presses himself against you, his furry chest pushing you back against the bar. \"Bottoms up!\", he says with a chuckle, before placing the rim of the bottle to your lips and raising it high. You gulp down the booze that flows out, which is thick and extremely sugary, but leaves a sharp alcholic tang in the back of your throat. Even after only a few gulps, you start to feel dizzy, and the room around you sways and becomes unfocused. Ace pulls the bottle away, and you hiccup and giggle at him. He seems to split in two and sway left and right. \"How you feelin', pardner? Wanna party?\", he asks. You find yourself nodding in agreement. A party sounds amazing!</p>\"You heard it, Grizz! We're having a party!\", Ace says. You find yourself clapping and giggling. You want everyone to have a fun time! With colours and lights and dancing and music! You try to grip the bottle that Ace put down, but your fingers are feeling stubby and stiff and short. Eventually you manage to grab it by pushing both your thick, swollen hands against either side of the bottle, and lifting it up to guzzle down some more. The thick alcohol tastes even better this time, and with every gulp you feel your neck start to thicken and swell. It stretches out, getting taller and wider, and your ears start to rise up and grow pointy and wide as they migrate to the top of your head.</p>You slam the bottle back down and wipe your mouth with the back of your hand. It feels papery and fluffy, and you look down with your blurred vision to see strange colours starting to crawl up from your wrist. You try to focus, and you wiggle your stubby fingers as you see strips of colourful paper growing from your skin, and thickening into a pelt that spreads slowly up your limbs. Somehow that doesn't seem all that important though. You are supposed to be having a party!</p>You grab the side of the bar with your hands and start to clamber up onto it. It seems taller than it was before, but you manage to scrabble at the bottom with your feet, even as your shoes and socks fall off, and your feet thicken and flatten into stubby hoof-like lumps. Once you get atop the bar, you feel an uncontrollable urge to dance. You hop and bounce, spinning and twisting from hoof to hoof as you waggle your butt at Ace's amused face. You feel long yellow paper strands grow from your rear, forming a rustling paper tail, while your body gets fatter and shorter and more unrealistic in proportion. Your eyes grow wide and round, and your mouth stretches into a fixed, eager grin. Blue, pink and yellow paper spreads up your body in stripes and patterns, and you feel so light and bouncy and sugary and full of joy! As you finish your dance, you start to lean down and bow, but suddenly Ace grabs you by your sides and pulls you down against the bar again. You look up at him, noticing he's almost twice your height now. \"Nice moves, partner. Now I want my treats\", he says with a sinister grin. You blink, and giggle some more. His hand slides down across your side, and further down to his pants, where he unbuckles his belt and pulls out his long, thick cock. His musky, unwashed stink makes you feel even more dizzy, as he presses his tip under your paper tail, and starts to push. You feel him pressing through you, through the thick shell of your strange skin and into your center. He thrusts, slamming you against the bar, and the impact makes your whole body shudder and flush with intense, pleasurable feeling.</p>Another thrust, a brain-rattling slam against the counter, and you almost gasp. Being struck and rammed makes you feel so good! Each time you feel the impact, your insides feel bubbly and happy and so wonderful. You start to wiggle your hooves and whinny with need, and he hits you harder and faster, making you lose all grasp on the situation as all you can think of is that drumming, pounding pleasure.</p>Finally, you can take it no more. You feel so full of pleasure and happiness that it has to come out! You open your mouth, scrunch your eyes, and HEE-HAW as loud as you can! You feel a rush of orgasmic bliss, as large, colourful round objects spill from your mouth. Candies and wrappers, chocolates and treats, all spewing out from you and spilling onto the floor, making a treasure trove of delights. You finally feel empty again, and Ace places you on the bartop. He picks up one of the chocolates and pops it in his mouth, before winking at Grizz. \"Told ya. Now just gotta do that a few dozen more times, and we're sorted for the festival!\"",
+                        "descriptionchange": 'This adventurer is a living piñata. Their body is horselike, but short and stocky with stubby and clumsy limbs, and their head is oversized and silly. Instead of fur, they are covered all over with strips of colourful paper that rustle in the breeze.',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 50,
+                                "change": "set"
+                            },{
+                                "parameter": "festival_time",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
                 "id": "grizz_piss",
                 "title": "Grizz's Piss",
                 "subtitle": "You want to ask for a special brew today.",

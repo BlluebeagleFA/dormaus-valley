@@ -51,7 +51,8 @@ function main(err,session) {
             clothes: null,
             weapon: null,
             feet: null,
-            ally: null
+            ally: null,
+            memory: null
         },
         stats: {
             stealth: 1,
@@ -348,7 +349,7 @@ function main(err,session) {
                 var target = rawtext.replace("/" + spell + " ", "");
                 userAreas[onlineUsers[i]]
                 if (onlineUsers.includes(target)) {
-                    if (userAreas[target] == player.area) {
+                    if (true) { //removing distance limit
                         var magelevel = 0;
                         if (player.attributes.magicuser && player.attributes.magicuser.value) {
                             magelevel = player.attributes.magicuser.value;
@@ -371,7 +372,7 @@ function main(err,session) {
                             appendChat({
                                 user: "System",
                                 area: player.area,
-                                text: "Your do not know that spell"
+                                text: "You do not know that spell"
                             });
                         }
                     } else {
@@ -701,6 +702,12 @@ function main(err,session) {
                 bonus += item.attributes[stat];
             }
         }
+        if (player.equipment.memory) {
+            item = DV.Data.item_data[player.equipment.memory];
+            if (item.attributes[stat]) {
+                bonus += item.attributes[stat];
+            }
+        }
         return bonus;
     };
     
@@ -960,7 +967,8 @@ function main(err,session) {
                     clothes: null,
                     weapon: null,
                     feet: null,
-                    ally: null
+                    ally: null,
+                    memory: null
                 };
                 player.stats = {
                     stealth: 1,
@@ -1419,6 +1427,7 @@ function main(err,session) {
         invData += getInventorySlotData("weapon");
         invData += getInventorySlotData("feet");
         invData += getInventorySlotData("ally");
+        invData += getInventorySlotData("memory");
         
         var items = getAllItemsOfSlot(null);
         
@@ -1623,7 +1632,22 @@ function main(err,session) {
                         requirements += ", "
                     }
                     var param = DV.Data.item_data[event.requirements[j].parameter];
+                    var paramreq = event.requirements[j];
                     requirements += param.title;
+                    if (paramreq.comparison == "less") {
+                        requirements += " less than ";
+                    } else if (paramreq.comparison == "equal") {
+                        requirements += " exactly ";
+                    } else if (paramreq.comparison == "nequal") {
+                        requirements += " anything except ";
+                    } else if (paramreq.comparison == "gequal") {
+                        requirements += " greater or equal to ";
+                    } else if (paramreq.comparison == "lequal") {
+                        requirements += " less or equal to ";
+                    } else if (paramreq.comparison == "greater") {
+                        requirements += " greater than ";
+                    }
+                    requirements += paramreq.value;
                 }
                     newHtml = '<div class = "event locked">' +
                             '<div class="eventbox">' +

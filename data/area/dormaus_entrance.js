@@ -271,6 +271,35 @@ var area = {
                     }
                 }
             },{
+                "id": "mr_bat_festival",
+                "title": "Mr Bat, Melancholy",
+                "subtitle": "Something unusual draws your attention. The festival is drawing in, and the night is getting dark, but there is one tiny, solitary light high up on the bluff above town. Driven by curiosity, you climb up onto the rocky mountainside and begin carefully walking up the rim of the teetering cliffside that surrounds the town. You push through brambles and bushes, and narrowly avoid slippery scree that falls and tumbles when you step on it. Finally, you reach the tiny light. High above the town, there is a clear outcropping covered in grass. Sitting on it is the familiar, lanky form of Mr Bat.</p>He is holding a small lantern in his lap, and he looks up at you with a wry expression. \"I should have known you would find me. You never fail to surprise. Nonetheless, I find myself in the doldrums this night, and would make poor company. I advise you to go enjoy the festival elsewhere\", he says.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "festival_time",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "mrbat",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You sit down next to Mr Bat. This close, you are struck by how tall he is. His long legs are bent around the lantern in his lap like a spider, and his wings cast a long shadow behind him. You look down at the town. From this height, in the dark of the night, it is a cluster of lights and movement. You can see candles burning in the windows of houses preparing for Red Night, and the bright flickering glow of Flute's bonfire.</p>\"What do you see, when you look down there?\", he asks. You cannot see his eyes well beneath the wide brim of his hat, but you can feel somehow that his gaze must be distant. \"Lights, and excitement, I'm sure. For the old, it is different. You can see leaves blow and tumble in the wind, and see what is there. When you are old, every sight brings an echo of another from the past. Years ago, seeing the same thing, with different people, in different times. Becoming deeper and more occluded with each year. And I am so very, very old\", he says.</p>He shifts his leg, and reaches down to lift up the lantern. Its light flickers for a moment as he raises it. It is made of paper, delicately stretched over a wooden frame. There are paintings on the sides, that leave silhouettes as the light within glows.</p>\"The lights from here remind me of a place I loved once, long ago. It was a beautiful city, yet afflicted with almost eternal twilight. The people of the city would light their lives instead with lanterns, and with the tales they told and the memories of friends and family. Each lantern bore the meaning and emotions of its creator, and once a year they would give new lanterns to the ones they loved to light eachother's lives a little more\", he says. He stares down at his lantern, his long fingers tracing delicately over the little painted symbols on the sides. There is a long period of silence. Eventually, you ask him what happened to that city. The lantern light flickers again, then grows bright as it becomes a deep, burning red. In the darkness, the red light for an instant seems to make Mr Bat's black clothes look deep crimson, and for just a moment you feel he looks like something terrible, and dangerous.</p>Then, as quickly as it happened, the light is normal again.</p>\"It was taken by time, as all things are in the end. I did not see it with these eyes, and these feet never walked its streets. But I remember it still\", he says.</p>You sit together with him for a while more, watching the town below. His wings flex slightly, and he lifts one. The long cape-like skin drapes gently over your back. You feel sleepy, and rest yourself gently against his side. Over time, the lantern's light slowly dims and goes out.</p>You awaken the next morning, roused by the rising sun. Mr Bat is nowhere to be seen, but the lantern is sitting in the grass next to you. You sit up and take it gently, before making your way back down into town.",
+                        "outcomes": [
+                            {
+                                "parameter": "festival_time",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "paper_lantern",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "entrance_random",
                 "title": "Wait Near The Entrance",
                 "subtitle": "It's a nice day, you could wait and watch the people here.",

@@ -158,6 +158,11 @@ DV.Data.item_data = {
             "You are an elegant arctic fox with beautiful white fur.", //43
             "You are a twitchy short and thin ermine, with a long white body.", //44
             "You are a massive, powerful polar bear, with a huge belly.", //45
+            "You are a tall black panther, with a long and slender tail.", //46
+            "You are a squeaky rubber panther, with a long and shiny tail.", //47
+            "You are a massive grey rhinocerous with huge muscles and a heavy horn.", //48
+            "You are a stocky, fuzzy badger with striped fur and a portly round belly.", //49
+            "You are a living piñata, a horselike being with paper strips for fur.", //50
             ]
     },
     gender: {
@@ -260,6 +265,12 @@ DV.Data.item_data = {
             "You have managed to take a mould pressing of the garbage collection key, in your secret bar of soap.",
             "You have forged a very brittle and fragile key. It will probably only work once. Now you need to ensure you can survive the harsh weather outside.",
             "You have a key, and cold protection. It's time to make your escape."]
+    },
+    festival_time: {
+        type: "attribute",
+        icon: "festival",
+        title: "The Festival",
+        description: ["The night of the festival is getting closer."]
     },
     contributor: {
         type: "attribute",
@@ -448,6 +459,18 @@ DV.Data.item_data = {
         },
         description: ["This enchanted black candle will make your movements silent as long as you are holding it."]
     },
+    paper_lantern: {
+        type: "item",
+        icon: "paperlantern",
+        title: "A Fragile Lantern",
+        value: 500,
+        slot: "weapon",
+        attributes: {
+            might: -1,
+            charm: 3
+        },
+        description: ["This lantern is made of a polished wooden frame and carefully painted paper stretched over it. The paintings are simple silhouettes of people and beings wearing unfamiliar clothing, giving gifts to one another. When you hold it, you feel strangely connected to the people around you, but you must be careful not to break it."]
+    },
     dwarf_axe: {
         type: "item",
         icon: "dwarfaxe",
@@ -491,6 +514,18 @@ DV.Data.item_data = {
             might: 2
         },
         description: ["This is one of the helmets that used to be given to captains in the military of the Dormaus kingdom. It is very high quality."]
+    },
+    silver_key: {
+        type: "item",
+        icon: "silverkey",
+        title: "Silver Key",
+        value: 500,
+        slot: "head",
+        attributes: {
+            magic: 3,
+            might: -1
+        },
+        description: ["A key on a silver chain, designed to represent your power over Saberhagen. He wasn't entirely sober when he agreed to it, so the magic is not complete, but it still glows with a faint connection to his enormous reserves of magical energy."]
     },
     skull_mask: {
         type: "item",
@@ -680,6 +715,30 @@ DV.Data.item_data = {
             might: 1
         },
         description: ["A gaggle of obedient, stupid smelly goblins who desperately want to do everything you say."]
+    },
+    skin_beneath: {
+        type: "item",
+        icon: "beneath",
+        title: "The Skin Beneath",
+        value: 1,
+        slot: "memory",
+        attributes: {
+            magic: 1,
+            might: 1
+        },
+        description: ["We all place barriers between ourselves and the world. Shells of pretence and masks of actions and behaviours to trick the world that we are the person we want them to think we are. Yet under it all, even the hardest and strongest of us are vulnerable."]
+    },
+    howl: {
+        type: "item",
+        icon: "howl",
+        title: "The Howl",
+        value: 1,
+        slot: "memory",
+        attributes: {
+            magic: 1,
+            charm: 1
+        },
+        description: ["Even over incredible distances, the people you love are still connected to you. You may not be able to see them, but if you close your eyes you can hear them in your heart."]
     },
 	//Troubles
 	pain: {

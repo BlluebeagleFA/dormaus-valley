@@ -137,6 +137,10 @@ var area = {
                     {
                         "input": 'Valleywide News Issue 53: Horn Opening Its Borders?',
                         "output": 'Jake: Big news from the coldest little misery hole in the valley! Horn, that big grey kingdom in the frozen middle of nowhere, is loosening its border control for the first time since the coup. At long last, the ever-pleasant griffons will be permitted to visit other countries, to see places where people don\'t have to huddle up together to not freeze to death. Don\'t get too excited though, because all ins and outs are still going to be heavily scrutinized by Emperor Drum\'s personal feather guard. Not a friendly bunch, let me tell you. What do you think of this, Ed?</p>Ed: I tell you Jake, if there\'s one thing I always wanted to do, it\'s visit a snow-covered rock ruled by a psychopathic birdlion. Truly, the only thing stopping me was these border controls. Before you know it we\'ll all be sharing in the Horn culture of singing about how great Drum is, or whatever it is they do for fun up there.'
+                    },
+                    {
+                        "input": 'Valleywide News Issue 54: Festival Time',
+                        "output": "Jake: It's that time of year, folks! The long nights are drawing in, and the harvest is coming with it. We here at Valleywide News couldn't be more excited for the King in Red's night. Ed already has a horse mask, and I assure you it is terrifying</p>Ed: Whinny</p>Jake: Well said, Ed. Of course, let us not forget that we do share our beautiful city with the unfortunate souls who celebrate other, less good festivals. Try not to be too obviously sad for them, they tend to take it personally. Especially Hornians.</p>Ed: Whinny! Neigh!</p>Jake: Bloody hell Ed, you can't say that about Hornians. We're supposed to be allies now! I'm signing off on this issue before we get cancelled. Happy Red Night, everyone!"
                     }
                 ]
             }

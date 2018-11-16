@@ -142,8 +142,8 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "species",
-                        "value": 1,
-                        "comparison": "equal" //default greater
+                        "value": 2,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "viciousicon",
@@ -225,6 +225,36 @@ var area = {
                                 "parameter": "species",
                                 "quantity": 4,
                                 "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "gon_dig",
+                "title": "Assist Gon",
+                "subtitle": 'You look around the prisonyard for Gon, wondering how he could be so hard to find in a flat, open area. Eventually you hear him from a large pile of dirt.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gon_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "vicious_connection",
+                        "value": 5,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "gonicon",
+                "results": {
+                    "Brogulls": {
+                        "text": "You approach the pile of dirt, noticing the a guard is standing a little way away, watching sternly. You look down, and see that there is a hole a few feet deep, dug out from the hard, frozen rocks. Gon is standing at the bottom, mud all over his hands and paws, as he cheerfully digs up more mud with his bare hands.</p>You drop down carefully, and land next to him in the cramped hole. He looks up to you and wipes some flecks of mud off his face. \"Friend! Are you here to help Gon dig a well?\", he says happily. You suppose you may as well, so you nod. He barks, and his tail wags rapidly.</p>Together you dig into the hard ground. Gon is vastly more effective at this than you are. While you struggle to leverage up rocks from the icy, frozen ground, his powerful hands can crack through the dirt and heave up rocks easily. Even so, progress is very slow, and you can't imagine this would be a realistic way to try to escape from atop a mountain, especially with the gryphon guard watching you the entire time.</p>As you dig, Gon hums to himself, and wags his tail happily. \"Gon likes wells. In Gon's village, sometimes it gets really hot. Gon dug a big well and everyone can have cold water on hot days. Gon likes climbing down inside and feeling the cold\", he says. He leans back against you, mud crumbling off both of you as he sighs. He's warm and soft, and you brush some mud off his fur. \"Cold only fun when its hot sometimes. Gon will be happy when Gon shows you Kobold Village\", he says.</p>He presses you down gently in the dirt. Despite the cold weather, you're both sweaty and filthy from the mud, and in your small hole, the biting wind isn't so dreadful. You feel the strong, short dog climb up on top of you, as he nuzzles and strokes his muzzle gently against your cheek and neck. You never realised how incredibly warm he is. It may be related to his amazing strength, but his body radiates a constant, comforting heat. You feel his rough, dirty hands stroke up under your shirt, his thick claws tracing along your skin gently. His scruffy muzzle presses down onto your face, and you feel his thick, wet tongue slide along your lips and cheeks, before he pushes it into your mouth and kisses you. You kiss him back, wrapping your arms around him, and you feel his cock harden under his pants as it presses into your crotch. He pants, his tail wagging, and looks at you happily. \"You are good warrior. Gon is good warrior too. Gon wants to do the special dance with you\", he says.</p>You hear a thump from above, and you look up to see the gryphon tapping his spear against the ground. \"Enough of that, you two. Back to your cells!\", he orders. You climb up out of the hole, and reach down to pull Gon out too. As you walk back to your cell, he strokes his hand across your rear and wags his tail.",
+                        "area": "hornloft_1",
+                        "outcomes": [
+                            {
+                                "parameter": "gon_connection",
+                                "quantity": 1,
+                                "change": "add"
                             }
                         ]
                     }

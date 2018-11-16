@@ -65,6 +65,62 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "panther_suit",
+                "title": "Goofy Grin",
+                "subtitle": 'As you walk around the marketplace, a familiar costume catches your eye; a full-body panther costume made out of rubber, including a panther mask with a goofy grin. [Guest event by Shaddura]',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 47, //Must not already be a rubber panther.
+                        "comparison": "nequal" //default greater
+                    },
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You’ve walked past the store countless times, and yet that goofy grin has you hooked more than ever. It lights up curiosity inside of you. You’re well aware that the costumes in this store are magical, and it does come to mind that the suit might have enchanted you into desiring it. However, when was the last time you regretted giving in to the enchantments all around you? Before you could even finish your thoughts, your body was already taking off its clothes. You’d stripped naked before you knew it — something inside of you must’ve been really eager to get into that suit.</p>There’s a zipper on the back — how cliche — which you rush to zip down. The sound fills your body with tingles as you imagine yourself in the suit, how handsome you’d be, just like a certain panther you knew… You jump into the suit before even inspecting it thoroughly. The rubber stretches out to fit your shape, clinging tightly to your skin. It was cold — in contrast to your skin — causing you to shudder as more and more of it covered your body. A few people were giving weird glances, hearing the squeaky rubber and the subtle sound of a zipper closing.</p>You reach down to paw yourself, though it seems to be an impossible task. You’re immensely aroused, yet no touch seems to ever bring you pleasure. You flail your arms in frustration, knocking over the panther mask onto the ground. That’s right — you hadn’t even finished the suit. Surely there’d be no way it would help your issues… yet you felt compelled to wear it; wearing it would make you complete, you thought.</p>It slips on easily, and you don’t notice at all when it merges with the neck. You see surprisingly clearly through the eyes. It actually feels more natural than before you had it on… You were immensely happy that you took it. You try to paw off again, and this time it seems to work! In the middle of a street, some weirdo in a rubbery panther outfit is rubbing their rubber bulge furiously…</p>In the midst of your lust, you don’t notice the rubber getting tighter and tighter, almost as if it was sinking into your skin. Each touch felt more real than the last, making the sensation even more intense. Even as your face grows out and fits into the shape of the goofy mask, you notice not a single part of it. All you care about right now is the pleasure you’re feeling.</p>And pleasure there was. As the transformation finished, you felt an electric burst — an orgasm more intense than ever. The more you rubbed yourself, the better it got… You moaned out loudly, as you jerked yourself off for minutes, keeping the orgasm growing stronger and stronger. You had no genitalia left, so you had nothing to ejaculate out of — you had no refraction period.</p>You went on an on in an endless orgasm. Literal hours passed, pawing yourself off in a lust-driven craze. Your body was getting exhausted by now, but you didn’t want to stop. You had no choice though; with each passing minute, your arms grew weaker, and it became harder to keep going. At this point things got blurry — the last thing you could remember was a calculative voice: “3 hours and 37 minutes. That’s a new record…”</p>You wake up a while later. You have become one with the suit. Your crotch is round and smooth, but while your real junk, rubbing your new groin feels just as good — if not better.",
+                        "descriptionchange": 'This adventurer is a tall squeaky rubber panther. Their face is stuck in a silly, goofy looking smile',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 47,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "festival_badger",
+                "title": "Help Making Masks",
+                "subtitle": "Saberhagen is very excited to be helping out with making masks for King in Red's Night. He's taking it very seriously, and using a complex and difficult mask-making process.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 49,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "When you get to the costume stand, you almost don't recognise Saberhagen. There's a huge, muscular lion in adventurer's armor talking to him, and when you get closer, you see an unusual sight. Next to him is a shaggy lion. His thick mane and powerful, scarred jaw look very out of place with the mage's robe and pointy hat he's wearing. The mage lion reaches up to his cheeks, and closes his eyes, before starting to pull on his cheeks. His features begin to stiffen and harden, fur flattening, developing wood grain patterns. His grin becomes fixed and hard, and his face becomes painted wood, before finally he pulls it off completely. Behind the new mask face is revealed Saberhagen's usual cheerful face. He hands the mask over to the lion in exchange for a handful of coins, and the lion leaves cheerfully.</p>Saberhagen sees you watching, and pulls you over. \"Isn't this great? Everyone is so excited, and there are so many fun decorations and traditions! I've been helping Ritter make the masks, with an old identity-copy spell I learned a while back. People really like how high quality my masks are! Here, I'll show you how to do it!\", he says.</p>The next customer in line is a portly, excited badger with a scruffy and fuzzy striped muzzle. Saberhagen stands behind you and guides your hands through the motions to the spell, his chest pressed against your back and his gentle hands holding your wrists. First, you take hold of the badger's wide, heavy hands, which are thickly padded on the palms. You stare deep into his eyes, as Saberhagen tells you gently and repeatedly to focus on the badger's identity. \"Look at him like you're looking in a mirror. That grey striped muzzle, his stocky build, his posture and movements. Mimic them, let your thinking slow and calm as you become the mirror...\", he says. You feel the magic building up inside you, as it becomes easier and easier to copy everything the badger does. Your posture shifting back in a slight slouch. Your chest breathing in and out in perfect time with his. Your eye level shifting as your height shifts to match him. You even find yourself blinking in time with him. Gradually, your skin starts to tingle and feel warm, as thick fur spreads down your arms and over your chest. Your belly bulging and growing rounder and more portly, pushing out as it grows to match his. Your feet spreading and growing, becoming thick and large, with tough bulging pawpads and firm, strong claws for digging. Your rear pushing out slightly, as your behind gets larger and a short, tufty tail appears between your cheeks. He lifts one of his hands, and you copy him as he stares at your changing hand in amazement, watching as you grow the same thick pawpads as him, as you move your clawed fingers as he does. Your face pushes forward, growing into a muzzle as your nose turns black and wet. Your teeth getting sharper, and a bushy soft covering of striped fur flowing down your new face, with tuftier moustache-and-beard like fuzz on the front of your muzzle. Your hair shrinks back, leaving just some tufts of grey like the badger has, and finally you are a perfect clone copy of him. Saberhagen holds your large hands gently and lifts them to your head. \"Now, just gently release that identity. Let it flow into the mask, and separate it slowly from yourself\", he says.</p>You press your hands to your cheeks, and start to pull. You can feel your face growing firm and hard. Your expression stiffening and hardening. You close your eyes as furry skin becomes smooth, painted wood, and slowly pull forward, feeling it pull away from you like glue.</p>Finally, you open your eyes and look down at the mask in your hands. The mask of...a human face? YOUR face! You touch your head, feeling your badger muzzle, scruffy fur, looking down at your wide diggers hands. Saberhagen makes a nervous noise. \"Oh dear! Were you not very attached to your personality? That doesn't normally happen\", he says with concern. The badger in front of you, however, is very pleased. \"What a cool mask! Perfect for the festival, I love it!\", he says. He drops a bag of coins onto the stall and grabs the mask, before leaving with it in his hand, and your identity alongside it.</p>You stand awkwardly next to Saberhagen, now trapped as a fat and fuzzy badger. He gently pats your shoulder. \"Um, I think you look very handsome this way, if that helps?\", he says.",
+                        "descriptionchange": 'This adventurer is a short and stocky badger, with a round chubby belly and a scruffy, furry striped face.',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 49,
+                                "change": "set"
+                            },{
+                                "parameter": "festival_time",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

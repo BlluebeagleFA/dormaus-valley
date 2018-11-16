@@ -122,6 +122,41 @@ var area = {
                     }
                 }
             },{
+                "id": "festival_otter",
+                "title": "Help Robbie with Deliveries",
+                "subtitle": "You notice something bobbing on the water, slowly heading down the river. On closer inspection, it appears to be a large crate. A few bubbles emerge from behind it, and then with a sudden splash, Robbie the otter hops out from the water, and rests his arms atop the floating crate. He gives you a cheerful grin. \"Oh hey! You're a sight for sore eyes. Want to keep me company? I've got to transport a bunch of these crates down to Otterton before the festival starts!\"",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 24,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "robby_spell",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You agree to tag along, and Robbie dives under the water, then reappears on the other side of the crate. He nudges it sideways until it is bobbing against the side of the riverbank. \"Hop on, cuz!\", he says. You carefully step onto the crate, feeling it bounce and sink a little in the water, before you manage to clamber aboard.</p>Robbie continues pushing the crate, which gradually returns to the middle of the river as he floats it down. \"So, you been up to any exciting adventures lately?\", he asks. You start to tell Robbie about what you've been doing recently, but while you talk, his whiskered face seems to hover around your feet. He reaches up and starts to pull off your shoes and socks, then strokes his padded hands over your bare soles. You look down at him as he pulls your bare feet into the water, and he gives you an innocent smile. \"Go on! I'm totally listening, cuz. Just thought you might enjoy the water!\"</p>You poke the otter on his muzzle with your dripping wet foot, and carry on talking while he nuzzles his tickly, whiskered muzzle over your sole. He pulls your feet under the water again, and you feel your soles growing tough and firm under his touches and strokes. A strange feeling spreads up between your toes, and you pull your feet back out, to see dark black webbing between your toes, even as your toenails sharpen and stretch out into small black claws. Robbie's eyes twinkle as he licks your new webs, and you feel a tingly, warm sensation flow up your skin from your feet upwards. Soft, smooth brown fur begins to grow over your new paws, up your legs and gradually up to the rest of your body. He grips your paw in one of his clawed hands and squeezes your toe. \"You know, the water feels pretty good today. I bet this delivery would go even faster with two people pushing\", he says.</p></p>The otter may be cute, but he's not subtle. You pull your shirt up over your head, and shuffle out of your pants before leaving them both folded atop the crate. Robbie whistles appreciatively at your naked body, and you give him a playful shove on his head with your foot. He responds by sinking down in the water, then lunging up, wrapping his furry arms around your chest, and falling back as he drags you into the water with him. You feel the water surge up around your body, as the smooth sleek fur of your changing form spreads up your chest and arms. Robbie's hands stroke down your back and squeeze your rear, and you feel your tailbone shifting and growing. It stretches out, thickening with muscle and strength as it becomes a strong, sleek rudder tail just like his.</p>His whiskered face presses to yours, and you feel his cold nose poking against your own as he starts to kiss you. His tongue slides against your own, and you feel his sharp, short teeth against your tongue as you twirl and twist under the water.</p>You flex your tail, and push yourself up to the river's surface. You feel yourself breach, sending water twinkling and splashing through the air. Robbie rises up in front of you, and pins you against the crate, his arms at your sides. You kiss him first this time, feeling your face stretching into a streamlined furry muzzle, your own sharp otter teeth growing in, and your own sensitive whiskers sprouting from your cheeks. His slender furry chest presses against your own, and you nuzzle and cuddle with him as the last of your changes settle in.</p>Once you feel yourself fully returned to your otter shape, you give Robbie a playful lick, and then duck down under his arms, before emerging next to him. With both of you pushing and flexing your powerful tails, the crate speeds along the river at a rapid pace. Robbie has such a wide grin and cheerful look that you find yourself compelled to ask why he always wants to turn you into an otter. He looks surprised for a moment, then glances away as he thinks. \"Oh! I'm not sure, really. I guess I just always thought it would be nice to have, like...a family, I guess?\", he says. You wouldn't have noticed if you hadn't spent so much time around him, but just for a moment his happy look faltered very slightly. You switch the conversation to more cheerful topics instead, and the two of you reach Otterton in what feels like no time at all.",
+                        "area": "otterton_dock",
+                        "descriptionchange": 'This adventurer is a short otter, with a slender, lithe body, and a thick brown rudder tail.',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 24,
+                                "change": "set"
+                            },{
+                                "parameter": "festival_time",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "river_random",
                 "title": "Relax by the river",
                 "subtitle": "The cool fresh water is perfect for travellers who need to stock up between Otterton and Dormaus",
