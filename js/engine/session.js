@@ -193,13 +193,14 @@ DV.Session = (function(){ // start of module namespace
 
     }
 
-    function sync_session() {
+    function sync_session(callback) {
         DV.WebServices.dyna_set(lambda,local_db["username"],local_db["save"],function(err){
             if(err){
-                console.error(err);
+                callback(err);
                 return;
             }
             console.log("Database sync");
+            callback(null);
         });
     }
 
