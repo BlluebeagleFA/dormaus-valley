@@ -36,7 +36,7 @@ var area = {
 			},{
                 "id": "bdsm_sex",
                 "title": "Keep Going",
-                "subtitle": "You want to keep going. You both want more than just a blowjob. Way, way more. [Warning: Contains BDSM themes including bloodplay.]",
+                "subtitle": "You want to keep going. You both want more than just a blowjob. Way, way more. [Warning: Contains BDSM themes including bloodplay]",
                 "trapped": true,
                 "type": "random",
                 "requirements": [
@@ -64,7 +64,8 @@ var area = {
             },{
                 "id": "vanilla_sex",
                 "title": "Slow Down",
-                "subtitle": "You are nothing but a teddy bear. Why try to be anything else?",
+			//	"subtitle": "You’re not as kinky as he thinks. You’d rather just get in bed, get your ass pounded, and fall asleep cuddling?",
+				"subtitle": "For how much you'd wanted this before, you felt very hesitant all of a sudden. You'd rather just hug and cuddle right now. You don't know why, but your sex drive was all gone. [Skips BDSM themes]",
                 "trapped": true,
                 "type": "random",
                 "requirements": [
@@ -77,7 +78,7 @@ var area = {
                 "icon": "kind",
                 "results": {
                     "success": {
-                        "text": "</p>You woke up the next morning, still tightly in Alder’s embrace. ‘I could stay like this forever and ever’ you thought to yourself, though a growl from your stomach had you reconsidering that. You didn’t think it was that loud, but it seemed to wake Alder up. “Did you sleep well?” You replied quietly, and his face beamed up. “I’m glad to hear that. Want to go get breakfast? I think everyone in Dormaus could hear your stomach.” Your face turned beet red from the remark, and he laughs a contagious laugh.</p>After a morning cigarette, you got yourselves dressed and headed over to Saberhagen’s bakery for some morning pastries. You had come just in time to get the last few pastries; lucky!",
+                        "text": "“Let’s just cuddle then.” He began taking off his leather gear, stripping himself bare. His physique was almost exactly the same as yours — you’d be hard pressed not to think you were staring at your own mirror image. Before you even had time to glare all over his body, he dragged you onto the bed with him, hugging you tightly. “We’ll try again another day. I hope you’ll be up for more kinky stuff by then. Just relax for today though and cuddle.”</p>His body was warm. You wanted to be as close to him as possible; every inch of his body was a source of calmness as it rubbed off on you. He shuffled himself higher up and held your face in his chest. “You’re so damn cute you know, my cute little kitten. I I must protect you — with cuddles!” With each word, you found yourself feeling more at ease. You could hardly remember what you were doing before. You were calm and relaxed. Your eyes felt heavy, so you closed them. Everything was warm, soft, gentle… it lulled you to sleep. A deep deep sleep, one that would leave you happy and refreshed.</p>You woke up the next morning, still tightly in Alder’s embrace. ‘I could stay like this forever and ever’ you thought to yourself, though a growl from your stomach had you reconsidering that. You didn’t think it was that loud, but it seemed to wake Alder up. “Did you sleep well?” You replied quietly, and his face beamed up. “I’m glad to hear that. Want to go get breakfast? I think everyone in Dormaus could hear your stomach.” Your face turned beet red from the remark, and he laughs a contagious laugh.</p>After a morning cigarette, you got yourselves dressed and headed over to Saberhagen’s bakery for some morning pastries. You had come just in time to get the last few pastries; lucky!",
                         "area": "hotel_rooms",
 						"freeTrap": true,
 						"outcomes": [
