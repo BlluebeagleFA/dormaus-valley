@@ -14,7 +14,7 @@ DV.Data.areas = {
 	"mayors": "./data/area/mayors.js",
 	"hotel": "./data/area/hotel.js",
 	"hotel_rooms": "./data/area/hotel_rooms.js",
-	"hotel_alder": "./data/area/hotel_alder.js" //Alder's Room. Accessible after his main scenario is over.
+	"hotel_alder": "./data/area/hotel_alder.js", //Alder's Room. Accessible after his main scenario is over.
 	"churchyard": "./data/area/churchyard.js",
 	"church": "./data/area/church.js",
 	"resetshrine": "./data/area/resetshrine.js",
