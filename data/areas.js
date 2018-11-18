@@ -2,6 +2,7 @@ DV = typeof(DV) === 'undefined' ? {} : DV;
 DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 
 DV.Data.areas = {
+	"debug": "./data/area/debug.js",
 	"bar_rooms": "./data/area/bar_rooms.js", //DORMAUS VILLAGE HERE
 	"bar": "./data/area/bar.js",
 	"dormaus_streets": "./data/area/dormaus_streets.js",

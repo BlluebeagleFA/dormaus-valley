@@ -399,6 +399,43 @@ var area = {
                         ]
                     }
                 }
+			},{
+                "id": "saberhagen_cigarette",
+                "title": "Purchase Cigarettes",
+                "subtitle": "If you give him some bloodstones, Saberhagen might be willing to trade you some of his magical cigarettes.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "alder_connection",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "bloodstone",
+                        "value": 19,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "cigarette",
+                "results": {
+                    "grizzsex": {
+                        "text": " “While I’m happy to give you some, my plants haven’t been doing well as of lately. I can’t make you a better deal than 20 bloodstones for 1 cigarette.” You tell him that it’s fine — ‘just one of his is better than a whole pack of generics’ is what you told him, more or less; It had him blushing and stumbling around as he looked for it. You hand him 20 bloodstones, and he trades you a cigarette. Just looking at it makes your fingers tingle a little.</p>“Say hello to Alder from me!” the cat exclaimed as you left to go about your day.",
+                        "outcomes": [
+                            {
+                                "parameter": "bloodstone",
+                                "quantity": 20,
+                                "change": "sub"
+                            },{
+                                "parameter": "saberhagen_cigarette",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             },{
                 "id": "market_random",
                 "title": "Wander the Market",

@@ -65,6 +65,22 @@ DV.Data.item_data = {
         title: "Vicious [Connection]",
         description: ["Vicious is slowly forming a strange, deranged obsession with you."]
     },
+	alder_interest: {
+        type: "attribute",
+        icon: "aldericon_g",
+        title: "Alder [Friend]",
+        description: [
+						"You and Alder are friends. His image is still fresh in your mind.",
+						"You and Alder are great friends. It’s hard not to smile thinking about him."]
+    },
+    alder_connection: {
+        type: "attribute",
+        icon: "aldericon_r",
+        title: "Alder [Boyfriend]",
+        description: [
+						"You and Alder are in a budding relationship. You feel a flutter in your stomach when you think about seeing him again.",
+						"You and Alder are boyfriends. You smile whenever you think of him, and every time you sleep by yourself, you feel a little more lonely than usual; the thought of seeing him again makes you feel warm all over though, so it's not too bad."]
+    },
     flute_master: {
         type: "attribute",
         icon: "fluteiconr",
@@ -390,6 +406,13 @@ DV.Data.item_data = {
         title: "Bonacieux's Supplies",
         value: 1,
         description: ["Bonacieux is well supplied with all of the tools he needs for this trip. He should be able to bail you out at least once if trouble arises."]
+    },
+	saberhagen_cigarette: {
+        type: "item",
+        icon: "cigarette",
+        title: "Saberhagen Cigarette",
+        value: 1500,
+        description: ["A cigarette rolled by none other than Saberhagen. The tobacco is infused with magic that helps your body recover from most wounds. Smoking can damage your lungs and cause cancer… but it’s magical; surely that won’t happen, right?"]
     },
 	//Equipment
     magic_boots: {
@@ -780,6 +803,15 @@ DV.Data.item_data = {
 			"You are having nightmares of enormous shadowy creatures, hunting for you.",
 			"You see strange shapes and shadows in the corner of your eye, everywhere.",
 			"A terrible presence constantly feels right behind you, waiting to strike."]
+	},
+	//Addictions
+	nicotine: {
+		type: "attribute",
+		icon: "nicotine",
+		title: "Nicotine: [Addiction]",
+		description: ["You’ve tried smoking once or twice. While it has left a good impression, you’re still skeptical.",
+			"Smoking is becoming a habit for you. While it’s still hard for you to accept currently, you can feel your 	resistances weaken each time you feel the rush circulate through your body.",
+			"You’re addicted to smoking. You are fond of the smell of a cigar or a cigarette, and just watching others smoke is enough to make your entire body tingle in need. While it’s an expensive and unhealthy habit, there’s not a single part of you that wants to quit."]
 	},
 	//Stats
 	might: {

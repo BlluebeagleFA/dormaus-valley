@@ -58,6 +58,11 @@ var area = {
                 "trapped": true,
                 "type": "random",
                 "requirements": [
+					{
+                        "parameter": "species",
+                        "value": 6,
+                        "comparison": "equal" //default greater
+                    }
                 ],
                 "icon": "inanimatefetish",
                 "results": {
@@ -75,6 +80,11 @@ var area = {
                 "stat": "might",
                 "difficulty": 10,
                 "requirements": [
+					{
+                        "parameter": "species",
+                        "value": 6,
+                        "comparison": "equal" //default greater
+                    }
                 ],
                 "icon": "default",
                 "results": {
@@ -94,6 +104,110 @@ var area = {
                     }
                 }
             },{
+                "id": "alder_04",
+                "trapped": true,
+                "title": "Wake up", //WAKE ME UP! WAKE ME UP INSIDE!
+                "subtitle": "You are unconscious. You’d rather not be that. You should try to wake up. It might be hard if your body is not strong.",
+                "type": "statcheck", //or random
+                "stat": "might",
+                "difficulty": 25,
+                "requirements": [
+					{
+                        "parameter": "alder_interest",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "alder_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You try your hardest to wake up. You can’t yet recall why you’re unconscious. You’re not asleep — that would feel much different. It takes all your energy, but you finally manage to return to consciousness. It’s hard to tell where you are with your eyes closed, but it’s even harder to open them. Your body is covered by something soft and warm, and you can feel an awfully cold paw pad on your forehead. By the minute, your senses unlock, and you begin to hear a faint tapping. You never regain your sense of smell — it appears you have a stuffed nose. You try your hardest and finally manage to open your eyes.</p>Your vision is weak, and all you see at first is a dark figure. Their eyes are a bright amber color, wearing a grim expression, though his face lightens up when he looks over and sees your battle to regain yourself. He placed a hand on your forehead and smiled warmly, giving you the time to wake up at your own pace. Your eyes wander around the room, noting it as awfully familiar — in fact, you’re pretty sure you’ve woken up in this bed before, and it even smells like where you usually sleep.</p>You ask the figure where you are. “You’re in your room,” he replied, his voice familiar and soothing. “Are you okay?” You could see the worry in his eyes. You nod faintly and ask what happened. “You fell into the river. I got you back out, but you’d already passed out by then. I think you got a cold too.” Your head feels light, though every moment spent speaking with him made you more and more awake. You try to sit up in the bed, but he holds you down gently. “You need to lay down and rest. Are you hungry or thirsty? I’ll get you something warm.” You nodded. “Alright. Just stay here and I’ll be back as soon as possible.” As he left the room, you felt your eyelids getting heavy, and you soon fell asleep once again.</p>You were woken up again by a knocking sound. This time opening your eyes was much easier. The door to your room opened, and Alder walked in carrying a tray with a bowl of soup. He placed it on the table, “Here you go. This should help.” He helps you sit up and places the tray on your lap. You don’t need to be told much else, and you dig in quickly. You feel your body reinvigorating itself, warming you to your core. “How’s it taste?” You didn’t tell a word and focused on wolfing down the soup; “that is one way to answer.” the panther thought out loud.</p>You finished it quickly. In fact, you’d been so pre-occupied you hadn’t noticed how dark outside it was. How long had you been passed out for? You open your mouth to ask, but the panther places a finger on your lips to silence you, “Whatever questions you have, you should rest first. I’ll be staying in the room across from yours, so don’t worry. Focus on recovering, alright?” He leaned down and kissed you on the forehead. Like a magic spell, you found yourself falling asleep again not long after, filled with warmth.</p>You wake up the subsequent morning, feeling as fresh as ever. Was it the soup? Perhaps it had magic to help cure colds? Whatever it was, you felt better than ever, ready to begin a new day. When you told Alder later that day, he smiled and hugged you tightly.",
+                        "freeTrap": true,
+						"outcomes": [
+							{
+                                "parameter": "alder_interest",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+						]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You manage to bring yourself to the brink of consciousness, but you quickly go cold again. Your body is weak, you must try harder!",
+                        "outcomes": []
+                    }
+                }
+			},{
+				"id": "alder_room",
+                "title": "Alder's Room",
+                "subtitle": "Alder is staying at the Dormaus Inn for the time being. He probably wouldn’t mind if you visited him in his room.",
+                "type": "random",
+                "requirements": [
+					{
+						"parameter": "alder_connection",
+						"value": 1,
+						"comparison": "greater"
+					},{
+						"parameter": "gender",
+						"value": 1,
+						"comparison": "equal"
+					}
+				
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": {
+                        "text": "You knock on the panther’s door and wait for a response. You feel your stomach flutter in anticipation; he opens the door not long after, a lit cigarette in his mouth. His face beams up as he sees you, and he quickly speaks: “Ah, it's you! Come on in!”",
+                        "area": "hotel_alder",
+                        "outcomes": []
+                    }
+                }
+			},{
+                "id": "alder_05",
+                "title": "Perverted Panther",
+                "subtitle": "It’s strange… When you first saw Alder, you figured he’d be the rough, violent type, but he’s the exact opposite of that. You’ve been thinking about the first time you met more and more as of lately, each time bringing a tightness to your pants. You want to see him in his gear again… and possibly move to stage 2 of your relationship.",
+                "type": "random",
+                "requirements": [
+					{
+                        "parameter": "alder_interest",
+                        "value": 0,
+                        "comparison": "equal"
+					},{
+						"parameter": "alder_connection",
+						"value": 1,
+						"comparison": "equal"
+					},{
+						"parameter": "gender",
+						"value": 1,
+						"comparison": "equal"
+					}
+				
+                ],
+                "icon": "aldericon",
+                "results": {
+                    "success": {
+                        "text": "You knock on Alder’s door. You hear a couple of heavy footsteps before the door is opened. As if he’d read your thoughts, he was standing right there in front of you, decked out in leather from head to toe just like the first time you met him. You took a few steps backs from instinct — feeling intimidated at a primal level.</p>“I was about to go to your room and surprise you, but it seems that wasn’t needed…” The panther’s voice was deeper than usual, and his face was shaped into a smirk. “It seems it worked though.” He took a step forward and pointed down at your crotch, “And you look like you’re liking the view too, yes?” Looking down, you saw yourself standing with a full erection. No one was around to see, but it was still rather embarrassing to be standing in a hallway with an obvious bulge.</p>“So, are you going to feast yourself on my appearance, or do you want to come in and get the whole ‘package’?” he grabbed his groin as he said the last part. Even if you had rejected him, your dick might’ve just gravitationally pulled you into the room anyway. As you took a step forward, his smirk intensified; placing his paw on your head, he leaned in and whispered to your ear: “Good boy.” You felt a shiver run through your body — one that was chilling yet immensely arousing. You follow him into his room and closed the door behind you.</p>You were immediately hit by the strong scent of smoke and panther — which wasn’t too much of a surprise really. How he had managed to get it smelling this quickly was the real surprise. “Now, strip.” It caught you off guard so much that you froze. After seconds of silence, the panther snapped his finger, and like a spell, you found yourself able to move — feeling compelled at an instinctual level to strip down.</p>“There we go… I want to see all your cute curves when I play with you.” You can’t tell if he’s thrown you into a trance, or if you’re just so horny that you’ve lost control of your body. You want to obey him and do whatever he tells you to. Now strip naked inside the room, you find yourself blushing in embarrassment. The panther walks over and sits on his bed. He beckons you over with a finger, and you follow him like a puppy on a leash. Without a word, he points down at the floor, and you kneel down before him. He grabs your head and shoves your face into his crotch. You could smell his natural, manly musk. Even after removing his hand, you keep huffing his scent in.</p>“You’re definitely the kinky type, aren’t you?” Just as you’re about to reply, he hushed you and patted your head demeaningly. “You don’t need to speak. Just relax and be a good boy.” Those words send a shiver of arousal through your skin again. You’re distracted by something inside the panther’s pants hardening and pressing up against your face.</p>“Are you enjoying yourself? My cute little kitten…” You nodded instinctively, nuzzling your face against his crotch. You were rock hard, and the arousing scents all around you didn’t make it any easier on you. “Now, just sniffing is boring… I think it’s about time for you to have a taste…” He pulled your head back and began to slip his leather pants and his underwear down. Out came his black cock, covered in short barbs — short enough that you figure them to be more pleasurable than painful.</p>He doesn’t wait or give you any orders; he shoves his cock straight into your mouth and presses your head up to his crotch, filling your nose with a strong natural musk and your throat with his meat. You can tell from his erratic breathing that he’s enjoying your warm maw. He starts out slow, pulling and pushing his cock back and forth, warming himself up for later.</p>Unable to see much past his crotch fur, you don’t notice your face elongating and growing short black fur. With each thrust, a little bit of his essence — precum — enters you, subtly making you more and more like him. His thrusts speed up, and so does your transformation. You’re just now noticing the effect as your eyesight and sense of hearing sharpens — not to mention the musky scent growing stronger and more familiar to you.</p>Soon the panther is practically fucking you like a toy. You feel the black fur spread down your neck and to your chest. Your muscles strengthen wherever the fur is, and bit by bit your body is overtaken by your new figure. Your biceps and pecs grow to the same size as Alder’s, pink pads appear on your palm and fingertips, abs become visible on your stomach… As the effect reaches down to your crotch, you feel orgasmic as your cock reshapes itself to be just like Alder’s, barbs and all. It spreads down your legs to your feet, and finally, it’s over… In such a short time, you’ve become a panther not too different looking from Alder.</p>At this point, the panther begins thrusting even more erratically. He uses one of his leather boots to tease and grind into your new cock. You were hard before — now you felt like you could cum at any point. However, it was the panther fucking you that came. With a loud moan, he thrust violently into your throat, filling you up with his potent seed. You couldn’t breathe as he practically used you as a disposal pipe, thrusting a few more times as load after load filled your mouth and went down your throat. The flow stopped after a while, and you could hear Alder audibly panting in exhaustion above you.</p>“F-fuuck… Your face makes a good fucktoy, I should’ve used you like this the first time we met…” The thought of getting used like this by someone you didn’t know was oddly arousing, though knowing it was someone you loved doing it was better to you. “Do you want to keep going?”",
+                        "descriptionchange": "This adventurer is a tall black panther with a long and slender tail. Their eyes are a glowing amber color, and you can discern from their breath they’re a frequent smoker.",
+						"area": "hotel_alder",
+						"trapped_desc": "This adventurer is about to get laid by a hot, muscular panther.",
+                        "trapped": "It'd be rude to leave in the middle of sex.",
+                        "outcomes": [
+							{
+								"parameter": "alder_connection",
+                                "quantity": 1,
+                                "change": "set"
+							},{
+								"parameter": "species",
+								"quantity": 46,
+                                "change": "set"
+							}
+						]
+                    }
+                }
+			},{
                 "id": "lioness_place_m",
                 "title": "Your Master Calls",
                 "subtitle": "You can smell the lion, the one who owned you. You need him, desperately.",
