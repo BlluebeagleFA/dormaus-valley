@@ -79,6 +79,30 @@ var area = {
                     }
                 }
             },{
+				"id": "reset_alder",
+                "title": "Reset Alder",
+                "subtitle": "There's a shark in a wetsuit with a surfboard resting next to him. He gives off a chill aura, and he might be able to give you some ‘relationship advice.’"
+                "type": "random", //or random
+                "requirements": [                    
+                ],
+                "icon": "aldericong",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You’re hesitant to approach him, but after but a few nervous glances he stands up and walks over to you. “What’s wrong, man? You lookin’ real uncomfortable. I’ll listen to your worries, that’s what bros are for, ‘ey?” He places a hand on your shoulder, and like a game of Jenga, you break into tears. You explain to him how you’ve felt about your relationship with Alder, that you want to break it off with him, but you just can’t. Half of it was probably incomprehensible through your sobs and sniffs, but he listens attentively as if you were the only person in the world.</p>As you begin to calm down, he rubs your shoulder and speaks. “Bro it sounds like you’re just not compatible with each other. If you don’t want him to be your dude you don’t gotta date him. Just be honest man, he’ll be happier than if you keep lying. Believe me bro, I’ve gone through more breakups than you can fathom.” You already feel a little better, as if all your issues matter a little less now.</p>A woman comes up from behind and starts speaking. “I couldn’t help but overhear you two. Do you need any help?” You tried to respond, but you felt something clotting your throat at that moment. The shark was quick to reply in your place.</p>“Yeah, my buddy here is totally down ‘cuz they wanna break up with their boyfriend. Don’t that fancy book you keep writing in do stuff like that?</p>Lin smiled, bringing out her book, turning a few pages, and letting out a quiet ‘ah’ as she found what she was looking for. “It sure does! I’ll help you and your boyfriend forget all about each other. You might recall that you had a boyfriend, but you won’t remember who he was. Try not to go back there again.”</p>“That’s rad bro!” The shark laughed loudly. “Good luck to you bro, I’m waiting on a pal, so I gotta get back to my seat. See ‘ya around!” And with that, the shark returned to where he sat previously. Lin wrote something in her book, and you felt all your memories with Alder fade away, replaced with vague memories of a past relationship. Sadly, you forgot about Lin and the shark as well, and you never got to thank them for their help.",
+                        "outcomes": [
+                            {
+                                "parameter": "alder_connection",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "alder_interest",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "bemale",
                 "title": "Become Male",
                 "subtitle": 'You tire of your current gender.',
