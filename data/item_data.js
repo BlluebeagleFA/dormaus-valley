@@ -407,12 +407,12 @@ DV.Data.item_data = {
         value: 1,
         description: ["Bonacieux is well supplied with all of the tools he needs for this trip. He should be able to bail you out at least once if trouble arises."]
     },
-	saberhagen_cigarette: {
+	ritter_cigarette: {
         type: "item",
         icon: "cigarette",
-        title: "Saberhagen Cigarette",
+        title: "Cigaritter",
         value: 1500,
-        description: ["A cigarette rolled by none other than Saberhagen. The tobacco is infused with magic that helps your body recover from most wounds. Smoking can damage your lungs and cause cancer… but it’s magical; surely that won’t happen, right?"]
+        description: ["A cigarette rolled by Ritter. The tobacco is infused with magic that helps your body recover from most wounds. Smoking can damage your lungs and cause cancer… but it’s magical; surely that won’t happen, right?"]
     },
 	//Equipment
     magic_boots: {

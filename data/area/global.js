@@ -764,7 +764,7 @@ var global_area = {
                 "type": "random", //or random
                 "requirements": [
                     {
-                        "parameter": "nicotine",
+                        "parameter": "ritter_cigarette",
                         "value": 0,
                         "comparison": "greater" //default greater
                     },
@@ -777,7 +777,7 @@ var global_area = {
                 "icon": "cigarette",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
-                        "text": "You dig through your pockets for a while before finding it; the cigarette you bought from Saberhagen! It doesn’t take you long to find the lighter Alder gave you, and with a flick, you’ve got the cigarette lit up. All it takes is a single drag for your entire body to enter a calm and relaxed state. Whether it’s the magic or just nostalgia, you feel your body reinvigorated, just the same as the first time you smoked with Alder. In fact, any scratches, bruises, or wounds you have seem to heal, and you feel more confident in yourself than ever.</p>The cigarette doesn’t last for much more than 10 minutes, though to you it felt more like an hour. You can already feel your fingers getting tingly and your head getting light just minutes after, though it goes away after half an hour or so. You’re already looking forward to your next smoke. You can hear a voice in the back of your mind telling you how bad of a habit it is, but all your fond memories of smoking with Alder deafen it.",
+                        "text": "You dig through your pockets for a while before finding it; the cigarette you bought from Ritter! It doesn’t take you long to find the lighter Alder gave you, and with a flick, you’ve got the cigarette lit up. All it takes is a single drag for your entire body to enter a calm and relaxed state. Whether it’s the magic or just nostalgia, you feel your body reinvigorated, just the same as the first time you smoked with Alder. In fact, any scratches, bruises, or wounds you have seem to heal, and you feel more confident in yourself than ever.</p>The cigarette doesn’t last for much more than 10 minutes, though to you it felt more like an hour. You can already feel your fingers getting tingly and your head getting light just minutes after, though it goes away after half an hour or so. You’re already looking forward to your next smoke. You can hear a voice in the back of your mind telling you how bad of a habit it is, but all your fond memories of smoking with Alder deafen it.",
                         "outcomes": [
 							{
                                 "parameter": "nicotine",
@@ -790,7 +790,44 @@ var global_area = {
                                 "change": "sub"
                             },
                             {
-                                "parameter": "saberhagen_cigarette",
+                                "parameter": "ritter_cigarette",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },
+			{
+                "id": "smoke_cigarette_addicted",
+                "title": "Smoke Cigarette",
+                "subtitle": "Now would be a good time to have a smoke. Your troubles will wash away, literally — you’re sure of that.",
+                "global": true,
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "ritter_cigarette",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "nicotine",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "cigarette",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You dig through your pockets for a while before finding it; the cigarette you bought from Ritter! It doesn’t take you long to find the lighter Alder gave you, and with a flick, you’ve got the cigarette lit up. All it takes is a single drag for your entire body to enter a calm and relaxed state. Whether it’s the magic or just nostalgia, you feel your body reinvigorated, just the same as the first time you smoked with Alder. In fact, any scratches, bruises, or wounds you have seem to heal, and you feel more confident in yourself than ever.</p>The cigarette doesn’t last for much more than 10 minutes, though to you it felt more like an hour. You can already feel your fingers getting tingly and your head getting light just minutes after, though it goes away after half an hour or so. You’re already looking forward to your next smoke. You can hear a voice in the back of your mind telling you how bad of a habit it is, but all your fond memories of smoking with Alder deafen it.",
+                        "outcomes": [
+                            {
+                                "parameter": "might",
+                                "quantity": 2,
+                                "change": "sub"
+                            },
+                            {
+                                "parameter": "ritter_cigarette",
                                 "quantity": 1,
                                 "change": "sub"
                             }

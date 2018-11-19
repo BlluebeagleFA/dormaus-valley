@@ -422,14 +422,14 @@ var area = {
                 "icon": "cigarette",
                 "results": {
                     "grizzsex": {
-                        "text": " “While I’m happy to give you some, my plants haven’t been doing well as of lately. I can’t make you a better deal than 20 bloodstones for 1 cigarette.” You tell him that it’s fine — ‘just one of his is better than a whole pack of generics’ is what you told him, more or less; It had him blushing and stumbling around as he looked for it. You hand him 20 bloodstones, and he trades you a cigarette. Just looking at it makes your fingers tingle a little.</p>“Say hello to Alder from me!” the cat exclaimed as you left to go about your day.",
+                        "text": "“You know, these are pretty valuable… Are you sure you can afford them?” You tell him that you can definitely afford them. “Well, I can get you one for about… 20 bloodstones. Make it quick.” You can feel your fingers tingle at just the thought… you hurry and throw some bloodstones on the table. He hands you a pack and tells you to scram. “And don’t think about smoking them here, they reek.”</p>A couple of minutes later you realize how light the package is. When you open it you find… a single cigarette! What a scam! To be fair, he never said he was giving you a whole package, just ‘one.’",
                         "outcomes": [
                             {
                                 "parameter": "bloodstone",
                                 "quantity": 20,
                                 "change": "sub"
                             },{
-                                "parameter": "saberhagen_cigarette",
+                                "parameter": "ritter_cigarette",
                                 "quantity": 1,
                                 "change": "add"
                             }

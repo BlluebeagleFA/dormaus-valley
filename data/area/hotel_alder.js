@@ -109,7 +109,7 @@ var area = {
                     },
                     {
                     	"input": "Where do you get your cigarettes?",
-                        "output": "“I get most of my cigarettes from Saberhagen-  wait, haven’t I told you that already? To add to that though, I do try out local varieties if I go somewhere new.”"
+                        "output": "“I get most of my cigarettes from that other cat who visits Saberhagen’s tent a lot — Ritter, was it? I forget his name a lot for some reason…”"
                     },
                     {
                     	"input": "Does anyone ever complain about you smoking?",
