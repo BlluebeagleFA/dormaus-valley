@@ -81,7 +81,7 @@ var area = {
             },{
 				"id": "reset_alder",
                 "title": "Reset Alder",
-                "subtitle": "There's a shark in a wetsuit with a surfboard resting next to him. He gives off a chill aura, and he might be able to give you some ‘relationship advice.’"
+                "subtitle": "There's a shark in a wetsuit with a surfboard resting next to him. He gives off a chill aura, and he might be able to give you some ‘relationship advice.’",
                 "type": "random", //or random
                 "requirements": [                    
                 ],
