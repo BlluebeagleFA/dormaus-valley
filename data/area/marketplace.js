@@ -399,6 +399,43 @@ var area = {
                         ]
                     }
                 }
+			},{
+                "id": "saberhagen_cigarette",
+                "title": "Purchase Cigarettes",
+                "subtitle": "If you give him some bloodstones, Saberhagen might be willing to trade you some of his magical cigarettes.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "alder_connection",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "bloodstone",
+                        "value": 19,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "cigarette",
+                "results": {
+                    "grizzsex": {
+                        "text": "“You know, these are pretty valuable… Are you sure you can afford them?” You tell him that you can definitely afford them. “Well, I can get you one for about… 20 bloodstones. Make it quick.” You can feel your fingers tingle at just the thought… you hurry and throw some bloodstones on the table. He hands you a pack and tells you to scram. “And don’t think about smoking them here, they reek.”</p>A couple of minutes later you realize how light the package is. When you open it you find… a single cigarette! What a scam! To be fair, he never said he was giving you a whole package, just ‘one.’",
+                        "outcomes": [
+                            {
+                                "parameter": "bloodstone",
+                                "quantity": 20,
+                                "change": "sub"
+                            },{
+                                "parameter": "ritter_cigarette",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             },{
                 "id": "market_random",
                 "title": "Wander the Market",

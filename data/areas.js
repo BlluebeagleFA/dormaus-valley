@@ -2,6 +2,7 @@ DV = typeof(DV) === 'undefined' ? {} : DV;
 DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 
 DV.Data.areas = {
+	"debug": "./data/area/debug.js",
 	"bar_rooms": "./data/area/bar_rooms.js", //DORMAUS VILLAGE HERE
 	"bar": "./data/area/bar.js",
 	"dormaus_streets": "./data/area/dormaus_streets.js",
@@ -14,6 +15,7 @@ DV.Data.areas = {
 	"mayors": "./data/area/mayors.js",
 	"hotel": "./data/area/hotel.js",
 	"hotel_rooms": "./data/area/hotel_rooms.js",
+	"hotel_alder": "./data/area/hotel_alder.js", //Alder's Room. Accessible after his main scenario is over.
 	"churchyard": "./data/area/churchyard.js",
 	"church": "./data/area/church.js",
 	"resetshrine": "./data/area/resetshrine.js",

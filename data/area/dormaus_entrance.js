@@ -271,6 +271,31 @@ var area = {
                     }
                 }
             },{
+			"id": "reduce_nicotine",
+                "title": "Ask Lin to Help With Nicotine",
+                "subtitle": "“Goodness, you want to stop smoking? Well, I have something that can help with that.” Lin digs out a patch from her pocket. “Just put this on your arm, and it’ll help you lose the addiction.” True to her words, the instant you put it on, you feel like you need to smoke a little less.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "nicotine",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "nicotine",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": ",
+                        "outcomes": [
+                        	{
+                                "parameter": "nicotine",
+                                "quantity": 1,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "mr_bat_festival",
                 "title": "Mr Bat, Melancholy",
                 "subtitle": "Something unusual draws your attention. The festival is drawing in, and the night is getting dark, but there is one tiny, solitary light high up on the bluff above town. Driven by curiosity, you climb up onto the rocky mountainside and begin carefully walking up the rim of the teetering cliffside that surrounds the town. You push through brambles and bushes, and narrowly avoid slippery scree that falls and tumbles when you step on it. Finally, you reach the tiny light. High above the town, there is a clear outcropping covered in grass. Sitting on it is the familiar, lanky form of Mr Bat.</p>He is holding a small lantern in his lap, and he looks up at you with a wry expression. \"I should have known you would find me. You never fail to surprise. Nonetheless, I find myself in the doldrums this night, and would make poor company. I advise you to go enjoy the festival elsewhere\", he says.",
