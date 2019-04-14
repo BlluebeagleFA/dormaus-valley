@@ -142,25 +142,6 @@ var area = {
                     }
                 }
             },{
-                "id": "tempmagic",
-                "title": "The Riddsfgdver Crocodiles",
-                "subtitle": "The ",
-                "type": "random", //or random
-                "requirements": [
-                    
-                ],
-                "icon": "vorefetish",
-                "results": {
-                    "success": { //success and fail, rare success, rare fail, or random
-                        "text": "the",
-                        "outcomes": [{
-                            "parameter": "magic",
-                            "quantity": 150,
-                            "change": "set"
-                        }]
-                    }
-                }
-            },{
                 "id": "tootter",
                 "title": "Travel to Otterton",
                 "subtitle": "You find the same ship you travelled on, which luckily is just preparing to head out. They are happy to have you on board again for some more work, and you take your place again.</p>Time passes. You are waiting on the boat, as you have been for days, when you hear the cawing and screeching of seagulls. You pull yourself up and look out across the sea, and on the northern horizon you see the distant mountains of Dormaus Valley. \"Land ho!\", someone calls out, and not long after that you are pulling back in to the ports of Otterton.",
