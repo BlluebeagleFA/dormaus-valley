@@ -181,6 +181,23 @@ var area = {
                     }
                 }
             },{
+                "id": "plush_vore",
+                "title": "Unusual Cargo",
+                "subtitle": "Along with the usual crates and barrels at the side of the pier ready to be transported, there's one item that stands out. A huge teddy bear, practically the size of a real bear. It has thick soft fur and a grinning, slightly sinister looking face despite its big innocent glass eyes. It is flopped down next to a crate with a big ribbon around it...and there are piles of discarded clothing around its feet. Its huge muzzle looks sort of...hungry.",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "vorefetish",
+                "results": {
+                    "grizzpay": {
+                        "text": "You walk up closer to the huge bear, feeling entranced by its softness and cute appearance. You stroke your hand across the thick plush fur, and wonder who it could be a gift for. The bear's massive round belly feels so good to touch. You press into it, rubbing and squeezing and stroking it as you feel the bouncy plush stuffing within. The plush's head leans down slightly against you, and you look up to see its grinning squishy muzzle open. It has thick, blunt plastic teeth and a massive pink fabric tongue. There is a loud, rumbling sound, and it suddenly belches. A pair of sailor boots, still with their socks, pop out from the bear's mouth and fall onto the planks along with the other discarded clothes.</p>The bear's huge mitten-like hands move around behind you, stroking over your back and squeezing you firmly against its belly. \"Not full yet, little stuffing. Still need some more lovely mindless fluffy plushness inside me\", the bear says. It's voice is deep and calm and cheerful, the tone completely mismatching with what it is saying. Does it want to...eat you? You try to back off, but the bear slowly licks its comfy soft tongue along your face. You feel dizzy and sleepy, and start to giggle as you lay down against its belly.</p>It's so warm and snuggly and cuddly. You feel filled with happiness and calm contentment, as the bear rubs and strokes your head with its massive plush hand. \"You'll be so comfy inside me, stuffing! Won't it be nice to give up all those worries and cares? No need to do anything anymore, no need to move around and think and tire yourself out. Just being snug inside me, letting yourself crumble apart into soft white fluff. No more thinking, no more cares. Such a nice lovely stuffing pile...\", the bear croons. You nod and squeeze tighter against the plush. It sounds nice...you want to be plush. You want to be eaten.</p>The bear pats your head, and you look up to see its mouth stretched wide and invitingly open. You crawl up, over its belly and start to push your head against its mouth. Feeling the fabric stretch a little as you wiggle and crawl deeper into its throat. The smooth teeth rubbing against you, while dark squishy comfort surrounds your body. Your chest wriggles over its tongue, and it uses its big plush hands to pat and rub your rump as it pushes you deeper inside. With most of your body tightly constricted by its fabric throat, the bear just needs to lift its head, and you feel yourself start to slip down, being dragged in by gravity.</p>You are squeezed from all sides, trapped in darkness as you are gulped down further and further. Your mind is fuzzy and dizzy, making it hard to even fully focus on what is happening. Soon, you feel yourself getting pushed out into a new space, your body falling into a huge pile of soft, thick fluffy cotton. The white fluffy material surrounds you completely, tickling against you and stroking over your body. You can feel something squish and push down on you, rubbing and stroking you as the bear massages you through its own belly with its huge paws. You sigh and relax, feeling like you're floating in a cloud. Your skin slowly starts to bleach out, losing all of its colour and hue as it turns fresh, linen white. You feel soft and fuzzy and dumb, your brain a mess of random feelings of comfort and contentment. Gradually, your flesh begins to get softer and softer, becoming fuzzy and frizzy at the edges as it transforms into cotton. Your insides feel light and soft, as you start to realise you are no longer breathing. Your heart is not beating, all of your organs are being consumed by the cotton and becoming indistinct fluffy stuffing.</p>Your body moves slower and starts to go numb, leaving you with just an endless warmth all through you. The cottony feeling spreads more, as your limbs fall apart and crumble. You close your eyes and sigh with bliss, as your facial features melt away into the fluffy stuffing, until finally there is nothing left but more fabric inside the big bear's belly.</p>After a few more moments of massaging and rubbing itself, the bear belches again, sending your clothes bouncing out from its mouth into the pile. It grins as it sees its big round body finally stretched out fully. \"There we go! Now I can be the perfect present!\", it giggles. It leans back against a crate and flops, its stretched grin becoming fixed and its body going limp, as it becomes just a massive normal cuddly toy...for now.",
+                        "trapped_desc": "There is a huge cuddly plush toy here, its belly stretched out with stuffing.",
+                        "trapped": 'You have been digested and transformed into an indistinct mass of soft plush stuffing.',
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "docks_random",
                 "title": "Walk along the docks",
                 "subtitle": "This is the busiest place in the village. If anything's happening, it happens here.",
@@ -218,6 +235,21 @@ var area = {
                                 "change": "add"
                             }
                         ]
+                    }
+                }
+            },{
+                "id": "tomakarna",
+                "title": "Travel to Makarna",
+                "subtitle": "Luckily for travellers, there is a small cargo ship travelling to and from Makarna for the next few weeks. They're happy to have more crew on board.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You board the ship, and hunker down to swabbing the decks to pay for your long journey to the southern continent.</p>Much later, from above you, in the crow's nest, there is a bellowing cry of \"Land ho!\". After weeks of travel, you are approaching Makarna! The hot sun beats down on you as you look out to the shore. High stone walls of yellow-bronze brick stand tall, growing larger as the ship gets closer. Beyond them, you can see many buildings in unusual shapes and configurations. Ziggurats, like pyramids with stepped tiers, jut out into the sky, and smaller blocky buildings cluster at their feet like servants bowing to a giant. The land beyond the huge city is a gleaming golden hue, a flat plain going on seemingly forever. The ship is approaching the mouth of an enormous river, the delta of which stains the golden plains a dark, fertile black. The river bisects the city in two, but each half is larger than any other city you have seen on this world. When the ship pulls into port, you are hit by the sounds and smells of a huge and bustling metropolis. A scurry of workers swarm the long docks, tying up and preparing the boat, while others drag up carts and wheelbarrows. All of them move aside to allow passage to several tall and well-dressed lions, who start to approach the ship when the gangplank is lowered.</p>You and the other workers are forced to stay back while the captain discusses his travel passes with the lion nobles, before finally they depart and allow you to leave and walk into the hot, bustling air of the city of Makarna.",
+                        "area": "makarna_dockyard",
+                        "outcomes": []
                     }
                 }
             }

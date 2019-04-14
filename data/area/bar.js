@@ -132,6 +132,27 @@ var area = {
                     }
                 }
             },{
+                "id": "hammernail",
+                "title": "Hammer and Nail",
+                "subtitle": "When you enter the bar, your first reaction is to think that some sort of terrifying monster has invaded the building. It takes you a moment to realise that it is a person, leaning one arm on the bar. She is an enormous grizzly bear, taller even than Grizz, wearing mismatched leather armour and carrying an absurdly massive ultra greatsword on her back.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "grizz_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "Orc Absinthe": {
+                        "text": "The bear slams her fist down on the bar. \"Another! Something stronger this time, not this horse's piss!\", She roars. Grizz silently starts to pour a tankard of ale from the tap, and she stares at him as it slowly fills. One of her massive claws scratches a groove in the wooden bar top, and she brushes her hand through her short-cropped hair.</p>\"Come on, Hammer. How can you stand here wearing your prissy little apron and pour drinks for soft fingered city rats?\", She growls. Grizz ignores her, and she sighs. \"Don't you miss the thrill of battle? The rush of the blood rage, the sound of your enemies beneath your feet. We could own this valley!\"</p>Grizz slides the tankard over towards her across the bar. She glares at him sullenly and downs it in one massive gulp. When she slams the tankard down, the metal visibly dents and bends from the force. \"Fine, fine. You don't want to play, I can't hang around in here all day, or I'll go soft. I need some fun for the night though...\", she says. She looks around, then grins at you before swiping towards you and lifting you up in one powerful hand. Your whole body dangles off the ground before she hugs her other arm around you and shoves you against her furry, powerful chest. You hear a deep, low rumbling sound, one so loud that it makes the floor shake. Grizz is growling, his muzzle bared into an ursine snarl. The bear woman slowly grins. \"So there is some fire left in you, after all, Hammer! Feeling jealous? Wrestle me for it, and if you win I'll let you keep this little toy\", she says.</p>Grizz places one of his massive furry arms on the table, and the other bear growls as she matches it with her own. You see them both grit their teeth, the muscles on their arms bulging and straining. They wobble and shake from one side, then the other. Grizz pants and growls, slowly but surely bending the wrestle in his favour...and then with a sudden, shocking thump, the bear woman slams his arm down so hard that he bellows in pain and stumbles. She stands up, and drops you, while Grizz pants and clutches his wrist.</p>\"Never mind. I don't feel like it anymore. You can keep your pet\", The bear woman snarls. Despite her angry tone, her face is furrowed with frustration and sadness. She storms out of the bar, and Grizz sighs deeply before returning to wiping his countertop.",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "bar_random",
                 "title": "Hang Out",
                 "subtitle": "Interesting info can always be found at a bar, right?",

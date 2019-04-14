@@ -14,6 +14,10 @@ var area = {
                         "parameter": "pistol",
                         "value": 0,
                         "comparison": "greater" //default greater
+                    },{
+                        "parameter": "festival_time",
+                        "value": 2,
+                        "comparison": "greater" //default greater
                     }
                 ],
                 "icon": "priesticon",

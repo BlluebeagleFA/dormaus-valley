@@ -445,6 +445,10 @@ div.theft {
 	background-image: url("../img/silverkey.png");
 }
 
+.halfkey {
+	background-image: url("../img/halfkey.png");
+}
+
 .festival {
 	background-image: url("../img/festival.png");
 }
@@ -473,6 +477,14 @@ div.theft {
 	background-image: url("../img/saberhagen_b.png");
 }
 
+.rittericon {
+	background-image: url("../img/rittericon.png");
+}
+
+.slavetiger {
+	background-image: url("../img/slavetiger.png");
+}
+
 .saberhagenicong {
 	background-image: url("../img/saberhagen_g.png");
 }
@@ -499,6 +511,10 @@ div.theft {
 
 .drumicon {
 	background-image: url("../img/drumicon.png");
+}
+
+.kristophb {
+	background-image: url("../img/kristophb.png");
 }
 
 .grizzicong {
@@ -609,6 +625,26 @@ div.theft {
 
 .rufo {
 	background-image: url("../img/rufo.png");
+}
+
+.aldericon {
+	background-image: url("../img/guestpanther.png");
+}
+
+.demon {
+	background-image: url("../img/demonwing.png");
+}
+
+.angel {
+	background-image: url("../img/angelwing.png");
+}
+
+.crocicon {
+	background-image: url("../img/crocicon.png");
+}
+
+.slaveicon {
+	background-image: url("../img/slaveicon.png");
 }
 
 .suppliess {
@@ -769,6 +805,12 @@ div.theft {
 .eventtext {
     padding: 20px;
     background-color: #efeeed;
+}
+
+.eventtext iframe {
+    height: 500px;
+    width: 100%;
+    border: none;
 }
 
 #box1 {

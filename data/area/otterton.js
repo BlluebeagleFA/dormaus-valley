@@ -188,6 +188,66 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "telemakarn",
+                "title": "Teleport to Makarna",
+                "subtitle": "Use your magic to warp to Makarna",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "teleportation",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+                        "area": "makarna_dockyard",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "teledorma",
+                "title": "Teleport to Dormaus",
+                "subtitle": "Use your magic to warp to Dormaus",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "teleportation",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+                        "area": "dormaus_entrance",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "telenorth",
+                "title": "Teleport to the North",
+                "subtitle": "Use your magic to warp to the strange voice calling to you in the deep, frozen north",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "teleportation",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You focus on the tug you felt from the north when you were initially learning to teleport. It takes very little effort to find it again, and you are quickly swept away by its call. Called north. Where it fell...",
+                        "area": "tundra",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

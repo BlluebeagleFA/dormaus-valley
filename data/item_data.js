@@ -65,6 +65,12 @@ DV.Data.item_data = {
         title: "Vicious [Connection]",
         description: ["Vicious is slowly forming a strange, deranged obsession with you."]
     },
+    rufo_connection: {
+        type: "attribute",
+        icon: "rufo",
+        title: "Rufo [Connection]",
+        description: ["Rufo, the captain of the guard in Makarna, has feelings for you."]
+    },
 	alder_interest: {
         type: "attribute",
         icon: "aldericon_g",
@@ -80,6 +86,18 @@ DV.Data.item_data = {
         description: [
 						"You and Alder are in a budding relationship. You feel a flutter in your stomach when you think about seeing him again.",
 						"You and Alder are boyfriends. You smile whenever you think of him, and every time you sleep by yourself, you feel a little more lonely than usual; the thought of seeing him again makes you feel warm all over though, so it's not too bad."]
+    },
+    croc_connection: {
+        type: "attribute",
+        icon: "crocicon",
+        title: "Reputation [Crocodiles]",
+        description: ["You have earned some respect from the crocodile tribe in Makarna city"]
+    },
+    slave_connection: {
+        type: "attribute",
+        icon: "slaveicon",
+        title: "Reputation [Slaves]",
+        description: ["You have earned a reputation for kindness among the slave class in Makarna city"]
     },
     flute_master: {
         type: "attribute",
@@ -109,7 +127,13 @@ DV.Data.item_data = {
         type: "attribute",
         icon: "jackicong",
         title: "Jack [Friend]",
-        description: ["You have befriended a crude, smelly jerk of a raccoon."]
+        description: ["You have befriended a crude, smelly jerk of a raccoon.", "Jack has asked you to get him some socks from a Horn law enforcement official and bring them to his base.", "Jack has agreed to show you some of the secrets in Hornloft prison as thanks for giving him those socks."]
+    },
+    kristoph_friend: {
+        type: "attribute",
+        icon: "kristophb",
+        title: "Kristoph [Friend]",
+        description: ["You are getting closer to Kristoph, a healing hermit in the deep northern tundra."]
     },
     mikhail_interest: {
         max: 5,
@@ -179,6 +203,8 @@ DV.Data.item_data = {
             "You are a massive grey rhinocerous with huge muscles and a heavy horn.", //48
             "You are a stocky, fuzzy badger with striped fur and a portly round belly.", //49
             "You are a living piñata, a horselike being with paper strips for fur.", //50
+            "You are a large shaggy reindeer, with powerful branching antlers.", //51
+            "You are a smooth, scaly lizard creature, with a long powerful tail.", //52
             ]
     },
     gender: {
@@ -265,6 +291,12 @@ DV.Data.item_data = {
         icon: "thevoid",
         title: "Sparkle",
         description: ["You have learned the spell Sparkle. It is almost completely useless, but you can use it on someone in chat by typing /sparkle username"]
+    },
+    teleportation: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Teleportation",
+        description: ["You have learned the spell Teleportation. With this knowledge, you can cross great distances, but only at the boundaries of cities and towns"]
     },
     time: {
         type: "attribute",
@@ -575,6 +607,20 @@ DV.Data.item_data = {
         },
         description: ["This ancient stone tablet is engraved with a long-forgotten language. It has an aura of danger, and can be wielded as a shield, if you hold it with both hands."]
     },
+    half_key: {
+        type: "item",
+        icon: "halfkey",
+        title: "Half Key",
+        value: 500,
+        slot: "weapon",
+        attributes: {
+            charm: 1,
+            might: 1,
+            stealth: 1,
+            magic: 1
+        },
+        description: ["A peculiar key, given to you in a drunken haze by Jack. You should probably return it to him eventually when you think of a way to do so that won't embarrass him too much. Despite looking like gold, the material is sturdy and scratch resistant. It seems like there is a missing piece to it. At the top is engraved the words 'THE WORLD'. It makes you feel strange when you hold it."]
+    },
     ace_boots: {
 		type: "item",
 		icon: "boots_1",
@@ -598,6 +644,17 @@ DV.Data.item_data = {
 		},
 		description: ["These warm socks smell strongly of Mikhail the dog's warm, masculine scent. They wiggle and move very slightly, suggesting they may have once been adventurers. The scent is strangely appealing."]
 	},
+	vicious_socks: {
+        type: "item",
+        icon: "socks_1",
+        title: "Vicious's Socks",
+        value: 20,
+        slot: "feet",
+        attributes: {
+            might: 1
+        },
+        description: ["Vicious's socks, torn from his claws and splattered with blood. They make you feel like a scary psycho just like him."]
+    },
 	slutty_shirt: {
 		type: "item",
 		icon: "shirt_1",
@@ -725,6 +782,18 @@ DV.Data.item_data = {
             might: 3
         },
         description: ["A formerly mighty black stallion, bulging with muscle but still only a shadow of his formerly dominant self."]
+    },
+    slavetiger: {
+        type: "item",
+        icon: "slavetiger",
+        title: "Tiger Slave",
+        value: 50,
+        slot: "ally",
+        attributes: {
+            might: 2,
+            stealth: 1
+        },
+        description: ["This tiger warrior's will has been utterly crushed by black magic. He is obedient, but a shadow of his former self."]
     },
     goblins: {
         type: "item",

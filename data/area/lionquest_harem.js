@@ -121,7 +121,7 @@ var area = {
                         "comparison": "equal" //default greater
                     }
                 ],
-                "icon": "rufoicon",
+                "icon": "rufo",
                 "results": {
                     "grizzsex": {
                         "text": 'It is late at night when you are stirred from your sleep by clanks and whispers outside. Curious, you creep over to the doorway, and listen in. Two voices are speaking in hushed whispers, one old and rough, and one younger and deep. "The situation is getting worse, Rufo. The hyenas are skirmishing with our soldiers every week, and tigers are building up to something, I\'m sure of it. Every time I see that jungle of theirs my fur stands on end", the younger man says. "You have to trust in Leonar\'s judgement. He may not be his father, but he is our king and we must show him allegiance", says the older man. "Sometimes I wish you were the king instead, Rufo", mutters the younger man. There is a thump, and a grunt of pain. "Never let me hear you say that again, boy! Get back to your post", the older man snarls. You hear the clanking of someone leaving, then a resigned sigh from the older male. "I\'m not letting another good man be charged for treason", he says to himself. Then, in a quieter whisper, "Give me the strength to do what is right, Erina." There is nothing further, and you sneak back to your bed.',
@@ -177,6 +177,10 @@ var area = {
                                 "parameter": "time",
                                 "quantity": 0,
                                 "change": "set"
+                            },{
+                                "parameter": "rufo_connection",
+                                "quantity": 1,
+                                "change": "add"
                             }
                         ]
                     }

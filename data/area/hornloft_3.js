@@ -285,6 +285,31 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "jack_meet",
+                "title": "Meet An Out-Of-Place Raccoon",
+                "subtitle": "You have been at the prison long enough now to establish a routine. Days come, days go, and everything passes by the same. The same inmates, the same chores, the same eternal, unchanging cold weather. All except one thing - you keep seeing a racoon here and there, talking to the other prisoners on certain days but not present during lineup and who you have never seen in a cell.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "jack_friend",
+                        "value": 0,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "jackicon",
+                "results": {
+                    "grizzsex": {
+                        "text": "The next time that you see the racoon, you decide to go investigate. You spot him at the canteen, sitting with the Polar Gang and playing cards. You take a seat next to the polar bear and ask to be dealt in. The racoon grins at you and flicks a few cards your way.</p>They're playing poker, for piles of small pebbles representing work hours. The racoon is good, too. You end up losing the hand when you call his bluff only to discover he had a flush, after three rounds of bluffing on junk cards. He gives you a big, slightly crooked grin, and as he pulls his winning pile of pebbles over, you notice that the symbol on his prison uniform is drawn on with paint, instead of embroidered like everyone else's.</p>\"No hard feelings kid, you have to wake up pretty damn early in the day to get one over on Jack\", he says.</p>With gambling for work hours, it would typically mean you need to cover that prisoner's chores if you lose. However, after the game, Jack takes you aside to chat. He's short and scruffy, with wild and unkempt hair and a glint in his eyes that makes it seem like he's always playing a practical joke of some kind. \"So, I got you for a few hours of time, eh? Well, I got no need for prison chores, but when you get out of here, maybe we could meet up at my place, and I could show you a few tricks. I always need a good patsy!\", he says.</p>His hand strokes along your side and pats your rear for a moment, and he gives you a wink. He gives you directions to his hideout near Otterton, which involves going east from the windy pass and along the high rocks there to a hidden base. You memorise the instructions for later.",
+                        "outcomes": [
+                            {
+                                "parameter": "jack_friend",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

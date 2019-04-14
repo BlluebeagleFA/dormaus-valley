@@ -4,7 +4,46 @@ var area = {
         "header": "The Two Feathers Inn",
         "subheader": 'The inn is a clean and homely building. The walls are white with fresh paint, and some effort has been put into decorating them with photographs and woodcuts. From the ceiling, a small but pretty chandelier is lighting the room.',
         "events": [
-        	{
+            {
+                "id": "askcedric",
+                "title": "Ask for Advice from Cedric",
+                "subtitle": "The owl innkeeper at the Two Feathers has a reputation for knowing everything that is going on in the region. He could get you up to date on the latest rumours. If you ask again every now and then, he could have more news.",
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "default",
+                "results": {
+                    "Teddy Complaints": {
+                        "text": "\"I hear that the mayor has blocked any new digging licenses lately. A shame, with one of those you could go hunting for treasure in the caves east of Turner Farm. Maybe if you made friends with a cat, he would be more open to granting you one? The old tyrant is a bit of a speciesist, you see.\"",
+                        "outcomes": [
+                        ]
+                    },
+                    "Flute's Pitches": {
+                        "text": "\"I have heard you tell that the King of Makarna, Leonar, will be in town soon. He is coming south from a meeting at Horn, and after that, he will be getting on a boat from Otterton and travelling back to Makarna. You should keep an eye out for him, I hear he likes fine art and submissive types, so if you like the sound of that, I bet he might be at the art store.\"",
+                        "outcomes": []
+                    },
+                    "Alakazam": {
+                        "text": "\"Word on the street is the priest, Bonacieux, has a big problem that he needs help with. No ordinary help, though, he needs a professional. If you have been exploring in the caves successfully, you might be just what he is looking for.\"",
+                        "outcomes": []
+                    },
+                    "4": {
+                        "text": "\"You hear that the mayor has a deal with Horn now? They are sending all our criminals up to Hornloft Prison. I would like to go give him a piece of my mind on that, but that would only end up with me on a one-way trip up North! Perhaps you're braver than I, though.\"",
+                        "outcomes": []
+                    },
+                    "5": {
+                        "text": "\"There are rumours of bandits on the windy pass north of Otterton. Odd rumour though, I heard that the bandit takes pity on people who don't have any coins. Even befriends them! Odd behaviour for a violent thug.\"",
+                        "outcomes": []
+                    },
+                    "6": {
+                        "text": "Have you heard about the Eastwood forests? They call it that because there's a mountain between here and Westwood, and the half of the forest on our side of the mountain is Eastwood. The Westwood wolves have to build a bar there for travellers crossing the mountain path. If you are interested I'd try heading northwest from Otterton.",
+                        "outcomes": []
+                    },
+                    "7": {
+                        "text": "\"The festival is getting close again this year. If you are interested in helping out, there is work to be done at the farm, pumpkin patch, and markets. You might be surprised who is out and about when the festival gets close!\"",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "hotel_random",
                 "title": "Wait in the Lobby",
                 "subtitle": "They have a selection of books and there is a nice breeze to relax with.",

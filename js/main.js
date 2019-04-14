@@ -479,6 +479,8 @@ function main(err,session) {
     });
     
     $("#box1").on("click", "input.endevent", function() {
+        window.sessionStorage.setItem('twinereset', "FALSE");
+        console.log(window.sessionStorage.getItem('twinereset'));
         displayArea(player.area);
     });
     
@@ -1020,16 +1022,31 @@ function main(err,session) {
             }
             
             $("#box1").empty();
-            $("#box1").append(
-                '<div class="eventdata">' +
-                '<div class="eventiconholder">' +
-                '<div class="eventicon ' + event.icon + '"></div>' +
-                '</div>' +
-                '<div class="eventtext">' +
-                '<p>' + outcome.text + '</p>' +
-                '</div>' +
-                '</div>'
-            );
+            
+            if (outcome.html) {
+                $("#box1").append(
+                    '<div class="eventdata">' +
+                    '<div class="eventiconholder">' +
+                    '<div class="eventicon ' + event.icon + '"></div>' +
+                    '</div>' +
+                    '<div class="eventtext">' +
+                    '<iframe id="iframe" src=' + outcome.html + '></iframe>' +
+                    '</div>' +
+                    '</div>'
+                );
+            } else {
+                $("#box1").append(
+                    '<div class="eventdata">' +
+                    '<div class="eventiconholder">' +
+                    '<div class="eventicon ' + event.icon + '"></div>' +
+                    '</div>' +
+                    '<div class="eventtext">' +
+                    '<p>' + outcome.text + '</p>' +
+                    '</div>' +
+                    '</div>'
+                );
+            }
+            
             if (event.stat) {
                 $("#box1").append(
                     '<div class = "statboost">' +

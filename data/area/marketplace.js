@@ -437,6 +437,41 @@ var area = {
                     }
                 }
             },{
+                "id": "teleport",
+                "title": "Experiment with Teleportation",
+                "subtitle": "Once or twice, you have seen Saberhagen disappear or reappear at his tent, in a swirl of his cloak. When you ask him what he was doing, he explains that it is transport magic, a challenging but rewarding form of spell that can cross considerable distances in the blink of an eye. That would be useful, but he warns you of the terrible danger it can have to the untrained.",
+                "type": "statcheck", //or random
+                "stat": "magic",
+                "difficulty": 100,
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "teleportation",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You ask Saberhagen to teach you how to teleport like he can, and at first he nervously resists. \"Oh goodness, well I am really happy that you're taking an interest in magic, but that's an awfully high level spell\", he says. You ask him again, and take hold of his hand gently, before petting and squeezing it. He makes a little squeaking noise and blushes hotly, his whiskers twitching.</p>\"Oh! Gosh! Well, um, I suppose if you are really sure...\", he says, wiggling a little as you squeeze his hand. He asks you to return the next day when he has time to set up, and you see him sneakily hold his hand close to his chest as you leave.</p>You return the next day and he takes you into his tent, where he has drawn out a chalk circle on the ground, with some arcane mathematical designs and angles on it. \"Alright, so we're going to be as safe as possible about this. If you follow my instructions carefully, it should all be ok!\", he says. He helps you step carefully onto the circle without disturbing any of the marks, and shows you how to do a hand motion which involves circling your elbow and then clasping your hand together.</p>\"What we're looking for here is an ambient magic spell, which should work quite well with your unusual magical abilities. You want to try to focus on the magic in the air, and find a sort of line of least resistance that takes you to your destination. It will only work in areas with high magic like the valley here, so we'll try to do a teleport to Otterton just south of here, ok? Now focus\", he says. You nod, and close your eyes, focusing on the magic around you. It is difficult at first, but with Saberhagen's prodding and advice, you gradually start to feel a tugging, pulling sensation faintly dragging you south. The sensation grows stronger and stronger, until suddenly all at once the world seems to drop out around you. You find yourself tumbling and falling, dragged through the air in the blink of an eye.</p>You land awkwardly, stumbling and rolling on the ground. The air smells of salt and you can hear the cry of seagulls. You look around to see sailors staring at you in surprise, from where you just materialised out of thin air. It worked! From now on, you can teleport between locations, so long as you cast the spell at the entrances to towns or cities.",
+                        "area": "otterton",
+                        "outcomes": [{
+                            "parameter": "teleportation",
+                            "quantity": 1,
+                            "change": "set"
+                        }]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You ask Saberhagen to teach you how to teleport like he can, and at first he nervously resists. \"Oh goodness, well I am really happy that you're taking an interest in magic, but that's an awfully high level spell\", he says. You ask him again, and take hold of his hand gently, before petting and squeezing it. He makes a little squeaking noise and blushes hotly, his whiskers twitching.</p>\"Oh! Gosh! Well, um, I suppose if you are really sure...\", he says, wiggling a little as you squeeze his hand. He asks you to return the next day when he has time to set up, and you see him sneakily hold his hand close to his chest as you leave.</p>You return the next day and he takes you into his tent, where he has drawn out a chalk circle on the ground, with some arcane mathematical designs and angles on it. \"Alright, so we're going to be as safe as possible about this. If you follow my instructions carefully, it should all be ok!\", he says. He helps you step carefully onto the circle without disturbing any of the marks, and shows you how to do a hand motion which involves circling your elbow and then clasping your hand together.</p>\"What we're looking for here is an ambient magic spell, which should work quite well with your unusual magical abilities. You want to try to focus on the magic in the air, and find a sort of line of least resistance that takes you to your destination. It will only work in areas with high magic like the valley here, so we'll try to do a teleport to Otterton just south of here, ok? Now focus\", he says. You nod, and close your eyes, focusing on the magic around you. It is difficult at first, but with Saberhagen's prodding and advice, you start to get the hang of it. In fact, you can feel the magic around you better than ever before. Flows of energy, lines and tendrils travelling across great distances.</p>You can feel the tendril Saberhagen is setting up, leading from the tent down south to the coast, but your mind wanders, adrift as you touch the countryside around you with this strange new sense. Feeling the deep magic in the caves, the heavy, bass pumping magic in the forests. You send your feelings out further, touching gently across the sea and north to the cold, icy lands where the magic is wild and unpredictable.</p>It becomes harder and harder to hear Saberhagen's words as you feel almost addicted to this connection and feeling. You brush your senses further north, and then, suddenly, everything else drops away.</p>It is like you were straining your eyes to see something in the sky, and then you glanced at the sun. At the furthest north is a magic so massive and heavy that it makes your head almost split. You feel yourself falling, feel the tendrils of the spell snapping and collapsing. Saberhagen lunges and tries to grab you, but his hands pass through you.</p>You are flying wildly and unpredictably through the air, moving miles in an instant. Your connection to the spell falls apart, and you scream as you fall and crash into the ground. You land in a deep snowdrift, the frost clinging to your clothes as you look around and see nothing except blinding snowstorms and endless white.",
+                        "area": "tundra",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "market_random",
                 "title": "Wander the Market",
                 "subtitle": "There are many peddlers selling their wares, along with a number of brick-and-mortar stores selling odd things.",

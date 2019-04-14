@@ -153,6 +153,23 @@ var area = {
                     }
                 }
             },{
+                "id": "uniform",
+                "title": "Dress Codes",
+                "subtitle": "Two gryphons are in Mikhail's store. They are wearing scruffy and crumpled guard uniforms, and their breath stinks of booze so much that it can be smelled from across the room. Mikhail looks at the edge of his patience.",
+                "type": "random",
+                "requirements": [
+                   
+                ],
+                "icon": "default",
+                "results": {
+                    "Orc Absinthe": {
+                        "text": "One of the gryphons nudges the other with his elbow and makes a comment about the low quality of 'downlander' steelwork. The other sniggers and reaches for a sword on the wall, but his arm sways and accidentally knocks one of Mikhail's photo frames to the floor.</p>\"A-TEEEEEN-SHUN!\", Mikhail suddenly bellows. The two gryphons look around in a panic and bump into one another. Mikhail strides towards them while smacking a rod in his hand. \"What sorry mess am I looking at here? You call yourselves representatives of Horn?\", He yells. The taller gryphon stammers, but the shorter one pokes Mikhail in the chest. \"Hey, who do you think you are, comrade?\", The gryphon grunts. Mikhail reaches up to his lapel and bends it back, revealing an ancient metal badge. The two gryphons recoil like they have been burned, and suddenly salute. The taller one goes pale and looks like he might faint. Mikhail slaps his rod against their chests, making them puff up and stand straighter.</p>\"Shirt unbuttoned? Demerit! Pants not ironed. Demerit! Buttons not polished! DEMERIT!\", He barks. With each word the gryphons cringe and look more and more upset. \"Drinking in uniform, though? In my day I'd have you dishonourably discharged so fast your goddamn beaks would spin! Take off those uniforms, you are a disgrace!\", He roars. The tall gryphon whimpers and the shorter one replies \"Yes, Commander!\"</p>They both drop their jackets and unbutton the tunics beneath, revealing their soft, feathery chests. They then pull their belts out from the loops on their pants and lower them, leaving them standing only in underpants. The taller one has heart-print boxers, and the short one has plain white trunks with a visible tent in the front. Mikhail pokes the erection with the rod in his hand, and the gryphon looks down shamefully.</p>\"The two of you are going to clean this place until you have earned back every single demerit, and if you are lucky, I will let you have those uniforms back instead of just turning you into new ones!\", He barks. The gryphons salute again and immediately grab a brush and mop, bumping into each other in their eagerness to serve.</p>Mikhail sees you watching and gives you a wink. His badge is still visible for a moment before he folds his lapel back down. It's a metal eagle holding a broken spiral horn in its mouth - the flag of Horn. Mikhail used to be a Horn officer?</p>He returns to his seat and props his feet up on the back of the shorter gryphon, who is scrubbing the floor. The gryphon blushes hotly and shudders before returning to his chore.",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "shop_random",
                 "title": "Loiter Downstairs",
                 "subtitle": "It's not loitering if you read the labels on the products and stuff.",

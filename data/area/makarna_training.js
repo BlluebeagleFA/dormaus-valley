@@ -20,6 +20,41 @@ var area = {
                     }
                 }
             },{
+                "id": "gotomarket",
+                "title": "Head towards the market",
+                "subtitle": "The market street is a rush of busy wanderers and loud salespeople.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You leave the training yard and move towards the marketplace.",
+                        "area": "makarna_market",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "rufohtml",
+                "title": "Rufo",
+                "subtitle": "There is one guard in the training yard who looks familiar. A rugged and scarred body, that stern pose and mature face. It's Rufo, the lion who helped you escape from the king's harem.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "rufo",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "html": "data/active/Rufo.html",
+                        "outcomes": [
+                            {
+                                "parameter": "rufo_connection",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "tiger",
                 "title": "Tiger Training",
                 "subtitle": "\"No, no no!\", you hear someone shout. You walk into the training barracks to see an exasperated sergeant with his face in his palm, and a sheepish-looking lion recruit with his hands held out like claws, in what you can only assume is a bad impression of a wild beast. A line of other recruits are standing awkwardly behind the sergeant, who composes himself and starts to snarl at the recruit. \"With ferocity! Crouch over more. More than that! Now always be moving - no, not like that, you\'re going to-\", he says, before being interrupted as the recruit trips over his own paws and lands awkwardly on the sandy courtyard. The sergeant sighs, and sees you watching. \"Ho there, traveller. Trying to get these greenpaws to do some anti-tiger drills, but fighting against wooden dummies is no way to get to grips with how a tiger warrior moves. Though they are probably better than training against this fool!\" he growls. The clumsy recruit looks away with embarrassment, and the grizzled sergeant rubs his chin as he looks you up and down. \"Tell you what, son, I learned a few spells on my deployments. You let me turn you into a tiger, and you can train with us. My rookies get a real tiger to face off against, and you get free training from the mightiest army in the seven kingdoms! What do you say?\"",

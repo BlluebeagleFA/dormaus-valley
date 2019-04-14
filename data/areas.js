@@ -2,7 +2,6 @@ DV = typeof(DV) === 'undefined' ? {} : DV;
 DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 
 DV.Data.areas = {
-	"debug": "./data/area/debug.js",
 	"bar_rooms": "./data/area/bar_rooms.js", //DORMAUS VILLAGE HERE
 	"bar": "./data/area/bar.js",
 	"dormaus_streets": "./data/area/dormaus_streets.js",
@@ -66,7 +65,11 @@ DV.Data.areas = {
 	"hornloft_4": "./data/area/hornloft_4.js",
 	"hornloft_4_2": "./data/area/hornloft_4_2.js",
 	"hornloft_5": "./data/area/hornloft_5.js",
+	"tundra": "./data/area/tundra.js", //TUNDRA
+	"kristoph_sled": "./data/area/kristoph_sled.js",
+	"makarna_training": "./data/area/makarna_training.js", //MAKARNA
+	"makarna_market": "./data/area/makarna_market.js",
+	"makarna_dockyard": "./data/area/makarna_dockyard.js",
 	"belly": "./data/area/belly.js", //OTHER
-	"makarna_training": "./data/area/makarna_training.js",
     "patrons": "./data/area/patrons.js"
 }

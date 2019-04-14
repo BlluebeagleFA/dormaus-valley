@@ -119,6 +119,39 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "get_vicious_socks",
+                "title": "Ask Vicious for some socks",
+                "subtitle": "Unlike the gryphons and some of the other guards, Vicious definitely wears footwear. He's also basically a cop, and a high ranking one, at that, so his socks should be what you need for Jack's test.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "vicious_connection",
+                        "value": 5,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "jack_friend",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "viciousicon",
+                "results": {
+                    "Success": {
+                        "text": "Vicious is in his office, playing a new game. When you enter, you see he has installed a large wooden pool table and is lining up a shot with a pool cue. There is only one hole, however, at the other end of the table where a fox is hanging from a bondage harness, his cock in a metal cage and his soft balls dangling precariously atop the hole.</p>Vicious stands when he hears you enter, and grins. \"Have you heard of this game? They call it pool, in Westwood. This prisoner here was telling me all about it, and I simply had to try it\", Vicious says. The fox sighs with muffled relief through his gag when Vicious turns away, which is precisely when the dingo decides to suddenly jab forward his shot. The cue ball bounces against a red one, sending it forward with vicious speed right into the fox's sack. His screams of pain make Vicious visibly shiver with glee.</p>\"Now, what can I help you with, pup?\", He asks. You tell him that you are looking for some of his socks, and he jabs his pool cue towards you, stopping a hair's breadth from your neck. The cue slowly slides down your chest before he rests it against your crotch. \"My pup wants a token of Master's scent? How adorable, I would almost think you care! I am sure I can arrange that\", he says.</p>He walks to his desk and sits down, before raising his feet and wiggling one boot at you. You growl, your heart beginning to race, and drop to all fours. You crawl over to him and nuzzle against his leather boot, smelling the polished, creaking material. He raises it and shoves hard against your face with the sole, crunching against you in a kick that sends pain rushing up through your face and makes your nose bleed.</p>Your instincts flare up, and you tackle your master, knocking him off his chair and causing him to crack his head against his desk. He grins widely, a thin line of red on the side of his face starting to drip. You slam him down and pin one of your feet against his neck, while you bite on his boot and pull it off roughly. The thick, masculine scent of your master's paw oozes from the freed boot as his wet, warm socked paw is revealed. It makes you dizzy, and your tail starts to wag, moments before he kicks and claws at you. His dingo claws rip through the fabric and score across your chin, slicing gashes into your fur. You snarl and open your jaws, before biting down hard on his leg, then ripping his sock off with one of your hands.</p>Your foot suddenly slips and slams against the ground, as he slides out from under you and jabs his knee into your chest. You recoil, giving him a moment to slip around and grab the sock in your mouth with both hands, before yanking back with it and pulling it tight against your mouth. He ties it closed, leaving you gagged with his salty paw taste in your muzzle. His arms wrap around you from behind as he strokes and teases his fingers across your chest. \"How very charming you look like that, my pet. Perhaps one of these days I should tie you up and keep you under my desk as a footrest...\", he croons. He lifts his arm and turns your head towards him, before slowly licking at the warm blood trickling from your nose. \"Another time, however. I do have actual work to do at some point today\", he says. He pats your head and sends you on your way.",
+                        "outcomes": [
+                            {
+                                "parameter": "vicious_socks",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

@@ -148,7 +148,7 @@ var area = {
                 "id": "asmodeus",
                 "name": "Asmodeus",
                 "description": "Asmodeus is a towering demon with glowing red lines running down his muscular dark blue body. On his head are large, ornate, curved horns ending with small purple flames on the tips, and his arms and legs end in sharp beastial claws.",
-                "icon": "anonicon",
+                "icon": "demon",
                 "dialogue": [
                     {
                         "input": "What is your name?",
@@ -183,7 +183,7 @@ var area = {
                 "id": "inarius",
                 "name": "Inarius",
                 "description": "Inarius is a winged angel. Most of his body looks like an average sized, beautiful human male with golden blond hair. Draped on his body is a flowing white robe, modestly hiding the physique and assets below. Out of his back are gold feathered wings, spreaded out and gloriously emanating golden light from him into the room.",
-                "icon": "anonicon",
+                "icon": "angel",
                 "dialogue": [
                     {
                         "input": "What is your name?",
