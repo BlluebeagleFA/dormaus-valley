@@ -479,9 +479,18 @@ function main(err,session) {
     });
     
     $("#box1").on("click", "input.endevent", function() {
+        console.log("Currentstatus:" + window.localStorage.getItem('dvupdateinfo'))
         window.sessionStorage.setItem('twinereset', "FALSE");
-        console.log(window.sessionStorage.getItem('twinereset'));
-        displayArea(player.area);
+        window.sessionStorage.setItem('dv_stats', JSON.stringify(player));
+        
+        var temporaryOutcome = JSON.parse(window.localStorage.getItem('dvupdateinfo'));
+        if (!temporaryOutcome.read) {
+            temporaryOutcome.read = true;
+            window.localStorage.setItem('dvupdateinfo', JSON.stringify(temporaryOutcome));
+            playEvent(temporaryOutcome);
+        } else {
+            displayArea(player.area);
+        }
     });
     
     $("#box2").on("click", ".equipment", function() {
@@ -894,6 +903,30 @@ function main(err,session) {
         }
     };
     
+    var sendToMazeEvent = {
+            "id": "to_maze",
+            "title": "Out of Control",
+            "subtitle": "The magic inside you is roiling and boiling over like a volcano. You fall to your knees, clutching your gut as you feel burning hot and ice-cold, all at once. Energy flows from your mouth and eyes as you lose control...",
+            "type": "random",
+            "requirements": [
+                
+            ],
+            "icon": "curse",
+            "results": {
+                "success": { 
+                    "text": "The more you misused magic and lost control of it, the more you felt a strange presence growing nearby. You feel like something enormous and terrifying is starting to notice you, looking up through from the bowels of the earth, and searching for you.</p>When, finally, you lose control completely and feel magic surging from every inch of your body, you think it finally found you. For a moment, you see an enormous bony hand reach out and close its grip around your body. Then, you pass out.</p>You are not sure what happens after that. You are vaguely aware of shouting, and people grabbing you and pinning you. Maybe you are being pushed down somewhere dark. But the feelings are faint and hard to hold onto. Your vision and mind are being swamped with other memories, other thoughts. You see yourself as a cat sorceror, wrapping up your rival in magical tendrils so that you can finally put him in his place. Moments later you are someone else, a human wizard being shrunk down by his own familiar as your supposedly-obedient crow pet takes control of you. Then, you are one of many robed figures, chanting a summoning spell as a massive horned, beast rises up from the earth.</p>Which of these are your memories? Who are you? Where are you?",
+                    "area": "maze_1",
+                    "outcomes": [
+                        {
+                            "parameter": "curse",
+                            "quantity": 2,
+                            "change": "set"
+                        }
+                    ]
+                }
+            }
+        }
+    
     Array.prototype.remove = function() {
         var what, a = arguments, L = a.length, ax;
         while (L && this.length) {
@@ -904,6 +937,216 @@ function main(err,session) {
         }
         return this;
     };
+    
+    function playEvent(event) {
+
+        var outcome = getEventResolution(event);
+        
+        if (outcome.trapped && outcome.trapped_desc) {
+            player.trapped = outcome.trapped;
+            player.trapped_desc = outcome.trapped_desc;
+        } else if (outcome.freeTrap) {
+            player.trapped = null;
+            player.trapped_desc = null;
+        }
+        
+        if (outcome.clearTemp) {
+            temporary_parameters.remove(outcome.clearTemp);
+        }
+        
+        if (outcome.temporary_param) {
+            temporary_parameters.push(outcome.temporary_param);
+        }
+        
+        var donator = false;
+        if (player.attributes.contributor && player.attributes.contributor.value > 0) {
+            donator = true;
+        }
+        
+        var updated = player.last_updated;
+        if (outcome.newchar) {
+            player.trapped = null;
+            player.trapped_desc = null;
+            player.area = outcome.newchar.area;
+            player.dust = outcome.newchar.dust;
+            player.description = outcome.newchar.description;
+            player.equipment = outcome.newchar.equipment;
+            player.stats = outcome.newchar.stats;
+            player.statprogress = outcome.newchar.statprogress;
+            player.items = outcome.newchar.items;
+            player.attributes = outcome.newchar.attributes;
+            player.suffering = outcome.newchar.suffering;
+        }
+        
+        if (outcome.reset == "minor") {
+            player.attributes = {};
+        }
+        
+        if (outcome.reset == "major") {
+            player.area = "dormaus_entrance";
+            player.dust = 0;
+            player.description = "This adventurer is an ordinary human.";
+            player.equipment = {
+                head: null,
+                clothes: null,
+                weapon: null,
+                feet: null,
+                ally: null,
+                memory: null
+            };
+            player.stats = {
+                stealth: 1,
+                might: 1,
+                magic: 1,
+                charm: 1
+            };
+            player.statprogress = {
+                stealth: 0,
+                might: 0,
+                magic: 0,
+                charm: 0
+            };
+            player.items = {};
+            player.attributes = {};
+            player.suffering = {
+                pain: {
+                    value: 0,
+                    progress: 0
+                },
+                guilt: {
+                    value: 0,
+                    progress: 0
+                },
+                outcast: {
+                    value: 0,
+                    progress: 0
+                },
+                curse: {
+                    value: 0,
+                    progress: 0
+                }
+            };
+        }
+        
+        if (donator) {
+            player.attributes.contributor = {  
+                "value":1,
+                "progress":0
+             }
+        }
+        
+        if (outcome.area) {
+            player.area = outcome.area; 
+        }
+        
+        if (outcome.areas) {
+            player.area = getRandom(outcome.areas);
+        }
+        
+        if (outcome.descriptionchange) {
+            player.description = outcome.descriptionchange;
+        }
+        
+        $("#box1").empty();
+        
+        if (outcome.html) {
+            $("#box1").append(
+                '<div class="eventdata">' +
+                '<div class="eventiconholder">' +
+                '<div class="eventicon ' + event.icon + '"></div>' +
+                '</div>' +
+                '<div class="eventtext">' +
+                '<iframe id="iframe" src=' + outcome.html + '></iframe>' +
+                '</div>' +
+                '</div>'
+            );
+        } else {
+            $("#box1").append(
+                '<div class="eventdata">' +
+                '<div class="eventiconholder">' +
+                '<div class="eventicon ' + event.icon + '"></div>' +
+                '</div>' +
+                '<div class="eventtext">' +
+                '<p>' + outcome.text + '</p>' +
+                '</div>' +
+                '</div>'
+            );
+        }
+        
+        if (event.stat) {
+            $("#box1").append(
+                '<div class = "statboost">' +
+                '<div class = "statboosticon ' + event.stat + '"></div>' +
+                '<div class = "statboostprogressbox">' +
+                '<div class = "statboostprogress"></div>' +
+                '</div>' +
+                '</div><hr>'
+            );
+        }
+        for (var i = 0; i < outcome.outcomes.length; i++) {
+            var quantity = 0;
+            
+            var oAtt = DV.Data.item_data[outcome.outcomes[i].parameter];
+            if (outcome.outcomes[i].quantity) {
+                quantity = outcome.outcomes[i].quantity;
+            } else {
+                quantity = Math.floor(event.difficulty/oAtt.value) || 0;
+            }
+            var iconTitle = oAtt.title;
+            var iconDesc;
+            if (oAtt.description.length == 1) {
+                iconDesc = oAtt.description[0];
+            }
+            var outcometext = "";
+            if (oAtt.type == "attribute" || oAtt.type == "suffering" || oAtt.type == "stat") {
+                var animationDetails = addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
+                if (animationDetails[2] > oAtt.description.length) {
+                    iconDesc = oAtt.description[oAtt.description.length-1];
+                } else if (animationDetails[2]-1 < 0) {
+                    iconDesc = oAtt.description[0];
+                } else {
+                    iconDesc = oAtt.description[animationDetails[2]-1];
+                }
+                $("#box1").append(
+                    '<div class = "outcome out' + i + '">' +
+                    '<div data-itemid="' + outcome.outcomes[i].parameter + '" data-title = "' + iconTitle + '" data-desc = "' + iconDesc + '" class = "outcomeicon ' + oAtt.icon + '"><div>' + animationDetails[2] + '</div></div>' +
+                    '<div class = "outcomebar"><div class = "outcomeprogress"></div></div>' +
+                    '</div>'
+                );
+                var width1 = Math.floor($(".outcome .outcomebar").width()*animationDetails[0]);
+                var width2 = Math.floor($(".outcome .outcomebar").width()*animationDetails[1]);
+                $(".out" + i + " .outcomeprogress").width(width1);
+                $(".out" + i + " .outcomeprogress").animate({
+                    width:width2+'px'
+                });
+            } else {
+                if (outcome.outcomes[i].change == "add") {
+                    var randomAdd = 1+(Math.random()*0.2);
+                    var newQuantity = Math.round(quantity*randomAdd);
+                    addValuesToPlayer(outcome.outcomes[i].parameter, newQuantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
+                    outcometext = "Gained " + newQuantity + " " + oAtt.title;
+                } else if (outcome.outcomes[i].change == "set") {
+                    addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
+                    outcometext = quantity + " now equals " + oAtt.title;
+                } else if (outcome.outcomes[i].change == "sub") {
+                    addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
+                    outcometext = "Lost " + quantity + " " + oAtt.title;
+                }
+                $("#box1").append(
+                    '<div class = "outcome">' +
+                    '<div data-itemid="' + outcome.outcomes[i].parameter + '" data-title = "' + iconTitle + '" data-desc = "' + iconDesc + '" class = "outcomeicon ' + oAtt.icon + '"></div>' +
+                    '<div class = "outcometext"><p>' + outcometext + '</p></div>' +
+                    '</div>'
+                );
+            }
+        }
+        $("#box1").append(
+            '<hr><div class = "closeEvent eventinput">' +
+            '<input type="submit" class="endevent" value="Ok"></input>' +
+            '</div>'
+        );
+        
+    }
     
     function displayEvent(eventId) {
         var event = null;
@@ -918,208 +1161,7 @@ function main(err,session) {
             }
         }
         if (event) {
-            var outcome = getEventResolution(event);
-            
-            if (outcome.trapped && outcome.trapped_desc) {
-                player.trapped = outcome.trapped;
-                player.trapped_desc = outcome.trapped_desc;
-            } else if (outcome.freeTrap) {
-                player.trapped = null;
-                player.trapped_desc = null;
-            }
-            
-            if (outcome.clearTemp) {
-                temporary_parameters.remove(outcome.clearTemp);
-            }
-            
-            if (outcome.temporary_param) {
-                temporary_parameters.push(outcome.temporary_param);
-            }
-            
-            var donator = false;
-            if (player.attributes.contributor && player.attributes.contributor.value > 0) {
-                donator = true;
-            }
-            
-            var updated = player.last_updated;
-            if (outcome.newchar) {
-                player.trapped = null;
-                player.trapped_desc = null;
-                player.area = outcome.newchar.area;
-                player.dust = outcome.newchar.dust;
-                player.description = outcome.newchar.description;
-                player.equipment = outcome.newchar.equipment;
-                player.stats = outcome.newchar.stats;
-                player.statprogress = outcome.newchar.statprogress;
-                player.items = outcome.newchar.items;
-                player.attributes = outcome.newchar.attributes;
-                player.suffering = outcome.newchar.suffering;
-            }
-            
-            if (outcome.reset == "minor") {
-                player.attributes = {};
-            }
-            
-            if (outcome.reset == "major") {
-                player.area = "dormaus_entrance";
-                player.dust = 0;
-                player.description = "This adventurer is an ordinary human.";
-                player.equipment = {
-                    head: null,
-                    clothes: null,
-                    weapon: null,
-                    feet: null,
-                    ally: null,
-                    memory: null
-                };
-                player.stats = {
-                    stealth: 1,
-                    might: 1,
-                    magic: 1,
-                    charm: 1
-                };
-                player.statprogress = {
-                    stealth: 0,
-                    might: 0,
-                    magic: 0,
-                    charm: 0
-                };
-                player.items = {};
-                player.attributes = {};
-                player.suffering = {
-                    pain: {
-                        value: 0,
-                        progress: 0
-                    },
-                    guilt: {
-                        value: 0,
-                        progress: 0
-                    },
-                    outcast: {
-                        value: 0,
-                        progress: 0
-                    },
-                    curse: {
-                        value: 0,
-                        progress: 0
-                    }
-                };
-            }
-            
-            if (donator) {
-                player.attributes.contributor = {  
-                    "value":1,
-                    "progress":0
-                 }
-            }
-            
-            if (outcome.area) {
-                player.area = outcome.area; 
-            }
-            
-            if (outcome.descriptionchange) {
-                player.description = outcome.descriptionchange;
-            }
-            
-            $("#box1").empty();
-            
-            if (outcome.html) {
-                $("#box1").append(
-                    '<div class="eventdata">' +
-                    '<div class="eventiconholder">' +
-                    '<div class="eventicon ' + event.icon + '"></div>' +
-                    '</div>' +
-                    '<div class="eventtext">' +
-                    '<iframe id="iframe" src=' + outcome.html + '></iframe>' +
-                    '</div>' +
-                    '</div>'
-                );
-            } else {
-                $("#box1").append(
-                    '<div class="eventdata">' +
-                    '<div class="eventiconholder">' +
-                    '<div class="eventicon ' + event.icon + '"></div>' +
-                    '</div>' +
-                    '<div class="eventtext">' +
-                    '<p>' + outcome.text + '</p>' +
-                    '</div>' +
-                    '</div>'
-                );
-            }
-            
-            if (event.stat) {
-                $("#box1").append(
-                    '<div class = "statboost">' +
-                    '<div class = "statboosticon ' + event.stat + '"></div>' +
-                    '<div class = "statboostprogressbox">' +
-                    '<div class = "statboostprogress"></div>' +
-                    '</div>' +
-                    '</div><hr>'
-                );
-            }
-            for (var i = 0; i < outcome.outcomes.length; i++) {
-                var quantity = 0;
-                
-                var oAtt = DV.Data.item_data[outcome.outcomes[i].parameter];
-                if (outcome.outcomes[i].quantity) {
-                    quantity = outcome.outcomes[i].quantity;
-                } else {
-                    quantity = Math.floor(event.difficulty/oAtt.value) || 0;
-                }
-                var iconTitle = oAtt.title;
-                var iconDesc;
-                if (oAtt.description.length == 1) {
-                    iconDesc = oAtt.description[0];
-                }
-                var outcometext = "";
-                if (oAtt.type == "attribute" || oAtt.type == "suffering" || oAtt.type == "stat") {
-                    var animationDetails = addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
-                    if (animationDetails[2] > oAtt.description.length) {
-                        iconDesc = oAtt.description[oAtt.description.length-1];
-                    } else if (animationDetails[2]-1 < 0) {
-                        iconDesc = oAtt.description[0];
-                    } else {
-                        iconDesc = oAtt.description[animationDetails[2]-1];
-                    }
-                    $("#box1").append(
-                        '<div class = "outcome out' + i + '">' +
-                        '<div data-itemid="' + outcome.outcomes[i].parameter + '" data-title = "' + iconTitle + '" data-desc = "' + iconDesc + '" class = "outcomeicon ' + oAtt.icon + '"><div>' + animationDetails[2] + '</div></div>' +
-                        '<div class = "outcomebar"><div class = "outcomeprogress"></div></div>' +
-                        '</div>'
-                    );
-                    var width1 = Math.floor($(".outcome .outcomebar").width()*animationDetails[0]);
-                    var width2 = Math.floor($(".outcome .outcomebar").width()*animationDetails[1]);
-                    $(".out" + i + " .outcomeprogress").width(width1);
-                    $(".out" + i + " .outcomeprogress").animate({
-                        width:width2+'px'
-                    });
-                } else {
-                    if (outcome.outcomes[i].change == "add") {
-                        var randomAdd = 1+(Math.random()*0.2);
-                        var newQuantity = Math.round(quantity*randomAdd);
-                        addValuesToPlayer(outcome.outcomes[i].parameter, newQuantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
-                        outcometext = "Gained " + newQuantity + " " + oAtt.title;
-                    } else if (outcome.outcomes[i].change == "set") {
-                        addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
-                        outcometext = quantity + " now equals " + oAtt.title;
-                    } else if (outcome.outcomes[i].change == "sub") {
-                        addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
-                        outcometext = "Lost " + quantity + " " + oAtt.title;
-                    }
-                    $("#box1").append(
-                        '<div class = "outcome">' +
-                        '<div data-itemid="' + outcome.outcomes[i].parameter + '" data-title = "' + iconTitle + '" data-desc = "' + iconDesc + '" class = "outcomeicon ' + oAtt.icon + '"></div>' +
-                        '<div class = "outcometext"><p>' + outcometext + '</p></div>' +
-                        '</div>'
-                    );
-                }
-            }
-            $("#box1").append(
-                '<hr><div class = "closeEvent eventinput">' +
-                '<input type="submit" class="endevent" value="Ok"></input>' +
-                '</div>'
-            );
-            
+            playEvent(event);
         } //Need to also add item gain, stat gain
     };
     
@@ -1587,6 +1629,9 @@ function main(err,session) {
             }
             if (player.suffering.guilt.value > 4) {
                 areaEvents = [sendToJailEvent];
+            }
+            if (player.suffering.curse.value > 4) {
+                areaEvents = [sendToMazeEvent];
             }
             $("#box1").empty();
             $("#box1").append(

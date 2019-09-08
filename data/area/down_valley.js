@@ -111,6 +111,27 @@ var area = {
                     }
                 }
             },{
+                "id": "goblinfight",
+                "title": "An ambush...?",
+                "subtitle": "Was that something rustling in the bushes just now? You thought you saw a hint of green flesh. Be on guard.",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "default",
+                "results": {
+                    "thing": {
+                        "html": "data/active/Goblin.html",
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 12,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "downvalley_random",
                 "title": "Enjoy the scenery",
                 "subtitle": "The wind feels great on your face. Why not take your time?",

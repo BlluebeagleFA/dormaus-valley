@@ -147,7 +147,13 @@ DV.Data.item_data = {
         icon: "mikhailicong",
         title: "Mikhail [Friend]",
         description: ["Mikhail is fond of you."]
-    }, 
+    },
+    seven_connection: {
+        type: "attribute",
+        icon: "sevenicon",
+        title: "Dragon [Connection]",
+        description: ["You met a dragon, in a place that might not really exist."]
+    },
     species: {
         type: "attribute",
         icon: "speciesicon",
@@ -205,6 +211,7 @@ DV.Data.item_data = {
             "You are a living piñata, a horselike being with paper strips for fur.", //50
             "You are a large shaggy reindeer, with powerful branching antlers.", //51
             "You are a smooth, scaly lizard creature, with a long powerful tail.", //52
+            "You are a mixed up chimera creature with various mismatched body parts.", //53
             ]
     },
     gender: {
@@ -248,6 +255,24 @@ DV.Data.item_data = {
         icon: "mysterydragons",
         title: "Mystery: The Six Dragons",
         description: ["You have learned about the old religion that worshipped six colourful dragons who maintained the world. It is no longer widely believed in, but you feel like there is something important about it, hidden just below the surface."]
+    },
+    mystery_sky: {
+        type: "attribute",
+        icon: "beneath",
+        title: "Mystery: The Iron Sky",
+        description: ["You caught a glimpse of something important. Something that was found buried in the snow."]
+    },
+    mystery_chains: {
+        type: "attribute",
+        icon: "lycaeon",
+        title: "Mystery: The King Without Chains",
+        description: ["You caught a glimpse of something important. Something that was found for the very first time."]
+    },
+    asong: {
+        type: "attribute",
+        icon: "garethflower",
+        title: "Memory of a Song",
+        description: ["When you were abandoned in deep darkness, someone took care of you."]
     },
     digger: {
         type: "attribute",

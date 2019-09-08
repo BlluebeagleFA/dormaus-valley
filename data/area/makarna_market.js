@@ -6,16 +6,16 @@ var area = {
         "events": [
             {
                 "id": "gototraining",
-                "title": "Go east to the guard tower",
-                "subtitle": "A sturdy guard tower looms against the high walls.",
+                "title": "Go to the Silk Market",
+                "subtitle": "The market continues all along a second street.",
                 "type": "random", //or random
                 "requirements": [
                 ],
                 "icon": "navigateicon",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
-                        "text": "You leave the busy crowds and head to the guard tower.",
-                        "area": "makarna_training",
+                        "text": "You weave through the busy street towards the Silk Market.",
+                        "area": "makarna_silk_market",
                         "outcomes": []
                     }
                 }
@@ -31,22 +31,6 @@ var area = {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": "You weave through the busy streets and head for the docks.",
                         "area": "makarna_dockyard",
-                        "outcomes": []
-                    }
-                }
-            },{
-                "id": "balloons",
-                "title": "Balloon Salesman",
-                "subtitle": "The great market of Makarna offers a truly absurd quantity of wares. The little village market of Dormaus or the fishmarkets of Otterton cannot compare. One store here draws your attention more than others, though. A very portly elephant is selling inflated rubber animals, which bob and bounce atop thin poles. \"Balloons for sale! Best balloons in Makarna!\", he bellows.",
-                "type": "random", //or random
-                "requirements": [
-                ],
-                "icon": "inanimatefetish",
-                "results": {
-                    "fail": { //success and fail, rare success, rare fail, or random
-                        "text": "You walk up to the store and admire his balloons. The rubber is thick and firm to the touch, but still smooth and pleasantly inflated. The balloons have endearing shapes, like full bodies of faceless rubber animals rather than the twisted and shaped balloons you might expect.</p>You stroke your hand along the front of a large, round balloon bear, his simple muzzle shape almost looking happy despite the mouthless, eyeless expression. The big elephant grins, his tusks making his smile stretch in a peculiar manner. \"Impressed, friend? Outlanders often admire Makarna's rubber. It may surprise you, but it is actually formed from the gum of a tree native to our lands! A very useful substance indeed\", he says. He strokes one thick, grey hand down his large and heavy trunk and gives you a wink. \"There is another, more secret way to obtain this material, though. If you are interested!\"</p>You try to tell him that you are not interested, but your voice trails off. You find yourself staring into the smooth, glossy surface of the balloon bear. Your reflection in it is blurry and indistinct, so that you cannot see your own face. Just a generic shape. You are feeling dizzy and strange, and you feel the elephant's powerful arms wrap around your shoulders as he pulls you in deeper to his stall, past the hanging curtains that block off view from the street.</p>He pushes you down onto a pile of comfortable cushions. His store smells pleasantly of incense and thick rubber, which makes you feel even more dizzy and compliant. \"I can always tell good merchandise when I see it. You, I think, would be a very handsome elephant balloon\", he croons in a deep, seductive voice.</p>You find yourself nodding, even as he begins to pull your clothes off. His rough, enormous hands stroke over your body, feeling you and squeezing you gently, like he is measuring you up. Then he begins to rub and massage between your legs, his hands stroking along your crotch, down between your thighs, and up against your rear. Over and over, squeezing and rubbing and stroking. You feel strange, and warm and almost sticky as he continues to touch and feel you. When you try to sit up, he presses you back down into the cushions. You can do nothing but pant and whimper as he shapes and shifts your body, his fingers squeezing and fusing your genitals and rear, as he pushes them up together into one large, tingling sensitive hole between your legs.</p>You feel his massive trunk stroke across your chest. The powerful thick grey limb kissing and teasing along your body, before pushing up under you and sliding into your strange hole. Then, his cheeks inflate, he takes a deep breath, and he starts to blow. His trunk thickens and stiffens as he forces air up into it, and you feel your body grow tight and stretch. Your belly bulges, swelling out and becoming round and taut. Your limbs push out at your sides, and thicken too, while your cheeks swell and you feel lightheaded. Pressure grows inside you, and you feel sure it must blow out your mouth - until you realise your mouth is smooth and sticky, sealed closed. Your whole body feels smooth and glossy and squeaky. Skin becoming flat and featureless and smooth, losing its natural colour to instead take on a golden, honeylike colour. Your limbs getting fatter and losing their definition, hands and feet becoming just bulges with the vague suggestion of their former shape. Your chin and neck become round and chubby, and your face fills with pressure as your jaw and nose push out, slowly stretching into a large, bulbous and stretched out balloon trunk. Your ears wiggle and flop, becoming large cartoonish flaps of rubber, as your eyes and nose seal over with glossy golden rubber, and your insides, and mind, become empty, mindless and happy. Nothing but an empty headed balloon, experiencing floaty pleasure forever.</p>Your shopkeeper ties a pole to your crotch as he withdraws his trunk, and places you out on display with your fellow balloons.",
-                        "trapped_desc": "There are a number of cute smooth balloons for sale at a store along the road.",
-                        "trapped": 'You are a big, empty headed squeaky rubber elephant balloon.',
                         "outcomes": []
                     }
                 }
@@ -80,17 +64,66 @@ var area = {
                     }
                 }
             },{
-                "id": "moneychanger",
-                "title": "Money Changer",
-                "subtitle": "One shop in the market stands out a little further from the others in its plainness. It's just a square sandstone building, with no other shops around it. A short queue of miserable-looking people is standing outside it.",
-                "icon": "default",
-                "requirements": [],
+                "id": "grok",
+                "title": "GROK!",
+                "subtitle": "The sun is starting to go down as you walk through the stone streets of Makarna. The busy crowds are thinning, and the heat and light of this desert land is fading to the cool and dark of dusk. You see a few buildings which have glowing braziers outside their doors, the light of which indicates that lodgings are available within. One particular traveller seems to be having difficulty obtaining a place to stay, however. You walk past an incredibly tall creature, almost mistaking his hulking form for a statue or strange pillar in the dark at first. That is, until the innkeeper he's talking to slams their door, and he thumps the wall with one enormous dark green fist. \"Grok's money as good as anyone else's!\", he growls, and storms off. When he turns, you get a better look at him. The enormous thick tusk of his horn is unmistakeable, he's some sort of rhinocerous. But he's massive, with gigantic bulging muscles under a thick and tough green hide. A loincloth with a belt, and a bandolier bristling with weapons, are his only attempts at clothing. He notices you staring, and snorts steam from his nostrils. \"No one let Grok stay, just because Grok ate dinner without waiting it stop moving first. City people so sensitive. Rhinorcs know meat is meat\", he complains. His ears wiggle as he considers his options. \"Grok sleep in stables tonight. Camels not complain about table manners. You join me?\", he asks. The rhinorc is much friendlier than his intimidating appearance would suggest. Do you want to spend the night in the stables with him?",
                 "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "default",
                 "results": {
-                    "grizzsex": {
-                        "text": "You are curious, so you decide to wait in the queue and see what is inside this odd shop. One by one the people in the front enter, then leave, looking gloomy and holding small pouches of money. Some of the men who enter come out holding their pants up and gritting their teeth.</p>Finally, the guy in front of you enters. He's a tall, muscular Arabian stallion with a long muzzle and sleek white fur. There's just about enough room for two in the building, so you squeeze in behind him to get a closer look.</p>The building is very simple inside. There's a stone wall with a barred window, a small carpet on the ground, and a shelf around crotch height. Behind the window, a very fat hyena wearing golden rings and necklaces is sitting and grinning. When he sees the horse he chuckles. \"Ah, my friend, you return to me again? That gambling problem of yours will make you a mare at this rate. Even a man as blessed as you cannot afford to lose too much more, I think!\", he says.</p>The horse just grunts and pulls down his pants, before taking hold of his heavy eight inch shaft and flopping it onto the counter. The hyena sits up, and starts to stroke and tease his fingers along the horse's shaft. It throbs and twitches, stretching out a little more as it hardens and bulges. Then, the hyena presses one of his rings firmly onto the horse's shaft.  The horse whinnies and shudders, gripping onto the bars of the window as he gasps and shakes. As you watch, his shaft starts to harden and stiffen. The soft flesh becomes smooth and shiny, and the mottled pink and brown colour becomes shiny and gleaming.</p>His cock rounds out, the shape getting more cylindrical, and the head flattening completely.  A golden hue spreads over his cock, and he grunts with a confused mix of discomfort and pleasure, as his dick falls apart, into a stacked pile of golden coins.</p>The horse shudders and lets out a long sigh. \"Just half, please. That should be enough to cover me\", he says. The hyena nods, and very slowly counts out one coin at a time. He strokes his fingers along the stack with each one, and with every one he pulls away, the horse whimpers and twitches his hoof to the ground.</p>Finally, the hyena takes the coins in his hand, and touches the horse's dick with a ring in his other hand. The coins start to soften, the flesh colour returning, and the shape merging together into a throbbing, living, but significantly shorter horse cock. The hyena takes a coin from the pile in his hand and keeps it, before handing the rest back to the horse. The horse then stomps out, his face red and flushed with humiliation.</p>The hyena gives you a wink, and you slip outside behind the horse. Perhaps it's something to keep in mind, if you are ever truly desperate.",
+                    "thing": {
+                        "html": "data/active/Grok.html",
                         "outcomes": [
                             
+                        ]
+                    }
+                }
+            },{
+                "id": "sweatshop",
+                "title": "Fresh Drinks",
+                "subtitle": 'One of the market stalls has a large sign reading "Fresh Drinks, available here". The merchant is a huge tanned brown pig, sitting on a wooden bench in the hot sun. He is just wearing a pair of dark pants, and his wide chest and large belly is glistening with sweat. He doesn\'t seem to have anything to sell.',
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "watervine_1",
+                "results": {
+                    "thing": {
+                        "html": "data/active/FreshDrinks.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "entrance_random",
+                "title": "Watch the customers",
+                "subtitle": "There are massive crowds here, buying and selling all manner of object. You could watch and try to gain some information about the city.",
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "default",
+                "results": {
+                    "reluctant_horse": {
+                        "text": "Most of the patrons at the market are carefully avoiding a corner near the entrance columns of the bar. When you sneak closer, you see why. An enormous liontaur is carefully measuring the columns, with a stern look on her face. Everyone in the city gives the taurs a wide berth, which suggests they are more dangerous than most other creatures here.</p>A guard walks up to the taur, and crosses his arms. \"I still think the Body Shop should have been built in the Spice Market\", he says. The taur ignores him. The lion guard continues, more loudly. \"Body parts are clearly fresh goods. If they sell pets in the Spice Market, they should sell body parts!\", he insists.</p>Finally the taur turns to him, and sighs. \"A committee decreed that the Body Shop functionally is selling outfits and costumes. Clearly you need a little more knowledge about clothing and accessories\", the taur says in a purring, rumbling voice. The lion guard starts to look dizzy, and falls to his knees. The taur places her hands against the guard's cheeks, causing his face to freeze in place. Shiny gold spreads over the guard's body, as he shrinks and starts to curl up. The taur molds and massages him as he becomes shinier, glossier, and smaller. Soon, the taur has squeezed and twisted him into nothing but a short golden spring, which she then turns and slides down onto the base of her tail. She takes a moment to pull a small stone from her necklace and toss it to the ground, then walks off into the streets.</p>You glance at the discarded stone, and notice it is a tiny flask, now empty. How curious.",
+                        "outcomes": [
+                            {
+                                "parameter": "watervine_1",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    },
+                    "ap_carpenter": {
+                        "text": "A toucan and a macaw are sitting on cushions outside of an incense store, discussing the latest news. The toucan strokes his beak, and mutters. \"You know, I really don't see how you manage with this thing. It's so huge and unwieldy\", he says. The macaw woman chuckles, and taps her shorter beak. \"You'll get used to it. I'm quite enjoying this body of yours, I get so much attention from men now\", she says. The toucan sighs. A lion walks past, and the two watch quietly. Once he's out of sight, the macaw speaks, more quietly.</p>\"You know, I hear the king has a new obsession lately. The servants in the palace have been gossiping. Some lioness from his harem escaped recently, and then after he visited that old hag in the savannah, he went mad with rage. Smashed up his room, tore the harem curtain like a feral beast. He's desperate to get her back, they say.</p>The toucan nods, and then looks around. Very quietly, he says \"You know, I hear that she had dragon eyes\". The macaw tackles him, and clamps her wing-hands over his massive beak. She looks around, terrified. \"Don't let the priests hear you say that!\", she hisses.",
+                        "outcomes": [
+                            {
+                                "parameter": "watervine_1",
+                                "quantity": 1,
+                                "change": "add"
+                            }
                         ]
                     }
                 }

@@ -457,6 +457,18 @@ div.theft {
 	background-image: url("../img/beneath.png");
 }
 
+.lycaeon {
+	background-image: url("../img/lycaeon.png");
+}
+
+.garethflower {
+	background-image: url("../img/garethflower.png");
+}
+
+.sevenicon {
+	background-image: url("../img/sevenicon.png");
+}
+
 .howl {
 	background-image: url("../img/howl.png");
 }
@@ -544,6 +556,8 @@ div.theft {
 .jackicong {
 	background-image: url("../img/jack_g.png");
 }
+
+
 
 .pain {
 	background-image: url("../img/painicon.png");

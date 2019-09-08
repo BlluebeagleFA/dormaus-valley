@@ -168,6 +168,21 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "gototombs",
+                "title": "Climb down into the catacombs",
+                "subtitle": "Some of the tombs here are broken or ajar. You could crawl down into the dark catacombs beneath the village.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You slip down through a crack in the side of a stone tomb, and slowly make your way into the dark.",
+                        "area": "catacomb_entrance",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

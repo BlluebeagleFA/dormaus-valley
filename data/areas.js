@@ -22,6 +22,7 @@ DV.Data.areas = {
 	"pumpkins": "./data/area/pumpkins.js",
 	"backstreets": "./data/area/backstreets.js",
 	"art_store": "./data/area/art_store.js",
+	"catacomb_entrance": "./data/area/catacomb_entrance.js",
 	"contributor_1": "./data/area/contributor_1.js",
 	"contributor_1_1": "./data/area/contributor_1_1.js",
 	"contributor_1_2": "./data/area/contributor_1_2.js",
@@ -69,7 +70,12 @@ DV.Data.areas = {
 	"kristoph_sled": "./data/area/kristoph_sled.js",
 	"makarna_training": "./data/area/makarna_training.js", //MAKARNA
 	"makarna_market": "./data/area/makarna_market.js",
+	"makarna_silk_market": "./data/area/makarna_silk_market.js",
 	"makarna_dockyard": "./data/area/makarna_dockyard.js",
+	"maze_1": "./data/area/maze_1.js", //MAZE
+	"maze_deep": "./data/area/maze_deep.js",
+	"maze_dragon": "./data/area/maze_dragon.js",
+	"maze_light": "./data/area/maze_light.js",
 	"belly": "./data/area/belly.js", //OTHER
     "patrons": "./data/area/patrons.js"
 }

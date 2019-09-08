@@ -28,6 +28,33 @@ var global_area = {
                     }
                 }
             },{
+                "id": "to_maze",
+                "title": "Out of Control",
+                "global": true,
+                "subtitle": "The magic inside you is roiling and boiling over like a volcano. You fall to your knees, clutching your gut as you feel burning hot and ice-cold, all at once. Energy flows from your mouth and eyes as you lose control...",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 100,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "curse",
+                "results": {
+                    "success": { 
+                        "text": "The more you misused magic and lost control of it, the more you felt a strange presence growing nearby. You feel like something enormous and terrifying is starting to notice you, looking up through from the bowels of the earth, and searching for you.</p>When, finally, you lose control completely and feel magic surging from every inch of your body, you think it finally found you. For a moment, you see an enormous bony hand reach out and close its grip around your body. Then, you pass out.</p>You are not sure what happens after that. You are vaguely aware of shouting, and people grabbing you and pinning you. Maybe you are being pushed down somewhere dark. But the feelings are faint and hard to hold onto. Your vision and mind are being swamped with other memories, other thoughts. You see yourself as a cat sorceror, wrapping up your rival in magical tendrils so that you can finally put him in his place. Moments later you are someone else, a human wizard being shrunk down by his own familiar as your supposedly-obedient crow pet takes control of you. Then, you are one of many robed figures, chanting a summoning spell as a massive horned, beast rises up from the earth.</p>Which of these are your memories? Who are you? Where are you?",
+                        "area": "maze_1",
+                        "outcomes": [
+                            {
+                                "parameter": "curse",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "contributor",
                 "title": "Thank You",
                 "global": true,
