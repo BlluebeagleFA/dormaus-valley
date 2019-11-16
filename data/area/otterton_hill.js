@@ -1,7 +1,8 @@
 var area = {
         "title": "otterton_hill",
         "header": "Hill Above Otterton",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.41,0.81],
+        "mapId": "worldmap.jpg",
         "subheader": 'You are standing on a hill just north of a small port town. The ocean breeze blows easily over the grassy land, and it makes the air fresh and brisk. A path weaves through a small, unfinished stone wall, and leads down to the town proper.',
         "events": [
             {

@@ -140,7 +140,7 @@ var area = {
                             },{
                                 "parameter": "pistol",
                                 "quantity": 1,
-                                "change": "add"
+                                "change": "set"
                             }
                         ]
                     }

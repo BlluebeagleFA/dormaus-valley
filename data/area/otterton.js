@@ -1,7 +1,8 @@
 var area = {
         "title": "otterton",
         "header": "Otterton",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.41,0.85],
+        "mapId": "worldmap.jpg",
         "subheader": 'Otterton is a tiny and quaint village, existing mostly just to service the little-used port at the southern end. A few brightly-painted shops and stands surround a cicular plaza that makes up the town center, with some residential cottages down one road. The cry of seagulls and salty sea air makes the atmosphere bright and welcoming.',
         "events": [
             {

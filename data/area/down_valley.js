@@ -1,7 +1,8 @@
 var area = {
         "title": "down_valley",
         "header": "Down the Valley",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.42,0.49],
+        "mapId": "worldmap.jpg",
         "subheader": 'You are walking through the natural beauty of the grassy valley. The land rises to the north, leading to a distant farm, a golden smudge of growing wheat. To the south, it winds slowly towards the sea.',
         "events": [
             {

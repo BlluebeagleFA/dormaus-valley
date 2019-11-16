@@ -1,6 +1,8 @@
 var area = {
         "title": "contributor_1",
         "header": "The Chamber",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": 'This room is much different from the rest of the caves. The walls are red and emit an unnatural warmth. In the center of the room is a brazier with a massive supernatural flame burning out from. The strangeness of the flame stems from how it\'s left half has the appearance of purple tendrils of fire, and the right a light yellow burning extremely bright, the two creating weird dancing shadows in the chamber. Lastly, on the left of the brazier is a throne made of twisting black metal with engravings of screaming faces of pain and terror that almost seem like they are moving in the dancing shadows. And on the right is a simple golden bench with a blue suede cushion on the top. [All content in this room came from CJMPinger]',
         "events": [
             {

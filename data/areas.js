@@ -30,6 +30,8 @@ DV.Data.areas = {
 	"farmhouse": "./data/area/farmhouse.js",
 	"farmfield": "./data/area/farmfield.js",
 	"farmsouth": "./data/area/farmsouth.js",
+	"northplains": "./data/area/northplains.js", //NORTH_OF_VILLAGE
+	"northwoods": "./data/area/northwoods.js",
 	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
 	"quartzcavern": "./data/area/quartzcavern.js",
 	"wetcavern": "./data/area/wetcavern.js",

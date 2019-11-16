@@ -1,7 +1,8 @@
 var area = {
         "title": "grease_lot",
         "header": "Grease Pit Lot",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.27,0.67],
+        "mapId": "worldmap.jpg",
         "subheader": 'This building deep in the woods looks particularly out of place. The trees have been chopped down and the earth flattened to form a dirt lot. A wooden cabin has been erected atop the dirt, with corrugated metal sheeting on the roof.',
         "events": [
             {

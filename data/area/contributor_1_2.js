@@ -1,6 +1,8 @@
 var area = {
         "title": "contributor_1_2",
         "header": "Underground Pool",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": "You find yourself in a strangely and perfectly circular room in this cave system, illuminated by a flickering light. The walls, floor, and ceiling appear to be perfectly smooth as if they were carved and sanded to be like this. In the center of the room sits a calm pool of water, if you were to look down into the pool, you would not be able to see the bottom, the water fading into a darkness. However, the source of light for the room can be visibly seen in the pool, a strange, floating crystal, almost like a clear diamond, with a raging red fire burning inside. Other than that, nothing else about the room seems to stand out.",
         "events": [{
             "id": "gotopatron",

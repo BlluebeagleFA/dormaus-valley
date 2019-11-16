@@ -16,6 +16,13 @@ DV.Data.item_data = {
         title: "Turner [Friend]",
         description: ["Turner is fond of you."]
     },
+    ace_missing: {
+        max: 1,
+        type: "attribute",
+        icon: "aceicon",
+        title: "Ace [Missing]",
+        description: ["Ace hasn't been seen around town for longer than usual..."]
+    },
     grizz_interest: {
         max: 5,
         type: "attribute",
@@ -92,6 +99,12 @@ DV.Data.item_data = {
         icon: "crocicon",
         title: "Reputation [Crocodiles]",
         description: ["You have earned some respect from the crocodile tribe in Makarna city"]
+    },
+    merc_connection: {
+        type: "attribute",
+        icon: "wolfwarrior",
+        title: "Reputation [Mercs]",
+        description: ["You have earned some respect from the Dormaus Valley mercenaries"]
     },
     slave_connection: {
         type: "attribute",
@@ -772,6 +785,20 @@ DV.Data.item_data = {
 		},
 		description: ["This raccoon is completely useless. Just absolutely terrible at everything, and constantly getting in the way."]
 	},
+	useless_collar: {
+        type: "item",
+        icon: "uselesscollar",
+        title: "Useless Collar",
+        value: 1,
+        slot: "head",
+        attributes: {
+            might: -250,
+            magic: -250,
+            charm: -250,
+            stealth: -250
+        },
+        description: ["While wearing this blue leather collar you can not help but feel the need to just give up and submit to whatever would exert influence over you, on the front of it is a tag showing the smiling face of a familiar raccoon."]
+    },
 	horse_son: {
         type: "item",
         icon: "horseson",
@@ -819,6 +846,18 @@ DV.Data.item_data = {
             stealth: 1
         },
         description: ["This tiger warrior's will has been utterly crushed by black magic. He is obedient, but a shadow of his former self."]
+    },
+    slavewolf: {
+        type: "item",
+        icon: "hypnowolf",
+        title: "Wolf Slave",
+        value: 50,
+        slot: "ally",
+        attributes: {
+            might: 2,
+            charm: 1
+        },
+        description: ["This wolf was once a proud and mighty warrior. A cursed collar from the northern forest has degraded him to nothing but an obedient dog."]
     },
     goblins: {
         type: "item",

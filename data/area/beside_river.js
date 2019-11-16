@@ -1,7 +1,8 @@
 var area = {
         "title": "beside_river",
         "header": "Beside the River",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.44,0.65],
+        "mapId": "worldmap.jpg",
         "subheader": 'You are standing beside the bend of a river, whos babbling waters flow clear and fast. The river comes down from the mountains to the east and flows down, before bending as it hits the bottom of the valley, then flowing down towards the sea.',
         "events": [
             {

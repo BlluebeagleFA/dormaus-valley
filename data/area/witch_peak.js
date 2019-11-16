@@ -1,7 +1,8 @@
 var area = {
         "title": "witch_peak",
         "header": "Witch's Peak Bluff",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.39,0.89],
+        "mapId": "worldmap.jpg",
         "subheader": 'West of the village, the coast bends up into a cliff that overlooks the crashing foamy waves below. The grass sways in a powerful wind, and the salty spray of foam manages to reach even to the cliff heights. In the distant horizon, ships float on the waters.',
         "events": [
             {

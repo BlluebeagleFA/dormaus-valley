@@ -1,7 +1,8 @@
 var area = {
         "title": "eastwoods_entrance",
         "header": "The Eastwoods",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.29,0.65],
+        "mapId": "worldmap.jpg",
         "subheader": 'These forests cluster around the mountains to the west of Dormaus Valley. For now you are still only partway into the woods, and there is still light through the sparse trees this close to the road. A well-trodden path leads south, and animals can be heard rustling in the bushes and trees.',
         "events": [
             {

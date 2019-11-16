@@ -1,7 +1,8 @@
 var area = {
         "title": "farmsouth",
         "header": "Farm South Exit",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.49,0.31],
+        "mapId": "worldmap.jpg",
         "subheader": 'The southern end of Turner\'s farm passes through fields of swaying wheat. Beyond those, a wooden fence marks the end of the horse farmer\'s domain. The dirt path becomes overgrown and messy, and winds out down through the valley. You don\'t yet feel strong enough to wander into the untamed land beyond.',
         "events": [
             {

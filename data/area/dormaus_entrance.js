@@ -19,6 +19,10 @@ var area = {
                         "parameter": "gender",
                         "value": 1,
                         "comparison": "equal" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "leonar_r",
@@ -62,6 +66,10 @@ var area = {
                         "parameter": "gender",
                         "value": 2,
                         "comparison": "equal" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "default",

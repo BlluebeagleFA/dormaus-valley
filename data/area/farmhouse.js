@@ -1,7 +1,8 @@
 var area = {
         "title": "farmhouse",
         "header": "Morgan Farmhouse",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.51,0.29],
+        "mapId": "worldmap.jpg",
         "subheader": 'A wide wooden farmhouse stands here, the board walls washed with white paint, and the tiled roof a cheerful red. Some horse posts are next to the wooden porch, and a creaking sign painted with a wheat symbol sways on the gate.',
         "events": [
             {

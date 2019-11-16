@@ -1,6 +1,8 @@
 var area = {
         "title": "contributor_1_1",
         "header": "The Crevasse",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": 'This part of the caverns is unusually thin and narrow, barely allowing passage through the cold, dark stone. There is a slight breeze going through it. On each side, the flickering light of fire can be dimly seen.',
         "events": [
             {
@@ -109,6 +111,14 @@ var area = {
                                 "parameter": "gender",
                                 "quantity": 1,
                                 "change": "set"
+                            },{
+                                "parameter": "useless_raccoon",
+                                "quantity": 1,
+                                "change": "sub"
+                            },{
+                                "parameter": "useless_collar",
+                                "quantity": 1,
+                                "change": "add"
                             }
                         ]
                     }

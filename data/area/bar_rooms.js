@@ -16,6 +16,10 @@ var area = {
                         "parameter": "chips_1",
                         "value": 9,
                         "comparison": "greater" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "chips_1",
@@ -49,6 +53,10 @@ var area = {
                         "parameter": "species",
                         "value": 3,
                         "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "chips_1",
@@ -71,6 +79,11 @@ var area = {
                 "subtitle": 'Perhaps if you don\'t want to risk your chips, Ace would take your body as collateral? If you lose, you\'re lunch.',
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
                 ],
                 "icon": "vorefetish",
                 "results": {
@@ -87,6 +100,11 @@ var area = {
                 "subtitle": "People come and go at the gambling tables regularly.",
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
                 ],
                 "icon": "default",
                 "results": {
@@ -122,6 +140,10 @@ var area = {
                         "parameter": "pisscurse",
                         "value": 0,
                         "comparison": "greater" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
                     }
                 ],
                 "icon": "aceicon",
@@ -138,6 +160,13 @@ var area = {
             {
                 "id": "ace",
                 "name": "Ace",
+                "requirements": [
+                    {
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
                 "description": "Ace is a coyote with a long smirking muzzle. His face is obscured by his cowboy hat, and sometimes he likes to toy and juggle with a gleaming knife.",
                 "icon": "aceicon",
                 "dialogue": [

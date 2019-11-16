@@ -1,7 +1,8 @@
 var area = {
         "title": "windy_path",
         "header": "Windy Path",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.44,0.75],
+        "mapId": "worldmap.jpg",
         "subheader": 'The road here weaves through some tall, grassy boulders, presumably rolled down into the valley by some geographic process. They stand like silent sentinels, and in the cool shade of the path between them, lots of birds flutter and caw. A strong wind blows through the stones, making a whistling noise as it moves.',
         "events": [
             {

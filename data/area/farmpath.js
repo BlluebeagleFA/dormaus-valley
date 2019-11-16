@@ -1,7 +1,8 @@
 var area = {
         "title": "farmpath",
         "header": "Farm Path",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.51,0.24],
+        "mapId": "worldmap.jpg",
         "subheader": 'This well-worn muddy path is tracked deeply with the ruts from passing wagon wheels. To the sides, fenced-off pastures hold horses and cows, idly and calmly chewing on the grass.',
         "events": [
             {

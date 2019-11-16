@@ -484,7 +484,7 @@ function main(err,session) {
         window.sessionStorage.setItem('dv_stats', JSON.stringify(player));
         
         var temporaryOutcome = JSON.parse(window.localStorage.getItem('dvupdateinfo'));
-        if (!temporaryOutcome.read) {
+        if (temporaryOutcome && !temporaryOutcome.read) {
             temporaryOutcome.read = true;
             window.localStorage.setItem('dvupdateinfo', JSON.stringify(temporaryOutcome));
             playEvent(temporaryOutcome);
@@ -753,29 +753,39 @@ function main(err,session) {
     }
     
     function updateMap() {
+        console.log("Update map");
         $("#box3").empty();
         $("#box3").append('<div class="mapblock hide"></div><div class="map"></div>');
         var width = $("#box3").width();
         $(".map").width("100%");
         $(".map").css("padding-top","100%");
         $(".map").empty();
+        
         var areaIds = Object.keys(DV.Data.areas);
         var width = $(".map").width();
-        for (var i = 0; i < areaIds.length; i++) {
-            var areaId = areaIds[i];
-            DV.Data.load_area(areaId,function(err,area_data){
-                if (area_data.position) {
-                    var x = area_data.position[0]*100;
-                    var y = area_data.position[1]*100;
-                    if (areaId == player.area) {
-                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton currentareabutton" data-area="' + area_data.title + '"></div>');
-                    } else {
-                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + x + '%; top: ' + y + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
+        
+        DV.Data.load_area(player.area,function(err,area_data){
+            var thisarea = {
+                areaId: player.area,
+                x: area_data.position[0]*100,
+                y: area_data.position[1]*100,
+                header: area_data.header,
+                title: area_data.title,
+                mapId: area_data.mapId || "dormausvillage.jpg"
+            };
+            $(".map").css("background-image",'url("img/' + thisarea.mapId + '")');
+            $(".map").append('<div title="' + thisarea.header + '" style="left: ' + thisarea.x + '%; top: ' + thisarea.y + '%" class="areabutton currentareabutton" data-area="' + thisarea.title + '"></div>');
+            
+            for (var i = 0; i < areaIds.length; i++) {
+                var areaId = areaIds[i];
+                DV.Data.load_area(areaId,function(err,area_data){
+                    area_data.mapId = area_data.mapId || "dormausvillage.jpg";
+                    if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
+                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
                     }
-                }
-            });
-//		        $(".map").append('<div style="left: ' + x + 'px; top: ' + y + 'px" class="areabutton" data-area="' + areaId + '"></div>');
-        }
+                });
+            }
+        });
     }
     
     function getEventResolution(event) {
@@ -1605,6 +1615,7 @@ function main(err,session) {
     
     function displayArea(areaName) {
 //        console.log(JSON.stringify(player));
+        updateMap();
         DV.Data.load_area(areaName,function(err,area_data){
             if(err){
                 console.log(err);
@@ -1643,12 +1654,19 @@ function main(err,session) {
             $("#box1").append('<div class= "npclist">');
             for (var i = 0; i < area.npcs.length; i++) {
                 var npc = area.npcs[i];
-                $("#box1").append(
-                    '<div id="' + npc.id +'" class="npc">' +
-                    '<div class="npcicon ' + npc.icon + '"></div>' +
-                    '<p class="npcname">' + npc.name + '</p>' +
-                    '</div>'
-                );
+                if (npc.requirements) {
+                    if (!isEventValid(npc)) {
+                        npc = null;
+                    }
+                }
+                if (npc) {
+                    $("#box1").append(
+                        '<div id="' + npc.id +'" class="npc">' +
+                        '<div class="npcicon ' + npc.icon + '"></div>' +
+                        '<p class="npcname">' + npc.name + '</p>' +
+                        '</div>'
+                    );
+                }
             }
             $("#box1").append('</div>');
             var invalidEvents = [];

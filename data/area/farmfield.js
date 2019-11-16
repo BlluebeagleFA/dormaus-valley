@@ -1,7 +1,8 @@
 var area = {
         "title": "farmfield",
         "header": "Scrubby Farmland",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.57,0.29],
+        "mapId": "worldmap.jpg",
         "subheader": 'The farmland is tangled with weeds here, with only a few weak trees standing up from the long grass. It leads up to the rocky sides of a rising mountain, where the dark mouth of a strange cave looms. The cave is criss-crossed with paper talismans and you strangely cannot pass them.',
         "events": [
             {

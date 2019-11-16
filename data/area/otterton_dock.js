@@ -1,7 +1,8 @@
 var area = {
         "title": "otterton_dock",
         "header": "Otterton Dock",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.43,0.87],
+        "mapId": "worldmap.jpg",
         "subheader": 'This jetty is a series of wooden platforms extending out into the sea. The cries of terns can be heard overhead, and a cold sea wind blows through the air despite the warm sun above. A number of ships are moored to the platforms at the side of the docks.',
         "events": [
             {

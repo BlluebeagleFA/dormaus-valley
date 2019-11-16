@@ -1,7 +1,8 @@
 var area = {
         "title": "top_valley",
         "header": "Top of the Valley",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "position": [0.45,0.36],
+        "mapId": "worldmap.jpg",
         "subheader": 'From this high point, you can see down the valley as it flows south. The edges of the valley, swaying with grass, raise up either side up of you to the tall bare stony peaks of the mountains. You can see the shining ribbon of a river flowing down to the distant sea.',
         "events": [
             {

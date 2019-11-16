@@ -373,6 +373,18 @@ div.theft {
 	background-image: url("../img/uselessraccoon.png");
 }
 
+.uselesscollar {
+	background-image: url("../img/uselesscollar.png");
+}
+
+.hypnowolf {
+	background-image: url("../img/hypnowolf.png");
+}
+
+.wolfwarrior {
+	background-image: url("../img/wolfwarrior.png");
+}
+
 .usefulraccoon {
 	background-image: url("../img/usefulraccoon.png");
 }
@@ -1014,7 +1026,7 @@ input {
 .map {
 	width: 100%;
 	min-width: 500px;
-	background-image: url("../img/dormausvillage.jpg");
+	background-image: url("../img/loading.jpg");
 	background-size: cover;
 	position: relative;
 }

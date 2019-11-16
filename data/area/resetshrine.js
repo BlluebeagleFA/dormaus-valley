@@ -1,6 +1,8 @@
 var area = {
         "title": "resetshrine",
         "header": "Temple of Memory",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": 'This small shrine lies under the village church. It is a tiny room, lit by guttering candles, with a small statue and a basin of clear water. The statue is of a woman looking up into the sky, as if lost deep in thought. The walls of the shrine are covered in forget-me-nots.',
         "events": [
             {
@@ -32,6 +34,75 @@ var area = {
                         "reset": "major",
                         "area": "dormaus_entrance",
                         "outcomes": [
+                        ]
+                    }
+                }
+            },{
+                "id": "reset_to_bonacieux",
+                "title": "Think about Bonacieux",
+                "subtitle": 'This will set you to a part of the story just before the Bonacieux quest.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'A drop of water falls from the ceiling. For a moment, the world turns around you. The date is not what it was.',
+                        "outcomes": [
+                            {
+                                "parameter": "priest_quest",
+                                "quantity": 0,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "digger",
+                                "quantity": 3,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "pistol",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "reset_to_leonar",
+                "title": "Think about Makarna",
+                "subtitle": 'This will set you to a part of the story just before the Makarna harem quest.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'A drop of water falls from the ceiling. For a moment, the world turns around you. The date is not what it was.',
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 1,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "submissiveness",
+                                "quantity": 1,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "leonar_master",
+                                "quantity": 0,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "rufo_connection",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "ace_missing",
+                                "value": 0,
+                                "comparison": "set"
+                            }
                         ]
                     }
                 }
