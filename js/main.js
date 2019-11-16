@@ -782,7 +782,7 @@ function main(err,session) {
                     area_data.mapId = area_data.mapId || "dormausvillage.jpg";
                     if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
                         $(".map").append('<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
-                    }
+                    } 
                 });
             }
         });
