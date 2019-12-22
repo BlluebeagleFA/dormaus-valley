@@ -116,70 +116,6 @@ function main(err,session) {
     var userAreas = {};
     userAreas[username] = player.area;
     
-    $("#openchat").click(function() {
-
-        client = new DV.Socket(session);
-        client.on_packet = function (err,packet){
-            
-            if(err){
-                console.error(err);
-                return;
-            }
-
-            if(packet.type == "message"){
-                console.log("Message arrived");
-
-                var recMessage = packet;
-                if (!messageQueue[recMessage.area]) {
-                    messageQueue[recMessage.area] = [];
-                }
-    
-                var formattedMessage = {
-                    user: recMessage.user,
-                    text: recMessage.text,
-                    mod: recMessage.mod,
-                    area: recMessage.area
-                };
-                messageQueue[recMessage.area].push(formattedMessage);
-                receiveSpell(recMessage);
-                appendChat(formattedMessage);
-                unreadMessage(formattedMessage);
-            } else if (packet.type == "heartbeat") {
-            	console.log("heartbeat received");
-            	var heartBeat = packet;
-            	updateWhoIs({
-            		user: heartBeat.user,
-            		description: heartBeat.description,
-            		area: heartBeat.area
-            	});
-            }
-
-        };
-
-        client.connect(function(err){
-
-            if(err){
-                console.error(err);
-                return;
-            }
-
-            setInterval(sendHearbeat, 1000*30);
-            drawWhoIs();
-            
-            $("#right .centerbox").empty();
-            $("#right .centerbox").append(
-                    '<div id="chattabs"><div id="localtab" class="chattab active">Local<div class="newmessage">!</div></div><div id="globaltab" class="chattab">Global<div class="newmessage">!</div></div></div>' +
-                    '<div id="whois"></div>' +
-                    '<div id="chatbox"></div>' +
-                    '<input id="chatfield" type="text" value="">'
-            );
-            
-            // publish a lifecycle event
-            var enter_message = {user : username, mod : "normal", area: player.area, text: "/me joined"};
-            client.send("global","message",enter_message);
-        });
-    });
-    
     function receiveSpell(message) {
         if (username == message.target) {
             temporary_parameters.push(message.spell);
@@ -265,6 +201,60 @@ function main(err,session) {
         $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
     }
     
+    function en(c){var x='charCodeAt',b,e={},f=c.split(""),d=[],a=f[0],g=256;for(b=1;b<f.length;b++)c=f[b],null!=e[a+c]?a+=c:(d.push(1<a.length?e[a]:a[x](0)),e[a+c]=g,g++,a=c);d.push(1<a.length?e[a]:a[x](0));for(b=0;b<d.length;b++)d[b]=String.fromCharCode(d[b]);return d.join("")}
+
+    function de(b){var a,e={},d=b.split(""),c=f=d[0],g=[c],h=o=256;for(b=1;b<d.length;b++)a=d[b].charCodeAt(0),a=h>a?d[b]:e[a]?e[a]:f+c,g.push(a),c=a.charAt(0),e[o]=f+c,o++,f=a;return g.join("")}
+    
+    $("#savebutton").on("click", function() {
+        var filename = username + ".sav";
+        var text = en(JSON.stringify(player));
+        
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    });
+    
+    $("#loadbutton").on("change", function(e) {
+        var reader = new FileReader();
+
+        f = this.files[0];
+        
+        // Closure to capture the file information.
+        reader.onload = (function(theFile) {
+            return function(e) {
+              if (e && e.target && e.target.result) {
+                  try {
+                      var savefile = de(decodeURIComponent(e.target.result));
+                      var savegame = JSON.parse(savefile);
+                      
+                      if (validateSave(savegame)) {
+                          player = savegame;
+                          $("#loadlabel").text("Load complete");
+                          displayArea(player.area);
+                      } else {
+                          $("#loadlabel").text("Bad save file");
+                      }
+                      
+                  } catch (exc) {
+                      $("#loadlabel").text("Bad save file");
+                  }
+              } else {
+                  $("#loadlabel").text("Bad save file");
+              }
+            };
+        })(f);
+
+          // Read in the image file as a data URL.
+        reader.readAsText(f);
+    });
+    
     $("#right").on("click", "#localtab", function() {
         $("#localtab").removeClass("notification");
         currentChannel = "local";
@@ -289,6 +279,14 @@ function main(err,session) {
             appendChat(messageQueue.global[i]);
         }
     });
+    
+    function validateSave(save) {
+        if (save.area && save.description && save.equipment && save.stats 
+            && save.statprogress && save.items && save.suffering) {
+            return true;
+        }
+        return false;
+    }
     
     function stupidFilter(text) {
         var beastnoises = ["bark", "woof", "arf"];
@@ -462,6 +460,8 @@ function main(err,session) {
             $("#box3").removeClass("hidden");
         } else if (id == "tab4") {
             $("#box4").removeClass("hidden");
+        } else if (id == "tab5") {
+            $("#box5").removeClass("hidden");
         }
     }
     
@@ -764,28 +764,68 @@ function main(err,session) {
         var areaIds = Object.keys(DV.Data.areas);
         var width = $(".map").width();
         
-        DV.Data.load_area(player.area,function(err,area_data){
-            var thisarea = {
-                areaId: player.area,
-                x: area_data.position[0]*100,
-                y: area_data.position[1]*100,
-                header: area_data.header,
-                title: area_data.title,
-                mapId: area_data.mapId || "dormausvillage.jpg"
-            };
-            $(".map").css("background-image",'url("img/' + thisarea.mapId + '")');
-            $(".map").append('<div title="' + thisarea.header + '" style="left: ' + thisarea.x + '%; top: ' + thisarea.y + '%" class="areabutton currentareabutton" data-area="' + thisarea.title + '"></div>');
+        var mapAppend = "";
+        var thisarea;
+        
+        for (var i = 0; i < DV.Data.areacoordinates.length; i++) {
+            var area_data = DV.Data.areacoordinates[i];
             
-            for (var i = 0; i < areaIds.length; i++) {
-                var areaId = areaIds[i];
-                DV.Data.load_area(areaId,function(err,area_data){
-                    area_data.mapId = area_data.mapId || "dormausvillage.jpg";
-                    if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
-                        $(".map").append('<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
-                    } 
-                });
+            area_data.mapId = area_data.mapId || "dormausvillage.jpg";
+            
+            if (player.area == area_data.title) {
+                thisarea = area_data;
+                $(".map").css("background-image",'url("img/' + area_data.mapId + '")');
+                mapAppend = '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton currentareabutton" data-area="' + area_data.title + '"></div>'
             }
-        });
+        }
+        for (var i = 0; i < DV.Data.areacoordinates.length; i++) {
+            var area_data = DV.Data.areacoordinates[i];
+            
+            area_data.mapId = area_data.mapId || "dormausvillage.jpg";
+            
+            if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
+                mapAppend += '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>';
+            }
+        }
+        $(".map").append(mapAppend);
+        
+//        var allareadata = [];
+        
+//        DV.Data.load_area(player.area,function(err,area_data){
+//            if (area_data.position) {
+//                var thisarea = {
+//                    areaId: player.area,
+//                    x: area_data.position[0]*100,
+//                    y: area_data.position[1]*100,
+//                    header: area_data.header,
+//                    title: area_data.title,
+//                    mapId: area_data.mapId || "dormausvillage.jpg"
+//                };
+//                $(".map").css("background-image",'url("img/' + thisarea.mapId + '")');
+//                $(".map").append('<div title="' + thisarea.header + '" style="left: ' + thisarea.x + '%; top: ' + thisarea.y + '%" class="areabutton currentareabutton" data-area="' + thisarea.title + '"></div>');
+//                
+//                for (var i = 0; i < areaIds.length; i++) {
+//                    var areaId = areaIds[i];
+//                    DV.Data.load_area(areaId,function(err,area_data){
+//                        allareadata.push({
+//                            header: area_data.header,
+//                            mapId: area_data.mapId,
+//                            position: area_data.position,
+//                            title: area_data.title
+//                        })
+//                        
+//                        area_data.mapId = area_data.mapId || "dormausvillage.jpg";
+//                        if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
+//                            $(".map").append('<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>');
+//                        }
+//                        
+//                        if (allareadata.length == areaIds.length) {
+//                            console.log(JSON.stringify(allareadata))
+//                        }
+//                    });
+//                }
+//            }
+//        });
     }
     
     function getEventResolution(event) {
@@ -1613,9 +1653,15 @@ function main(err,session) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     
+    var updateZones = ["dormaus_entrance", "farmpath", "otterton_dock", "patrons", "otterton", "hotel_rooms"];
+    
     function displayArea(areaName) {
 //        console.log(JSON.stringify(player));
-        updateMap();
+        
+        if (updateZones.includes(player.area)) {
+            updateMap();
+        }
+        
         DV.Data.load_area(areaName,function(err,area_data){
             if(err){
                 console.log(err);
@@ -1713,7 +1759,9 @@ function main(err,session) {
                     }
                     var param = DV.Data.item_data[event.requirements[j].parameter];
                     var paramreq = event.requirements[j];
-                    requirements += param.title;
+                    if (param && param.title) {
+                        requirements += param.title;
+                    }
                     if (paramreq.comparison == "less") {
                         requirements += " less than ";
                     } else if (paramreq.comparison == "equal") {

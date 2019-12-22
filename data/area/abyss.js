@@ -172,6 +172,21 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "staycock",
+                "title": "Bonacieux's Cock",
+                "subtitle": "In the years that passed since an adventurer travelled to the Dormaus catacombs with Bonacieux, much has changed. The ancient tunnels that once were writhing with accursed now stand silent. Only one beast haunts these halls. The unstoppable Wolf of Dormaus, a creature of everlasting lust and cruelty.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "You hang between the massive wolf's legs, constantly tasting his thick, tarlike precum as it oozes and bubbles up through your body and out from your throat. The glistening black fluid leaves a trail everywhere he walks. The endless flow keeps you eternally hard, throbbing, needy. Your only thoughts are of sex, and release. The massive feral wolf's shaggy fur and stinking jet-black body loom over you, as you sway back and forth with every step he takes.</p>He stops, suddenly, making you spurt up a thicker gush of pre from the bounce and jerk you make. He raises his huge shaggy head, and sniffs the air. You feel his heart pound faster, his blood rushing through your body. He smells prey. His gigantic feet slam against the ground as he begins to sprint through the dark halls. The scent gets stronger. Another corrupted beast, foolishly wandering into these catacombs. Probably from the mazelike labyrinth of natural tunnels here. It has no idea what it about to happen to it.</p>The wolf launches himself out across a massive chasm in the ground, and you catch sight of the prey. It's a gigantic, glistening black boar. The corrupted fluids drip all over its body, and it turns to see you coming far too late. The wolf lands on top of it with all four feet, and his gigantic, lethal jaw clamps down hard on the boar's neck.</p>You feel a familiar rush. A confusing, mind-crumbling sensation. The corruption in the boar meeting your own, sending broken and scrambled memories flooding through you. Each time it happens, less of you remains. Even now, you have no thoughts or needs but lust, and soon you might be completely mindless. Nothing but a throbbing demon dick.</p>The wolf pins the boar down, and you feel yourself thrust forward. Your pointed tip rams into the boar's behind, and stretches it open. You feel the beast's body all around you, squeezing around your body, rubbing and pleasuring you. It feels incredible.</p>The wolf fucks hard, slamming you forward, and pulling you out. Humping and pounding the boar, as you feel the creature's slick, sticky body pumping up and down every inch of you. You love this. You need this. Sex is everything. Sex is all you exist for. Your mind empties out completely, filling with the white-hot, mindless pleasure of overwhelming orgasm. As black, hot corrupted cum explodes into the boar's body, it starts to lose its shape. The head, hooves and body beginning to bubble and melt. It drips and oozes, spreading over the wolf's underside, down his paws, and coating you in another layer of glistening black corruption.</p>As the wolf absorbs the creature's body, and becomes a little larger, a little crueler, you feel a little more of yourself slip away.",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

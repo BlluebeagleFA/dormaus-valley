@@ -98,6 +98,35 @@ var area = {
                     }
                 }
             },{
+                "id": "meetace",
+                "title": "A Familiar Face",
+                "subtitle": "The interior of one of the open-walled taverns at the market has a billboard filled with requests for adventurers and hunters. It could be worth checking out.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "mystery_dragons",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "ace_connection",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    },{
+                        "parameter": "ace_missing",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "aceicon",
+                "results": {
+                    "thing": {
+                        "html": "data/active/AceContract.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "entrance_random",
                 "title": "Watch the customers",
                 "subtitle": "There are massive crowds here, buying and selling all manner of object. You could watch and try to gain some information about the city.",

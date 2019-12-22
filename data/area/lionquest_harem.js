@@ -163,8 +163,8 @@ var area = {
                 "requirements": [
                     {
                         "parameter": "time",
-                        "value": 4,
-                        "comparison": "equal" //default greater
+                        "value": 3,
+                        "comparison": "greater" //default greater
                     }
                 ],
                 "icon": "rufo",

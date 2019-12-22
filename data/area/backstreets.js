@@ -526,6 +526,31 @@ var area = {
                     }
                 }
             },{
+                "id": "dominateflute",
+                "title": "Flute's Weakness",
+                "subtitle": "The special paw scent you bought is having quite an effect on both you and the people around you. Walking around town barefoot, constantly smelling your own ripe, thick dominant scent, is causing you to subconsciously swagger more, strut while you walk, and generally feel incredibly confident. The townspeople move aside as you pass, some of them blushing, and some others staring at your feet as you go.</p>None are more obvious with this than Flute, though. He looks pained and awkward, sweat dripping down his forehead and his cheeks flushed. His usual jovial patter comes out as a strangled stammer when he tries to speak. You could use this to your advantage.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "dominance",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "paw_musk",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "domicon",
+                "results": {
+                    "thing": {
+                        "html": "data/active/FluteDom.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "get_piss_curse",
                 "title": "Cursed Bottle?",
                 "subtitle": 'Flute is pawning off a strange bottle today [This will unlock watersports scenes].',

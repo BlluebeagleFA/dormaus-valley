@@ -82,6 +82,27 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "robchanger",
+                "title": "Rob the Moneychanger!",
+                "subtitle": "A bold heist, but certainly the most enticing jewel in the silk market. The thought of all that cash makes you salivate, and will definitely impress Jack.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "jack_friend",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "stealth",
+                "results": {
+                    "thing": {
+                        "html": "data/active/TheMoneychanger.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

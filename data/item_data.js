@@ -19,9 +19,18 @@ DV.Data.item_data = {
     ace_missing: {
         max: 1,
         type: "attribute",
-        icon: "aceicon",
+        icon: "aceicon_r",
         title: "Ace [Missing]",
         description: ["Ace hasn't been seen around town for longer than usual..."]
+    },
+    ace_connection: {
+        max: 1,
+        type: "attribute",
+        icon: "aceicon",
+        title: "Ace [Connection]",
+        description: ["Ace considers you his pathetic, obedient paw slave.",
+            "Ace considers you a fellow digger.",
+            "Ace harbours growing feelings for you."]
     },
     grizz_interest: {
         max: 5,
@@ -105,6 +114,12 @@ DV.Data.item_data = {
         icon: "wolfwarrior",
         title: "Reputation [Mercs]",
         description: ["You have earned some respect from the Dormaus Valley mercenaries"]
+    },
+    rogue_connection: {
+        type: "attribute",
+        icon: "vagabond",
+        title: "Reputation [Rogues]",
+        description: ["You have earned some respect from the Dormaus Valley rogues"]
     },
     slave_connection: {
         type: "attribute",
@@ -225,6 +240,7 @@ DV.Data.item_data = {
             "You are a large shaggy reindeer, with powerful branching antlers.", //51
             "You are a smooth, scaly lizard creature, with a long powerful tail.", //52
             "You are a mixed up chimera creature with various mismatched body parts.", //53
+            "You are a gleaming golden golem, a metal lion made from solid metal with bejewelled eyes.", //54
             ]
     },
     gender: {
@@ -267,7 +283,8 @@ DV.Data.item_data = {
         type: "attribute",
         icon: "mysterydragons",
         title: "Mystery: The Six Dragons",
-        description: ["You have learned about the old religion that worshipped six colourful dragons who maintained the world. It is no longer widely believed in, but you feel like there is something important about it, hidden just below the surface."]
+        description: ["You have learned about the old religion that worshipped six colourful dragons who maintained the world. It is no longer widely believed in, but you feel like there is something important about it, hidden just below the surface.",
+            "In an ancient tomb dating from the time of the original dragons, you found another mural. This one had a seventh, black, dragon painted on it. Your head itches, like there is something important you are forgetting."]
     },
     mystery_sky: {
         type: "attribute",

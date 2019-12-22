@@ -106,6 +106,54 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "reset_to_heist",
+                "title": "Think about Jack",
+                "subtitle": 'This will set you to a part of the story where you are looking to do heists for Jack, including in Makarna.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'A drop of water falls from the ceiling. For a moment, the world turns around you. The date is not what it was.',
+                        "outcomes": [
+                            {
+                                "parameter": "jack_friend",
+                                "quantity": 3,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "reset_to_ace",
+                "title": "Think about Ace",
+                "subtitle": 'This will set you to just before Ace\'s quest.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'A drop of water falls from the ceiling. For a moment, the world turns around you. The date is not what it was.',
+                        "outcomes": [
+                            {
+                                "parameter": "mystery_dragons",
+                                "quantity": 1,
+                                "change": "set"
+                            },{
+                                "parameter": "ace_connection",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "ace_missing",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

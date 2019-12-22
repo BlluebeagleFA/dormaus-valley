@@ -91,6 +91,25 @@ var area = {
                     }
                 }
             },{
+                "id": "staypaw",
+                "title": "Mayor Maine's Foot",
+                "subtitle": "You are Mayor Maine's footpaw. You are large, wide, and fluffy, with soft and warm soles. Sometimes, when you wiggle your toes or feel an itch, you get a sort of strange feeling that you didn't used to be a paw. But that's silly. You are just a foot. You don't need to think.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "The mayor is doing his rounds today, walking barefoot along the paths of the village and greeting the people he walks by. The day is moving on, and you have spent hours in the comforting, familiar rhythm of his footsteps. He lifts you up, and presses you down. Your sole spreading across the cobblestones, your toes splaying out. Feeling the warm sun-baked stone beneath you, and your owner's heavy weight pressing down on you. You support him, he controls you.</p>It is a soothing, comforting rhythm that makes it easy to lose yourself. You only realise you are thinking again because the mayor stops, and is wiggling your toes over a large cobblestone. Part of you is very proud that you haven't had any thoughts for several hours. Feet shouldn't think. You want to be a good, normal foot.</p>The mayor closes his toes around the smooth, round stone, almost like he's gripping it. You feel your toepads squeeze around it in a sort of foot hug. Then, an odd warmth flows up through you. It makes you feel dizzy and strange. You can feel an odd connection forming between you and the ground here. In the back of your mind, you can sense the drumming rhythm of every footstep on every cobblestone in the town. The mayor closes his eyes, and moves you gently left and right. Adjusting your focus, spreading your awareness across each street in the village.</p>There are a pair of bare feet in an alleyway, the soles rough and dirty. They taste like dirt and salt. Next to them, a pair of feet and knees, softer ones, moving back and forth. Ah, a sailor getting some pleasure from a companion. You move on to a main street, and feel the loud clanging clop of four hooves trotting along the stone. A carriage coming in, horse-drawn and bearing fruit from the markets. The hoof trots are a little unsure and clumsy though - this horse probably wasn't a horse this morning. It carries on like this as the mayor uses you to spy on every inch of his village.</p>Finally, he pulls you up from the cobblestone. It sticks to you a little as he does, and when the connection breaks, you get a wave of confusion and distress. He leans down and rubs his thumb slowly against your sole, and you start to relax again. You are a good foot. You do not question your owner.",
+                        "outcomes": []
+                    },
+                    "pumpkin_2": {
+                        "text": "You blink, and feel tired. Then you realise you didn't actually blink after all. You always have the same view, just the floor beneath your sole. You don't have eyes, you are just a foot. For a moment there you must have been dreaming you were a real person.</p>You are not sure how long it has been since you were last aware and thinking. These periods seem to come less and less often these days. Like your mind is slowly melting away, as you become a full, ordinary foot in every way. It feels warm and pleasant knowing you will soon be nothing but a true foot, forever.</p>You can feel something warm wriggling and struggling under you. A furry body, pressing against your toes, trying to push you up and get free. The mayor presses you down more firmly, forcing the wriggling thing against the carpet. You realise that someone is talking to him, and you can just barely see a pair of pink rodent feet in front of you. From the mayor's desk above, you hear him speak back.</p>\"My sincerest apologies traveller, but I haven't seen nor heard anything about your lover. A white mouse like yourself, yes? I will ensure that our town guard search the area for you\", Maine says. The mouse in front of him replies back with frustration, but eventually leaves. The person underneath you wriggles more, and you feel the mayor press you down again, squeezing your toes against their head.</p>Maine leans back, and lifts you up slowly. You see a sweat-soaked, dirty white mouse, shrunken down to the size of a micro and pinned flat on their back. They shake with nervousness, and try to squeak out a cry for help, but it just comes out like the quiet noises of a normal mouse. The mayor spreads your toes, and squeezes two of them around the mouse's tail, before lifting them up and making them dangle by their tail under you.</p>He leans back on his chair, lying down and stretching his ankle up near his face, with feline flexibility that belies his portly stature. He gives a grin to the whimpering, struggling mouse, then opens his mouth wide, and spreads his toes.</p>The mouse falls down into his maw, and disappears as he chomps his mouth shut. He then slides you back down under his desk and returns to work.",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "fountain_random",
                 "title": "Relax by the Fountain",
                 "subtitle": "It's very relaxing and cool by the tinkling water of the magical fountain.",
@@ -128,7 +147,7 @@ var area = {
                                 "change": "add"
                             }
                         ]
-                    }
+                    },
                 }
             }
         ],

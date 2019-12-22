@@ -1,7 +1,7 @@
 var area = {
         "title": "greasepit",
         "header": "The Grease Pit",
-        "nomap": "You don't know your way around this area yet. You'll have to navigate on foot.",
+        "nomap": "The bar's not that big, you don't need a map. Just walk out the door.",
         "subheader": 'This rickety, dirty bar stinks of smoke and sweat. The floor is sticky, the walls are covered in strange mechanical objects, and sitting at the beer-stained tables are a variety of rough, untrustworthy-looking bandits and thugs.',
         "events": [
             {
@@ -10,12 +10,43 @@ var area = {
                 "subtitle": "You are done here.",
                 "type": "random", //or random
                 "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 2,
+                        "comparison": "less" //default greater
+                    }
                 ],
                 "icon": "navigateicon",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
                         "text": "You quickly leave, dodging past a tavern brawl on the way out.",
                         "area": "grease_lot",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "leaveasborus",
+                "title": "Try to leave",
+                "subtitle": "You have a nagging, itching feeling in the back of your head, kind of like a hangover. It sort of is telling you that you should leave the bar and get back to adventuring. But...Borus wouldn't do that. You are Borus.",
+                "type": "statcheck", //or random
+                "stat": "charm",
+                "difficulty": 60,
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "Your head starts to hurt again. You rub your forehead and growl with annoyance. The ram tending bar slides a fresh glass of ale over to you, but you nudge it away with one rough hand. He raises an eyebrow. \"Think that's the first time I've seen you say no to beer, Borus\", he grunts.</p>You mutter something about not feeling like yourself, and stagger off your stool. Your head feels like it's splitting in two. Drunkenly, you stumble towards the door. You just need some fresh air. Then you can catch your bearings and head back inside afterwards.</p>You walk out, and lean against the exterior wall. The cold night air brushes over you, and the door next to you creaks closed, muffling the sound of rowdy cheer from within, and cutting you off from the warmth.</p>You feel a sullen, unpleasant homesickness. Yet you also feel like the Grease Pit isn't going to fix that today. You put your hands in the pocket of your jacket and walk away, for now.",
+                        "area": "grease_lot",
+                        "outcomes": []
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You step up off your stool, your boots creaking against the floor as you look around. The bar is so warm, with that nice, thick stink of sweaty unwashed men and cigarette smoke. Your belly is growling for another beer, and one panther leaning against the wall gives you a flirty wink. You wink right back. This is your home, where you belong.</p>You glance out at the door. It's already night outside, and it looks like a cold and shitty night out there. Why did you feel like you wanted to leave? That's not like you at all. You only head out there to make a quick buck and you aren't in need of money right now.</p>You turn away from the door and decide to chat up the panther instead. You lean on the wall next to him and breathe in the scent of his lit cigarette. He smiles at you.</p>\"Fellow lover of the leaf eh?\", you growl. He smiles, and pulls his cigarette from his mouth, before exhaling a cloud of smoke over your muzzle. You breathe in deep, and squeeze your crotch. \"Fuck that's the good stuff\", you grunt.</p>\"I'm a lover of many things\", the panther purrs. You like the sound of that. You lean up and lean your muzzle closer to his, and he bends down to press his face to yours in a kiss. Smoke oozes from both your muzzles as you reach around and grope the kitty's tight rear.</p>Any thought of leaving is forgotten. This is where you belong.",
                         "outcomes": []
                     }
                 }
@@ -177,6 +208,21 @@ var area = {
                     }
                 }
             },{
+                "id": "stayurinal",
+                "title": "Serve Your Purpose",
+                "subtitle": "You are a urinal, and this bar has many patrons who need to unload all the booze they are drinking.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "From your helpless position attached to the wall, you have a free view of the filthy bathroom door. It swings open, and a gigantic burly man squeezes his way inside. His huge grey body is hairless and rough, covered in wrinkles. An enormous trunk, huge flapping ears, and curving tusks are the signature features of a bull elephant.</p>He stomps over to you, his huge flat feet shaking the ground. You don't get any sign of recognition or notice. You are, after all, just an ordinary dirty urinal. When his pants go down, and reveal the ludicrous monster second \"trunk\" between his legs, you feel a rush of fear.</p>The hose of hot yellow piss that hits you comes so forcefully that you feel like your porcelain is going to crack. It's like shoving your face in a fire hydrant, but one that stinks of booze and piss. He sighs, relaxing as he unloads over you. His bladded must be the size of a tank, because he's completely soaking the wall around you, the floor under you, and every inch of your body.</p>By the time he finishes, you are dripping with stinking piss, and can taste and smell him over every inch of you. He pulls his pants up and walks off, without washing his hands.",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "greasepit_random",
                 "title": "Loiter at the Grease Pit",
                 "subtitle": "This isn't the sort of place where hanging around is a safe and smart idea",
@@ -196,6 +242,106 @@ var area = {
                             {
                                 "parameter": "muscat_1",
                                 "quantity": 9,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "accept_borus",
+                "title": "Borus is home!",
+                "subtitle": "As you swagger into the bar, the various canines and other leather-wearing patrons turn to glance at you. When they see who you are though, a cheer goes up. One fat wolf at the bar lifts his glass and grins at you. \"Borus, you're back! We were all wondering where you were!\", he growls. You feel a powerful urge to take your usual seat at the bar, but also a lingering feeling that you may not be able to leave if you do.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "westwoodicon",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "You see everyone looking at you, all your friends and biker crew. You are filled with a warm feeling of belongings, and you lift your paw in the air. \"Drinks are on me boys!\", you growl. There is a cheer, and two wolves near the door pick you up and carry you to your seat. You land on your usual stool with a thud, and reach back around behind you to grope one of them as they walk away. His cock throbs through his jeans as you squeeze him, and you growl possessively.</p>The fat wolf at the bar pants and wiggles on his seat, his tongue lolling. \"I'm so glad you're back boss!\", he barks. He presses his muzzle closer to you, and you scratch him under the chin, before lifting your arm. You know what he likes. The chubby wolf's tail wags rapidly as he presses his nose to your furry armpit and breathes in deeply. While he starts to lick and nuzzle at your pits, the bartender pours you your usual drink, and you chug it down in one gulp. It's good to be home.",
+                        "outcomes": [
+                            {
+                                "parameter": "westwood",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "getblowie",
+                "title": "Get a blowjob",
+                "subtitle": "Every guy at this bar would love to feel your knot in their mouths. Borus is well known around here as a stud with a beercan cock who knows a good time.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "domicon",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "\"Who wants a free drink?\", you yell. A few people look over, and quickly get the picture when you squeeze your bulging crotch with one rough handpaw. Some of them argue among eachother, but first dibs ends up going to a heavy-set squirrel. He walks over to you, grinning widely. Despite his chubby cheeks and round belly, he has a fair bit of swagger to him, with some thick burly arms and some nice leathers. Heavy boots, huge belt buckle, and a chunky leather jacket hanging open over his bare belly. You look at his slicked-back hair and scratch your chin.</p>\"Terry, wasn't it? Think I remember you coming in with Mike and his crew\", you say. Terry kneels down in front of you and nods, his huge tail curling behind him. \"Damn, didn't think you'd remember me. Haven't seen you around much these days Borus. Glad I got a chance to taste your daddy knot, big guy\", he says. You raise an eyebrow at being called a daddy. You're not quite sure how you feel about that quite yet! Still, it is getting you going.</p>You unbuckle your belt, and push down your pants, letting your sheath hang out and start to reveal the swelling bulge of your fat red rocket. Terry breathes in deeply, filling his lungs with your rough manly scent, and he almost starts drooling. Once your cock actually swells up and fills out, his eyes widen and he grins. \"Oh fuck man, they told me you were thick! Try not to break my jaw\", he gasps. You grin and take hold of his head with one hand. \"No promises\", you growl, before forcing the tip of your gleaming red wolf cock into his mouth.</p>The squirrel has clearly done this plenty of times before. He opens his mouth wide, and even when your shaft pushes down the back of his throat, he doesn't gag. His tongue licks and rubs against your shaft, and he presses his face forward into your crotch as he starts to suck and gulp on your throbbing cock like a pro.</p>You lean back, letting the squirrel do the work while you reach over and grab another drink. Droplets of booze splash onto his head as you guzzle it down, but your disdainful behaviour only seems to get him more excited. He reaches into his pants and starts to pump his own cock, his sucking getting faster and harder as he gets more into it.</p>You grunt and shudder as your knot starts to bulge up. It swells and thickens, and you press it firmly against his mouth. You figure you're not going to get it past his wide buck teeth, but the short guy surprises you when he stretches his mouth wide, holds onto your hips, and grunts. He pushes his nose deep into your crotch fur, and you feel your knot shove into his mouth, your cock now deeply thrust far enough into his throat that you swear you can see his neck bulge.</p>That eagerness sends you over the edge. You grab his head and press him between your legs as you start to cum into him, your cock gushing and spraying hot jizz deep into his throat. He moans and shakes, his face flushed, and when he pulls his hand out from his pants, cum is dripping in a mess between his fingers.</p>You sigh and lean back, grinning. That was damn good. The squirrel tries to pull free, but just ends up tugging on your knotted cock. \"Don't rush it\", you tell him. He realises his predicament, and mutters a swear of some sort. You end up enjoying two more beers at a leisurely pace, with him stuck between your legs, before your cock finally softens enough that he can pull free.",
+                        "outcomes": [
+                            {
+                                "parameter": "westwood",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "poundass",
+                "title": "Pound some ass",
+                "subtitle": "There are a few new faces at the bar. A couple of humans, and some lesser canines, given away as being new by their too-clean fur or slender bodies. They could do with some breaking in, and you have just the tool to do that with.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "domicon",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "You lick your lips and growl as you look over at the fresh meat near the bar. You sniff slowly, moving your gaze around the various patrons, looking for a particularly good one. There! The human sitting at a booth in the corner. You breathe in slowly and deeply, tasting his scent. He's surrounded by a trembling smell of fear, but also excitement and lust. Definitely a submissive, and from the weakness of his male scent, not a good fit for joining a leather wolf pack. You snap your fingers to get the bartender's attention, then gesture to the human. The ram at the bar nods, and pours you out an amber coloured drink.</p>You hop off your barstool and walk over to the human. He looks up at you and backs away slightly, before realising that sitting in that booth gives him no real way to sneak away once the entryway is filled up by a scruffy, horny wolf. Your teeth gleam in the dim light.</p>\"Hey cute stuff. You here all on your own?\", you growl. He hesitates, then nods. You step forward into the booth and take a seat next to him, then place your drink on the table. Your leather jacket creaks as you lift an arm and slide it around his shoulders. Watching carefully, you can see the precise moment he gets a deep, close-up breath of your scent. His face flushes pink, and his eyes take on a distant, blurry look. You press your long muzzle against his neck, and let your hot breath blow over his tender skin.</p>\"You don't want to be human any more, I can smell it. Try to deny it, boy\", you say. He shudders, and nods. You place one rough hand on his chest, and press him down onto the sticky, dirty bar bench. He tries to say something as you start to pull off his shirt, but you just place your hand over his mouth and muffle him. You're in charge now. His crotch visibly tents as you strip him, and he lifts his arms to help you do it. Soon, he's naked and trembling underneath you. You roll him over, and slide your hand over his smooth, round bubble butt. With your other hand, you pull down your pants, and stroke your throbbing, thick red cock.</p>\"This is gonna hurt, slut. But you'll learn to love it\", you say with a chuckle. The human clenches his eyes shut as you press your thick cock against his rear, and start to force it in. Damn, he's tight as fuck! You push and pull, inch by inch, very slowly stretching out his rear and invading him bit by bit. He bites his lip, alternating between whimpers of pain and moans of intense pleasure. As you sink into him deeper and deeper, you reach over to your drink, and start to dribble it slowly over his back.</p>He makes a confused noise, but doesn't resist you, even as you pour the cold liquid over his neck and hair. His dark hair starts to lighten, turning from black to a soft brown, before spreading down his neck and over his back. He gasps and grins, and then moans loudly as you run your hand through his thick, soft curly new fur. It spreads all along his bare back, and down to his butt. You shove your cock in another inch as his insides loosen a little, and you chuckle at the feeling.</p>\"Th-thank you! I've always wanted to be a wolf\", he gasps. You don't reply, and instead just thrust yourself more inside him, and lean down so that your body is pressing against his back. Your knot is touching his ring now, as your cock fills and stretches his tight hole. His ears stretch up and grow, and his flat human face lengthens out into a muzzle, as shorter, lighter-coloured fur covers his new face. He lifts up his hand eagerly to watch it change, and you chuckle when you see his delighted expression change to confusion. His fingers start to fuse together, turning dark, hard and black, as they become thick and chunky hoof-fingers. You tease his tail with your hand, tugging on the short tufty furry limb, and he makes a yelping bleat sound when his neck starts to lengthen and thicken.</p>With a grunt, you force your swollen knot into the new llama's tight little ass, feeling it pop inside with a rush of incredible pleasure. It's enough to make you start drooling, and your saliva drips and splatters along the llama's back. You can smell his fear growing more and more, like a sharp, tangy acrid scent spreading around him. You close your hand around his thick, soft neck, and lift him up before slamming him down on the table under you.</p>He looks around, helplessly pinned under you, as the many predators and dangerous beasts in the bar all turn to give him grins and winks. If he's lucky, they're horny looks. If not...well, he came to a wolf bar willingly, he should know the risks.</p>You shove his face onto the bar, lift your neck up, and howl as you start to cum inside him. Your thick, hard wolf cock gushing thick hot cum into his tight llama butt, a nice cream filling for a soft and wooly prey beast.</p>\"Get nice and comfy, meat, because you're gonna be sitting here for the next ten minutes with my knot in your ass. After that, well, things might get more complicated for you\", you whisper in his ear. He whimpers pathetically, and the sound of it gives you a little rush that makes you shoot up a bit more cum inside him.</p>A shorter wolf walks over and hands you a drink, and you gulp it down. For the next ten minutes, you mostly ignore the helpless beast impaled on your cock. Once you soften up, you pull yourself free, and walk away. As you zip up your pants, you hear a small crowd of your fellow preds all walk up to the whimpering llama.</p>You love this fucking bar.",
+                        "outcomes": [
+                            {
+                                "parameter": "westwood",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "justdrink",
+                "title": "Just drink",
+                "subtitle": "You're home, it's warm, you're surrounded by your makeshift pack. You don't need to do anything except chill and enjoy the night. You are Borus, and whatever that lingering feeling in your head is, it'll go away if you just settle into your life.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "domicon",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "You order another drink, and the bartender gives you the usual. The taste of the amber liquid reinforces your memories, of all the many times you've had this drink. This familiar groove on your favourite barstool. The scent of smoke and unwashed wolf fur. Yeah, you've done this a thousand times before.</p>You stare at the bartender's ass and remember when he first showed up for the job. You thought it was a joke when he came in, a ram working at a pred bar, but when you tried to pin him and fuck him he ended up giving you the ride of your life. It impressed the crew and you ended up letting him stay. He sees you staring and gives you a grin.</p>You spin on your stool and down another one. Every gulp of that lovely brain-melting booze makes you feel more relaxed, and makes that nagging feeling in your head get quieter. Yeah, you're Borus. You've never been anyone else. This is your home.</p>When a fresh-faced greaser rat comes over and asks if he can rub your feet, you forget all about that weird feeling. You spend the rest of the night feeling like a king, with horny guys at your feet, begging to lick your armpits, or experiencing your fat cock in one of their holes.",
+                        "outcomes": [
+                            {
+                                "parameter": "westwood",
+                                "quantity": 1,
                                 "change": "add"
                             }
                         ]

@@ -253,6 +253,25 @@ var area = {
                         "outcomes": []
                     }
                 }
+            },{
+                "id": "stayasplush",
+                "title": "You are stuffing",
+                "subtitle": "There is no need to think, no need to worry or care anymore. You are just mindless soft plush stuffing making a lovely bear very big and round. Give in and accept it.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "It's another normal day on the pier, waiting to be delivered. You are just a small part of a big cuddly plush bear, and you don't need to think for yourself. When no one is looking, the bear lifts a soft plush hand and strokes his belly, pressing down and massaging where you are.</p>\"Part of you still thinking in there, stuffing? Isn't it nice and warm and lovely? No need to keep thinking. No need to experience or desire or worry. Just let yourself disappear completely. Don't you want your spirit to fall apart and crumble into lovely soft stuffing? Inside me forever and ever, nowhere else but soft and cuddly?\", he croons gently.</p>You feel yourself melting away more and more, your physical body already gone and your spirit following too, becoming fluffy and empty and silly. You stop thinking, and the bear is just rubbing its own belly now.",
+                        "outcomes": []
+                    },
+                    "pumpkin_2": {
+                        "text": "A sailor walks past on the deck, his heavy boots creaking on the wooden floorboards. He's a heavy-set, muscular trout man, and he checks a list in his hand and looks at the plush bear suspiciously. \"This ain't right\", he mutters, and leans down to pick up the bear by its shoulders.</p>The bear reaches up with huge squishy paws that are far stronger than they should be, and opens its soft-lined mouth to show off its rounded, silly plastic teeth. The sailor barely has time to yelp as he is shoved deep into the bear's throat, his whole body lifted up and guzzled down until he's just a huge, wiggly bulge inside the bear's distended belly.</p>You feel the sailor's smooth, naked body writhing and struggling against you. Your fluffy stuffing form is surrounding him completely, and his clothes have already been stripped and belched out by your master's strange power. You know what to do. You cuddle and squeeze. You relax, you squish softly. The sailor's face becomes dizzy and confused, and he slowly starts to smile. His smooth grey skin starts to turn white, and become soft and squishy. His limbs and features gradually lose their definition, and begin to fall apart into fluffy clumps of stuffing.</p>You squeeze him tightly and welcome him happily into mindlessness, as his face and the last of his body finally dissolves into cotton. For a few days, you feel his presence inside you, as a sort of confused happy awareness, but it gradually fades away, and disappears. The bear rubs his belly gently. \"Everything becomes stuffing. Body, mind...and everything else. Inside me forever, cuddly and safe...\", he whispers in a sing-song voice.",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

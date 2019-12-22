@@ -183,6 +183,21 @@ var area = {
                         "outcomes": []
                     }
                 }
+            },{
+                "id": "staytrapped",
+                "title": "Trapped in Darkness",
+                "subtitle": "You are tightly, helplessly bound in clinging white gauze, with a gleaming golden jackal mask covering your face, inside a stone prison. Your body is completely drained of power and essence, leaving you utterly helpless. Yet is it possible you wish to stay this way?",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "You drift in and out of consciousness. Your entire body is squeezed tightly in the dry, constricting bandages that have wrapped you up from head to toe. With the heavy mask over your head, you can see nothing but blackness, and hear nothing at all from within your stone prison. You think of the rows of other sarcophagi you briefly saw, each of them likely another prisoner, helpless and forever trapped down here just like you.</p>Though you can do nothing but wait helplessly in darkness, you somehow still feel when your master returns to you. When he strokes a hand over your stone prison, you feel a tightness within your constricted body. When he steps past you in this dusty tomb, the sound of his footsteps echoes in your mind.</p>Sometimes he will linger longer at the other sarcophagi, whispering to them, taunting them. You can distantly feel the other prisoners like a faint presence in your mind, but after he visits them, that presence gets weaker and weaker, gradually fading as the days pass. Then he comes to you. You feel his hands touch against your tomb. You can feel his breath on the outside of your prison, even though you know that you are motionless within, feeling nothing.</p>\"Give yourself to me. You need nothing now. Nothing but the endless calm, the dark, quiet silence. Let yourself drift away, let yourself slowly succumb. Through your sacrifice, my eternal life continues longer\", he whispers. You feel weak. Your body, so tightly bound, feels like it is slowly becoming numb. Your limbs as heavy as lead weights, your mind slow, sluggish and empty. Your master breathes in deeply, taking in every part of your essence, draining you and leaving you emptier and colder.</p>He steps away, though you barely register it. You find it hard to think of anything at all. You do not need to think. You are just your master's spare life force. He uses you as he wishes. You are empty. You are nothing.",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

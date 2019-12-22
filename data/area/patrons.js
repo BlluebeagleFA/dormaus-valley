@@ -1,6 +1,8 @@
 var area = {
         "title": "patrons",
         "header": "The Patron's Ballroom",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": 'This classy, elegant ballroom is decorated with large tables and beautiful chandeliers. The ceilings are painted a deep blue, while the walls are papered in a classy sky blue and the floor is polished to a mirror shine. You get a strong feeling that this location is non-canon.',
         "events": [
             {

@@ -1,6 +1,8 @@
 var area = {
         "title": "hotel_alder",
         "header": "Alder's Room",
+        "mapId": "dormausvillage.jpg",
+        "position": [-1,-1],
         "subheader": 'Alder’s room looks almost identical to yours — the only difference being a well-used ashtray on the table. The heavy smell of smoke lingers in the furniture from exposure, giving it a lived-in feeling — though a non-smoker might instead be disgusted.',
         "events": [
 			{

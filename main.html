@@ -105,6 +105,7 @@
                     <div id="tab2" class="tab">Inventory</div>
                     <div id="tab3" class="tab">Map</div>
                     <div id="tab4" class="tab">Conversation</div>
+                    <div id="tab5" class="tab">Save</div>
                 </div>
                 <div id = "mainbox">
                     <div id="mainloader" class="loader"></div>
@@ -166,21 +167,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id = "right">
-            <div class="centerbox">
-                <div class="infobox">
-                    <p class="welcomemessage">Welcome Anonymous User</p>
-                    <p>Use the button below to connect to chat</p>
-                    <input id="openchat" type="submit" value="Connect"></input>
+                    <div id="box5" class="hidebox hidden">
+                        <div class="okbuttonbox">
+                        	<input id="savebutton" class="openevent" type="submit" value="Save"></input>
+                        </div>
+                        <div class="okbuttonbox">
+	                        <label id="loadlabel" for="loadbutton" class="custom-file-upload">
+							    Load
+							</label>
+                        	<input id="loadbutton" class="openevent" type="file" value="Restore"></input>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class = "footer">
-        <p>Enjoy the game? Support this and other furry games at my patreon https://www.patreon.com/blueballsgames</p>
+        <p>Enjoy the game? Join the discussion on the official Discord server! https://discord.gg/xNs3Q94</p>
+        <p>Or check out the fan-made wiki from artificisanimos https://dormaus-valley.fandom.com/wiki/</p>
     </div>	
 
 </body>
