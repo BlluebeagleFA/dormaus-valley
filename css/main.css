@@ -548,6 +548,18 @@ div.theft {
 	background-image: url("../img/grissicong.png");
 }
 
+.aldericon {
+	background-image: url("../img/aldericon.png");
+}
+
+.aldericon_r {
+	background-image: url("../img/aldericon_r.png");
+}
+
+.aldericon_g {
+	background-image: url("../img/aldericon_g.png");
+}
+
 .aceicon {
 	background-image: url("../img/aceicon.png");
 }
