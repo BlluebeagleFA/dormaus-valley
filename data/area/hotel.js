@@ -44,6 +44,23 @@ var area = {
                     }
                 }
             },{
+                "id": "tarot",
+                "title": "Ask About Villagers",
+                "subtitle": "Cedric, the hotel manager, is playing with a deck of cards. Each of them appears to have an unusual image on the front.",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "random",
+                "results": {
+                    "thing": {
+                        "html": "data/active/Cedric.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "hotel_random",
                 "title": "Wait in the Lobby",
                 "subtitle": "They have a selection of books and there is a nice breeze to relax with.",

@@ -526,6 +526,21 @@ var area = {
                     }
                 }
             },{
+                "id": "fucktoyrandom",
+                "title": "Accept Your Fate",
+                "subtitle": "Nothing you do seems to let you move at all in this tight, cramped prison. You exist only to be fucked and used.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_4": {
+                        "text": "Another day comes where you wake up only to find yourself still trapped in this dark, tight prison. Each time you are used it feels like it becomes a little more natural, like you find it harder and harder to feel where your body ends and the tight, rubbery prison begins.</p>You are also starting to get a strange sort of sixth sense for the people outside of your box, despite your inability to see them. When someone approaches Flute, curious about using you, you can smell their lust and arousal, and get a strange mental image of them near you. It worries you slightly that these mental images always seem to come with a growing intense desire to know what they will feel like filling you.</p>Today it is a horse. You can feel his heavy hooves clop on the ground, and hear the coins he hands over to Flute in order to take you for a test run. From the outside, your two holes look the same, just entrances into a large fucktoy. So you never know whether your next user will be stretching out your throat, or pounding your ass.</p>You feel something press at the tip of your asshole, and brace yourself. The horse presses down onto the box, his heavy weight resting on the surface. You can feel his rough hands gripping the corners, as he slowly presses his gigantic cock into the rubbery hole. You grimace as it stretches you, his flared cockhead straining the limits of your hole. He pushes in, deeper and deeper, and you feel like you are going to split open.</p>You feel his medial ring slip past your hole, and you almost cry out as you realise he's only in half way! He keep pushing forward, starting to buck now and slide in and out as he rams in deeper. He has no idea that there's a person in here, so he doesn't put in any effort to go slow or be gentle. You are just a fucktoy, to be slammed and pounded as hard as he likes.</p>Finally, agonisingly, he hilts himself fully in you. His shaft must be over twenty inches! Maybe he's part-feral, and needs a fucktoy just to have something he can fit in. You feel sure you couldn't take a cock like this normally, but the tight confines of your prison makes your whole body feel rubbery and pliable. The stallion pounds and shakes the box as he thrusts in once more, and then floods your insides with heat. His cock gushes hot horse cum into your belly, and he whinnies loudly in pleasure.</p>He takes a moment to catch his breath, then pulls out, leaving your hole dripping and oozing with cum. Just another day in the life of a fucktoy for rent. ",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "dominateflute",
                 "title": "Flute's Weakness",
                 "subtitle": "The special paw scent you bought is having quite an effect on both you and the people around you. Walking around town barefoot, constantly smelling your own ripe, thick dominant scent, is causing you to subconsciously swagger more, strut while you walk, and generally feel incredibly confident. The townspeople move aside as you pass, some of them blushing, and some others staring at your feet as you go.</p>None are more obvious with this than Flute, though. He looks pained and awkward, sweat dripping down his forehead and his cheeks flushed. His usual jovial patter comes out as a strangled stammer when he tries to speak. You could use this to your advantage.",

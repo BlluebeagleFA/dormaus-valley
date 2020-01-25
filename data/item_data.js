@@ -182,6 +182,14 @@ DV.Data.item_data = {
         title: "Dragon [Connection]",
         description: ["You met a dragon, in a place that might not really exist."]
     },
+    trapped: {
+        type: "attribute",
+        icon: "inanimatefetish",
+        title: "Bad End",
+        description: ["Your adventure ends here...or does it?"
+            //1: Bull sheath
+        ]
+    },
     species: {
         type: "attribute",
         icon: "speciesicon",

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    DV.Session.get_session(main);
+//    DV.Session.get_session(main);
     
 //    var itemparams = Object.keys(DV.Data.item_data);
 //    var logthing = "";
@@ -25,7 +25,7 @@ function main(err,session) {
         DV.Tracker.submit(username,err.message,localStorage.getItem("dv_data"));
 
         // Clear their session and let them try to login agian 
-        DV.Session.clear_session();
+//        DV.Session.clear_session();
         
         $("#main").text("Unable to detect session. Please log in to the game normally then try this again");
     } else {

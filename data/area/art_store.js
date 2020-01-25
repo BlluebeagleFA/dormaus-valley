@@ -319,6 +319,46 @@ var area = {
                     }
                 }
             },{
+                "id": "staystatuem",
+                "title": "Worship Me, Peasants!",
+                "subtitle": "You are a beautiful, mighty dragon statue. Your new form has brought with it the confidence and pride befitting your glorious self. Each customer that admires and gawps at you only makes you feel more assured that you are perfect, and deserved to be worshipped.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "As you always do, you are posing on your stand. Showing off your perfect body, your beautiful scales, and your thick and eternally hard dragon cock. The customers who walk by often stroke or even squeeze your firm clay shaft. The feeling is always a rush, edging you and giving you another rush of pleasure. No matter how much they do though, it only ever pushes you closer to a climax that never comes. Their touching and teasing is never enough. Part of you wants to roar at them, to beg them to keep going.</p>You do not, of course. Not because you're a lifeless clay statue, but because you are a proud dragon and will not beg!</p>Today, one customer is particularly interested in you. A slender, feminine stag with short antlers, and a cute spotted flank. He looks all around you, admiring your handsome glossy scales and your grinning, smug face. He moves between your legs, and you would almost shiver in anticipation, if you had muscles.</p>He opens his mouth, and slowly lowers his muzzle over your cock. Yes! It feels incredible! His tongue slides along your base, his throat perfectly gulps down your long shaft. The horny deer is a pro cocksucker, knowing every exact way to please you. He sucks and squeezes just the perfect amount, his nose bumps against your crotch as he deep throats you. His tongue even licks along your sensitive ridges, and you are feeling more pleasure than ever before.</p>This time surely will do it! You are hot all over, pounding with pleasure. Your lust builds and builds, rising higher and higher. Just a little more!</p>Then, he slowly pulls his mouth off you, leaving your cock glistening and wet. You want to scream at him, beg him to touch you just once more. But all you can do is stare in the same frozen way as he walks off, and your desperately edged cock slowly drips with his saliva.",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "staystatuef",
+                "title": "Worship Me, Peasants!",
+                "subtitle": "You are a beautiful, mighty dragon statue. Your new form has brought with it the confidence and pride befitting your glorious self. Each customer that admires and gawps at you only makes you feel more assured that you are perfect, and deserved to be worshipped.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "As you always do, you are posing on your stand. Showing off your perfect body, your beautiful scales, and your beautiful perfectly-formed dragon slit. The customers who walk by often stroke your labia or even slip their fingers inside to feel your polished interior. The feeling is always a rush, edging you and giving you another rush of pleasure. No matter how much they do though, it only ever pushes you closer to a climax that never comes. Their touching and teasing is never enough. Part of you wants to roar at them, to beg them to keep going.</p>You do not, of course. Not because you're a lifeless clay statue, but because you are a proud dragon and will not beg!</p>Today, one customer is particularly interested in you. A slender, feminine stag with short antlers, and a cute spotted flank. He looks all around you, admiring your handsome glossy scales and your grinning, smug face. He moves between your legs, and you would almost shiver in anticipation, if you had muscles.</p>He opens his mouth, and slowly lowers his muzzle against your pussy. Yes! It feels incredible! His tongue slides along your edges, and then slides inside you as he pushes in firmly. The horny deer is a pro cunnilinguist, knowing every exact way to please you. He licks and nuzzles just the right amount, his nose bumps against your crotch as his tongue slides all the way inside you. His even licks along your shiny clay clit, and you are feeling more pleasure than ever before.</p>This time surely will do it! You are hot all over, pounding with pleasure. Your lust builds and builds, rising higher and higher. Just a little more!</p>Then, he slowly pulls his mouth off you, leaving your slit glistening and wet. You want to scream at him, beg him to touch you just once more. But all you can do is stare in the same frozen way as he walks off, and your desperately edged pussy slowly drips with his saliva.",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "artstore_random",
                 "title": "Browse the store",
                 "subtitle": "The many paintings and canvases form almost a maze through the store. It would be easy to get lost in them.",

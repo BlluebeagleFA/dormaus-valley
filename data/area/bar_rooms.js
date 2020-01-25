@@ -169,6 +169,7 @@ var area = {
                 ],
                 "description": "Ace is a coyote with a long smirking muzzle. His face is obscured by his cowboy hat, and sometimes he likes to toy and juggle with a gleaming knife.",
                 "icon": "aceicon",
+                "dialogue_html": "data/active/Ace_Conversation.html",
                 "dialogue": [
                     {
                         "input": "What is your name?",

@@ -262,6 +262,40 @@ var area = {
                 }
             },
             {
+                "id": "macropotion",
+                "title": "Try the Macro Brewery",
+                "subtitle": "One item on the menu is marked as restricted. Macrobrewery special ale, only for sale in trade for twenty bottles of wine.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "wine_1",
+                        "value": 20,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "Grizz grunts when you tell him you want to try the macro potion. He counts through your payment carefully, then turns and unlocks a small cabinet behind him. He draws out a glass bottle, and you can see that the fluid inside is swirling and pulsing, almost like it's straining against the glass of its container.</p>He leads you out of the bar and down the road, without explanation. You follow along behind him as he walks across the bridge, past the marketplace, and eventually all the way out into the fields. By the time you reach your destination you are tired and sweating from how far he's leading you.</p>He has taken you to an old field past the limits of the town. There's a few abandoned buildings and a large, empty barn, along with a lot of weeds growing everywhere. He turns and looks at you. \"Strip\", he says.</p>You hesitate for a moment, then start to pull off your clothes and hand them over. He takes them from you, folds them, and places them neatly aside. Once you are completely naked, he finally hands you the potion. As soon as you uncork it, it begins to bubble and froth up over the rim of the bottle. You quickly gulp it down, and Grizz backs away cautiously.</p></p>The first sign of it taking effect is a feeling of pressure and bubbling inside you. It's like you need to burp, but the feeling spreads throughout your whole body. You look down and see your feet starting to sink into the mud, as your body starts to grow taller, wider, and heavier. Grizz and the world around you look like they are shrinking. Your body aches, stretches and grows, and you quickly lean against something beside you for balance. You turn to see that the short wooden object you're resting against is actually a fully grown oak tree, and you are already towering over it!</p>You continue to grow, your vision quickly surpassing the treeline, and letting you see out across the valley. The village nearby looks like a model town, and the buildings near your feet are like child's playhouses. You reach down and touch the top of the abandoned farmhouse roof, and your hand knocks the tiles aside effortlessly. You accidentally crush the chimney with a brush of your hand, and the feeling gives you a strange, powerful rush.</p>You haven't finished growing, either. The little house is down to your hips, then soon to your knee. Your foot is covering much of an entire field, leaving a gigantic crater-like print in the mud. The trees look more like tall grass at most, and you step over and press your foot down. You feel the trunks and branches crunch and crumble under your weight, and that rush of excitement comes back once more. Unable to control yourself, you start laughing. The sound of your deep, titanic voice echoes across the valley. You raise your leg, and smash your foot down on the abandoned farmhouse. It resists slightly, the walls and timbers straining against you, before they crumble and crash down. The stone walls fall like wooden blocks, and scatter across the ground.</p></p>You turn to the barn next, and stomp over to it, the ground shaking beneath you. You step over it, straddling the once-large building, and sit down. It strains beneath your weight, before cracking down the middle and collapsing. You lie flat on your back, laughing at how easy it is to wreck things! You are a giant monster, an unstoppable beast! You can crush anything you want!</p>Your eyes wild and hungry, you clamber to your feet. You start stomping towards the village, but you feel a tingly, dizzy sensation as you do. The world around you starts to get bigger, trees growing up suddenly, the sky shrinking away. You growl with annoyance as your body shrinks and reduces back down to its normal height, and the sudden loss of your short-lived power causes you to stumble and trip.</p></p>Grizz walks over and returns your clothing, then leaves back along the road you came in on, without a word. You turn and look back at the dust clouds and scattered rubble of your playing, and for a brief moment you feel a strong desire to knock some stuff over, before the macro-high finally passes.",
+                        "outcomes": [
+                            {
+                                "parameter": "wine_1",
+                                "quantity": 20,
+                                "change": "sub"
+                            },{
+                                "parameter": "might",
+                                "quantity": 5,
+                                "change": "add"
+                            },{
+                                "parameter": "magic",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
                 "id": "grizz_piss",
                 "title": "Grizz's Piss",
                 "subtitle": "You want to ask for a special brew today.",

@@ -31,23 +31,19 @@
             </div>
         </div>
         <div id="right">
-            <h3>Login</h3>
-            <label>Username</label>
+            <h3>New Game</h3>
+            <label>Name</label>
             <input id="loginuser" type="text" placeholder="username" name="username" value="">
-            <label>Password</label>
-            <input id="loginpass" type="password" placeholder="password" name="password" value="">
-            <button id="login" type="submit" class="ui teal fluid button" role="button">Login</button>
-            <div id="loginerror" class="hide">Unexpected error</div>
-            <div id="loginloader" class="loader hide"></div>
+            <button id="login" type="submit" class="ui teal fluid button" role="button">Start Game</button>
             <hr>
-            <h3>Register</h3>
-            <label>Email</label>
-            <input id="regemail" type="text" placeholder="email" name="email" value="">
-            <label>Username</label>
-            <input id="reguser" type="text" placeholder="username" name="username" value="">
-            <label>Password</label>
-            <input id="regpass" type="password" placeholder="password" name="password" value="">
-            <button id="register" type="submit" class="ui dark fluid button" role="button">Register</button>
+            <h3>Continue</h3>
+            <button id="register" type="submit" disabled class="ui dark fluid button" role="button">Resume</button>
+            <div class="okbuttonbox">
+                <label id="loadlabel" for="loadbutton" class="ui dark fluid button">
+		            Load
+		        </label>
+                <input id="loadbutton" class="openevent" type="file" value="Restore"></input>
+            </div>
             <div id="registererror" class="hide">Unexpected error</div>
             <div id="registerloader" class="loader hide"></div>
         </div>

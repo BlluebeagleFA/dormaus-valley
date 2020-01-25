@@ -39,6 +39,7 @@ body
     display: flex;
     justify-content: space-between;
     background-image: url(../img/treebackground3.png);
+    min-height: 1000px;
 }
 
 #left {
@@ -71,6 +72,15 @@ button {
     padding: 5px;
 }
 
+label.dark {
+	margin-top: 10px;
+    color: #fff;
+    text-shadow: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .teal {
 	background-color: #009c95;
 }
@@ -89,3 +99,17 @@ input {
 .error {
 	border: 1px solid red;
 }
+
+#loadbutton {
+	visibility: hidden;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+#loadlabel {
+	display: flex;
+	justify-content: center;
+}
+

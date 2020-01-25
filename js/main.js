@@ -36,13 +36,11 @@ function main(err,session) {
         global: []
     }
     
-    $(".subtitle h2").text("Welcome back, " + username);
-    $(".welcomemessage").text("Welcome " + username);
-
     // Cache the area data instead of fetching it everytime
     var area;
     
     var player = {
+        username: username,
         area: "dormaus_entrance",
         dust: 0,
         description: "This adventurer is an ordinary human.",
@@ -99,8 +97,12 @@ function main(err,session) {
     session.save = player;
     player = session.save;
     
+    if (username && !player.username) {
+        player.username = username;
+    }
+    
     $("#logout").on("click", function() {
-        DV.Session.sync_session();
+//        DV.Session.sync_session();
         DV.Session.clear_session();
         window.location.replace("./index.html");
     });
@@ -221,6 +223,46 @@ function main(err,session) {
         document.body.removeChild(element);
     });
     
+    $("#makepass").on("click", function() {
+        var passtext = btoa(JSON.stringify(player));
+        
+        $("#passinput").val(passtext);
+        $("#passinput").select();
+    });
+    
+    $("#passinput").on("click", function() {
+        $("#passinput").select();
+    });
+    
+    $("#loadpass").on("click", function() {
+            try {
+                var savefile = atob($("#passinput").val());
+                
+                var savegame = JSON.parse(savefile);
+                
+                if (validateSave(savegame)) {
+                    player = savegame;
+                    
+                    var savesessionfile = {
+                        username : username,
+                        save: player
+                    }
+                    
+                    window.localStorage.setItem('dv_data', JSON.stringify(savesessionfile));
+                    updateStats();
+                    $("#loadpass").val("Load complete");
+                    displayArea(player.area);
+                } else {
+                    $("#loadpass").val("Bad password");
+                }
+                
+            } catch (exc) {
+                $("#loadpass").val("Bad password");
+            }
+    });
+    
+    
+    
     $("#loadbutton").on("change", function(e) {
         var reader = new FileReader();
 
@@ -236,6 +278,14 @@ function main(err,session) {
                       
                       if (validateSave(savegame)) {
                           player = savegame;
+                          
+                          var savesessionfile = {
+                              username : username,
+                              save: player
+                          }
+                          
+                          window.localStorage.setItem('dv_data', JSON.stringify(savesessionfile));
+                          updateStats();
                           $("#loadlabel").text("Load complete");
                           displayArea(player.area);
                       } else {
@@ -772,7 +822,7 @@ function main(err,session) {
             
             area_data.mapId = area_data.mapId || "dormausvillage.jpg";
             
-            if (player.area == area_data.title) {
+            if (player.area == area_data.title && area_data.position) {
                 thisarea = area_data;
                 $(".map").css("background-image",'url("img/' + area_data.mapId + '")');
                 mapAppend = '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton currentareabutton" data-area="' + area_data.title + '"></div>'
@@ -781,11 +831,15 @@ function main(err,session) {
         for (var i = 0; i < DV.Data.areacoordinates.length; i++) {
             var area_data = DV.Data.areacoordinates[i];
             
-            area_data.mapId = area_data.mapId || "dormausvillage.jpg";
-            
-            if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
-                mapAppend += '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>';
+            if (area_data && thisarea) {
+                area_data.mapId = area_data.mapId || "dormausvillage.jpg";
+                
+                if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
+                    mapAppend += '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>';
+                }
             }
+            
+            
         }
         $(".map").append(mapAppend);
         
@@ -1462,13 +1516,22 @@ function main(err,session) {
                     }
                 }
             }
-            for (var i = 0; i < npc.dialogue.length; i++) {
-                var dialogue = npc.dialogue[i];
+            
+            if (npc.dialogue_html) {
                 $("#box4 .dialogueoptions").append(
-                    '<div class = "dialogueoption" data-npc="' + npcId + '" data-response="' + i + '">' +
-                    '<p>' + dialogue.input + '</p>' +
+                    '<div class="eventtext">' +
+                    '<iframe id="iframe" src=' + npc.dialogue_html + '></iframe>' +
                     '</div>'
                 );
+            } else {
+                for (var i = 0; i < npc.dialogue.length; i++) {
+                    var dialogue = npc.dialogue[i];
+                    $("#box4 .dialogueoptions").append(
+                        '<div class = "dialogueoption" data-npc="' + npcId + '" data-response="' + i + '">' +
+                        '<p>' + dialogue.input + '</p>' +
+                        '</div>'
+                    );
+                }
             }
             
             $("#box4").append(

@@ -106,6 +106,21 @@ var area = {
                         "outcomes": []
                     }
                 }
+            },{
+                "id": "staybarrel",
+                "title": "Drained and Empty",
+                "subtitle": "You are nothing but an empty barrel, discarded against the wall. Nothing of interest and with no hope of anything fun happening to you. You are basically garbage.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "You sit helplessly, feeling your wooden body slowly dry out in the sun. Your insides feel empty, hollow and needy, with your \"mouth\" open into the air, waiting for anything to fill you. Of course, no one is interested in just another random empty barrel.</p>You see something arc through the air, and splatter against the inside of your mouth. It tastes sticky and slightly mushy as it slides slowly down your wooden inner walls and flops against the bottom of you. Is that...a banana peel?</p>Unable to move or react, you are forced to sit helplessly for the rest of the day, tasting and smelling the peel slowly turn brown and nasty. As the sun sets, you see a baker walking by with a bag. He notices you, takes a look inside, and then drops his bag into you. Crusty rolls of unsold bread tumble into your body, bouncing inside you and landing in a heap. In the morning, a guard walking past you tosses the remains of his lunch into you, a couple of greasy bones. This can't be happening. You're being treated as a garbage dump!</p>Weeks pass, and the stink and taste grows worse. A nasty stench and greasy, sticky feeling that lingers in the back of your throat. One you are helpless to do anything about. In the night, as you are feeling disgusted by your stench, you see someone creep up towards you. It's a short, filthy rat, wearing nothing but a tattered and worn pair of shorts held up by a rope. His hands and feet are caked with mud, and his fur is scruffy and filthy.</p>He lifts his head over your side and sniffs you. You feel his bare feet scrabble against your wood as he climbs up and hops inside. His filthy feet squelch in the muck and garbage within you. You can see him inside your body as he curls up, his back against one side of you and his feet pressed against the other.</p>He reaches down into his pants, and slowly starts to pump and stroke himself. He closes his eyes, relaxing and enjoying the moment, totally unaware that he is being observed. His skinny body breathes in deep, and he shivers with pleasure as his tail curls around some of your garbage. Finally, he shudders and moans, and his pants become darker and stained with wetness. When he pulls his hand out, his fingers are sticky and covered in dripping white cum. He curls up inside you, and soon falls asleep.</p>As you watch over him, you feel an odd sense of pride and protectiveness. You may be a worthless garbage dump, but you're of use to this skinny little rat. That's something.",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

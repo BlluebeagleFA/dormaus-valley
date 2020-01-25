@@ -347,6 +347,36 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "oldman",
+                "title": "Potion of Maturity",
+                "subtitle": "The wolves in the bar are looking at you with suspicion and distrust. When you sit down at the counter, one of them mutters \"This ain't a humans bar\", before he is shoved by the canine next to him.</p>The barkeeper looks you up and down, and slides a drink across to you. It smells strange, with a mature, deep aroma that makes you think of old men, aged wood, and cigars. You feel like it might be a bad idea to drink this.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "grizzsex": {
+                        "text": "You lift the drink, and gulp it down. The smell and taste are quite unlike what you expected. Despite being smooth and oddly refreshing, you feel a deep aroma of cologne and pipe smoke. There's a slight woody aftertaste, and what might even be spices and aged wine. It's very obviously a magical potion, and you steel yourself for what it's going to do to you.</p>Your skin starts to feel warm and tense, and you gasp and shudder. Every touch feels so sensitive that you find yourself stripping off your clothes and tossing them to the ground. As you do, the ram bartender slides a mirror over to you.</p>The first change you feel is a strange tense, firm feeling flowing throughout your body. Your stomach rumbles, and you reach down and feel your belly as it begins to bulge and inflate. You stare at it in surprise, seeing it slowly rising up, becoming bigger and rounder. The weight of it pulls down at your gut, like you've got a bunch of pillows strapped to you. The increased chub doesn't end there, either. Your arms become wider and heavier, getting pillowy and soft. You reach down under your gut and feel a soft pad of fat bulging out over your crotch, too.</p>Your skin tingles, feeling rougher and more dry. Your belly prickles as soft white hairs begin to grow all over it. They spread over your pecs in a swirl of fluffy white, and all the way down your belly as the fuzz becomes thick and wild. Your cheeks begin to itch, as more of the white hairs bristle and grow all over your chin, neck and lower face. They thicken and get more dense, rapidly becoming a beard that spreads all around your mouth and up to your sideburns.</p>Your other hair does not fare so well. You look in the mirror and see your hairline starting to recede, pulling up your head and leaving your forehead smooth and high. As it draws back, your head is left bald, and you stroke over your strange smooth new dome as you feel your remaining hair form a ring around the back. The colour in it fades, turning ashy grey, then snowy, soft white.</p>Your face starts to develop lines, starting with deep crinkles at the edges of your eyes. More wrinkles form on your forehead and down the side of your nose, and your body aches for a moment. You feel your shoulders get wider, as more white body hair forms on them too. Your back creaks and aches, making you taller, while your hands and feet stretch out and grow too. You look down at your thickening hands, the palms rough and firm from years of hard work. White hairs grow on the back, and form a thick dense covering all up your forearms.</p>Your beard starts to thicken more, becoming fluffy and soft. It grows out into a fluffy white cloud of hair, covering up your whole neck and reaching down above your chest. The hair on your upper lip grows even faster. It spreads out, fluffing up into a huge, bristling white moustache, that all but completely covers your mouth. The edges point up, the hair of your moustache and beard looking surprisingly well-maintained and dignified.</p>You stroke your hands curiously over your new body, feeling your bulging belly, stroking your fingers through your thick white body hair. Using the mirror, and pulling up your gut, you see that your cock has become fat and thick, and it hangs out freely from the fluffy bush of your pubic hair. The ram nods at you appreciatively.</p>\"Looking handsome, old man. I hear old humans like you are called 'polar bears', so you're welcome to drink at this bar like any other bear would be\", he says with a grin. One of the wolves chuckles, but the one who commented earlier is staring at you, his cheeks flushed red and his pants tenting. You give him a wink, and he looks away and smiles slightly. You feel an odd desire to show these young bucks a good time with a few big hugs and some time on your lap.",
+                        "descriptionchange": "This human is a huge, fat old man. He has a rotund round belly covered in curly white hair, and a thick fluffy white beard and moustache.",
+                        "outcomes": [
+                            {
+                                "parameter": "dominance",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

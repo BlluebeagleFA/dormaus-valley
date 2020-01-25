@@ -48,6 +48,27 @@ var area = {
                     }
                 }
             },{
+                "id": "horseswap",
+                "title": "A Desperate Human",
+                "subtitle": "A human is standing naked at the side of the road, tugging on the reins of a large cart. He's never going to get anywhere like that.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "thing": {
+                        "html": "data/active/HorseSwap.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "otterhill_random",
                 "title": "Walk along the wall",
                 "subtitle": "The overgrown wall extends around the town. There might be something interesting to see.",
