@@ -13,6 +13,9 @@ $(document).ready(function() {
 	var selectedIcon = 'aceicon';
 
     var icons = [];
+	icons.push({'iconFilePath':'img/aldericon.png', 'iconValue':'aldericon'});
+	icons.push({'iconFilePath':'img/aldericon_g.png', 'iconValue':'aldericon_g'});
+	icons.push({'iconFilePath':'img/aldericon_r.png', 'iconValue':'aldericon_r'});
     icons.push({'iconFilePath':'img/aceicon.png', 'iconValue':'aceicon'});
     icons.push({'iconFilePath':'img/aceicong.png', 'iconValue':'aceicong'});
     icons.push({'iconFilePath':'img/anonicon.png', 'iconValue':'anonicon'});
