@@ -1739,7 +1739,7 @@ function main(err,session) {
                 var outcomesForEvent = Object.keys(area.events[i].results);
                 for (var j = 0; j < outcomesForEvent.length; j++) {
                     var thisOutcome = area.events[i].results[outcomesForEvent[j]];
-                    if (thisOutcome.freeTrap) {
+                    if (thisOutcome.freeTrap && isEventValid(area.events[i])) {
                         freedomAvailable = true;
                     }
                 }

@@ -188,6 +188,8 @@ DV.Data.item_data = {
         title: "Bad End",
         description: ["Your adventure ends here...or does it?"
             //1: Bull sheath
+            //2: Ram
+            //3: turner's dick
         ]
     },
     species: {
