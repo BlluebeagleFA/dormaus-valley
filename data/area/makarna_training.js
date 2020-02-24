@@ -39,8 +39,11 @@ var area = {
                 "title": "Rufo",
                 "subtitle": "There is one guard in the training yard who looks familiar. A rugged and scarred body, that stern pose and mature face. It's Rufo, the lion who helped you escape from the king's harem.",
                 "type": "random", //or random
-                "requirements": [
-                ],
+                "requirements": [{
+                    "parameter": "rufo_connection",
+                    "value": 0,
+                    "comparison": "nequal"
+                }],
                 "icon": "rufo",
                 "results": {
                     "success": { //success and fail, rare success, rare fail, or random
