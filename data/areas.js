@@ -23,6 +23,7 @@ DV.Data.areas = {
 	"backstreets": "./data/area/backstreets.js",
 	"art_store": "./data/area/art_store.js",
 	"catacomb_entrance": "./data/area/catacomb_entrance.js",
+	"underground_ruins": "./data/area/underground_ruins.js",
 	"contributor_1": "./data/area/contributor_1.js",
 	"contributor_1_1": "./data/area/contributor_1_1.js",
 	"contributor_1_2": "./data/area/contributor_1_2.js",
@@ -32,6 +33,8 @@ DV.Data.areas = {
 	"farmsouth": "./data/area/farmsouth.js",
 	"northplains": "./data/area/northplains.js", //NORTH_OF_VILLAGE
 	"northwoods": "./data/area/northwoods.js",
+	"titancottage": "./data/area/titancottage.js",
+	"glatisant": "./data/area/glatisant.js",
 	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
 	"quartzcavern": "./data/area/quartzcavern.js",
 	"wetcavern": "./data/area/wetcavern.js",
@@ -136,6 +139,17 @@ DV.Data.areacoordinates = [{
     "position": [0.74, 0.57],
     "title": "churchyard"
 }, {
+    "header": "Underground Ruins",
+    "position": [0.40, 0.40],
+    "title": "underground_ruins",
+    "requirements": [
+        {
+            "parameter": "asong",
+            "value": 3,
+            "comparison": "equal" //default greater
+        }
+    ]
+}, {
     "header": "Temple of the First Dragon",
     "position": [0.77, 0.54],
     "title": "church"
@@ -204,9 +218,24 @@ DV.Data.areacoordinates = [{
     "mapId": "worldmap.jpg",
     "position": [0.45, 0.02],
     "title": "northwoods"
+},{
+    "header": "Titan's Cottage",
+    "mapId": "worldmap.jpg",
+    "position": [0.55, 0.02],
+    "title": "titancottage",
+    "requirements": [
+        {
+            "parameter": "titan_connection",
+            "value": 0,
+            "comparison": "greater" //default greater
+        }
+    ]
 }, {
     "header": "Entry to a Dark Cavern",
     "title": "cavernentrance"
+}, {
+    "header": "The Glatisant",
+    "title": "glatisant"
 }, {
     "header": "Quartz Cavern",
     "title": "quartzcavern"

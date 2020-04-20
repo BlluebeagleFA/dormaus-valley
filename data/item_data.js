@@ -3,6 +3,13 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 DV.Data.item_data = {
 	//Attributes
 	//Note: inventory not showing correct description choice
+    impossible: {
+        max: 5,
+        type: "attribute",
+        icon: "impossible",
+        title: "Impossible",
+        description: ["By the decree of the World Machine, let World Four recognise a new Lord of Great Lords."]
+    },
     turner_interest: {
         max: 5,
         type: "attribute",
@@ -103,6 +110,12 @@ DV.Data.item_data = {
 						"You and Alder are in a budding relationship. You feel a flutter in your stomach when you think about seeing him again.",
 						"You and Alder are boyfriends. You smile whenever you think of him, and every time you sleep by yourself, you feel a little more lonely than usual; the thought of seeing him again makes you feel warm all over though, so it's not too bad."]
     },
+    titan_connection: {
+        type: "attribute",
+        icon: "titan_b",
+        title: "Titan [Connection]",
+        description: ["You have met a kind, cautious boar who lives alone in the woods"]
+    },
     croc_connection: {
         type: "attribute",
         icon: "crocicon",
@@ -189,7 +202,16 @@ DV.Data.item_data = {
         description: ["Your adventure ends here...or does it?"
             //1: Bull sheath
             //2: Ram
-            //3: turner's dick
+            //3: turner's dick,
+            //4: Bull fucktoy
+            //5: balloon
+            //6: broken balloon
+            //7: Hookah smoke
+            //8: mercs dog
+            //9: bandits dog
+            //10: urinal
+            //11: sock prisoner
+            //12: Titan's fox
         ]
     },
     species: {
@@ -251,6 +273,7 @@ DV.Data.item_data = {
             "You are a smooth, scaly lizard creature, with a long powerful tail.", //52
             "You are a mixed up chimera creature with various mismatched body parts.", //53
             "You are a gleaming golden golem, a metal lion made from solid metal with bejewelled eyes.", //54
+            "You are a royal boar, a rare breed of soft-furred boar with fluffy paws" //55
             ]
     },
     gender: {
@@ -312,7 +335,16 @@ DV.Data.item_data = {
         type: "attribute",
         icon: "garethflower",
         title: "Memory of a Song",
-        description: ["When you were abandoned in deep darkness, someone took care of you."]
+        description: ["When you were abandoned in deep darkness, someone took care of you.",
+            "A dreamlike memory has led you to a massive ruin hidden beneath Dormaus village.",
+            "You are aquainted with King Gareth, the once mighty ruler of the lost Dormaus Kingdom."]
+    },
+    gareth_connection: {
+        type: "attribute",
+        icon: "gareth_g",
+        title: "King Gareth [Connection]",
+        description: ["You have learned the first lesson that a regent must know, the lesson of elegance.",
+            "You have learned the second lesson that a regent must know, the lesson of ruthlessness."]
     },
     digger: {
         type: "attribute",
@@ -483,6 +515,20 @@ DV.Data.item_data = {
 		value: 50,
 		description: ["This rare flower grows only in places that have been suffused with a sense of great loss. Their shimmering petals pulse with magical power."]
 	},
+	lotus_2: {
+        type: "item",
+        icon: "lotus_2",
+        title: "Fire Aloe",
+        value: 100,
+        description: ["This flower grows in the bitter dry savannah of Makarna. In such a dry country, a flower like this is a precious rarity."]
+    },
+    rose_muscat: {
+        type: "item",
+        icon: "rose_muscat",
+        title: "The Rose of Muscard",
+        value: 500,
+        description: ["This flower was thought lost when Dormuas Castle fell. For all these centuries, the last descendants of the royal family have kept these flowers growing, deep within the northern woods, never knowing their own heritage."]
+    },
 	bloodstone: {
         type: "item",
         icon: "bloodstone",
@@ -601,6 +647,50 @@ DV.Data.item_data = {
             might: 3
         },
         description: ["This axe is forged with the finest dwarven craftsmanship. The metal is titan ore, and it gleams with light even in the darkest depths of the earth."]
+    },
+    goodsword: {
+        type: "item",
+        icon: "goodsword",
+        title: "Red Rapier",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            might: 6
+        },
+        description: ["An ancient rapier, with a golden hilt. You recovered it from the body of the Glatisant. Any blade that could wound the Glatisant must have belonged to a hero of truly inconquerable might."]
+    },
+    goodstaff: {
+        type: "item",
+        icon: "goodstaff",
+        title: "Golden Staff",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            magic: 6
+        },
+        description: ["An ancient golden staff, taken from the body of the Glatisant. It held one last hope within its body for hundreds of years, waiting for the one who could use it."]
+    },
+    goodpicks: {
+        type: "item",
+        icon: "goodpicks",
+        title: "Ivory Picks",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            stealth: 6
+        },
+        description: ["A set of thief's tools, made with masterful craftsmanship from some sort of gleaming, uncorroded bronze. You stole it from the body of the Glatisant itself, and you feel like it could open any door."]
+    },
+    goodharp: {
+        type: "item",
+        icon: "goodharp",
+        title: "Haunting Harp",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            charm: 6
+        },
+        description: ["A beautiful harp, taken somehow from the Glatisant itself. The strings never seem to need tuning, and each vibrating tone it makes fills you with deep, bittersweet melancholy."]
     },
     nosering: {
         type: "item",

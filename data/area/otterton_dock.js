@@ -236,6 +236,16 @@ var area = {
                                 "change": "add"
                             }
                         ]
+                    },
+                    "Meek": {
+                        "text": "You take your time walking through the busy docks of Otterton, where most of the goods in the land pass. Entire countries do business in this place. It makes Dormaus seem puny, with hundreds of people in ships or carts. The crowd is especially dense in one area, so you go to see what all the attention’s for.</p></p>In the center, there’s a tall human male with a huge ass. </p></p>Like, each-cheek-is-bigger-than-you ass. The man might’ve been human, but his proportions weren’t. He’s well-dressed and walks deliberately, eyeing the crowd. Wherever his gaze lands, people avert their eyes, until he happens to see someone he wants. “You. Come.” He calls to someone with a voice as deep and blackened as the lowest parts of the ocean.</p></p>Relief washes over the rest of them as they leave the scene or hop onto the nearest ship. The person chosen shakes with fear, trying to talk their way out. The human responds by turning around and pulling his loose pants down, exposing his giant ass to the poor soul. You couldn’t see it, but whatever was with that ass, it makes them freeze.</p></p>The man treats this as an expected outcome. “Join me,” he orders.</p></p>The victim is suddenly docile as they lean in, face-first. From there you can’t see what happens, but from the horrifying slurp noise and the way the victim suddenly disappears, you can assume the worst. (Contributed by Meek)",
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 7,
+                                "change": "add"
+                            }
+                        ]
                     }
                 }
             },{

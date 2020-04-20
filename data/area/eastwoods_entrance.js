@@ -85,6 +85,23 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "meek_vore",
+                "title": "Snake Encounter (Contributed by Meek)",
+                "subtitle": "You travel along the southern path between The Grease Pit and main road until you encounter a large python hanging from a tree. You cannot see its entire body, but from the thickness and length of the beast, you imagine it well-fed. You do your best to steer clear, but it calls in a sibilant tone: “Hello, there. What brings you to my woods?”",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "vorefetish",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You’re unsure if the snake is less dangerous with the power of speech. Not wanting to be rude, you politely tell it you’re just passing through and try to keep walking. “Oh? What’s the rush?” It says, pulling itself in your way. “I don’t get to leave this place often, you know. I need to rely on travelers for news...” A loop of coils falls behind you. You are surrounded by the enormous snake.</p></p>Sensing doom, you try to run. However, a fat rope of snake trips you to the dirt. Luckily, the fall is cushioned by more coils to hug you possessively. “Well, aren’t you rude!” The snake says in mock-offense. You struggle against his body wrapping around you, but your strength can’t compare to it.</p></p>In seconds, you’re trapped from ankle to neck in sections of coils. You cannot move your arms or do anything but whimper, as the weight of the snake alone is enough to render you powerless. The snake drops any pretense of being polite, tasting your scent with its flickering tongue. “Well, if you’re going to act like a meal...”</p></p>The snake lowers its face to meet yours, and you’re acutely aware you can’t turn your head away. You know what it wants to do. You squeeze your eyes shut before the snake can look in them, which makes it scoff. “Oh, please. Make this fun for both of us, will you?” The coil around your neck strangles you. You can’t even wheeze.</p></p>“Eyes on me. Don’t make me snap your neck,” the snake chides you casually. You know looking is a terrible idea, but an instant death is worse. Anything to extend your life span, right? Maybe someone could rescue you.</p></p>You resign yourself and open your eyes, greeted by the most beautiful colors you’ve ever seen. Indescribable and numerous, ever-changing like a god’s kaleidoscope. The snake’s eyes are swirling magnificently, beaming these colors directly into your mind.</p></p>You don’t stand a chance. Your mind flutters away, leaving nothing but the colors and the snake and all the good feelings that come with it. Happy, obedient, satisfied, blissful. You are enthralled and smile to show it.</p></p>“Good,” the snake says, stroking over your peaceful face. “I should eat you... Make you part of something greater... Me.” It continues to squeeze and knead your body in its coils. Then it relaxes, somewhat, loosening its grip on you. You can’t think right now, but instinctively, you take a deep breath of air the moment its possible.</p></p>The snake seems satisfied to hold you in place simply with its weight, too heavy for someone in your state to force away. It nibbles at your neck until planting its lips against yours.</p></p>You’ve never kissed a snake before. It’s surprisingly soft and smooth. Your spiraling eyes reflect your bliss from smooching the charming snake, but its mouth stretches wider. You press your face against the snake’s mouth to kiss, and it keeps opening wider, until your whole head is inside.</p></p>Warm and wet, and getting tighter. Your silly mindless head, your limp shoulders, tired arms and torso--bit by bit you’re gobbled up by the snake, until just your feet poke out its mouth. Your entire being barely makes a bump in the massive python, even if you wiggle.</p>When you finally disappear completely into your new forever home, nobody could ever tell you were here at all.",
+                        "area": "belly",
+                        "outcomes": [
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

@@ -39,6 +39,53 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "godeeper",
+                "title": "Delve Deeper into the Catacombs",
+                "subtitle": "You have been to these mazeline warrens of stone before, or at least your body has. Someone helped you while you were accursed - are they down here, somewhere?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "asong",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You walk deeper into the dark tunnels, and the stony bare passages finally give way to a large, open space. The ground here is all narrow passageways of crumbling stone, over black inky water beneath you. Far above you, the roof of this massive cave looks like a mess of fallen masonry, with narrow beams of light shining down from holes and cracks. Ivy and moss dangle down from high above, and the scent of odd flowers blooms everywhere.</p>As your eyes adjust to the dim light, you suddenly realise there is someone else here. It's the mayor, sitting on a crumbling plinth, reading an old document. He looks over to you and smiles, his moustache moving as he gives you a friendly grin. \"Ah, it's so good to see young adventurers with an interest in history! Though I would like to say, I'd appreciate it if you stayed away from this particular ruin\", he says. He brushes down his shirt and stands up, then holds your hand in his furry paws before patting it gently. \"It's just too dangerous, you see. You could slip in the dark, when no one is looking, and fall into a crevasse! And no one would even know! I would hate for anything to happen to one of my beloved guests\", he says. His hand squeezes on yours harder, to the point that it hurts. Something about his eyes does not match his cheerful smile. \"It's for your own good\", he finishes, before releasing your hand and giving you a polite nod, then leaving.",
+                        "area": "underground_ruins",
+                        "outcomes": [
+                            {
+                                "parameter": "asong",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "godeeper2",
+                "title": "Delve Deeper into the Catacombs",
+                "subtitle": "You remember the way to the flooded underground section now.",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "asong",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You make your way through the twisting passages, until the sound of water leads you once more to the underground ruin.",
+                        "area": "underground_ruins",
+                        "outcomes": [
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

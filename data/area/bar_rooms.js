@@ -154,6 +154,25 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "meek_1",
+                "title": "Ace Cuddle (Contributed by Meek)",
+                "subtitle": "An unmistakable scuzzball is sipping a drink in a shadowed corner of the bar. When he catches you looking, Ace tips his hat up to look back. When he does you can immediately tell he’s had more than a few drinks. “Now there’s a pretty picture,” he whistles at you crudely. “C’mon to papa.”",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "ace_connection",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "aceicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "Not wanting to catch more stares than you are already, you sit in the booth next to Ace. He grins and scoots so you’re touching shoulders. “Thank ya darlin,” he drawls. “If ya took any longer... I would’ve used my feet to call ya instead.” He grins, every breath smelling like whiskey. Emphasizing the point, he strokes one of his boots against your leg.</p></p>“I’ve been thinkin’ about ya,” he continues. “I’m real glad you’re here...” The foot brushing your leg turns into a clingy coyote pushing himself into your lap. You don’t know how it happened, but Ace has his arms draped over your shoulders and his legs straddling you.</p>Ace’s cool nose presses against your neck. You can feel the slight dog slobber from his lips and chin.</p></p>Seriously, what the hell is going on? </p></p>You look to Grizz for explanation but the bear’s busy doing his job. Ace rumbles and keeps his whole body tightly against you. His fur isn’t soft, but it feels good in its own way. The texture reminds you this isn’t some domesticated dog--the coyote is a wild animal.</p></p>By your adventures you’ve learned to sense when something’s abnormal. While you unsuccessfully try to peel him away, you ask if everything’s okay. Ace growls like a puppy losing his favorite toy. “Uh-huh,” Ace replies. “I’m good...” He breathes your scent in. “I’m not that drunk... Relax.” He says, trying to sound as not plastered as he can.</p></p>You find yourself cuddling up with the coyote. His arms are snaked around you and yours hug him tightly. Ace’s ears remain folded against his head while he squeezes you. He’s warm, like the desert of his hometown. There’s a definite comfort in the embrace. You want to ask Ace what the problem is, but you realize he may be getting the same solace from you.</p></p>Don’t press the issue. It’s not like you have anything else to do, and Ace isn’t keen on stopping either. It’s nice. Enjoy it. If he wants to talk, he will.</p></p>Its easy to keep the coyote satisfied with drunken cuddles, but for your troubles, Grizz passes you a free drink. Whether that or Ace’s signature musk, you find yourself relaxing. The coyote grumbles and nuzzles you with inebriated need. A bit of time passes, but you do get some information out of Ace.</p></p>“I’m so fucking scared,” Ace says, half-asleep. That certainly catches your attention, but not wanting to make it worse, you ask about it gently.  Ace shakes his head blearily, eyes bloodshot from the booze. “If I...” He grips tighter, closing those tired eyes. “It’s not me... It’s not me...”</p></p>He repeats those incoherent murmurs for a bit. You ask Ace what he means, but the coyote’s passed out in the bar booth.</p></p>He snores like a dipshit. Grizz’s words, not yours. The bear uses his barbaric strength to easily separate you from Ace, and says he’ll have Ace escorted to a room next door. You ask about what Ace was saying, but Grizz’s face remains ever-stoic.</p></p>“Every day someone’s itchin’ to change ya.” Grizz grunts. “Body and mind.” He exits with the dozing coyote in his burly arms. </p></p>The bar is unattended. You watch a sneaky squirrel slip behind the counter, but when he tries to sip from the beer hose, it comes to life and coils him. The squirrel struggles and gurgles as the alcohol tube blasts into his mouth, expanding his belly like a water balloon. In no time, the squirrel’s eyes are glossy and unthinking. He drinks mindlessly. Soon his beer belly outgrows him.</p></p>Grizz must’ve been including himself in what he said. Hrm.",
+                        "outcomes": []
+                    }
+                }
             }
         ],
         "npcs": [

@@ -23,12 +23,38 @@ var area = {
                     }
                 }
             },{
+                "id": "hunt",
+                "title": "Go Hunting",
+                "subtitle": "The northern woods are a hunter's paradise, but few are brave enough to risk their lives within it for the sake of wealth.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "pain",
+                        "value": 3,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "muscat_1",
+                "results": {
+                    "thing": {
+                        "html": "data/active/Hunting.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "stayasdog",
                 "title": "Dumb happy pup",
                 "subtitle": "You are so happy to be with your master, your lovely strong wolf master. Sometimes he says things you don't understand, but you like when he rubs your belly and pats your head. You never want to stop serving your master!",
                 "trapped": true,
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "trapped",
+                        "value": 8,
+                        "comparison": "equal" //default greater
+                    }
                 ],
                 "icon": "inanimatefetish",
                 "results": {

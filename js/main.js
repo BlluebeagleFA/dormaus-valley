@@ -834,8 +834,10 @@ function main(err,session) {
             if (area_data && thisarea) {
                 area_data.mapId = area_data.mapId || "dormausvillage.jpg";
                 
-                if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
-                    mapAppend += '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>';
+                if (!area_data.requirements || (area_data.requirements && isEventValid(area_data))) {
+                    if (area_data.position && area_data.mapId == thisarea.mapId && area_data.title != thisarea.title) {
+                        mapAppend += '<div title="' + area_data.header + '" style="left: ' + area_data.position[0]*100 + '%; top: ' + area_data.position[1]*100 + '%" class="areabutton" data-area="' + area_data.title + '"></div>';
+                    }
                 }
             }
             
@@ -1154,6 +1156,21 @@ function main(err,session) {
         $("#box1").empty();
         
         if (outcome.html) {
+            var savedsession = JSON.parse(JSON.stringify(player));
+            
+            savedsession.stats.might = savedsession.stats.might + getItemBonus("might");
+            savedsession.stats.magic = savedsession.stats.magic + getItemBonus("magic");
+            savedsession.stats.stealth = savedsession.stats.stealth + getItemBonus("stealth");
+            savedsession.stats.charm = savedsession.stats.charm + getItemBonus("charm");
+            
+            if (savedsession.attributes.dominance) {
+                savedsession.attributes.dominance.value = savedsession.attributes.dominance.value + getItemBonus("dominance");
+            }
+            if (savedsession.attributes.submissiveness) {
+                savedsession.attributes.submissiveness.value = savedsession.attributes.submissiveness.value + getItemBonus("submissiveness");
+            }
+            
+            window.sessionStorage.setItem('dv_stats', JSON.stringify(savedsession));
             $("#box1").append(
                 '<div class="eventdata">' +
                 '<div class="eventiconholder">' +
@@ -1809,7 +1826,7 @@ function main(err,session) {
                             '</div>';
                         $("#box1").append(newHtml);
                     }
-                } else if (!event.global){
+                } else if (!event.global && event.id != "phantommare_null"){
                     invalidEvents.push(event);
                 }
             }
@@ -1838,7 +1855,12 @@ function main(err,session) {
                     } else if (paramreq.comparison == "greater") {
                         requirements += " greater than ";
                     }
+                    
                     requirements += paramreq.value;
+                    
+                    if (event.requirements[j].parameter == "impossible") {
+                        requirements += ". Impossible can never be obtained. It does not exist in this game. Do not seek it.";
+                    }
                 }
                     newHtml = '<div class = "event locked">' +
                             '<div class="eventbox">' +

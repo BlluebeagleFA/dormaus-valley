@@ -361,7 +361,7 @@ var area = {
                         "outcomes": [
                             {
                                 "parameter": "intelligence",
-                                "quantity": 3,
+                                "quantity": 1,
                                 "change": "set"
                             }
                         ]
@@ -393,6 +393,33 @@ var area = {
                                 "quantity": 1,
                                 "change": "sub"
                             }
+                        ]
+                    }
+                }
+            },{
+                "id": "phantommare2",
+                "title": "Make Horse Milk",
+                "subtitle": 'Turner\'s farm has a breeding tool for "milking" male stallions for ingredients to make the popular horse milk drink.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "intelligence",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dumb_potion",
+                "results": {
+                    "grizzsex": {
+                        "text": "You grunt and snort, moving eagerly towards the back of the barn where the phantom mare is waiting. Your mane is scruffy and askew, and your clothing is rumpled and messy. The more you have used it, the harder it has been to think about anything but the incredible feeling of that rubbery sheath squeezing around your thick, fat horse cock. Drool drips from your lips as you go to open the door where it waits, but you are stopped as a large rough hand grabs your arm.</p>You look to see Turner, who is giving you a concerned expression. \"Aww shucks cuz, you know you really shouldn't use that thing too much. Give yerself a chance to fill back up, y'know?\", he says. You blink dumbly, as it takes you a moment to sort out the words he's saying. Your brain feels shrunken and tight and slow, like your head is full of cotton wool.</p>You grunt, and shove him hard away from you. He stumbles and falls back, allowing you to slam the door open and quickly run inside. The stink of cum and sweat washes over you, making your huge fat horse cock rise to full height.</p>You race forward, and grab the rubbery object with both hands. Then, unable to wait, you slam your cock forward into that tight, smooth opening. The feeling of your shaft slipping up into that rubbery body is everything you ever wanted. You start to slam and thrust, bucking against it like a wild beast. Your eyes roll up in the back of your head, your cockhead rams against the deepest interior of the phantom mare, and you whinny loudly, and madly.</p>As your medial ring rubs and bounces against the ridges inside the sheath, you feel your orgasm bubbling up from deep inside you. Heat and pleasure filling you up from the ends of your hooves to the tips of your pointed ears. Your hands gripping the mare slip and you fall forward, as your fists clench and start to stiffen, becoming thick, round black hooves. Your body barrels out, spine and bones shifting and adjusting to being quadrupedal. As you fall forward, and your front hooves slam against the ground, your body is rocked by your sudden, exploding orgasm.</p>The lust and bliss flows through you, your mind whites out as all thoughts stop in that brief, glorious moment of lust and pleasure. Only this time, your thoughts don't start up again. Cum explodes and rushes out from your cock, a thick gushing fountain of hot stinking horse cum, but you don't stop fucking and thrusting. Your hooves tap and your ears twitch as you fuck and buck against the rubbery device over and over.</p>You don't notice when the door behind you opens, and Turner walks in. He strokes his hand over your flank, and looks at your eyes as they turn wide, brown and mindless. When he tries to gently pull you out from the phantom mare, you snort and ram against him, but he eventually manages to get your cock to slip out, dripping and shiny and wet with cum. His fingers squeeze over your shaft, and you calm down as he strokes it slowly up and down.</p>He guides you gently forward on all fours, walking you through the barn, as you mindlessly soak in the pleasure of your cock being touched. You are led into a side-barn, where you can smell many other stallions, all sweaty and horny just like you. One stall is open and unoccupied, and he pushes you gently into it. He picks up a rubbery pump from the ground, and pulls it down slowly over your cock, and you whinny happily as it starts to slide up and down on your shaft with an enjoyable sucking feeling. Some leather straps are tightened around your hooves, and Turner pulls some sort of leather mask over your head, two large flaps blocking out your vision and keeping you calm and happy. His hand pushes your head down against a trough full of oats, and you chew happily and mindlessly.",
+                        "trapped_desc": "You are just a brainless milking horse now, who will stay here happily for as long as his cock gets pumped and stroked.",
+                        "trapped": "You are just a brainless milking horse now, who will stay here happily for as long as his cock gets pumped and stroked.",
+                        "outcomes": [
+                            
                         ]
                     }
                 }

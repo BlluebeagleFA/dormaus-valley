@@ -65,6 +65,23 @@ var area = {
                     }
                 }
             },{
+                "id": "dragonfusion",
+                "title": "Another Mirror In Spiral",
+                "subtitle": "The reflection here is excited! You will get a commendation for this!",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "curse",
+                "results": {
+                    "thing": {
+                        "html": "data/active/DragonFusion.html",
+                        "areas": ["maze_deep", "maze_light", "maze_light", "maze_light"],
+                        "outcomes": [
+                        ]
+                    }
+                }
+            },{
                 "id": "dracolich",
                 "title": "A Mirror In A Black Castle",
                 "subtitle": "This mirror pulses and wobbles with pure, sickening hatred.",

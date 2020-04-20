@@ -124,7 +124,13 @@ body {
 
 
 
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
 
 
 
@@ -140,11 +146,11 @@ body {
 &lt;&lt;set $int to false&gt;&gt;
 &lt;&lt;set $ram to true&gt;&gt;
 &lt;&lt;set $male to true&gt;&gt;
+&lt;&lt;set $loaded to false&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
 var player = JSON.parse(window.sessionStorage.getItem(&#39;dv_stats&#39;));
-if (player &amp;&amp; player.attributes &amp;&amp; player.attributes.paw_musk
-&amp;&amp; player.attributes.paw_musk.value) {
+if (player &amp;&amp; player.items &amp;&amp; player.items.paw_musk) {
 State.variables.musk = true;
 }
 if (player &amp;&amp; player.attributes &amp;&amp; player.attributes.intelligence
@@ -164,8 +170,12 @@ State.variables.stealth = player.stats.stealth;
 State.variables.charm = player.stats.charm;
 State.variables.might = player.stats.might;
 State.variables.magic = player.stats.magic;
+State.variables.loaded = true;
 }
 &lt;&lt;/script&gt;&gt;
+&lt;&lt;if !$loaded&gt;&gt;
+Unable to load your save! The event may not behave as expected.
+&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 The sheepdog jumps in surprise as you approach, and brushes the hair out of his eyes. &quot;Oh! Hello there! I was just thinkin&#39; bout how I&#39;m gonna get in trouble. Dinnae suppose you could help me oot?&quot;, he says.
 

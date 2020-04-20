@@ -238,7 +238,7 @@ var area = {
                 "description": "Mikhail is an older german-shepherd dog. His fur is dusted with grey hairs, as is his fluffy moustache.",
                 "icon": "mikhailicon",
                 "shop": {
-                	"trades": ["chips_1", "muscat_1", "watervine_1", "nosering", "magic_hat", "fancyhat", "iron_helm", "old_sword", "comb", "candle_glory", "dwarf_axe", "magic_boots", "paw_musk", "prison_shirt", "water_cloth", "useless_raccoon"],
+                	"trades": ["chips_1", "muscat_1", "watervine_1", "nosering", "magic_hat", "fancyhat", "iron_helm", "old_sword", "comb", "candle_glory", "dwarf_axe", "magic_boots", "paw_musk", "prison_shirt", "water_cloth", "useless_raccoon", "pie_1"],
                 	"buys": [],
                 	"sells": []
                 },

@@ -204,7 +204,13 @@ var area = {
                         "text": "The wolverine bartender notices you trying to help quite quickly, as you mostly just get in everyone's way and cause a commotion. He strides over to you, his face twisted into an annoyed grimace. \"What, hoping to get a drink without paying?\", he grunts. \"Fine, I'll get you a drink. Follow me.\"</p>You follow the muscular wolverine into a room near the back of the grungy biker bar. You realise what the room is before entering, because it stinks of piss and sweat. You hesitate before going forward, but your curse starts to rise up, making you drool as you think you might be getting to taste the wolverine's hot piss. You nervously take another step, only for the wolverine to grab you and suddenly shove you down into an empty toilet stall. You end up stumbling on the broken ceramic remains of what was probably a toilet, smashed in the aftermath of a transformation or a bar brawl.</p>\"Here you go, free drink\" the wolverine grunts. His thick, sweaty black cock is already pointed at you, and he grips it in his rough hand before starting to relieve himself. As acrid, stinking piss flows over your face, you find yourself opening your mouth and letting him direct the stream directly over your tongue. The wolverine's piss is acrid and sharp, and the stench of it stings your nostrils.</p>You find yourself gulping down mouthfuls of the wolverine's piss, the vile taste of it starting to grow on you moment by moment. It warms and fills your stomach, and you find yourself feeling dizzy and tired. You have no idea how long the ram spends pissing on you, but finally he leaves without giving you a second glance.</p>You try to stand up and follow him, but your body doesn't respond. Your skin feels cold, and your limbs are stiff. You try to gasp out a cry for help, but your voice just gurgles and bubbles. A wolf enters the room, a chubby and heavy-set man in a jumpsuit. He doesn't seem to notice anything odd about you, and he nonchalantly pulls his thick musky wolf cock out from his fly and begins to piss into your still-open mouth. You find yourself unable to close it, and unable to stop yourself from swallowing his hot, salty urine. Your skin stiffens more, and begins to turn pale and smooth. Your rear starts to lean down against the ground, and the rusty remains of the previous toilet's plumbing pipe juts against your ass. You feel it slide up into you, and begin to fuse with your body. You desperate attempts to call out to the wolf go unheeded, as he leaves you in the filthy bathroom.</p>Your mouth and head change more, as they stretch out into a large bowl, and some of the remains of the wolf's urine sits at the back of your throat. It would seem you will be helping out in this bar after all - as a toilet.</p>The next person to enter the bathroom is a fat, hairy biker pig. You can barely do anything but bubble and gurgle at him, which he does not notice at all. He pulls out his fat, short cock from his leather pants, and begins to piss. His stream is messy and sprays all over your skin, leaving yellow stains. Despite your mouth now being lifeless ceramic, you can taste every drop of his rancid, dark-yellow piss. His massive boot slides over and shoves down on your crotch, and there is a loud flushing sound as you are forced to swallow. When he pulls his boot away, your crotch is left as a normal foot-pedal flushing device.</p>It seems your fate is sealed, as there is nothing left to distinguish you from any other toilet in this dirty run-down place. At the end of the day, the wolverine returns. He looks down at you, piss filling your bowl and staining your porcelain. \"Told ya you would get the drinks you needed, dumbass\", he says. He grips his sweaty cock and starts to pump it in his rough, dirty hand. The scent of his musk and arousal fills the room, and he pants and growls. Finally, cum begins to spurt and spray from his cock, splattering over the back of your throat and dripping down your rim.</p>Briefly, you hope that it will transform you into something else. Even the wolverine's obedient slut would be better than this. Unfortunately, that is not the case. You are just a toilet. \"Keep up the good work\", he says with a chuckle, and leaves you to your fate.",
                         "trapped_desc": "This toilet is covered in stains and is clearly well-used, but very rarely cleaned.",
                         "trapped": 'You are nothing but a filthy toilet trapped in the back of the grungiest, nastiest bar in the valley. You will be suffering through the growing stains and stenches of these rough thugs\' piss for a long time.',
-                        "outcomes": []
+                        "outcomes": [
+                            {
+                                "parameter": "trapped",
+                                "quantity": 10,
+                                "change": "set"
+                            }
+                        ]
                     }
                 }
             },{
@@ -214,11 +220,36 @@ var area = {
                 "trapped": true,
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "trapped",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    }
                 ],
                 "icon": "inanimatefetish",
                 "results": {
                     "pumpkin_1": {
                         "text": "From your helpless position attached to the wall, you have a free view of the filthy bathroom door. It swings open, and a gigantic burly man squeezes his way inside. His huge grey body is hairless and rough, covered in wrinkles. An enormous trunk, huge flapping ears, and curving tusks are the signature features of a bull elephant.</p>He stomps over to you, his huge flat feet shaking the ground. You don't get any sign of recognition or notice. You are, after all, just an ordinary dirty urinal. When his pants go down, and reveal the ludicrous monster second \"trunk\" between his legs, you feel a rush of fear.</p>The hose of hot yellow piss that hits you comes so forcefully that you feel like your porcelain is going to crack. It's like shoving your face in a fire hydrant, but one that stinks of booze and piss. He sighs, relaxing as he unloads over you. His bladded must be the size of a tank, because he's completely soaking the wall around you, the floor under you, and every inch of your body.</p>By the time he finishes, you are dripping with stinking piss, and can taste and smell him over every inch of you. He pulls his pants up and walks off, without washing his hands.",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "stucksocks",
+                "title": "Sock Prisoner",
+                "subtitle": "You are trapped in the grease pit, your hands and feet bound by tight socks, with more socks filling your mouth and covering your face. Any attempt to wriggle free is followed by a swift kicking.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "trapped",
+                        "value": 11,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "It's late at night at the bar, and most of the wolves have wandered off or fallen asleep at their tables. You can hear snoring, and the creak of the wooden building as it settles and adjusts. They all mostly ignored you after your dishonourable expulsion from the gang.</p>You hear the sound of footsteps walking closer, and then some furry hands stroke across your bare chest. There is a quiet giggle, and you feel someone lie down on top of you. The stink of unwashed, dirty fur is detectable through your socks. It must be Chip, the short wolf with the particularly unpleasant scent from earlier.</p>\"Hey Borus...\", he whispers. You feel him stroking his hands over your belly, down your sides and around to your rump, where he squeezes your butt. \"Fuck...I always wanted you, you know...you're such a hot fucker...\", he whispers. His voice is slurred and a little stilted; he sounds drunk.</p>You try to speak, but your voice is muffled through your many layers of gags. You shiver as you feel his warm, wet tongue slide along your chest, and his hand squeezes your sock-bulge firmly.</p>\"I wish I'd known you were a foot bitch. We'd have been perfect together. I hate bathing anyway, you could play with my paws all you like, stud\", he says. His face presses against yours, his muzzle open and his tongue licking against the layers of socks covering you. He nuzzles and kisses you as best he can through the filthy fabric, and you feel him jiggling and shaking as he straddles you. His hand is jerking fast, and he shudders and moans. You feel something hot and wet splatter and spurt across your chest. It drips slowly along your fur, forming a warm puddle.</p>\"I used to use my socks for this, but you needed them more, eh Borus? That means you're my cumrag now. I'll be back tomorrow night. I can't wait to see how filthy and sticky you get in a few weeks...\", he whispers. His fingers stroke the cum on your chest, smearing it over your fur for a moment before he climbs off you and leaves, still giggling.</p>It occurs to you, as the scruffy wolf leaves, that he probably got his name from that corn chip smell that oozes from him constantly...",
                         "outcomes": []
                     }
                 }
@@ -238,6 +269,16 @@ var area = {
                 "results": {
                     "Cursed Pole": {
                         "text": "You look over to one of the booths in the back of the bar, and see a tall and heavy-set wolf with shaggy, thick black fur. He's wearing a thick leather vest, and leaning back confidently as he smokes a cigarette. One of his feet is up on the table, next to the boot that he clearly just took off. A human man is rubbing his face against the wolf's huge, gritty, dirty footpaw. The man is furiously stroking and pumping his cock, leaking pre all over his hands, as well as panting and gasping with desire.</p>The wolf idly stretches and flexes his toes, and watches as the human adoringly licks between his filthy claws and worships his sweat-soaked footpaw. The man's face is covered in grime and sweat. He's clearly been obsessively kissing the wolf's foot for quite some time, and he starts to pant and whimper, before he shoves his face hard against the wolf's padded feet, as his cock erupts cum all over his chest, making a huge mess.</p>The human slowly leans back, his expression changing as he seems to come to his senses. He stammers and whimpers. \"P-please Borus, let me go, I didn't mean to...insult...you\", he says, but Borus is already pulling his other huge leather boot off, and resting his other foot on the table too. The human's terrified expression is slowly replaced by a stupid and horny look of obedient lust, as his cock stiffens and hardens again, and he shoves his face into the wolf's other massive, sweaty footpaw.",
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 9,
+                                "change": "add"
+                            }
+                        ]
+                    },
+                    "Meek": {
+                        "text": "As you sit around the bar, someone from the gang of wolves catches your eye. He’s not dressed in leather like the others, and his fur isn’t the same. He’s got glasses and khakis with a huge wet stain around his groin you hope is beer, but the strong smell of urine alerts you otherwise. Wet themselves, grinning like a dumbfuck and groping the front of their damp crotch.</p></p>The nerd is sandwiched between two fat cigar-chomping wolves, rubbing their musky bodies against him and blowing the smoke in his face. You might’ve thought they was drunk, but from the way he reacts, it must be the cigars. One of the slobby men takes the stogie from his mouth and forces it on the young dog.</p></p>He dutifully sucks with a dull grin, reveling in the taste of the wolf’s spit and tobacco. The transformation into one of them going smoothly as gray-and-white fur spreads over his features. Another deep inhale of the cigar makes his gut expand like a balloon, muscles building with it. With the sudden growth of a walrus-style white mustache later, he could be in his sixties!</p></p>It’s then that the culprits notice you staring.</p></p>“Piss off. Not lookin’ for a fourth.” You look to the poor sap for a sign he’ll be alright, but there’s no intelligence. He’s outgrown all his clothes and turned into a fat, stinking grandpa wolf with bushes of white hair all over. The other two grab some leather gear and begin dressing him like a real submissive. The old man giggles vapidly and puffs like a good old-timer. (Contributed by Meek)",
                         "outcomes": [
                             {
                                 "parameter": "muscat_1",
@@ -318,6 +359,117 @@ var area = {
                                 "parameter": "westwood",
                                 "quantity": 1,
                                 "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "borusagain_male",
+                "title": "Drink the Usual",
+                "subtitle": "You're not feeling quite yourself at the moment. You should really have a fat furry wolf gut, for a start. That can easily be fixed by a nice long beer in your favourite barstool, though.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 17,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "When you take your seat on the usual barstool, the bartender ram raises an eyebrow for a moment. \"Oh, Borus, didn't recognise you for a second there. Not like you to go getting yourself shifted out on a mission\", he says.</p>You shrug it off, and ask for a tankard of the usual. He grabs a dented metal mug, and pours out some frothing beer from one of the barrels on the back wall, before sliding it across the bartop towards you.</p>You lift it and press it to your lips, and start chugging eagerly. The warm, frothy beer flows down your throat, and you feel your belly grumble and growl. It starts to bulge, swelling out and getting thicker and heavier. Your jacket is pushed aside as your gut inflates like a balloon, jiggling slightly as it pushes out over your lap and presses against the bar.</p>You slam the mug down, and belch loudly, before wiping your lips with the back of your hand. You feel your lips darkening, the lower one bulging out slightly, while your teeth become yellowed, sharp and dirty. You glance around and spot Crook, another wolf who's always good for a light. You snap your fingers and ask him for a smoke, and the fat grizzled wolf chuckles as he fishes out a cigar from his pocket and tosses it to you.</p>You light up, and take in a deep mouthful of the thick, flavourful tobacco smoke. Your face stretches forward, jaw shifting into a fat lupine muzzle, while your ears stretch up above your head, and a furry double chin forms under your scarred, brutish face.</p>As you feel your normal fur growing back in, that thick shaggy wolf fuzz that you were born with, you kick off your boots to check your feet. As expected, they're pushing out into stout paws, with dark and rough padded soles and stubby claws on your grey-furred toes. An older wolf next to you scrunches his face and steps down off his chair.</p>\"Fuck Borus, those stink. Keep your damn boots on in the bar, or take a bath one day\", he grumbles. You give him a wink, and belch once more in his direction.</p>The other wolf at the bar, a scrawny and short one with scruffy fur, scoots a little closer. You don't remember his name off the top of your head, but he's staring at you with a blush on his cheeks and a slightly crazed grin.</p>You reach down and scratch your crotch, then idly unbutton your pants to let your thick wolf cock flop out into the air. It hardens and stiffens, and the shorter wolf shudders.</p>\"Well? Fuckin suck it\", you snarl at him. He nods and hops down off his stool, before pressing his nose to your crotch and taking in a deep breath. He then slides his muzzle over your cock and eagerly begins to suck and lick at your shaft. You ignore him, and order another beer. Feels good to be yourself again.",
+                        "descriptionchange": "This adventurer is Borus, a tall, manly wolf. He has a hairy muscle gut, thick arms covered in scruffy fur, and a shaggy muzzle with enormous yellow fangs. He stinks of smoke and sweat. His long muzzle is twisted into a perverted grin, showing off his huge yellow fangs.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 17,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "borusagain_female",
+                "title": "Drink the Usual",
+                "subtitle": "You're not feeling quite yourself at the moment. You should really have a fat furry wolf gut, for a start. That can easily be fixed by a nice long beer in your favourite barstool, though.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 17,
+                        "comparison": "nequal" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "When you take your seat on the usual barstool, the bartender ram raises an eyebrow for a moment. \"Oh, Borus, didn't recognise you for a second there. Not like you to go getting yourself shifted out on a mission\", he says.</p>You shrug it off, and ask for a tankard of the usual. He grabs a dented metal mug, and pours out some frothing beer from one of the barrels on the back wall, before sliding it across the bartop towards you.</p>You lift it and press it to your lips, and start chugging eagerly. The warm, frothy beer flows down your throat, and you feel your belly grumble and growl. It starts to bulge, swelling out and getting thicker and heavier. Your jacket is pushed aside as your gut inflates like a balloon, jiggling slightly as it pushes out over your lap and presses against the bar.</p>You slam the mug down, and belch loudly, before wiping your lips with the back of your hand. You feel your lips darkening, the lower one bulging out slightly, while your teeth become yellowed, sharp and dirty. You glance around and spot Crook, another wolf who's always good for a light. You snap your fingers and ask him for a smoke, and the fat grizzled wolf chuckles as he fishes out a cigar from his pocket and tosses it to you.</p>You light up, and take in a deep mouthful of the thick, flavourful tobacco smoke. Your face stretches forward, jaw shifting into a fat lupine muzzle, while your ears stretch up above your head, and a furry double chin forms under your scarred, brutish face.</p>As you feel your normal fur growing back in, that thick shaggy wolf fuzz that you were born with, you kick off your boots to check your feet. As expected, they're pushing out into stout paws, with dark and rough padded soles and stubby claws on your grey-furred toes. An older wolf next to you scrunches his face and steps down off his chair.</p>\"Fuck Borus, those stink. Keep your damn boots on in the bar, or take a bath one day\", he grumbles. You give him a wink, and belch once more in his direction.</p>The other wolf at the bar, a scrawny and short one with scruffy fur, scoots a little closer. You don't remember his name off the top of your head, but he's staring at you with a blush on his cheeks and a slightly crazed grin.</p>You reach down and scratch your crotch, then idly unbutton your pants. Looks like one item you normally have hasn't quite changed back yet, but that's easily fixed. You stroke your fingers over your pussy, and growl slowly. The shorter wolf stares at it curiously.</p>\"Well? Fuckin get licking\", you snarl at him. He nods and hops down off his stool, before pressing his nose to your crotch and taking in a deep breath. He then starts to lick at your labia, tasting and teasing it, before sliding his tongue inside. You growl a little as you feel yourself turning back to normal, your pussy slowly starting to close up, your balls descending and bouncing against the other wolf's chin. As your cock bulges back up from between your legs, you force it into the wolf's mouth, and he's only too happy to go from cunnilingus to blowjob.</p>You grin and order another drink. Feels good to be yourself again.",
+                        "descriptionchange": "This adventurer is Borus, a tall, manly wolf. He has a hairy muscle gut, thick arms covered in scruffy fur, and a shaggy muzzle with enormous yellow fangs. He stinks of smoke and sweat. His long muzzle is twisted into a perverted grin, showing off his huge yellow fangs.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 17,
+                                "change": "set"
+                            },{
+                                "parameter": "gender",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "borusbadend",
+                "title": "A Weird Atmosphere",
+                "subtitle": "Your bar feels a little odd when you walk in to it today. Your crew are at their normal seats, everything stinks of smoke and booze. It should be normal. Yet you can see some of the older wolves smirking at you, and a couple of new recruits giggle in the corner. Wait, someone's sitting in your favourite chair! What the hell?",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "westwood",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 17,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "ace_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "subicon",
+                "results": {
+                    "Cursed Pole": {
+                        "text": "You stomp up to your chair, your face twisted into a snarl. You recognise the guy there, one of the wolves who's been in the gang for years. He's even fatter than you, with a scruffy beard and a zigzag scar across his eye. Crook, named for his scar. He's had his one good eye on being the gang leader for years.</p>\"What the HELL do you think you're doing in my seat, Crook?\", you spit. He turns around slowly, a mug of YOUR special ale in his fat paw. He gives you a grin.</p>\"I ain't in your seat, that's right there\", he says. He points down with one gloved hand, at the floorboards under the stool. The wolf next to him stifles a chuckle. \"Take a seat, I've been waiting to rest my boots on a footstool\", he says.</p>You glance down at said boots, the pair of thick and heavy black leather ones that Crook is wearing. The buckles are tarnished, and the bottoms are caked with mud. You drag your eyes away from them after a moment.</p>\"Who the fuck are you calling a footstool?\", you growl, but there's an edge of nervousness in your voice you can't hide. Crook grins, and the edge of his mouth shifts awkwardly where it meets the scar.</p>\"See, we was runnin' some powders up past Dormaus Village the other day, an' we ended up crossin' paths with an old mate of yours\", he says. The short, scrawny wolf next to him pipes up. \"The yote! That one who won't hang with us\", he says. Crook thumps him to shut him up.</p>\"Well, that yote told us somethin' interesting about our boss Borus. Said you is a sweat-huffin, toe suckin, submissive little bitch boy who gets on all fours to kiss his feet\", Crook says.</p>You growl louder, baring your fangs at this obviously completely false slander. You crack your knuckles and prepare to lay some sense into this cocky usurper, when suddenly a familiar scent hits your nostrils. You feel your cheeks flushing, your knees going weak. Crook is reaching into his inside pocket, and he draws out a damp, warm, stinking sock, the sole matted and stained with dirt. That's...Master Ace's scent.</p>Crook reaches his hand forward, and you really do try to resist. To step back, or bat his hand away, but that smell is just...so...good. Then he presses that damp filthy sock over your nose, and your eyes half-lid over as you whine like a puppy and fall to your knees.</p>One of the older wolves, a grey-bearded heavyset one, rubs his hand over his face and shakes his head. \"Fuck me, it's true. Borus has gone soft. I guess I owe you a drink, Crook\", he mutters. The short giggly wolf next to Crook reaches down and tugs on Crook's oversized boot, slowly pulling it and sliding it until his damp, dirty sock-covered paw is revealed. The humid musk of unwashed biker wolf stink flows over you. \"You like that, bitch?\", the shorter wolf says. Crook growls at him, and he goes quiet, but then Crook lifts his foot and stretches his toes, causing the fabric to move and shift.</p>\"You like that? Want to be under my feet, footstool?\", he asks. You nod before you can even think about it, your mouth drooling with desire. Crook reaches down, and his dirty fingers press against your mouth as he pulls your jaw open. You taste nicotine and dirt on his fingertips when he pushes them into your mouth and over your tongue. He takes Ace's dirty sock, crumples it into a ball, and shoves it firmly into your open mouth, before pushing it back and packing it tight inside your maw. The dirty, dry taste of the sock lingers on your tongue.</p>\"I'm the boss of this gang now, footstool. You're nothing. Boys, strip this thing down, I don't see any wolf here and I don't see why a footstool would be wearing our leathers\", Crook growls. The wolves around you close in, their rough hands pulling off your jacket, pinning you down, tearing off your boots and pants and soon leaving you naked and helpless. When you sit back up, you see Crook reach down and slowly peel off the sock stretched around his paw. It's literally dripping with sweat - you see a droplet fall to the floor as he peels it off his rank and filthy footpaw. He squeezes it, and then shoves it into your mouth, filling the remaining space and totally gagging you. This sock is so much fresher, so wet and warm and damp with his salty, filthy foot sweat. Your cock hardens and throbs with need, but when you go to touch it, he slaps your hand away.</p>You sit obediently as Crook pulls off his other boot, and peels off his remaining sock. This one he pulls down over your throbbing cock, leaving the damp and wet fabric hanging from your manhood. Crook points to the older wolf who spoke earlier. \"Gramps, you've got big feet. Give me your socks\", he says. The old wolf scratches his beard, then shrugs. You see him reach down to his boots, which are cracked and dusty from many years of wear. He pulls them off, grunting and complaining as he does so, to reveal his paws are covered up by a pair of thick black socks. He rolls them down, showing off his grey-furred, rough and wide paws, before tossing them over. Crook pulls open one of the socks, and slides it over your muzzle. It's big enough to fit, but it's tight, and your breathing is now filtered through the warm well-used fabric. The older wolf's socks smell of nicotine, pipe smoke, and something like a sweaty, woody mature aroma. He slides the other sock over the first one with some difficulty, and you feel the fabric squeezing your face tightly.</p>\"Chip, yours\", Crook says. The scrawny wolf next to him spins on his barstool gleefully, and quickly tugs off his boots too. His are shorter, only up to his ankles rather than the half-calf boots the other wolves wear, and the socks underneath are yellowed with sweat. Despite his small paw size, his stink is powerful - even through the old wolf's socks you can smell the acrid, unwashed stench of sweaty musty old socks. Crook points to your bulge, and Chip happily rolls his socks down over the one already on your cock, forming a sort of round, tight fabric cage around your cock and balls.</p>Crook has more wolves step forward, and they add their socks to you too. A red-haired wolf covers your hands with his, and his scarred friend adds his own to make soft puppy-mitts for your hands. A tall, lanky wolf grumbles about the situation, but uses his socks as a rope to tie your wrists together. He shoves you to the ground under Crook's seat after doing so. Crook scratches his chin thoughtfully.</p>\"That bear who joined up last week. His feet were huge. Get him in here\", Crook says. Chip, now barefoot, hops down and runs outside, before returning with a towering behemoth of a man. It must have taken an entire cow to make the jacket the bear is wearing, and he has to crouch down slightly to avoid hitting the ceiling lanterns with his head. \"Gruff, I want your socks\", Crook says.</p>The bear blinks slowly, then looks down at you, bound and gagged on the floor. He walks closer, his massive boots pounding on the boards as he approaches you. With the tip of his steel-capped boot, he pokes your sock-covered bulge.</p>\"Fun\", he says. His voice is gravelly and has a slow drawl to it. He sits down, and pulls off his gigantic boots with some effort, revealing wide flat paws that are big enough to cover your entire chest. His socks are black, with the soles darker and damp with a sweat that smells oddly foresty, a sort of grassy, sweaty musk. He peels them off to reveal his sweat-glistening pawpads, then leans down and pulls you up. Without Crook asking, he takes one of the socks and pulls it up over your muzzle, then over your entire head, like a massive, sweaty balaclava. It's tight, and dark, and it gets tighter as he pulls the other one over it too. The darkness blacks out your vision, makes your hearing muffled, but surrounds you in thick, dirty paw stink.</p>You can't hold it in any longer. You grunt and moan through your gag, as you start to cum hands free. Your cock twitches and throbs, gushing sticky hot cum into the filthy socks, adding to the mess and dirt.</p>\"Alright, roll this foot slut under one of the benches. From now on this gang is mine\", Crook says. You hear the clink of glasses as someone kicks you over to a sticky, smelly nook of the bar. The party goes on as normal, everyone mostly ignoring the sock-bound, wriggling prisoner. Though the wolves who sit at the table where you are take a moment to ensure their feet are resting on your chest or sock-covered face.",
+                        "trapped_desc": "You are trapped in the grease pit, your hands and feet bound by tight socks, with more socks filling your mouth and covering your face. Any attempt to wriggle free is followed by a swift kicking.",
+                        "trapped": "You are trapped in the grease pit, your hands and feet bound by tight socks, with more socks filling your mouth and covering your face. Any attempt to wriggle free is followed by a swift kicking.",
+                        "outcomes": [
+                            {
+                                "parameter": "trapped",
+                                "quantity": 11,
+                                "change": "set"
                             }
                         ]
                     }

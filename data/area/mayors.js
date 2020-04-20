@@ -270,6 +270,16 @@ var area = {
                                 "change": "add"
                             }
                         ]
+                    },
+                    "meek": {
+                        "text": "The building goes quiet for lunchtime as the office is closed. With no reason to wait, you move to exit when a muffled shout reaches your ears. It came from the mayor’s room! Is everything okay?</p></p>You prepare yourself, approaching as the sounds grow louder. Though the quest to catch a possible trespasser is perhaps... Stupid, since you’re also not supposed to be here. You decide to remain hidden. If its fine and nobody catches you, leave. If not, you save the day. Great plan. </p></p>The sudden crack of a pistol nearly makes you break concealment, but you’re too stunned at the odd scene you peer into. Ace the Coyote is slumped against the mayor’s desk, sweating and ragged, pointing a gun at Mayor Maine! The mayor, for his part, calmly holds one hand up to a magic circle spinning slowly before it. </p></p>“Your resistance is admirable, if obnoxious.” Maine sighs and drops his hand. The magic circle dissipates, and the stopped bullet tinks the floor. The coyote, usually bold to a fault, seems genuinely disturbed. </p></p>With a snap of the mayor’s fingers Ace’s body jerks downwards, kneeling. Eyes wide. You can tell he wants to protest.</p></p>“We’re going to see eye-to-eye, whether you want it or not.” Mayor Maine tips his foot under Ace’s scruffy chin, forcing him to meet the cat’s gaze. Something about that action makes Ace relax. His angry, fearful eyes turn half-lidded; his clenched jaw unwinds. The mayor whispers, too deafened for you, and Ace grows tranquil yet more attentive. </p></p>Ace’s eyes spiral as the mayor’s wide foot pushes over his muzzle, toes clenching over his nose. Pulled back and forth by the grip as the mayor waves his foot lazily.</p></p>You’ve had enough peeping. Something’s corrupt, and you need to save Ace if it’s not already too late! You open the door to the mayor’s office, weapon in hand, when you completely forget whatever it was you were doing. What? Huh?</p></p>The mayor has another magic circle in his palm, this time towards you. Another? Have you seen him do this before?</p></p>Maine shakes his head. “I was wondering when you’d come out.” The magic circle spins faster, and you white out completely.</p></p>You blink. You’re standing in the front lobby of the mayor’s office. Several other people are coming in, so you assume lunch must’ve just ended. Is it already that time? Geez. It can be easy to lose track. Just as you remind yourself to buy a watch, a familiar face leaves while everyone else enters.</p></p>“Howdy,” Ace tips his hat to you with a wink. “Ain’t you lookin’ cute today.” He seems his usual self, thankfully. Wait, why were you worried about that? </p></p>You ask him what’s up as he walks past. “Jes’ needed to renew my permit. Can’t traverse the damn cave without one.” </p>He’s lying. You don’t know why that feeling hits you so hard, but it doesn’t go away. And by the time you can process it, Ace is already out the door and long-gone. (Contributed by Meek)",
+                        "outcomes": [
+                            {
+                                "parameter": "muscat_1",
+                                "quantity": 5,
+                                "change": "add"
+                            }
+                        ]
                     }
                 }
             },{
@@ -289,6 +299,22 @@ var area = {
                                 "quantity": 5,
                                 "change": "set"
                             }
+                        ]
+                    }
+                }
+            },{
+                "id": "mayor_insecure",
+                "title": "Mayor Maine's Insecurities",
+                "subtitle": "When you walk into his office, Maine takes one look at you and shoves a bunch of papers off his desk onto the ground, while making a sort of choking noise.",
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "default",
+                "results": {
+                    "mayor_intern": {
+                        "text": "Maine stares at you for a moment, his eyes wide. \"You know, I was legitimately voted in as Mayor almost ten elections running. I run this city well!\", he says, one eye twitching.</p>He stands up and starts pacing around the room, kicking over the forgotten paperwork as he does so. \"So I may have greased a few palms here and there, helped round off some edges, taken a few kickbacks. It's just politics! The streets are clean, crime is low. What is there to complain about?!\", he snarls.</p>He points at you, his fur on end. \"What, you think FEUDALISM is better? Who even legitimises that? Someone falls out of the right vagina and that means they'll be a good leader?\", he says, his voice cracking slightly.</p>He crosses his arms and breathes out slowly. \"Well personally I do not recognise the legal - why am I even talking to you? I have work to do! This town doesn't run itself!\", he says. He throws his arms up in the air and then sits down at his desk.</p>\"GARY!\", he yells. A short grey cat who was sleeping at a desk outside the office suddenly jumps up in the air. Maine snaps his fingers at him through the open door. \"Bring in the papers, we have work to do!\", he shouts. The other cat, Gary, leaps up with a grin on his face and starts unzipping his pants as he enters the office. Maine slaps his forehead and grimaces.</p>\"No, ACTUAL work! Get me the papers for the agricultural reform!\", he says. Gary blinks and spins around, before grabbing some papers from his own small desk and carrying them in. You use the opportunity to quietly sidle away.",
+                        "outcomes": [
+                            
                         ]
                     }
                 }
