@@ -178,6 +178,10 @@ var area = {
                                 "parameter": "titan_connection",
                                 "quantity": 1,
                                 "change": "set"
+                            },{
+                                "parameter": "pain",
+                                "quantity": 1,
+                                "change": "set"
                             }
                         ]
                     }

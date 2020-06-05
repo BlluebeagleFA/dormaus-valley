@@ -34,6 +34,7 @@ DV.Data.areas = {
 	"northplains": "./data/area/northplains.js", //NORTH_OF_VILLAGE
 	"northwoods": "./data/area/northwoods.js",
 	"titancottage": "./data/area/titancottage.js",
+	"riverford": "./data/area/riverford.js",
 	"glatisant": "./data/area/glatisant.js",
 	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
 	"quartzcavern": "./data/area/quartzcavern.js",
@@ -230,6 +231,11 @@ DV.Data.areacoordinates = [{
             "comparison": "greater" //default greater
         }
     ]
+},{
+    "header": "Ruins of Riverford",
+    "mapId": "worldmap.jpg",
+    "position": [0.60, 0.04],
+    "title": "riverford"
 }, {
     "header": "Entry to a Dark Cavern",
     "title": "cavernentrance"

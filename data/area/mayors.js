@@ -308,6 +308,11 @@ var area = {
                 "subtitle": "When you walk into his office, Maine takes one look at you and shoves a bunch of papers off his desk onto the ground, while making a sort of choking noise.",
                 "type": "random",
                 "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 55,
+                        "comparison": "equal" //default greater
+                    }
                 ],
                 "icon": "default",
                 "results": {

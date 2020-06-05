@@ -52,6 +52,12 @@ DV.Data.item_data = {
         title: "Grizz [Friend]",
         description: ["Grizz is fond of you."]
     },
+    doom_connection: {
+        type: "attribute",
+        icon: "doomicons",
+        title: "Doom [Friend]",
+        description: ["Doom is keeping an eye on you."]
+    },
     flute_interest: {
         type: "attribute",
         icon: "fluteicon",
@@ -212,6 +218,7 @@ DV.Data.item_data = {
             //10: urinal
             //11: sock prisoner
             //12: Titan's fox
+            //13: Fog in riverford
         ]
     },
     species: {
