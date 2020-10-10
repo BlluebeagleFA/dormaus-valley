@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Stories of Dormaus Valley</title>
+
+        <link rel="stylesheet" href="viewer.css">
+        <link rel="stylesheet" href="icons.css">
+    </head>
+    <body>
+        <!-- GLOBAL HEADER -->
+        <form action="viewer_search.html">
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </form>
+        <a href="viewer_areas.html"><p>Go back to homepage</p></a>
+        <hr>
+        <p id="errorMessage"></p>
+        <!-- END GLOBAL HEADER -->
+
+        <h1 id="areaHeader"></h1>
+        <p id="areaSubHeader"></p>
+        <div id="eventList"></div>
+
+        <script src="viewer.js"></script>
+        <script src="../data/areas.js"></script>
+        <script>
+            // Get area
+            var url = new URL(window.location.href);
+            var areaId = url.searchParams.get("area");
+
+            // Dynamically load javascript file
+            var areaJs = "../" + DV.Data.areas[areaId];
+            loadScript(areaJs, function() {
+
+                // Set area header
+                var areaHeader = generateAreaTitle(area);
+                document.getElementById("areaHeader").innerHTML = areaHeader;
+
+                // Set area subheader
+                var areaSubHeader = area.subheader;
+                document.getElementById("areaSubHeader").innerHTML = areaSubHeader;
+
+                // Populate list
+                var eventListBuffer = "";
+                area.events.forEach(event => {
+                    if (!shouldBeExcluded(areaId, event.id)) {
+                        eventListBuffer += "<div class='resetfloat'><h2><a href='viewer_results.html?area=" + areaId + "&event=" + event.id + "'>" + generateEventTitle(event) + "</a></h2><div class='icon " + event.icon + "'></div><p>" + event.subtitle + "</p></div>";
+                    }
+                });
+
+                // Add list to page
+                document.getElementById("eventList").innerHTML = eventListBuffer;
+            }, function() {
+                
+                // Area failed to load!
+                reportError("Area not found.");
+            });
+        </script>
+    </body>
+</html>
