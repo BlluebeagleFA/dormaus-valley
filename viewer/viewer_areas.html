@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Stories of Dormaus Valley</title>
+
+        <link rel="stylesheet" href="viewer.css">
+    </head>
+    <body>
+        <!-- GLOBAL HEADER -->
+        <form action="viewer_search.html">
+            <input type="text" name="q">
+            <input type="submit" value="Search">
+        </form>
+        <a href="viewer_areas.html"><p>Go back to homepage</p></a>
+        <hr>
+        <p id="errorMessage"></p>
+        <!-- END GLOBAL HEADER -->
+
+        <h1>Stories of Dormaus Valley</h1>
+        <p>This fan-made viewer allows you to access and search through any story in the Dormaus Valley game without limits. This contains spoilers and NSFW (18+) content. If you want to play the actual game, <a href='https://www.dormausvalley.com/'>click here</a>.</p>
+        <p>Dormaus Valley and all of the stories seen here are property of Blueballs.</p>
+        <p>Select an area below to browse its events, or search in the search bar above.</p>
+        <ul id="areaList"></ul>
+
+        <script src="viewer.js"></script>
+        <script src="../data/areas.js"></script>
+        <script>
+            // Populate list
+            var arealistBuffer = "";
+            DV.Data.areacoordinates.forEach(area => {
+                arealistBuffer += "<li><a href='viewer_events.html?area=" + area.title + "'>" + generateAreaTitle(area) + "</a></li>";
+            });
+
+            // Add list to page
+            document.getElementById("areaList").innerHTML = arealistBuffer;
+        </script>
+    </body>
+</html>
