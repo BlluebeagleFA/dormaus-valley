@@ -34,6 +34,56 @@ var area = {
                     }
                 }
             },{
+                "id": "rittertraining",
+                "title": "Ritter's Remedial Training",
+                "subtitle": "There's a sign up at the side of Ritter's stall, listing his prices. Everything with a red label is two coins, and blue is three coins. Yellow is two for three...or is it, uh, three for two? Your head aches as you try to keep the numbers in your slow, dimwitted head. He gives you a withering look.</p>\"What does my brother see in you?\", he says. \"I really can't allow him to hang around with someone this stupid. You should let me fix you up.\"",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "intelligence",
+                        "value": 2,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "rittericon",
+                "results": {
+                    "thing": {
+                        "html": "data/active/RittersTraining.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "staypup",
+                "title": "Being Saberhagen's Pup",
+                "subtitle": "You love your Master. He's a cuddly, loving big cat, and he smells like nice treats and flour!",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "trapped",
+                        "value": 14,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "Master is working in his tent today. He puts the nice-smelling things in the hot box, and then later they come out as other nice-smelling things, but hot! You sniff at his legs and trail around behind him while he works, and sometimes he reaches down to rub and pet your head.</p>You like when you get pets. It makes your tail wag a lot.</p></p>When he puts the hot things out near the front of the tent, some other people start showing up, and taking the hot things. You bark at them at first, but Master pets you and doesn't seem to mind, so maybe it's ok?</p>He puts you at the front of the tent, so you stand guard. Some of the people who come give Master things and get a hot thing, so maybe it's like fetch. Some of them make happy noises when they see you, and give you pets! Maybe it's all good after all.</p>Other Master is here too today. You don't like Other Master quite so much. He looks just like Master, but he smells different, and he's kind of mean. He doesn't give you pets like Master does.</p></p>When he sees you looking at him, he sits down on one of the tables. He reaches down and pulls off one of his boots, and then stretches his paw out. You walk over on all fours and sniff at his paw. It smells like the street outside, and a little bit like the woods. Other Master has been travelling.</p>Other Master's smell makes you feel funny. You know you're not a very smart dog, but now you feel even slower and dumber. You wag your tail at him, forgetting that you don't like him much. He reaches into his pocket, and shows you a dog treat!</p>You bark and wag, excited to get the treat. Then he throws it, and you go dashing out to the side of the tent to look for it. It's not there?</p></p>You look back at Other Master, and see he's still holding the treat! He puts it back in his pocket, and you sulk.</p>Other Master is a jerk!",
+                        "outcomes": []
+                    },
+                    "pumpkin_2": {
+                        "text": "Master is working hard as usual today. He's got his big bowl of white stuff, and is mixing it to get ready to make more of the hot things that smell tasty.</p>You want attention! You walk around near his legs, nuzzling and sniffing him. He steps back, and just barely misses your tail. He stumbles, and the bowl in his arms drops.</p>You are suddenly splattered with cold goop. It smells like biscuits!</p>You wag your tail and lick at yourself. Master sighs, and picks you up and takes you to the back of the tent.</p></p>You sit patiently as he places you in a tub, until you see him coming back with a bucket of water. Awww not a bath! You bark, but he ignores you. He pours the water in, and starts rubbing and scrubbing your fur. Baths aren't all bad, you suppose.</p>Just as you're relaxing, Master's fingers touch against the tag on your collar. He looks at it curiously. Then he makes an upset noise. You whine, worried that you did something bad, but he pets your head and reassures you.</p>He places both his thumbs on your collar tag, and starts mumbling. He keeps doing that for a while, long enough that you start getting fidgety. Then, suddenly, the tag gets really hot, and flashes bright!</p>You blink, confused. Master looks a whole lot smaller somehow. And this tub is a lot more cramped!</p></p>You look down at yourself, and see that your fur is missing. Your skin is all smooth now, and your muzzle has gone flat?</p>\"Are you alright? I'm going to have a very stern talk with my brother about this. He shouldn't be changing people into things without permission\", Master says. You cock your head to the side, and then lean forward and lick his face.</p>Master blushes, and wiggles. \"Oh goodness, you've been my pet all this time. I gave you baths! Um, I hope this doesn't make things awkward...\", he says. You jump forward, clambering out of the bath and wrapping your arms around him, as you nuzzle and sniff at his furry neck.</p></p>He yelps, and falls onto his back. Then, he gently reaches out and strokes your head for a while. After a few moments, your brain gradually starts to speed up, and your memories trickle in bit by bit. You look down at Saberhagen, who's face is totally red with a hot blush, and then stand up.</p>You apologise to him, and he assures you it's not a problem. You still really feel like you want to lick him, though, and you have a phantom sensation of a tail wagging behind you whenever you see him...",
+                        "freeTrap": true,
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "get_worn",
                 "title": "Getting Worn",
                 "subtitle": "Your hollow, fabric body is starting to feel more and more empty, and you find yourself looking at the organic people around you with something like a mix of hunger and arousal.",

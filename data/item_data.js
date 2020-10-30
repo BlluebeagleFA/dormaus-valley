@@ -54,7 +54,7 @@ DV.Data.item_data = {
     },
     doom_connection: {
         type: "attribute",
-        icon: "doomicons",
+        icon: "dooms",
         title: "Doom [Friend]",
         description: ["Doom is keeping an eye on you."]
     },
@@ -120,7 +120,17 @@ DV.Data.item_data = {
         type: "attribute",
         icon: "titan_b",
         title: "Titan [Connection]",
-        description: ["You have met a kind, cautious boar who lives alone in the woods"]
+        description: ["You have met a kind, cautious boar who lives alone in the woods",
+            "Titan considers you a close friend",
+            "You found a worrying necromantic item in Titan's cottage. You should show it to a magician, like Saberhagen",
+            "You suspect Titan is putting himself in serious danger. You should get to him, fast",
+            "You rescued Titan from a terrible fate."]
+    },
+    dracolich_connection: {
+        type: "attribute",
+        icon: "dracolich_titan",
+        title: "Dracolich [Servitude]",
+        description: ["You allowed Titan to merge with the Dracolich, becoming a new and evil entity."]
     },
     croc_connection: {
         type: "attribute",
@@ -219,6 +229,8 @@ DV.Data.item_data = {
             //11: sock prisoner
             //12: Titan's fox
             //13: Fog in riverford
+            //14: saberhagen's dog
+            //15: ritter's butler
         ]
     },
     species: {
@@ -326,6 +338,12 @@ DV.Data.item_data = {
         description: ["You have learned about the old religion that worshipped six colourful dragons who maintained the world. It is no longer widely believed in, but you feel like there is something important about it, hidden just below the surface.",
             "In an ancient tomb dating from the time of the original dragons, you found another mural. This one had a seventh, black, dragon painted on it. Your head itches, like there is something important you are forgetting."]
     },
+    mystery_sin: {
+        type: "attribute",
+        icon: "thesin",
+        title: "Mystery: The Sin",
+        description: ["What depths would you sink to, in order to become a god?"]
+    },
     mystery_sky: {
         type: "attribute",
         icon: "beneath",
@@ -337,6 +355,13 @@ DV.Data.item_data = {
         icon: "lycaeon",
         title: "Mystery: The King Without Chains",
         description: ["You caught a glimpse of something important. Something that was found for the very first time."]
+    },
+    makarnapolitics: {
+        type: "attribute",
+        icon: "makarnaicon",
+        title: "Makarnan Politics",
+        description: ["King Leorath was supposedly killed by tiger assassins.",
+            "A tiger assassin has told you that they could not have killed King Leorath"]
     },
     asong: {
         type: "attribute",
@@ -508,6 +533,13 @@ DV.Data.item_data = {
 		value: 15,
 		description: ["A popular dessert in the valley, baked fresh from Dormaus Town pumpkins and preserved with enchantments."]
 	},
+	pie_2: {
+        type: "item",
+        icon: "pie_1",
+        title: "Ice Cream Pie",
+        value: 15,
+        description: ["An ice cram pie, a Makarnan delicacy. It won't last long in the heat."]
+    },
 	watervine_1: {
 		type: "item",
 		icon: "watervine_1",
@@ -525,7 +557,7 @@ DV.Data.item_data = {
 	lotus_2: {
         type: "item",
         icon: "lotus_2",
-        title: "Fire Aloe",
+        title: "Makarnan Fire Aloe",
         value: 100,
         description: ["This flower grows in the bitter dry savannah of Makarna. In such a dry country, a flower like this is a precious rarity."]
     },
@@ -1007,6 +1039,17 @@ DV.Data.item_data = {
             might: 1
         },
         description: ["We all place barriers between ourselves and the world. Shells of pretence and masks of actions and behaviours to trick the world that we are the person we want them to think we are. Yet under it all, even the hardest and strongest of us are vulnerable."]
+    },
+    royal_knight: {
+        type: "item",
+        icon: "royalknight",
+        title: "A Duty",
+        value: 1,
+        slot: "memory",
+        attributes: {
+            might: 2
+        },
+        description: ["Until the last of the Royal Line of Dormaus Valley leaves this world, you will serve and protect them. No matter what the cost."]
     },
     howl: {
         type: "item",

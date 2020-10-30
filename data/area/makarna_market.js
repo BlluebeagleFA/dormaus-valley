@@ -151,6 +151,35 @@ var area = {
                     }
                 }
             },{
+                "id": "buyicecream",
+                "title": "Purchase some ice cream",
+                "subtitle": "There is a white fox who has set up a small stall in between some of the other food sellers. Quite a queue is forming for his wares.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "watervine_1",
+                        "value": 9,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "default",
+                "results": {
+                    "reluctant_horse": {
+                        "text": "You wait in the queue, listening to the patrons as they gossip about the latest fad to hit the market. \"Have you heard? An iced snack, in the Spice Market, of all places! It must have cost a fortune to ship it all this way!\", the camel girl in front of you whispers to her friend.</p>You eventually reach the front of the queue, and see the fox himself. His slender body and white fur mark him clearly as an arctic fox, and he looks miserable in the heat. He gives you a weak smile, and cracks open a large metal chest next to him. Billowing tendrils of cold air ooze up from the chest as he reaches in, scoops up some of the contents with a metal spoon, and hands it to you.</p>It's soft, sugary white ice cream. You give it a curious lick, and find it has a light vanilla sort of flavour. The cost is astronomical though, and your wallet feels much lighter.</p>You wait for a moment after tasting it, and he looks at you quizzically. When you don't seem to transform or otherwise be enchanted, you ask him if this is literally just ice cream. He rolls his eyes. \"Mate, do you know how much of a pain it was making a box that can store cold stuff on an overseas trip? Like hell do I have time for any magic shenanigans. Now move along please, you're blocking the queue.\"",
+                        "outcomes": [
+                            {
+                                "parameter": "pie_2",
+                                "quantity": 1,
+                                "change": "add"
+                            },{
+                                "parameter": "watervine_1",
+                                "quantity": 10,
+                                "change": "sub"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "entrance_random",
                 "title": "Watch the customers",
                 "subtitle": "There are massive crowds here, buying and selling all manner of object. You could watch and try to gain some information about the city.",

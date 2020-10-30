@@ -5,6 +5,32 @@ var area = {
         "subheader": 'The grassy road opens up here, leading to two wooden poles, bedecked with flags. This marks the entrance to the sleepy town of Dormaus, and the smell of bread and sound of lively music flows through the air as you approach.',
         "events": [
             {
+                "id": "tomakarnadom",
+                "title": "Join the Travelling Lions",
+                "subtitle": "There appears to be a commotion in the main road outside of the village today. A procession of carts and caravans are haggling with vendors and stocking up goods, for what looks like preparation for a long journey.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },
+                    {
+                        "parameter": "species",
+                        "value": 14,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "makarnaicon",
+                "results": {
+                    "thing": {
+                        "html": "data/active/TravelToMakarna.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "to_makarna_m",
                 "title": "To the Land of Lions",
                 "subtitle": 'There is a commotion at the gates of town today. A large procession of caravans and horses are set up for some sort of long trip, and muscular lion men are loading up crates and barrels. You can smell something very familiar, something that makes you feel submissive and needy deep inside. You walk over to the largest of the caravans, which is tall and surrounded by curtains and tapestries. You pull at the edge of the curtain, and immediately fall to your knees when you see your king, your lion, lounging inside on a bed of pillows. He is naked, except for his gleaming crown, and two lionesses are serving him, one of them rubbing his footpaw while the other kisses and teases his glorious cock.</p>He sees the collar around your neck, and smiles that handsome, dominant smile. "My slave. You have returned to me, because you know where you belong. You will come with me, give up this foolish life of \'adventuring\', and become my plaything. Serve me, make me happy, and exist for my pleasure. It is what you were made for." Every part of your body is aching to obey your king. Yet if you go with him, you might never return. Not even magic could save you from a life of servitude voluntarily chosen. Do you climb aboard?',

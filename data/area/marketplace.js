@@ -491,6 +491,31 @@ var area = {
                     }
                 }
             },{
+                "id": "checkskullthing",
+                "title": "Show the lantern to Saberhagen",
+                "subtitle": "The skull lantern is clearly magical in design, and who better to ask about it than your friendly local wizard baker?",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "titan_connection",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "titan_b",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "Saberhagen's stall is as busy as ever when you approach. He has just put out a fresh batch of steaming crusty loaves, and a small queue is quickly forming to snap them up while they're hot. You wait patiently while he deals with his customers, and then walk up to him. The cat's ears perk up as you approach, and he smiles happily.</p>\"Ah! You should visit more often, yesterday I had a whole batch of miniature buns that needed eating. Would have been great to share!\", he says. You ask if you can show him something, and hand over the lantern.</p></p>He takes it in his hands and turns it around slowly. He bites his lower lip, and traces his finger slowly down the skull's forehead. \"Oh dear. Have you...lost someone, recently?\", he says nervously. \"This is...you should know, this can't bring people back\", he says, stumbling over his words. You explain that it isn't yours, and that you took it from a friend, but he looks skeptical. You feel a hand squeeze on your shoulder from behind.</p>You turn, and see Ritter grinning at you. \"I smelled dark magic. My little brother isn't the person to ask about this sort of thing. He's a precious little flower, you know\", Ritter says. He turns and plucks the lantern from Saberhagen's hands.</p>\"This is a beacon to lure in spirits of the dead, so that you can pull them from the world beyond to this one. That's the story at least, but it's just folk tales and bullshit. You can't bring someone back once they're gone. You can linger, as a ghost or a vampire, and try to delay things. But once you cross, that's a one way ticket. All this thing will draw in is nasty little creepers, who'll fake being who you want to talk to just long enough to get their teeth into you\", Ritter says. He shoves the lantern into your grip, and then wipes his hand on his coat where he touched it.</p></p>\"My advice? Go to whatever friend you got this from, and smack some sense into them. Because the best case scenario here is that it kills them - you don't want to know what the worse case is\", he says. You look at Saberhagen, and he nods too, nervously.</p>You need to get to Titan, as soon as possible.",
+                        "outcomes": [
+                            {
+                                "parameter": "titan_connection",
+                                "quantity": 4,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "market_random",
                 "title": "Wander the Market",
                 "subtitle": "There are many peddlers selling their wares, along with a number of brick-and-mortar stores selling odd things.",

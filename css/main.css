@@ -352,6 +352,22 @@ div.theft {
 	background-image: url("../img/titan.png");
 }
 
+.dracolich_titan {
+	background-image: url("../img/dracolich_titan.png");
+}
+
+.doomb {
+	background-image: url("../img/doomb.png");
+}
+
+.dooms {
+	background-image: url("../img/dooms.png");
+}
+
+.makarnaicon {
+	background-image: url("../img/makarnaicon.png");
+}
+
 .glatisant {
 	background-image: url("../img/glatisant.png");
 }
@@ -520,6 +536,10 @@ div.theft {
 	background-image: url("../img/beneath.png");
 }
 
+.royalknight {
+	background-image: url("../img/royalknight.png");
+}
+
 .lycaeon {
 	background-image: url("../img/lycaeon.png");
 }
@@ -542,6 +562,10 @@ div.theft {
 
 .mysterydragons {
 	background-image: url("../img/mysterydragons.png");
+}
+
+.thesin {
+	background-image: url("../img/thesin.png");
 }
 
 .accursedicon {

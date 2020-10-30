@@ -74,6 +74,10 @@ var area = {
                                 "parameter": "species",
                                 "quantity": 32,
                                 "change": "set"
+                            },{
+                                "parameter": "watervine_1",
+                                "quantity": 10,
+                                "change": "add"
                             }
                         ]
                     }

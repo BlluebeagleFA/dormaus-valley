@@ -73,6 +73,105 @@ var area = {
                     }
                 }
             },{
+                "id": "flower_2",
+                "title": "A flower for the brave",
+                "subtitle": "Gareth seems to spend a lot of time tending to flowers. Maybe he would appreciate the one you are carrying?",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "gareth_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },
+                    {
+                        "parameter": "lotus_2",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "gareth_b",
+                "results": {
+                    "bestsuccess": { //success and fail, rare success, rare fail, or random
+                        "text": "You take the fluffy flower from your pack, and hand it over to Gareth. He lifts it up and turns it in the light, making the petals shine and flow. \"Wonderful! A fire aloe, I haven't seen one in such a long time. They are native to the southern continent. It grows in dry and barren places, as if to say that life always finds a way\", he says. He takes one of the thick leaves from the base of the flower, and peels it off carefully before placing it into a clay pot. He then tucks the tip of the flower into his tunic, the red standing out vibrantly against his white clothes.</p></p>\"This calls for something a little more exciting, I think\", he says. His tusks gleam as he grins, and he takes your hand before walking you across a partially-submerged platform. Though your feet leave ripples in the water, he passes through it without any trace at all. At the other side, a few steps lead up to platform with a corner of a stone room still attached to it. On one of the remaining walls there is a rack of rusty weaponry. Gareth picks up two wooden poles, and tosses one to you. He then holds his own out in front of him, with his other hand behind his back, and bows. You copy his movements, and when you straighten up, he lunges forward with his pole. You step to the side quickly, but he turns his lunge into a swing that taps you gently on the chest. He chuckles. \"Here, stand like so\", he says, before carefully holding your sides with his enormous white paws. He adjusts your stance, with one foot in front of the other, and then has you lift your pole a little higher. \"Now, when I attack like so, turn your sword like this, for a circular parry\", he says. He attacks again, more slowly, and you turn your pole so that it catches his one and knocks it aside with a circular motion. You then quickly lunge back, and he steps aside expertly. \"Now you are getting it! En garde!\" he cries, before redoubling his attack.</p></p>The two of you swing, parry, and riposte, circling eachother on the field. Each time he lands his weapon on you, he explains how best you should counter his actions, and over time, you gradually become more and more adept. He grits his teeth, grinning as he lunges and strikes. \"The second lesson! For when affairs of the court do not suffice, you must be ruthless!\", he says. His sword moves like a snake, twisting around and down to your leg, where he raps your knee sharply.</p>\"This is a lesson my father taught me in many ways, not all of them intentional. As a child, I would sneak into the woods play with swords like this, with another boy around my age. A boy not from Dormaus, but from Riverford. Our petty kingdoms were, technically, enemies, but in those moments we knew eachother only as friends\", he says.</p>His attacks and movements lead you down along the wet ground, and you almost slip as your foot touches a hidden submerged edge. You jump back, onto a stepping stone where some masonry emerges from the flooded water. He nods proudly at your grace, and leaps onto an adjacent stone.</p>\"My father of course, eventually discovered this. The shame of his heir cavorting with an enemy, and even worse, with a commoner of no title at all. He took me into the throne room, with his retinue watching with their dry, cold little faces. There, he told me that I had disgraced our family name, that from now on I must remember what was about to happen, because honour must always be preserved, with no consideration for the weak feelings of a child\", he says.</p>Both of you balance on opposite rocks, watching eachother for an opening. \"He cut off my friend's head in front of me. It was that day that changed my life, because when he left me alone in that room with the body, I swore I would make a valley where there was no difference between one kingdom and another. Where a prince of Dormaus and an angler's son from Riverford were the same\", he says. His gaze slips aside for just a moment.</p></p>You lunge, your weapon like a dart. It strikes pure and true, and your \"sword\" taps against the flower on his pocket. He grinds, his eyes gleaming. In a rush of motion, he lifts you up and slaps you on the back with great force. \"An excellent display! You have learned the second lesson well!\" he says.</p>He walks you back to the workshop, giving you tips and pointers on your behaviour and fighting style. His gaze lingers on you as you talk, and his eyes are warm.</p>\"My flower collection is nearly complete, I believe. I have every one that I could ever want...bar, perhaps, one\", he says.</p>You ask him which flower he is missing, and he strokes his fingers across a lily. It takes him a while to reply, as he looks down at the petals with a distant gaze. \"It's not something you could find now. To be honest, I am not sure I would want to see it. It was the favourite flower of my wife...and my daughter. The muscard rose, the symbol I used for the nation I spread through this valley.\"</p>He turns the flower he's working on aside, and brushes his forehead before turning to you. \"It was a new breed of rose, and the only seeds were in this castle when it was destroyed. It was lost along with my family, and my kingdom. I apologise for the dreary story\", he says. He walks over to you and squeezes your shoulder.</p>\"It is fine, really. Forget I said anything. My collection is complete, and beautiful, thanks to you\", he says.",
+                        "outcomes": [{
+                            "parameter": "gareth_connection",
+                            "quantity": 2,
+                            "change": "set"
+                        },{
+                            "parameter": "lotus_2",
+                            "quantity": 1,
+                            "change": "sub"
+                        }]
+                    }
+                }
+            },{
+                "id": "garethhistory",
+                "title": "Ask Gareth about his kingdom",
+                "subtitle": "To unify the entire valley from one tiny province is remarkable. How did he manage it?",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gareth_connection",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "gareth_b",
+                "results": {
+                    "thing": {
+                        "html": "data/active/GarethHistory.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "garethhistory2",
+                "title": "Ask Gareth for the truth",
+                "subtitle": "What is he hiding?",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gareth_connection",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "gareth_b",
+                "results": {
+                    "thing": {
+                        "html": "data/active/GarethPower.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "lastflower",
+                "title": "A flower for the future",
+                "subtitle": "Now that you know, the resemblance is there. In Gareth's soft, kind eyes, you see an echo of Titan. You have to tell him.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gareth_connection",
+                        "value": 3,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "rose_muscat",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "gareth_b",
+                "results": {
+                    "thing": {
+                        "html": "data/active/LastFlower.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "becomeroyal",
                 "title": "Request Healing",
                 "subtitle": "Gareth is looking with frustration at some of his flowers, which appear to have wilted. He seems happy to be distracted when you walk up to talk with him.",

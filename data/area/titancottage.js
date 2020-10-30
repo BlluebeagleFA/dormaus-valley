@@ -11,7 +11,16 @@ var area = {
                 "subtitle": "The boar is delighted to have you stay a little longer. He eagerly brews up a pot of flower tea and asks you all about the world outside.",
                 "type": "random",
                 "requirements": [
-                    
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
+                    }
                 ],
                 "icon": "titan_b",
                 "results": {
@@ -32,6 +41,16 @@ var area = {
                         "parameter": "species",
                         "value": 55,
                         "comparison": "equal" //default greater
+                    },
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
                     }
                 ],
                 "icon": "default",
@@ -71,6 +90,16 @@ var area = {
                         "parameter": "pie_1",
                         "value": 0,
                         "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
                     }
                 ],
                 "icon": "pie_1",
@@ -90,6 +119,147 @@ var area = {
                                 "quantity": 12,
                                 "change": "set"
                             }
+                        ]
+                    }
+                }
+            },{
+                "id": "feedicecream",
+                "title": "Bring Titan Ice Cream",
+                "subtitle": "Carrying it all this distance without it melting took some rather fiddly magic, but you made it work. He's sure to appreciate such an exotic treat.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "pie_2",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "pie_1",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "You give the ice cream a once-over with a simple frost enchantment before walking up to Titan's cottage. Once you got into port at Otterton it was much less painful to keep it frozen, as the magic-rich air of the valley makes conjuring so much easier.</p>You want it to be a surprise, so you don't announce yourself as you come up the path and push the door open.</p>As the door creaks forward, you are greeted by a rather surprising sight. Titan has laid out three wooden chairs at his table. There's a teapot and teacups, on top of frilly doiles. Sitting on two of the chairs are two large plush toys. One bear, and one rabbit, both clearly home made, with rough stitching and simple button eyes.</p>He pours out tea in front of the rabbit. \"Here you go, Ms Bunnypeets, your jasmine...tea...\", he says, as he catches sight of you.</p>His chubby cheeks turn pink with a blush as he places the teapot down. \"Ah! Oh, um, I was, just...playing...\", he says. He covers his face with his hands, and squirms with embarrassment. You cough, and gently place the ice cream down on the table. After a moment he peeks through his fingers, then puts his hands down and gasps. \"What is that?\", he says. You tell him it's a dessert, and he takes a small spoon and tries a little. Then he wiggles and almost hops in the air. \"It's so good! I've never had anything like this before!\", he yelps.</p>The embarrassment is forgotten, as you both sit down and share the ice cream together. Titan spills a little on his chin, and you wipe it with your finger for him. He blushes a little, and glances away nervously. \"I will just get us some tea. I know just the kind; I have some berry tea I've been working on that's perfect after that lovely meal\", he says.</p>When he comes back, he has a small white teapot, and pours you out some hot tea. It's a deep, crimson colour, with a fresh scent of summer and wine. It's very pleasant. Titan looks like he wants to say something, though. You let him work up the courage, and sip your tea as he nervously hems and haws a little while. Then he speaks.</p>\"Um, so my tea party, well it's just something I like to do when I'm alone, you know? It makes this place less lonely. I'm not...super good with talking to people. I like having you here, but it can make me a bit nervous, still. I never know exactly what sort of thing to say. Do you think, maybe, if you were interested...\", he says, and coughs. He squints his eyes. \"Well, I liked it when you were my pet...you were really easy to talk to. Do you think, maybe, you'd like to try being my toy at a tea party for a while? So I can get used to it?\"</p>He lifts up a potion bottle, which sparkles with playful colours. \"Just, if you ever feel like it, of course\", he says. You pick up the bottle and look at the swirling colour, and tell him you'll definitely consider it. His nervous smile is quite adorable.",
+                        "outcomes": [
+                            {
+                                "parameter": "pie_2",
+                                "quantity": 1,
+                                "change": "sub"
+                            },
+                            {
+                                "parameter": "titan_connection",
+                                "quantity": 2,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "becomepuppet",
+                "title": "Become a Toy",
+                "subtitle": "You can tell Titan that now would be a good time to try his latest potion. The boar is always eager to have you around.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "titan_connection",
+                        "value": 2,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "titan_b",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "When you tell Titan you've set some time aside to try his potion, he almost squeals with glee. Then he composes himself. \"I will treat you like such a good toy, I promise!\", he says happily. You take a seat on the side of his bed and watch him setting up his tea party. He places a cloth on the table, doilies, a vase with flowers, the whole deal. His two  plushies are seated on their chairs, and he pulls out the remaining chair for you to sit down.</p>You take a seat, and he pours the potion into a teacup for you. He then lifts it up to your mouth. \"Oh, um, just relax and think toy thoughts\", he says. You let your hands droop at your sides, and lean back in your chair as he places the cup to your lips, and tips it.</p>The potion is thick and oddly textured as it goes down your throat, but it doesn't really taste of anything much. It slips down into your stomach, and makes you feel a little drowsy and sluggish. Your arms droop further, feeling heavy and stiff. Your legs grow heavy too, as your body slowly starts to become still. Your breathing slows, and stops completely. You stare forward, calm and relaxed, as your skin starts to tingle.</p>There is an odd, sort of dry feeling, as your body tightens and grows firm. Your skin takes on a rough, lined texture, as your limbs start to reshape. Becoming more boxy, with visible edges and corners. Your colours start to fade, becoming a simple, natural brown all over.</p>The tightness grows strongest at your joints, where your flesh pinches in and deforms, before breaking off into wooden balls and hinge joints. The wood texture spreading over your chest, down to your fingers, each joint becoming a carved wooden segment. Your insides feel heavy and firm for a moment, as the solid wood consumes your organs and turns your chest and limbs into solid blocks of pine.</p>You lose all control of your limbs bit by bit as each one turns to wood, until finally the wooden texture spreads up your neck, and over your head. Your hair receding, eyes closing over, mouth sealing up. Until finally the tight feeling squeezes down on your head, sinking into your mind and turning your skull into a solid block of wood. Your mouth clanks open, as a simple dummy-style wooden mouth.</p>Titan looks at you in surprise. \"It looks like the toy potion affects everyone differently...\", he says. \"But you look so boring as just a plain wooden puppet. I'll fix you up!\", he says. He leaves the cottage for a moment, and you are content to simply sit there, mindless and silent. You are just a puppet, you have no thoughts or desires except what your owner tells you that you have.</p>He returns with some small tubs of paint, and a large brush. He lies you down on the table and pulls your clothes off from your plain wooden body, before gently stroking the brush up your chest. It tingles and tickles a little, but feels pleasurable too. He covers you in black paint, then begins painting on details. Stripes down your back and on your face, white \"fur\" on your chest, and a big smiling face.</p></p>Soon, you are a happy, smiling badger puppet. He dresses you up again, and slides a cup of tea in front of you. For the rest of the night, you are Titan's silent, smiling best friend. It feels so easy to just not think, not move. Let your owner move you, think for you. When he lifts your arm and puts the empty teacup to your face, you feel like you are lifting your arm, drinking the tea. When he bobs your head up and down, and says your words for you, you think that you are saying those words. \"Thank you Titan!\", \"This tea is lovely, Titan!\", \"You're my best friend, Titan!\"</p>You are a puppet, and so it is all true. There is no memory of your past self, only this new life, this identity as Badger, the tea party guest. You smile vacantly, your head empty and wooden, as your beloved owner makes your decisions for you. Soon, the night draws in.</p>You turn to Titan (as he moves your head for you), and say \"My goodness best friend, it is getting late!\" (in his voice, as he speaks for you). \"I know you are a busy adventurer Badger, but do you think you could stay the night with me?\", Titan asks.</p>Titan helps you nod your head up and down. He lifts your arm and rests it over his shoulder, and then leans against your wooden chest. His chest rises and falls gently, as he closes his eyes and nuzzles against you. You would happily stay like this forever. A beloved, mindless wooden partner, your will completely a part of Titan's imagination. Of course, the gentle little boar would never actually do that to you, and so as the hours pass, the magic of the potion slowly dissolves.</p>By the time you slowly start to feel the enchantment fade, Titan has fallen fast asleep with a happy smile on his face. You stretch out your limbs and massage your arms, easing back into having flesh and blood instead of wood. You then stand up and take a blanket from his bed, before draping it gently over his shoulders. He snuffles and murmurs something in his sleep.</p>You are about to leave and let him rest, when you notice a cold, unpleasant chill. You look around for the source, and spot a small door at the side of Titan's cottage. It's partially obscured by a large rack of herbs, so you hadn't noticed it until now.</p>Walking closer, you can see a very small, narrow wooden room. It's unlit, with only what appears to be a small wooden shrine at one side, with a variety of candles and dried flowers stacked up together.</p>That same unpleasant, cold feeling rushes past you again. It's not coming from the shrine. You kneel down and touch the ground in the dark room. It's oddly sticky. Looking at your finger, there appears to be spilled wax all over the floorboards. Your arm knocks something over, and you pick it up.</p>It's a skull, humanoid by the looks of thing. There's a large handle attached to the back, and the eyes have glass lenses inside them. The top is open and inside is a burned-out candle, making a sort of macabre lantern. What is Titan doing with this? It hums unsettlingly with a powerful magical energy.</p>You get the feeling you should take this to someone who knows more about magic. You pocket it and sneak out of the door, leaving Titan to his dreams.",
+                        "outcomes": [
+                            {
+                                "parameter": "titan_connection",
+                                "quantity": 3,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "majordanger",
+                "title": "Titan In Danger",
+                "subtitle": "The cottage is silent when you return. The windows are shuttered, the door is firmly closed. The air in the clearing, which is normally warm and sunny, has an icy bite to it.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "equal" //default greater
+                    },
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "curse",
+                "results": {
+                    "thing": {
+                        "html": "data/active/TitanInDanger.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "titanthanks",
+                "title": "Titan's Thanks",
+                "subtitle": "Titan is gripping his overcoat tightly up against his throat when you enter the cottage today. He stammers and blushes a little, his cheeks pink and his ears flopped down. \"Could we talk a little?\", he asks.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "titan_connection",
+                        "value": 5,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "titan_b",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "Titan invites you inside and closes the door behind him. His battered little tin kettle starts piping and whistling, and he hurries over to the stove and pours out some hot water into two chipped ceramic cups. He then sits down on the side of his bed, and pats the mattress next to him softly.</p>You sit down next to him, and he hands you one of the cups. The warm scent of herbs and leaves flows up from the hot water. The chubby boar takes a deep breath, and slowly exhales. His hands are trembling.</p>\"I have been thinking a lot, after you saved me. Part of why I was trying to do something so dumb was because I feel so lonely here. I always thought that I wouldn't mind staying in the forest, on my own, but I think deep down I really have been feeling like something is missing. I know you're basically the first person I've ever talked to, but still...\", he says. His hand slides over and gently rests on top of yours, and his soft fingers squeeze around your palm. \"I don't think I really want to have a sexual relationship. But, I think, I might really like to just cuddle you? If you would be alright with that?\", he says. His voice gets quieter and quieter, and his flushed cheeks blush hotter with every word.</p>You nod, and squeeze his hand back. His eyes widen, and he gulps. \"I am going to go slow, if that's ok? This is my first time doing anything like this\", he says. He shrugs off his large jacket, pulling his arms free from the sleeves and then carefully placing it on a hook next to the bed.</p>Next, he carefully starts to unbutton his tunic, the fabric pushing open as his chubby, furry round belly is freed. He pushes that off too, and the soft round ball of his belly, and his equally soft and bulging pecs, are left open to the air. The fur on his chest is a lighter, peachlike colour, contrasting the brown fur of his head and arms. He reaches down, and starts to hesitate. \"This is a big deal for me. My grandma made me promise that I would never let anyone see my feet, you see. It's part of why my family had to hide out here. She said strange feet run in our family and people would recognise them and figure out who we are\", he mumbles. Then, nervous and trembling, he pushes off his large, floppy boots.</p>At the bottom of his chubby legs, instead of the usual hooves a boar would have, are a pair of soft, furry feet. Each of his toes are squishy and fat, with a flat and slightly chubby sole. He breathes heavier and faster, his eyes starting to look intensely scared as his hands shake wildly. Gently, you put your arm around his shoulder, and he looks up at you. He slides his arms slowly around your waist, and then presses his flat, soft snout into your chest. His breathing slows and calms as you both squeeze eachother, feeling his warm body, his soft fur. He leans back, and pushes down his pants, kicking them off his legs and letting them fall to the ground. Beneath, he is wearing a white pair of underwear, stretched around his large soft rear, and bulging slightly in the front.</p>He climbs over into the bed, and lies down on the blankets, on his side with his body facing you. You strip down as well, dropping your shirt and pants, and then you climb into the bed with him. Your arms wrap around eachother, and his soft hands stroke and feel over your chest, your sides, your back. You run your fingers through his soft fur, feel the pillow-like warm belly that hangs on his front. He pulls the blankets up over you both, creating a warm, dim space.</p>His flat muzzle presses against your face, as he nervously starts to kiss you. You squeeze him close, and kiss him back, showing him how to do it. He gets braver, his tongue exploring yours, his small tusks rubbing and pressing against your cheeks. Together, you cuddle and nuzzle one another long into the night, and fall asleep in eachother's arms.</p>In the morning, you wake up to the smell of frying food. You turn to see Titan dresed up in warm clothes, his boots back on again. He slides his frying pan up and down his little stove for a while, then tips out the contents onto a plate and brings it to you.</p>It turns out to be soft, sugared eggy toast. You eat it with him and give him a kiss on the cheek, and he blushes. \"Thank you for last night. It really meant a lot to me\", he says. He hands you a flower, and squeezes your hand tightly. You look down and see that it's a gorgeous rose, each petal striped with blue and white. \"It's a muscard rose\", he says. \"My family have been growing these for hundreds of years. I want you to have it.\"</p>He kisses you again, and you hug him tightly for a while before getting up to go about your day.",
+                        "outcomes": [
+                            {
+                                "parameter": "rose_muscat",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "eviltitan",
+                "title": "After Five Hundred Years, I'm Free!",
+                "subtitle": "It's time to conquer the valley!",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dracolich_titan",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "Titan is very excited to begin his new reign of terror. He has had his best clothing soaking in black dye for a full day, which he explains to you is enchanted with the darkest of black magics. Currently, the clothes are drying on a line outside the house, dripping blackness all over the grass and stinking up the yard.</p>He orders you to brush and groom his new, darker fur, and you are compelled to obey. He admires himself in a short mirror while you brush a small pink hairbrush down his back to keep all of his short fur sleek and appealing. He's naked, and he lifts his round soft belly and drops it a little, watching it bounce.</p>\"I'll make a new brush once we get started, I think. Perhaps from the bones of my enemies. Do you think I should go barefoot? The paws are rather iconic to the house of Muscat, but it's been so long I don't know if anyone would even remember. Back in the day I was naked most of the time, but that's rather easier to pull off as a dragon than as a boar...\", he mutters.</p>He picks up a crown from his desk, and adjusts it on his head, and sighs. It is made from black vines that he had you harvest for him, enchanted with a little magic to encourage them to bloom red-tinged black flowers.</p>\"I'm not too happy with this, either. I hope the actual crown is still in that castle somewhere. Servant, go fetch my robes, I want to see how I look\", he commands. Your body jerks up and you find yourself marching out to the back yard, and pulling down Titan's clothes into a wicker basket. His command over you is unbreakable, but only when he is deliberately focusing on controlling your body. Most of the time, you are free to move as you wish. You re-enter, and he lifts his arms up.</p>You slide a black tunic down over his torso, and cinch it closed with a belt. Then a black robe covers his shoulders, and you kneel down in front of him to prepare his boots. As you do, you see his thick, short cock start to harden. It pushes up against the underside of his chubby round belly, and his control over your mind tightens.</p>You are drawn forward, as you nuzzle your nose against his furry black balls. You lick slowly along the length of his short shaft, before opening your mouth and beginning to suck and worship at it. He shudders with pleasure, pressing his hand down atop your head.</p>\"Yes, worship me, minion. Soon the entire valley will obey me, and you will be second only to myself...\", he mutters. As his cock starts to dribble pre onto your tongue, he makes you pull back and continue dressing him. His black pants bulge attractively in the front, and after checking himself out in the mirror with both boots and no boots, he eventually decides to go barefoot.</p>\"Now, let us march down to Riverford, I want to take out a few hundred years of aggression\", he tells you. You follow obediently behind him as he leaves the cottage, and walks out into the woods.</p>The trees seem darker, and more dense than usual. A thick fog lingers on the ground, obscuring the grass and making you stumble against undergrowth constantly. Titan swears and mutters with annoyance. Eventually, the trees start to think out, and you walk beyond them...right back to the front of the cottage.</p>Titan looks at it, growls, and turns back around before stomping back out into the woods. This time it takes less than half as long before you both wander straight back to the cottage again. Then again, and again. After the fifth time, Titan throws his crown on the ground and stomps on it, then yelps as the thorny vine cuts his paw.</p>\"What is going on?! I planned this all perfectly!\", he growls. You get on your knees, and start rubbing and massaging his sore footpaw as he thinks. After a few minutes, he breathes in sharply.</p>\"The Glatisant. The lingering aspect of the old king, it must be. It prevents outsiders from finding this place, and protects the king's descendants from discovery. And I am both, and neither, so I am trapped\", he says. He clenches his fists, shaking with annoyance, then sits down on the grass and starts to sulk.</p>\"We'll try again soon. There must be a way to break this spell, if you managed to find your way here. In the meantime, you can entertain me with service and adoration, my slave\", he says. You nod obediently.",
+                        "outcomes": [
+                            
                         ]
                     }
                 }
@@ -147,6 +317,18 @@ var area = {
             {
                 "id": "titan",
                 "name": "Titan",
+                "requirements": [
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "nequal" //default greater
+                    },
+                    {
+                        "parameter": "titan_connection",
+                        "value": 4,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
                 "description": "Titan is a short, shy young boar. His fur is chocolate brown everywhere it's visible, except for a patch of white above his short muzzle. His tusks are stubby and rounded, and his ears flop down at the side of his head. He's wearing soft leather boots, and a slightly-too-large leather overcoat, the pockets of which are overflowing with bottles and herbs.",
                 "icon": "titan_b",
                 "dialogue": [
@@ -179,6 +361,19 @@ var area = {
                         "output": "\"No!\", he yelps suddenly. He shakes and mumbles, his eyes suddenly wide and scared. \"I mean, why would you want that? I can't, I mean, I don't...I'm sorry...\", he mumbles. Something about that question seemed to really frighten the chubby little boar."
                     }
                 ]
+            },{
+                "id": "dracolichtitan",
+                "name": "Titan",
+                "requirements": [
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "description": "Titan's once-brown fur is now black and smooth all over. His shy and gentle face is now cruel and cold, with a smug and arrogant grin. When he isn't naked, he wears black clothes or robes. Sometimes, from his dark eyes, you see hints of the monstrous beast that he has fused with.",
+                "icon": "dracolich_titan",
+                "dialogue_html": "data/active/DracoTitan_Chat.html"
             }
         ]
     }

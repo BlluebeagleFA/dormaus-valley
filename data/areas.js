@@ -235,7 +235,7 @@ DV.Data.areacoordinates = [{
     "header": "Ruins of Riverford",
     "mapId": "worldmap.jpg",
     "position": [0.60, 0.04],
-    "title": "riverford"
+    "title": "riverford" 
 }, {
     "header": "Entry to a Dark Cavern",
     "title": "cavernentrance"

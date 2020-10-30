@@ -38,6 +38,10 @@ var area = {
                                 "parameter": "species",
                                 "quantity": 52,
                                 "change": "set"
+                            },{
+                                "parameter": "watervine_1",
+                                "quantity": 5,
+                                "change": "add"
                             }
                         ]
                     },
@@ -88,7 +92,8 @@ var area = {
                         "outcomes": [{
                             "parameter": "slave_connection",
                             "quantity": 1,
-                            "change": "add"
+                            "change": "add",
+                            "max": 2
                         }]
                     },
                     "fail": { //success and fail, rare success, rare fail, or random
@@ -98,6 +103,68 @@ var area = {
                             "quantity": 1,
                             "change": "add"
                         }]
+                    }
+                }
+            },{
+                "id": "lionslave2",
+                "title": "Return of the Slave Lion",
+                "subtitle": "You hear the sound of a whip cracking from one end of the pier. You wander over for a closer look, and see the slave lions being driven to carry heavy cargo. Including the one you met before. Perhaps, as a lion, you could bribe the slave driver to let you take him for a moment.",
+                "type": "statcheck", //or random
+                "stat": "charm",
+                "difficulty": 50,
+                "requirements": [
+                    {
+                        "parameter": "slave_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "watervine_1",
+                        "value": 19,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 14,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "footfetish",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "html": "data/active/DumberLion.html",
+                        "outcomes": [
+                            
+                        ]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "html": "data/active/DumberLionFail.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
+                "id": "lionslave3",
+                "title": "Gift from a Lion",
+                "subtitle": "The slave lions are being led through the street, hauling heavy crates and barrels. One familiar one turns to look at you as he passes.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "slave_connection",
+                        "value": 1,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "lotus_2",
+                "results": {
+                    "reluctant_horse": {
+                        "text": "The lion you befriended smiles as he sees you. He grunts, and places down the enormous barrel he has been carrying atop his shoulder. Sweat drips from his bulging muscles.</p>The slavemaster lion at the back yells as he sees that, and runs forward. He cracks a long leather whip at the slave lion. \"Back to work!\", he demands.</p>The whip wraps around the slave lion's wrist as he lifts his arm up. Then, he yanks it forward, dragging the whip out of the slavemaster's grip, and almost knocking him over. The fat lion whimpers, and flees to find a guard.</p>The slave lion looks down at you, and reaches over. When his enormous hand opens up, you see a small, vibrant red flower. It has long yellow stalks in the center, and smells like incense. You take it from him, and he sighs.</p>\"Makarna...together...\", he mumbles, with difficulty. Then his eyes cloud over again, and he picks up his barrel and moves back over with the other lions.",
+                        "outcomes": [
+                            {
+                                "parameter": "lotus_2",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
                     }
                 }
             },{
@@ -121,6 +188,10 @@ var area = {
                         "outcomes": [{
                             "parameter": "croc_connection",
                             "quantity": 1,
+                            "change": "add"
+                        },{
+                            "parameter": "watervine_1",
+                            "quantity": 5,
                             "change": "add"
                         }]
                     },
@@ -151,6 +222,10 @@ var area = {
                         "outcomes": [{
                             "parameter": "croc_connection",
                             "quantity": 1,
+                            "change": "add"
+                        },{
+                            "parameter": "watervine_1",
+                            "quantity": 5,
                             "change": "add"
                         }]
                     },

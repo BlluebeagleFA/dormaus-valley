@@ -154,6 +154,34 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "reset_to_titan",
+                "title": "Think about Titan",
+                "subtitle": 'This will set you to the beginning of Titan\'s questline.',
+                "type": "random",
+                "requirements": [
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "mikhailsex": {
+                        "text": 'A drop of water falls from the ceiling. For a moment, the world turns around you. The date is not what it was.',
+                        "outcomes": [
+                            {
+                                "parameter": "titan_connection",
+                                "quantity": 1,
+                                "change": "set"
+                            },{
+                                "parameter": "dracolich_connection",
+                                "quantity": 0,
+                                "change": "set"
+                            },{
+                                "parameter": "rose_muscat",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

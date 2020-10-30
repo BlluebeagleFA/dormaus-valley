@@ -89,21 +89,17 @@ var area = {
             },{
                 "id": "lizard_feet",
                 "title": "Lizard Feet",
-                "subtitle": 'As you walk along the glittering river, you see another adventurer sit down on the bank. He is a tall green lizard, with firm rugged scales on his back and softer, pale yellow scales down his belly. He sighs, his long thick tail swaying on the grass, and starts to tug on his large brown boots. They come off with some difficulty, revealing wide and powerful scaly feet, which he gently rests in the flowing water. He stretches and splays his toes, and looks very relieved to be giving them a rest. Do you want to go over and help him with those?',
+                "subtitle": 'As you walk along the glittering river, you see another adventurer sit down on the bank. He is a tall green lizard, with firm rugged scales on his back and softer, pale yellow scales down his belly. He sighs, his long thick tail swaying on the grass, and reaches down to rub his wide and powerful scaly feet, which he then gently rests in the flowing water. He stretches and splays his toes, and looks very relieved to be giving them a rest. Do you want to go over and help him with those?',
                 "type": "random",
                 "requirements": [
                     
                 ],
                 "icon": "footfetish",
                 "results": {
-                    "grizzpay": {
-                        "text": 'You take a seat on the grass bank next to the lizard, and he smiles at you with his short but thick muzzle. He\'s not wearing a shirt, and sweat glistens on his muscular chest. "Hey there. Just wanderin\' down the valley, and thought I\'d take a break. Walkin\' all day in these boots has left my talons achin\'", he says, before lifting one of his large feet from the river and stretching it. Before he can return it to the water, you take hold of his ankle and lift his foot onto your lap. He blinks in surprise, but then grins. "Oooh, I see what this is", he says, and turns to rest his back on a tree trunk before placing both of his dripping wet feet in your lap.</p></p>Each of the lizard\'s feet has three large, chubby toes, tipped with thick black claws. The tops of them are firm and rough with green scales, but the undersides are soft and warm. You rub your fingers through his soft soles, squeezing and rubbing your thumbs into them to relax and calm him. He growls and shudders a little with pleasure, and when you begin to rub and squeeze his toes, he reaches his hand into his pants and starts to stroke himself. You rub and massage him more, your fingers moving between his large toes, around the sides, and up and down the underside of his feet. You then lift his foot to your face, and press your mouth into it, feeling his toes curl around your head and his warm, damp foot cover your mouth and nose. </p></p>Pulling his foot down a little, you suck on one of his clawed toes, feeling the blunt black claw tease along your tongue. Your own tongue then slides between his toes, where his foot is warmest. Your face and crotch are soaked with the water from the river, but it was worth it for the experience. The lizard shudders, and lifts both of his feet to press them on your cheeks, trapping you in a warm prison of musky lizard paw. When he finishes panting, he pulls his hand free from his pants to show it is dripping with cum. "Wow, thanks. The people here sure are friendly. You can lick my feet any time, friend!", he says, before collecting his things and walking off, leaving you some coins as thanks.',
+                    "thing": {
+                        "html": "data/active/Doom1.html",
                         "outcomes": [
-                            {
-                                "parameter": "muscat_1",
-                                "quantity": 10,
-                                "change": "add"
-                            }
+                            
                         ]
                     }
                 }
