@@ -1,6 +1,33 @@
 var global_area = {
         "events": [
             {
+                "id": "to_outcast",
+                "title": "Outcast",
+                "global": true,
+                "subtitle": 'You have a problem. Inns are reluctant to give you a room. Shopkeepers put away their goods when you enter, and charge you exorbitant rates. Guards shoo you along when you loiter, and everyone eyes you with suspicion.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gender",
+                        "value": 100,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "outcast",
+                "results": {
+                    "success": { 
+                        "text": "The reason for your woes gradually become clear as you overhear people whispering about you. Gossips lean towards eachother and point as you walk past, and sometimes you catch people laughing. From the fragments of conversation you catch, it seems that you have cultivated such a bad reputation with your actions that you can't be considered a member of polite society any more.</p>You are trying to figure out how to restore your reputation, when you spot a large carriage on the street. It is black, with bars on the windows, but a colourful painted logo on the side claims it is the \"Gran Campion Reputation Society\". A donkey is sitting atop it, wearing a soft cap and a rough but fashionable set of riding gear. He winks at you.</p>\"Made an ass of yourself, friend? I recognise that look. Worn through people's trust once too many times? Streaked through town, maybe got caught unloading behind a bar alleyway? Well worry no longer! Join me on a trip to the beautiful, the extravagant, city of Gran Campion, and your worries will be solved!\", he says.</p>You ask about Gran Campion, and he pantomimes exaggerated shock and surprise. \"Not heard of the Gilded City? Goodness you really have been living under a rock! I suspected from your appearance, but even so. Gran Campion lies beyond the mountains, the glittering city of canals on the eastern peninsula. The riches of nations flow through her markets, global fashions and tastes are developed in the very heart of culture!\"</p>He hops down, his hoofs tapping as he lands. \"Why, work there for a few months, and you'll be the talk of the town! Everyone will want the news from the Gilded City. I guarantee your reputation as an outcast will be gone!\"</p>With no other options, you reluctantly agree. He leads you into the carriage, and travels on his way. He picks up a few more rough, miserable-looking workers as he travels, all of you with similar stories of embarrassment and shame.</p>The carriage travels a long way, winding through the mountains along a narrow set of passes and roadways. The air becomes cold and dry, and the carriage becomes more uncomfortable by the day. As you make your way back down the mountains, you pass through a checkpoint, and officially enter into the sovereign lands of Gran Campion.</p>The mountains give way to fertile fields, filled with windmills and town houses. Carefully maintained forests are the limits of the \"wild\" on this side of the mountains. The landscape is a patchwork quilt of fields and farms. You pass through small towns, growing larger and more extravagant as you approach the southern coast.</p>Finally, Gran Campion itself appears on the horizon. It is spectacularly huge, a grey blot stretching across your view. The whole city is draped and clouded by mist. Tall towers pierce out from above it, but the buildings below are swaddled by the fog.</p>The road becomes paved and well-maintained as you reach the city gates. The donkey pays a fare, and enters into the city. You travel past tight, cramped streets, with ramshackle houses clustering and fighting for space. Beggars and urchins scramble between foggy roads. Armored guards are everywhere, their black plate wet in the fog. Everywhere, workers and citizens hustle and scramble. The city is packed to bursting, as densely-filled as a rat's warren.</p>The towers rise above it all, piercing into the sky. Despite their beauty, this city stinks of desperation and fear. You and the other 'recruits' are shoved into a squat, cold building. Water drips from the ceiling, and a guttering light illuminates racks of dirty bunkbeds. Welcome to the Work Houses.",
+                        "area": "grancampion_workhouse",
+                        "outcomes": [
+                            {
+                                "parameter": "outcast",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "to_jail",
                 "title": "Imprisoned",
                 "global": true,

@@ -460,6 +460,14 @@ div.theft {
 	background-image: url("../img/goblins.png");
 }
 
+.everett_b {
+	background-image: url("../img/everett_b.png");
+}
+
+.everett_g {
+	background-image: url("../img/everett_g.png");
+}
+
 .boots_1 {
 	background-image: url("../img/boots1.png");
 }
@@ -566,6 +574,18 @@ div.theft {
 
 .thesin {
 	background-image: url("../img/thesin.png");
+}
+
+.campion {
+	background-image: url("../img/campion.png");
+}
+
+.damaged {
+	background-image: url("../img/damaged.png");
+}
+
+.writ{
+	background-image: url("../img/writ.png");
 }
 
 .accursedicon {
@@ -748,6 +768,10 @@ div.theft {
 	background-image: url("../img/guestpanther.png");
 }
 
+.smellypotion {
+	background-image: url("../img/smellypotion.png");
+}
+
 .demon {
 	background-image: url("../img/demonwing.png");
 }
@@ -810,6 +834,10 @@ div.theft {
 
 .cigarette {
 	background-image: url("../img/cigarette.png");
+}
+
+.satyr {
+	background-image: url("../img/satyr.png");
 }
 
 .magicboots {

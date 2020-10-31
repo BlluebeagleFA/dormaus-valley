@@ -120,6 +120,27 @@ var area = {
                     }
                 }
             },{
+                "id": "festival_pumpkin",
+                "title": "Festival Work",
+                "subtitle": "Even in prison, there is a hint of festivity in the air. The usual work orders have been changed to helping tear down old wooden furniture to send to the bonfires.",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "default",
+                "results": {
+                    "grizzsex": {
+                        "text": "You are given a hammer and crowbar, and set to work with a room full of old dressers, shelves and random bits of broken furniture. It's tedious work, and prone to splinters, but in deference to the festival, the guards give you more slack and allow you to talk with the other prisoners.</p>Rock the polar bear puts two slats of wood in his mouth and pretends to be a walrus. Archie the ermine pops out of a drawer when you open it and spooks you with a \"boo!\". You even laugh, a strange sound in this grim place.</p>When the guard eventually coughs and says to get back to work, Gon waves you all aside, and then picks up an entire bookcase in his hands, before smashing it down onto a pile of furniture and breaking it all into splinters. \"Work done!\", he says happily.</p>The guard chuckles, and leaves you all to it.",
+                        "outcomes": [
+                            {
+                                "parameter": "festival_time",
+                                "quantity": 2,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "get_vicious_socks",
                 "title": "Ask Vicious for some socks",
                 "subtitle": "Unlike the gryphons and some of the other guards, Vicious definitely wears footwear. He's also basically a cop, and a high ranking one, at that, so his socks should be what you need for Jack's test.",

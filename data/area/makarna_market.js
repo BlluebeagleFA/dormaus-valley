@@ -180,6 +180,37 @@ var area = {
                     }
                 }
             },{
+                "id": "skunk_tf",
+                "title": "Scent Store",
+                "subtitle": "One of the market stalls produces a sweeter scent than the many spices on sale here. It stands out strongly against the many smells of the Markana spice market. Looking at the stall, you see a huge array of colourful and twisty perfume bottles for sale. The merchant is a familiar handsome skunk, stocky and grinning. His thick striped tail sways to and fro, blowing around the mixture of strange scents coming from the bottles and samples. “Hello, customer! Would you like to sample one of my perfumes? I have scents both sweet and savory!” he says. Do you want to take a sniff? [Contributed by Reese Ikena]",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 18,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "mikhailsex": {
+                        "text": "You can’t shake the feeling that this will end with you cursed, transformed or otherwise changed for the worse. Still, you approach the skunk and let him waft a bottle of perfume under your nose. The scent of sweat, musk and an overwhelming aroma of dirt fills your nostrils. You find yourself drooling and blushing, your body tingling with a desperate need. When the skunk corks up the bottle again, you clutch the edge of his stand. Your mouth is dry, and you desperately need more. You reach out for the bottle, but the skunk pulls it away. \"Ah ah! Not a chance hun, this one isn’t for sale. You know what? How about this! You can try a taste directly from the source.\" he says.  </p>The skunk beckons you to enter through the back of the stall, and you happily oblige. As you get closer, he wiggles his toes, indicating for you to lower yourself onto the ground underneath them. His paws lower down over your head as you breathe in his sweaty stench. You start to kiss and lick his paws, nuzzling and embracing them. The strong smell of his feet fills your lungs and his taste fills your mouth as you keep licking. </p>Distracted by the high of kissing the skunk’s paws, you don’t notice the changes your body is undergoing. You grow a muzzle ending with a button nose, pushing you further into his paws. A coat of black and white fur spreads across your entire body. As the fur reaches your rear, a huge tail featuring a large white stripe bursts out. You feel pawpads developing on your hands and feet, just like the same paws you’re licking. You remain under the skunk’s paws, making out with them, until he finishes selling his goods and packs up to go. He frees you, gives you a flick on the nose, and heads on his way. You rest briefly, your mind filled with thoughts of the skunk’s paws, before you realize where you are and stand up, a little embarrassed. ",
+                        "descriptionchange": "This adventurer is a furry black skunk, scented faintly of an odd musky perfume that flows around when they wave their enormous striped tail.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 18,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "scent_obsession",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "entrance_random",
                 "title": "Watch the customers",
                 "subtitle": "There are massive crowds here, buying and selling all manner of object. You could watch and try to gain some information about the city.",

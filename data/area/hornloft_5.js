@@ -258,6 +258,40 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "discipline",
+                "title": "A Discipline Problem",
+                "subtitle": 'Vicious sees you in the yard, and commands you over. "Got some discipline business to attend to, pup", Vicious says. "Heel. Work to be done", he commands.',
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "vicious_connection",
+                        "value": 3,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "escape_plan",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "gender",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "cruel",
+                "results": {
+                    "Success": {
+                        "text": "He leads you to a room on a higher floor, far from the normal areas of the prison you are used to. A heavy door with a barred window blocks the way, and he unlocks it with a thick key before leading you inside.</p></p>The stink of sweat and grime fills the air. Chained and tied up in the center of the room, naked and filthy, is a muscular gryphon. His beak is strapped shut, and he's completely naked. Red, painful-looking marks criss-cross his body, and his feathers and fur are matted with sweat and dirt. As Vicious enters, the gryphon snarls and struggles at his bonds. Vicious takes a sudden step forward, and the gryphon flinches and turns aside, which makes the dingo grin.</p></p>\"This failure of a soldier couldn't even maintain order over a gang of rowdy prisoners. He let himself get dominated by one of his charges, and allowed a security risk. Can you believe such a thing? A proud and mighty gryphon, one of Lord Protector Drum's own kin, being a coward and a weakling. What a disgrace\", Vicious says.</p></p>He leans down, and pulls the straps from the gryphon's face. The gryphon coughs, and snarls in a raspy voice. \"You can't keep me here, Vicious. You're a fucking canine, I'm a gryphon! If Drum finds out-\", he says, before Vicious's boot suddenly whips into the side of his face with a crack. He grunts, knocked to his side, as a trickle of blood drips from his beak.</p></p>\"Lord Drum assigned me authority over this facility. That includes punishments and training. Our glorious emperor sees my value. I don't see yours\", he says. Vicious turns to you, and your tail twitches and wags from his attention. \"Our prisoner here sounds thirsty. Since he likes being dominated so much, I think we should help him out. Piss on his face, dog\", he commands.</p></p>You shudder with pleasure. Vicious's voice is like a leash in your mind, tugging you forward. The gryphon winces with disgust as you lift your leg, and sigh. A flow of hot yellow piss flows out of you, splattering over the gryphon's feathered face and down his cheek. He grunts and closes his eyes, shuddering, but eventually opens his mouth and drinks it down. He gags and chokes, spluttering as his chest rises and falls with heaving breaths. Vicious laughs, too sharply and loudly to sound natural.</p></p>\"See, you are improving! You even smell a little better now. Don't worry, I'm not going to kill you. Once your training is complete, you won't ever think of disobeying the rules again\", he says. He walks forward, and grabs the chains on the gryphon's wrists, before pulling and wrapping them around so the gryphon's arms are strapped down against his chest. He then shoves him forward, with his face flat on the dirty ground.</p></p>\"Dog. A man must be broken down before he can be built back up. Get behind this failure, and mount him. He needs to know his place\", Vicious says. You shudder, your ears perking up as you step over the gryphon. Your cock starts to thicken and grow out, a glistening red shaft with a bulging knot. The gryphon swears and spits, but Vicious's boot presses down on his beak, crunching it and grinding it against the stone floor.</p></p>You straddle the gryphon's rear, his lionline lower half under you. He stinks of sweat and fear. At a nod from your Master, you growl, and thrust yourself forward. Your cock stretches the gryphon's tight hole as you start to fuck him. You pound and slam into him over and over, ignoring his muffled yells and snarls. Once your knot has bulged and swollen to its full, throbbing hardness, you slam that forward too. It enters him with a pop, and he makes a strangled gasp. His face flushes red with humiliation as his hips buck and thrust, as a splatter of cum oozes out from underneath him.</p></p>Vicious sighs and shakes his head. \"Still not learned your lesson, I see. Dog, sit up and lift this wretch for me\", he commands. You shudder, your cock pulsing as it twitches and throbs. You want to howl as your cum floods into his rear, filling his body. But you obey, wrapping your arms around him and lifting him up, showing off the cum oozing and dripping from his own cock. Your knot keeps you tied to him, unable to pull free.</p></p>Vicious takes a long leather whip down from the wall. He stretches it, pulling and testing it, before pulling back his hand and cracking it firmly across the gryphon's bare chest. He yells, his body arching against you as he shudders with pain. You feel every twitch of his body, the pounding of his heart, as he is whipped over and over. By the time your knot loosens and you drop him free, his chest is a red maze of dripping lines.</p></p>Vicious pats your head as you pad over to him. \"I'll be back later, for some more of your training\", he says to the guard. The gryphon does not reply, as you both leave and lock the door.",
+                        "area": "hornloft_1",
+                        "outcomes": [
+                            {
+                                "parameter": "cruel",
+                                "quantity": 2,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

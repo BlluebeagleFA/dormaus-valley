@@ -27,6 +27,10 @@ DV.Data.areas = {
 	"contributor_1": "./data/area/contributor_1.js",
 	"contributor_1_1": "./data/area/contributor_1_1.js",
 	"contributor_1_2": "./data/area/contributor_1_2.js",
+	"ping_cavern": "./data/area/ping_cavern.js",
+	"ping_farmland": "./data/area/ping_farmland.js",
+	"ping_forest": "./data/area/ping_forest.js",
+	"ping_camp": "./data/area/ping_camp.js",
 	"farmpath": "./data/area/farmpath.js", //FARM STARTS HERE
 	"farmhouse": "./data/area/farmhouse.js",
 	"farmfield": "./data/area/farmfield.js",
@@ -74,6 +78,10 @@ DV.Data.areas = {
 	"hornloft_5": "./data/area/hornloft_5.js",
 	"tundra": "./data/area/tundra.js", //TUNDRA
 	"kristoph_sled": "./data/area/kristoph_sled.js",
+	"grancampion_workhouse": "./data/area/grancampion_workhouse.js", //GRANCAMPION
+	"grancampion_slums": "./data/area/grancampion_slums.js",
+	"grancampion_market": "./data/area/grancampion_market.js",
+	"grancampion_store": "./data/area/grancampion_store.js",
 	"makarna_training": "./data/area/makarna_training.js", //MAKARNA
 	"makarna_market": "./data/area/makarna_market.js",
 	"makarna_silk_market": "./data/area/makarna_silk_market.js",

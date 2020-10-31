@@ -170,6 +170,37 @@ var area = {
                     }
                 }
             },{
+                "id": "skunk_tf",
+                "title": "Scent Store",
+                "subtitle": "There is a market stall set up by the docks. It’s odd to see a merchant this close to the water not selling fish. When you walk by, you see a huge array of colourful and twisty perfume bottles for sale. The merchant is a familiar handsome skunk, stocky and grinning. His thick striped tail sways to and fro, blowing around the mixture of strange scents coming from the bottles and samples. “I see I’ve attracted a customer! Would you like to sample one of my perfumes? I have scents to fight the salty stench of the sea!” he says. Do you want to take a sniff? [Contributed by Reese Ikena]",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 18,
+                        "comparison": "nequal" //default greater
+                    }
+                ],
+                "icon": "tffetish",
+                "results": {
+                    "mikhailsex": {
+                        "text": "Surely there’s nothing wrong with a strange skunk offering you a strange bottle? You let him uncork a vial and waft it under your nose. It smells lovely, quite musky and libido-inducing, and it reeks of sweat. You find yourself drooling and blushing, your body tingling with a desperate need. When the skunk corks up the bottle again, you clutch the edge of his stand. Your mouth is dry, and you desperately need more. You reach out for the bottle, but the skunk pulls it away. \"Ah ah! Sorry hun, but I can’t just sell that to you. I can still help you out though! You can have a taste from the source.\" he says.  </p>The skunk stands up and drops his pants, revealing his large, black cock and a pair of heavy balls. You can’t stop yourself from walking around the stall and pressing your face into the skunk's junk. He uses a hand to press your face into his balls, his cock resting on your head. You start to lick his balls, nuzzling and lapping up his sweat as if you were dying of thirst. You happily taste the salty liquid, and your lungs are filled with the masculine scent. </p>As you continue to lick and rub your face against his balls, you start to change. Your face pushes forward into a muzzle with a pink nose and black and white striped fur. You barely feel the fur continuing down your entire body, giving you a beautiful striped coat. A tail pushes out of your spine, flowing out behind you. It grows large and becomes covered with the same fur as your body, including a lovely white stripe. As you grow soft, pink pads on your hands and feet, as well as tiny dark claws, you have become a skunk, just like the one you’re currently nuzzling. You don’t stop worshiping the skunk’s balls, not even when a little precum dribbles down your face, but eventually he finishes selling his goods and packs up to go. He frees you, gives you a flick on the nose, and heads on his way. You lie on the ground, still thinking about the sweaty taste of his balls, before you finally come to your senses and get up.",
+                        "descriptionchange": "This adventurer is a furry black skunk, scented faintly of an odd musky perfume that flows around when they wave their enormous striped tail.",
+                        "outcomes": [
+                            {
+                                "parameter": "species",
+                                "quantity": 18,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "scent_obsession",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "otterton_random",
                 "title": "Explore the village",
                 "subtitle": "There are small shops and food stands, along with a massive amount of fishing stores",

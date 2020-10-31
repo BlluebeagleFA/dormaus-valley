@@ -162,6 +162,27 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "vicious_festival",
+                "title": "Patrol The Festival",
+                "subtitle": "Vicious suddenly grabs your shoulder as you walk past. 'Come on. Got work to do, and I want you there', he snarls.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "festival_time",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "viciousiconr",
+                "results": {
+                    "thing": {
+                        "html": "data/active/Vicious_Festival.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

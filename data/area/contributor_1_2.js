@@ -21,6 +21,22 @@ var area = {
                 }
             }
         },{
+            "id": "gotonewarea",
+            "title": "East to the Cavern Entrance",
+            "subtitle": "You can spot a path further out of the cavern, there seems to be what looks like streams of natural light coming in and the pleasant breeze of fresh air flowing through.",
+            "type": "random", //or random
+            "requirements": [
+                
+            ],
+            "icon": "navigateicon",
+            "results": {
+                "success": { //success and fail, rare success, rare fail, or random
+                    "text": "You go through the cavern pathway with little to no incident and find yourself into the new room.",
+                    "area": "ping_cavern",
+                    "outcomes": []
+                }
+            }
+        },{
             "id": "badtouchten",
             "title": "Dive into The Pool",
             "subtitle": "You become a little curious about the crystal floating in the pool. Seeing it float there, flames not dying any time soon, raise questions like is it magical or something closer to natural? You could swim into the water and get a closer look of it, though you aren’t entirely sure that there is nothing else down in the murky darkness… ",

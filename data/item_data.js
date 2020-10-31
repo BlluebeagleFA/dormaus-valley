@@ -23,6 +23,18 @@ DV.Data.item_data = {
         title: "Turner [Friend]",
         description: ["Turner is fond of you."]
     },
+    reputation_actaeon: {
+        type: "attribute",
+        icon: "default",
+        title: "House Actaeon [Reputation]",
+        description: ["You are cultivating a reputation as reliable with House Actaeon, the noble house of hooves."]
+    },
+    reputation_striate: {
+        type: "attribute",
+        icon: "default",
+        title: "House Striate [Reputation]",
+        description: ["You are cultivating a reputation as reliable with House Striate, the noble house of stripes."]
+    },
     ace_missing: {
         max: 1,
         type: "attribute",
@@ -87,6 +99,12 @@ DV.Data.item_data = {
         icon: "gonicong",
         title: "Gon [Friend]",
         description: ["Gon is friend!"]
+    },
+    scent_obsession: {
+        type: "attribute",
+        icon: "everett_b",
+        title: "Scent Obsession",
+        description: ["You are becoming addicted to the garlicky stink of skunk musk"]
     },
     vicious_connection: {
         type: "attribute",
@@ -231,6 +249,14 @@ DV.Data.item_data = {
             //13: Fog in riverford
             //14: saberhagen's dog
             //15: ritter's butler
+            //16: rubber pawn
+            //17: rat tail
+            //18: moss
+            //19: toe ring
+            //20: pet seal
+            //21: inflatable thing
+            //22: hunted deer
+            //23: bramblehound
         ]
     },
     species: {
@@ -292,7 +318,17 @@ DV.Data.item_data = {
             "You are a smooth, scaly lizard creature, with a long powerful tail.", //52
             "You are a mixed up chimera creature with various mismatched body parts.", //53
             "You are a gleaming golden golem, a metal lion made from solid metal with bejewelled eyes.", //54
-            "You are a royal boar, a rare breed of soft-furred boar with fluffy paws" //55
+            "You are a royal boar, a rare breed of soft-furred boar with fluffy paws", //55
+            "You are a bluejay, your blue feathers soft and pretty. Your wings aren't big enough to fly, though.", //56,
+            "You are a flamingo with bright pink feathers.", //57
+            "You are a binturong with dark brown fur.", //58
+            "You are a vaguely humanoid smoke creature.", //59
+            "You are now a middle-aged stocky mole, who looks nearly identical to the image that possessed you.", //60
+            "You are now a rubber cow drone, your will having been bent to a tiny bell.", //61
+            "You are now a fat and hungry boar.", //62
+            "You are now a half goat, half man Satyr, with a desire to party and enjoy what life has to give.", //63
+            "You are a noble and agile deer.", //64
+            "You have turned into a plant-based creature designed to sniff and hunt down prey.", //65
             ]
     },
     gender: {
@@ -318,6 +354,12 @@ DV.Data.item_data = {
         icon: "westwoodicon",
         title: "Westwood Native",
         description: ["You were born in the dusty arid western deserts past Westwood."]
+    },
+    grancampion: {
+        type: "attribute",
+        icon: "campion",
+        title: "Gran Campion Native",
+        description: ["You were born in the wretched and miserable slums of Gran Campion."]
     },
     digger_progress: {
         type: "attribute",
@@ -401,6 +443,12 @@ DV.Data.item_data = {
         icon: "smart_potion",
         title: "Intelligence",
         description: ["Your intelligence and ability to reason and think."]
+    },
+    muskycum: {
+        type: "attribute",
+        icon: "smellypotion",
+        title: "Musky Cum",
+        description: ["A collection of warm, stinking cum."]
     },
     pisscurse: {
         type: "attribute",
@@ -540,7 +588,14 @@ DV.Data.item_data = {
         value: 15,
         description: ["An ice cram pie, a Makarnan delicacy. It won't last long in the heat."]
     },
-	watervine_1: {
+    slip: {
+        type: "item",
+        icon: "writ",
+        title: "Servant's Writ",
+        value: 30,
+        description: ["An officially signed and marked seal of approval, marking the bearer as having performed adequately in service of the noble families of Gran Campion."]
+    },
+    watervine_1: {
 		type: "item",
 		icon: "watervine_1",
 		title: "Watervine",
@@ -642,6 +697,29 @@ DV.Data.item_data = {
         },
         description: ["A well-made leather jacket, both serviceable to protect you from harm, and also quite attractive. It has patches sewn into the sleeves, and the front is broken so it always hangs open and shows off your chest."]
     },
+    skunk_scent: {
+        type: "item",
+        icon: "smellypotion",
+        title: "Skunk Scent",
+        value: 1800,
+        slot: "clothes",
+        attributes: {
+            charm: 3
+        },
+        description: ["The scent of a horny skunk, and nothing but your bare body."]
+    },
+    heat_perfume: {
+        type: "item",
+        icon: "smellypotion",
+        title: "In-Heat Perfume",
+        value: 2000,
+        slot: "clothes",
+        attributes: {
+            charm: 3,
+            submissiveness: 1
+        },
+        description: ["The scent of a lusty, needy bitch, and nothing but your bare body."]
+    },
     cigarette: {
         type: "item",
         icon: "cigarette",
@@ -675,6 +753,20 @@ DV.Data.item_data = {
             charm: 3
         },
         description: ["This lantern is made of a polished wooden frame and carefully painted paper stretched over it. The paintings are simple silhouettes of people and beings wearing unfamiliar clothing, giving gifts to one another. When you hold it, you feel strangely connected to the people around you, but you must be careful not to break it."]
+    },
+    everlasting_pitcher: {
+        type: "item",
+        icon: "wine_2",
+        title: "Everlasting Pitcher",
+        value: 500,
+        slot: "weapon",
+        attributes: {
+            might: 3,
+            charm: 5,
+            magic: -2,
+            stealth: -2
+        },
+        description: ["A bronze pitcher of wine gifted to you by a Satyr. It never runs out of high-quality wine, and you find that people tend to listen to you more after a drink or two, whether it is you or them who drink it."]
     },
     dwarf_axe: {
         type: "item",
@@ -1039,6 +1131,18 @@ DV.Data.item_data = {
             might: 1
         },
         description: ["We all place barriers between ourselves and the world. Shells of pretence and masks of actions and behaviours to trick the world that we are the person we want them to think we are. Yet under it all, even the hardest and strongest of us are vulnerable."]
+    },
+    damaged: {
+        type: "item",
+        icon: "damaged",
+        title: "Damaged",
+        value: 1,
+        slot: "memory",
+        attributes: {
+            might: 2,
+            charm: -1
+        },
+        description: ["Beyond repair? Perhaps. We are all shaped by the scars of our past. Or perhaps only looking for someone, someone who's broken edges match with your own to make a whole."]
     },
     royal_knight: {
         type: "item",
