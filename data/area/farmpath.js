@@ -118,6 +118,36 @@ var area = {
                     }
                 }
             },{
+                "id": "fuckmare",
+                "title": "Check Your Paddock",
+                "subtitle": "After showing dominance over the black stallion, you begin to feel the need to check on the paddock more often. (Contributed by Cassidy)",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "stallion",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "species",
+                        "value": 10,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "domicon",
+                "results": {
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "Choosing to follow the feeling, you enter the paddock again. This time however things were different as instead of the massive stallion you are now greeted with the mares in the paddock as they begin to surround you, examining their new stallion with high interest.</p>Being surrounded by the mares you couldn’t help but take in this peculiar smell, one that has your huge cock growing erect, as you figure out that all of the mares that are surrounding you are in heat. As if sensing your arousal, they began to present their tail holes to you. Each of them quivering in anticipation of your rod penetrating their inner folds as you unload your balls into them.</p></p>With how tempting that offer is, how could you refuse as you start with the nearest mare grabbing her waist as you start to position your cock to her tailhole, feeling the entrance using your tip you notice that they have been penetrated before, assuming by the stallion before you. You waste no time inserting deeper.</p></p>The sudden move from you makes the mare whimper as you begin to stretch her inner walls as you are more well endowed than the previous stallion. Soon you were ready as you reached your climax, Exploding into the mare with intense pleasure prompting you and the mare to neigh. Removing your member you see that you have left her hole dripping. As you continue with the rest of the mares, each of them dripping with your seed. Hopefully one of them will have a foal that you can be proud of as you hop out of the paddock and leave for your adventure.",
+                        "outcomes": [
+                            {
+                                "parameter": "dominance",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "birth",
                 "title": "Breed",
                 "subtitle": "You are a mare, you have a stallion. Do what's natural.",

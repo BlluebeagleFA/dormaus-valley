@@ -144,11 +144,41 @@ DV.Data.item_data = {
             "You suspect Titan is putting himself in serious danger. You should get to him, fast",
             "You rescued Titan from a terrible fate."]
     },
+    titan_training: {
+        type: "attribute",
+        icon: "titan_b",
+        title: "Titan [Training]",
+        description: ["You are training Titan to be your horny little slut."]
+    },
     dracolich_connection: {
         type: "attribute",
         icon: "dracolich_titan",
         title: "Dracolich [Servitude]",
         description: ["You allowed Titan to merge with the Dracolich, becoming a new and evil entity."]
+    },
+    black_splinter: {
+        type: "attribute",
+        icon: "curse",
+        title: "Black Splinter",
+        description: ["Diabolical. Total mind control over some, invisible to most."]
+    },
+    white_splinter: {
+        type: "attribute",
+        icon: "curse",
+        title: "White Splinter",
+        description: ["Puritanical. Total mind control over some, invisible to most."]
+    },
+    drizzlefin_connection: {
+        type: "attribute",
+        icon: "drizzlefin",
+        title: "Connection [Drizzlefin]",
+        description: ["You have are getting to know the orca fisherman Drizzlefin"]
+    },
+    maelstrom_time: {
+        type: "attribute",
+        icon: "maelstrom",
+        title: "Maelstrom",
+        description: ["The dark side of Drizzlefin has emerged"]
     },
     croc_connection: {
         type: "attribute",
@@ -257,6 +287,13 @@ DV.Data.item_data = {
             //21: inflatable thing
             //22: hunted deer
             //23: bramblehound
+            //24: slave statue
+            //25: sperm
+            //26: maelstroms blubber
+            //27: maelstroms waste
+            //28: maelstroms cockr
+            //29: maelstroms cum
+            //30: beer
         ]
     },
     species: {
@@ -329,6 +366,8 @@ DV.Data.item_data = {
             "You are now a half goat, half man Satyr, with a desire to party and enjoy what life has to give.", //63
             "You are a noble and agile deer.", //64
             "You have turned into a plant-based creature designed to sniff and hunt down prey.", //65
+            "You are a magnificent and mystical white-furred kitsune.", //66
+            "You are a smooth and agile orca.", //67
             ]
     },
     gender: {
@@ -463,6 +502,12 @@ DV.Data.item_data = {
         description: ["You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username)",
             "You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username), Vore (/vore username)"]
     },
+    oldcurse: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Old Curse",
+        description: ["You are afflicted by a strange lingering curse"]
+    },
     sparkle: {
         type: "attribute",
         icon: "thevoid",
@@ -594,6 +639,20 @@ DV.Data.item_data = {
         title: "Servant's Writ",
         value: 30,
         description: ["An officially signed and marked seal of approval, marking the bearer as having performed adequately in service of the noble families of Gran Campion."]
+    },
+    writ: {
+        type: "item",
+        icon: "writ",
+        title: "Paper Slip",
+        value: 1,
+        description: ["A fake servant's writ. If you obtained this, it was a bug. Please report it."]
+    },
+    strength: {
+        type: "item",
+        icon: "might",
+        title: "Strength",
+        value: 1,
+        description: ["You are bulging with muscles. If you obtained this, it was a bug. Please report it."]
     },
     watervine_1: {
 		type: "item",

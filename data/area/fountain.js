@@ -152,6 +152,18 @@ var area = {
             }
         ],
         "npcs": [
-            
+            {
+                "id": "townsperson",
+                "name": "Townsperson",
+                "requirements": [
+                    
+                ],
+                "description": "A passing townsperson",
+                "icon": "anonicon",
+                "dialogue_html": "data/active/RandomNPC.html",
+                "dialogue": [
+
+                ]
+            }
         ]
     }

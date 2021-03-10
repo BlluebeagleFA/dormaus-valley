@@ -264,6 +264,59 @@ var area = {
                     }
                 }
             },{
+                "id": "titansplintergive",
+                "title": "The Black Splinter (Contributed by Meek)",
+                "subtitle": "Titan is sitting on a makeshift throne, otherwise known as a wicker folding chair. His chin is resting on his fist as you massage his kingly feet. He’s been ignoring you for the past ten minutes, but you attend to him dutifully. His ebony-black fur and piggish musk are captivating. With a childish whine, Titan kicks you away.",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "dracolich_titan",
+                "results": {
+                    "pumpkin_1": {
+                        "text": "You prostrate and ask if there’s anything wrong. Titan yanks his chin upwards. “Nothing you did, servant. I’ve been thinking on how to recuperate my evil powers.” He waves his hand dismissively. “And escape this damn cottage.” </p></p>He forces you to kneel. He orders you to hold out your hands. You don’t see him twist his fingers with magic, releasing some of the black miasma inside his body. It spins and forms a crystalline object in his palm.  “Do you know what this is, slave?”</p></p>“This is my power, distilled.” Titan states, placing the Black Splinter in your hand. “Unseen and intangible except to us. It will allow you to control the minds of others.”</p></p>You’re astonished. Anyone in the world, under master’s power? </p></p>Titan coughs, looking uncharacteristically bashful. “Hrm. Eventually. Maybe when that power grows, but for now... It’ll work on whoever it reacts to, at least.” Ah. You thank the master profusely for such a wonderful gift. “That enthusiasm is good, slave. I want you to take it and leave.”</p></p>You don’t understand. Your master wants to be alone? </p></p>“Use it. Spread my control. Corrupt and enslave as I would, and eventually, its power may grow--as will mine.” He looks around the semi-destroyed cottage. “I’ve handled himself alone for this long. Just come back often.” After swearing on your life, you thank his majesty. You will not disappoint him. </p></p>Your demeanor makes Titan click his tongue. “Act normal when you’re not here. In fact, think normal too. I can’t trust you to not get mindfucked...” He snorts and flicks your ear. “Since your willpower is so frighteningly low. Do as I say unwittingly, unawares, outside this forest. Until the time comes for my grand reveal.”</p></p> You bow, agreeing to every word he says.",
+                        "outcomes": [
+                            {
+                                "parameter": "black_splinter",
+                                "quantity": 1,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
+                "id": "gotohypno",
+                "title": "Use the White Splinter on Titan",
+                "subtitle": "Titan is baking when the White Splinter vibrates in his presence. You’re uncertain, but... There’s an obligation to use the gift Gareth gave. You promise you’ll be gentle on your fellow boar. He reminds you of the Royal Majesty himself. Well, most boars do, but Titan especially. The resemblance makes you hesitate. (Contributed by Meek)",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "parameter": "dracolich_connection",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    },{
+                        "parameter": "white_splinter",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "species",
+                        "value": 55,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "titan_b",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "Titan is baking when the White Splinter vibrates in his presence. You’re uncertain, but... There’s an obligation to use the gift Gareth gave. You promise you’ll be gentle on your fellow boar. He reminds you of the Royal Majesty himself. Well, most boars do, but Titan especially. The resemblance makes you hesitate.</p></p>You retrieve the glowing fragment just as Titan pulls a pie from the oven. You decide to wait until that piping-hot pie is safely out of his hands. Smells like cinnamon. Honestly? It sets the mood, in a weird way.</p></p>The White Splinter activates, releasing thin beams of energy. They shoot into Titan like arrows and absorb without any visible marks. He stiffens. You can’t see his expression. “Titan,” you order, “Turn around. Face me.”</p></p>The young boar obeys, and you confirm the spell worked. His eyes are glassy, distant, with a faint swirling whiteness. There’s a small smile on his face. You walk over and cup his chin, stroking it. Titan is completely placid and spellbound. “How do you feel?” You ask.</p></p>“Good,” Titan replies. You tell him he’s under your power, that his mind and body are yours to play with.</p></p>“Yes, daddy.”</p></p>...</p></p>What did he just say?</p></p>You huff, a grin pulling across your tusks. “I’m your daddy, huh?” You force two thick fingers in Titan’s mouth. He sucks, even if you make him gag by forcing your fingers as far down his throat you can. You feel this teeth and wet tongue doing its best to lap at the invasion. Drool starts running down Titan’s fuzzy chin.</p></p>When you pull your spit-coated fingers out, you trace them over Titan’s snout. “Say it,” you order. “Say I’m your daddy.”</p></p>“You’re my daddy,” Titan pants, visibly aroused. His face is red, with wet eyes and spit dribbling from it. He must be a virgin, but you ask. “Yes, daddy. I’ve never... Done anything.” You ask him if he’s practiced by himself and get the same answer.</p></p>“Titan,” you ask, “You wanna learn?” </p></p>The boar shivers and nods. “Yes, daddy.”</p></p>You grab one of his moobs, squishing it in your hands like a woman’s breast. “You don’t have to. I give you full permission to be honest and clear-minded... Ask, and I’ll stop. I’ll release my hold on your mind.”</p>Titan takes a deep breath. The White Splinter’s mind control doesn’t falter. “Teach me, daddy.”</p></p>Attaboy. ",
+                        "area": "titansplinter",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "stayasfox",
                 "title": "Life of a pet",
                 "subtitle": "Being a pet is the best. Free food, regular scritches, and a nice warm place to sleep. It's even better when you have an overly affectionate master who can be guilted very easily into giving you extra food.",

@@ -36,8 +36,11 @@ DV.Data.areas = {
 	"farmfield": "./data/area/farmfield.js",
 	"farmsouth": "./data/area/farmsouth.js",
 	"northplains": "./data/area/northplains.js", //NORTH_OF_VILLAGE
+	"horseball_inn": "./data/area/horseball_inn.js",
+	"horseball_inside": "./data/area/horseball_inside.js",
 	"northwoods": "./data/area/northwoods.js",
 	"titancottage": "./data/area/titancottage.js",
+	"titansplinter": "./data/area/titansplinter.js",
 	"riverford": "./data/area/riverford.js",
 	"glatisant": "./data/area/glatisant.js",
 	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
@@ -48,6 +51,7 @@ DV.Data.areas = {
 	"top_valley": "./data/area/top_valley.js", //OTTERTON
 	"down_valley": "./data/area/down_valley.js",
 	"beside_river": "./data/area/beside_river.js",
+    "otterton_drizzlefin": "./data/area/otterton_drizzlefin.js",
 	"eastwoods_entrance": "./data/area/eastwoods_entrance.js",
 	"grease_lot": "./data/area/grease_lot.js",
 	"greasepit": "./data/area/greasepit.js",
@@ -408,6 +412,15 @@ DV.Data.areacoordinates = [{
 }, {
     "header": "Someone's Stomach",
     "title": "belly"
+},{
+    "header": "The Horseball Inn",
+    "title": "horseball_inn"
+},{
+    "header": "The Horseball Within",
+    "title": "horseball_inside"
+},{
+    "header": "Titan Enslaved",
+    "title": "titansplinter"
 }, {
     "header": "The Patron's Ballroom",
     "mapId": "dormausvillage.jpg",

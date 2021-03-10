@@ -336,6 +336,68 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "mistthing2",
+                "title": "The Curse Returns",
+                "subtitle": "You feel a strange shuddering... (Contributed by Whitestripe)",
+                "type": "statcheck", //or random
+                "stat": "magic",
+                "difficulty": 80,
+                "requirements": [
+                    {
+                        "parameter": "oldcurse",
+                        "value": 1,
+                        "comparison": "equal" //default greater
+                    },{
+                        "parameter": "grizz_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You stumbled into the bear’s bar, feeling almost like something was guiding your feet, as though you weren’t fully in control of your body. Your head was throbbing, and in your chest, you were feeling warm, warm and….bubbly…..</p></p>But that was right….that was okay….you were nice and full. A big bottle of Boar Beer, ready to be guzzled up. You belonged…..belonged in a bar….this was….where you should be….</p></p>You freeze, shaking your head No. No. This wasn’t right. The curse. This was the curse’s magic at work, it was attacking your mind and body. You needed to fight, to resist it. </p></p>“Honestly, what’s a bottle doing just laying around here? Huh, must have fallen out of the delivery. Well, let’s get it back where it belongs. Hey Grizz, could you grab that one? My arms are full” </p></p>You freeze and turn as you see a large bear pointing towards you, one of Grizz’s helpers that he hires to unload goods on busy days. Grizz turns to look, and looks at you strangely. As if….you weren’t a person….like you were a thing. </p></p>And….had that other bear just called you a bottle? </p></p>You blink in shock, stumbling back as you see the bear’s large paw reaching towards you. You can feel a mental presence attacking you, trying to take over, command you to submit. To give yourself to this bear. He was your owner. You were nothing but a nice bubbly beer. A tasty beverage to quench someone’s thirst. To make them feel warm and buzzed. Nice and relaxed and happy. You shouldn’t be walking around, shouldn’t be thinking…..Good….good bottle…..</p></p>You sway a bit, a dopey smile coming to your face as you feel the bear’s paw grab you and lift you off the ground. Despite your weight, Grizz is able to pick up your whole body in one paw as he looks you up and down, licking his jaws. </p>Ace sees him holding you, and whistles. “Woah now, Boar Beer? That stuff is real rare, not to mention real tasty!” Ace says with a grin. “Surprised to see top-shelf stuff in a dive like this.” He says cheekily. Grizz growls, his thundering voice shaking the table and making the glasses wobble and shake. Ace winks at him. </p></p>As Grizz carried you, you could feel your thoughts shutting down, your mind fading into happy, almost bottle like thoughts. The desire to be drank from, to serve your purpose starting to fill you as the corruption slowly spreads through your body. But you try and push back. Thinking of all the time you had spent with Grizz. Working for him here in the bar. Of becoming a bear, just like him. And getting the chance to become a macro…..</p></p>Something within you seemed to push back against the corruption within you, as a pulse of white magic washed out of your body and into Grizz. The bear freezes in place, as though his mind was moving at lightning speed. </p></p>The bear let out a gasp, panting as he looked at you in surprise, like he hadn’t realised you were there at all.",
+                        "outcomes": [{
+                            "parameter": "oldcurse",
+                            "quantity": 2,
+                            "change": "set"
+                        }]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You stumbled into the bear’s bar, feeling almost like something was guiding your feet, as though you weren’t fully in control of your body. Your head was throbbing, and in your chest, you were feeling warm, warm and….bubbly…..</p></p>But that was right….that was okay….you were nice and full. A big bottle of Boar Beer, ready to be guzzled up. You belonged…..belonged in a bar….this was….where you should be….</p></p>You freeze, shaking your head No. No. This wasn’t right. The curse. This was the curse’s magic at work, it was attacking your mind and body. You needed to fight, to resist it. </p></p>“Honestly, what’s a bottle doing just laying around here? Huh, must have fallen out of the delivery. Well, let’s get it back where it belongs. Hey Grizz, could you grab that one? My arms are full” </p></p>You freeze and turn as you see a large bear pointing towards you, one of Grizz’s helpers that he hires to unload goods on busy days. Grizz turns to look, and looks at you strangely. As if….you weren’t a person….like you were a thing. </p></p>And….had that other bear just called you a bottle? </p></p>You blink in shock, stumbling back as you see the bear’s large paw reaching towards you. You can feel a mental presence attacking you, trying to take over, command you to submit. To give yourself to this bear. He was your owner. You were nothing but a nice bubbly beer. A tasty beverage to quench someone’s thirst. To make them feel warm and buzzed. Nice and relaxed and happy. You shouldn’t be walking around, shouldn’t be thinking…..Good….good bottle…..</p></p>You sway a bit, a dopey smile coming to your face as you feel the bear’s paw grab you and lift you off the ground. Despite your weight, Grizz is able to pick up your whole body in one paw as he looks you up and down, licking his jaws. </p>Ace sees him holding you, and whistles. “Woah now, Boar Beer? That stuff is real rare, not to mention real tasty!” Ace says with a grin. “Surprised to see top-shelf stuff in a dive like this.” He says cheekily. Grizz growls, his thundering voice shaking the table and making the glasses wobble and shake. Ace winks at him. </p></p>As he carried you, you could feel your thoughts shutting down, your mind fading into happy, almost bottle like thoughts. The desire to be drank from, to serve your purpose starting to fill you as the corruption slowly spreads through your body. This….this was how you were meant to be…..just….just a bottle of beer. That was….that was all you were…..just….drink….</p></p>You felt the bear carry you behind the bar, before pausing, taking a look at you for a moment, and licking his lips, as though considering. Then, he lifts your head up to his jaws. The top of your head slips into his jaws, as he gives a flick of his fangs, and there is a ‘popping’ sound, before the bear spits out a bottle cap. The bear lifting you back up and pushing your head against his muzzle as he begins to take deep drafts and you feel…..something...flowing out…..</p></p>Your body rapidly begins to harden. Smooth, solid glass forming over your body. Your arms and legs rapidly melting into your body, your large belly flattening down as you grow skinnier and skinnier, even as you shrink more and more in the bear’s grasp. Your head and face changing into the opening and neck of a bottle. </p></p>In a few moments, as the bear let out a sigh, licking his jaws as he pulled the half empty bottle of Royal Boar Beer away from his muzzle. He growls appreciatively, a flick of his paw causing the bottle to reseal itself. And with it, all memory of your actions or self was wiped from the world as you were set up onto a shelf. </p></p>Nothing but an ordinary bottle of beer in a bar. </p></p>And it was all you’d ever be again. </p></p>",
+                        "trapped_desc": "You are nothing but a bottle of delicious beer",
+                        "trapped": "You are nothing but a bottle of delicious beer",
+                        "outcomes": [{
+                            "parameter": "trapped",
+                            "quantity": 30,
+                            "change": "set"
+                        }]
+                    }
+                }
+            },{
+                "id": "fixbeer",
+                "title": "Mr Bat, Publican",
+                "subtitle": "A smug bat sits beside the bar, late at night when most patrons are heading off for the day. Last orders are up.",
+                "trapped": true,
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "trapped",
+                        "value": 30,
+                        "comparison": "equal" //default greater
+                    }
+                ],
+                "icon": "mrbat",
+                "results": {
+                    "footstool_1": {
+                        "text": "Grizz wipes a cloth around a glass, and looks out the window at the darkening evening. He rings a copper bell at the side of the bar, the sign for last orders before the bar closes.</p></p>A well-dressed bat sitting on one of the bar stools leans over, his tall top hat covering his eyes. “Ah, one more for the road my friend? Perhaps that bottle on the top shelf? The finest Boar Beer, I see. Fear not - money is no object for me.”</p></p>He raises a hand, and shining coins fall from his palm over the countertop. Grizz sweeps them into his paw, and reaches up, before handing over the bottle to the bat.</p></p>Mr Bat holds you firmly in his grip. His long fingers stroke over your smooth, cold glass. They touch and feel your papery, rough label, the moisture condensing on your cold body.</p></p>“This is awfully rude of me, considering you ended up like this by taking a shot designed to hurt me; but I simply cannot resist taking a shot myself”, he says. His thumb flicks open your top, sending a shudder of anticipation through you. Then he raises you to his lips, and allows a trickle of your cold, flavoursome beer to flow across his tongue. You feel part of yourself flowing into Mr Bat, drawn down into the dark abyss of his body. There is a shuddering, overpowering pleasure, followed by emptiness as part of you is absorbed and lost.</p></p>He places the bottle on the bar stool next to him. Then, in an instant, you stumble forward, your head hitting the bar. You stand up, swaying drunkenly, and struggling to think as your whole body suddenly and jarringly has blood, bones, flesh. Mr Bat has vanished, and Grizz pushes you out of the bar, assuming you’re simply another drunk.</p>",
+                        "freeTrap": true,
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
             }
         ],
         "npcs": [

@@ -543,6 +543,22 @@ function main(err,session) {
         }
     });
     
+    $("#box4").on("click", "input.endevent", function() {
+        console.log("Currentstatus:" + window.localStorage.getItem('dvupdateinfo'))
+        window.sessionStorage.setItem('twinereset', "FALSE");
+        window.sessionStorage.setItem('dv_stats', JSON.stringify(player));
+        
+        var temporaryOutcome = JSON.parse(window.localStorage.getItem('dvupdateinfo'));
+        if (temporaryOutcome && !temporaryOutcome.read) {
+            temporaryOutcome.read = true;
+            window.localStorage.setItem('dvupdateinfo', JSON.stringify(temporaryOutcome));
+            playEvent(temporaryOutcome);
+        } else {
+            displayArea(player.area);
+        }
+        switchTabs("tab1");
+    });
+    
     $("#box2").on("click", ".equipment", function() {
         var data = $(this).data();
         equipItem(data.slot, data.itemid);
@@ -900,7 +916,7 @@ function main(err,session) {
                 }
             } else {
                 exp = getExperience(false, successChance);
-                if (event.results.rareFail && Math.random() < 0.2) {
+                if (event.results.rareFail && Math.random() < 0.4) {
                     result = JSON.parse(JSON.stringify(event.results.rareFail));
                 } else {
                     result = JSON.parse(JSON.stringify(event.results.fail));
@@ -1563,6 +1579,9 @@ function main(err,session) {
                 $("#box4 .dialogueoptions").append(
                     '<div class="eventtext">' +
                     '<iframe id="iframe" src=' + npc.dialogue_html + '></iframe>' +
+                    '</div>' +
+                    '<div class = "closeEvent eventinput">' +
+                    '<input type="submit" class="endevent" value="Ok"></input>' +
                     '</div>'
                 );
             } else {
@@ -1786,9 +1805,6 @@ function main(err,session) {
                     }
                 }
             }
-            if (!freedomAvailable && player.trapped) {
-                areaEvents.push(fixStuckEvent);
-            }
             if (player.suffering.guilt.value > 4) {
                 areaEvents = [sendToJailEvent];
             }
@@ -1797,6 +1813,9 @@ function main(err,session) {
             }
             if (player.suffering.outcast.value > 4) {
                 areaEvents = [sendToOutcastEvent];
+            }
+            if (!freedomAvailable && player.trapped) {
+                areaEvents.push(fixStuckEvent);
             }
             
             $("#box1").empty();
@@ -1815,7 +1834,7 @@ function main(err,session) {
                     }
                 }
                 if (npc) {
-                    $("#box1").append(
+                    $("#box1 .npclist").append(
                         '<div id="' + npc.id +'" class="npc">' +
                         '<div class="npcicon ' + npc.icon + '"></div>' +
                         '<p class="npcname">' + npc.name + '</p>' +

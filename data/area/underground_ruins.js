@@ -172,6 +172,40 @@ var area = {
                     }
                 }
             },{
+                "id": "garethgsplinter",
+                "title": "Show Gareth the black splinter",
+                "subtitle": "He will know what to do with this (Contributed by Meek)",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "gareth_connection",
+                        "value": 2,
+                        "comparison": "greater" //default greater
+                    },{
+                        "parameter": "black_splinter",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "gareth_b",
+                "results": {
+                    "thing": {
+                        "text": "You present the Black Splinter to Gareth. He looks at it curiously. “What an ugly thing.” Wait, he’s able to see it? Most can’t. When you explain, he shakes his head. “I can’t answer why I’d be excluded. Could be my ghostliness, being a Great Lord, or both.” Gareth hasn’t met many other spirits. “So?”</p></p>You ask him if he knows what the Black Splinter is or what it can do. Gareth’s eyes narrow. “Yes... This is the memory of an evil being. A powerful one, at that. I don’t know how you acquired this object, but I don’t need to. You need only know it’s cursed.”</p></p>Gareth holds out his palm expectantly. “Please, allow me. I can channel it into something useful. I’ll replace this black memory with my will.” You hesitate, which surprises the boar king. A question comes to mind.</p></p>“What if I already used it?” You ask. </p></p>The king smiles in a way that’s warm and disappointed at the same time. “Don’t worry. Whoever you used the black magic on, it will be unwound. As if it never happened. History will correct itself accordingly.” He approaches, closing the distance. “Back to normal. They won’t remember anything, nor will there be any evidence.”</p></p>You’re curious what King Gareth has in mind, and frankly, he’s right. Carrying around a cursed-as-balls object in your pocket is a bad idea. When you place the Black Splinter in his translucent hand, it hisses like steam. “Thank you.” With one flex, the Black Splinter is crushed in his hand like powder. A white light replaces it.</p></p>His hand shines so bright you’re forced to look away, despite an odd tugging at your mind to stare. By the time it fades, he presents you an equally white crystal. It radiates an energy that commands attention. “Easily done,” Gareth says. “The same function, without fear for your soul. I present it to you.” You thank the king, but he just seems happy you accepted his help.",
+                        "outcomes": [
+                            {
+                                "parameter": "white_splinter",
+                                "quantity": 1,
+                                "change": "set"
+                            },
+                            {
+                                "parameter": "black_splinter",
+                                "quantity": 0,
+                                "change": "set"
+                            }
+                        ]
+                    }
+                }
+            },{
                 "id": "becomeroyal",
                 "title": "Request Healing",
                 "subtitle": "Gareth is looking with frustration at some of his flowers, which appear to have wilted. He seems happy to be distracted when you walk up to talk with him.",
@@ -196,6 +230,51 @@ var area = {
                         "outcomes": [{
                             "parameter": "species",
                             "quantity": 55,
+                            "change": "set"
+                        }]
+                    }
+                }
+            },{
+                "id": "mistthing",
+                "title": "Colourless Fog",
+                "subtitle": "Saberhagen mentioned that he'd like you to investigate a strange occurence in the ruins (Contributed by Whitestripe)",
+                "type": "statcheck", //or random
+                "stat": "magic",
+                "difficulty": 70,
+                "requirements": [
+                    {
+                        "parameter": "species",
+                        "value": 55,
+                        "comparison": "equal" //default greater
+                    },
+                    {
+                        "parameter": "saberhagen_connection",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    },
+                    {
+                        "parameter": "oldcurse",
+                        "value": 1,
+                        "comparison": "less" //default greater
+                    }
+                ],
+                "icon": "thevoid",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "Honestly, the things you did for love. </p></p>You pushed yourself through the overgrown weeds and trees that surrounded the broken remains of the castle just outside Dormouse. Saberhagen had sensed something magical up here. Something very very strong he had been very interested in. But when the two of you had come up here before, you’d found a strange barrier preventing you from entering into the castle’s ruins. A thick, yet somehow impenetrable colourless grey fog that had stopped every single effort you two had put in to pierce it. </p></p>But now, as you looked down at your boarish paws. You didn’t know why, but you felt like you could pass through that wall of light. Like it would let one such as yourself through.</p></p>You come to a stop before that swirling barrier that had stopped you before. Staring at it for a few moments, taking a deep breath to steady yourself. And as you reach out one of your hands and touch the barrier, the fog shimmers, before evaporating, as though it’d never been there in the first place. </p></p>You make your way into the castle. And to your surprise, within the castle, everything seems wonderfully preserved. This wasn’t like what you were expecting at all. The outside walls were shattered, destroyed ruins. You thought everything within would be gone. But when you’d passed through the barrier, it was like you’d stepped back in time. </p></p>You make your way through the glorious palace. Your eyes look around as you soon enter the throne room, and you come to a dead stop. In the center of the room, floating in the air, is a large, pulsing silver stone, shaped like a figurine of a dragon. It’s glimmering eyes staring at you enticingly as you step towards it. The dragon shaped as though rearing back, it’s wings flared outward. </p></p>Almost immediately, when you make eye contact with the sculpture, you feel something, a presence slam against the barrier. The swirling runic wards flaring as you see…..a presence bound to the statue. </p></p>Your mouth goes dry as you see the dark shadow that slowly rears up behind the sculpture. It looks vaguely draconic. It’s gleaming red eyes locked on you as it lets out a bubbling snarl. You could feel its power. It’s sheer strength rolling off of it like body heat. </p></p>And it seemed pissed. </p></p>“Filthy lunar! Lunar presence detected. Insufficient contaminant found. Show yourself. I’ll erase you, I’ll wipe you and everything else you treasure from this world. Target lost. When I’m through, it’ll be like it never existed.” The construct roars as it slams against the magical barrier. Its voice is cracked and strange, shifting tones like multiple voices speaking at once.</p></p>To your horror, the barrier begins to crack. </p></p>You throw up your paws, magical energy crackling along your hands as you let your own power float out, beginning to chant some of the spells that Saberhagen had helped to teach you to reinforce the barrier. Yet as you did so, the creature’s senses locked onto you. </p></p>“You…..you bear it’s scent. Threat detected. What I was created to erase…..I will wipe you..Must wipe you. You and this whole filthy town. Contamination overflow.” It roars as it flies forward, slamming against the barrier and right towards you, opening its jaws wide. </p></p>You threw up your paws, straining to hold back the creature as it slammed into the barrier of swirling magic you conjured. The creature’s red eyes burned with rage and hate and confusion as it glared at you. Promising to erase you and this whole town’s existence from the memory and history of the world. </p></p>You growled, feeling your barrier begin to crack beneath this construct’s claws. </p></p>Like hell that would happen. </p></p>This town, these people. They might not have been perfect. But even the worst of them had potential to be good people. </p></p>You wouldn’t let anything happen to them. </p></p>You lift your paws up, swirling arcane runes gathering around you as you slam your palms together before thrusting your fist out towards the creature, just as your barrier broke. A beam of pure white light lancing out at the creature, striking it’s chest and tearing through the construct, just as it’s taloned paw struck out, scratching out at your wrist. Pain lashing through you as you stumble back, panting as you suddenly felt light headed. </p></p>You watched the construct’s body melt away, one last roar slipping from it’s jaws before it was gone. And then you tumbled down to one knee, grabbing at your wrist as a rush of pain filled you. You looked down at your arm, your eyes widened as you saw the flesh and fur around the wound had grown shiny and almost translucent - like glass. </p></p>You start to rise, before stumbling, a paw going to your head as you feel something rustling about in your mind, in your memories. </p></p>A curse. A very very powerful curse. You bite back a curse of your own as your paws glimmer with silver light and you touch the wound. The feeling of your memories trying to change, of your personality fading vanishes and your mind is your own. </p></p>That was….that was dangerous….you needed….needed to figure out what that was…..You needed….needed to get back to town…</p></p>And you stumble off, heading back towards the town, to find out what this curse was. And what you should do next. </p></p>",
+                        "outcomes": [{
+                            "parameter": "oldcurse",
+                            "quantity": 1,
+                            "change": "set"
+                        }]
+                    },
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "Honestly, the things you did for love. </p></p>You pushed yourself through the overgrown weeds and trees that surrounded the broken remains of the castle just outside Dormouse. Saberhagen had sensed something magical up here. Something very very strong he had been very interested in. But when the two of you had come up here before, you’d found a strange barrier preventing you from entering into the castle’s ruins. A thick, yet somehow impenetrable colourless grey fog that had stopped every single effort you two had put in to pierce it. </p></p>But now, as you looked down at your boarish paws. You didn’t know why, but you felt like you could pass through that wall of light. Like it would let one such as yourself through.</p></p>You come to a stop before that swirling barrier that had stopped you before. Staring at it for a few moments, taking a deep breath to steady yourself. And as you reach out one of your hands and touch the barrier, the fog shimmers, before evaporating, as though it’d never been there in the first place. </p></p>You make your way into the castle. And to your surprise, within the castle, everything seems wonderfully preserved. This wasn’t like what you were expecting at all. The outside walls were shattered, destroyed ruins. You thought everything within would be gone. But when you’d passed through the barrier, it was like you’d stepped back in time. </p></p>You make your way through the glorious palace. Your eyes look around as you soon enter the throne room, and you come to a dead stop. In the center of the room, floating in the air, is a large, pulsing silver stone, shaped like a figurine of a dragon. It’s glimmering eyes staring at you enticingly as you step towards it. The dragon shaped as though rearing back, it’s wings flared outward. </p></p>Almost immediately, when you make eye contact with the sculpture, you feel something, a presence slam against the barrier. The swirling runic wards flaring as you see…..a presence bound to the statue. </p></p>Your mouth goes dry as you see the dark shadow that slowly rears up behind the sculpture. It looks vaguely draconic. It’s gleaming red eyes locked on you as it lets out a bubbling snarl. You could feel its power. It’s sheer strength rolling off of it like body heat. </p></p>And it seemed pissed. </p></p>“Filthy lunar! Lunar presence detected. Insufficient contaminant found. Show yourself. I’ll erase you, I’ll wipe you and everything else you treasure from this world. Target lost. When I’m through, it’ll be like it never existed.” The construct roars as it slams against the magical barrier. Its voice is cracked and strange, shifting tones like multiple voices speaking at once.</p></p>To your horror, the barrier begins to crack. </p></p>You throw up your paws, magical energy crackling along your hands as you let your own power float out, beginning to chant some of the spells that Saberhagen had helped to teach you to reinforce the barrier. Yet as you did so, the creature’s senses locked onto you. </p></p>“You…..you bear it’s scent. Threat detected. What I was created to erase…..I will wipe you..Must wipe you. You and this whole filthy town. Contamination overflow.” It roars as it flies forward, slamming against the barrier and right towards you, opening its jaws wide. </p></p>You threw up your paws as that draconic beast slammed into the barrier, trying to get through it and to you and the rest of the town. You held fast for a few moments, straining with all your might, but you rapidly realized you weren’t going to be able to be able to stop this creature. It was far too powerful. And if it got past you….you didn’t just think so, you somehow ‘knew’ the town just outside the castle would cease to exist. Everyone there. </p></p>The blasted mayor. </p></p>Grizz</p></p>Mikkhail</p></p>Saberhagen……</p></p>At the thought of the cat, you made your choice. It didn’t matter if you weren’t strong enough to stop this thing. </p></p>You would have to be, to protect ‘them’. </p></p>And you dropped the barrier, yelling out the words of an old, ancient spell that seemed to come unbidden to your mind. Glowing chains of light lashed out of your chest and drew the draconic creature into your chest. </p></p>As it made contact with your body, you could feel yourself beginning to change. Your fur rapidly starts to smooth out, hardening and crackling into glass. Your body shrinking more and more as your mind was assaulted with new thoughts, new memories and feelings. </p></p>You….you’d never been born….no….that was silly. You were a bottle…..a fine bottle of Royal Boar Bear…..a fine, old vintage….You’d…..always been that…..</p></p>An explosion rocked through the castle, a shockwave of light and magic washing out over the land, before it abruptly vanished. </p></p>Along with any and all memory of yourself and your former existence. </p></p>Outside the castle. Mayor Maine was walking through the town, doing his normal rounds when….for some reason, he had the strangest feeling he’d thought he’d seen something come from the old ruins. But when he looked, everything seemed perfectly normal. </p></p>“Hmmm, strange, must be my imagination.” He muttered under his breath, about to start walking again, before something drew the cat’s attention. </p></p>The feline padding over and blinking in surprise as he saw a bottle laying on the ground, reaching down and gently scooping it up, and brushing it off with one paw, before a slow, dark grin formed on his muzzle. </p></p>“Well, would you look at that….can’t say I mind seeing such a fine brand of beer here.” He rumbled, licking his jaws. </p></p>In the cat’s paw was a bottle of “Royal Boar Beer.” On the wrapper was an image of a fat, smiling boar, rubbing its belly, grinning out towards the one holding the bottle. </p></p>With a flick of his claw, a hiss echoed through the air as he flicked the bottle cap of the bottle off. The feline letting out a happy sigh as he hefted the bottle to his muzzle and began to take long pulls from his drink. A shiver of joy going through the feline as the dark, rustic taste of the beer washed over his tongue. </p></p>Mhmmmm, oh yes, ooooooh yes. Such a marvelous drink…..far better this way then a silly stupid boar. Heh, who knew those hogs made such fine beverages. </p></p>Those were the thoughts of the feline as he guzzled down the bottle. Letting out a happy sigh and a loud belch as he finished off the bottle of beer, rubbing his muzzle, licking his lips to get the last of the flavor. </p></p>“Ah, a fine drink if I do say so myself. Mhmmm, perhaps I should see about trying to import more of this to town….I think it’s my new favorite.” And with that, the mayor threw the bottle dismissively over his shoulder, chuckling as it shattered against a tree and he started off. </p></p>Oh yes, life was good for one feline. </p></p>",
+                        "trapped_desc": "You are nothing but a bottle of delicious beer",
+                        "trapped": "You are nothing but a bottle of delicious beer",
+                        "outcomes": [{
+                            "parameter": "trapped",
+                            "quantity": 30,
                             "change": "set"
                         }]
                     }

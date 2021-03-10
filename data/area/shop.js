@@ -170,6 +170,27 @@ var area = {
                     }
                 }
             },{
+                "id": "drexxcode",
+                "title": "Dress Codes",
+                "subtitle": "The black splinter reacts here... (Contributed by Meek)",
+                "type": "random",
+                "requirements": [
+                    {
+                        "parameter": "black_splinter",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
+                ],
+                "icon": "mikhailicon",
+                "results": {
+                    "thing": {
+                        "html": "data/active/DressCode.html",
+                        "outcomes": [
+                            
+                        ]
+                    }
+                }
+            },{
                 "id": "shop_random",
                 "title": "Loiter Downstairs",
                 "subtitle": "It's not loitering if you read the labels on the products and stuff.",

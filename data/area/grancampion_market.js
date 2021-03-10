@@ -140,6 +140,46 @@ var area = {
                         ]
                     }
                 }
+            },{
+                "id": "statue1",
+                "title": "A Certain Statue",
+                "subtitle": "The more upscale streets of Gran Campion tend to be decorated more finely, with columns and statues. One you have seen multiple times is of a tall, imperious bear in fine clothing, holding a chain and with one of his legs lifted, showing the bottom of his stone foot. Something about it is peculiar.",
+                "type": "random", //or random
+                "requirements": [
+                    
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "The next time you see one of those statues, you approach to get a closer look. The craftsmanship is very fine. Each detail of the bear's expensive clothing is finely carved. His long jacket, his waistcoat, his cravat, even the seams on what are probably silken pants. His face is twisted into an arrogant, superior sneer, and his hand is clutching a chain made of actual iron, rather than stone.</p></p>You lean down to read the engraving. Apparently this is a statue of Euonymus Alabaster, a noble from hundreds of years ago. He is remembered for the vast fortune he earned by travelling the world, enslaving and conquering everyone he saw. The statue commemorates this perfect specimen of the true noble mindset, understanding that they are superior to all other beings. That other, inferior classes should simply accept their place, should fall to their knees and beg to serve at the feet of their betters.</p></p>You feel a little odd, reading the strangely-worded text. Your eyes drift over to the bear's upraised foot. Every detail of his bare paw is lovingly rendered in the stone. The fur around his sharp claws, the wrinkles on his thickly padded soles. Your mouth waters, and you feel warm and tingly.</p></p>You look up at the statue's face. His stone eyes look down at you with contempt and disgust. You feel yourself recoiling slightly, averting your eyes. You don't have to right to look up at such a man. You look down instead, back at his paw. His superior, perfect paw. Where you belong, underfoot, servile, obedient...</p></p>You realise to your surprise that your hand is down your pants, and you are slowly stroking and pleasuring yourself. Your cheeks flush with embarrassment, but you are unable to stop. You keep thinking about the bear, what it would be like to meet him. To have him strip you, chain you. Make you serve at his feet and kiss his throbbing shaft.</p></p>You moan, shuddering as you climax. Cum soaks your fingers, dripping along your hand. You feel dizzy and confused, and stumble back away from the statue. The statue of your superior, of a powerful noble. You belong to them. You need to serve them. You are nothing but a peasant...</p></p>You shake your head and scurry away, trying to calm your thoughts and clear out these echoing demands inside your mind, demands telling you that you are inferior, obedient.",
+                        "temporary_param": "evilstatue",
+                        "outcomes": []
+                    }
+                }
+            },{
+                "id": "statue2",
+                "title": "Return to the Statue",
+                "subtitle": "You feel it calling to you. Your eyes drift towards its direction any time you are near that street. Your dreams are filled with his arrogant, demeaning gaze. You need to see him again...",
+                "type": "random", //or random
+                "requirements": [
+                    {
+                        "temporary_param": "evilstatue",
+                        "value": "evilstatue"
+                    }
+                ],
+                "icon": "inanimatefetish",
+                "results": {
+                    "fail": { //success and fail, rare success, rare fail, or random
+                        "text": "You return to the statue, which looms out through the thick fog as you get closer. A dark, tall silhouette. In the mist, you can almost imagine it is the real, living Euonymus, come to take ownership of you. To make you his property forever.</p></p>Seeing him up close makes you feel flushed and warm. That gleaming marble body. His handsome, dour glare, his cold and arrogant eyes. And of course, his huge and powerful ursine foot. Your mouth waters, drool dripping down your chin. You start stripping down, dropping your clothes to the floor despite the cold and damp of the foggy weather. It just feels right to be naked before this statue, to be helpless and weak.</p></p>You move forward, and stroke your hand along the statue's body. Feeling the curves and wrinkles of his pants, blushing as you grope his marble-sculpted bulge. How you wish you could reach in and pull out his cock, to feel his thick and heavy ursine meat in your hand. It would feel so incredible to taste it, to have this man thrust into your throat and growl with pleasure.</p></p>You may not be able to service his shaft, but his paw is sculpted and detailed right there before you. You lean down, and touch the smooth, cold marble. You feel the texture of his carved fur, the bulges and shapes of his thick toes and padded sole. Fog moisture drips from his toes, and in your lust-addled mind you can almost imagine it is his sweat. The imaginary scent of his feet flows into your lungs as you picture it consuming you, wiping away your mind. Each breath reminding you where you belong...</p></p>A clinking sound draws your attention away from his foot, to the iron chain in his hand. It sways in the wind, and you see the end of it has a hinged collar. You take hold of it, and pull it open. You would have expected it to be rusted and stiff, but the collar opens smoothly and easily.</p></p>Wear it. Accept it. Surrender yourself to me.</p></p>You blink, looking down at the collar. It looms like the jaws of a predator. Cold and hard. Ready to claim you, to consume you.</p></p>Accept your place. Be my slave for all eternity.</p></p>You start to lift it up. The metal reaching to your neck, the cold sending shivers down your spine.</p></p>You belong to me.</p></p>You close the collar with a click, and it locks firmly around your neck. For a moment you feel a rush of panic, and try to tug it open again, but it resists and will not budge. You look up at the bear's face. Has that marble expression become a little smugger? Is that a hint of a smirk on his lips, or just a trick of the foggy light?</p></p>The space beneath his upraised paw calls out to you. It seems empty, the statue incomplete. You shake with anticipation as you crawl down, and rest your naked body atop the statue's base. You slide forward, pushing your body under the bear's foot. The cold sole strokes over your chest, up along your pecs. Until finally, you are on your back beneath Euonymus's paw, his toes pressed over your face. Your whole body feels hot and intense, yet also strangely cold. Like the mixed sensations of fever, fighting inside you.</p></p>You reach down, grasping for your throbbing, needy cock. Your limbs feel heavy and stiff, and hard to move. They almost creak as you move, and your breathing is shallow and strange. Your skin feels cold, and firm. As you move, you realise that your face seems to be almost glued to the bear's paw. The place where it touches your skin is stuck, and you can feel a hard, cold sensation spreading over your cheeks and nose.</p></p>You reach up, and feel the cold marble of his foot. The curves, the angles, the continuation of the marble right down onto your face. Like you were carved from the same block of stone he was. You try to breathe in, a rush of panic and fear, but you no longer seem to need to breathe. Your body is getting harder and harder to move, as the marble texture spreads over your head, down your torso. All the colour in you draining away, evaporating.</p></p>This is where you belong. You are mine. You are my slave.</p></p>You shudder once more, your arms resting down on the statue's plinth, and locking down against it as stone.</p></p>You are nothing but my property.</p></p>You twitch and gasp as your insides harden, stiffen. Your skin becomes carved marble, smooth and perfectly sculpted.</p></p>You are mine. Forever.</p></p>Finally, you stop moving completely. Your only thoughts are of the pleasure of servitude. Of how you belong to your superior, arrogant master. That you are his obedient property, his adoring slave. And you will be, forever.",
+                        "trapped_desc": "You are a statue of a chained slave, kissing your evil master's stony paw",
+                        "trapped": "You are a statue of a chained slave, kissing your evil master's stony paw",
+                        "outcomes": [{
+                            "parameter": "trapped",
+                            "quantity": 24,
+                            "change": "set"
+                        }]
+                    }
+                }
             }
         ],
         "npcs": [

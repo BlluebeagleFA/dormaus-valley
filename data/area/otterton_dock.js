@@ -21,6 +21,21 @@ var area = {
                     }
                 }
             },{
+                "id": "drizzhouse",
+                "title": "Visit a fisherman's house",
+                "subtitle": "One of the shacks is welcomingly open.",
+                "type": "random", //or random
+                "requirements": [
+                ],
+                "icon": "navigateicon",
+                "results": {
+                    "success": { //success and fail, rare success, rare fail, or random
+                        "text": "You poke your head in to see if anyone's home.",
+                        "area": "otterton_drizzlefin",
+                        "outcomes": []
+                    }
+                }
+            },{
                 "id": "robby_0again",
                 "title": "Otter Fishing (Repeat)",
                 "subtitle": 'There is an otter sitting on the edge of the pier, with a fishing line around his tail. He\'s lounging on his back and looks very relaxed. He notices you, and asks if you\'d like to fish with him.',
