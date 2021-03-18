@@ -10,6 +10,11 @@ var area = {
                 "subtitle": "A mysterious door here leads to the patrons-only area.",
                 "type": "random", //or random
                 "requirements": [
+                    {
+                        "parameter": "contributor",
+                        "value": 0,
+                        "comparison": "greater" //default greater
+                    }
                 ],
                 "icon": "navigateicon",
                 "results": {
