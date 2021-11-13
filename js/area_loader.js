@@ -5,7 +5,21 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 
     function load_data(url,name,callback) {
 
-        var data_frame = document.createElement("iframe");
+		console.log("URL:" + url);
+		console.log("Name:" + name);
+
+		fetch(url)
+		.then(response => response.json())
+		.then(data => {
+		  callback(data)
+		})
+		.catch((error) => {
+		  console.error('Error:', error);
+		  callback()
+		});
+
+
+        /*var data_frame = document.createElement("iframe");
         document.body.appendChild(data_frame);
 
         data_frame.contentWindow.document.open();
@@ -19,7 +33,7 @@ DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
         data_frame.onload = function() {
             callback(data_frame.contentWindow[name]);
             document.body.removeChild(data_frame);
-        }
+        }*/
     }
 
     function get_area(area_name,callback){

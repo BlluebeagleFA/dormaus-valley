@@ -1777,7 +1777,7 @@ function main(err,session) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     
-    var updateZones = ["churchyard", "dormaus_entrance", "farmpath", "otterton_dock", "patrons", "otterton", "hotel_rooms"];
+    var updateZones = ["churchyard", "dormaus_entrance", "farmpath", "otterton_dock", "patrons", "otterton", "hotel_rooms", "makarna_dockyard", "makarna_training", "silver_babylon_west", "silver_babylon_east", "grancampion_workhouse", "grancampion_market"];
     
     function displayArea(areaName) {
 //        console.log(JSON.stringify(player));

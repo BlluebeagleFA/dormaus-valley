@@ -1,0 +1,54 @@
+{
+    "title":"sesman_farm",
+    "nomap":"You have no desire to go anywhere but your home.",
+    "header":"Sesman's Farm",
+    "subheader":"You have lived at this little farm all your life, you are pretty sure. Your routine is an early morning, hearty breakfast, and chores and work all day. Then you have a nice meal with Sesman in the evening, and relax and watch the stars. You may be stupid, but you're very happy.",
+    "events":[
+       {
+          "id":"workonfarm",
+          "title":"Work Hard",
+          "subtitle":"Time for another normal day in your simple life.",
+          "type":"random",
+		  "trapped":true,
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "working":{
+                "text":"As the sun rises, you hear the cockerel outside crow loudly to start the day. You get up, stretching and rubbing your muscles. Your bed is a simple straw mattress in a little room above the stables, but it's nice and warm with the animals living under you.</p>You put your overalls on, and climb down the ladder, then feed each of the horses and all of the pigs. The oldest horse, a tired old stallion called Sid, snorts and nuzzles forward against you as you approach. You pet him and tell him he's a good horse, and he licks your hand.</p>You let him and the other horses out to get some exercise, then spread some feed for the chickens, who run up to you clucking excitedly. You name them each one by one, and make sure the smallest one, Clucky, gets some extra without getting bullied by the others.</p>Then you head to Sesman's cottage, where he's laid out a bowl of fresh vegetables for you, that you chew down on with delight.</p>\"Having a good morning, Triangle?\", he asks, like he does every day. You nod happily, your muzzle deep in the bowl. He chuckles, sipping at some nettle tea he's made. \"You know, life around here is actually a lot less lonely, with you around.\"</p>You cock your head, confused. Haven't you lived here your whole life? But the thought passes quickly - thoughts don't last long in your head. You give Sesman a hug, which he responds to with a grumpy grunt, but does not resist. Then you head back outside, enjoying the grass on your bare feet, and get back to looking after the farm.</p>It feels good to be a simple, ordinary Horn farm worker. You would never want to be anything else.",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },{
+                "id": "save_me_batfarm",
+                "title": "Mr Bat, Hiking",
+                "subtitle": "You wake up with a shudder one morning. You have a real bad feeling about today.",
+                "trapped":true,
+				"type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "mrbat",
+                "results": {
+                    "success": { 
+                        "text": "You wake up late, and rub your eyes with confusion. The cockerel didn't crow this morning. Maybe he's sick? You climb down into the stables, and start doing your chores for the day, but all the animals are acting strange. The horses are skittish, and the pigs won't come when called. The chickens are hiding in their coops, pressed at the back like they're afraid or something.</p>The mountain feels colder than usual today, too. There's an unpleasant dark cloud over the sky. You shudder a bit, and hurry over to Sesman's cottage. When you push open the door, you are shocked to see a stranger sitting at the table, sipping tea.</p>Strangers never come visiting up here. Especially not ones like this. He's wearing some fancy clothes and a weird tall hat with a flat top. He's some sort of bat, and he nods at you and grins as you appear.</p>\"Ah, exactly who I was looking for. Sesman, I will need to be taking your little worker here with me.\"</p>Sesman is standing with his back to the wall, and gives you a concerned look. \"I can't let you do that, stranger. And don't call me Sesman. My friends call me that.\"</p>The stranger chuckles, and stands up. With a wave of his hand, Sesman stumbles, and falls over unconscious. You yell, and rush forward, but the stranger grabs your arm with strength that makes no sense for how slender his arms are. He drags you outside as you struggle and yell.</p>\"I don't want to go with you!\", you yelp. He continues dragging you, your resistance meaningless to him.</p>\"You do, actually. It's one of those little secrets, you see. I would not be here if you had not called me. You always have the choice. You could have just sat here, every day the same. You did not. You asked me to come fetch you, even if you don't understand how.\"</p>He pulls you in front of him, and presses something to your forehead. It sinks into your skin, and in a sudden rush, your mind speeds up. Your body flushes with colour, and magic tingles at your fingertips. Your memories return with an unpleasant pounding sensation.</p>\"However much you may enjoy that, I will need you to have magic for what comes later. You owe me for that one, transporting magic on this planet is absurdly troublesome.\"</p>Mr Bat's wings close around you, engulfing you in darkness. Then he releases you, and you are miles away, back in the plains near Dormaus Village. You turn in surprise at how quickly you moved, but when you look back, Mr Bat is gone.",
+                        "area":"northplains",
+						"freeTrap": true,
+                        "outcomes": [
+							{
+							 "parameter":"magic",
+							 "quantity":15,
+							 "change":"set"
+						  }
+                        ]
+                    }
+                }
+            }
+    ],
+    "npcs":[
+       
+    ]
+ }

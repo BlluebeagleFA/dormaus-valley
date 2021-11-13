@@ -2,100 +2,106 @@ DV = typeof(DV) === 'undefined' ? {} : DV;
 DV.Data = typeof(DV.Data) === 'undefined' ? {} : DV.Data;
 
 DV.Data.areas = {
-	"bar_rooms": "./data/area/bar_rooms.js", //DORMAUS VILLAGE HERE
-	"bar": "./data/area/bar.js",
-	"dormaus_streets": "./data/area/dormaus_streets.js",
-	"dormaus_entrance": "./data/area/dormaus_entrance.js",
-	"shop": "./data/area/shop.js",
-	"shop_rooms": "./data/area/shop_rooms.js",
-	"fountain": "./data/area/fountain.js",
-	"marketplace": "./data/area/marketplace.js",
-	"costume_store": "./data/area/costume_store.js",
-	"mayors": "./data/area/mayors.js",
-	"hotel": "./data/area/hotel.js",
-	"hotel_rooms": "./data/area/hotel_rooms.js",
-	"hotel_alder": "./data/area/hotel_alder.js", //Alder's Room. Accessible after his main scenario is over.
-	"churchyard": "./data/area/churchyard.js",
-	"church": "./data/area/church.js",
-	"resetshrine": "./data/area/resetshrine.js",
-	"alley": "./data/area/alleyway.js",
-	"pumpkins": "./data/area/pumpkins.js",
-	"backstreets": "./data/area/backstreets.js",
-	"art_store": "./data/area/art_store.js",
-	"catacomb_entrance": "./data/area/catacomb_entrance.js",
-	"underground_ruins": "./data/area/underground_ruins.js",
-	"contributor_1": "./data/area/contributor_1.js",
-	"contributor_1_1": "./data/area/contributor_1_1.js",
-	"contributor_1_2": "./data/area/contributor_1_2.js",
-	"ping_cavern": "./data/area/ping_cavern.js",
-	"ping_farmland": "./data/area/ping_farmland.js",
-	"ping_forest": "./data/area/ping_forest.js",
-	"ping_camp": "./data/area/ping_camp.js",
-	"farmpath": "./data/area/farmpath.js", //FARM STARTS HERE
-	"farmhouse": "./data/area/farmhouse.js",
-	"farmfield": "./data/area/farmfield.js",
-	"farmsouth": "./data/area/farmsouth.js",
-	"northplains": "./data/area/northplains.js", //NORTH_OF_VILLAGE
-	"horseball_inn": "./data/area/horseball_inn.js",
-	"horseball_inside": "./data/area/horseball_inside.js",
-	"northwoods": "./data/area/northwoods.js",
-	"titancottage": "./data/area/titancottage.js",
-	"titansplinter": "./data/area/titansplinter.js",
-	"riverford": "./data/area/riverford.js",
-	"glatisant": "./data/area/glatisant.js",
-	"cavernentrance": "./data/area/cavernentrance.js", //CAVERNS
-	"quartzcavern": "./data/area/quartzcavern.js",
-	"wetcavern": "./data/area/wetcavern.js",
-	"darkcavern": "./data/area/darkcavern.js",
-	"deepestcavern": "./data/area/deepestcavern.js",
-	"top_valley": "./data/area/top_valley.js", //OTTERTON
-	"down_valley": "./data/area/down_valley.js",
-	"beside_river": "./data/area/beside_river.js",
-    "otterton_drizzlefin": "./data/area/otterton_drizzlefin.js",
-	"eastwoods_entrance": "./data/area/eastwoods_entrance.js",
-	"grease_lot": "./data/area/grease_lot.js",
-	"greasepit": "./data/area/greasepit.js",
-	"dragon_vore": "./data/area/dragon_vore.js",
-	"windy_path": "./data/area/windy_path.js",
-	"jacks_hideout": "./data/area/jacks_hideout.js",
-	"otterton_hill": "./data/area/otterton_hill.js",
-	"otterton": "./data/area/otterton.js",
-	"otterton_dock": "./data/area/otterton_dock.js",
-	"witch_peak": "./data/area/witch_peak.js",
-	"lionquest_harem": "./data/area/lionquest_harem.js", //MAKARNAQUEST
-	"lionquest_throne": "./data/area/lionquest_throne.js",
-	"lionquest_sea": "./data/area/lionquest_sea.js",
-	"lionquest_glowscale": "./data/area/lionquest_glowscale.js",
-	"lionquest_westwood": "./data/area/lionquest_westwood.js",
-	"lionquest_acecock": "./data/area/lionquest_acecock.js",
-	"lionquest_aceboot": "./data/area/lionquest_aceboot.js",
-	"under_graveyard": "./data/area/under_graveyard.js", //BONACIEUX QUEST
-	"catacombs": "./data/area/catacombs.js",
-	"above_abyss": "./data/area/above_abyss.js",
-	"abyss": "./data/area/abyss.js",
-	"wolf_choice": "./data/area/wolf_choice.js",
-	"hornloft_1": "./data/area/hornloft_1.js", //PRISON
-	"hornloft_2": "./data/area/hornloft_2.js",
-	"hornloft_3": "./data/area/hornloft_3.js",
-	"hornloft_4": "./data/area/hornloft_4.js",
-	"hornloft_4_2": "./data/area/hornloft_4_2.js",
-	"hornloft_5": "./data/area/hornloft_5.js",
-	"tundra": "./data/area/tundra.js", //TUNDRA
-	"kristoph_sled": "./data/area/kristoph_sled.js",
-	"grancampion_workhouse": "./data/area/grancampion_workhouse.js", //GRANCAMPION
-	"grancampion_slums": "./data/area/grancampion_slums.js",
-	"grancampion_market": "./data/area/grancampion_market.js",
-	"grancampion_store": "./data/area/grancampion_store.js",
-	"makarna_training": "./data/area/makarna_training.js", //MAKARNA
-	"makarna_market": "./data/area/makarna_market.js",
-	"makarna_silk_market": "./data/area/makarna_silk_market.js",
-	"makarna_dockyard": "./data/area/makarna_dockyard.js",
-	"maze_1": "./data/area/maze_1.js", //MAZE
-	"maze_deep": "./data/area/maze_deep.js",
-	"maze_dragon": "./data/area/maze_dragon.js",
-	"maze_light": "./data/area/maze_light.js",
-	"belly": "./data/area/belly.js", //OTHER
-    "patrons": "./data/area/patrons.js"
+	"bar_rooms": "./data/area/bar_rooms.json", //DORMAUS VILLAGE HERE
+	"bar": "./data/area/bar.json",
+	"dormaus_streets": "./data/area/dormaus_streets.json",
+	"dormaus_entrance": "./data/area/dormaus_entrance.json",
+	"shop": "./data/area/shop.json",
+	"shop_rooms": "./data/area/shop_rooms.json",
+	"fountain": "./data/area/fountain.json",
+	"marketplace": "./data/area/marketplace.json",
+	"costume_store": "./data/area/costume_store.json",
+	"mayors": "./data/area/mayors.json",
+	"hotel": "./data/area/hotel.json",
+	"hotel_rooms": "./data/area/hotel_rooms.json",
+	"hotel_alder": "./data/area/hotel_alder.json", //Alder's Room. Accessible after his main scenario is over.
+	"churchyard": "./data/area/churchyard.json",
+	"church": "./data/area/church.json",
+	"resetshrine": "./data/area/resetshrine.json",
+	"alley": "./data/area/alleyway.json",
+	"pumpkins": "./data/area/pumpkins.json",
+	"backstreets": "./data/area/backstreets.json",
+	"art_store": "./data/area/art_store.json",
+	"catacomb_entrance": "./data/area/catacomb_entrance.json",
+	"underground_ruins": "./data/area/underground_ruins.json",
+	"contributor_1": "./data/area/contributor_1.json",
+	"contributor_1_1": "./data/area/contributor_1_1.json",
+	"contributor_1_2": "./data/area/contributor_1_2.json",
+	"ping_cavern": "./data/area/ping_cavern.json",
+	"ping_farmland": "./data/area/ping_farmland.json",
+	"ping_forest": "./data/area/ping_forest.json",
+	"ping_camp": "./data/area/ping_camp.json",
+	"farmpath": "./data/area/farmpath.json", //FARM STARTS HERE
+	"farmhouse": "./data/area/farmhouse.json",
+	"farmfield": "./data/area/farmfield.json",
+	"farmsouth": "./data/area/farmsouth.json",
+	"northplains": "./data/area/northplains.json", //NORTH_OF_VILLAGE
+	"horseball_inn": "./data/area/horseball_inn.json",
+	"horseball_inside": "./data/area/horseball_inside.json",
+	"northwoods": "./data/area/northwoods.json",
+	"titancottage": "./data/area/titancottage.json",
+	"titansplinter": "./data/area/titansplinter.json",
+	"riverford": "./data/area/riverford.json",
+	"glatisant": "./data/area/glatisant.json",
+	"cavernentrance": "./data/area/cavernentrance.json", //CAVERNS
+	"quartzcavern": "./data/area/quartzcavern.json",
+	"wetcavern": "./data/area/wetcavern.json",
+	"darkcavern": "./data/area/darkcavern.json",
+	"deepestcavern": "./data/area/deepestcavern.json",
+	"top_valley": "./data/area/top_valley.json", //OTTERTON
+	"down_valley": "./data/area/down_valley.json",
+	"beside_river": "./data/area/beside_river.json",
+    "otterton_drizzlefin": "./data/area/otterton_drizzlefin.json",
+	"eastwoods_entrance": "./data/area/eastwoods_entrance.json",
+	"grease_lot": "./data/area/grease_lot.json",
+	"greasepit": "./data/area/greasepit.json",
+	"dragon_vore": "./data/area/dragon_vore.json",
+	"windy_path": "./data/area/windy_path.json",
+	"jacks_hideout": "./data/area/jacks_hideout.json",
+	"otterton_hill": "./data/area/otterton_hill.json",
+	"otterton": "./data/area/otterton.json",
+	"otterton_dock": "./data/area/otterton_dock.json",
+	"witch_peak": "./data/area/witch_peak.json",
+	"lionquest_harem": "./data/area/lionquest_harem.json", //MAKARNAQUEST
+	"lionquest_throne": "./data/area/lionquest_throne.json",
+	"lionquest_sea": "./data/area/lionquest_sea.json",
+	"lionquest_glowscale": "./data/area/lionquest_glowscale.json",
+	"lionquest_westwood": "./data/area/lionquest_westwood.json",
+	"lionquest_acecock": "./data/area/lionquest_acecock.json",
+	"lionquest_aceboot": "./data/area/lionquest_aceboot.json",
+	"under_graveyard": "./data/area/under_graveyard.json", //BONACIEUX QUEST
+	"catacombs": "./data/area/catacombs.json",
+	"above_abyss": "./data/area/above_abyss.json",
+	"abyss": "./data/area/abyss.json",
+	"wolf_choice": "./data/area/wolf_choice.json",
+	"hornloft_1": "./data/area/hornloft_1.json", //PRISON
+	"hornloft_2": "./data/area/hornloft_2.json",
+	"hornloft_3": "./data/area/hornloft_3.json",
+	"hornloft_4": "./data/area/hornloft_4.json",
+	"hornloft_4_2": "./data/area/hornloft_4_2.json",
+	"hornloft_5": "./data/area/hornloft_5.json",
+	"tundra": "./data/area/tundra.json", //TUNDRA
+	"kristoph_sled": "./data/area/kristoph_sled.json",
+	"grancampion_workhouse": "./data/area/grancampion_workhouse.json", //GRANCAMPION
+	"grancampion_slums": "./data/area/grancampion_slums.json",
+	"grancampion_market": "./data/area/grancampion_market.json",
+	"grancampion_store": "./data/area/grancampion_store.json",
+	"silver_babylon_west": "./data/area/silver_babylon_west.json",
+	"silver_babylon_foot": "./data/area/silver_babylon_foot.json",
+	"silver_babylon_east": "./data/area/silver_babylon_east.json",
+	"traders_road": "./data/area/traders_road.json",
+	"makarna_training": "./data/area/makarna_training.json", //MAKARNA
+	"makarna_market": "./data/area/makarna_market.json",
+	"makarna_silk_market": "./data/area/makarna_silk_market.json",
+	"makarna_dockyard": "./data/area/makarna_dockyard.json",
+	"maze_1": "./data/area/maze_1.json", //MAZE
+	"maze_deep": "./data/area/maze_deep.json",
+	"maze_dragon": "./data/area/maze_dragon.json",
+	"maze_light": "./data/area/maze_light.json",
+	"belly": "./data/area/belly.json", //OTHER
+    "patrons": "./data/area/patrons.json",
+	"sesman_farm": "./data/area/sesman_farm.json",
+	"teleportation": "./data/area/teleportation.json"
 }
 
 DV.Data.areacoordinates = [{
@@ -390,12 +396,18 @@ DV.Data.areacoordinates = [{
     "title": "makarna_training"
 }, {
     "header": "Sea Gate Road",
+	"mapId": "makarna.jpg",
+    "position": [0.61, 0.67],
     "title": "makarna_market"
 }, {
     "header": "Silk Market",
+	"mapId": "makarna.jpg",
+    "position": [0.51, 0.65],
     "title": "makarna_silk_market"
 }, {
     "header": "The Port of Makarna",
+	"mapId": "makarna.jpg",
+    "position": [0.81, 0.91],
     "title": "makarna_dockyard"
 }, {
     "header": "Memory Maze",
@@ -434,4 +446,45 @@ DV.Data.areacoordinates = [{
     "header": "Backstreets",
     "position": [0.4, 0.6],
     "title": "backstreets"
+},{
+    "header": "Teleportation Circle",
+    "title": "teleportation"
+},{
+    "header": "Sesman's Farm",
+    "title": "sesman_farm"
+},{
+    "header": "Silver Babylon Pass: West",
+    "mapId": "worldmap.jpg",
+    "position": [0.80, 0.04],
+    "title": "silver_babylon_west" 
+},{
+    "header": "Foot of Silver Babylon",
+    "mapId": "grancampion.jpg",
+    "position": [0.19, 0.35],
+    "title": "silver_babylon_foot" 
+},{
+    "header": "Silver Babylon Pass: East",
+    "mapId": "grancampion.jpg",
+    "position": [0.20, 0.34],
+    "title": "silver_babylon_east" 
+},{
+    "header": "Trader's Road",
+    "mapId": "grancampion.jpg",
+    "position": [0.25, 0.38],
+    "title": "traders_road" 
+},{
+    "header": "Gran Campion Workhouse",
+    "mapId": "grancampion.jpg",
+    "position": [0.4, 0.58],
+    "title": "grancampion_workhouse" 
+},{
+    "header": "Gran Campion Slums",
+    "mapId": "grancampion.jpg",
+    "position": [0.39, 0.60],
+    "title": "grancampion_slums" 
+},{
+    "header": "Gran Campion Market",
+    "mapId": "grancampion.jpg",
+    "position": [0.38, 0.54],
+    "title": "grancampion_market" 
 }]

@@ -23,11 +23,23 @@ DV.Data.item_data = {
         title: "Turner [Friend]",
         description: ["Turner is fond of you."]
     },
+	abernathy_connection: {
+        type: "attribute",
+        icon: "default",
+        title: "Abernathy [Friend]",
+        description: ["You are cultivating friends in high places."]
+    },
     reputation_actaeon: {
         type: "attribute",
         icon: "default",
         title: "House Actaeon [Reputation]",
         description: ["You are cultivating a reputation as reliable with House Actaeon, the noble house of hooves."]
+    },
+	reputation_alabaster: {
+        type: "attribute",
+        icon: "default",
+        title: "House Alabaster [Reputation]",
+        description: ["You are cultivating a reputation as reliable with House Alabaster, the noble house of pale fur."]
     },
     reputation_striate: {
         type: "attribute",
@@ -294,6 +306,10 @@ DV.Data.item_data = {
             //28: maelstroms cockr
             //29: maelstroms cum
             //30: beer
+			//31: barrel
+			//32: in the army
+			//33: mikhail's dick
+			//34: shadow
         ]
     },
     species: {
@@ -429,7 +445,8 @@ DV.Data.item_data = {
         type: "attribute",
         icon: "beneath",
         title: "Mystery: The Iron Sky",
-        description: ["You caught a glimpse of something important. Something that was found buried in the snow."]
+        description: ["You caught a glimpse of something important. Something that was found buried in the snow.",
+		"A gryphon named Drum found the legacy of ancient dragons, and in his form a dragon walked the world once more."]
     },
     mystery_chains: {
         type: "attribute",
@@ -507,6 +524,12 @@ DV.Data.item_data = {
         icon: "thevoid",
         title: "Old Curse",
         description: ["You are afflicted by a strange lingering curse"]
+    },
+	quieted: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Quieted",
+        description: ["You have been subjected to the gryphon's Quieting ritual at least once. Your mind feels slightly dulled and content."]
     },
     sparkle: {
         type: "attribute",
@@ -881,6 +904,18 @@ DV.Data.item_data = {
             charm: 6
         },
         description: ["A beautiful harp, taken somehow from the Glatisant itself. The strings never seem to need tuning, and each vibrating tone it makes fills you with deep, bittersweet melancholy."]
+    },
+	funtentacle: {
+        type: "item",
+        icon: "default",
+        title: "Tsitra's Tentacle",
+        value: 1000,
+        slot: "weapon",
+        attributes: {
+            charm: 2,
+			submissiveness: 1			
+        },
+        description: ["A souvenir from when a charming fox left you cuffed to a bed. When you shove its ridiculous length inside you, you can’t help but remember his brilliant smile."]
     },
     nosering: {
         type: "item",

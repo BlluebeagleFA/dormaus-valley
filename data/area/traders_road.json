@@ -1,0 +1,51 @@
+{
+    "title":"traders_road",
+    "mapId": "grancampion.jpg",
+    "position": [0.60, 0.04],
+    "header":"Trader's Road",
+    "subheader":"The nobles of Gran Campion claim all roads lead to their city. For the poor, it is a common saying that all roads actually lead away from it. Both are technically incorrect, as there are plenty of roads that lead nowhere at all. Nonetheless, this road at the very least does connect eventually to the great city itself.",
+    "events":[
+       {
+          "id":"abernathy",
+          "title":"A Black Carriage",
+          "subtitle":"You step out of the road as a carriage approaches, on its way to Gran Campion. It is completely black, pulled by two black stallions, and both the horses and carriage are covered in black tassels and beautiful silver livery.</p>As it starts to pass, it slows down, as if the passenger is taking a closer look at you...",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "success":{
+                "html":"data/active/Abernathy.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },{
+          "id":"tentaclefox",
+          "title":"A Handsome Stranger (Contributed by Reese Ikena)",
+          "subtitle":"The many passersby of the road connecting Dormaus and Gran Campion become a blur, but there’s one who catches your eye. A dashing fox adorned in fashionable cloth and leather, complete with a feathered cap and a red cape. He notices your gaze and beckons you to cross the street towards him. You could use a guide, and this vulpine seems like an intelligent creature.",
+          "type":"random",
+          "requirements":[
+             {
+               "parameter":"slip",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"default",
+          "results":{
+             "success":{
+                "html":"data/active/HandsomeStranger.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       }
+    ],
+    "npcs":[
+       
+    ]
+ }

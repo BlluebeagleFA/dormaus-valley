@@ -1,0 +1,180 @@
+{
+    "title":"silver_babylon_west",
+    "position":[0.80, 0.04],
+    "header":"Silver Babylon Pass: West",
+    "subheader":"The air is thin and fresh as you climb up into the rocky foothills of the mountains. All around you, peaks rise steeply up into the sky, and the plantlife here is green and vibrant, as if in defiance of the bitter snows visible higher up. To your west, the valley is sprawled out like a green blanket, the villages only tiny dots.</p>The mountain pass continues on to your east, through the mountains and into the territory of Gran Campion. Yet as you walk, a more surprising sight than the mountains is soon revealed. Toppled between the mountains is an enormous metal structure, bent and warped and twisted. The fallen tower of Silver Babylon.",
+    "events":[
+       {
+          "id":"leavepass",
+          "title":"Return to the valley",
+          "subtitle":"It's a long but scenic walk back down and away from the mountains.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"navigateicon",
+          "results":{
+             "success":{
+                "text":"You make your way down the mountain pass, taking in the brisk air before you continue with your journey.",
+                "area":"northplains",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
+         "id":"headeast",
+         "title":"Attempt passage through to Gran Campion",
+         "subtitle":"This pass marks the border between the recognised territories of Horn and Gran Campion, and this side is Horn territory. Passage is free, but all travellers must submit to a mage check. The griffons of Horn distrust mages, and will not allow use of the pass to those who are too powerful.",
+         "type":"statcheck",
+         "stat":"magic",
+         "difficulty":100,
+         "requirements":[
+            
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You walk towards the checkpoint, a sturdy and squat stone building draped in the black and gold flag of the Republic of Horn. It stands in the shadow of a piece of Silver Babylon that arches above it, looking like a strange metal crab leg.</p>You enter the checkpoint, and are acutely aware of the arrow slits on the sides of the cramped stone room. One wrong move, and the guards stationed here could fill you with crossbow bolts, leaving no room to dodge. Before you, a stone arch hums faintly - the mage check.</p>A gruff-looking brown-feathered griffon on the other end of the arch beckons you forward. You take a deep breath, and step through the arch. The hum grows louder, and you feel an uncomfortable pressure all around you. It is as though you are being compressed from all sides by a pervasive, angry force.</p>Suddenly, the force grows unbearable. You feel as though you are about to be crushed, and the hum rises to a furious screech. You are thrown back, pushed away from the gate as if it was a taut rubber sheet.</p>The griffon on the other side snarls at you, and spits. \"You are not welcome here, silver-tainted one. If you attempt to pass again, we have the right to use force against you.\"</p>It seems you will have to find another way through the pass.",
+               "outcomes":[
+                  {
+                     "parameter":"pain",
+                     "quantity":1,
+                     "max":1,
+                     "change":"add"
+                  }
+               ]
+            },
+            "fail":{
+               "text":"You walk towards the checkpoint, a sturdy and squat stone building draped in the black and gold flag of the Republic of Horn. It stands in the shadow of a piece of Silver Babylon that arches above it, looking like a strange metal crab leg.</p>You enter the checkpoint, and are acutely aware of the arrow slits on the sides of the cramped stone room. One wrong move, and the guards stationed here could fill you with crossbow bolts, leaving no room to dodge. Before you, a stone arch hums faintly - the mage check.</p>A gruff-looking brown-feathered griffon on the other end of the arch beckons you forward. You take a deep breath, and step through the arch. The hum grows louder, and you feel an uncomfortable pressure all around you. It is as though you are being compressed from all sides by a pervasive, angry force.</p>You almost stumble as you realise you have stepped through. It felt like you were pushing through a thick swamp, but in reality it was only a fraction of a second. The griffon nods, seeming satisfied. You are subjected to a customs check, but the griffons seem vastly less interested in smuggling than they are in mage-finding. You proceed to the other side with few issues.",
+               "area":"silver_babylon_east",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },{
+         "id":"headeastsneakily",
+         "title":"Sneak Past",
+         "subtitle":"Sneaking through a heavily armed border pass is a tough undertaking. You will have to climb up into the mountains without being spotted, and avoid patrols. On top of that, you'll need to watch out for flying gryphon scouts. If you are caught, you risk being sent directly to Hornloft Prison.",
+         "type":"statcheck",
+         "stat":"stealth",
+         "difficulty":80,
+         "requirements":[
+            
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You have no intention of submitting to the gryphon's rules and regulations. You back away far enough down the mountain that you are at no risk of being spotted, then make your way back up along an out-of-sight route.</p>It is far more difficult than you initially anticipated, and you are feeling bruised and exhausted very quickly. The mountains here are hostile to travel, and the pass itself is one of the only reasonable ways between the two kingdoms. You persevere, free-climbing up boulders and shimmying along the side of terrifying crevasses, and soon you are roughly at the level of the guard post.</p>This high up, the ruins of Silver Babylon are even more impressive. It is draped across the mountains like a snake, a baffling metal tower covered in mysterious arches and battlements and turrets. From below it appeared broken, but from here you can see that it is merely twisted and bent. None of the pieces, nor any of its crablike legs, are actually severed from the main body.</p>You shake your head, realising you are getting distracted by the gleaming tower at a critical point in your infiltration. You duck out of sight right as a birdlike shadow passes over, and creep your way along until you finally have a chance to slip down a steep wall of loose stones, safely on the other side of the pass.",
+               "area":"silver_babylon_east",
+			   "outcomes":[
+                  
+               ]
+            },
+            "fail":{
+               "text":"You have no intention of submitting to the gryphon's rules and regulations. You back away far enough down the mountain that you are at no risk of being spotted, then make your way back up along an out-of-sight route.</p>It is far more difficult than you initially anticipated, and you are feeling bruised and exhausted very quickly. The mountains here are hostile to travel, and the pass itself is one of the only reasonable ways between the two kingdoms. You persevere, free-climbing up boulders and shimmying along the side of terrifying crevasses, and soon you are roughly at the level of the guard post.</p>This high up, the ruins of Silver Babylon are even more impressive. It is draped across the mountains like a snake, a baffling metal tower covered in mysterious arches and battlements and turrets. From below it appeared broken, but from here you can see that it is merely twisted and bent. None of the pieces, nor any of its crablike legs, are actually severed from the main body.</p>The tower seems to almost call to you. You can picture it how it must have looked in its prime, standing impossibly tall, crawling along the ground with unnatural legs. In your mind, you see the blasts of searing magical light erupt from its cannons, hear the cries of battle all around you.</p>You are shocked out of those strange thoughts by a rough, scaly hand on your shoulder. You turn to see the angry face of a tall brown gryphon with a splash of red colouring along his chest. His wings are spread wide, casting a shadow over you.</p>\"Trespasser, these paths are forbidden. By Drum's laws, I have the right to detain you as I see fit\", he says. He takes your hands, then pulls them behind your back and locks them together with a heavy pair of shackles. You feel his powerful arms wrap around your chest, before his wings flap with a mighty rush of air, and you are pulled into the sky.</p>After a moment of gliding, he lands at the guard post, and you are quickly flanked by two more gryphons. They strip you down, searching you for weapons and contraband, then chain you up against the wall of the guard post. You are subjected to an uncomfortable and humiliating day of being nude in this brisk, cold climate, as travellers and merchants pass through.</p>The next day you are finally freed, and your possessions returned. One of the gryphons shoves you away, warning you that they have noted your likeness and that next time they may not be so kind.",
+               "outcomes":[
+                  {
+                     "parameter":"pain",
+                     "quantity":1,
+                     "max":4,
+                     "change":"add"
+                  },{
+                     "parameter":"guilt",
+                     "quantity":3,
+                     "change":"add"
+                  }
+               ]
+            }
+         }
+      },
+	  {
+          "id":"quieted1",
+          "title":"Submit to Quieting",
+          "subtitle":"For mages who are blocked from passing through the guard post, and who have no other options, another choice is available. Quieting is a gryphon ritual that permanently drains a mage of some of their power, weakening them. If you are foolish enough to accept this, your magical abilities will be significantly reduced.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"magic",
+          "results":{
+             "success":{
+                "text":"You walk up to one of the gryphons on guard at the post, a burly one with a scarred beak. When you tell him you wish to undergo quieting, he nods sternly.</p>\"Very wise of you, mage. The power of magic is a creeping temptation that leads only to destruction. Come with me.\"</p>He leads you around to the side of the guard post, away from the main entrance, and taps his halberd against the ground firmly. A small door opens up, and you are led inside to a small, dark room with a wooden chair. The atmosphere is heavy and oppressive inside, but you have no opportunity to second-guess your choice, as two more gryphons firmly take hold of your shoulders and press you onto the chair.</p>As the other two gryphons hold you in place, the one who led you here begins to remove his tunic, revealing his feathered chest. He stretches, flexing his muscles, and takes a deep breath. He then steps forward, and his wings unfurl, surrounding you in warm feathers. The faint musk of his body washes over you, making you feel strangely calm and compliant.</p>His rough talon-like hands press gently against your cheeks as he holds your head in his hands. His thumbs slide against your mouth, pushing it open, while he leans forward and opens his beak.</p>You shudder, your eyes glazing over slightly. Your whole body feels heavy and strange, while your mind starts to feel sluggish, as if your thoughts are moving through a mire of thick sludge. Your body tenses, then is washed over by a feeling of incredible peace and simplicity.</p>A wisp of insubstantial, glowing mist emerges from your mouth. The gryphon opens his beak, inhales the vapour, and then swallows. His eyes glow for a moment, then fade back to normal as the energy is absorbed and eliminated.</p>He releases his grip on you, and you sit there for a moment, dazed and smiling. Thoughts of a simple life, of serving and being content, fill your mind. After a moment the feeling begins to pass, and you blink as you return to almost normal. The gryphons lead you through the pass and release you on the other side, but even as you walk away, you don't feel quite back to your old self. Some small part of you has been sealed away, and the scary thing is, another part of you liked it.",
+                "area":"silver_babylon_east",
+				"outcomes":[
+                   {
+                     "parameter":"magic",
+                     "quantity":10,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"quieted",
+                     "quantity":1,
+                     "change":"set"
+                  }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"quieted2",
+          "title":"Request Complete Quieting",
+          "subtitle":"The feeling of being quieted is strange, but oddly alluring. The dullness in your head, the simplicity and calmness of being obedient. If you wish it, you could ask the gryphons to Quiet you until there is nothing left. Your connection to magic would be completely severed, and your mind permanently reduced to a state of slowness and simplicity.",
+          "type":"random",
+          "requirements":[
+             {
+               "parameter":"quieted",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"magic",
+          "results":{
+             "success":{
+                "text":"You can't stop thinking about that sensation. The feeling of the gryphons draining you, making your mind empty and happy and dull. It has been a constant need in your mind ever since it happened.</p>You find yourself walking up to the gryphons once more. The same scar-beaked guard is on duty, and he looks at you with disdain as you approach.</p>\"What is your business here, mage?\", he snaps. You gulp, your body shaking with need and desire as you look over him. His huge form, that powerful scent. You stare at his beak hungrily, fantasising about it draining you, sucking away all your thoughts forever.</p>You finally manage to control yourself, and admit what you want. The words come out in a jumbled torrent as you find yourself begging the gryphon to drain you, put you in your place, show you how you should be and take away all your magic for good.</p>He blinks with surprise, then steps forward. He towers over you as his avian hands grab your shoulders.</p>\"You want me to quiet you completely? No magic ever again? Even if it will reduce your mind to an empty shell?\", he asks sternly. You nod, your face flushed and heart pounding. He grins, the sides of his beak stretching up, and slaps you on the back firmly.</p>\"Incredible! I am proud of you, citizen. To cast aside the vile allure of magic even at great personal loss. You are a credit to your country. No...to Horn! I will take you with me, and make you a loyal citizen of our great nation. Come with me!\"</p>He steers you back around to the small room at the side of the guard post, pushing you to walk quickly as he gets an eager glint in his eye. When he taps his halberd and the door opens, he leans in and speaks in hushed tones to the other guards. \"This one needs to be off the books, lads. I've got a special session going, and we don't want word getting out about it.\"</p>The other gryphons look at eachother, but nod. He leads you inside, and this time you don't need to be held down in the chair, you take a seat willingly. He starts to pull off his uniform, once more revealing his muscular chest and thick, fluffy brown feathers. This time, however, he also unclasps his belt, and starts to pull off his boots and pants as well.</p>\"Strip down, citizen. We will need a closer connection for what you are asking me to do\", he says. You are so focused on his beak and your desperate addiction to the draining that it takes you a moment to register what he's saying. Then you quickly start pulling off your clothes and tossing them aside, your body flushed and warm even in the cold and dark room.</p>He steps forward, his wings outstretched. His bare chest presses against yours, his feathers like a firm, warm pillow. You can feel his thick cock warm and throbbing against your crotch, as he wraps his powerful muscular arms around you. His wings engulf you, surrounding you with feathery warmth, as his scent flows over you. You open your mouth, and he leans in, his beak pressed against you.</p>Then it begins. You feel a shudder of sensation, your eyes rolling up in your head as a tingling lust rolls through your body from head to toe. You gasp as the mist flows from your mouth and is drawn up into his beak. Vastly more than before, it comes out not as a trickle but a deep flow of swirling fog.</p>Your mind slows down, your eyes becoming glassy and closing over slightly. Your thoughts stick and stumble, your mind breaking apart as it becomes impossible to focus or think. Your arms flop at your sides, your chest pounding as you lose yourself completely in the absolute bliss, the peaceful mindlessness. Your memories fade and disappear, you forget how to think, how to read, how to do anything at all. The gryphon swallows up every drop of your strange essence, and as your mind is drained down to nothing, your body shifts too.</p>The colour drains from you, starting with your eyes and moving to the rest of you. Your skin becomes grey, every hair on your body turns monochrome. It is as if you have passed through a colourless filter, taking away all the hue from every part of you.</p>Finally, no more fog emerges from you. The gryphon swallows loudly, and for a moment his feathers spark with light, before it fades. He wipes his beak, and steps up. You stare at him blankly, a dumb and content smile on your face.",
+                "trapped_desc":"You are mindless and grey, happy to obey any command you are given.",
+                "trapped":"You are mindless and grey, happy to obey any command you are given.",
+				"outcomes":[
+                   {
+                     "parameter":"magic",
+                     "quantity":0,
+                     "change":"set"
+                  }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"quieted3",
+          "title":"A Quiet Mule",
+          "subtitle":"The gryphon has drained away every drop of your mind, but he isn't quite finished with you.",
+          "type":"random",
+		  "trapped":true,
+          "requirements":[
+             
+          ],
+          "icon":"tffetish",
+          "results":{
+             "success":{
+                "text":"The gryphon strokes over your shoulder, and rubs his fingers over your cheek. You smile at him brainlessly, perfectly happy to sit and do nothing. Not a single thought moves through your empty head.</p>\"Incredible. It worked\", he says with a smile. He turns to the other gryphons, his tone becoming authoratitive. \"We can't let this one become public. That, and I owe this citizen for making such an honorable choice. Tuba, do you have that potion we confiscated last week? Fetch it for me.\"</p>The chubbier of the gryphons salutes, and leaves for a moment. While he's gone, the main gryphon strokes over your chest, nodding appreciatively as he sees your empty, grey eyes.</p>\"My name is Fort. Your name from now on is...Triangle. A cute and simple instrument, it makes for a good name for a cute and simple creature like you, my friend.\"</p>You nod. Triangle. Your name is Triangle. This nice man is Fort. He is nice.</p>Tuba returns with a cloudy bottle, which he hands to Fort. The large gryphon slides his fingers into your mouth, gently pulling it open, then pours the contents of the bottle down your throat. You gulp it down, spilling a little but not caring.</p>Your naked body feels warm and tingly for a moment, before rough fur spreads down your chest and arms, covering your limbs and moving up to your head. It remains grey and monochrome like the rest of you, but your muscles start to bulge and grow. Your shoulders widen, your arms become thicker and stronger, and your stature changes to someone who is accustomed to regular hard manual labour.</p>Your ears stretch up above your head, becoming long and fuzzy, and your face pushes out into a broad muzzle. A tassel-tipped tail flops down behind your rear, while your hands and feet become rough and calloused.</p>You shudder, your whole body feeling bubbly and tense for a moment, before you let out a loud HEE-HAWWW. Then you relax, slumping forward again, a dumb grin on your big donkey snout. Your grey hair flops down over your eyes, adding to your dazed appearance, but you do not adjust it. Fort rubs your head, and you twitch your ears at the nice sensation.</p>\"There we go. Just a nice, obedient donkey. Triangle, if anyone asks, you were born in Horn. You're from the Slate Plains, and you've always been a nice, hard working farm boy. A little slow, but very loyal and content.\"</p>You nod. Fort knows what's best. Fort is nice. He grabs a dusty pair of grey overalls from a storage box, and helps you get into them, then leads you out of the checkpoint and to a supply wagon, where you obediently sit on the back next to some crates of documents.</p>Fort speaks to the wagon driver, a shaggy yak. \"Got a passenger for you. Donkey by the name of Triangle. Drop him off at Sesman's farm, and give him this letter when you do.\"</p>The yak shrugs, and Fort hands you some food and water for the trip. You smile at him blankly.</p>\"Don't eat this all at once, ok? I'm sending you home to your farm. Work hard for Sesman, he's a good man. You will have a nice, simple life from now on.\"</p>You give the nice-smelling gryphon a hug, and he pats your head as the wagon heads off.</p></p>It takes some time to travel up to Horn, but you don't really mind. You just stare brainlessly at the scenery as it passes by, your attention grabbed by passing bugs or particularly nice-looking rocks. Not a single thought of adventure or exploration flits through your empty skull, only complete contentment.</p>Eventually, you reach the outskirts of a small farm, nestled in at the mountainside. To the north, you can just barely see a black smudge in the mountains that marks out the grand city of Horn. The yak hands you the letter and tells you to walk up to the farm yourself, as he has work to do.</p>You nod obediently, and trudge barefoot up the long road, your tail swishing idly. A few sheep are grazing on the hillside, and the farmhouse is a cozy little cottage with smoke twirling from the chimney. You knock politely, and are answered by a chubby, grumpy-looking old marmot. You hand him the letter, and he reads it and sighs.</p>\"Ah right. Yes...Triangle. Says here I've been looking after you your whole life, eh? Fort owes me for this one.\"</p>He looks you up and down, and finally welcomes you inside.</p>\"Well, alright then. You can call me Sesman, everyone else does. You'll be working hard here. It's a simple life, but I don't complain. Farm work all day, nice hearty meal in the evening, got a place in the barn for ya. If you don't want much, it's all you need.\"</p>You don't want much. You don't think much, either. You just accept everything he tells you, and before long you're barefoot out in the fields, working on the farm and happily doing chores for Sesman.</p>Your life as an adventurer is over. For all anyone knows, you are just an ordinary, nice but slow donkey, working happily on a small farm in an unimportant part of Horn.",
+                "descriptionchange":"You are a dumb, obedient donkey person, with long pointy ears and a big dopey grin.",
+				"area":"sesman_farm",
+				"trapped_desc":"You are just an ordinary, simple farm worker. You are slow, but sweet.",
+                "trapped":"You are just an ordinary, simple farm worker. You are slow, but sweet.",
+				"outcomes":[
+                   {
+                     "parameter":"species",
+                     "quantity":38,
+                     "change":"set"
+                  }
+                ]
+             }
+          }
+       }
+    ],
+    "npcs":[
+       
+    ]
+ }

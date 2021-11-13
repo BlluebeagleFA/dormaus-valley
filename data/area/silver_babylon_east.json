@@ -1,0 +1,80 @@
+{
+   "title":"silver_babylon_east",
+   "mapId":"grancampion.jpg",
+   "position":[
+      0.40,
+      0.04
+   ],
+   "header":"Silver Babylon Pass: East",
+   "subheader":"The view to your west is blocked by the combination of both the brick guard post, and the massive fallen majesty of Silver Babylon, which straddles the mountainside. The twisted and bizarre structure looks completely alien set against the beauty of nature in these peaks.</p>To your east, the mountain pass descends slowly into the countryside of Gran Campion. From here, on a clear enough day, you might even see all the way to the eastern ocean.",
+   "events":[
+      {
+         "id":"leavepass",
+         "title":"Make your way to Gran Campion",
+         "subtitle":"The road down to the east leads out to the fertile Gran Campion peninsula. It might be wise to check your map.",
+         "type":"random",
+         "requirements":[
+            
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"It is a long road to the capital, but every journey starts with a first step. You walk down the road, away from the pass, and the ruins of Silver Babylon shrink into the distance as you make your way.",
+               "area":"traders_road",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },
+      {
+         "id":"gotobabylon",
+         "title":"Examine Silver Babylon",
+         "subtitle":"Some steps have been carved into the side of the rock, leading up to a small flat area closer to the fallen structure. The gryphons look disapprovingly when you approach, but don't make any moves to actually stop you.",
+         "type":"random",
+         "requirements":[
+            
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You walk up the stairs slowly, approaching closer to the enormous fallen titan that is the bizarre tower of Silver Babylon.",
+               "area":"silver_babylon_foot",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },
+      {
+         "id":"escape",
+         "title":"Pay For Passage",
+         "subtitle":"This side of the border pass is technically sovereign territory of Gran Campion. It is an uneasy situation, with the pass itself being manned almost entirely by gryphons, but it is a polite fiction that both countries try to maintain with approximate peace. As part of that polite fiction, passage from this side requires only payment in Gran Campion currency, and is not subject to the gryphon's anti-mage laws.",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"slip",
+               "value":8,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"slip",
+         "results":{
+            "success":{
+               "text":"The guard on this side of the pass is the sole non-gryphon on duty. He is a bored-looking fox wearing the purple uniform of the Gran Campion army. As you approach, he stops you with a raise of his hand.</p>\"Please pay the official bribe before passing through\", he says. You get ready to pay, then realise what he said. You ask if he meant tax, and he smirks a little.</p>\"I can tell you're not a city boy. Official procedure is a border bribe to pass through, it's all documented officially at the capital. Bribes can be reduced by noble exemption, and are increased if you want to smuggle something illegal through. You gotta declare it though. No illegal smuggling without the city getting a cut!\"</p>The culture and norms of Gran Campion are an odd thing. You pay up and pass through, walking past the stern glares of the militaristic and honour-obsessed gryphons on the other side. They make an odd contrast with the scruffy amusement of the fox as he counts your bribe out and pockets some for himself.",
+               "area":"silver_babylon_west",
+               "outcomes":[
+                  {
+                     "parameter":"slip",
+                     "quantity":9,
+                     "change":"sub"
+                  }
+               ]
+            }
+         }
+      }
+   ],
+   "npcs":[
+      
+   ]
+}

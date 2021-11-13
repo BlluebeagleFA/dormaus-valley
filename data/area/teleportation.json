@@ -1,0 +1,122 @@
+{
+    "title":"teleportation",
+    "header":"Teleportation Circle",
+    "nomap":"You are mid-spell. You have to commit to finishing the casting.",
+    "subheader":"You feel the hum of magic all around you, as you enter a warping trance. The world seems both distant and yet close enough that you can touch the farthest reaches of the world with your fingertips.",
+    "events":[
+       {
+          "id":"teledorm",
+          "title":"Teleport to Dormaus",
+          "subtitle":"Use your magic to warp to Dormaus",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"teleportation",
+                "value":0,
+                "comparison":"greater"
+             }
+          ],
+          "icon":"navigateicon",
+          "results":{
+             "success":{
+                "text":"You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+                "area":"dormaus_entrance",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },{
+         "id":"teleotterton",
+         "title":"Teleport to Otterton",
+         "subtitle":"Use your magic to warp to Otterton",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"teleportation",
+               "value":0,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+               "area":"otterton",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },{
+         "id":"telemakarn",
+         "title":"Teleport to Makarna",
+         "subtitle":"Use your magic to warp to Makarna",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"teleportation",
+               "value":0,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+               "area":"makarna_dockyard",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },{
+         "id":"telegc",
+         "title":"Teleport to Gran Campion",
+         "subtitle":"Use your magic to warp to Gran Campion",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"teleportation",
+               "value":0,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You draw magic around you like a cloak, and in an instant you find yourself rushing through the sky to your destination...",
+               "area":"grancampion_market",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },{
+         "id":"telenorth",
+         "title":"Teleport to the North",
+         "subtitle":"Use your magic to warp to the strange voice calling to you in the deep, frozen north",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"teleportation",
+               "value":0,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"You focus on the tug you felt from the north when you were initially learning to teleport. It takes very little effort to find it again, and you are quickly swept away by its call. Called north. Where it fell...",
+               "area":"tundra",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      }
+    ],
+    "npcs":[
+       
+    ]
+ }

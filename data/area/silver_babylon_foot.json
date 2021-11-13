@@ -1,0 +1,88 @@
+{
+    "title":"silver_babylon_foot",
+    "mapId": "grancampion.jpg",
+    "position": [0.80, 0.04],
+    "header":"Foot of Silver Babylon",
+    "subheader":"The fallen structure of the enormous metal tower looms above you. Here, at its base, an area of land has been cleared and smoothed out, forming a sort of historical monument. An extremely old gryphon watches you sternly, his feathers edged with grey and one of his eyes milky-white.",
+    "events":[
+       {
+         "id":"entertower",
+         "title":"Try to enter the tower",
+         "subtitle":"The edge of the tower rises up like a metal wall here. Within reach, you can see what looks like it might be a door, though it is at a horizontal angle. It has no obvious hinge or handle, or any indication at all of how a person would enter.",
+         "type":"random",
+         "requirements":[
+            
+         ],
+         "icon":"default",
+         "results":{
+            "success":{
+               "text":"You look closer at the door, searching for any secret keyholes or buttons, or even a place where you could just get some leverage and force it open. It looks like a doorframe, but the 'door' itself is a solid smooth block of steel.</p>You press your hand against it, and shove firmly, but it does not budge. No attempts to feel for secrets produce any results, either. The old gryphon chuckles behind you.</p>\"Consider yourself lucky, kid. That thing only opens for unicorns, so if you had managed to get it open, I'd have had to shoot ya!\", he says. He pats an ancient crossbow at his side.</p>You take another look at the door, but it reveals no new secrets. As you step away, the old gryphon nods. \"Lucky for us there ain't none left. Emperor Drum saw to 'em all.\"",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },
+	  {
+         "id":"checkmemorial",
+         "title":"Examine the war memorial",
+         "subtitle":"In the middle of the cleared area is a huge stone monument, clearly brought in from elsewhere. Engraved on it are a huge quantity of names.",
+         "type":"random",
+         "requirements":[
+            
+         ],
+         "icon":"default",
+         "results":{
+            "success":{
+               "text":"The memorial is a massive block of black marble, very distinct from the brown and grey stone of the mountains around it. It is smoothed to a mirror finish, and shines so brightly that it is clear it is regularly cleaned and protected.</p>At the base, a number of flowers both old and new are placed, though the most common are delicate pink oleander blossoms. What appears to be stacks of firewood are also placed among the other offerings, oddly enough.</p>In the centre of the monument, an engraved relief shows two gryphon heads in profile, back-to-back. One of them is recognisably Emperor Drum, though younger and arguably more handsome than he is in reality. The other is a young gryphon you do not recognise.</p>The rest of the monument is covered in names, and dates. Most of the names are short and simple, names like \"Red\", and \"Big Brown\". There are also a lot of instrument names, like \"Tuba\" and even several of \"Drum\", perhaps a common name for gryphons. The dates are all from roughly one hundred years ago.</p>Along the bottom of the monument, slightly obscured by the offerings, are a set of words in large letters. \"They were a shield to protect our people. Never to be forgotten.\"",
+               "outcomes":[
+                  
+               ]
+            }
+         }
+      },
+	  {
+          "id":"talkgryph",
+          "title":"Talk to the old gryphon",
+          "subtitle":"Though he has a crossbow at his side, and wears his military uniform with pride, it is fairly obvious that this old gryphon is more of a retired veteran than an active combatant. You get the feeling he would welcome a chat.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "success":{
+                "html":"data/active/OldGryphon.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
+          "id":"relivesb",
+          "title":"A Mirror of History",
+          "subtitle":"Something about the memorial calls to you. You feel howling mountain winds. You hear the creaking of a terrible weapon, lurching across the world...",
+          "type":"random",
+          "requirements":[
+             {
+               "parameter":"mystery_sky",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"beneath",
+          "results":{
+             "success":{
+                "html":"data/active/SilverBabylon.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       }
+    ],
+    "npcs":[
+       
+    ]
+ }
