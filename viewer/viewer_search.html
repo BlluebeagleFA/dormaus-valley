@@ -22,7 +22,7 @@
         <h1>Search results</h1>
         <div id="resultList"></div>
 
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.1"></script>
+        <script src="fuse.js"></script>
         <script src="viewer.js"></script>
         <script src="../data/areas.js"></script>
         <script>
@@ -41,11 +41,17 @@
             DV.Data.areacoordinates.forEach(areaElement => {
                 var areaId = areaElement.title;
                 var areaHeader = areaElement.header;
-                var areaJs = "../" + DV.Data.areas[areaId];
 
                 // Track loads while loading JS
                 leftToLoad++;
-                loadScript(areaJs, function() {
+
+                // Dynamically load JSON file
+                var areaJson = "../" + DV.Data.areas[areaId];
+                const jsonRequest = new XMLHttpRequest();
+                jsonRequest.open("GET", areaJson);
+
+                jsonRequest.onreadystatechange = function() {
+                    const area = JSON.parse(jsonRequest.responseText);
                     leftToLoad--;
 
                     area.events.forEach(event => {
@@ -103,7 +109,9 @@
                         resultListBuffer += "<p>Sorry, your search returned no results. Try something different?</p>";
                     }
                     document.getElementById("resultList").innerHTML = resultListBuffer;
-                });
+                };
+                
+                jsonRequest.send();
             });                
         </script>
     </body>
