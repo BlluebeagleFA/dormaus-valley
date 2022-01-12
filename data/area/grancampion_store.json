@@ -1,7 +1,7 @@
 {
     "title":"grancampion_store",
     "header":"The Grand Market",
-    "nomap":"As an indentured servant, your options for exploration are limited. You'll have to walk on foot.",
+    "nomap":"You have no map of this location.",
     "subheader":"The beginnings of a proper merchant shop is being constructed here. It is crowded with colourful bottles and vials, each releasing its own enticing aroma. Customers come frequently for perfumes and other scents. A small living space occupies the area above the store. [All content here contributed by Reese Ikena]",
     "events":[
        {

@@ -237,6 +237,33 @@
              }
           }
        },
+	   {
+          "id":"makarna_purd",
+          "title":"Purd at Makarna",
+          "subtitle":"Purd is staring at a hookah, and appears to have been doing so for quite some time, to the exasperation of a tall yellow lizard salesman.",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"purd_connection",
+                "value":0,
+                "comparison":"greater"
+             }
+          ],
+          "icon":"purd",
+          "results":{
+             "grizzsex":{
+                "text":"As you approach, Purd looks up and nods at you. The lizard looks at you with a desperate expression and silently mouths \"Can you get rid of him?\"</p></p>Purd cocks his head to one side, making the floppy ears on his hat swing. \"Are we friends, man?\", he says cheerfully. You are slightly confused, but you tell him that yes, you are. He grins widely. \"Cool, man.\"</p></p>He points at the hookah. \"Come over here man. Look at this.\"</p></p>You look down at the polished service of the bronze hookah. Its curves make your reflections distorted like a funhouse mirror. Purd giggles a bit. \"Look man. It looks funny!\"</p></p>The lizard slaps his own face with one palm. \"Enough! That is why you have wasted my time for so long? Away with you, away! I have customers!\"</p></p>Purd frowns for a moment, then shrugs and returns to his usual dopey grin. He saunters down the road, and you follow beside him. Oddly, the more time you spend around Purd, the more you find yourself feeling relaxed and easygoing like him. You barely even notice his smell anymore.</p></p>\"This place is alright, I guess. I do like warm weather, it's real good for laying around. Everyone's kind of...uptight, though?\"</p></p>A line of slaves in chains walks past in the street, pushed along by the slave traders. Purd frowns. \"Yeah. I don't much like that, man. This place is a bummer.\"</p></p>He leads you into an open-air cafe, and orders you both a glass of milk with tapioca pearls. While he sips his, he lifts his paws up under the table and rests them on your lap. You both chat about nothing much for a while, the time idling away. Something about being around Purd just makes it so easy to relax and not think about anything.</p></p>Eventually he heads off into the market, leaving you smiling at your table and thinking of him.",
+                "outcomes":[
+                   {
+                      "parameter":"purd_connection",
+                      "quantity":1,
+                      "change":"add",
+					  "max":2
+                   }
+                ]
+             }
+          }
+       },
        {
           "id":"entrance_random",
           "title":"Watch the customers",

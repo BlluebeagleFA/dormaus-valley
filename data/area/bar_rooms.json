@@ -143,6 +143,28 @@
           }
        },
        {
+          "id":"ace_mistletoe",
+          "title":"Festive Cheer",
+          "subtitle":"The bar is decorated with winter leaves and berries today, and seems busier than usual (Contributed by Chim)",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"ace_missing",
+                "value":1,
+                "comparison":"less"
+             }
+          ],
+          "icon":"aceicon",
+          "results":{
+             "grizzpay":{
+                "text":"As you entered the bar it seemed much more lively than normal. Not only were colorful decorations scattered about the walls and tables but more people were sitting down and drinking or eating. And for once, it wasn't each other that was on the menu. </p></p>Almost enthralled you weaved between tables and people alike as you walked about the bar to the stairs. You wanted a better view, this was a once in a life time opportunity as far as one could tell. And so you ascended the stairs almost carefully, as the railing had a festive decoration that poked your hand now and again. </p></p>Up top everything seemed much more bright and much more crowded. It was a different view from being stuck down amongst everyone, and even the second floor still had a good number of people at tables and playing games. </p></p>And then you spotted a white and tan paw that waved out from a booth. At first who it was had been blocked by other patrons of the bar, but as you got closer you noticed who it was. </p></p>Ace, a decently infamous coyote sat in his booth with his hat over part of his face. For once his legs were not propped on the table and beside him was a deck of cards and in his other hand was a mug. He nodded in your direction with a playful smirk. \"Saw you come in, thought we could talk a bit. Might even give you a present and let you win!\" He said as you got closer. Even from across the table you could tell that he had drank quiet a lot. </p></p>Ace was good at cards, it almost felt like one had to cheat to beat him, though you were sure you could win. So you sat down with a grin and told him to deal them out. Which the coyote happily did, and even decided to increase the stakes. \"Every time you win, I'll get you a drink. And if I win...well it's a time of giving. So I'll give you a break. How about that?\" his voice was smug and cocky, yet it only made you want to play more.</p></p>A few hands were drawn, and every time you won you were given a mug filled to the brim. Each gulp was warm and fuzzy, left you feeling more hazy and tipsy.</p></p>Of course you were not going to let Ace get the one up, despite your current situation. With a sense of pride on the line you drank down every single mug handed to you, even though some of it would spill upon your front as you did. </p></p>Everything was a bit hazy as you played. And surprisingly you won more as you got more and more drunk. If you were sober you might think Ace was cheating in your favor but in your current hazy mind you only enjoyed that rush of pride as you won.</p></p>Then  you picked up the deck to deal. This time YOU would be the dealer. </p></p>The shuffling was sloppy, you took the first few cards and just put them back on top in a disorganized way. The number of cards that were sticking out grew until finally your hand couldn't hold them and they toppled to the floor.</p></p>\"Look at that, go pick em up.\" Ace said with a laugh, as he watched you slowly move about confused. It was a sight to behold.</p></p>As you grabbed the few cards on the seat you noticed some under the table. So you slowly slipped out of your and got on your hands and knees. You could see ace's thick leather boots still strapped tightly to his paws. Even now the scent was fairly strong and stung at your nose. A deep earthly scent. </p></p>Though one boot pressed against the other and a long paw slipped out. It moved forward and pressed down on a card, then you could hear Ace speak. \"Go on, kiss it\", he told you.</p></p>You were confused. \"Why?\", you thought.</p></p>Then as if to answer, the coyote raised his foot up and tapped a little mistletoe with one of his toes. Both you and his paw were right under it. </p></p>\"It's Boreal tradition\" the coyote teased. muffled by the table above you.</p></p>A warm and flustered blush rose to your face. If from how humiliating it was or if you just secretly wanted the coytoes paws, well, you couldn't tell. You leaned forward and pressed your lips against the sweaty sole of the coyote's paw. It was toasty, and right from the boot. Bits of salty sweat pressed against your lips and over your face. </p></p>And your nose was right there against the soft and supple sole, where the scent was even stronger. That strong manly scent filled your nose and clouded your mind much more than the drinks you had ever could. </p></p>Then you felt a weight upon your back; Ace's booted foot. And you heard him talk.</p></p>\"Told you i would give you a break. You can relax down there as my foot stool for the night! I might let you back out, after you're done kissing my paw\", he said with a laugh. </p></p>The weight was too much to move about, you were stuck until the coyote let you out.... or until he took you with him.",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
           "id":"ace_piss",
           "title":"Ace's Piss",
           "subtitle":"Ace keeps glancing towards the bathroom.",

@@ -1,0 +1,450 @@
+{
+    "title":"makarna_desertgarden",
+    "nomap":"You have no map of this vast, dangerous land.",
+    "header":"The Gardens of Rajua",
+    "subheader":"The Gardens of Rajua stand tall and proud in the massive desert expanse. A giant golden sun stands at the top, always seeming to perfectly reflect the real sun’s rays directly at you. Down the tower, small waterfalls flow into little, crafted rivers, irrigating the vast array of flora. Flowers and vines and trees and bushes, all flourishing. Beautifully arranged gardens stretch from the main structure, out to white marble wall marking the edges. </p>The interior is minimalistic but beautiful, lined with gold and smooth stone. The very center features an obelisk. Looking the room over, you realize it is a sundial, with marks on the floor to indicate the time and the season. Many different people of various species and backgrounds mill about the gigantic structure, coexisting in harmony. (Gardens of Rajua and content contributed by Reese Ikena)",
+    "events":[
+       {
+          "id":"entrance_random",
+          "title":"Explore the Gardens",
+          "subtitle":"The Gardens of Rajua are peaceful and abound with interesting characters to interact with. It may prove beneficial to explore them.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "reluctant_horse":{
+                "text":"Sitting on a small bench beneath a fruit tree you find a lioness. Her body is scratched with scars, and her legs are covered in bandages. She recoils slightly when you sit next to her, but after a little small talk, she eases. You explain how you came to the Gardens, and the lioness looks away. After a pause, she says, “I was part of King Leonar’s harem.”</p>You stay silent for a bit, not wanting to push the subject. Eventually she speaks again. “One of the guards, he brought me back to my senses, got me out. But out on the streets, they targeted me, like predators to prey. I… I had to run, anywhere. It was strange, but after a day in the desert, it was as if the Gardens found me. Like they called to me. The followers helped me care for my wounds. They, and this place, they saved me.”</p>She pauses once more, but after a few minutes, she takes your hand and places something in it. “Thank you... for listening. It’s nice to be heard.”",
+                "outcomes":[
+                   {
+                      "parameter":"watervine_1",
+                      "quantity":5,
+                      "change":"add"
+                   }
+                ]
+             },
+             "ap_carpenter":{
+                "text":"You find a group of people chatting in one of the clearings. They clearly come from different places, one wearing armor, another a long robe, some barely covering themselves at all. You find an open spot and sit. The shrew to your left immediately welcomes you and exchanges names. The members of the circle are sharing folk stories from their homelands. One silver fox weaves a tale of three noble pirates who attacked the merchant ships of Gran Campion, stealing their goods and secretly bringing them to the children of the slums. A cardinal offers the history of a hero named Exaris, who fought the great beast of the forest to save the little treetop villages of the avians.</p>Eventually, all eyes turn to you. You hesitate before sharing a story about a mysterious winged stranger who comes to those in need right before they meet their sticky ends, his magic able to free them from any fate. The crowd listens intently until you finish. After a few others speak, everyone disperses, but before you leave, the shrew hands you something, saying, “I loved your story, by the way. Enjoy the Gardens.”",
+                "outcomes":[
+                   {
+                      "parameter":"watervine_1",
+                      "quantity":5,
+                      "change":"add"
+                   }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"replensupplies",
+          "title":"Replenish Your Supplies",
+          "subtitle":"Thankfully, the Gardens of Rajua are bountiful with fruit and water. It may be wise to stop and restock on supplies before you trek through the desert any more.",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"desert_supplies",
+                "value":6,
+                "comparison":"less"
+             }
+          ],
+          "icon":"default",
+          "results":{
+             "reluctant_horse":{
+                "text":"You gather up some supplies and soothe your pains at the gardens.",
+                "outcomes":[
+                   {
+                      "parameter":"desert_supplies",
+                      "quantity":6,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"pain",
+                      "quantity":0,
+                      "change":"set"
+                   }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"artistgarden",
+          "title":"The Skilled Sculptor",
+          "subtitle":"In the northern quadrant of the Gardens, you discover a huge group of topiaries. Someone has been busy sculpting amazing depictions of people and animals. You’d love to meet the creator of these masterpieces. Perhaps they’re nearby?",
+          "type":"random",
+          "requirements":[
+             {
+               "parameter":"species",
+               "value":69,
+               "comparison":"nequal"
+            }
+          ],
+          "icon":"inanimatefetish",
+          "results":{
+             "fail":{
+                "text":"As you admire one of the beautiful shrub sculptures, a high pitched voice behind you squeaks, “Were you sent to help me with my next topiary?” You turn to find a rather short and pudgy boar wearing a beret and big, round glasses. He straightens his suit jacket and eyes you carefully. “Hmm, rather weak for my liking, but you’ll do just fine. Come, come!” He gestures for you to follow as he waddles through the garden.</p>As the two of you stroll between the bushes, the boar points out every topiary you pass, naming it and giving a brief description of its meaning. Finally, he leads you to a small metal table and chairs, inviting you to sit. He pours you a cup of tea as he continues to exposit. “So wondrful, having the Gardens of Rajua as a sponsor to my art! Not that they pay me, of course, but it’s far better than being kicked out of your home! Thirty-five years, I lived there! But now the Gardens are my personal exhibit.”</p>He pushes the now full cup of tea to you. “Drink up, drink up!” he commands. You decide it’s best not to rile up the little boar, taking a sip. To your surprise, it’s sweet and delectable. You very quickly finish the entire cup, licking your lips to get that last taste. “Good, yes,” the boar interrupts, hopping out of his chair and indicating for you to do the same. “Now, quickly! This way! I will show you how I make a topiary.”</p>Once again, you follow the boar through the maze of bushes and shrubs. If it weren’t for the golden sun of the tower above, it would be easy to get lost. The boar continues to ramble on about this and that, but you hardly pay attention. Annoyingly, you’ve developed an itch on your arms and legs. You scratch to relieve it, but that merely cause you to rash. Suddnly, the boar stops, causing you to almost knock him over. “Here we are!” he declares. “Right there, yes YOU, right there!” The boar does his best to shove you into the small area of unoccupied grass. It strikes you as strange. Don’t you need a bush to make a topiary?</p>The boar straightens his beret and cleans his glasses. “Now, those clothes simply won’t do,” he mutters. Before you can complain, he reveals a pair of garden shears and cuts right through all your garments. You’re about to yell at him, but when you raise a hand, something’s wrong. Where your forearm and palm and fingers should be, there’s a mess of branches and green leaves. What’s worse, it’s happened to your other arm and your legs. “Calm now,” says the boar, “stay still so I don’t mess up.” He begins taking his shears to your growing twigs and loose leaves, shaping your extremities to be perfectly round and orderly. </p>Meanwhile, the rest of your body is changing. It isn’t long before you feel all your bodily functions disappearing; no lungs to breathe, no heart to beat, and shortly thereafter, nothing downstairs either. The branches and leaves climb up your neck and slowly overtake your head, your vision distorting, making one mangled cry before your voice goes out. The boar continues to shape you, giving you digitigrade legs, a curled tail, a puffy chest, and big paws. For your face, he leaves you a long muzzle and perky ears, with plenty of neck fluff. Soon, his work is complete. The boar steps back and smiles. “Another perfect work of art! How lucky for me the followers approve of my work! It doesn’t matter what form life takes as long as it’s preserved!”</p>Then, the boar leaves you, trotting back to the entrance of the garden. You wish you could whimper, to be noticed, but you are left rooted to the ground, just one topiary of many.",
+                "trapped_desc":"You are a topiary, rooted to the ground and made of leaves.",
+                "trapped":"You are a topiary, rooted to the ground and made of leaves.",
+                "outcomes":[
+                   {
+                      "parameter":"trapped",
+                      "quantity":45,
+                      "change":"set"
+                   }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"freehedge",
+          "title":"Break Free",
+          "subtitle":"You can’t live the rest of your life as a topiary! There may still be a way out of this!",
+          "trapped":true,
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"trapped",
+                "value":45,
+                "comparison":"equal"
+             }
+          ],
+          "icon":"inanimatefetish",
+          "results":{
+             "pumpkin_1":{
+                "text":"Some part of you is boldened, filled with an unstoppable urge not to succumb to your existence as mere flora. You try to move, and to your surprise, your arms shake slightly. You try again, this time managing to wag your tail. Another attempt, and you can move your head. Yet, you’re still stuck in place thanks to your roots. Try as you might, you can’t budge your feet from the ground. Being able to move is pointless if you can’t leave this one spot.</p>That’s when you notice it – a pair of garden shears on the grass just a few feet from you. You creak into motion, forcing your hips and knees to obey you. Stretching out until finally… you grab them! Quickly, you fumble with the shears and snip at the roots tying you down. It hurts like a knife to skin, but with a little effort, you’re free. Now, you just need to make sure that boar doesn’t see you escaping!",
+                "descriptionchange":"You are a walking, talking, sculpted bush made of thin branches and green leaves, vaguely designed to look like a canine.",
+				"freeTrap":true,
+				"outcomes":[
+                   {
+                      "parameter":"species",
+                      "quantity":69,
+                      "change":"set"
+                   }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"stayhedge",
+          "title":"Soak in the Sun",
+          "subtitle":"Maybe it’s easier to be a topiary; no responsibilities or cares. Why not give in?",
+          "trapped":true,
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"trapped",
+                "value":45,
+                "comparison":"equal"
+             }
+          ],
+          "icon":"inanimatefetish",
+          "results":{
+             "pumpkin_1":{
+                "text":"Your consciousness is slowly fading, but you don’t mind. Being a thinking person is hard work anyway. Life as a bush, a simple topiary, wouldn’t it be so much easier? Every thought of that nature that crosses your mind slowly thickens and extends your roots, makes it tougher to move. But in some ways, it’s nice, knowing you’ll be a beautiful decoration in this garden, part of the wonderful Gardens of Rajua. </p>With the last ounce of sentience you have left, you shift to a more interesting pose, lifting one paw and one leg, curling your tail more. It’s important for a topiary to look good. Then, that last thought is gone, just another plant in the garden, soaking up the bright sunlight in peace.",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
+         "id":"horsatyr_tf",
+         "title":"A Meadow of Flowers",
+         "subtitle":"Southwest of the tower, a small field of colorful flowers awaits you. Their scent hangs in the air, sweet and refreshing. It might be nice to check out the flowers while the area is still empty of travelers.",
+         "type":"random",
+         "requirements":[
+            {
+               "parameter":"species",
+               "value":70,
+               "comparison":"nequal"
+            }
+         ],
+         "icon":"tffetish",
+         "results":{
+            "grizzsex":{
+               "text":"Stepping down into the meadow, you are overwhelmed by the multitude of aromas drifting on the breeze. You squat down to properly smell the flowers, but you also admire their beauty. So many pretty shades of red, pink, orange, yellow, and gorgeous varieties of greens, blues, purples. There are even exquisite white and deep black flowers mixed in. It’s as if every bud across the entire world has been gathered in this one garden.</p></p>You look to make sure no one’s watching, then pick one vibrant flower, colored rose with white stripes. The fragile petals and delicate, patterned shape, the little dusting of pollen, the bright green stem; everything entrances you. You bring it to your nose and take a deep breath. Oh, how amazing it is! Like strawberries and petrichor, with a hint of vanilla. The perfect blend. You’re so enamored with the scent, you don’t notice the adorable pink button nose that’s stretching away from your face. Another deep whiff and your new muzzle grows soft pink and white fur.</p></p>But this one flower isn’t enough to satiate your senses. You reach for another one, this time a spiraling gold, scented strongly of jasmine and pineapple. Little do you know your ears have gone to the top of your head, a bright sunshine yellow. Every minute or so you pluck a new flower from the bunch, stuffing your snout in it and inhaling, and with each new aroma, more of your body is covered in soft fur matching the flower you smell. </p></p>Eventually, as you take a deep breath of a deep blue and turquoise, many-petaled flower, you become aware of your changes. A big, bushy tail pushes out your spine, waving in the gentle breeze. You grab it and bring it around to your front, admiring its soft texture with your newly grown paw pads. Then, simply out of interest, you bring it up to your nose. A hypnotic mix of every flower you’ve smelled, the scent of strawberry, jasmine, lemon, peach, fresh rain, mown grass, and more; it all rushes into your sinuses. And these scents aren’t just coming from the flowers. Now, they’re coming from you. It’s irresistible, hugging your big tail and taking deep breaths over every inch, trying to find another wonderful smell. The changes begin to reach their conclusion with fur covering your bottom half and adorning your feet with soft pads. Finally, as you continue to bury your face into your tail, colorful and freshly scented flowers bloom from your fur, by your ears, around your neck, along your back and legs, even scatter across your bushy tail.</p></p>You rise from the meadow, admiring yourself and your beautiful scents. So lovely… you simply must share! Surely everyone would love to smell your scents too.",
+               "descriptionchange":"You are a soft-furred skunk colored like a beautiful rainbow. The flowers that cover your big, bushy tail smell irresistible.",
+               "outcomes":[
+                  {
+                     "parameter":"species",
+                     "quantity":70,
+                     "change":"set"
+                  }
+               ]
+            }
+         }
+      },
+	   {
+         "id":"W_careful",
+         "title":"Cross the Savannah Carefully",
+         "subtitle":"If you use extra supplies and take it slow, you can travel through the desert with a minimum of danger.",
+         "type":"statcheck",
+         "stat":"might",
+         "difficulty":30,
+         "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":2,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"Makarna is a vast country, and one that has claimed the lives of many foolhardy adventurers who underestimated its dangers. You wisely decide to take it slow, and begin your travels across the dunes and plains.</p></p>When the sun reaches its zenith, and the heat is too great, you take shelter in what little shade you can find, and ration your water carefully. You move on only when the heat's edge dulls. Your feet slip on sandy dunes, and sweat soaks your clothes, but you make good progress.",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "area":"makarna_DESERT_A3",
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":3,
+                     "change":"sub"
+                  }
+               ]
+            },
+			"rareSuccess":{
+               "text":"Makarna is a vast country, and one that has claimed the lives of many foolhardy adventurers who underestimated its dangers. You wisely decide to take it slow, and begin your travels across the dunes and plains.</p></p>You make great progress. You ration your water carefully, and find that you are surprisingly adept at walking over sandy dunes and through arid, cracked land. The sun slowly lowers in the sky, and the purple of night washes above you as the last of the daylight fades.</p></p>Stars twinkle above you, countless gleaming diamonds in a seemingly endless expanse of velvet black. The sky extended from horizon to horizon, unbroken and infinite. The vastness of it in the dark desert is beautiful, and strange. Your mind wants to expand, to fill the endless space.</p></p>You carry on your journey, but feel oddly changed by your experience.",
+               "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":2,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"might",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"magic",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"charm",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"stealth",
+                     "quantity":2,
+                     "change":"add"
+                  }
+               ]
+            },
+            "fail":{
+               "text":"Makarna is a vast and dangerous country. You don't want to take chances, so you take it slow. You travel only when the heat isn't too unbearable, and you drink your water supplies liberally.</p></p>However, even taking it slow is difficult. You may have underestimated just how harsh Makarna really is. Your skin burns from the heat, and your mouth feels dry and parched. Your legs ache from slipping and sliding on the sandy dunes. You can't possibly keep this up for long.",
+               "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":3,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":1,
+                     "change":"add"
+                  }
+               ]
+            },
+			"rareFail":{
+               "text":"Makarna is a vast and dangerous country. You don't want to take chances, so you take it slow. You travel only when the heat isn't too unbearable, and you drink your water supplies liberally.</p></p>Perhaps a little too liberally, as it turns out. The unbearable heat is making you desperate to chug down more and more. You find yourself taking breaks, setting up camp over and over after barely making any progress, just for an excuse to have some shade.</p></p>Perhaps Makarnan travel is not for you. To your dismay, you feel exhausted and battered, and you've blown through an unreasonable amount of your supplies.",
+               "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":5,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":2,
+                     "change":"add"
+                  }
+               ]
+            }
+         }
+      },
+	  {
+         "id":"W_fast",
+         "title":"Cross the Savannah Rapidly",
+         "subtitle":"You can save supplies if you are confident in your skills.",
+         "type":"statcheck",
+         "stat":"might",
+         "difficulty":50,
+         "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":1,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"Makarna is a dangerous country, but you are an experienced traveller. If you ration your water very carefully, and use your knowledge of the land well, you can save your supplies and reach your destination in a much shorter time.</p></p>You move with the wind, and keep a weather eye on the sky. You detect sandstorms long before they reach you, and are able to find shelter from them. You scavenge small plants, find easier paths between dunes, and at one point even walk beneath the shadow of a small cloud for over a mile before it disappears.</p></p>You are tired and your muscles are sore when you reach your destination, but you know you could do this again. You truly are an experienced adventurer.",
+               "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":2,
+                     "change":"sub"
+                  }
+               ]
+            },
+			"rareSuccess":{
+               "text":"Makarna is a dangerous country, but you are an experienced traveller. If you ration your water very carefully, and use your knowledge of the land well, you can save your supplies and reach your destination in a much shorter time.</p></p>You move with the wind, and keep a weather eye on the sky. You detect sandstorms long before they reach you, and are able to find shelter from them. You scavenge small plants, find easier paths between dunes, and at one point even walk beneath the shadow of a small cloud for over a mile before it disappears.</p></p>In fact, you don't even feel sore, or tired. You feel like you could wander through the desert like this forever. Like this is where you were meant to be. You climb to the top of a dune, and look out across the desert, seeing it stretch from horizon to horizon. An infinity of heat and dust, your kingdom, your territory.</p></p>Something inside you feels hot and intense. You shudder, stretching up and feeling the sun bear down on you. Why do you even need clothes? You are better off without them.</p></p>You pull off your shirt and pants, tossing aside your protection from the sun. As you do, you notice your body seems bigger, stronger. Not so much bulging with muscle, but lean and powerful, like a predator.</p></p>You flex your hands, and notice your palms are thicker and rounder than before. Dark brown pads cover them, and when you lift your feet, you notice you have them there too. Oddly, this doesn't seem unnatural. It just makes it easier to walk on the hot sand.</p></p>You leap down from the dune, before landing on all fours and bounding across the desert. Running like this feels freeing, natural. Your muscles bulge and heave, sweat drips down your flanks. As you run, your spine begins to change, stretching out and growing. It thickens into a long tail behind you, the weight of it making it easier for you to run, to glide across the sand. At the end of your thick, muscular tail, sharp fins stretch out, capable of cutting through solid rock. A think layer of brown-grey fur begins to cover your naked body, reflecting the heat and making you feel even more at home.</p></p>You snort, your head feeling larger, heavier, but your mind feeling oddly small. When you open your mouth, it stretches into a muzzle, revealing massive fangs. You shake your head, and the weight grows heavier, as thick horns push forward from your temples, and curve up in front of you. A thick mohawk of tough fur bristles from your head and down your powerful neck.</p></p>Yes, you are a true beast of the desert. The heat and sand is no danger to you. You are a danger to everything else!</p>",
+               "descriptionchange":"You are a behemoth, a rare and dangerous desert-dwelling predator. You are huge, covered in short fur and capable of walking on four paws or on your hind legs. You have a large lionlike face, two ox-like horns, and a thick muscular tail tipped by two razor-sharp fins.",
+			   "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"might",
+                     "quantity":10,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"magic",
+                     "quantity":10,
+                     "change":"sub"
+                  },
+				  {
+                      "parameter":"species",
+                      "quantity":68,
+                      "change":"set"
+                  }
+               ]
+            },
+            "fail":{
+               "text":"Makarna is dangerous, but surely so are you? You are confident enough in your skills that you see no need to overuse your supplies and waste time and money.</p></p>You set off across the dunes, making good progress at first. You push yourself hard, at one point sliding down a long dune and laughing at the progress you're making.</p></p>Your confidence is unearned, however. Your weather luck turns, and you don't see the mist-like cloud in the distance until it is already upon you. You are caught in a sandstorm, and it rages around you.</p></p>The sand that seemed so soft under your feet is now like blades across your skin. You cannot see, and you are parched, pained and exhausted. You struggle to find shelter, and barely manage to wedge yourself in the lee of a rock before you are totally overwhelmed.</p></p>When the storm passes, you are forced to patch yourself up and use up much of your supplies to get yourself back in travelling shape. Perhaps you overestimated your own skills.",
+               "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":4,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":3,
+                     "change":"add"
+                  }
+               ]
+            },
+			"rareFail":{
+               "text":"Makarna is dangerous, but surely so are you? You are confident enough in your skills that you see no need to overuse your supplies and waste time and money.</p></p>You set off across the dunes, making good progress at first. You push yourself hard, at one point sliding down a long dune and laughing at the progress you're making.</p></p>Your confidence is unearned, however. Your weather luck turns, and you don't see the mist-like cloud in the distance until it is already upon you. You are caught in a sandstorm, and it rages around you.</p></p>The sand that seemed so soft under your feet is now like blades across your skin. You cannot see, and you are parched, pained and exhausted. You struggle through the storm, desperately seeking shelter or escape, but find none.</p></p>You bump into something, and try desperately with your stinging eyes to see what it is. A tall, imposing shadow looms over you. Red eyes gleam in the storm. The whirling sands abate slightly, as something wraps a pair of enormous arms around you.</p></p>You are able to look up, and see a bizarre creature. It is made of craggy red stone, very loosely in a humanoid shape. It is mostly just a huge boulder, with stubby clawed feet and a pair of massive arms that rumble and thump as they move.</p></p>Its eyes are two red gems, embedded in the stone. Sand tumbles from its surface as it stares at you.</p></p>\"Give...me...\"</p></p>You feel weak all over, your body aching as the eyes glow. Your supplies and treasure fall from your hands, as you fall forward onto your knees.</p></p>\"Give...life...\"</p></p>Your hands hit the sand, and your body feels numb, and heavy. You feel stiff all over, barely able to move a muscle. Weight presses down on you, making your hands and knees sink into the shifting sand.</p></p>Your skin starts to harden, growing rough and firm. It becomes craggy and rocky, all colour in your body being replaced by the orange-yellow of sandstone. Your hands fuse into lumps of rock, your insides seize up and petrify into stone. Finally, the features on your head fade over, your whole body becoming a lump of messy, weathered stone, indistinguishable from any other normal boulder in the desert.</p></p>The sandstorm slowly fades, and the rocky creature's eyes seem brighter and more alert. It lurches off into the desert, leaving nothing but stones where you used to be.",
+               "trapped_desc":"You are nothing but ordinary desert rocks, a lump of boulders half-sunken in the sand.",
+               "trapped":"You are nothing but ordinary desert rocks, a lump of boulders half-sunken in the sand.",
+			   "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":0,
+                     "change":"set"
+                  },
+				  {
+                     "parameter":"desert_treasure",
+                     "quantity":0,
+                     "change":"set"
+                  },
+				  {
+                      "parameter":"trapped",
+                      "quantity":35,
+                      "change":"set"
+                   }
+               ]
+            }
+         }
+      },
+	  {
+          "id":"W_saurus",
+          "title":"Ride Your Saurus",
+          "subtitle":"You'll barely need any supplies with a saurus to do the difficult parts.",
+          "type":"random",
+          "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":0,
+               "comparison":"greater"
+            },
+			{
+               "parameter":"saurus",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"navigateicon",
+          "results":{
+             "success":{
+                "text":"You pat your saurus, and he snorts at you. He lowers his head, and you hop on top of him. After a moment to get your bearings, he trots off across the sand at a gallop.</p></p>The desert speeds past you as your mount crunches forward, his powerful leg eating up distances in mere minutes that would have taken you hours. The only downside is that the jostling and bumping of his stride is causing no small amount of discomfort in your hindquarters.</p></p>You reach your destination in no time at all, and reward your saurus with some food and water.",
+                "area":"makarna_DESERT_A3",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+                "outcomes":[
+                   {
+                     "parameter":"desert_supplies",
+                     "quantity":1,
+                     "change":"sub"
+                  }
+                ]
+             }
+          }
+       }
+    ],
+    "npcs":[
+       {
+          "id":"rajua",
+          "name":"Guardian of Rajua",
+          "description":"The Guardian of Rajua is a large scarab-like creature, standing alert with her staff in hand… or perhaps hands. She radiates an odd aura of both danger and comfort.",
+          "icon":"rajua",
+          "shop":{
+             "trades":[
+				
+			 ],
+             "buys":[
+                
+             ],
+             "sells":[
+				
+             ]
+          },
+          "dialogue":[
+             {
+                "input":"What is your name?",
+                "output":"“Those who devote themselves to Rajua cast aside their names. You may refer to me as Guardian, if you wish.”"
+             },
+             {
+                "input":"What is your job?",
+                "output":"“It is my holy duty to guard the Gardens of Rajua, Sanctum of Life and Haven from Death. Rest assured that no outside harm will befall you here.”"
+             },
+             {
+                "input":"See you later.",
+                "output":"“May Rajua illuminate your path, traveler.”"
+             },
+			 {
+                "input":"Can you tell me about Rajua?",
+                "output":"“Of course, traveler. Rajua is our protector and creator. She pushes the sun across the sky every morning to bring us life. Its warmth and light allow the plants to grow and thrive, allows creatures to consume those plants to survive, and allows other creatures to consume them. We are all children of Rajua, whether we choose to worship her or not. One day, when your time on this land comes to an end, you will return to Rajua, to help bring life to the next generation.”"
+             },
+			 {
+                "input":"What does it mean to follow Rajua's teachings?",
+                "output":"“Rajua shows us that above all, life is most sacred. While we cannot hope to protect all life, as death is often part of the natural cycle of the world, we can do what little we are able to help those in need.”"
+             },
+			 {
+                "input":"What are these gardens?",
+                "output":"“So this is your first time in the Gardens of Rajua? Welcome. The Gardens were constructed as a shrine to Rajua many years ago, by another follower of Rajua. The light Rajua brings allows the Gardens to grow. Over time, the shrine has become a haven, as neighboring Makarna and the various peoples of the desert have forced many refugees out of their communities. We followers of the Gardens know Rajua wants us to care for these outcasts, and so we do. Food is abundant and ever growing here. However.. ”</p>“However?”</p>“Yes… while many of the followers refuse to notice, some of us realize the frightening truth.  The Gardens of Rajua, while plentiful, cannot sustain a group much larger than this. We fear that we will be left with few options if the turmoil of neighboring nations does not calm itself. The Gardens may have to be closed off; an act unbefitting of followers of Rajua. We pray this will not come to pass.”"
+             },
+             {
+                "input":"Can I see your feet?",
+                "output":"\"...\""
+             }
+          ]
+       }
+    ]
+ }

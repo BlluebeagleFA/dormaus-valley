@@ -25,27 +25,27 @@ DV.Data.item_data = {
     },
 	abernathy_connection: {
         type: "attribute",
-        icon: "default",
+        icon: "abernathy",
         title: "Abernathy [Friend]",
         description: ["You are cultivating friends in high places."]
     },
     reputation_actaeon: {
         type: "attribute",
-        icon: "default",
+        icon: "actaeon",
         title: "House Actaeon [Reputation]",
         description: ["You are cultivating a reputation as reliable with House Actaeon, the noble house of hooves."]
     },
 	reputation_alabaster: {
         type: "attribute",
-        icon: "default",
+        icon: "alabaster",
         title: "House Alabaster [Reputation]",
         description: ["You are cultivating a reputation as reliable with House Alabaster, the noble house of pale fur."]
     },
     reputation_striate: {
         type: "attribute",
-        icon: "default",
-        title: "House Striate [Reputation]",
-        description: ["You are cultivating a reputation as reliable with House Striate, the noble house of stripes."]
+        icon: "alba",
+        title: "House Alba [Reputation]",
+        description: ["You are cultivating a reputation as reliable with House Alba, the noble house of stripes."]
     },
     ace_missing: {
         max: 1,
@@ -75,6 +75,18 @@ DV.Data.item_data = {
         icon: "grizzicong",
         title: "Grizz [Friend]",
         description: ["Grizz is fond of you."]
+    },
+	purd_connection: {
+        type: "attribute",
+        icon: "purd",
+        title: "Purd [Friend]",
+        description: ["You have met a slow-witted cat named Purd."]
+    },
+	purd_self: {
+        type: "attribute",
+        icon: "purd",
+        title: "Purd",
+        description: ["You are Purd, a slow-witted cat from the Tower Spiral who has a difficult-to-control cloning power."]
     },
     doom_connection: {
         type: "attribute",
@@ -310,6 +322,18 @@ DV.Data.item_data = {
 			//32: in the army
 			//33: mikhail's dick
 			//34: shadow
+			//35: desert rock
+			//36: elephant cum
+			//37: elephant buttplug
+			//38: elephant cocksleeve
+			//39: genie cock
+			//40: genie slave
+			//41: genie shadow
+			//42: genie paw
+			//43: genie ring
+			//44: jackal slave
+			//45: topiary
+			//46: camel
         ]
     },
     species: {
@@ -384,6 +408,11 @@ DV.Data.item_data = {
             "You have turned into a plant-based creature designed to sniff and hunt down prey.", //65
             "You are a magnificent and mystical white-furred kitsune.", //66
             "You are a smooth and agile orca.", //67
+			"You are a mighty desert behemoth.", //68
+			"You are a walking, talking, sculpted bush made of thin branches and green leaves, vaguely designed to look like a canine.", //69
+			"You are a soft-furred skunk colored like a beautiful rainbow. The flowers that cover your big, bushy tail smell irresistible.", //70
+			"You are a spotted hyena.", //71
+			"You are a short, fluffy bunny rabbit.", //72
             ]
     },
     gender: {
@@ -518,6 +547,12 @@ DV.Data.item_data = {
         title: "Magician",
         description: ["You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username)",
             "You can cast spells using the multiplayer chat menu. Befox (/fox username), Berabbit (/rabbit username), Vore (/vore username)"]
+    },
+	spiritguide: {
+        type: "attribute",
+        icon: "thevoid",
+        title: "Spirit Guide?",
+        description: ["You are carrying around a hyena spirit curse."]
     },
     oldcurse: {
         type: "attribute",
@@ -711,6 +746,48 @@ DV.Data.item_data = {
         title: "Bloodstone",
         value: 100,
         description: ["A rare, smooth gem. It is dark in colour, but shot through with glistening red veins. It forms only in areas of deep magical concentration."]
+    },
+	desert_supplies: {
+        type: "item",
+        icon: "supplies",
+        title: "Desert Supplies",
+        value: 10,
+        description: ["Water, food and camping supplies, for adventurers braving the Makarnan wilds."]
+    },
+	desert_treasure: {
+        type: "item",
+        icon: "loot",
+        title: "Desert Treasure",
+        value: 60,
+        description: ["Various goods and treasures obtained from your travels in the Makarnan wilds."]
+    },
+	canteen_empty: {
+        type: "item",
+        icon: "canteen",
+        title: "Canteen (Empty)",
+        value: 50,
+        description: ["A canteen for holding water. It is empty."]
+    },
+	canteen_full: {
+        type: "item",
+        icon: "canteen",
+        title: "Canteen (Full)",
+        value: 50,
+        description: ["A heavy canteen filled with refreshing water."]
+    },
+	backpack_empty: {
+        type: "item",
+        icon: "backpack",
+        title: "Backpack (Empty)",
+        value: 100,
+        description: ["A heavy-duty backpack, ideal for filling with treasure."]
+    },
+	backpack_full: {
+        type: "item",
+        icon: "backpack",
+        title: "Backpack (full)",
+        value: 100,
+        description: ["A heavy-duty backpack, filled to bursting with loot."]
     },
     supplies: {
         type: "item",
@@ -939,6 +1016,17 @@ DV.Data.item_data = {
         },
         description: ["This big floppy hat is incredibly expensive. People tend to react favourably to people wearing expensive hats."]
     },
+	desert_helm: {
+        type: "item",
+        icon: "magichelm",
+        title: "Desert Helmet",
+        value: 1000,
+        slot: "head",
+        attributes: {
+            might: 6
+        },
+        description: ["An odd pith helmet, supposedly to assist with desert exploration."]
+    },
     iron_helm: {
         type: "item",
         icon: "magichelm",
@@ -949,6 +1037,18 @@ DV.Data.item_data = {
             might: 2
         },
         description: ["This is one of the helmets that used to be given to captains in the military of the Dormaus kingdom. It is very high quality."]
+    },
+	purdhat: {
+        type: "item",
+        icon: "purdhat",
+        title: "Purd's Hat",
+        value: 500,
+        slot: "head",
+        attributes: {
+            magic: -20,
+			charm: 5
+        },
+        description: ["Your hat was made for you by your dad, The Archivist. It seals some of your more powerful abilities, and is very jaunty."]
     },
     silver_key: {
         type: "item",
@@ -1177,7 +1277,29 @@ DV.Data.item_data = {
         },
         description: ["A formerly mighty black stallion, bulging with muscle but still only a shadow of his formerly dominant self."]
     },
-    slavetiger: {
+    saurus: {
+        type: "item",
+        icon: "saurus",
+        title: "Saurus",
+        value: 1000,
+        slot: "ally",
+        attributes: {
+            might: 3
+        },
+        description: ["Your saurus is a large bipedal lizard. Its purple skin is smooth and firm, and its legs are enormous and muscular. Wide-splayed toes allow it to walk over the sand, and it's strong enough for you to ride on its back, using its large horn as a handle."]
+    },
+	tarragon: {
+        type: "item",
+        icon: "tarragon",
+        title: "Tarragon",
+        value: 50,
+        slot: "ally",
+        attributes: {
+            charm: 1
+        },
+        description: ["Tarragon is your 'dragon' master. In truth he's just a normal tiny lizard who likes to sit on your shoulder, and order you around."]
+    },
+	slavetiger: {
         type: "item",
         icon: "slavetiger",
         title: "Tiger Slave",

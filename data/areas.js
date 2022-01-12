@@ -94,6 +94,27 @@ DV.Data.areas = {
 	"makarna_market": "./data/area/makarna_market.json",
 	"makarna_silk_market": "./data/area/makarna_silk_market.json",
 	"makarna_dockyard": "./data/area/makarna_dockyard.json",
+	"makarna_sauruslot": "./data/area/makarna_sauruslot.json",
+	"makarna_desertgarden": "./data/area/makarna_desertgarden.json",
+	"makarna_DESERT_A1": "./data/area/makarna_DESERT_A1.json",
+	"makarna_DESERT_B1": "./data/area/makarna_DESERT_B1.json",
+	"makarna_DESERT_C1": "./data/area/makarna_DESERT_C1.json",
+	"makarna_DESERT_D1": "./data/area/makarna_DESERT_D1.json",
+	"makarna_DESERT_E1": "./data/area/makarna_DESERT_E1.json",
+	"makarna_DESERT_A2": "./data/area/makarna_DESERT_A2.json",
+	"makarna_DESERT_B2": "./data/area/makarna_DESERT_B2.json",
+	"makarna_DESERT_C2": "./data/area/makarna_DESERT_C2.json",
+	"makarna_DESERT_D2": "./data/area/makarna_DESERT_D2.json",
+	"makarna_DESERT_E2": "./data/area/makarna_DESERT_E2.json",
+	"makarna_DESERT_A3": "./data/area/makarna_DESERT_A3.json",
+	"makarna_DESERT_B3": "./data/area/makarna_DESERT_B3.json",
+	"makarna_DESERT_C3": "./data/area/makarna_DESERT_C3.json",
+	"makarna_DESERT_D3": "./data/area/makarna_DESERT_D3.json",
+	"makarna_DESERT_E3": "./data/area/makarna_DESERT_E3.json",
+	"makarna_DESERT_RUINS": "./data/area/makarna_DESERT_RUINS.json",
+	"makarna_DESERT_PREDATOR": "./data/area/makarna_DESERT_PREDATOR.json",
+	"makarna_DESERT_SHIPWRECK": "./data/area/makarna_DESERT_SHIPWRECK.json",
+	"makarna_DESERT_OASIS": "./data/area/makarna_DESERT_OASIS.json",
 	"maze_1": "./data/area/maze_1.json", //MAZE
 	"maze_deep": "./data/area/maze_deep.json",
 	"maze_dragon": "./data/area/maze_dragon.json",
@@ -101,6 +122,7 @@ DV.Data.areas = {
 	"belly": "./data/area/belly.json", //OTHER
     "patrons": "./data/area/patrons.json",
 	"sesman_farm": "./data/area/sesman_farm.json",
+	"rabbit_cave": "./data/area/rabbit_cave.json",
 	"teleportation": "./data/area/teleportation.json"
 }
 
@@ -409,7 +431,72 @@ DV.Data.areacoordinates = [{
 	"mapId": "makarna.jpg",
     "position": [0.81, 0.91],
     "title": "makarna_dockyard"
-}, {
+},  {
+    "header": "Honest Even's Used Saurus Lot",
+	"mapId": "makarna.jpg",
+    "position": [0.18, 0.96],
+    "title": "makarna_sauruslot"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_A1"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_B1"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_C1"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_D1"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_E1"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_A2"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_B2"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_C2"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_D2"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_E2"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_A3"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_B3"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_C3"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_D3"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_E3"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_RUINS"
+},  {
+    "header": "Gardens of Rajua",
+	"title": "makarna_desertgarden"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_PREDATOR"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_SHIPWRECK"
+},  {
+    "header": "Makarnan Desert",
+	"title": "makarna_DESERT_OASIS"
+},  {
     "header": "Memory Maze",
     "title": "maze_1"
 }, {
@@ -452,6 +539,9 @@ DV.Data.areacoordinates = [{
 },{
     "header": "Sesman's Farm",
     "title": "sesman_farm"
+},{
+    "header": "Bunny Lair",
+    "title": "rabbit_cave"
 },{
     "header": "Silver Babylon Pass: West",
     "mapId": "worldmap.jpg",

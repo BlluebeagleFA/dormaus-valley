@@ -270,6 +270,71 @@
              }
           }
        },{
+          "id":"pgsthing",
+          "title":"Makarna Sandstorm Expedition",
+          "subtitle":"The captain of the barracks beckons you over, along with the others that share your bunkspace. </p>It seems that you have been deemed ready, and are being sent on your first mission beyond the walls of Makarna! (Contributed by PappaGobstopper)",
+          "trapped":true,
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"trapped",
+                "value":32,
+                "comparison":"equal"
+             },
+			 {
+                "parameter":"rufo_connection",
+                "value":0,
+                "comparison":"nequal"
+             }
+          ],
+          "icon":"tffetish",
+          "results":{
+             "pumpkin_1":{
+                "html":"data/active/PGS-Shadowplains.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },{
+          "id":"pgsthing2",
+          "title":"Betray Chaz",
+          "subtitle":"You feel like you have to tell Rufo the truth.  (Contributed by PappaGobstopper)",
+          "trapped":true,
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"trapped",
+                "value":32,
+                "comparison":"equal"
+             },
+			 {
+                "parameter":"rufo_connection",
+                "value":0,
+                "comparison":"nequal"
+             },
+			 {
+                "parameter":"spiritguide",
+                "value":0,
+                "comparison":"nequal"
+             }
+          ],
+          "icon":"tffetish",
+          "results":{
+             "pumpkin_1":{
+               "text":"He has a right to know. </p>But as you open your mouth to tell him everything, you feel your tongue swell up and gag yourself. </p>Rufo's eyes go wide as you feel magic pouring across your form, brown spotted fur rapidly overtaking you, cutting away who you were, and replacing your form with that of a ruddy male hyena. </p></p>\"Spy!\" Rufo snarls, leaping to his feet. \"How dare you take their form?!\" </p>Rufo lunges for you with his spear but you are quicker and dodge away, sprawling out into the bazaar. Your heart hammers in your chest as you sprint out of Makarna, into the desert, with the Makarnan guard hot on your heels, their spears delivering several nasty cuts to you. </p>But once you enter the desert, a sandstorm whips up, and within minutes, your pursuers are long gone. </p>Soon you are met by a shadowblade, who manages to calm the spirit guide. You feel your tongue deflate and your body returning to its previous form. </p></p>\"Let that be a lesson to you.\" She sternly chastises, \"No one snitches on the Boss.\" Before you can retort, she vanishes into the shadows and closes her eyes, disappearing from sight.",
+               "freeTrap":true,
+			   "descriptionchange":"You are a ruddy male hyena.",
+               "outcomes":[
+                  {
+                     "parameter":"species",
+                     "quantity":71,
+                     "change":"set"
+                  }
+               ]
+             }
+          }
+       },{
           "id":"tiger",
           "title":"Tiger Training",
           "subtitle":"\"No, no no!\", you hear someone shout. You walk into the training barracks to see an exasperated sergeant with his face in his palm, and a sheepish-looking lion recruit with his hands held out like claws, in what you can only assume is a bad impression of a wild beast. A line of other recruits are standing awkwardly behind the sergeant, who composes himself and starts to snarl at the recruit. \"With ferocity! Crouch over more. More than that! Now always be moving - no, not like that, you're going to-\", he says, before being interrupted as the recruit trips over his own paws and lands awkwardly on the sandy courtyard. The sergeant sighs, and sees you watching. \"Ho there, traveller. Trying to get these greenpaws to do some anti-tiger drills, but fighting against wooden dummies is no way to get to grips with how a tiger warrior moves. Though they are probably better than training against this fool!\" he growls. The clumsy recruit looks away with embarrassment, and the grizzled sergeant rubs his chin as he looks you up and down. \"Tell you what, son, I learned a few spells on my deployments. You let me turn you into a tiger, and you can train with us. My rookies get a real tiger to face off against, and you get free training from the mightiest army in the seven kingdoms! What do you say?\"",

@@ -1,0 +1,53 @@
+{
+    "title":"rabbit_cave",
+    "nomap":"You have no desire to leave your boss.",
+    "header":"Bunny Lair",
+    "subheader":"You are in a large cavern with dozens of tunnels leading off in different directions, connecting to other places in the land. The ground is littered with scattered clothes, cum, fur, and bits of treasure the gang has stolen over the years, kept as trophies from captures of new members. Carrots and lettuce are growing in the corner.",
+    "events":[
+       {
+          "id":"entrance_random",
+          "title":"You Are Called by Your Boss",
+          "subtitle":"Your boss wants you for something.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "reluctant_horse":{
+                "text":" “45! Get in here!” a commanding voice called out to you, and without hesitation, you rush inside the gated-off area of the cavern. Inside, was the One, your master and boss sitting on a large golden throne with lions carved on it. His pants were thrown aside and he was letting his cock dangle between his legs. Your eyes focus on it, a big smile on your face as stare at it.</p></p>“Heh, good to see you remember your place,” the One says as he smirks at you. You just nod, unable to take your eyes off it. “Get over here bitch, I need to relax”</p></p>“Yes sir!” you dash over to the foot of his throne and turn around, presenting your ass to him. Without hesitation, the One lowers your shorts and gives you a light smack on the fluffy ass</p></p>“Good Bun” he said before he shoved his cock inside. Arousal and pleasure rang out through your entire body, each cell in your body screaming in ecstasy as he pounded your rabbit ass hard. He grabbed your ears and pulled on them, making sure you couldn’t move as he speeds up, the sound of his cock slapping inside of you echoing around the chamber. After what felt like an eternity of pure pleasure, you felt your ass being filled as the One came.</p></p>He moaned loudly as he shoved you off his cock, a trail of cum leaking out of your used hole as you laid there moaning and panting, wiggling your ass in a vain attempt to get him to fuck you again.</p></p>“Heh, not bad 45” the One said, panting and smirking at your collapsed form “I think that’s the best fuck this week. Keep that up and I might make you my permanent fucktoy”</p></p>You shiver at the mere idea as you get up, bow to him, and leave the room, still dripping the whole time.",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
+                "id": "save_me_batfarm",
+                "title": "Mr Bat, Spelunking",
+                "subtitle": "Someone is here that shouldn't be...",
+                "type": "random",
+                "requirements": [
+                    
+                ],
+                "icon": "mrbat",
+                "results": {
+                    "success": { 
+                        "text": "“Oh dear, these rabbits are a rowdy bunch aren’t they?” Mr. Bat muttered as he gave you a light conk on the head. In an instant, your free-will rushed back into your brain, burying your identity as a member of the Warren deep inside. Giving him a quick thank you, you rush out of the cave and into the wilderness. Your mind is yours again, but you’re still a rather tough-looking rabbit and have a craving for carrot-themed booze.",
+                        "descriptionchange":"The adventurer is a short, fluffy bunny with snow-white fur, bright red eyes and a smirk that seems to make those around them nervous.",
+						"area":"northplains",
+						"outcomes": [
+							{
+								 "parameter":"species",
+								 "quantity":72,
+								 "change":"set"
+							}
+                        ]
+                    }
+                }
+            }
+    ],
+    "npcs":[
+       
+    ]
+ }

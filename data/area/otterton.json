@@ -227,6 +227,32 @@
              }
           }
        },
+	   {
+          "id":"purd_ott",
+          "title":"Two Purds?",
+          "subtitle":"You notice a familiar smell, and follow it to find Purd sitting outside a small fish restaurant, eating a paper cone full of fried shrimp. He grins at you...and then you see a second, identical Purd leave the store holding a similar cone.",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"purd_connection",
+                "value":1,
+                "comparison":"greater"
+             }
+          ],
+          "icon":"purd",
+          "results":{
+             "grizzsex":{
+                "text":"The Purds look at you with the same dopey grin. \"Hey man, are we friends?\", one of them asks. You are slightly confused, but you tell them that yes, you are friends, you think.</p></p>One of them pushes out a chair for you, and you sit down. The first Purd holds out his paper cone, and offers you a shrimp. The other one looks up at the sky, and mumbles something about clouds.</p></p>You finally break the question - why are there two of him? The second Purd looks down from the sky, and blinks at you. Then he smiles.</p></p>\"Oh, man, did I forget to tell you? I'm uh, like...an experiment, or something. I was meant to be like, a good magic user, or stuff. But uh...mostly I have a whole bunch of bodies, and it's real hard to like, focus. Cos there's so many of me and all our brains are like...overlapping.\"</p></p>The other Purd nods and leans against the first Purd, his head on his duplicate's shoulders. He continues his duplicate's conversation as if they share a mind. \"Yeah and like, er, sometimes people turn into more of me. I think I basically got in under control now though. I only do it if someone really wants it now.\"</p></p>Despite how odd this is, you feel completely calm and relaxed, like you always do around Purd. They both split their shrimp with you, and then the three of you walk out to the seaside and sit on the beach together. The two Purds both rest their fuzzy heads on each of your shoulders, and you watch the waves coming in and out.</p></p>One Purd's soft hand rests on your leg, and you smile idly, your head completely empty and content. \"If you wanted to, like, man. I'd love for you to be me, some time. We could do it at the fountain park in Dormaus. It's nice and chill there.\"</p></p>The thought of having your body completely overwritten with Purd's chubby, fuzzy cat form, and your mind and memories made into a total replica of his own, just one of a whole bunch of stupid, unfocused dozy cats...</p></p>Well, maybe it's just the scent of him, but that doesn't sound too bad at all.",
+                "outcomes":[
+                   {
+                      "parameter":"purd_connection",
+                      "quantity":3,
+                      "change":"set"
+                   }
+                ]
+             }
+          }
+       },
        {
           "id":"otterton_random",
           "title":"Explore the village",

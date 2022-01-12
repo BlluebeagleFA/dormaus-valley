@@ -83,7 +83,7 @@
           "requirements":[
              
           ],
-          "icon":"slip",
+          "icon":"actaeon",
           "results":{
              "success":{
                 "text":"You are assigned to the manor house of a mid-ranking noble from House Actaeon, and delivered there in a black wooden slave carriage. The ride is bumpy and uncomfortable, but once you arrive you are taken aback by the beauty of the manor.</p>Perfectly manicured gardens surround a gorgeous mansion. Marble statues stand among circles of flowers, amidst tinkling fountains and a few strategically placed benches. The house itself is decorated with columns, though you are led away from those to a narrow door in the rear, for the staff.</p>Within, the house is cozy and warm. Gas lanterns flicker from wall sconces, oil paintings hang from the walls, and the floor is elegantly covered with thick carpet even in the corridors. It seems almost impossibly extravagant compared to the misery and squalor of the city outside.</p>You are kept to the less important areas of the house. You scrub the servant kitchens, clear soot out from a massive oven, and muck out the stables in the rear gardens. You get only a few peeks of the beautiful manor rooms for now. As you are working in the stable, you catch a glimpse of the manor lord. He's a tall, elegant stag, who's antlers curve up regally from his head into a twelve-point rack. His double-breasted frock jacket and spats are a far cry from the grimy rags you are cleaning in. He doesn't notice you at all. Eventually your work is done and you are returned to the carriage, sweaty, bruised and exhausted.",
@@ -124,7 +124,7 @@
                 "comparison":"greater"
              }
           ],
-          "icon":"slip",
+          "icon":"actaeon",
           "results":{
              "thing":{
                 "html":"data/active/AGameOfChess.html",
@@ -137,12 +137,12 @@
        {
           "id":"weddit",
           "title":"Be a Witness for a Wedding",
-          "subtitle":"A noble from House Striate is looking for someone to witness and sign off on his unconventional wedding.",
+          "subtitle":"A noble from House Alba is looking for someone to witness and sign off on his unconventional wedding.",
           "type":"random",
           "requirements":[
              
           ],
-          "icon":"slip",
+          "icon":"alba",
           "results":{
              "thing":{
                 "html":"data/active/Wedding.html",

@@ -1,0 +1,363 @@
+{
+    "title":"makarna_sauruslot",
+    "position":[
+       0.18,
+       0.96
+    ],
+    "mapId":"makarna.jpg",
+    "header":"Honest Even's Used Saurus Lot",
+    "subheader":"Outside Makarna's Western Gate is a small, ramshackle establishment. A lopsided tent is resting against the walls, and a fence has been placed down to mark out a dusty section of the land. Inside the fence, scaly bipeds with huge legs and long tails are idly wandering around and grazing on the long yellow grass that grows here.",
+    "events":[
+       {
+          "id":"contributorstone",
+          "title":"Examine the Contributor Stone",
+          "subtitle":"There is a large engraved stone outside the gates of Makarna, dedicated to the brave explorers who discovered the secrets of the desert.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "reluctant_horse":{
+                "text":"You get a non-canon sort of feeling from this strange stone.</p>The following names are engraved on the stone:</p>MOBY - https://www.furaffinity.net/user/mobysimo/ Thank you for reading my contribution to Blues awesome game</p>John Fakelastname</p>PappaGobbastoppa - https://www.furaffinity.net/user/pappagobbastoppa - Thanks for reading my contribution to Blue's awesome game!</p>Godsune- Good luck, you'll need it</p>Nitrinoxus - \"It's only with the heart that one can see rightly, for what's essential is invisible to the eye.\"</p>Homebrew_Horus - furaffinity.net/user/agentmlp412 - thank you for reading</p>gray (https://www.furaffinity.net/user/lilfureaky/ ) hope you enjoyed! ;)</p>legotron123</p>Reese Ikena - Blessings of Rajua upon you. May her light guide your path!",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   
+	   {
+          "id":"empty_backpack",
+          "title":"Empty Out Your Backpack",
+          "subtitle":"Your backpack is stuffed to the brim with treasures worth selling.",
+          "type":"random",
+          "requirements":[
+            {
+               "parameter":"backpack_full",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"navigateicon",
+          "results":{
+             "success":{
+                "text":"You open your backpack, and empty out all your loot onto the ground. Honest Even waggles his eyebrows at it, and blows a smoke ring. \"Well well! I'll give you a fair price on that. The secret of life is honesty and fair dealing. If you can fake that, you've got it made.\"",
+                "outcomes":[
+                  {
+                     "parameter":"backpack_full",
+                     "quantity":1,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"backpack_empty",
+                     "quantity":1,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"desert_treasure",
+                     "quantity":10,
+                     "change":"add"
+                  }
+                ]
+             }
+          }
+       },
+	   
+	   {
+         "id":"W_careful",
+         "title":"Cross the Savannah Carefully",
+         "subtitle":"If you use extra supplies and take it slow, you can travel through the desert with a minimum of danger.",
+         "type":"statcheck",
+         "stat":"might",
+         "difficulty":30,
+         "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":2,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"Makarna is a vast country, and one that has claimed the lives of many foolhardy adventurers who underestimated its dangers. You wisely decide to take it slow, and begin your travels across the dunes and plains.</p></p>When the sun reaches its zenith, and the heat is too great, you take shelter in what little shade you can find, and ration your water carefully. You move on only when the heat's edge dulls. Your feet slip on sandy dunes, and sweat soaks your clothes, but you make good progress.",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "area":"makarna_DESERT_E2",
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":3,
+                     "change":"sub"
+                  }
+               ]
+            },
+			"rareSuccess":{
+               "text":"Makarna is a vast country, and one that has claimed the lives of many foolhardy adventurers who underestimated its dangers. You wisely decide to take it slow, and begin your travels across the dunes and plains.</p></p>You make great progress. You ration your water carefully, and find that you are surprisingly adept at walking over sandy dunes and through arid, cracked land. The sun slowly lowers in the sky, and the purple of night washes above you as the last of the daylight fades.</p></p>Stars twinkle above you, countless gleaming diamonds in a seemingly endless expanse of velvet black. The sky extended from horizon to horizon, unbroken and infinite. The vastness of it in the dark desert is beautiful, and strange. Your mind wants to expand, to fill the endless space.</p></p>You carry on your journey, but feel oddly changed by your experience.",
+               "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":2,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"might",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"magic",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"charm",
+                     "quantity":2,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"stealth",
+                     "quantity":2,
+                     "change":"add"
+                  }
+               ]
+            },
+            "fail":{
+               "text":"Makarna is a vast and dangerous country. You don't want to take chances, so you take it slow. You travel only when the heat isn't too unbearable, and you drink your water supplies liberally.</p></p>However, even taking it slow is difficult. You may have underestimated just how harsh Makarna really is. Your skin burns from the heat, and your mouth feels dry and parched. Your legs ache from slipping and sliding on the sandy dunes. You can't possibly keep this up for long.",
+               "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":3,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":1,
+                     "change":"add"
+                  }
+               ]
+            },
+			"rareFail":{
+               "text":"Makarna is a vast and dangerous country. You don't want to take chances, so you take it slow. You travel only when the heat isn't too unbearable, and you drink your water supplies liberally.</p></p>Perhaps a little too liberally, as it turns out. The unbearable heat is making you desperate to chug down more and more. You find yourself taking breaks, setting up camp over and over after barely making any progress, just for an excuse to have some shade.</p></p>Perhaps Makarnan travel is not for you. To your dismay, you feel exhausted and battered, and you've blown through an unreasonable amount of your supplies.",
+               "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":5,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":2,
+                     "change":"add"
+                  }
+               ]
+            }
+         }
+      },
+	  {
+         "id":"W_fast",
+         "title":"Cross the Savannah Rapidly",
+         "subtitle":"You can save supplies if you are confident in your skills.",
+         "type":"statcheck",
+         "stat":"might",
+         "difficulty":50,
+         "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":1,
+               "comparison":"greater"
+            }
+         ],
+         "icon":"navigateicon",
+         "results":{
+            "success":{
+               "text":"Makarna is a dangerous country, but you are an experienced traveller. If you ration your water very carefully, and use your knowledge of the land well, you can save your supplies and reach your destination in a much shorter time.</p></p>You move with the wind, and keep a weather eye on the sky. You detect sandstorms long before they reach you, and are able to find shelter from them. You scavenge small plants, find easier paths between dunes, and at one point even walk beneath the shadow of a small cloud for over a mile before it disappears.</p></p>You are tired and your muscles are sore when you reach your destination, but you know you could do this again. You truly are an experienced adventurer.",
+               "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":2,
+                     "change":"sub"
+                  }
+               ]
+            },
+			"rareSuccess":{
+               "text":"Makarna is a dangerous country, but you are an experienced traveller. If you ration your water very carefully, and use your knowledge of the land well, you can save your supplies and reach your destination in a much shorter time.</p></p>You move with the wind, and keep a weather eye on the sky. You detect sandstorms long before they reach you, and are able to find shelter from them. You scavenge small plants, find easier paths between dunes, and at one point even walk beneath the shadow of a small cloud for over a mile before it disappears.</p></p>In fact, you don't even feel sore, or tired. You feel like you could wander through the desert like this forever. Like this is where you were meant to be. You climb to the top of a dune, and look out across the desert, seeing it stretch from horizon to horizon. An infinity of heat and dust, your kingdom, your territory.</p></p>Something inside you feels hot and intense. You shudder, stretching up and feeling the sun bear down on you. Why do you even need clothes? You are better off without them.</p></p>You pull off your shirt and pants, tossing aside your protection from the sun. As you do, you notice your body seems bigger, stronger. Not so much bulging with muscle, but lean and powerful, like a predator.</p></p>You flex your hands, and notice your palms are thicker and rounder than before. Dark brown pads cover them, and when you lift your feet, you notice you have them there too. Oddly, this doesn't seem unnatural. It just makes it easier to walk on the hot sand.</p></p>You leap down from the dune, before landing on all fours and bounding across the desert. Running like this feels freeing, natural. Your muscles bulge and heave, sweat drips down your flanks. As you run, your spine begins to change, stretching out and growing. It thickens into a long tail behind you, the weight of it making it easier for you to run, to glide across the sand. At the end of your thick, muscular tail, sharp fins stretch out, capable of cutting through solid rock. A think layer of brown-grey fur begins to cover your naked body, reflecting the heat and making you feel even more at home.</p></p>You snort, your head feeling larger, heavier, but your mind feeling oddly small. When you open your mouth, it stretches into a muzzle, revealing massive fangs. You shake your head, and the weight grows heavier, as thick horns push forward from your temples, and curve up in front of you. A thick mohawk of tough fur bristles from your head and down your powerful neck.</p></p>Yes, you are a true beast of the desert. The heat and sand is no danger to you. You are a danger to everything else!</p>",
+               "descriptionchange":"You are a behemoth, a rare and dangerous desert-dwelling predator. You are huge, covered in short fur and capable of walking on four paws or on your hind legs. You have a large lionlike face, two ox-like horns, and a thick muscular tail tipped by two razor-sharp fins.",
+			   "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+               "outcomes":[
+                  {
+                     "parameter":"might",
+                     "quantity":10,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"magic",
+                     "quantity":10,
+                     "change":"sub"
+                  },
+				  {
+                      "parameter":"species",
+                      "quantity":68,
+                      "change":"set"
+                  }
+               ]
+            },
+            "fail":{
+               "text":"Makarna is dangerous, but surely so are you? You are confident enough in your skills that you see no need to overuse your supplies and waste time and money.</p></p>You set off across the dunes, making good progress at first. You push yourself hard, at one point sliding down a long dune and laughing at the progress you're making.</p></p>Your confidence is unearned, however. Your weather luck turns, and you don't see the mist-like cloud in the distance until it is already upon you. You are caught in a sandstorm, and it rages around you.</p></p>The sand that seemed so soft under your feet is now like blades across your skin. You cannot see, and you are parched, pained and exhausted. You struggle to find shelter, and barely manage to wedge yourself in the lee of a rock before you are totally overwhelmed.</p></p>When the storm passes, you are forced to patch yourself up and use up much of your supplies to get yourself back in travelling shape. Perhaps you overestimated your own skills.",
+               "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":4,
+                     "change":"sub"
+                  },
+				  {
+                     "parameter":"pain",
+                     "quantity":3,
+                     "change":"add"
+                  }
+               ]
+            },
+			"rareFail":{
+               "text":"Makarna is dangerous, but surely so are you? You are confident enough in your skills that you see no need to overuse your supplies and waste time and money.</p></p>You set off across the dunes, making good progress at first. You push yourself hard, at one point sliding down a long dune and laughing at the progress you're making.</p></p>Your confidence is unearned, however. Your weather luck turns, and you don't see the mist-like cloud in the distance until it is already upon you. You are caught in a sandstorm, and it rages around you.</p></p>The sand that seemed so soft under your feet is now like blades across your skin. You cannot see, and you are parched, pained and exhausted. You struggle through the storm, desperately seeking shelter or escape, but find none.</p></p>You bump into something, and try desperately with your stinging eyes to see what it is. A tall, imposing shadow looms over you. Red eyes gleam in the storm. The whirling sands abate slightly, as something wraps a pair of enormous arms around you.</p></p>You are able to look up, and see a bizarre creature. It is made of craggy red stone, very loosely in a humanoid shape. It is mostly just a huge boulder, with stubby clawed feet and a pair of massive arms that rumble and thump as they move.</p></p>Its eyes are two red gems, embedded in the stone. Sand tumbles from its surface as it stares at you.</p></p>\"Give...me...\"</p></p>You feel weak all over, your body aching as the eyes glow. Your supplies and treasure fall from your hands, as you fall forward onto your knees.</p></p>\"Give...life...\"</p></p>Your hands hit the sand, and your body feels numb, and heavy. You feel stiff all over, barely able to move a muscle. Weight presses down on you, making your hands and knees sink into the shifting sand.</p></p>Your skin starts to harden, growing rough and firm. It becomes craggy and rocky, all colour in your body being replaced by the orange-yellow of sandstone. Your hands fuse into lumps of rock, your insides seize up and petrify into stone. Finally, the features on your head fade over, your whole body becoming a lump of messy, weathered stone, indistinguishable from any other normal boulder in the desert.</p></p>The sandstorm slowly fades, and the rocky creature's eyes seem brighter and more alert. It lurches off into the desert, leaving nothing but stones where you used to be.",
+               "trapped_desc":"You are nothing but ordinary desert rocks, a lump of boulders half-sunken in the sand.",
+               "trapped":"You are nothing but ordinary desert rocks, a lump of boulders half-sunken in the sand.",
+			   "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+			   "outcomes":[
+                  {
+                     "parameter":"desert_supplies",
+                     "quantity":0,
+                     "change":"set"
+                  },
+				  {
+                     "parameter":"desert_treasure",
+                     "quantity":0,
+                     "change":"set"
+                  },
+				  {
+                      "parameter":"trapped",
+                      "quantity":35,
+                      "change":"set"
+                   }
+               ]
+            }
+         }
+      },
+	  {
+          "id":"W_saurus",
+          "title":"Ride Your Saurus",
+          "subtitle":"You'll barely need any supplies with a saurus to do the difficult parts.",
+          "type":"random",
+          "requirements":[
+            {
+               "parameter":"desert_supplies",
+               "value":0,
+               "comparison":"greater"
+            },
+			{
+               "parameter":"saurus",
+               "value":0,
+               "comparison":"greater"
+            }
+          ],
+          "icon":"navigateicon",
+          "results":{
+             "success":{
+                "text":"You pat your saurus, and he snorts at you. He lowers his head, and you hop on top of him. After a moment to get your bearings, he trots off across the sand at a gallop.</p></p>The desert speeds past you as your mount crunches forward, his powerful leg eating up distances in mere minutes that would have taken you hours. The only downside is that the jostling and bumping of his stride is causing no small amount of discomfort in your hindquarters.</p></p>You reach your destination in no time at all, and reward your saurus with some food and water.",
+                "area":"makarna_DESERT_E2",
+               "temporary_params": ["d_bones","d_beach","d_pred","d_cactus","d_ruins","d_genie"],
+                "outcomes":[
+                   {
+                     "parameter":"desert_supplies",
+                     "quantity":1,
+                     "change":"sub"
+                  }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"entrance_random",
+          "title":"Watch Travellers",
+          "subtitle":"At the edge of the desert, you sometimes see people coming and going.",
+          "type":"random",
+          "requirements":[
+             
+          ],
+          "icon":"default",
+          "results":{
+             "ap_carpenter":{
+                "text":"As you walk through the desert, you stumble upon some sort of exchange behind a sand dune happening between two merchants, a jackal and a cobra. It's hard to make out the cobra's side of the conversation, but from the yelling the jackal is doing, it seems the snake is trying to pay the other merchant less than what they had previously agreed on. All of a sudden, the jackal starts to grow quiet and sluggish, simply staring at the cobra as they softly hiss to their companion. After about a minute of this, the Jackal seems to become more alert again, and no longer appears upset over the decrease in pay. As the two go their separate ways, so do you, deciding whatever just happened was none of your business. (Contributed by legotron123)",
+                "outcomes":[
+                   {
+                      "parameter":"watervine_1",
+                      "quantity":1,
+                      "change":"add"
+                   }
+                ]
+             }
+          }
+       }
+    ],
+    "npcs":[
+       {
+          "id":"even",
+          "name":"Honest Even",
+          "description":"Honest Even is a strange duck. He has a large fez, oversized glasses, and a rather unbelievable moustache attached to his bill. As you look at him, he waggles his eyebrows at you and puffs on a cigar.",
+          "icon":"evens",
+          "shop":{
+             "trades":[
+				"watervine_1",
+				"saurus",
+                "desert_supplies",
+				"canteen_full",
+				"backpack_empty",
+				"desert_helm"
+			 ],
+             "buys":[
+                "desert_treasure"
+             ],
+             "sells":[
+				
+             ]
+          },
+          "dialogue":[
+             {
+                "input":"What is your name?",
+                "output":"\"Honest Even's the name, my whole family are Even's, even the cousins. Every Even is a duck and we know how to duck when the dung hits the fan. Ask anyone in this town about the Evens and they'll say 'Evens? The whole lot of them are odd.'\""
+             },
+             {
+                "input":"What is your job?",
+                "output":"\"I am glad you asked, my friend, and if you ask my friends they'll tell you I sell sauruses. This is Honest Even's Used Saurus Lot. You want a saurus? We've got a lot. You don't want a saurus? Well I'm happy to sell you one anyway.</p>Have I got the saurus for you. The Saurus. That’s where you look for synonyms. And speaking of sin, when it comes to sauruses, well, let’s just keep your personal preferences a secret, shall we?\""
+             },
+             {
+                "input":"What is a saurus?",
+                "output":"\"Not much, what's a saurus with you? I’ve seen an awful lot of sauruses and I’ve seen a lot of awful sauruses. The saurus is the ship of the desert, and you can’t ship it far enough to suit me. All a saurus takes is a little grass (say, a bale), some water (around 20 gallons), and a little love, and it will follow you anywhere, which can get mighty embarrassing at times, believe me. Picture yourself, mounting your very own saurus for the first time. You get up, you fall off, you mount up again and sit proud in the saddle, knowing you can ride with the best of them.\""
+             },
+             {
+                "input":"See you later.",
+                "output":"\"I'll see you soon my friend, sooner than you see the sea - it's right over there, see? Call me up any time, just so long as it's not late for dinner. Duck soup!\""
+             },
+             {
+                "input":"Can I see your cock?",
+                "output":"\"Listen, I may look like a duck and I may talk like a duck, but don't let that fool you, I am a duck. Now I'll teach you to ask me a question like that. Oh wait, you already know how.\""
+             },
+             {
+                "input":"What are your paws like?",
+                "output":"\"You're sure trying my patience friend, and you haven't even let me try yours. I've got a good mind to go out and join a club and beat you over the head with it.\""
+             }
+          ]
+       }
+    ]
+ }

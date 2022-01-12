@@ -13,11 +13,7 @@
           "subtitle":"A mysterious door here leads to the patrons-only area.",
           "type":"random",
           "requirements":[
-             {
-                "parameter":"contributor",
-                "value":0,
-                "comparison":"greater"
-             }
+             
           ],
           "icon":"navigateicon",
           "results":{

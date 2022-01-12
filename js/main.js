@@ -39,6 +39,8 @@ function main(err,session) {
     // Cache the area data instead of fetching it everytime
     var area;
     
+	var maploaded = false;
+	
     var player = {
         username: username,
         area: "dormaus_entrance",
@@ -859,6 +861,13 @@ function main(err,session) {
             
             
         }
+		if (mapAppend != "") {
+			maploaded = true;
+			
+		} else {
+			maploaded = false;
+		}
+		
         $(".map").append(mapAppend);
         
 //        var allareadata = [];
@@ -1104,6 +1113,12 @@ function main(err,session) {
         if (outcome.temporary_param) {
             temporary_parameters.push(outcome.temporary_param);
         }
+		
+		if (outcome.temporary_params) {
+			for (var i = 0; i < outcome.temporary_params.length; i++) {
+				temporary_parameters.push(outcome.temporary_params[i]);
+			}
+        }
         
         var donator = false;
         if (player.attributes.contributor && player.attributes.contributor.value > 0) {
@@ -1289,7 +1304,7 @@ function main(err,session) {
                     outcometext = "Gained " + newQuantity + " " + oAtt.title;
                 } else if (outcome.outcomes[i].change == "set") {
                     addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
-                    outcometext = quantity + " now equals " + oAtt.title;
+                    outcometext = oAtt.title + " now equals " + quantity;
                 } else if (outcome.outcomes[i].change == "sub") {
                     addValuesToPlayer(outcome.outcomes[i].parameter, quantity, outcome.outcomes[i].change, outcome.outcomes[i].max)
                     outcometext = "Lost " + quantity + " " + oAtt.title;
@@ -1777,14 +1792,15 @@ function main(err,session) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
     
-    var updateZones = ["churchyard", "dormaus_entrance", "farmpath", "otterton_dock", "patrons", "otterton", "hotel_rooms", "makarna_dockyard", "makarna_training", "silver_babylon_west", "silver_babylon_east", "grancampion_workhouse", "grancampion_market"];
+    var updateZones = ["churchyard", "dormaus_entrance", "farmpath", "otterton_dock", "patrons", "otterton", "hotel_rooms", "makarna_dockyard", "makarna_training", "silver_babylon_west", "silver_babylon_east", "grancampion_workhouse", "grancampion_market", "grease_lot"];
     
     function displayArea(areaName) {
 //        console.log(JSON.stringify(player));
         
-        if (updateZones.includes(player.area)) {
+        if (updateZones.includes(player.area) || !maploaded) {
             updateMap();
         }
+		
         
         DV.Data.load_area(areaName,function(err,area_data){
             if(err){

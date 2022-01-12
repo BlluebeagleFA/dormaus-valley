@@ -204,6 +204,33 @@
                 ]
              }
           }
+       },
+	   {
+          "id":"purd_gc",
+          "title":"Purd at Gran Campion",
+          "subtitle":"Purd is sitting in a statue garden, leaning against a column and grinning to himself.",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"purd_connection",
+                "value":0,
+                "comparison":"greater"
+             }
+          ],
+          "icon":"purd",
+          "results":{
+             "grizzsex":{
+                "text":"You walk up to purd, and he moves the floppy ears of his hat out of his face so he can see you better. \"Hey man. Are we friends?\"</p></p>You probably shouldn't be surprised that he doesn't seem to remember much. You assure him that you are indeed friends, and he yawns. \"That's cool man. Come sit down with me.\"</p></p>You sit down on the grass, and let the sun shine on you through the trees. Even in the foggy, murky misery that is Gran Campion, Purd appears to have found the one place that actually has a nice breeze and some light.</p></p>He giggles to himself, and you ask him what's so funny. He points to one of the statues, a smugly posing nude of some ancient noble who was probably not even close to being that muscular and handsome.</p></p>He snorts to himself, and covers his eyes with his floppy hat until he gets himself back under control. \"Man...its dick is hanging out.\"</p></p>Despite yourself, you find yourself laughing along with him. He sits up and makes a circle with his fingers, then slides it over the statue's smooth stone cock. The two of you are able to hold in your laughter for about ten seconds before you fall onto the grass laughing and squirming. He ends up laying on top of your belly, and smiles at you happily, his eyes lidded over and slightly pink.</p></p>\"Man, you're fun. I'm glad we're friends\", he says.</p></p>There is a soft click behind you, and someone dressed in black walks out from the shadows of a statue, pointing a crossbow at you. \"If you two outlanders are finished, I'll be taking your coin purses now\", he says with a growl. Purl frowns for a moment.</p></p>\"Yeah this is what I don't like about this town. Everyone's so...not chill.\"</p></p>He doesn't seem to be afraid of the weapon inches away. He yawns, and raises his hand, and the air suddenly is filled with that weird, acrid smell that always clings to his fur. The thief looks dizzy, and his hand starts to sway. The crossbow fires with a sudden TWANG, and the bolt freezes in the air an inch from your face.</p></p>\"I'm like, er...second folding. Or something. I kind of...stopped going to lectures.\"</p></p>Purl waves his hand, and the thief walks over and lies down between you both. The bolt falls harmlessly to the ground, and the thief pulls his mask down to reveal he's a scruffy possum.</p></p>\"Man. What if like...the colours I see aren't the same as the colours you see?\", he says in a rough Gran Campion slum accent. Purd grins. \"Man. That's deep\", he says. You giggle with them both, and talk about nothing much that makes sense for a long while.</p></p>By the time you get up to go, the thief is insisting he is also Purd's friend and would love to hang out with you both all the time. Purd tells you not to be a stranger, and you hear them both giggling as you leave.",
+                "outcomes":[
+                   {
+                      "parameter":"purd_connection",
+                      "quantity":1,
+                      "change":"add",
+					  "max":2
+                   }
+                ]
+             }
+          }
        }
     ],
     "npcs":[

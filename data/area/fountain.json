@@ -99,6 +99,95 @@
              }
           }
        },
+	   {
+          "id":"meet_purd",
+          "title":"A Dozy Cat",
+          "subtitle":"Someone at the park looks rather out of place. He's a chubby, short cat with a long tail and a baggy hat over his head. Surrounding him is a faintly skunky odour.",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"purd_connection",
+                "value":0,
+                "comparison":"equal"
+             }
+          ],
+          "icon":"purd",
+          "results":{
+             "grizzsex":{
+                "text":"The cat is sitting on a bench, looking around at the statues and flowers with a very dazed and distant look. You walk over and sit down next to him, and he gives you a dopey grin.</p></p>\"Hey man. We met before?\", he says. His eyes are partially lidded over, and he gives you a huge dopey grin. This close to him, the smell is stronger yet somehow less obnoxious, though it does make you feel a little dizzy.</p></p>You tell him you just wanted to say hi, and he nods idly. His hat has two long floppy ears on the side, and he bats one aside. \"Hey man, that's cool. It's a nice day to make friends and stuff\", he says.</p></p>You blink with surprise as he suddenly turns and lies down on your lap, his head looking up at you. His whiskers twitch, and he yawns.</p></p>\"This little village is nice, man. My me's have been a bunch of places, but I like this one a lot. Our name's Purd\", he says. He scratches his furry belly under the baggy shirt he's wearing.</p></p>\"I heard like, another student came down here on er, sabbatical or whatever. I'm basically flunking anyway. You'd think like, five heads would make it easier to study, but er...\"</p></p>He blinks, and grins.</p></p>\"What was I talking about again? You're cool, man. We should hang out more.\"</p></p>Then he closes his eyes, yawns, and goes quiet. After a moment, you realise he's snoring gently, with a purring, rumbling sound. This does make it a little awkward to get up, considering he's still laying in your lap.</p></p>You peek down at where his shirt is still pulled up, exposing his fluffy peach-coloured belly. You reach down and gently stroke it, and his purring increases. It's a fairly relaxing way to spend a few minutes, especially as his scent is making you feel oddly relaxed and content.</p></p>Eventually, he wakes up, and rolls off you onto the floor. He giggles a bit, and gets up.</p></p>\"We're friends now, man. Hit me up if you see me around, we're all over the place.\"</p></p>Purd then wanders off into the village at a leisurely pace.",
+                "outcomes":[
+                   {
+                      "parameter":"purd_connection",
+                      "quantity":1,
+                      "change":"add",
+					  "max":2
+                   }
+                ]
+             }
+          }
+       },
+	   {
+          "id":"become_purd",
+          "title":"Purd and Purd",
+          "subtitle":"So apparently your weird, odd-smelling cat friend is actually one of a whole series of clones that all semi-share one mind. They have invited you to be part of him too, but if you do this, you wouldn't be you anymore. You'd just be Purd. (Warning: This will overwrite your character and stats and replace you with Purd)",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"purd_connection",
+                "value":2,
+                "comparison":"greater"
+             },
+			 {
+                "parameter":"purd_self",
+                "value":0,
+                "comparison":"equal"
+             }
+          ],
+          "icon":"purd",
+          "results":{
+             "grizzsex":{
+                "text":"You find Purd hanging around in the same fountain plaza where you first met him. He's leaning over the side of the fountain, staring into the water with a happy grin. You kneel down next to him and look into the water too. At the bottom of the fountain are a few twinkling coins, and Purd seems to be enjoying the glinting of them.</p></p>He turns to you eventually with his usual distant grin. \"Hey man. We're friends, right?\", he says. You assure him that yes, you are. Then you tell him that you'd like to be more - you'd like to be him.</p></p>It takes him a moment to register what you're saying, then he just nods. \"Oh man, yeah cool. We must be really close friends.\"</p></p>He reaches up to his hat, and tugs on one of the floppy ears. It slides down his face, and you see that his hair underneath is scruffy and mussed up. \"You sure about this?\", he says.</p></p>You nod, the strange smell of him becoming warmer as you feel a crackling against your skin. He pulls the hat down over your head, and you feel its warmth and scent as it partially covers your eyes. The floppy ears dangle against your shoulders, and you giggle.</p></p>Then you giggle again, and you realise it sounds different. Your voice has become lower, slower - it sounds just like Purd's. \"Man, woah that feels weird...\", you say, your voice coming out in an identical slow drawl to his.</p></p>You shudder, feeling a tingling flow through your body. Your belly starts to bulge out, becoming a little round and soft. Purd reaches forward, his padded fingers stroking against your tummy as your skin starts to prickle. Soft peach-coloured fur grows in all over you, spreading up your torso and across your limbs. You look down at your hands, seeing pink pawpads form on your palms while the rest of them is covered in chocolate-brown fur.</p></p>\"Man...\", you mumble. You can't stop smiling, and it's hard to focus or think straight. Your nose twitches, as you feel sensitive whiskers forming and stretching out from your cheeks. Purd leans forward, and his muzzle presses to your mouth. His tongue slides against yours, and your teeth start to sharpen, stretching out into feline fangs. You feel your own face bump against his, your mouth and nose pushing out into an identical muzzle.</p></p>You both laugh in perfect harmony, and you shudder as he reaches onto the hat and rubs it, massaging your ears to make them grow larger and fluffier, just like his. Your pants slip down to your ankles, revealing your round fluffy butt. You feel your spine stretching out, growing into a long fluffy tail which twitches and curls behind you.</p></p>You step out from your pants, and wiggle your feet. Your toes become chubby and fluffy, your soles becoming padded and pink. Your eye level is perfectly matched to the other Purd now, and you notice how cute his slightly pink, dazed eyes are. You reach forward, and your bellies press together as he nuzzles and sniffs you.</p></p>Purd pulls off his clothes, and you do the same. You stroke your fingers across his belly, and he does the same to yours. It's fascinating seeing every inch of him, his soft chest, his belly, his cheeks and fur. All of it exactly like yours. It's so hard to focus or think. Your mind feels stretched out and full of cotton wool.</p></p>Distantly, you can feel the presence of the other Purds. It's like your brain is pulled out into different places across the world, you can feel them, but their thoughts and experiences are just random snippets that appear and disappear in your head, making it impossible to think.</p></p>You kiss yourself, feeling your hands across both your bodies. Your chubby feline cocks press together, your soft balls jiggling a little. Your head empties out as you kiss and press against him, your memories fading and becoming scrambled.</p></p>You distantly recall being made in the Tower Spiral, a feline experiment. Growing up, slowly becoming dumber and more confused as you accidentally made more of yourself. Your \"dad\", a tall and stern owl trying to raise you and teach you. Going to classes, learning magic and history, slowly finding you were unable to focus or memorise anything.</p></p>Spending time in your dorm, giving up on classes. Coming down from the tower to explore the surface instead, deciding that the stress was no good. Yeah, you're Purd. You've always been Purd. Why would you think you were anyone else?</p></p>You blink, leaning back as you realise you've been kissing yourself. The other you seems to have gotten an identical hat to yours, and you help eachother up and get dressed in two sets of the same slightly dirty, well-worn clothes.</p></p>\"Want to watch the fountain together, man?\", you say. \"Sure thing\", you reply.</p></p>The two of you stare happily into the water for some time, holding your identical hands.",
+                "descriptionchange":"You are Purd, a dopey and relaxed House Cat from the Tower Spiral. You like to lounge around, relax, and not worry about things.",
+				"outcomes":[
+                   {
+                      "parameter":"purd_self",
+                      "quantity":1,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"might",
+                      "quantity":10,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"magic",
+                      "quantity":90,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"stealth",
+                      "quantity":20,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"charm",
+                      "quantity":30,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"purdhat",
+                      "quantity":1,
+                      "change":"set"
+                   },
+				   {
+                      "parameter":"species",
+                      "quantity":19,
+                      "change":"set"
+                   }
+                ]
+             }
+          }
+       },
        {
           "id":"staypaw",
           "title":"Mayor Maine's Foot",
