@@ -30,9 +30,18 @@
             var url = new URL(window.location.href);
             var areaId = url.searchParams.get("area");
 
-            // Dynamically load javascript file
-            var areaJs = "../" + DV.Data.areas[areaId];
-            loadScript(areaJs, function() {
+            // Dynamically load JSON file
+            var areaJson = "../" + DV.Data.areas[areaId];
+            const jsonRequest = new XMLHttpRequest();
+            jsonRequest.open("GET", areaJson);
+
+            jsonRequest.onreadystatechange = function() {
+                if (jsonRequest.status != 200)
+                {
+                    reportError("Area not found.");
+                    return;
+                }
+                const area = JSON.parse(jsonRequest.responseText);
 
                 // Set area header
                 var areaHeader = generateAreaTitle(area);
@@ -52,11 +61,9 @@
 
                 // Add list to page
                 document.getElementById("eventList").innerHTML = eventListBuffer;
-            }, function() {
-                
-                // Area failed to load!
-                reportError("Area not found.");
-            });
+            };
+
+            jsonRequest.send();
         </script>
     </body>
 </html>
