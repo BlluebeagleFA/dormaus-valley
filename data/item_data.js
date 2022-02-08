@@ -334,6 +334,7 @@ DV.Data.item_data = {
 			//44: jackal slave
 			//45: topiary
 			//46: camel
+			//47: seer's tattoo
         ]
     },
     species: {
@@ -411,8 +412,11 @@ DV.Data.item_data = {
 			"You are a mighty desert behemoth.", //68
 			"You are a walking, talking, sculpted bush made of thin branches and green leaves, vaguely designed to look like a canine.", //69
 			"You are a soft-furred skunk colored like a beautiful rainbow. The flowers that cover your big, bushy tail smell irresistible.", //70
-			"You are a spotted hyena.", //71
+			"You are a rugged spotted hyena with a mohawk-like mane.", //71
 			"You are a short, fluffy bunny rabbit.", //72
+			"You are a short, heavily armoured desert armadillo.", //73
+			"You are a scaly yellow bearded lizard with spiny scales and a thick tail.", //74
+			"You are a huge grey elephant with a long trunk.", //75
             ]
     },
     gender: {

@@ -30,6 +30,23 @@
                   }
                ]
             },
+			"rareSuccess":{
+               "text":"You dig in the sand, and pull up more of the bones. They are smooth and perfectly white from the weathering of the sand. In Makarna, you could make a decent profit from these. Bones are very useful for crafts and decorations.</p></p>You dig up a few, and pull away the sand to reveal plenty more. Your fingers dip into the soft sand, and you pull something large free.</p></p>It's a whole skull, no cracks or damage at all. Maybe it's somewhat recent, compared to the others. You turn it over in your hands, oddly drawn to it. It has thick, sharp fangs, and the eyes are hollow and empty, and kind of sad.</p></p>The skull seems to feel heavier in your grip, and you find yourself lifting it up. Above your head, holding it, then slowly lowering it.</p></p>The smooth bone presses down on your head. You blink, feeling dizzy and foggy, as you look out through the skull's eyes.</p></p>Your whole body feels hot, moreso than it should even in this scorching desert. It's a bone-deep warmth, one that makes you pull off your clothes, and stroke your hands down your chest. Soft, fine fur spreads down over your body, covering your limbs, moving across you with a tickling, flowing sensation. Dark spots form in the fur, all over you. You feel the hair on your head rise up, forming a scruffy sort of mohawk that is pressed inside the skull you're wearing.</p></p>Your face pushes forward, growing into a dark-furred muzzle. Your teeth sharpen, your ears become rounder. A shaggy tail grows out behind you, and your bare feet press into the sand as they grow thicker, forming dark pads and sharp claws. You lean forward slightly, your head feeling full, tight, strange.</p></p>You remember...being a hyena warrior. Being injured in battle. Your clan treating you. What happened then? Why are you standing in the boneyard, where your clan bury the remains of warriors once their honored souls have been led to the great shadow beyond?</p></p>Inside, your mind is in turmoil. Your memories are torn, between your old life and these memories of growing up in a hyena clan, learning to be a warrior, the rituals and honour and cultures of your people.</p></p>You reach up, your claws pressing on the skull, and it shatters in your grip, falling to the ground.</p></p>You blink. Were you on a hunting mission? Some outlander has left all their clothes and items lying here next to the burial pits. Well, waste not want not. You gather it all up, and walk out into the desert you've known all your life.",
+               "descriptionchange":"You are a scruffy, muscular hyena warrior. You have thick paws, a spotted pelt, and a tall mohawk-like mane.",
+			   "clearTemp": "d_bones",
+			   "outcomes":[
+                  {
+                     "parameter":"desert_treasure",
+                     "quantity":5,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"species",
+                     "quantity":71,
+                     "change":"set"
+                  }
+               ]
+            },
 			"fail":{
                "text":"You dig in the sand, with some difficulty. Bones are valuable in Makarna, and could make you a small profit, but these ones don't seem to want to budge. For each decent bone you manage to heave out of the sand, you end up taking almost an hour.</p></p>The skulls of the fallen creatures seem to be staring at you, making you feel even more tired and exhausted. You manage to gather up some bones, but you use up some of your supplies with how long it takes, and you feel a chill down your spine when you are finished.",
                "clearTemp": "d_bones",

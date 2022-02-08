@@ -35,6 +35,28 @@
                   }
                ]
             },
+			"rareSuccess":{
+               "text":"You carefully harvest the cactus, taking great caution to not be impaled on its long spikes. As you cut into the glossy green flesh, the valuable sap oozes free. You gather up as much as you can, and it soaks into your fingers. You feel a cooling relaxation wash over you from the sap's medicinal effects.</p></p>The sensation is more intense than you expected. You instinctively clench your fist, but that makes the sap soak into your palm too, and a rush of odd, icy-hot pleasure flows down your whole arm.</p></p>The feeling is much, much more pleasant than it should be. You shudder, closing your eyes and enjoying it. Unable to resist, you reach your other hand forward, and press your fingers into the cut you made in the cactus. The cool sap flows down your other arm too, and you growl with delight.</p></p>Your muscles feel strange, firm and heavy. As your hands glisten with sap, your arms start to bulge, growing thicker, heavier. You look at your bulging biceps, and grin dumbly. This is AWESOME.</p></p>Your brain feels foggy and slow, but you don't care. You rip the top off the cactus completely, exposing the juicy, glistening insides. You pull off your shirt, and start rubbing handfuls of sap over your chest. Your muscles grow tight, your belly getting narrower, showing off rugged definition in your chest.</p></p>Utterly obsessed with these bulging muscles, you start digging into the cactus, and smearing chunks of it all over yourself. You squish and rub the slippery sap all over your legs, your arms, your face, your feet. It feels amazing, every inch of you tingling and intense as your muscles get harder, thicker, your body grows taller and wider.</p></p>You don't care that your skin is starting to harden, and turn a sandy orange. You don't notice the dark stripes forming across your scaly back. Your feet stretch out, your toes growing longer and forming thick claws as you clench them into the sand. Behind you, a thick muscular tail stretches out, growing its own firm scales as it drags across the sand.</p></p>Your brain feels slower and dumber with every passing moment, but you don't care. You're so hot, so muscular, so awesome. You grab the whole cactus in two scaly, powerful hands. Its spines snap off, harmless to you now. Then you lean down and bite into its exposed flesh, ripping off chunks and chewing them. Your face pushes out into a muzzle, while spiky, spiny scales form all around your jaw and cheeks, looking almost like a beard formed from yellow scales.</p></p>Soon there's nothing left of the cactus. It's just a mess of glistening chunks, and your scaly reptilian body is covered in shiny sap. You grin stupidly, and reach down to play with yourself, loving how tough and hot and thick you are.",
+               "descriptionchange":"You are a scaly, incredibly muscular bearded lizard. The hugeness of your scaly muscles is matched by the tiny size of your dumb brain.",
+			   "clearTemp": "d_cactus",
+			   "outcomes":[
+                  {
+                     "parameter":"might",
+                     "quantity":20,
+                     "change":"add"
+                  },
+				  {
+                     "parameter":"intelligence",
+                     "quantity":1,
+                     "change":"set"
+                  },
+				  {
+                     "parameter":"species",
+                     "quantity":74,
+                     "change":"set"
+                  }
+               ]
+            },
 			"fail":{
                "text":"You cut into the cactus, trying to release the valuable sap. Some comes free, but as you gather it, you impale yourself painfully on the cactus's long spines. That makes you drop much of the sap, and in trying to get more you end up injuring yourself again. You eventually manage to gather up a reasonable amount, but you are very pained for your trouble.",
                "clearTemp": "d_cactus",

@@ -5,6 +5,28 @@
     "subheader":"You are deep in the wilderness of Makarna. Here, the dunes have given way to more arid, rocky terrain. Mountains and plateaus line the distance, like stony colossi who died in ages past.",
     "events":[
        {
+          "id":"rufohtml",
+          "title":"A Bandit!",
+          "subtitle":"A bandit rushes past you on a horse, carrying what looks like stolen goods. (Contributed by an anonymous armadillo lover)",
+          "type":"random",
+          "requirements":[
+             {
+                "parameter":"species",
+                "value":73,
+                "comparison":"nequal"
+             }
+          ],
+          "icon":"tffetish",
+          "results":{
+             "success":{
+                "html":"data/active/Armadillo.html",
+                "outcomes":[
+                   
+                ]
+             }
+          }
+       },
+	   {
          "id":"W_careful",
          "title":"WEST: Cross the Savannah Carefully",
          "subtitle":"If you use extra supplies and take it slow, you can travel through the desert with a minimum of danger.",
