@@ -1,58 +1,72 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Stories of Dormaus Valley</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="viewer.css">
-        <link rel="stylesheet" href="icons.css">
-    </head>
-    <body>
-        <!-- GLOBAL HEADER -->
-        <form action="viewer_search.html">
-            <input type="text" name="q" id="searchBar"> <!-- HEADER MODIFIED -->
-            <input type="submit" value="Search">
-        </form>
-        <a href="viewer_areas.html"><p>Go back to homepage</p></a>
-        <hr>
-        <p id="errorMessage"></p>
-        <!-- END GLOBAL HEADER -->
+    <title>Stories of Dormaus Valley</title>
 
-        <h1>Search results</h1>
-        <div id="resultList"></div>
+    <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="icons.css">
+</head>
 
-        <script src="fuse.js"></script>
-        <script src="viewer.js"></script>
-        <script src="../data/areas.js"></script>
-        <script>
-            // Get query
-            var url = new URL(window.location.href);
-            var query = url.searchParams.get("q");
+<body>
+    <!-- GLOBAL HEADER -->
+    <form action="viewer_search.html">
+        <input type="text" name="q" id="searchBar"> <!-- HEADER MODIFIED -->
+        <input type="submit" value="Search">
+    </form>
+    <a href="viewer_areas.html">
+        <p>Go back to homepage</p>
+    </a>
+    <hr>
+    <p id="errorMessage"></p>
+    <!-- END GLOBAL HEADER -->
 
-            // Populate search bar
-            document.getElementById("searchBar").value = query;
+    <h1>Search results</h1>
+    <div id="resultList">Please wait a few seconds...</div>
 
-            // Declare searchable buffer
-            var searchableBuffer = [];
+    <script src="fuse.js"></script>
+    <script src="viewer.js"></script>
+    <script src="../data/areas.js"></script>
+    <script>
+        // Get query
+        var url = new URL(window.location.href);
+        var query = url.searchParams.get("q");
 
-            // Dynamically load javascript file
-            var leftToLoad = 0;
-            DV.Data.areacoordinates.forEach(areaElement => {
-                var areaId = areaElement.title;
-                var areaHeader = areaElement.header;
+        // Populate search bar
+        document.getElementById("searchBar").value = query;
 
-                // Track loads while loading JS
-                leftToLoad++;
+        // Declare searchable buffer
+        var searchableBuffer = [];
 
-                // Dynamically load JSON file
-                var areaJson = "../" + DV.Data.areas[areaId];
-                const jsonRequest = new XMLHttpRequest();
-                jsonRequest.open("GET", areaJson);
+        // Dynamically load javascript file
+        var leftToLoad = 0;
 
-                jsonRequest.onreadystatechange = function() {
+        // Search in 3 seconds as timeout, in case not all files load
+        var alreadySearched = false;
+        window.setTimeout(search, 3000);
+
+        DV.Data.areacoordinates.forEach(areaElement => {
+            var areaId = areaElement.title;
+            var areaHeader = areaElement.header;
+
+            // Track loads while loading JS
+            leftToLoad++;
+            //console.log("leftToLoad++ to " + leftToLoad);
+
+            // Dynamically load JSON file
+            var areaJson = "../" + DV.Data.areas[areaId];
+            const jsonRequest = new XMLHttpRequest();
+            jsonRequest.open("GET", areaJson);
+
+            jsonRequest.onreadystatechange = function () {
+                if (jsonRequest.readyState != 4) {
+                    return;
+                }
+
+                try {
                     const area = JSON.parse(jsonRequest.responseText);
-                    leftToLoad--;
 
                     area.events.forEach(event => {
 
@@ -74,45 +88,62 @@
                             eventText: eventTextBuffer
                         });
                     });
+                }
+                catch (e) {
+                    // If parsing json fails, just don't push it, still decrement leftToLoad.
+                }
+                leftToLoad--;
+                //console.log("leftToLoad-- to " + leftToLoad);
 
-                    // Wait for all to load
-                    if (leftToLoad > 0) return;
+                // Wait for all to load
+                if (leftToLoad > 0) return;
+                console.log("Searching! " + leftToLoad);
+                search();
+            };
 
-                    // Perform search
-                    var options = {
-                        ignoreLocation: true,
-                        ignoreFieldNorm: true,
-                        keys: [
-                            "eventTitle",
-                            "eventSubtitle",
-                            "eventText"
-                        ]
-                    };
-                    var fuse = new Fuse(searchableBuffer, options);
-                    var fuseResults = fuse.search(query);
+            jsonRequest.send();
+        });
 
-                    // Show search results
-                    var resultListBuffer = "";
-                    if (fuseResults.length > 0) {
-                        var resultsLeft = 25; // Limit results
-                        fuseResults.forEach(fuseResult => {
-                            resultsLeft--;
-                            if (resultsLeft < 0) return;
+        function search() {
+            // Ignore if already searched
+            if (alreadySearched) return;
+            alreadySearched = true;
 
-                            var item = fuseResult.item;
-                            if (!shouldBeExcluded(item.areaId, item.eventId)) {
-                                resultListBuffer += "<div class='resetfloat'><a href='viewer_results.html?area=" + item.areaId + "&event=" + item.eventId + "'><h2>" + item.eventTitle + "</h2></a><a href='viewer_events.html?area=" + item.areaId + "'><p>In " + item.areaTitle + "</p></a><div class='icon " + item.eventIcon + "'></div><p>" + item.eventSubtitle + "</p></div>"
-                            }
-                        });
+            console.log("Actually searching! (If this is the only message, then a timeout has occured.)");
+
+            // Perform search
+            var options = {
+                ignoreLocation: true,
+                ignoreFieldNorm: true,
+                keys: [
+                    "eventTitle",
+                    "eventSubtitle",
+                    "eventText"
+                ]
+            };
+            var fuse = new Fuse(searchableBuffer, options);
+            var fuseResults = fuse.search(query);
+
+            // Show search results
+            var resultListBuffer = "";
+            if (fuseResults.length > 0) {
+                var resultsLeft = 25; // Limit results
+                fuseResults.forEach(fuseResult => {
+                    resultsLeft--;
+                    if (resultsLeft < 0) return;
+
+                    var item = fuseResult.item;
+                    if (!shouldBeExcluded(item.areaId, item.eventId)) {
+                        resultListBuffer += "<div class='resetfloat'><a href='viewer_results.html?area=" + item.areaId + "&event=" + item.eventId + "'><h2>" + item.eventTitle + "</h2></a><a href='viewer_events.html?area=" + item.areaId + "'><p>In " + item.areaTitle + "</p></a><div class='icon " + item.eventIcon + "'></div><p>" + item.eventSubtitle + "</p></div>"
                     }
-                    else {
-                        resultListBuffer += "<p>Sorry, your search returned no results. Try something different?</p>";
-                    }
-                    document.getElementById("resultList").innerHTML = resultListBuffer;
-                };
-                
-                jsonRequest.send();
-            });                
-        </script>
-    </body>
+                });
+            }
+            else {
+                resultListBuffer += "<p>Sorry, your search returned no results. Try something different?</p>";
+            }
+            document.getElementById("resultList").innerHTML = resultListBuffer;
+        }
+    </script>
+</body>
+
 </html>
