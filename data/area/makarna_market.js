@@ -238,10 +238,62 @@ var area = {
                                 "change": "add"
                             }
                         ]
+                    },
+                    "sammy_introuble": {
+                       "requirements": [
+                       {
+                          "parameter": "sammy_help",
+                          "value": 1,
+                          "comparison": "equal"
+                       }
+                   ],
+                   "text": "As you wander around the marketplace, you see Sammy again but this time he seems to be surrounded by a group of wolves. He appears distressed while the wolves appear to be laughing. Moving closer you hear the conversation between the wolves and Sammy. </p>\“So… What does little Sammy have for us today?” One wolf chuckles. </p>\“Uh...um….I…don’t have anything….right now…” Sammy says. </p>\“Aww do you hear that boys? Sammy says he doesn’t have anything for us. Now that’s sad, after everything we’ve done for him.” The main wolf says turning his back before twisting around and punching Sammy in the gut. \The rabbit reels back, being flung to the floor. He coughs, before he could get up however the main wolf grabs his neck before lifting him off the ground. The rabbit appears to be choking as the words out of his mouth are sputtering gurgles. </p>\“If you disappoint us one more time…” The wolf whispers, he then turns to his comrades with a smirk, “What will happen?” </p>\“He will be eaten!!!” The three wolves responded simultaneously. </p>\“Now you wouldn’t want that to happen now….. would you?” The wolf says before licking his lips. </p>\“N….N...No….” Sammy says his vocal cords coarse with the tight hold of the wolf. </p>\“Good… See you later, Sammy...” The wolf says before dropping the rabbit. </p>\“Let’s Go.” The main wolf says as he walks away, the others nodding before following their leader. </p>\Meanwhile Sammy appears to be trying to get air into his lungs, walking closer to Sammy you ask the rabbit if he’s ok and who were those guys. </p>\“Oh…….them…...they’re my...friends… Argh, I can’t take it anymore! They’re bullies, I want to teach them a lesson but… they’re taller, stronger and more over a predator. While I am a weak prey… I wish I was stronger, taller than them. Then they will feel what I felt…. Hey do you know any wizards that might help me do that by any chance?” </p>\You tell Sammy about Sabehagen and Ritter. \Sammy's face lightens up significantly, with new found vigor he stands up but winces as he feels the place the wolf punched him. </p>\“Then let’s go and find them!!!” Sammy says as he runs off before stopping and turning to you, “Thank you… maybe if you want to… after all this… sorry, let’s just go.”",
+                        "outcomes": [
+                            {
+                                "parameter": "sammy_connection",
+                                "quantity": 1,
+                                "change": "add"
+                            }
+                        ]
                     }
                 }
             }
         ],
         "npcs": [
+              {
+                "id": "sammy",
+                "name": "Sammy",
+                "description": "Standing in the shade of one of the many stalls in Makarna is a short brown rabbit. He appears to be cooling off. His clothes are rumpled, with small sweat stains where his armpits are. His rabbit ears are folded back as he wipes sweat off his forehead, his expression seems to have subtle hints of disdain with his surroundings. [Character made by Cassidy]",
+                "icon": "anonicon",
+                "dialogue": [
+                    {
+                        "input": "What is your name?",
+                        "output": "“Samuel, but my friends call me Sammy.”"
+                    },
+                    {
+                    	"input": "What is your job?",
+                        "output": "“I don’t have one, I just like to hang out often and explore from time to time.”"
+                    },
+                    {
+                    	"input": "Wanna hangout?",
+                        "output": "“Sure! I would love… to… Sorry but I can’t right now. Can you maybe ask again later or…. Never.”"
+                            "requirements": [
+                            ], 
+                             "outcomes": [
+                                {
+                                   "parameter": "sammy_help",
+                                   "quantity": 1,
+                                   "change": "add"
+                                }
+                            ]
+                    },
+                    {
+                    	"input": "Can I see your cock?",
+                        "output": "“Woah buddy… Ummm, I have to decline. But I’ll happily talk to you about something else...” He blushes."
+                    },
+                    {
+                    	"input": "Can I see your paws?",
+                        "output": "“Sure? Since I don’t do a lot of heavy lifting they’re quite soft, like a teddy bear.”"
+                    }
         ]
     }
